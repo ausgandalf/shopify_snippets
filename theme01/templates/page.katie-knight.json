@@ -1,0 +1,267 @@
+{
+  "sections": {
+    "image_text_8y6EfC": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "15447544365098",
+        "image_desktop": "shopify:\/\/shop_images\/IMG-PLACEHOLDER_ab32e435-d296-4282-8022-f449f9dc41f0.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/IMG-PLACEHOLDER_a0ee182d-ef89-49ec-bdce-0d310f20ccd1.jpg",
+        "video_url": "",
+        "subheading": "WHITELABEL | KATIE KNIGHT",
+        "heading": "<h1>KATIE KNIGHT<\/h1>",
+        "copy": "<p>Katie Knight is a top athlete known for her success in endurance sports, including winning the 2021 World's Toughest Mudder and the 2022 GORUCK Games. Based in Boulder, Colorado, she trains extensively in both strength and endurance disciplines, incorporating CrossFit into her regimen. Katie enjoys trail running, mountain biking, and spending time with her golden retriever, Doug​.<\/p>",
+        "cta_text_1": "SHOP KAITES FAVORITE PRODUCTS",
+        "cta_url_1": "#crush",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "brand_value_callout_PcyVC7": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "brand_value_callout_YCT9QM": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/famliy-lg.svg",
+            "description": "<h6>CORE VALUE 1<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p>"
+          }
+        },
+        "brand_value_callout_pjKWgW": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/Faith.svg",
+            "description": "<h6>CORE VALUE 2<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p>"
+          }
+        },
+        "brand_value_callout_8tGkac": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>Callout Title<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "brand_value_callout_cUkYxF": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/fittest.png",
+            "description": "<h6>CORE VALUE 3<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p>"
+          }
+        },
+        "brand_value_callout_wrANTU": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/CHAMPION_6968f90a-fda5-4933-84e6-961e82bee6ff.svg",
+            "description": "<h6>CORE VALUE 4<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "brand_value_callout_YCT9QM",
+        "brand_value_callout_pjKWgW",
+        "brand_value_callout_8tGkac",
+        "brand_value_callout_cUkYxF",
+        "brand_value_callout_wrANTU"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>GET TO KNOW KATIE<\/h2>",
+        "image_desktop": "shopify:\/\/shop_images\/IMG-PLACEHOLDER_1f0f8733-265e-4e15-8a49-2f8aec093f50.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/IMG-PLACEHOLDER_36ceb8ce-946b-4671-ae2f-5136d7f9cbe2.jpg",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 36,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_QdQNV9": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/IMG-PLACEHOLDER_bc6dfbe0-bbaf-4a52-b884-10cf19cf8063.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/IMG-PLACEHOLDER_5d2193fc-c86c-4432-81f3-0ee3248a6a46.jpg",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h2>KATIES FAVORITE PRODUCTS<\/h2>",
+        "copy": "<p><\/p><ul><li><strong>IGNITE<\/strong> - Smooth, long-lasting, great tasting energy and improve cognitive function for hours, providing a clean and healthy energy alternative to help you conquer the day.<\/li><li><strong>PERFORMANCE BARS<\/strong> -featuring 10 Bars per box with 20 grams of blended protein including whey isolate, whey concentrate, and collagen per bar. 4 grams or less in added sugar and top-notch flavor,<\/li><li><strong>HYDRATE<\/strong> - specifically crafted with a unique blend of essential electrolytes, vitamins, and minerals to help improve overall hydration and performance both at the gym or on the mountain.<\/li><li><strong>CREATINE<\/strong> - a widely studied \/ well known exercise & weight-lifting product that helps customers perform at a high level - building muscle strength, improving power output, and increasing muscle mass.<\/li><\/ul><p><\/p><p><\/p><p><\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "170561287220a8f9b6": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_KDLxwA": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "148316",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_KDLxwA"
+      ],
+      "settings": {
+      }
+    },
+    "two_three_up_nTyYM3": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_AkAG6k": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/webpc-passthru.webp",
+            "description": "<h3>Mayhem Athlete<\/h3><p>Looking for that edge in your fitness routine? Mayhem Athlete is the standard in programming for both the elite and the beginner.<\/p>",
+            "cta_text": "LEARN MORE",
+            "cta_link": "https:\/\/www.mayhemathletes.com\/",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_AdYRzX": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/download.png",
+            "description": "<h3>Froning Farms<\/h3><p>Only the highest quality Bison products, straight from Rich's actual farm. Check out the keto-friendly snacks and awesome apparel.<\/p>",
+            "cta_text": "LEARN MORE",
+            "cta_link": "https:\/\/froningfarms.com\/",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_AkAG6k",
+        "up_block_AdYRzX"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Exclusive Access<\/h2>",
+        "copy": "<p>Gain access to Mayhem Athlete and Froning Farms with your first purchase with WHITELABEL.<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "hero_section_NEjUMq": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/IMG-PLACEHOLDER_c43f4d8e-e0a5-4664-9cc1-e3220cd9f7d5.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/IMG-PLACEHOLDER_fb35b1d2-24fb-4090-a6b5-81e707c717fe.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 800,
+        "media_height_mobile": 500,
+        "subheading": "",
+        "heading": "",
+        "copy": "<p>\"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?\"<\/p><p>-KATIE KNIGHT<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-end",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "image_text_8y6EfC",
+    "brand_value_callout_PcyVC7",
+    "image_text_QdQNV9",
+    "170561287220a8f9b6",
+    "two_three_up_nTyYM3",
+    "hero_section_NEjUMq"
+  ]
+}

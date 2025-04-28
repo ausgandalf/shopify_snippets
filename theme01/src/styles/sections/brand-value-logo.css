@@ -1,0 +1,61 @@
+.brand-value-logo {
+  @apply text-center px-6 py-12 lg:py-[4.5rem];
+}
+
+.brand-value-logo-item-label {
+  h1, h2, h3, h4, h5, h6 {
+    @apply mb-1;
+  }
+  h1 {
+    @apply lg:text-h1-m;
+  }
+  h2 {
+    @apply lg:text-h2-m;
+  }
+  h3 {
+    @apply lg:text-h3-m;
+  }
+  h4 {
+    @apply lg:text-h4-m;
+  }
+  h5 {
+    @apply lg:text-h5-m;
+  }
+  h6 {
+    @apply lg:text-h6-m;
+  }
+  p {
+    @apply text-sm leading-normal;
+  }
+  &:not(.links-inverted) a {
+    @apply no-underline;
+  }
+}
+.brand-value-logo-item-label.p-lg p {
+  @apply text-lg;
+}
+.brand-value-logo-item-label.p-sm p {
+  @apply text-sm;
+}
+.brand-value-logo-item-label.p-xs p {
+  @apply text-xs;
+}
+
+.brand-value-logo-view-btn {
+  @apply text-color-6 hover:text-color-6 lg:hidden text-sub-large font-bold;
+}
+.brand-value-logo-view-btn.collapsed {
+  @apply text-[inherit] hover:text-[inherit];
+}
+.brand-value-logo-view-btn__more {
+  @apply hidden;
+}
+.brand-value-logo-view-btn__less {
+  @apply inline;
+}
+.collapsed .brand-value-logo-view-btn__more {
+  @apply inline;
+}
+.collapsed .brand-value-logo-view-btn__less {
+  @apply hidden;
+}

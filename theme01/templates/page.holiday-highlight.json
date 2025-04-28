@@ -1,0 +1,265 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25": {
+      "type": "hero-section",
+      "custom_css": [
+        ".hero-content {background-color: rgba(0, 0, 0, 0);}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/HolidayGiftGuide-BG2.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/HolidayGiftGuide-BG2.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 15,
+        "media_height": 400,
+        "media_height_mobile": 350,
+        "logo": "shopify:\/\/shop_images\/HolidayGiftGuide-Text.svg",
+        "subheading": "",
+        "heading": "",
+        "copy": "",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 500,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#9c0202",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "63dec1c4-5d51-49c7-8fe5-a96c99185c87": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--14974455971882__63dec1c4-5d51-49c7-8fe5-a96c99185c87-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/HolidayGiftGuide-ForHim.jpg",
+            "description": "<p>It doesn't matter who he is or what he does, we've got everything on his list<\/p>",
+            "cta_text": "GIFTS FOR HIM",
+            "cta_link": "shopify:\/\/collections\/gifts-for-dad",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--14974455971882__63dec1c4-5d51-49c7-8fe5-a96c99185c87-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/HolidayGiftGuide-ForHer.jpg",
+            "description": "<p>Joggers, tanks, tees and more. Show your love for the #WomenWhoConquers in your life<\/p>",
+            "cta_text": "GIFTS FOR HER",
+            "cta_link": "shopify:\/\/collections\/for-her",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "91a7b4ec-ccbf-4a66-9411-43d40432df15": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/HolidayGiftGuide-Stufers.jpg",
+            "description": "<p>Need something quick, simple and guaranteed to crush? We've got you covered.<\/p>",
+            "cta_text": "STOCKING STUFFERS",
+            "cta_link": "shopify:\/\/collections\/stocking-stuffers",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--14974455971882__63dec1c4-5d51-49c7-8fe5-a96c99185c87-up-block-1",
+        "template--14974455971882__63dec1c4-5d51-49c7-8fe5-a96c99185c87-up-block-2",
+        "91a7b4ec-ccbf-4a66-9411-43d40432df15"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>GIVE THE GIFT THAT CONQUERS<\/h2>",
+        "copy": "<p>It doesn't matter who's on your list, we've got you covered with all the gifts to impress<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "2dc3d194-42af-4106-b7da-b85f623c899f": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15160207310890__2dc3d194-42af-4106-b7da-b85f623c899f-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>Title<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--15160207310890__2dc3d194-42af-4106-b7da-b85f623c899f-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>Title<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "70526634-2c96-402a-ac4a-bdd244ee4724": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>Title<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15160207310890__2dc3d194-42af-4106-b7da-b85f623c899f-up-block-1",
+        "template--15160207310890__2dc3d194-42af-4106-b7da-b85f623c899f-up-block-2",
+        "70526634-2c96-402a-ac4a-bdd244ee4724"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "copy": "",
+        "cta_text": "Button label",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "83ab6f3e-9aa4-4d01-8754-165ad9578f92": {
+      "type": "hero-section",
+      "custom_css": [
+        ".hero-content {background-color: #00000000;}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/WinterHuntLifestyle-1.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/WinterHuntLifestyle-1.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 500,
+        "media_height_mobile": 210,
+        "subheading": "",
+        "heading": "",
+        "copy": "",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 20,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "16999904632a0f57e3": {
+      "type": "apps",
+      "blocks": {
+        "be767bb2-7168-4e9b-aed6-e1a0e7dc8a06": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "109551",
+            "product_id_enabled": false,
+            "collection_id_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "be767bb2-7168-4e9b-aed6-e1a0e7dc8a06"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25",
+    "63dec1c4-5d51-49c7-8fe5-a96c99185c87",
+    "2dc3d194-42af-4106-b7da-b85f623c899f",
+    "83ab6f3e-9aa4-4d01-8754-165ad9578f92",
+    "16999904632a0f57e3"
+  ]
+}

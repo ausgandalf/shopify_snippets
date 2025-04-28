@@ -1,0 +1,109 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25": {
+      "type": "hero-section",
+      "blocks": {
+        "hero_value_prop_bGeYgk": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "hero_value_prop_bGeYgk"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".hero-content {background-color: rgba(0, 0, 0, 0);}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Header_-_Desktop.png",
+        "image_mobile": "shopify:\/\/shop_images\/Header_-_Mobile.png",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 300,
+        "media_height_mobile": 210,
+        "subheading": "",
+        "heading": "",
+        "copy": "",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_YtMyVe": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Image_-_Desktop.png",
+        "image_mobile": "shopify:\/\/shop_images\/Image_-_Desktop_55e12c2a-6e97-4ebc-8a6a-634883c3ce67.png",
+        "video_url": "",
+        "subheading": "LIMITED EDITION",
+        "heading": "<h2>IGNITE - MAI TAI<\/h2>",
+        "copy": "<p>Get supercharged energy that packs a punch of sweet pineapple, lime, & orange flavors!<\/p><h6>45 servings  per tub<\/h6><p>($1.11 per serving!)<\/p>",
+        "cta_text_1": "BUY NOW",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "ignite",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary-invert",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#e8e8e8",
+        "content_bg_color": "#000000",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-first",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25",
+    "image_text_YtMyVe"
+  ]
+}

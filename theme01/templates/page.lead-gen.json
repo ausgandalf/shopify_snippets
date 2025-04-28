@@ -1,0 +1,332 @@
+{
+  "sections": {
+    "hero_section_VYayf9": {
+      "type": "hero-section",
+      "custom_css": [
+        ".hero-content {background-color: rgba(0, 0, 0, 0.5);}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/elk-hunt-experience-hero.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Elk-Hunt-Experience-2024_0f3fca2f-454c-4488-9443-cc5e86c4652a.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 720,
+        "media_height_mobile": 360,
+        "logo": "shopify:\/\/shop_images\/Logo.svg",
+        "subheading": "",
+        "heading": "",
+        "copy": "<p>Join cowboy legend Dale Brisby for an epic adventure! Enter our exclusive WHITELABEL and Bear Mountain Outfitters giveaway—no purchase necessary.<\/p>",
+        "cta_text_1": "GET ENTERED TO WIN",
+        "cta_url_1": "#form",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 430,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_jMC3jG": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Elk-Hunt-Experience-2024_a3035d68-c5dc-47b6-b813-8cb3f5f6200b.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Elk-Hunt-Experience-2024_c302709f-d6b6-466a-b1d4-6d50ca7aed2d.jpg",
+        "video_url": "",
+        "subheading": "NO PURCHASE NECESSARY",
+        "heading": "<h2>ELITE BOW GIVEAWAY<\/h2><h2><\/h2>",
+        "copy": "<p>Attention, outdoor enthusiasts! WHITELABEL is giving away 3 Elite bows, perfect for enhancing your archery hunting adventures. Be sure to enter for a shot at winning your your new bow today!!<\/p>",
+        "cta_text_1": "GET ENTERED TO WIN",
+        "cta_url_1": "#form",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 49,
+        "bottom_margin_mobile": 30
+      }
+    },
+    "image_text_hBUedK": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/bmo-thanks.png",
+        "image_mobile": "shopify:\/\/shop_images\/bmo-thanks_54f14ba4-d735-49ab-95b9-0e42b9d55b60.png",
+        "video_url": "",
+        "subheading": "WHATS INCLUDED",
+        "heading": "<h2>ALL EXPENSES PAID<\/h2>",
+        "copy": "<ul><li>Hunt \/ Travel \/ Lodging \/ Food<\/li><li>Hunt alongside Dale Brisby  and WHITELABEL team member<\/li><li>Big fat stack of WHITELABEL nutrition and gear<\/li><\/ul><p><strong>Location:<\/strong> Kremmling, Colorado<\/p><p><strong>Hunt Dates:<\/strong> September 15th-20th 2024<\/p><p><\/p>",
+        "cta_text_1": "GET ENTERED",
+        "cta_url_1": "#form",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "two_three_up_wfCEAa": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_MypQWY": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Trophy_Axis.jpg",
+            "description": "<h4>[ 1 ] TROPHY AXIS BUCK<\/h4>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_t8adTq": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Trophy_Goat.jpg",
+            "description": "<h4>[ 1 ] TROPHY GOAT<\/h4>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_MypQWY",
+        "up_block_t8adTq"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h3>WHAT YOU'LL BE HUNTING<\/h3>",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1dc84725-ecba-489d-9a9c-6fe0b9f737ff": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-1": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>LODGING<\/h4><p>Staying at gorgias Perennial Outfitting Lodge<\/p><p><\/p>"
+          }
+        },
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-2": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>TRAVEL<\/h4><p>Plane ticket to San Antonio Airport and taxi to property<\/p>"
+          }
+        },
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-3": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>FOOD<\/h4><p>Everything you'll need to keep you fueled up on your hunt<\/p>"
+          }
+        },
+        "brand_value_callout_UM3Ugz": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>HUNTING TAG<\/h4><p>Wouldn't be a giveaway with out the tag to hunt these gorgeous deer<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-1",
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-2",
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-3",
+        "brand_value_callout_UM3Ugz"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h1>What's Included<\/h1>",
+        "image_desktop": "shopify:\/\/shop_images\/axis_scouting.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/axis_scouting.jpg",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 50,
+        "bottom_margin_mobile": 20
+      }
+    },
+    "wysiwyg_nwL3CT": {
+      "type": "wysiwyg",
+      "custom_css": [
+        "p {display: none;}"
+      ],
+      "settings": {
+        "section_custom_id": "form",
+        "section_content": "<p>spacer<\/p>",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "1706809539b574a7ff": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_qkDVNH": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "XvMk7F"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_qkDVNH"
+      ],
+      "custom_css": [
+        ".klaviyo-form {margin-bottom: 45px;}"
+      ],
+      "settings": {
+      }
+    },
+    "hero_section_qeNYrm": {
+      "type": "hero-section",
+      "blocks": {
+        "hero_value_prop_KmAYam": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "hero_value_prop_KmAYam"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/elk-hunt-experience-hero_535e2c92-1d21-43e7-a991-b4e7359c12d5.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 360,
+        "media_height_mobile": 240,
+        "subheading": "",
+        "heading": "<h3>TERMS AND CONDITIONS<\/h3>",
+        "copy": "",
+        "cta_text_1": "VIEW NOW",
+        "cta_url_1": "shopify:\/\/pages\/giveaway-terms-and-conditions",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1716393353fe5ef9f2": {
+      "type": "apps",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "hero_section_VYayf9",
+    "image_text_jMC3jG",
+    "image_text_hBUedK",
+    "two_three_up_wfCEAa",
+    "1dc84725-ecba-489d-9a9c-6fe0b9f737ff",
+    "wysiwyg_nwL3CT",
+    "1706809539b574a7ff",
+    "hero_section_qeNYrm",
+    "1716393353fe5ef9f2"
+  ]
+}

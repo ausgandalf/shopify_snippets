@@ -1,0 +1,478 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "image_text_jrPKJm": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/GRAND_SLAM_GIVEAWAY_a95dd192-c131-4763-8a98-454e7f20a76f.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/GRAND_SLAM_GIVEAWAY_e99129b9-7cbb-4344-bed1-abae99d700f9.jpg",
+        "video_url": "",
+        "subheading": "NWTF x WHITELABEL x Joel Pilcher",
+        "heading": "<h2>GRAND SLAM HUNT GIVEAWAY<\/h2>",
+        "copy": "<p>We are partnering with the National Wild Turkey Federation (NWTF), acclaimed artist Joel Pilcher, Outdoor Channel Producer Gregg Ritz, and many of our closest manufacturing partners to raise money and memberships for NWTF and its ongoing conservation mission. <\/p>",
+        "cta_text_1": "GET ENTERED",
+        "cta_url_1": "#entries",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 30
+      }
+    },
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25": {
+      "type": "hero-section",
+      "blocks": {
+        "hero_value_prop_EraLep": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "hero_value_prop_EraLep"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".hero-content {background-color: #191919d6;}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/lift-run-shoot-bg.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/lift-run-shoot-bg.jpg",
+        "bg_video": "shopify:\/\/files\/videos\/lrs-background-vid.webm",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 20,
+        "media_height": 800,
+        "media_height_mobile": 350,
+        "subheading": "May 3rd - 5th",
+        "heading": "<h1>LIFT RUN SHOOT<\/h1>",
+        "copy": "<p>Back by popular demand! Don't miss out on the experience of a lifetime with Cam Hanes himself. Spots are selling out so act fast!<\/p>",
+        "cta_text_1": "GET YOUR TICKET",
+        "cta_url_1": "#lrstickets",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 500,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 50
+      }
+    },
+    "image_text_ecikzG": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "lrstickets",
+        "image_desktop": "shopify:\/\/shop_images\/Turkey-hunt-lifestyle-3.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Turkey-hunt-lifestyle-3.jpg",
+        "video_url": "",
+        "subheading": "All Expenses paid illinois turkey hunt",
+        "heading": "<h3>WHATS INCLUDED<\/h3><p><\/p>",
+        "copy": "<ul><li>Turkey Hunt on Gregg Ritz’s Hunt Masters Farms <\/li><li>Weatherby 18i<\/li><li>Federal Heavyweight TSS 3”<\/li><li>Alps Outdoorz Impact Pro Turkey Vest<\/li><li>NOMAD Head to Toe Gear Package<\/li><li>LaCrosse Footwear<\/li><li>Leupold 10x42 BX-4 ProGuide HD Binoculars w\/ Harness<\/li><li>Cartel Custom Calls<\/li><li>DSD Hen and Jake Decoys<\/li><li>$500 WHITELABEL eGift Card<\/li><li>NWTF complementary digital membership (1 Year)<\/li><li>Travel, Food, Lodging, Tags<\/li><\/ul><p>With over $6000 in total value and some of the better odds to win a hunt due to the limited quantity of items this should be a no brainer to enter!<\/p><p><\/p><h6><\/h6>",
+        "cta_text_1": "GET ENTERED",
+        "cta_url_1": "#entries",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "BUY NOW",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "two_three_up_T6DLPG": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_MCxCNP": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/nwtf-2up-lifestyle_787a1ff6-f139-4190-8d3d-aeb4376cd625.jpg",
+            "description": "<h4>LIMITED NWTF TEE <\/h4><h5>= 1 ENTRY<\/h5><p>This custom design from Joel Pilcher is only going to be offered in a limited quantity so be sure to grab one!! <\/p><p>ONLY 350 Shirts left meaning 350 Entries left. Don't wait and buy yours today!<\/p><h5>$29.95<\/h5>",
+            "cta_text": "SHOP NOW",
+            "cta_link": "shopify:\/\/products\/nwtf-pilcher-tee",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_VXxmfT": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/IGNITE_NWTF-SweetTeaLemonade_45S_SC-Tub_Splash.png",
+            "description": "<h4>IGNITE - NWTF SWEET TEA LEMONADE<\/h4><h5>= 1 ENTRY<\/h5><p>Still our same Sweet Tea Lemonade you've come to love but now with Our exclusive one of  a kind NWTF Design! Very limited quantities on this so grab yours today<\/p>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "ignite",
+            "featured_variant": "41077921021994",
+            "atc_cta_text": "SOLD OUT",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_MCxCNP",
+        "up_block_VXxmfT"
+      ],
+      "settings": {
+        "section_custom_id": "entries",
+        "heading": "<h2>WAYS TO ENTER<\/h2>",
+        "copy": "<p>1 entry if you buy a product below<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "wysiwyg_e9hVkY": {
+      "type": "wysiwyg",
+      "disabled": true,
+      "custom_css": [
+        "h3 {text-align: center;}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "section_content": "<h3>BUY THEM BOTH AND GET 10 ENTRIES!<\/h3>",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 50
+      }
+    },
+    "17091341279ca6bc33": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_NAg6Kz": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "137366",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_NAg6Kz"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "image_text_RLt6xF": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Joel_Pilcher_Turkey_Art.png",
+        "image_mobile": "shopify:\/\/shop_images\/Joel_Pilcher_Turkey_Art_03c45120-f9fa-4024-a713-fac2e46875b4.png",
+        "video_url": "",
+        "subheading": "JOIL PILCHER",
+        "heading": "<h2>ALSO WIN NWTF INSPIRED ARTWORK <\/h2>",
+        "copy": "<p>Not only are you entered to win the awesome Turkey Hunt. You are also entered to win this NWTF inspired artwork from Joel Pilcher!<\/p><ul><li>1 winner will win the Original, valued at $2000<\/li><li>3 winners will win a print of the original, valued at $200 each <\/li><\/ul>",
+        "cta_text_1": "GET ENTERED",
+        "cta_url_1": "#entries",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 50
+      }
+    },
+    "brand_value_logo_BUFyQK": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "brand_value_logo_BnRQfE": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/nwtf_logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_4fqFgW": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/jolepilcher_logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_Pe9Mfk": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Weatherby-White.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_itRxkn": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Leupold-White.svg",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_4g3MJH": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/cartel_logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_7U8RyN": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/ALPS_logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_TqgQwF": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/DSD_Logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_YyCBtr": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Federal_logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_8434nb": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/lacrosse_logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_QVjPeV": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_link": "",
+            "logo_label": "<p>Logo label<\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_TjYVAR": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/huntmasterlogo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_FfnhGp": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/nomad_logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "brand_value_logo_BnRQfE",
+        "brand_value_logo_4fqFgW",
+        "brand_value_logo_Pe9Mfk",
+        "brand_value_logo_itRxkn",
+        "brand_value_logo_4g3MJH",
+        "brand_value_logo_7U8RyN",
+        "brand_value_logo_TqgQwF",
+        "brand_value_logo_YyCBtr",
+        "brand_value_logo_8434nb",
+        "brand_value_logo_QVjPeV",
+        "brand_value_logo_TjYVAR",
+        "brand_value_logo_FfnhGp"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h3>THANKS TO OUR PARTERS<\/h3>",
+        "cta_text": "",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-black_text-white",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 50
+      }
+    },
+    "1708622852f64031b1": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_AmHLLU": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "123553",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_AmHLLU"
+      ],
+      "settings": {
+      }
+    },
+    "hero_section_UzgV7L": {
+      "type": "hero-section",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Cam-Hanes-Quote-Background.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Cam-Hanes-Quote-Background_294ff557-d82b-4427-9807-904f73ca3a22.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 720,
+        "media_height_mobile": 360,
+        "subheading": "",
+        "heading": "",
+        "copy": "<p>\"To push like I do, I know what my body needs. I need to fuel properly and I know I get out what I put in.\" - Cam Hanes<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-end",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "image_text_jrPKJm",
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25",
+    "image_text_ecikzG",
+    "two_three_up_T6DLPG",
+    "wysiwyg_e9hVkY",
+    "17091341279ca6bc33",
+    "image_text_RLt6xF",
+    "brand_value_logo_BUFyQK",
+    "1708622852f64031b1",
+    "hero_section_UzgV7L"
+  ]
+}

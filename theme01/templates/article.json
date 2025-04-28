@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "enable_social_share": true,
+        "hero_image_mobile": "{{ article.metafields.custom.hero_image_mobile.value }}"
+      }
+    },
+    "product_recommendation_FpdLf8": {
+      "type": "product-recommendation",
+      "blocks": {
+        "product_48CTJY": {
+          "type": "product",
+          "repeater": "{{ article.metafields.global.related_products.value }}",
+          "settings": {
+            "product": "{{ block.repeater.product.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "product_48CTJY"
+      ],
+      "settings": {
+        "title": "{{ article.metafields.global.related_products_title.value }}",
+        "show_product_desc": true,
+        "bottom_padding_mobile": 0,
+        "bottom_padding_desktop": 0
+      }
+    },
+    "58430cab-e5db-42f8-9bda-022cc065792c": {
+      "type": "related-articles",
+      "settings": {
+        "section_custom_id": "",
+        "title": "Related Posts"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_recommendation_FpdLf8",
+    "58430cab-e5db-42f8-9bda-022cc065792c"
+  ]
+}

@@ -1,0 +1,49 @@
+{%- comment -%}
+  Displays HTML content filtered to display shortcodes
+
+  Required:
+    _content: the HTML content to display
+{%- endcomment -%}
+
+{%- comment -%} lazy loading {%- endcomment -%}
+{%- liquid
+  assign parsed_content = _content
+  assign parsed_content = parsed_content | replace: '<img loading="lazy" src="', '<img class="lazyload w-full h-full" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" io-img-src="'
+
+  assign parsed_content = parsed_content | replace: '[small]', '<small>'
+  assign parsed_content = parsed_content | replace: '[/small]', '</small>'
+
+  assign parsed_content = parsed_content | replace: '[button-primary]<a', '<a class="button button--primary"'
+  assign parsed_content = parsed_content | replace: '</a>[/button-primary]', '</a>'
+
+  assign parsed_content = parsed_content | replace: '[button-primary-invert]<a', '<a class="button button--primary-invert"'
+  assign parsed_content = parsed_content | replace: '</a>[/button-primary-invert]', '</a>'
+
+  assign parsed_content = parsed_content | replace: '[button-secondary]<a', '<a class="button button--secondary"'
+  assign parsed_content = parsed_content | replace: '</a>[/button-secondary]', '</a>'
+
+  assign parsed_content = parsed_content | replace: '[button-secondary-invert]<a', '<a class="button button--secondary-invert"'
+  assign parsed_content = parsed_content | replace: '</a>[/button-secondary-invert]', '</a>'
+
+  assign parsed_content = parsed_content | replace: '<iframe', '<div class="iframe-container"><iframe'
+  assign parsed_content = parsed_content | replace: '</iframe>', '</iframe></div>'
+
+  assign parsed_content = parsed_content | replace: '<table', '<div class="table-container"><table'
+  assign parsed_content = parsed_content | replace: '</table>', '</table></div>'
+
+  assign parsed_content = parsed_content | replace: '[accordions]', '<div class="tabs">'
+  assign parsed_content = parsed_content | replace: '[/accordions]', '</div>'
+
+  assign parsed_content = parsed_content | replace: '[accordion]', '<details>'
+  assign parsed_content = parsed_content | replace: '[/accordion]', '</details>'
+
+  assign parsed_content = parsed_content | replace: '[accordion-title]', '<summary>'
+  assign parsed_content = parsed_content | replace: '[/accordion-title]', ' </summary>'
+
+  assign parsed_content = parsed_content | replace: '[accordion-content]', '<div class="mt-5">'
+  assign parsed_content = parsed_content | replace: '[/accordion-content]', '</div>'
+
+  assign parsed_content = parsed_content | replace: '<meta charset="utf-8">', ''
+-%}
+
+{{ parsed_content }}

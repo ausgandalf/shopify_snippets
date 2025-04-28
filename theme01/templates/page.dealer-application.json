@@ -1,0 +1,88 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "9247aad5-11e8-47d6-b4d7-851a0c5e158e": {
+      "type": "hero-section",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/ambassadors.webp",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241E18",
+        "bg_overlay_opacity": 30,
+        "media_height": 550,
+        "media_height_mobile": 210,
+        "subheading": "",
+        "heading": "<h5>Become a<\/h5><h1>WHITELABEL Dealer<\/h1>",
+        "copy": "<p>Thank you for your interest in becoming a dealer of WHITELABEL Nutrition products. We are always looking for great companies like yours to get WHITELABEL products into the hands of hard working and inspired people who are looking to improve their lives and conquer their goals. Please fill out this form below and we will get right back with you about becoming a WHITELABEL dealer. We look forward to speaking with you about our partnership.<\/p>",
+        "video_cta_text": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#3D3935",
+        "content_bg_color": "#ffffff",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "16977318302c7a9604": {
+      "type": "apps",
+      "blocks": {
+        "57a2f5a8-b018-4845-bb43-6fe74fd15ef5": {
+          "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/form-block\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "WFj2lKZ1RHhF4r1hMAuRpg",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#FFF",
+            "input_background_color_focus": "#F4DADA",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2D2727",
+            "input_font_color": "#3D3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#EBE9E9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#F3F3F3",
+            "sub_btn_bg_color": "#3F3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#FFFFFF",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "57a2f5a8-b018-4845-bb43-6fe74fd15ef5"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "9247aad5-11e8-47d6-b4d7-851a0c5e158e",
+    "16977318302c7a9604"
+  ]
+}

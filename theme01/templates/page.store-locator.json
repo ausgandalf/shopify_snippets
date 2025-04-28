@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "d2eb52af-e38c-4b65-a48e-2f74e7cae386": {
+      "type": "basic-html",
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h1>Store Locator<\/h1>",
+        "html_code": "<!-- LOCALLY.COM WIDGET EMBED CODE -->\n<div id=\"lcly-button-0\" data-switchlive=\"true\" data-switchlive-impression=\"true\" data-switchlive-impression-id-pl=\"1\">\n\t\t \n  <a id=\"lcly-link-0\" data-switchlive=\"true\" data-switchlive-mode=\"auto\" data-switchlive-id-pl=\"6\" role=\"button\" href=\"https:\/\/join.locally.com\/for-brands\" target=\"_blank\">\n    Product Locator by Locally\n  <\/a>\n<\/div>\n<script id=\"lcly-script-0\" async><\/script>\n<script id=\"lcly-config-0\">\n  var __lcly_channel_domain_0 = \"locally\";\n  var lcly_config_0 = {\n    \"company_name\": \"Whitelabel\",\n    \"company_id\": \"201753\",\n    \"inline\": \"1\",\n    \"lang\": \"en-us\"\n  };\n  var lcly_query_0 = Object.keys(lcly_config_0)\n  .reduce(function(a, k) {a.push(encodeURIComponent(k) + '=' \n  + encodeURIComponent((typeof lcly_config_0[k] === 'object' && lcly_config_0[k] !== null)\n  ? JSON.stringify(lcly_config_0[k])  : lcly_config_0[k]));return a;}, []).join('&');\n  var lcly_endpoint_0 = 'https:\/\/whitelabel.locally.com\/stores\/map.js?' + lcly_query_0;\n  document.getElementById('lcly-script-0').src = lcly_endpoint_0;\n<\/script>",
+        "full_width": false,
+        "content_align": "justify-center",
+        "bottom_margin_desktop": 40,
+        "bottom_margin_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "d2eb52af-e38c-4b65-a48e-2f74e7cae386"
+  ]
+}

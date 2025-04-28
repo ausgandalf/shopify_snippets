@@ -1,0 +1,585 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "3f577830-f36a-4671-b2f1-73fa161242fa": {
+      "type": "hero-section",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/conquer-fitness-hero-2_4fbce332-84a2-45f5-a1a2-0be04f7747ee.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 650,
+        "media_height_mobile": 250,
+        "logo": "shopify:\/\/shop_images\/ConquerFitness2021_-_Training.svg",
+        "subheading": "",
+        "heading": "<h5>Conquer Fitness Training<\/h5>",
+        "copy": "<p>The Conquer Fitness Programs were developed to help you CONQUER MORE. From training to meal plans, fitness challenges and more - our goal is to empower you with the tools you need to take your training, health and results to a whole new level. Let's get it.<\/p>",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "https:\/\/youtu.be\/qQ4Y7BzBqZs",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "cta_text_1": "Button Label",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "full_width": true,
+        "logo_size": 300,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#1b1b1b",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 16
+      }
+    },
+    "3624b8c1-66da-40c5-87d2-672f0e31b0cc": {
+      "type": "image-text",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/ConquerMoreMenu-Consultations.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/12-6-21-NewGearDrop-Fitness-BG.jpg",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h4>Not sure where to start?<\/h4>",
+        "copy": "<h2>TRY OUR FREE CALORIE CALCULATOR<\/h2><p>We understand that just getting started and knowing where to begin can sometimes be the hardest part. That is why we created a Free Calorie Calculator to help guide you. <\/p><p><strong>Fill out the form below and w'll provide you with recommendations on meal plans and training programs to help kickstart your health and fitness journey.<\/strong><\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "full_width": false,
+        "content_text_color": "#F7F7F7",
+        "content_bg_color": "#3D3935",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 32
+      }
+    },
+    "16976729967001aa66": {
+      "type": "apps",
+      "blocks": {
+        "7f3188a4-ee93-4abd-ba14-9f8db5a14553": {
+          "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/form-block\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "vnl18w96dvRlWZE3cpKIiw",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#FFF",
+            "input_background_color_focus": "#F4DADA",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2D2727",
+            "input_font_color": "#3D3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#EBE9E9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#F3F3F3",
+            "sub_btn_bg_color": "#3F3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#FFFFFF",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "7f3188a4-ee93-4abd-ba14-9f8db5a14553"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "de3e7a11-309a-45c8-b600-2f990a0b997d": {
+      "type": "basic-html",
+      "settings": {
+        "html_code": "<div id=\"ps__subscribe-form\" style=\"max-width: 400px; margin: auto; padding: 20px\">\n<form action=\"https:\/\/api.postscript.io\/subscribe\/form\" method=\"post\" onsubmit=\"document.getElementById('ps__sent-message').style.display = 'block'; document.getElementById('ps__subscribe-form').style.display = 'none';\" target=\"dummyframe\">\n<input id=\"ps__shop_id\" name=\"shop_id\" type=\"hidden\" value=\"180165\">\n<input id=\"ps__keyword_id\" name=\"keyword_id\" type=\"hidden\" value=\"243927\">\n<div class=\"w-full text-center input-wrap\" style=\"margin-bottom: 24px\">\n  <input autofocus=\"\" id=\"ps__phone-subscribe\" name=\"phone\" placeholder=\" \" style=\"width: 100%; padding: 0.75em; font-size: 1.5em\" type=\"tel\">\n  <label for=\"ps__phone-subscribe\">Phone Number<\/label>\n<\/div>\n<div style=\"max-width: 100%; font-size: 12px; margin-bottom: 24px; text-align: center; line-height: 1.25;\">*By subscribing, you agree to receive recurring automated marketing text messages (e.g. cart reminders) at the phone number provided. Consent is not a condition to purchase. Msg and data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our <a href=\"https:\/\/terms.pscr.pt\/legal\/shop\/getwhitelabel\/terms_of_service\">Terms of Service<\/a> and <a href=\"https:\/\/terms.pscr.pt\/legal\/shop\/getwhitelabel\/privacy_policy\">Privacy Policy<\/a>.<\/div>\n<button class=\"button button--primary w-full\" type=\"submit\">Subscribe<\/button>\n<\/form>\n<\/div>\n<div id=\"ps__sent-message\" class=\"alert success-alert\" style=\"max-width: 400px; margin: auto; display: none\"><h4>Thanks for subscribing! We'll send you a message shortly.<\/h4><\/div>\n<iframe border=\"0\" height=\"0\" id=\"ps__dummyframe\" name=\"dummyframe\" width=\"0\"><\/iframe>",
+        "full_width": true,
+        "content_align": "justify-center",
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "e1881256-b498-4800-9ddf-109b5f110ef1": {
+      "type": "image-text",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/Consultation-Workout-Lifestyle-KT-Randall-12.jpg",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h2>Talk with an Expert<\/h2>",
+        "copy": "<p>WHITELABEL Health & Fitness Specialists are certified individuals trained to help personalize your health journey. From Macro breakdowns, meal plans and training programs, you'll be blown away with the value and education you receive.<\/p>",
+        "cta_text_1": "Schedule your consultation",
+        "cta_url_1": "https:\/\/whitelabel.youcanbook.me\/",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "full_width": false,
+        "content_text_color": "#3D3935",
+        "content_bg_color": "#ffffff",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 32
+      }
+    },
+    "7f701cfe-012d-491a-9f56-63bf12cea3ac": {
+      "type": "hero-section",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/workout-fitness-lifestyle.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 550,
+        "media_height_mobile": 250,
+        "subheading": "",
+        "heading": "<h3>Conquer Fitness Programs<\/h3>",
+        "copy": "<p>These programs have been developed to give you a great starting point on your fitness journey. We are fully confident that if you follow these programs, fuel your body with healthy foods, and use our products, you will acheive your fitness goals of getting fit, stronger, faster, thinner, mentally happier, etc. Whatever your goal may be, consistency is the key to your success.<\/p>",
+        "video_cta_text": "",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "full_width": true,
+        "logo_size": 300,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#1b1b1b",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "fa0644e4-0200-41fd-bfbe-ca7f2ae87387": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15047270924330__fa0644e4-0200-41fd-bfbe-ca7f2ae87387-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Conquer_Fitness_-_Erick_McCormack_-_4.jpg",
+            "description": "<h4>90 Days with Eric McCormack<\/h4>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "8b2abcee-133a-4bf1-84b2-d87d7f3f3f8d": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Conquer_Fitness_-_Erick_McCormack_-_4.jpg",
+            "description": "<h4>Resistance Band Program<\/h4>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "ddd71b8f-9b6a-4e0b-8a80-d7d68d3c320c": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Conquer_Fitness_-_Erick_McCormack_-_4.jpg",
+            "description": "<h4>Women Who Conquer<\/h4>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15047270924330__fa0644e4-0200-41fd-bfbe-ca7f2ae87387-up-block-1",
+        "8b2abcee-133a-4bf1-84b2-d87d7f3f3f8d",
+        "ddd71b8f-9b6a-4e0b-8a80-d7d68d3c320c"
+      ],
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-black text-white",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "4ad3e455-42fd-4c38-be0a-ccbd6f3db93e": {
+      "type": "two-three-up",
+      "blocks": {
+        "8b20d081-79f1-45d9-a501-7dbb17e4b687": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Conquer_Fitness_-_Erick_McCormack_-_4.jpg",
+            "description": "<h4>Conquer Circuit<\/h4>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "4dd86e36-22d0-4bf0-a131-d32ad9c705aa": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Conquer_Fitness_-_Erick_McCormack_-_4.jpg",
+            "description": "<h4>Elk Fit<\/h4>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "d8febc0d-54d8-44f2-a176-e0589b4d2017": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Conquer_Fitness_-_Erick_McCormack_-_4.jpg",
+            "description": "<h4>Conquer Weight Loss<\/h4>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "8b20d081-79f1-45d9-a501-7dbb17e4b687",
+        "4dd86e36-22d0-4bf0-a131-d32ad9c705aa",
+        "d8febc0d-54d8-44f2-a176-e0589b4d2017"
+      ],
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-black text-white",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "94cee62d-5a96-4b89-b4d8-ff28c68f7e1b": {
+      "type": "two-three-up",
+      "blocks": {
+        "284b970e-4862-4142-addd-cf6962c9018c": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Conquer_Fitness_-_Erick_McCormack_-_4.jpg",
+            "description": "<h4>Conquer Strength<\/h4>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "e85ca01d-ef04-49ad-b33d-cbac5bd1ed91": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Conquer_Fitness_-_Erick_McCormack_-_4.jpg",
+            "description": "<h4>Train with Zac Griffith<\/h4>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "2b862127-2230-410e-accd-e113510121ca": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Conquer_Fitness_-_Erick_McCormack_-_4.jpg",
+            "description": "<h4>Train with Hush<\/h4>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "284b970e-4862-4142-addd-cf6962c9018c",
+        "e85ca01d-ef04-49ad-b33d-cbac5bd1ed91",
+        "2b862127-2230-410e-accd-e113510121ca"
+      ],
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-black text-white",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "2575b47d-378b-403c-b6d5-9904fb20b178": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "template--15047974125610__2575b47d-378b-403c-b6d5-9904fb20b178-brand-value-callout-1": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "description": "<h4>1200 Calories<\/h4>"
+          }
+        },
+        "239e19a4-a9b9-4643-a8db-eb86b4ddf1a5": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "description": "<h4>1400 Calories<\/h4>"
+          }
+        },
+        "265dde48-ff3a-4eb8-8b3c-ad787ab68de0": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "description": "<h4>1600 Calories<\/h4>"
+          }
+        },
+        "bba56a7c-59fb-4b42-9bbe-f16a6e183002": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "description": "<h4>1800 Calories<\/h4>"
+          }
+        },
+        "47c5a9be-48d9-48d9-801d-0afec1690e17": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "description": "<h4>2100 Calories<\/h4>"
+          }
+        },
+        "4c636ba5-3cd1-4f12-80aa-4a65da85e914": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "description": "<h4>2500 Calories<\/h4>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15047974125610__2575b47d-378b-403c-b6d5-9904fb20b178-brand-value-callout-1",
+        "239e19a4-a9b9-4643-a8db-eb86b4ddf1a5",
+        "265dde48-ff3a-4eb8-8b3c-ad787ab68de0",
+        "bba56a7c-59fb-4b42-9bbe-f16a6e183002",
+        "47c5a9be-48d9-48d9-801d-0afec1690e17",
+        "4c636ba5-3cd1-4f12-80aa-4a65da85e914"
+      ],
+      "settings": {
+        "heading": "<h2>Daily Meal Plans<\/h2><h5><em>(in calories per day)<\/em><\/h5>",
+        "image_desktop": "shopify:\/\/shop_images\/bcaa-trail_pack-squeeze_bottle-gym-fitness-lifestyle-09801.jpg",
+        "full_width": false,
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-3",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1bf40a76-0f94-4593-b5bb-4109ca146b47": {
+      "type": "two-three-up",
+      "blocks": {
+        "72d59f72-b0ad-45d0-957e-9ff97405cd81": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/small-weight-loss-system.png",
+            "description": "<h4>WEIGHT-LOSS SYSTEM<\/h4>",
+            "cta_text": "Shop Weight-Loss",
+            "cta_link": "shopify:\/\/products\/weight-loss-system",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "1604984d-0a5a-4903-bf1d-1b83ac7ea328": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Strength_System_2x_a1da90c9-e699-47fc-9b12-80223d3df4d8.png",
+            "description": "<h4>STRENGTH SYSTEM<\/h4>",
+            "cta_text": "Shop Strength",
+            "cta_link": "shopify:\/\/products\/strength-system",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "c29a3724-35ce-4ee9-8679-5be1549d07ed": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Keep_Hammering_System_2x_5cc5bab2-8f12-4e35-bdbc-307968331a13.png",
+            "description": "<h4>KEEP HAMMERING SYSTEM<\/h4>",
+            "cta_text": "Shop Keep Hammering",
+            "cta_link": "shopify:\/\/products\/keep-hammering-system",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "72d59f72-b0ad-45d0-957e-9ff97405cd81",
+        "1604984d-0a5a-4903-bf1d-1b83ac7ea328",
+        "c29a3724-35ce-4ee9-8679-5be1549d07ed"
+      ],
+      "settings": {
+        "heading": "<h3>Systems that support your hard work<\/h3>",
+        "copy": "<p>No matter your fitness goals, WHITELABEL offers a variety of healthy products to support the hard work you are putting your body through. Check out these systems and maximize your results.<\/p>",
+        "cta_text": "Shop All Bundled Stacks",
+        "cta_link": "shopify:\/\/collections\/stacks",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 32
+      }
+    },
+    "fab2fec6-924f-43a4-81c3-5a4cca7d6d63": {
+      "type": "image-text",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/ConquerMoreMenu-100KChallenge.jpg",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h2>The 100k Conquer Fitness Challenge<\/h2>",
+        "copy": "<h4><strong>This is your chance to commit to reaching your goals. <\/strong><\/h4><p>Do you have what it takes to win over $30,000 in hard-earned cash? Commit to your health and make this year your best. <\/p><p>Join us today!<\/p>",
+        "cta_text_1": "Join Now",
+        "cta_url_1": "#",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "full_width": false,
+        "content_text_color": "#3D3935",
+        "content_bg_color": "#ffffff",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 72,
+        "bottom_margin_mobile": 32
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "3f577830-f36a-4671-b2f1-73fa161242fa",
+    "3624b8c1-66da-40c5-87d2-672f0e31b0cc",
+    "16976729967001aa66",
+    "de3e7a11-309a-45c8-b600-2f990a0b997d",
+    "e1881256-b498-4800-9ddf-109b5f110ef1",
+    "7f701cfe-012d-491a-9f56-63bf12cea3ac",
+    "fa0644e4-0200-41fd-bfbe-ca7f2ae87387",
+    "4ad3e455-42fd-4c38-be0a-ccbd6f3db93e",
+    "94cee62d-5a96-4b89-b4d8-ff28c68f7e1b",
+    "2575b47d-378b-403c-b6d5-9904fb20b178",
+    "1bf40a76-0f94-4593-b5bb-4109ca146b47",
+    "fab2fec6-924f-43a4-81c3-5a4cca7d6d63"
+  ]
+}

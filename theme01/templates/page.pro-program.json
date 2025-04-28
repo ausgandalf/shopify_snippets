@@ -1,0 +1,164 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/ProProgram-Hero-Desktop.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 720,
+        "media_height_mobile": 360,
+        "subheading": "BECOME A PRO",
+        "heading": "<h1>JOIN OUR PRO PROGRAM<\/h1>",
+        "copy": "<p>The WHITELABEL Pro Program is a membership program for qualified first responders, outdoor industry professionals, industry partners and more, to receive special pricing ranging from 20-40% off MSRP.<\/p><p>Membership is by application, is not guaranteed and can be revoked at any time. If you are interested in applying, please sign in with an existing account to start the application or create a new account below.<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 500,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#ff5100",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "c50b5987-0e08-4b9f-bf84-8f1fff674ca3": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15254387032106__c50b5987-0e08-4b9f-bf84-8f1fff674ca3-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>STEP 1<\/h3><p>Fill out the form below with all your details and qualifications to apply for the program.<\/p>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--15254387032106__c50b5987-0e08-4b9f-bf84-8f1fff674ca3-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>STEP 2<\/h3><p>If approved, you will receive an email with your discount code in the next 24-48 hours.<\/p><p><em>Do not share this code or you'll be terminated from the program.<\/em><\/p>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "4a0b8004-c6d2-42fd-990a-a9d68b688237": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>STEP 3<\/h3><p>Start shopping and save on your favorite WHITELABEL products.<\/p>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15254387032106__c50b5987-0e08-4b9f-bf84-8f1fff674ca3-up-block-1",
+        "template--15254387032106__c50b5987-0e08-4b9f-bf84-8f1fff674ca3-up-block-2",
+        "4a0b8004-c6d2-42fd-990a-a9d68b688237"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>HOW IT WORKS<\/h2>",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "17018799516d197e90": {
+      "type": "apps",
+      "blocks": {
+        "d905b3e7-9a9f-41f2-a3dc-821bd9c09d2f": {
+          "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/form-block\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "iVbFaA7oKiZToa38FoTesA",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#FFF",
+            "input_background_color_focus": "#F4DADA",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2D2727",
+            "input_font_color": "#3D3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#EBE9E9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#F3F3F3",
+            "sub_btn_bg_color": "#3F3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#FFFFFF",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "d905b3e7-9a9f-41f2-a3dc-821bd9c09d2f"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25",
+    "c50b5987-0e08-4b9f-bf84-8f1fff674ca3",
+    "17018799516d197e90"
+  ]
+}

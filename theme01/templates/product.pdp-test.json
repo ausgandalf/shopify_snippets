@@ -1,0 +1,276 @@
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "settings": {
+        "button_unavailable_label": "Not available",
+        "unavailable_message": "We're sorry, this combination of options does not exist for this product. Please update your selections.",
+        "first_open": true,
+        "first_accordion_label": "About This Product",
+        "second_accordion_label": "Product Facts",
+        "third_accordion_label": "Benefits",
+        "fourth_accordion_label": "Recommended usage",
+        "fifth_accordion_label": "Highlights",
+        "sixth_accordion_label": "Materials & Specs",
+        "bottom_margin_mobile": 40,
+        "bottom_margin_desktop": 70
+      }
+    },
+    "770e8fc2-147e-4e5c-adfc-c9a1dd77612d": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/slumber-gummy-lifestyle-3.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/8-28-23-SlumberGummies-Hero-BG-Mobile_05f59e23-4248-4448-878f-77190e3a43fd.jpg",
+        "video_url": "https:\/\/youtu.be\/YF1NmzMXSEg?feature=shared",
+        "subheading": "Subheading",
+        "heading": "<h2>Image \/ Text CTA<\/h2>",
+        "copy": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "932f3e07-edcf-4e6b-90cb-91f959682fce": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "template--14999591125034__932f3e07-edcf-4e6b-90cb-91f959682fce-brand-value-logo-1": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--14999591125034__932f3e07-edcf-4e6b-90cb-91f959682fce-brand-value-logo-2": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--14999591125034__932f3e07-edcf-4e6b-90cb-91f959682fce-brand-value-logo-3": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--14999591125034__932f3e07-edcf-4e6b-90cb-91f959682fce-brand-value-logo-4": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "template--14999591125034__932f3e07-edcf-4e6b-90cb-91f959682fce-brand-value-logo-1",
+        "template--14999591125034__932f3e07-edcf-4e6b-90cb-91f959682fce-brand-value-logo-2",
+        "template--14999591125034__932f3e07-edcf-4e6b-90cb-91f959682fce-brand-value-logo-3",
+        "template--14999591125034__932f3e07-edcf-4e6b-90cb-91f959682fce-brand-value-logo-4"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Product Labels<\/h2>",
+        "cta_text": "",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "bdb33ff8-adef-4b9f-a0f4-1c42c526fd86": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "template--14999591125034__bdb33ff8-adef-4b9f-a0f4-1c42c526fd86-brand-value-callout-1": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>Callout Title<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "template--14999591125034__bdb33ff8-adef-4b9f-a0f4-1c42c526fd86-brand-value-callout-2": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>Callout Title<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "template--14999591125034__bdb33ff8-adef-4b9f-a0f4-1c42c526fd86-brand-value-callout-3": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>Callout Title<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "template--14999591125034__bdb33ff8-adef-4b9f-a0f4-1c42c526fd86-brand-value-callout-4": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>Callout Title<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14999591125034__bdb33ff8-adef-4b9f-a0f4-1c42c526fd86-brand-value-callout-1",
+        "template--14999591125034__bdb33ff8-adef-4b9f-a0f4-1c42c526fd86-brand-value-callout-2",
+        "template--14999591125034__bdb33ff8-adef-4b9f-a0f4-1c42c526fd86-brand-value-callout-3",
+        "template--14999591125034__bdb33ff8-adef-4b9f-a0f4-1c42c526fd86-brand-value-callout-4"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Product Labels Explained<\/h2>",
+        "image_desktop": "shopify:\/\/shop_images\/8-28-23-SlumberGummies-Hero-BG-Mobile.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/slumber-gummy-lifestyle-3.jpg",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "2ab3e951-86d0-4fcc-8089-3473362364d6": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--14999591125034__2ab3e951-86d0-4fcc-8089-3473362364d6-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>Made for the Wild<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--14999591125034__2ab3e951-86d0-4fcc-8089-3473362364d6-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Hype_Shaker_-_Lifestyle_-_LR-11.jpg",
+            "description": "<h3>Great tasting<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--14999591125034__2ab3e951-86d0-4fcc-8089-3473362364d6-up-block-1",
+        "template--14999591125034__2ab3e951-86d0-4fcc-8089-3473362364d6-up-block-2"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Our Products<\/h2>",
+        "copy": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "16956680304ce2d885": {
+      "type": "apps",
+      "blocks": {
+        "e4221b46-6e83-4b0f-9745-868e211d9778": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "e4221b46-6e83-4b0f-9745-868e211d9778"
+      ],
+      "settings": {
+      }
+    },
+    "faq_accordions_QthDfV": {
+      "type": "faq-accordions",
+      "blocks": {
+        "faq_accordion_cLQYGP": {
+          "type": "faq-accordion",
+          "repeater": "{{ product.metafields.custom.faq_accordions.value }}",
+          "settings": {
+            "faq_question": "{{ block.repeater.question | metafield_tag }}",
+            "faq_answer": "{{ block.repeater.answer | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "faq_accordion_cLQYGP"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>FAQ Questions<\/h2>",
+        "cta_text": "Button label",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "770e8fc2-147e-4e5c-adfc-c9a1dd77612d",
+    "932f3e07-edcf-4e6b-90cb-91f959682fce",
+    "bdb33ff8-adef-4b9f-a0f4-1c42c526fd86",
+    "2ab3e951-86d0-4fcc-8089-3473362364d6",
+    "16956680304ce2d885",
+    "faq_accordions_QthDfV"
+  ]
+}

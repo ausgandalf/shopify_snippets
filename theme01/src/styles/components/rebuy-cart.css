@@ -1,0 +1,32 @@
+.rebuy-cart__flyout-recommendations .rebuy-widget h4.primary-title {
+  margin-top: 0;
+  padding-top: 1.75rem;
+}
+.rebuy-cart__flyout-footer .rebuy-cart__flyout-subtotal {
+  margin-bottom: 10px;
+}
+.rebuy-cart .rebuy-cart__flyout {
+  z-index: 99999999999999;
+}
+.rebuy-cart__progress-free-product-variant-select-container .rebuy-cart__progress-free-product-variant-select {
+  right: 0;
+  left: auto;
+  outline: none;
+}
+.rebuy-cart__progress-free-product-variant-select-container .rebuy-cart__progress-free-product-variant-select:focus,
+.rebuy-cart__progress-free-product-variant-select-container .rebuy-cart__progress-free-product-variant-select:focus-visible,
+.rebuy-cart__progress-free-product-variant-select-container .rebuy-cart__progress-free-product-variant-select:focus-within {
+  outline: none!important;
+  border: none!important;
+}
+#rebuy-cart__progress-bar-meter-label {
+  font-weight: 600;
+}
+.rebuy-cart__progress-free-product-variant-select-prompt {
+  border-radius: var(--btn-radius);
+  border-width: var(--btn-border-thickness);
+  display: inline-flex;
+  font-family: Kairos Sans W1G,sans-serif;
+  padding: 1rem;
+  text-transform: uppercase;
+}

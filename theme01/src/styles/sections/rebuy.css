@@ -1,0 +1,90 @@
+.powered-by-rebuy {
+  @apply hidden;
+}
+
+.rebuy-widget.rebuy-widget .rebuy-product-block,
+.rebuy-recommended-products .rebuy-product-block {
+  @apply px-3 lg:px-4;
+}
+
+.rebuy-widget.rebuy-widget .rebuy-product-block .rebuy-product-info {
+  @apply text-left grow-0;
+}
+
+.rebuy-product-title {
+  @apply font-bold text-h6-m lg:text-h6 leading-tight;
+}
+
+.rebuy-widget.rebuy-widget .rebuy-product-block .rebuy-product-actions {
+  @apply grow grid items-end grid-rows-[auto,1fr];
+}
+
+.rebuy-widget.rebuy-widget .rebuy-select {
+  @apply min-w-0 border-2 bg-select-arrow;
+  background-size: 14px;
+  background-position: right 20px center;
+}
+
+.rebuy-widget.rebuy-widget .rebuy-underline {
+  @apply border-none;
+}
+
+.rebuy-widget.rebuy-widget .rebuy-button {
+  @apply row-start-4 font-bold uppercase min-h-[3rem] hover:bg-white hover:text-grey-8 transition-colors p-2 duration-300;
+}
+
+.rebuy-widget.rebuy-widget .flickity-button {
+  @apply rounded-none border-2 border-solid border-grey-3 bg-select-arrow-nav bg-no-repeat bg-center hover:bg-select-arrow-nav hover:bg-no-repeat hover:bg-center hover:border-grey-7 transition-colors top-[15%] sm:top-1/4 xl:top-[30%];
+}
+
+.rebuy-widget.rebuy-widget .flickity-button.previous {
+  @apply translate-x-1/2 rotate-90;
+}
+
+.rebuy-widget.rebuy-widget .flickity-button.next {
+  @apply -translate-x-1/2 -rotate-90;
+}
+
+.rebuy-widget.rebuy-widget .flickity-button svg {
+  @apply opacity-0;
+}
+
+.rebuy-review-count-label,
+.rebuy-widget.rebuy-widget .flickity-page-dots {
+  @apply hidden;
+}
+
+.rebuy-product-review {
+  @apply flex;
+}
+
+/* Inline Cart Widget */
+
+.rebuy-widget.rebuy-widget.widget-type-cart {
+  @apply px-4 pt-7 pb-3 bg-grey-2;
+}
+
+.rebuy-widget.widget-type-cart .rebuy-product-grid.small-style-line .rebuy-product-block .rebuy-product-media {
+  @apply w-1/5 sm:w-1/4;
+}
+
+.rebuy-widget.widget-type-cart .rebuy-product-block + .rebuy-product-block,
+.rebuy-widget.widget-type-cart .rebuy-product-block {
+  @apply border-t border-color-3 first:border-t-0;
+}
+
+.rebuy-widget .rebuy-money.sale {
+  @apply font-bold;
+}
+
+.rebuy-widget.rebuy-widget .rebuy-product-review .rebuy-review-count {
+  @apply whitespace-nowrap;
+}
+
+#rebuy-cart .rebuy-cart__flyout-empty-cart a {
+  @apply font-primary no-underline uppercase hover:bg-white hover:text-black transition-colors;
+}
+
+.is-b2b-customer .rebuy-cart__flyout-item-subscription {
+  @apply !hidden;
+}

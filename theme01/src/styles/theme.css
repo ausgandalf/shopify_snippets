@@ -1,0 +1,63 @@
+/**
+ * Global Styles
+ * ========================================
+ *
+*/
+
+/* Tailwind */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Vendor */
+@import '../../node_modules/swiper/swiper.min.css';
+@import '../../node_modules/swiper/modules/navigation.min.css';
+@import '../../node_modules/swiper/modules/scrollbar.min.css';
+
+/* Core Styles */
+@import '/core/resets.css';
+@import '/core/stamped.css';
+@import '/core/typography.css';
+@import '/core/recharge.css';
+
+/* Components */
+@import '/components/accordion.css';
+@import '/components/alerts.css';
+@import '/components/buttons.css';
+@import '/components/cart.css';
+@import '/components/inputs.css';
+@import '/components/radio.css';
+@import '/components/range-sliders.css';
+@import '/components/rebuy-cart.css';
+@import '/components/scrollbars.css';
+@import '/components/selects.css';
+@import '/components/tables.css';
+@import '/components/modal.css';
+
+/* Sections */
+@import '/sections/brand-value-callout.css';
+@import '/sections/brand-value-logo.css';
+@import '/sections/footer.css';
+@import '/sections/blog.css';
+@import '/sections/general-content.css';
+@import '/sections/header.css';
+@import '/sections/hero.css';
+@import '/sections/image-text.css';
+@import '/sections/product-gallery.css';
+@import '/sections/promo-banner.css';
+@import '/sections/two-three-up.css';
+@import '/sections/four-up.css';
+@import '/sections/product-buybox.css';
+@import '/sections/rebuy.css';
+@import '/sections/category-row.css';
+@import '/sections/boost.css';
+/* @import '/sections/hulk-forms.css'; */
+@import '/sections/gift-card.css';
+@import '/sections/related-articles.css';
+@import '/sections/account.css';
+@import '/sections/basic-html.css';
+@import '/sections/product-recommendation.css';
+
+body .uwy.userway_p3 .uai {
+  @apply !bottom-[100px];
+}

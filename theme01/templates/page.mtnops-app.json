@@ -1,0 +1,115 @@
+{
+  "sections": {
+    "3f577830-f36a-4671-b2f1-73fa161242fa": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/App-Hero-Desktop.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 610,
+        "media_height_mobile": 250,
+        "logo": "shopify:\/\/shop_images\/App-QrCode.png",
+        "subheading": "THE POWER OF OPS IN YOUR HAND",
+        "heading": "<h2>DOWNLOAD OUR APP<\/h2>",
+        "copy": "<p>Scan the QR code above with your smart device to download it now and get 20% OFF your first app purchase with us.<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "https:\/\/ztv3peiv.tapc.art",
+        "cta_type_1": "button button--secondary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#262626",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-first",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "537b6529-acab-4f57-b04f-59a7118f5fb9": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "template--15054946467882__537b6529-acab-4f57-b04f-59a7118f5fb9-brand-value-logo-1": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Asset_5_66618d50-6f31-4bbb-b634-73d86927564e.svg",
+            "logo_link": "",
+            "logo_label": "<h5>EARLY ACCESS TO DEALS<\/h5>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--15054946467882__537b6529-acab-4f57-b04f-59a7118f5fb9-brand-value-logo-2": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Asset_6_7e7a0f37-6cc2-477f-9364-e2d246f45ebc.svg",
+            "logo_link": "",
+            "logo_label": "<h5>CHAT WITH US ANYTIME<\/h5>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--15054946467882__537b6529-acab-4f57-b04f-59a7118f5fb9-brand-value-logo-3": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Asset_7_6dbe8959-f162-4c65-a30d-0c3e5fc64ad8.svg",
+            "logo_link": "",
+            "logo_label": "<h5>EXCLUSIVE OFFERS<\/h5>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--15054946467882__537b6529-acab-4f57-b04f-59a7118f5fb9-brand-value-logo-4": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Asset_8_6a291c6b-f2a8-47e2-871e-2fb069d91c35.svg",
+            "logo_link": "",
+            "logo_label": "<h5>TRACKING UPDATES<\/h5>",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "template--15054946467882__537b6529-acab-4f57-b04f-59a7118f5fb9-brand-value-logo-1",
+        "template--15054946467882__537b6529-acab-4f57-b04f-59a7118f5fb9-brand-value-logo-2",
+        "template--15054946467882__537b6529-acab-4f57-b04f-59a7118f5fb9-brand-value-logo-3",
+        "template--15054946467882__537b6529-acab-4f57-b04f-59a7118f5fb9-brand-value-logo-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h3>WHY YOU SHOULD JOIN<\/h3>",
+        "cta_text": "",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-grey-1_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "3f577830-f36a-4671-b2f1-73fa161242fa",
+    "general-content",
+    "537b6529-acab-4f57-b04f-59a7118f5fb9"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {
+        "donation_product": "conquer-hunger-donation0",
+        "donation_message": "<p>Add $5 for <a href=\"#tooltip\" title=\"#tooltip\">Operation Conquer Hunger<\/a><\/p>",
+        "donation_tooltip": "<p>Donate a small portion of your purchase to support <a href=\"\/pages\/conquer-hunger\" target=\"_blank\" title=\"Conquer Hunger\">Operation Conquer Hunger<\/a>.<\/p>",
+        "enable_goxvid": true,
+        "govxid_message": "Military, First Responder, Government Employee and Teacher discount available. Verify with GovX ID to instantly unlock your savings.",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "settings": {
+        "button_unavailable_label": "Not Offered",
+        "unavailable_message": "We're sorry, this combination of options does not exist for this product. Please update your selections.",
+        "bottom_margin_mobile": 40,
+        "bottom_margin_desktop": 70
+      }
+    },
+    "1697060118b92f9d14": {
+      "type": "apps",
+      "blocks": {
+        "119d9ede-0022-43e9-946f-49ef76c75aa5": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "109551",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "119d9ede-0022-43e9-946f-49ef76c75aa5"
+      ],
+      "settings": {
+      }
+    },
+    "e1877483-8afe-4d51-8b4b-6d248afe5f03": {
+      "type": "hero-section",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/ConquerHunger-Support-BG.png",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 700,
+        "media_height_mobile": 210,
+        "logo": "shopify:\/\/shop_images\/ConquerHunger-Stacked-White.svg",
+        "subheading": "",
+        "heading": "<h3>Every order = 1 meal<\/h3>",
+        "copy": "<p>For every order placed through our website, we donate one meal to families in need. Thank you for helping us make a positive impact in our communities.<\/p>",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "https:\/\/youtu.be\/dvikgLar9iw",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "cta_text_1": "Button Label",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "Learn More",
+        "cta_url_2": "shopify:\/\/pages\/conquer-hunger",
+        "cta_type_2": "button button--secondary-invert",
+        "full_width": true,
+        "logo_size": 250,
+        "content_text_color": "#FFFFFF",
+        "content_bg_color": "#161412",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-first",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "1697060118b92f9d14",
+    "e1877483-8afe-4d51-8b4b-6d248afe5f03"
+  ]
+}

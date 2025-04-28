@@ -1,0 +1,126 @@
+{% style %}
+  :root {
+    --ada-outline: #4400FF;
+    --color-1: {{- settings.color_one -}};
+    --color-2: {{- settings.color_two -}};
+    --color-3: {{- settings.color_three -}};
+    --color-4: {{- settings.color_four -}};
+    --color-5: {{- settings.color_five -}};
+    --color-6: {{- settings.color_six -}};
+    --color-7: {{- settings.color_seven -}};
+    --color-8: {{- settings.color_eight -}};
+    --grey-1: {{- settings.grey_one_color -}};
+    --grey-2: {{- settings.grey_two_color -}};
+    --grey-3: {{- settings.grey_three_color -}};
+    --grey-4: {{- settings.grey_four_color -}};
+    --grey-5: {{- settings.grey_five_color -}};
+    --grey-6: {{- settings.grey_six_color -}};
+    --grey-7: {{- settings.grey_seven_color -}};
+    --grey-8: {{- settings.grey_eight_color -}};
+    --error-color: {{- settings.error_color -}};
+    --error-light-color: {{- settings.error_light_color -}};
+    --success-color: {{- settings.success_color -}};
+    --success-light-color: {{- settings.success_light_color -}};
+
+    /* Buttons */
+    --btn-border-thickness: {{- settings.buttons_border_thickness | append: 'px' -}};
+    --btn-radius: {{- settings.buttons_radius | append: 'px' -}};
+    --btn-disabled-bg: {{- settings.btn_disabled_bg -}};
+    --btn-disabled-text: {{- settings.btn_disabled_text -}};
+    --btn-primary-bg: {{- settings.btn_primary_bg -}};
+    --btn-primary-text: {{- settings.btn_primary_text -}};
+    --btn-primary-border: {{- settings.btn_primary_border -}};
+    --btn-primary-hover: {{- settings.btn_primary_hover -}};
+    --btn-primary-hover-arrow: {{- settings.btn_primary_hover_arrow -}};
+    --btn-primary-invert-bg: {{- settings.btn_primary_invert_bg -}};
+    --btn-primary-invert-text: {{- settings.btn_primary_invert_text -}};
+    --btn-primary-invert-border: {{- settings.btn_primary_invert_border -}};
+    --btn-primary-invert-hover: {{- settings.btn_primary_invert_hover -}};
+    --btn-primary-invert-hover-arrow: {{- settings.btn_primary_invert_hover_arrow -}};
+    --btn-secondary-bg: {{- settings.btn_secondary_bg -}};
+    --btn-secondary-text: {{- settings.btn_secondary_text -}};
+    --btn-secondary-border: {{- settings.btn_secondary_border -}};
+    --btn-secondary-hover: {{- settings.btn_secondary_hover -}};
+    --btn-secondary-hover-arrow: {{- settings.btn_secondary_hover_arrow -}};
+    --btn-secondary-invert-bg: {{- settings.btn_secondary_invert_bg -}};
+    --btn-secondary-invert-text: {{- settings.btn_secondary_invert_text -}};
+    --btn-secondary-invert-border: {{- settings.btn_secondary_invert_border -}};
+    --btn-secondary-invert-hover: {{- settings.btn_secondary_invert_hover -}};
+    --btn-secondary-invert-hover-arrow: {{- settings.btn_secondary_invert_hover_arrow -}};
+    --btn-link-color: {{- settings.btn_link_color -}};
+    --inline-link-color: {{- settings.inline_link_color -}};
+    --inline-link-color-hover: {{- settings.inline_link_color_hover -}};
+    --inline-link-color-invert: {{- settings.inline_link_color_invert -}};
+    --inline-link-color-invert-hover: {{- settings.inline_link_color_invert_hover -}};
+
+    /* Inputs & Dropdowns */
+    --input-border-thickness: {{- settings.input_border_thickness | append: 'px' -}};
+    --input-radius: {{- settings.input_radius | append: 'px' -}};
+    --input-disabled: {{- settings.input_disabled -}};
+    --input-bg: {{- settings.input_bg -}};
+    --input-text: {{- settings.input_text -}};
+    --input-border: {{- settings.input_border -}};
+    --input-hover-bg: {{- settings.input_hover_bg -}};
+    --input-hover-text: {{- settings.input_hover_text -}};
+    --input-hover-border: {{- settings.input_hover_border -}};
+    --input-active-bg: {{- settings.input_active_bg -}};
+    --input-active-text: {{- settings.input_active_text -}};
+    --input-active-border: {{- settings.input_active_border -}};
+    --input-focus-bg: {{- settings.input_focus_bg -}};
+    --input-focus-text: {{- settings.input_focus_text -}};
+    --input-focus-border: {{- settings.input_focus_border -}};
+    --dropdown-bg: {{- settings.dropdown_bg -}};
+    --dropdown-text: {{- settings.dropdown_text -}};
+    --dropdown-border: {{- settings.dropdown_border -}};
+    --dropdown-active-bg: {{- settings.dropdown_active_bg -}};
+    --dropdown-active-text: {{- settings.dropdown_active_text -}};
+    --dropdown-active-border: {{- settings.dropdown_active_border -}};
+    --dropdown-hover-bg: {{- settings.dropdown_hover_bg -}};
+    --dropdown-hover-text: {{- settings.dropdown_hover_text -}};
+    --dropdown-hover-border: {{- settings.dropdown_hover_border -}};
+
+    /* Checkboxes & Radios */
+    --checkbox-bg: {{- settings.checkbox_bg -}};
+    --checkbox-border: {{- settings.checkbox_border -}};
+    --checkbox-active-bg: {{- settings.checkbox_active_bg -}};
+    --checkbox-active-icon: {{- settings.checkbox_active_icon -}};
+    --checkbox-active-border: {{- settings.checkbox_active_border -}};
+    --checkbox-disabled-bg: {{- settings.checkbox_disabled_bg -}};
+    --checkbox-disabled-border: {{- settings.checkbox_disabled_border -}};
+    --checkbox-active-disabled-bg: {{- settings.checkbox_active_disabled_bg -}};
+    --checkbox-active-disabled-icon: {{- settings.checkbox_active_disabled_icon -}};
+    --checkbox-active-disabled-border: {{- settings.checkbox_active_disabled_border -}};
+    --radio-bg: {{- settings.radio_bg -}};
+    --radio-border: {{- settings.radio_border -}};
+    --radio-active-bg: {{- settings.radio_active_bg -}};
+    --radio-active-content: {{- settings.radio_active_content -}};
+    --radio-active-border: {{- settings.radio_active_border -}};
+    --radio-disabled-bg: {{- settings.radio_disabled_bg -}};
+    --radio-disabled-border: {{- settings.radio_disabled_border -}};
+    --radio-active-disabled-bg: {{- settings.radio_active_disabled_bg -}};
+    --radio-active-disabled-content: {{- settings.radio_active_disabled_content -}};
+    --radio-active-disabled-border: {{- settings.radio_active_disabled_border -}};
+
+    /* Tables */
+    --table-top-border: {{- settings.table_top_border -}};
+    --table-borders: {{- settings.table_borders -}};
+    --table-header-bg: {{- settings.table_header_bg -}};
+    --table-header-text: {{- settings.table_header_text -}};
+    --table-bg: {{- settings.table_bg -}};
+    --table-text: {{- settings.table_text -}};
+  }
+
+  /* Fonts */
+  @font-face {
+    font-family: 'Kairos Sans W1G';
+    src: url({{ 'KairosSansW1G-Bold.eot' | asset_url }});
+    src: url({{ 'KairosSansW1G-Bold.eot?#iefix' | asset_url }}) format('embedded-opentype'),
+        url({{ 'KairosSansW1G-Bold.woff2' | asset_url }}) format('woff2'),
+        url({{ 'KairosSansW1G-Bold.woff' | asset_url }}) format('woff'),
+        url({{ 'KairosSansW1G-Bold.ttf' | asset_url }}) format('truetype'),
+        url({{ 'KairosSansW1G-Bold.svg#KairosSansW1G-Bold' | asset_url }}) format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+{% endstyle %}

@@ -1,0 +1,24 @@
+{
+  "parent": "page.contact.json",
+  "context": {
+    "b2b": true
+  },
+  "sections": {
+    "contact-info": {
+      "settings": {
+      },
+      "blocks": {
+        "5664a790-9c86-4e41-9588-ddca9f286ce4": {
+          "settings": {
+            "info_copy": "<p><a href=\"tel:888-760-3393\" title=\"888-760-3393\">888-374-1128<\/a><\/p>"
+          }
+        },
+        "fd837c23-851a-4672-9a6b-a37070ae1c3d": {
+          "settings": {
+            "info_copy": "<p>sales@whitelabel.com<\/p>"
+          }
+        }
+      }
+    }
+  }
+}

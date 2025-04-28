@@ -1,0 +1,186 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "image_text_6dRCw6": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "lrsrun",
+        "image_desktop": "shopify:\/\/shop_images\/4-5-24-KeepHammering-10KLaunch-Web-LP-Banner_3ec2a538-b0e6-482b-99ab-c8f52f1d75ae.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/4-5-24-KeepHammering-10KLaunch-Web-LP-Banner_a671ad0b-1826-466c-b791-7d91d0512fb1.jpg",
+        "video_url": "",
+        "subheading": "JUNE 23rd 2024",
+        "heading": "<h2>KEEP HAMMERING 10K<\/h2>",
+        "copy": "<p>Come join us in Oregon for our KEEP HAMMERING 10K. It will only cost you $50 to enter and  each participant with recieve a free shirt, and we have some killer prizes for the male and female winners! We only have 500 spots available so jump on it!<\/p><p><br\/><\/p>",
+        "cta_text_1": "SIGN UP TODAY!",
+        "cta_url_1": "https:\/\/runsignup.com\/Race\/OR\/Eugene\/KeepHammering10KMtPisgah",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 50,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1708622852f64031b1": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_AmHLLU": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "123553",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_AmHLLU"
+      ],
+      "settings": {
+      }
+    },
+    "hero_section_UzgV7L": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Untitled-2_44c33cd0-bcfa-4f53-9cc8-4bd3411e4592.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Untitled-2_44c33cd0-bcfa-4f53-9cc8-4bd3411e4592.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 720,
+        "media_height_mobile": 360,
+        "subheading": "",
+        "heading": "",
+        "copy": "<p>\"To push like I do, I know what my body needs. I need to fuel properly and I know I get out what I put in.\" - Cam Hanes<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-end",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "two_three_up_APJDn4": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_m3H7hi": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/keep-hammering-pre-workoutsupplements1115630120-409686.png",
+            "description": "<h4>KEEP HAMMERING PRE-WORKOUT<\/h4><p>With energy coming from a nitric oxide release, 200 mg caffeine, and a steady dose of necessary carbs, you’ll have the energy and strength you need to lift, run, shoot.<\/p>",
+            "cta_text": "SHOP NOW",
+            "cta_link": "shopify:\/\/products\/kh-pre-workout",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_8YpWXH": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/keep-hammering-protein-blendsupplements3115870129-316591.png",
+            "description": "<h4>KEEP HAMMERING PROTEIN BLEND<\/h4><p>With a mix of milk and whey proteins, the protein is absorbed <br\/>immediately and over time, delivering critical amino acids to your <br\/>muscle for growth and repair.<\/p>",
+            "cta_text": "SHOP NOW",
+            "cta_link": "shopify:\/\/products\/kh-protein",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_7rb9GP": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/keep-hammering-bcaa-211supplements2115410130-310829.png",
+            "description": "<h4>KEEP HAMMERING BCAA 2:1:1<\/h4><p>Cam Hanes KEEP HAMMERING BCAA is a branch chain amino acid formula to <br\/>aid in muscle growth and recovery - before, during, or after exercising.<\/p>",
+            "cta_text": "SHOP NOW",
+            "cta_link": "shopify:\/\/products\/kh-bcaa",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_m3H7hi",
+        "up_block_8YpWXH",
+        "up_block_7rb9GP"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>KEEP HAMMERING LINE<\/h2>",
+        "copy": "<p>This line as Cam describes it, is a “Bare Bone Basic” approach to giving your body the fuel it needs to #KeepHammering before, during and after your workout. Train harder, recover quicker, and hunt easy—Keep Hammering.<br\/><\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "image_text_6dRCw6",
+    "1708622852f64031b1",
+    "hero_section_UzgV7L",
+    "two_three_up_APJDn4"
+  ]
+}

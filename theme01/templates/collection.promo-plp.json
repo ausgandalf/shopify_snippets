@@ -1,0 +1,75 @@
+{
+  "sections": {
+    "hero_section_LzMGQr": {
+      "type": "hero-section",
+      "custom_css": [
+        ".hero-content {background-color: rgba(32, 32, 32, 0.5);}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Frame_2917_6a8d8616-506f-4813-a12b-7e128646d02b.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/lrs-colorbanner.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241E18",
+        "bg_overlay_opacity": 30,
+        "media_height": 720,
+        "media_height_mobile": 360,
+        "subheading": "LIFT RUN SHOOT GIVEAWAY",
+        "heading": "<h2>WIN A 3-day VIP EXPERIENCE<\/h2>",
+        "copy": "<p>This $7500 value experience is up for grabs! Now through Monday (MAR 29th - April 1st) you'll get 1 entry entered into this giveaway. One purchase is all it may take to spend time with a legend in the industry, gain invaluable insights, and create memories that will last a lifetime. Grab one of our best sellers below!<\/p>",
+        "cta_text_1": "LEARN ABOUT LIFT RUN SHOOT",
+        "cta_url_1": "shopify:\/\/pages\/lift-run-shoot",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#FFFFFF",
+        "content_bg_color": "#3D3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-first",
+        "hide_content": false,
+        "bottom_margin_desktop": 20,
+        "bottom_margin_mobile": 20
+      }
+    },
+    "bf41f264-2a6a-4948-946e-a5bfd37b1407": {
+      "type": "apps",
+      "blocks": {
+        "4ed327e4-fbcc-451c-862a-bdc8d5e1462a": {
+          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/product-filter\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "4ed327e4-fbcc-451c-862a-bdc8d5e1462a"
+      ],
+      "settings": {
+      }
+    },
+    "collection-grid": {
+      "type": "collection-grid",
+      "disabled": true,
+      "settings": {
+        "bottom_margin_mobile": 40,
+        "bottom_margin_desktop": 70
+      }
+    }
+  },
+  "order": [
+    "hero_section_LzMGQr",
+    "bf41f264-2a6a-4948-946e-a5bfd37b1407",
+    "collection-grid"
+  ],
+  "wrapper": ".boost-sd__product-filter-fallback"
+}

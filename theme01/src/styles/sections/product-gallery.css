@@ -1,0 +1,102 @@
+.product-gallery {
+  @apply lg:top-5 transition-[top] duration-300;
+}
+
+.show-header .product-gallery {
+  @apply lg:top-44;
+}
+
+.product-gallery__thumbs .swiper-slide-thumb-active img {
+  @apply border-2 border-solid border-color-1;
+}
+
+.product-gallery__thumbs .swiper-slide {
+  @apply max-lg:max-w-[3.75rem];
+}
+
+.product-gallery .swiper-slide {
+  @apply max-lg:max-h-[20.9375rem] h-auto;
+}
+
+.product-gallery .slider__arrow {
+  @apply absolute w-7 lg:w-full h-[3.75rem] lg:h-10 disabled:opacity-0 max-lg:pointer-events-none disabled:pointer-events-none transition-opacity duration-500 z-1;
+}
+
+.product-gallery .slider__arrow::after {
+  @apply content-[""] absolute bottom-0 left-0 w-8 lg:w-20 h-16 lg:h-20 bg-gradient-to-l lg:bg-gradient-to-t from-white from-40% to-transparent pointer-events-none;
+}
+
+.product-gallery .slider__arrow--prev {
+  @apply left-0 top-0 lg:rotate-180;
+}
+
+.product-gallery .slider__arrow--next {
+  @apply right-0 bottom-0;
+}
+
+.product-gallery .slider__arrow svg {
+  @apply relative mx-auto z-[1];
+}
+
+.product-gallery .slider__arrow--prev svg {
+  @apply max-lg:rotate-90;
+}
+
+.product-gallery .slider__arrow--next svg {
+  @apply max-lg:-rotate-90;
+}
+
+.product-gallery .slider__arrow--prev::after {
+  @apply max-lg:bg-gradient-to-r;
+}
+
+.product-gallery .slider__arrow--next::after {
+  @apply max-lg:bg-gradient-to-l max-lg:right-0 max-lg:left-auto;
+}
+
+/* Product Labels */
+.product-label-container {
+  @apply absolute top-0 left-0 flex flex-col items-start gap-y-2 z-1;
+}
+.product-label {
+  @apply border-l-[5px] pl-[5px];
+}
+.product-label-text {
+  @apply caps-small text-white px-2 py-0.5;
+}
+.product-label--sale {
+  @apply border-color-1;
+  .product-label-text {
+    @apply bg-color-1 text-black;
+  }
+}
+.product-label--sold-out {
+  @apply border-grey-7;
+  .product-label-text {
+    @apply bg-grey-7;
+  }
+}
+.product-label--back-in-stock {
+  @apply border-black;
+  .product-label-text {
+    @apply bg-black;
+  }
+}
+.product-label--limited-edition {
+  @apply border-color-4;
+  .product-label-text {
+    @apply bg-color-4 text-black;
+  }
+}
+.product-label--low-inventory {
+  @apply border-color-7;
+  .product-label-text {
+    @apply bg-color-7;
+  }
+}
+.product-label--new {
+  @apply border-color-3;
+  .product-label-text {
+    @apply bg-color-3 text-color-2;
+  }
+}

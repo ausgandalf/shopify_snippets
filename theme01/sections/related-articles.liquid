@@ -1,0 +1,74 @@
+{%- assign related_articles_size = 0 -%}
+{% assign section_custom_id = section.settings.section_custom_id %}
+
+<div
+  {% if section_custom_id != blank %}
+    id='{{ section_custom_id }}'
+  {% endif %}
+  class='related-articles py-16 border-t border-color-3'
+  data-related-articles
+>
+  <div class='container overflow-hidden'>
+    {% if section.settings.title != blank %}
+      <h3 class='mb-10 text-center uppercase'>{{ section.settings.title }}</h3>
+    {% endif %}
+
+    <div class='swiper relative'>
+      <div class='swiper-wrapper'>
+        {%- for blog_article in blog.articles -%}
+          {%- unless article.id == blog_article.id -%}
+            <div class='swiper-slide !flex !h-auto'>
+              {%- render 'article-card', article: blog_article, show_publish_date: true, show_author: true -%}
+            </div>
+
+            {% assign related_articles_size = related_articles_size | plus: 1 %}
+          {%- endunless -%}
+        {%- endfor -%}
+      </div>
+
+      {%- if related_articles_size > 6 -%}
+        <div class='swiper-button-prev border-2 border-solid border-grey-3'>
+          {%- render 'icons', icon: 'slider-arrow', class: 'text-color-1 rotate-180' -%}
+        </div>
+        <div class='swiper-button-next border-2 border-solid border-grey-3'>
+          {%- render 'icons', icon: 'slider-arrow', class: 'text-color-1' -%}
+        </div>
+      {%- endif -%}
+
+      <div class='swiper-scrollbar bg-color-3{% if related_articles_size <= 6 %} lg:hidden{% endif %}'>
+        <div class='swiper-scrollbar-drag bg-grey-8'></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Related Articles",
+  "enabled_on": {
+    "templates": [
+      "article"
+    ]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Related Posts"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Related Articles"
+    }
+  ]
+}
+{% endschema %}

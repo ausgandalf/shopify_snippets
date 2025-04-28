@@ -1,0 +1,151 @@
+{% style %}
+  {% if section.settings.default_flavor_image != blank %}
+    [class^='swatch-image-'] {
+      background-image: url({{ section.settings.default_flavor_image | image_url }});
+    }
+  {% endif %}
+
+  {% for block in section.blocks %}
+    {% if block.settings.swatch_name != blank and block.settings.swatch_image != blank %}
+      .swatch-image-{{ block.settings.swatch_name | handleize }},
+      .boost-sd__swatch-{{ block.settings.swatch_name | handleize }},
+      .boost-sd__filter-option-flavor-swatch .boost-sd__filter-option-item-button[title='{{ block.settings.swatch_name }}'] .boost-sd__filter-option-swatch-item-img {
+        background-image: url({{ block.settings.swatch_image | image_url }}) !important;
+      }
+    {% endif %}
+
+    {% if block.settings.swatch_name_2 != blank and block.settings.swatch_image_2 != blank %}
+      .swatch-image-{{ block.settings.swatch_name_2 | handleize }},
+      .boost-sd__swatch-{{ block.settings.swatch_name_2 | handleize }},
+      .boost-sd__filter-option-flavor-swatch .boost-sd__filter-option-item-button[title='{{ block.settings.swatch_name_2 }}'] .boost-sd__filter-option-swatch-item-img {
+        background-image: url({{ block.settings.swatch_image_2 | image_url }}) !important;
+      }
+    {% endif %}
+
+    {% if block.settings.swatch_name_3 != blank and block.settings.swatch_image_3 != blank %}
+      .swatch-image-{{ block.settings.swatch_name_3 | handleize }},
+      .boost-sd__swatch-{{ block.settings.swatch_name_3 | handleize }},
+      .boost-sd__filter-option-flavor-swatch .boost-sd__filter-option-item-button[title='{{ block.settings.swatch_name_3 }}'] .boost-sd__filter-option-swatch-item-img {
+        background-image: url({{ block.settings.swatch_image_3 | image_url }}) !important;
+      }
+    {% endif %}
+
+    {% if block.settings.swatch_name_4 != blank and block.settings.swatch_image_4 != blank %}
+      .swatch-image-{{ block.settings.swatch_name_4 | handleize }},
+      .boost-sd__swatch-{{ block.settings.swatch_name_4 | handleize }},
+      .boost-sd__filter-option-flavor-swatch .boost-sd__filter-option-item-button[title='{{ block.settings.swatch_name_4 }}'] .boost-sd__filter-option-swatch-item-img {
+        background-image: url({{ block.settings.swatch_image_4 | image_url }}) !important;
+      }
+    {% endif %}
+
+    {% if block.settings.swatch_name_5 != blank and block.settings.swatch_image_5 != blank %}
+      .swatch-image-{{ block.settings.swatch_name_5 | handleize }},
+      .boost-sd__swatch-{{ block.settings.swatch_name_5 | handleize }},
+      .boost-sd__filter-option-flavor-swatch .boost-sd__filter-option-item-button[title='{{ block.settings.swatch_name_5 }}'] .boost-sd__filter-option-swatch-item-img {
+        background-image: url({{ block.settings.swatch_image_5 | image_url }}) !important;
+      }
+    {% endif %}
+  {% endfor %}
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Flavor Swatches",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "default_flavor_image",
+      "label": "Default Flavor Image",
+      "info": "Recommended dimensions: 120 x 120 px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "flavor-swatch",
+      "name": "Flavor",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Flavor 1"
+        },
+        {
+          "type": "text",
+          "id": "swatch_name",
+          "label": "Name",
+          "info": "Use the same name of the product variant"
+        },
+        {
+          "type": "image_picker",
+          "id": "swatch_image",
+          "label": "Image",
+          "info": "Recommended dimensions: 120 x 120 px"
+        },
+        {
+          "type": "header",
+          "content": "Flavor 2"
+        },
+        {
+          "type": "text",
+          "id": "swatch_name_2",
+          "label": "Name",
+          "info": "Use the same name of the product variant"
+        },
+        {
+          "type": "image_picker",
+          "id": "swatch_image_2",
+          "label": "Image",
+          "info": "Recommended dimensions: 120 x 120 px"
+        },
+        {
+          "type": "header",
+          "content": "Flavor 3"
+        },
+        {
+          "type": "text",
+          "id": "swatch_name_3",
+          "label": "Name",
+          "info": "Use the same name of the product variant"
+        },
+        {
+          "type": "image_picker",
+          "id": "swatch_image_3",
+          "label": "Image",
+          "info": "Recommended dimensions: 120 x 120 px"
+        },
+        {
+          "type": "text",
+          "id": "swatch_name_4",
+          "label": "Name",
+          "info": "Use the same name of the product variant"
+        },
+        {
+          "type": "header",
+          "content": "Flavor 4"
+        },
+        {
+          "type": "image_picker",
+          "id": "swatch_image_4",
+          "label": "Image",
+          "info": "Recommended dimensions: 120 x 120 px"
+        },
+        {
+          "type": "header",
+          "content": "Flavor 5"
+        },
+        {
+          "type": "text",
+          "id": "swatch_name_5",
+          "label": "Name",
+          "info": "Use the same name of the product variant"
+        },
+        {
+          "type": "image_picker",
+          "id": "swatch_image_5",
+          "label": "Image",
+          "info": "Recommended dimensions: 120 x 120 px"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,54 @@
+<div class='flex items-center justify-end gap-6 lg:gap-8'>
+  <div class='header__search hidden lg:block flex-1 max-w-xs relative'>
+    <button class='hidden md:flex lg:hidden w-10 h-10 items-center justify-center' data-tablet-search-close>
+      {%- render 'icons' icon: 'chevron-left' -%}
+    </button>
+    <form action='/search' method='get' role='search'>
+      <input
+        type='search'
+        name='q'
+        class='Search boost-pfs-search-box'
+        value=''
+        placeholder='Search'
+        autocomplete='off'
+      >
+
+      {%- render 'icons', icon: 'search', class: 'absolute right-5 top-1/2 -translate-y-1/2' -%}
+    </form>
+  </div>
+
+  {%- if shop.customer_accounts_enabled -%}
+    <a
+      href='{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}'
+      class='text-color-2 hover:text-color-6'
+    >
+      {%- render 'icons', icon: 'account' -%}
+
+      <span class='sr-only'>
+        {%- liquid
+          if customer
+            echo 'customer.account_fallback' | t
+          else
+            echo 'customer.log_in' | t
+          endif
+        -%}
+      </span>
+    </a>
+  {%- endif -%}
+
+  <a href='{{ routes.cart_url }}' class='relative flex items-center lg:pr-9 no-underline text-color-2 hover:text-color-6'>
+    {%- render 'icons', icon: 'cart', class: 'pointer-events-none' -%}
+
+    <span class='sr-only'>{{ 'templates.cart.cart' | t }}</span>
+
+    <div
+      class='absolute -right-0.5 lg:right-0 top-2.5 lg:top-1/2 w-2 lg:w-8 max-lg:h-2 max-lg:bg-color-1 max-lg:rounded-full -translate-y-1/2 text-color-6 font-bold pointer-events-none hidden'
+      data-header-cart
+      aria-hidden='true'
+    >
+      <span class='max-lg:hidden cart-count' {% if template == 'cart' %}data-header-cart-qty{% endif %}>
+        {%- if cart.item_count < 100 -%}{{ cart.item_count }}{%- else -%}99{%- endif -%}
+      </span>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,247 @@
+{%- liquid
+  assign section_custom_id = section.settings.section_custom_id
+  assign heading = section.settings.heading
+  assign cta_text = section.settings.cta_text
+  assign cta_url = section.settings.cta_url
+  assign cta_type = section.settings.cta_type
+
+  assign color_scheme = section.settings.color_scheme
+  assign colors = color_scheme | split: ' '
+  assign text_color = colors[1]
+  assign bg_color = colors[0]
+  assign arrow_border_color = 'border-grey-7'
+  assign arrow_bg_color = 'bg-black'
+  assign scrollbar_color = '!bg-grey-7'
+  assign scrollbar_drag_color = '!bg-white'
+  if text_color == 'text-black'
+    assign arrow_border_color = 'border-grey-3'
+    assign arrow_bg_color = 'bg-white'
+    assign scrollbar_color = '!bg-color-3'
+    assign scrollbar_drag_color = '!bg-black'
+  endif
+  assign item_image_bg_color = 'before:bg-white'
+  if bg_color == 'bg-white'
+    assign item_image_bg_color = 'before:bg-grey-2'
+  elsif bg_color == 'bg-black'
+    assign item_image_bg_color = 'before:bg-color-2'
+  endif
+-%}
+
+{%- if section.blocks.size > 0 -%}
+  <div
+    {% if section_custom_id != blank %}
+      id='{{ section_custom_id }}'
+    {% endif %}
+    class='category-row {{ bg_color }}'
+    data-category-row
+  >
+    <div class='container text-center'>
+      {%- if heading != blank -%}
+        <div class='{{ text_color }} uppercase mb-6 lg:mb-12 rte'>{{- heading -}}</div>
+      {%- endif -%}
+      <div class='category-row-container swiper'>
+        <div class='swiper-wrapper'>
+          {%- for block in section.blocks -%}
+            {%- liquid
+              assign cat_img = block.settings.cat_img
+              assign cat_url = block.settings.cat_url
+              assign cat_label = block.settings.cat_label
+              assign cat_copy = block.settings.cat_copy
+            -%}
+            {%- if cat_img != blank -%}
+              <a href='{{- cat_url | default: 'javascript:void(0);' -}}' class='category-row-item swiper-slide'>
+                <div class='category-row-item-image {{ item_image_bg_color }}'>
+                  {{ cat_img | image_url: width: 360 | image_tag: width: 360, alt: cat_img.alt }}
+                </div>
+                {%- if cat_label != blank -%}
+                  <p class='caps-large {{ text_color }} mt-4'>{{- cat_label -}}</p>
+                {%- endif -%}
+                {%- if cat_copy != blank -%}
+                  <div class='text-sm {{ text_color }} mt-4 rte'>{{- cat_copy -}}</div>
+                {%- endif -%}
+              </a>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+        {%- if section.blocks.size > 6 -%}
+          <div class='swiper-button-prev {{ arrow_border_color }} {{ arrow_bg_color }}'>
+            {%- render 'icons', icon: 'slider-arrow', class: 'text-color-1 rotate-180' -%}
+          </div>
+          <div class='swiper-button-next {{ arrow_border_color }} {{ arrow_bg_color }}'>
+            {%- render 'icons', icon: 'slider-arrow', class: 'text-color-1' -%}
+          </div>
+        {%- endif -%}
+        <div class='swiper-scrollbar {{ scrollbar_color }} {% if section.blocks.size <= 6 %}lg:hidden{% endif %}'>
+          <div class='swiper-scrollbar-drag {{ scrollbar_drag_color }}'></div>
+        </div>
+      </div>
+      {%- if cta_text != blank -%}
+        <a href='{{- cta_url | default: 'javascript:void(0);' -}}' class='{{ cta_type }} mt-6 lg:mt-12'>{{- cta_text -}}</a>
+      {%- endif -%}
+    </div>
+  </div>
+
+  {%- render 'spacer', _mobile_space: section.settings.bottom_margin_mobile, _desktop_space: section.settings.bottom_margin_desktop -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Category Row",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Optional. Please use only one H1 per page and then use H2 for the content below the fold.",
+      "default": "<h2>Shop nutrition</h2>"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "Shop all"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA URL"
+    },
+    {
+      "type": "select",
+      "id": "cta_type",
+      "label": "CTA Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button button--primary"
+        },
+        {
+          "label": "Primary Dark",
+          "value": "button button--primary-invert"
+        },
+        {
+          "label": "Secondary",
+          "value": "button button--secondary"
+        },
+        {
+          "label": "Secondary Dark",
+          "value": "button button--secondary-invert"
+        }
+      ],
+      "default": "button button--primary"
+    },
+    {
+      "type": "header",
+      "content": "Content Settings"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "options": [
+        {
+          "label": "Light Mode",
+          "value": "bg-white text-black"
+        },
+        {
+          "label": "Dark Mode",
+          "value": "bg-black text-white"
+        },
+        {
+          "label": "Light Grey",
+          "value": "bg-grey-1 text-black"
+        }
+      ],
+      "default": "bg-white text-black"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row-category",
+      "name": "Row Category",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "cat_img",
+          "label": "Category Image"
+        },
+        {
+          "type": "url",
+          "id": "cat_url",
+          "label": "Category Link"
+        },
+        {
+          "type": "text",
+          "id": "cat_label",
+          "label": "Category Label"
+        },
+        {
+          "type": "richtext",
+          "id": "cat_copy",
+          "label": "Category Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Category Row",
+      "blocks": [
+        {
+          "type": "row-category"
+        },
+        {
+          "type": "row-category"
+        },
+        {
+          "type": "row-category"
+        },
+        {
+          "type": "row-category"
+        },
+        {
+          "type": "row-category"
+        },
+        {
+          "type": "row-category"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

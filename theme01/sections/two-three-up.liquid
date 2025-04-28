@@ -1,0 +1,471 @@
+{%- liquid
+  assign section_custom_id = section.settings.section_custom_id
+  assign heading = section.settings.heading
+  assign copy = section.settings.copy
+  assign cta_text = section.settings.cta_text
+  assign cta_link = section.settings.cta_link
+  assign cta_type = section.settings.cta_type
+
+  assign full_width = section.settings.full_width
+  assign layout_style = section.settings.layout_style
+  assign color_scheme = section.settings.color_scheme
+  assign colors = color_scheme | split: ' '
+  assign text_color = colors[1]
+  assign bg_color = colors[0]
+  assign is_discounted = false
+
+  if settings.enable_site_wide_discount and settings.site_wide_discount != 0
+    assign is_discounted = true
+    assign discount_message = "Sale"
+    assign discount_percentage = 100 | minus: settings.site_wide_discount | divided_by: 100.0
+  endif
+
+  if customer.tags contains 'ExpertVoice' and customer != blank
+    assign is_discounted = true
+    assign discount_message = "Pro Discount"
+    assign discount_percentage = 0.7
+  endif
+
+  if section.index > 2
+    assign loading = 'lazy'
+  else
+    assign loading = 'eager'
+  endif
+-%}
+
+<div
+  {% if section_custom_id != blank %}
+    id='{{ section_custom_id }}'
+  {% endif %}
+  class='w-full{% unless full_width %} container{% endunless %}'
+>
+  <div class='two-three-up {{ bg_color }} {{ text_color }}'>
+    <div class='{% if full_width %}container{% else %}px-4 lg:px-8{% endif %}'>
+      {%- if copy != blank or heading != blank or cta_text != blank and cta_link != blank -%}
+        <div class='flex flex-wrap md:flex-nowrap items-end justify-between mb-8 lg:mb-10'>
+          <div class='w-full lg:w-1/2'>
+            {%- if heading != blank -%}
+              <div class='uppercase rte mb-4'>{{- heading -}}</div>
+            {%- endif -%}
+            {%- if copy != blank -%}
+              <div class='rte'>{{- copy -}}</div>
+            {%- endif -%}
+          </div>
+          <div class='hidden md:block'>
+            {%- if cta_text != blank or cta_link != blank -%}
+              <a
+                href='{{- cta_link | default: 'javascript:void(0);' -}}'
+                class='{{ cta_type }} h-[3.75rem] flex items-center justify-center'
+              >
+                {{- cta_text -}}
+              </a>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+        <div class='two-three-up-grid {{ layout_style }}'>
+          {%- for block in section.blocks -%}
+            {%- liquid
+              assign up_img = block.settings.up_img
+              assign up_description = block.settings.description
+              assign up_cta_text = block.settings.cta_text
+              assign up_cta_link = block.settings.cta_link
+              assign up_cta_type = block.settings.cta_type
+              assign up_color_scheme = block.settings.color_scheme
+              assign up_text_align = block.settings.text_align
+              assign up_colors = up_color_scheme | split: ' '
+              assign up_text_color = up_colors[1]
+              assign up_bg_color = up_colors[0]
+              assign up_bg_color_ada = up_bg_color | remove: 'before:'
+              assign up_border_color = 'before:border-grey-3'
+              assign discount_style = 'bg-color-2 text-white'
+              if up_bg_color == 'before:bg-black'
+                assign up_border_color = 'before:border-color-2'
+                assign discount_style = 'bg-color-3 text-black'
+              endif
+
+              assign featured_product = block.settings.featured_product
+              assign featured_variant = block.settings.featured_variant | plus: 0
+              assign atc_cta_text = block.settings.atc_cta_text
+              assign atc_cta_type = block.settings.atc_cta_type
+              assign p_variant = null
+              if featured_product != blank
+                assign p_variant = featured_product.variants | where: 'id', featured_variant
+                assign p_variant = p_variant[0] | default: featured_product.variants[0]
+              endif
+
+              assign include_discount = true
+              if featured_product.tags contains 'exclude-pro-discount' or featured_product.tags contains 'exclude-sitewide-discount'
+                assign include_discount = false
+              endif
+            -%}
+
+            <div class='two-three-up-item {{ up_border_color }} {{ up_bg_color }} {{ up_text_color }} {{ up_text_align }}{% if up_img != blank %} has-media{% endif %}'>
+              {%- if up_img != blank -%}
+                <div class='two-three-up-item-image'>
+                  {%- capture widths -%}{{ up_img.width }}, {{ up_img.width | times: 1.5 | round }}, {{ up_img.width | times: 2 }}{%- endcapture -%}
+                  {%- capture sizes %}(max-width: {{ 756 | times: 2 }}px) 50vw, {{ 756 }}px{% endcapture -%}
+                  {{
+                    up_img
+                    | image_url: width: 756
+                    | image_tag: width: 800, sizes: sizes, alt: up_img.alt, widths: widths, loading: loading
+                  }}
+                </div>
+              {%- endif -%}
+
+              {%- if up_description != blank -%}
+                <div class='two-three-up-item-description {{ up_bg_color_ada }}'>
+                  {{- up_description -}}
+                </div>
+              {%- endif -%}
+
+              {%- if p_variant != blank -%}
+                {%- if include_discount and is_discounted -%}
+                  {%- if p_variant.price == p_variant.compare_at_price or p_variant.compare_at_price == blank -%}
+                    <h5 class='two-three-up-item-price {{ up_bg_color_ada }}'>
+                      <span class='inline-block {{ discount_style }} caps-small pl-1.5 pr-1 mb-2'>{{ discount_message }}</span><br>
+                      <span class='font-bold{% if up_text_color == 'text-black' %} text-error{% endif %}'>
+                        {{- p_variant.price | times: discount_percentage | money -}}
+                      </span>
+                      <span class='ml-1 font-normal line-through'>{{- p_variant.price | money -}}</span>
+                    </h5>
+                  {%- endif -%}
+                {%- else -%}
+                  <h5 class='two-three-up-item-price {{ up_bg_color_ada }}'>
+                    <span class='font-bold{% if up_text_color == 'text-black' and p_variant.price < p_variant.compare_at_price and p_variant.compare_at_price != blank %}text-error{% endif %}'>
+                      {{- p_variant.price | money -}}
+                    </span>
+                    {%- if p_variant.price < p_variant.compare_at_price and p_variant.compare_at_price != blank -%}
+                      <span class='ml-1 font-normal line-through'>{{- p_variant.compare_at_price | money -}}</span>
+                    {%- endif -%}
+                  </h5>
+                {%- endif -%}
+              {%- endif -%}
+
+              <div class='two-three-up-item-cta'>
+                {%- if p_variant != blank -%}
+                  <button
+                    data-atc
+                    class='button-normal {{ atc_cta_type }}'
+                    data-variant-id='{{ p_variant.id }}'
+                    {% unless p_variant.available %}
+                      disabled
+                    {% endunless %}
+                  >
+                    {{ atc_cta_text }}
+                  </button>
+                {%- elsif up_cta_text != blank and up_cta_link != blank -%}
+                  <a href='{{- up_cta_link -}}' class='{{- up_cta_type -}}'>{{- up_cta_text -}}</a>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+      <div class='md:hidden mt-12'>
+        {%- if cta_text != blank -%}
+          <a
+            href='{{- cta_link | default: 'javascript:void(0);' -}}'
+            class='{{ cta_type }} w-full h-[3.75rem] flex items-center justify-center'
+          >
+            {{- cta_text -}}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{%- render 'spacer', _mobile_space: section.settings.bottom_margin_mobile, _desktop_space: section.settings.bottom_margin_desktop -%}
+
+{% schema %}
+{
+  "name": "2 Up / 3 Up",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Optional. Please use only one H1 per page and then use H2 for the content below the fold.",
+      "default": "<h2>Two up/Three up</h2>"
+    },
+    {
+      "type": "richtext",
+      "id": "copy",
+      "label": "Copy",
+      "default": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA Link"
+    },
+    {
+      "type": "select",
+      "id": "cta_type",
+      "label": "CTA Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button button--primary"
+        },
+        {
+          "label": "Primary Dark",
+          "value": "button button--primary-invert"
+        },
+        {
+          "label": "Secondary",
+          "value": "button button--secondary"
+        },
+        {
+          "label": "Secondary Dark",
+          "value": "button button--secondary-invert"
+        }
+      ],
+      "default": "button button--primary"
+    },
+    {
+      "type": "header",
+      "content": "Content Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "layout_style",
+      "label": "Layout Style",
+      "options": [
+        {
+          "label": "2 Up",
+          "value": "two-up"
+        },
+        {
+          "label": "3 Up",
+          "value": "three-up"
+        }
+      ],
+      "default": "two-up"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "options": [
+        {
+          "label": "Light Mode",
+          "value": "bg-white text-black"
+        },
+        {
+          "label": "Dark Mode",
+          "value": "bg-black text-white"
+        },
+        {
+          "label": "Light Grey",
+          "value": "bg-grey-1 text-black"
+        }
+      ],
+      "default": "bg-white text-black"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Mobile",
+      "default": 0
+    }
+  ],
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "type": "up-block",
+      "name": "Up Block",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Up Block Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "up_img",
+          "label": "Block Image",
+          "info": "Recommended Image Ratio - 3:2 for 3 Up, 16:9 for 2 Up."
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Block Description",
+          "default": "<h3>Title</h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.</p>"
+        },
+        {
+          "type": "text",
+          "id": "cta_text",
+          "label": "Block CTA Text",
+          "default": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "cta_link",
+          "label": "Block CTA Link"
+        },
+        {
+          "type": "select",
+          "id": "cta_type",
+          "label": "Block CTA Button Style",
+          "options": [
+            {
+              "label": "Primary",
+              "value": "button button--primary"
+            },
+            {
+              "label": "Primary Dark",
+              "value": "button button--primary-invert"
+            },
+            {
+              "label": "Secondary",
+              "value": "button button--secondary"
+            },
+            {
+              "label": "Secondary Dark",
+              "value": "button button--secondary-invert"
+            }
+          ],
+          "default": "button button--primary"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "label": "Block Color Scheme",
+          "options": [
+            {
+              "label": "Light Mode",
+              "value": "before:bg-white text-black"
+            },
+            {
+              "label": "Dark Mode",
+              "value": "before:bg-black text-white"
+            },
+            {
+              "label": "Light Grey",
+              "value": "before:bg-grey-1 text-black"
+            }
+          ],
+          "default": "before:bg-white text-black"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "label": "Block Text Alignment",
+          "options": [
+            {
+              "label": "Left",
+              "value": "text-left items-start"
+            },
+            {
+              "label": "Center",
+              "value": "text-center items-center"
+            }
+          ],
+          "default": "text-left items-start"
+        },
+        {
+          "type": "header",
+          "content": "Featured Variant"
+        },
+        {
+          "type": "product",
+          "id": "featured_product",
+          "label": "Featured Product"
+        },
+        {
+          "type": "text",
+          "id": "featured_variant",
+          "label": "Featured Variant ID",
+          "info": "Optional: If this field is not defined, then the first variant of the product will be selected"
+        },
+        {
+          "type": "text",
+          "id": "atc_cta_text",
+          "label": "\"Add to Cart\" CTA Text",
+          "default": "Add to Cart"
+        },
+        {
+          "type": "select",
+          "id": "atc_cta_type",
+          "label": "\"Add to Cart\" CTA Type",
+          "options": [
+            {
+              "label": "Primary",
+              "value": "button button--primary"
+            },
+            {
+              "label": "Primary Dark",
+              "value": "button button--primary-invert"
+            },
+            {
+              "label": "Secondary",
+              "value": "button button--secondary"
+            },
+            {
+              "label": "Secondary Dark",
+              "value": "button button--secondary-invert"
+            }
+          ],
+          "default": "button button--primary"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "2 Up / 3 Up",
+      "blocks": [
+        {
+          "type": "up-block"
+        },
+        {
+          "type": "up-block"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

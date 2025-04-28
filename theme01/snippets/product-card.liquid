@@ -1,0 +1,91 @@
+{% assign variant = product.selected_or_first_available_variant %}
+
+<div class='product h-full flex flex-col' data-product-container>
+  <div class='product-media mb-2.5'>
+    <a href='{{ product.url }}' class='block relative pb-[100%]'>
+      {%- capture widths -%}{{ product.featured_image.width }}, {{ product.featured_image.width | times: 1.5 | round }}, {{ product.featured_image.width | times: 2 }}{%- endcapture -%}
+      {%- capture sizes %}(max-width: {{ 564 | times: 2 }}px) 50vw, {{ 564 }}px{% endcapture -%}
+      {% assign image_alt = product.featured_image.alt | default: variant.title %}
+
+      {{
+        product.featured_image
+        | image_url: width: 600
+        | image_tag:
+          width: product.featured_image.width,
+          class: 'product-media__image object-contain absolute w-full h-full left-0 top-0',
+          sizes: sizes,
+          alt: image_alt,
+          widths: widths,
+          loading: 'lazy'
+      }}
+    </a>
+  </div>
+
+  <div class='product-info'>
+    <a href='{{ product.url }}' class='text-color-2 no-underline'>
+      <h6 class='font-secondary'>{{ product.title }}</h6>
+    </a>
+
+    <span
+      class='stamped-product-reviews-badge stamped-main-badge block my-2'
+      data-id='{{ product.id }}'
+      data-product-sku='{{ product.handle }}'
+      data-product-title='{{ product.title }}'
+      data-product-type='{{ product.type }}'
+    >
+    </span>
+
+    <div class='product-price mb-2'>
+      <div
+        class='flex gap-2 text-sm{% unless variant.compare_at_price and variant.compare_at_price > variant.price %} hidden{% endunless %}'
+        data-product-sale
+      >
+        <div class='text-error font-bold' data-product-sale-price>
+          <span class='sr-only'>{{- 'products.product.price.sale_price' | t -}}</span>
+          <span>{{ variant.price | money }}</span>
+        </div>
+
+        <div class='text-grey-8 line-through' data-product-compare-price>
+          <span class='sr-only'>{{- 'products.product.price.original_price' | t -}}</span>
+          <span>{{ variant.compare_at_price | money }}</span>
+        </div>
+      </div>
+
+      <div
+        class='text-sm text-grey-8{% if variant.compare_at_price and variant.compare_at_price > variant.price %} hidden{% endif %}'
+        data-product-price
+      >
+        <span class='sr-only'>{{- 'products.product.price.regular_price' | t -}}</span>
+        <span>{{ variant.price | money }}</span>
+      </div>
+    </div>
+
+    {% if product.metafields.custom.quick_glance_description != blank and show_product_desc %}
+      <div class='product-description line-clamp-3'>
+        {{ product.metafields.custom.quick_glance_description }}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class='product-actions mt-auto'>
+    {% if product.variants.size > 1 %}
+      <select
+        title='Select product variant'
+        id='{{ product.id }}'
+        class='product-variants !min-w-full mt-5 w-full pr-10'
+        data-variant-selector
+        data-product-handle='{{ product.handle }}'
+      >
+        {% for variant in product.variants %}
+          {% if variant.available %}
+            <option value='{{ variant.id }}'>{{ variant.title }}</option>
+          {% endif %}
+        {% endfor %}
+      </select>
+    {% endif %}
+
+    <button class='button button-normal button--primary mt-5 py-3 min-h-0 w-full' data-atc data-variant-id='{{ variant.id }}'>
+      Add to Cart
+    </button>
+  </div>
+</div>

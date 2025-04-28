@@ -1,0 +1,27 @@
+{%- if logo != blank -%}
+  <div class='flex items-center justify-center min-h-[2.5rem] mx-auto max-lg:max-w-[8.75rem] lg:justify-start lg:min-h-[3.75rem]'>
+    {%- assign logo_alt = logo.alt | default: shop.name | escape -%}
+    {%- assign logo_height = logo_width | divided_by: logo.aspect_ratio -%}
+    {% capture sizes %}(max-width:
+      {{ logo_width | times: 2 }}px) 50vw,
+      {{ logo_width }}px
+    {% endcapture %}
+    {% capture widths %}
+      {{ logo_width }},
+      {{ logo_width | times: 1.5 | round }},
+      {{ logo_width | times: 2 }}
+    {% endcapture %}
+
+    <a href='{{ routes.root_url }}' class='text-center no-underline' title='Home - Whitelabel'>
+      {{
+        logo
+        | image_url: width: 600
+        | image_tag: widths: widths, height: logo_height, width: logo_width, alt: logo_alt, sizes: sizes, loading: 'lazy'
+      }}
+    </a>
+  </div>
+{%- else -%}
+  <a href='{{ routes.root_url }}' class='text-center no-underline'>
+    <p class='h2'>{{ shop.name }}</p>
+  </a>
+{%- endif -%}

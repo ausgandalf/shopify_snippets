@@ -1,0 +1,14 @@
+{%- comment -%}
+  Required:
+    _title: title of the accordion item
+    _content: the richtext content to display of the item
+{%- endcomment -%}
+
+<details>
+  <summary>
+    {{- _title -}}
+  </summary>
+  <div class="mt-5">
+    {{- _content -}}
+  </div>
+</details>

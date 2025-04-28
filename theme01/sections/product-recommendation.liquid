@@ -1,0 +1,98 @@
+{% if section.blocks.size > 0 %}
+  <div
+    class='product-recommendation py-12 lg:py-28'
+    data-product-recommendation
+  >
+    <div class='container px-0'>
+      {%- if section.settings.title != blank -%}
+        <h3 class='text-center text-black mb-3 lg:mb-5 px-5 sm:px-[1.875rem]'>{{ section.settings.title }}</h3>
+      {%- endif -%}
+
+      <div class='swiper !px-5 sm:!px-[1.875rem]'>
+        <div class='swiper-wrapper{% if section.blocks.size < 3 %} md:justify-center{% endif %}{% if section.blocks.size < 5 %} lg:justify-center{% endif %}'>
+          {%- for block in section.blocks limit: 8 -%}
+            {%- if block.settings.product != blank -%}
+              <div class='swiper-slide !h-auto'>
+                {% render 'product-card', product: block.settings.product, show_product_desc: section.settings.show_product_desc %}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+
+        {%- if section.blocks.size > 1 -%}
+          <div class='swiper-buttons'>
+            <div class='swiper-button-prev'>
+              {%- render 'icons', icon: 'slider-arrow', class: 'text-color-1 rotate-180' -%}
+            </div>
+
+            <div class='swiper-button-next'>
+              {%- render 'icons', icon: 'slider-arrow', class: 'text-color-1' -%}
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+
+  {%- render 'spacer', _mobile_space: section.settings.bottom_padding_mobile, _desktop_space: section.settings.bottom_padding_desktop -%}
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product Recommendation",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_desc",
+      "label": "Show Product Description",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "id": "bottom_padding_mobile",
+      "label": "Bottom Padding - Mobile",
+      "type": "range",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "id": "bottom_padding_desktop",
+      "label": "Bottom Padding - Desktop",
+      "type": "range",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Recommendation"
+    }
+  ]
+}
+{% endschema %}

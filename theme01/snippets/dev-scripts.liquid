@@ -1,0 +1,15 @@
+{%- if content_for_header contains 'Shopify.designMode' -%}
+  <script type="text/javascript">
+    const loadSections = () => {
+      window.document.dispatchEvent(
+        new Event('DOMContentLoaded', {
+          bubbles: true,
+          cancelable: true,
+        }),
+      );
+    };
+
+    const events = ['shopify:section:select'];
+    events.forEach((shopifyEvent) => document.addEventListener(shopifyEvent, () => loadSections()));
+  </script>
+{%- endif -%}

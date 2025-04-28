@@ -1,0 +1,105 @@
+{
+  "sections": {
+    "hero_section_jqWzfb": {
+      "type": "hero-section",
+      "custom_css": [
+        ".hero-content {background-color: rgba(0, 0, 0, 0.5);}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/bino-harnessgear8006037901-739265.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/bino-harnessgear8006037901-739265.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 410,
+        "media_height_mobile": 210,
+        "subheading": "BOGO WEEKEND",
+        "heading": "<h2>FREE GEAR WITH PURCHASE OVER $50<\/h2>",
+        "copy": "<p>Who's ready for free gear? This weekend only, take your pick of a free gear item from our curated collection with a purchase of any supplement. Just use code <strong>FREEBIE <\/strong>and get shopping!<\/p>",
+        "cta_text_1": "SHOP NOW",
+        "cta_url_1": "#shopify-section-template--15787098898474__collection-grid",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1715812517f0a8ba9e": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_BtKQeU": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "123553",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_BtKQeU"
+      ],
+      "settings": {
+      }
+    },
+    "wysiwyg_mHGzNA": {
+      "type": "wysiwyg",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "section_content": "<h1>Shop Gear Freebies<\/h1>",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "collection-grid": {
+      "type": "collection-grid",
+      "settings": {
+        "bottom_margin_mobile": 40,
+        "bottom_margin_desktop": 70
+      }
+    },
+    "1715813131831b9c44": {
+      "type": "apps",
+      "blocks": {
+        "boost_ai_search_discovery_product_filter_ijFWMt": {
+          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/product-filter\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "boost_ai_search_discovery_product_filter_ijFWMt"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "hero_section_jqWzfb",
+    "1715812517f0a8ba9e",
+    "wysiwyg_mHGzNA",
+    "collection-grid",
+    "1715813131831b9c44"
+  ]
+}

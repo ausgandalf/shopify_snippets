@@ -1,0 +1,13 @@
+.basic-html-heading h1,
+.basic-html-heading h2,
+.basic-html-heading h3 {
+  @apply uppercase;
+}
+
+.basic-html-heading p {
+  @apply mb-4;
+}
+
+#lcly-button-0 {
+  @apply w-full;
+}

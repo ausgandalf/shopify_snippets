@@ -1,0 +1,209 @@
+{
+  "sections": {
+    "110a694a-a343-4eb2-98db-bd8d496c0b33": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "bg_video": "shopify:\/\/files\/videos\/IGNITE AD-Final.mp4",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 640,
+        "media_height_mobile": 360,
+        "subheading": "unleash your best",
+        "heading": "<h2>ignite energy sampler<\/h2>",
+        "copy": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<\/p>",
+        "cta_text_1": "claim your offer",
+        "cta_url_1": "#shopify-section-template--15000216600618__image_text_iDYkA9",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "bf732bb7-b682-40da-9454-51ae7aac62dd": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "video_url": "",
+        "subheading": "ignite",
+        "heading": "<h2>next-level focus<\/h2>",
+        "copy": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<\/p>",
+        "cta_text_1": "Add to Cart",
+        "cta_url_1": "shopify:\/\/products\/ignite-energy-sampler",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "ignite-energy-sampler",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": true,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "3ebcf79a-f60e-4b08-b60b-b884109925ca": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/ignite-section-image-1.jpg",
+            "description": "<h3>Beyond Laser Focus<\/h3><p>Ready to lock-in? With just the right amount of caffeine, and added Alpha-GPC, you'll be ready to redefine focus.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Homepage-QuizSection-IGNITELifestyle.jpg",
+            "description": "<h3>unmatched Energy<\/h3><p>This isn't just another energy drink. Be prepared to tackle life like you never have before.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-1",
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-2"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_iDYkA9": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/ignite-trial-sampler-packsupplements8425839127-758486.gif",
+        "image_mobile": "shopify:\/\/shop_images\/ignite-trial-sampler-packsupplements8425839127-758486.gif",
+        "video_url": "",
+        "subheading": "free ignite sampler",
+        "heading": "<h2>Claim your offer<\/h2>",
+        "copy": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<\/p>",
+        "cta_text_1": "Button Label",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "ignite-energy-sampler",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": true,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1697737002a001f31d": {
+      "type": "apps",
+      "blocks": {
+        "stamped_product_reviews_ugc_visual_gallery_qXGGVU": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/visual-gallery\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "feed_type": "feed",
+            "height": 500,
+            "auto_play": false,
+            "auto_play_speed": 50,
+            "color_star": "#fe5000",
+            "color_hover": "#3d3935",
+            "color_hover_opacity": 50,
+            "review_ids": "",
+            "product_ids": "798593777706",
+            "category": "",
+            "product_brand": "",
+            "tags": "",
+            "min_rating": "4",
+            "fill_empty": true,
+            "random": false,
+            "with_photos": false
+          }
+        }
+      },
+      "block_order": [
+        "stamped_product_reviews_ugc_visual_gallery_qXGGVU"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "110a694a-a343-4eb2-98db-bd8d496c0b33",
+    "bf732bb7-b682-40da-9454-51ae7aac62dd",
+    "3ebcf79a-f60e-4b08-b60b-b884109925ca",
+    "image_text_iDYkA9",
+    "1697737002a001f31d"
+  ]
+}

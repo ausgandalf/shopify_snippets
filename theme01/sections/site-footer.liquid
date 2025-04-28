@@ -1,0 +1,215 @@
+{%- liquid
+  assign section_custom_id = section.settings.section_custom_id
+  assign logo = section.settings.footer_logo
+  assign logo_width = section.settings.footer_logo_width
+  assign contact_info = section.settings.contact_info
+  assign customer_service_info = section.settings.customer_service_info
+  assign copyright_info = section.settings.copyright_info
+  assign footer_menu = section.settings.footer_menu
+  assign terms_menu = section.settings.terms_menu
+  assign background = section.settings.background_image
+  assign mobile_background = section.settings.background_image_mobile | default: background
+-%}
+
+<div
+  {% if section_custom_id != blank %}
+    id='{{ section_custom_id }}'
+  {% endif %}
+  class='footer__container bg-grey-8'
+>
+  <div>
+    <div class='footer__content'>
+      <!-- Mobile Footer -->
+      <div class='lg:hidden'>
+        {%- render 'footer-accordions', menu: footer_menu -%}
+        <div
+          class='footer-background'
+          {% if background != blank %}
+            style="background: linear-gradient(0deg, rgba(36, 30, 24, 0.85) 0%, rgba(36, 30, 24, 0.85) 100%), url('{{- mobile_background | image_url: width: 1065, height: 1065 -}}'), lightgray 50% / cover no-repeat; background-size: cover;"
+          {% endif %}
+        >
+          <div class='footer__info flex flex-col justify-center items-center py-12 px-5'>
+            {%- render 'footer-logo', logo: logo, logo_width: logo_width -%}
+            {%- if contact_info -%}
+              <div class='mb-4'>
+                <h5 class='mb-4 text-center caps-regular'>Contact Info</h5>
+                <div class='contact-info__container flex flex-col justify-center items-center rte'>
+                  {{ contact_info }}
+                </div>
+              </div>
+            {%- endif -%}
+            {%- if customer_service_info -%}
+              <div class='customer-service-info__container mb-8 text-center text-xs rte'>{{ customer_service_info }}</div>
+            {%- endif -%}
+            {%- render 'footer-social-icons' -%}
+          </div>
+          {%- if terms_menu -%}
+            <div class='footer__terms px-5 border-t border-grey-7 py-5'>
+              <ul class='flex flex-row flex-wrap gap-2 justify-center items-center'>
+                {%- for link in terms_menu.links -%}
+                  {%- assign mod = forloop.index | modulo: 2 -%}
+                  {%- if mod == 0 and forloop.index != forloop.last -%}
+                    <span>&#8226;</span>
+                    <li>
+                      <a href='{{ link.url }}' class='text-white no-underline text-xs'>{{ link.title }}</a>
+                    </li>
+                  {%- else -%}
+                    <li>
+                      <a href='{{ link.url }}' class='text-white no-underline text-xs'>{{ link.title }}</a>
+                    </li>
+                  {%- endif -%}
+                {%- endfor -%}
+              </ul>
+            </div>
+          {%- endif -%}
+          <div class='footer__copyright px-5 border-t border-grey-7 text-center py-5'>
+            <p class='text-xs'>{{ copyright_info }}</p>
+          </div>
+        </div>
+      </div>
+      <!-- Desktop Footer -->
+      <div
+        class='hidden lg:flex flex-col footer-background'
+        {% if background != blank %}
+          style="background: linear-gradient(0deg, rgba(36, 30, 24, 0.85) 0%, rgba(36, 30, 24, 0.85) 100%), url('{{- background | image_url: width: 1440, height: 1440 -}}'), lightgray 0px -402.495px / 100% 180.813% no-repeat; background-size: cover; background-position: center;"
+        {% endif %}
+      >
+        <div class='flex flex-row gap-28 pt-20 pb-24 container'>
+          <div>
+            <div class='footer__info'>
+              <div class='mb-8'>
+                {%- render 'footer-logo', logo: logo, logo_width: logo_width -%}
+              </div>
+              {%- if contact_info -%}
+                <div class='mb-4'>
+                  <h5 class='mb-4 caps-regular'>Contact Info</h5>
+                  <div class='contact-info__container'>
+                    {{ contact_info }}
+                  </div>
+                </div>
+              {%- endif -%}
+              {%- if customer_service_info -%}
+                <div class='customer-service-info__container mb-8'>{{ customer_service_info }}</div>
+              {%- endif -%}
+            </div>
+            {%- render 'footer-social-icons' -%}
+          </div>
+          <nav>
+            <ul class='flex flex-row gap-6'>
+              {%- for link in footer_menu.links -%}
+                <li class='xl:min-w-[190px]'>
+                  {%- if link.url -%}
+                    <a class='no-underline' href='{{ link.url }}'>
+                      <h6 class='mb-4 uppercase'>
+                        {{ link.title }}
+                      </h6>
+                    </a>
+                  {%- else -%}
+                    <h6 class='mb-4'>{{- link.title -}}</h6>
+                  {%- endif -%}
+                  <ul class='flex flex-col gap-4'>
+                    {%- for sublink in link.links -%}
+                      <li>
+                        <a class='no-underline hover:underline' href='{{ sublink.url }}'>{{- sublink.title -}}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </nav>
+        </div>
+        <div class=' border-t border-grey-7 flex flex-row items-center'>
+          <div class='container flex flex-row items-center'>
+            <div class='footer__terms mr-8'>
+              <ul class='flex flex-row gap-6 xl:gap-8 py-6'>
+                {%- for link in terms_menu.links -%}
+                  <li>
+                    <a href='{{ link.url }}' class='no-underline hover:underline text-xs'>{{ link.title }}</a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+            <div class='footer__copyright'>
+              <p class='text-xs'>{{ copyright_info }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Site Footer",
+  "tag": "footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    },
+    {
+      "type": "header",
+      "content": "Footer Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_logo",
+      "label": "Footer Logo"
+    },
+    {
+      "type": "range",
+      "id": "footer_logo_width",
+      "min": 50,
+      "max": 300,
+      "step": 10,
+      "default": 200,
+      "unit": "px",
+      "label": "Desktop Footer Logo Width",
+      "info": "Logo width is automatically optimized for mobile. Recommended Size: 400x80px (width x height)."
+    },
+    {
+      "type": "richtext",
+      "id": "contact_info",
+      "label": "Contact Information"
+    },
+    {
+      "type": "richtext",
+      "id": "customer_service_info",
+      "label": "Customer Service Information"
+    },
+    {
+      "type": "text",
+      "id": "copyright_info",
+      "label": "Copyright",
+      "default": "©2023 WHITELABEL. All rights reserved."
+    },
+    {
+      "type": "link_list",
+      "id": "footer_menu",
+      "label": "Footer Menu"
+    },
+    {
+      "type": "link_list",
+      "id": "terms_menu",
+      "label": "Terms Menu"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image",
+      "info": "Recommended size is 1920x1080"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_mobile",
+      "label": "Mobile Background Image",
+      "info": "If no image is populated, the desktop background image will be used."
+    }
+  ]
+}
+{% endschema %}

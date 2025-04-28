@@ -1,0 +1,239 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25": {
+      "type": "hero-section",
+      "blocks": {
+        "hero_value_prop_bGeYgk": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "hero_value_prop_bGeYgk"
+      ],
+      "custom_css": [
+        ".hero-content {background-color: rgba(0, 0, 0, 0);}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "{{ page.metafields.hero.hero_image_desktop.value }}",
+        "image_mobile": "{{ page.metafields.hero.hero_image_mobile.value }}",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 300,
+        "media_height_mobile": 210,
+        "subheading": "",
+        "heading": "",
+        "copy": "",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_a4RnVR": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "{{ page.metafields.custom.image_text_cta.value.desktop_image.value }}",
+        "video_url": "",
+        "subheading": "{{ page.metafields.custom.image_text_cta.value.subheading.value }}",
+        "heading": "{{ page.metafields.custom.image_text_cta.value.heading | metafield_tag }}",
+        "copy": "{{ page.metafields.custom.image_text_cta.value.copy | metafield_tag }}",
+        "cta_text_1": "Button Label",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "{{ page.metafields.custom.image_text_cta.value.featured_product.value }}",
+        "featured_variant": "{{ page.metafields.custom.image_text_cta.value.featured_variant.value }}",
+        "atc_cta_text": "{{ page.metafields.custom.image_text_cta.value.add_to_cart_cta_text.value }}",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "two_three_up_hYTVGp": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_M7hTmx": {
+          "type": "up-block",
+          "source": "{{ page.metafields.custom[\"2_up_3_up\"].value }}",
+          "settings": {
+            "up_img": "{{ page.metafields.custom[\"2_up_3_up\"].value.first_block.value.image.value }}",
+            "description": "{{ page.metafields.custom[\"2_up_3_up\"].value.first_block.value.description | metafield_tag }}<p><\/p>",
+            "cta_text": "{{ page.metafields.custom[\"2_up_3_up\"].value.first_block.value.cta_text.value }}",
+            "cta_link": "{{ page.metafields.custom[\"2_up_3_up\"].value.first_block.value.cta_link.value }}",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "{{ page.metafields.custom[\"2_up_3_up\"].value.first_block.value.featured_product.value }}",
+            "featured_variant": "{{ page.metafields.custom[\"2_up_3_up\"].value.first_block.value.featured_variant.value }}",
+            "atc_cta_text": "{{ page.metafields.custom[\"2_up_3_up\"].value.first_block.value.add_to_cart_cta_text.value }}",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_eXxCNG": {
+          "type": "up-block",
+          "source": "{{ page.metafields.custom[\"2_up_3_up\"].value }}",
+          "settings": {
+            "up_img": "{{ page.metafields.custom[\"2_up_3_up\"].value.second_block.value.image.value }}",
+            "description": "<p>{{ page.metafields.custom[\"2_up_3_up\"].value.second_block.value.description | metafield_tag }}<\/p>",
+            "cta_text": "{{ page.metafields.custom[\"2_up_3_up\"].value.second_block.value.cta_text.value }}",
+            "cta_link": "{{ page.metafields.custom[\"2_up_3_up\"].value.second_block.value.cta_link.value }}",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "{{ page.metafields.custom[\"2_up_3_up\"].value.second_block.value.featured_product.value }}",
+            "featured_variant": "{{ page.metafields.custom[\"2_up_3_up\"].value.second_block.value.featured_variant.value }}",
+            "atc_cta_text": "{{ page.metafields.custom[\"2_up_3_up\"].value.second_block.value.add_to_cart_cta_text.value }}",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_M7hTmx",
+        "up_block_eXxCNG"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<p>{{ page.metafields.custom[\"2_up_3_up\"].value.content_heading | metafield_tag }}<\/p>",
+        "copy": "<p>{{ page.metafields.custom[\"2_up_3_up\"].value.content_copy | metafield_tag }}<\/p>",
+        "cta_text": "{{ page.metafields.custom[\"2_up_3_up\"].value.cta_text.value }}",
+        "cta_link": "{{ page.metafields.custom[\"2_up_3_up\"].value.cta_link.value }}",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 40,
+        "bottom_margin_mobile": 20
+      }
+    },
+    "two_three_up_jFUAja": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_PJTiwy": {
+          "type": "up-block",
+          "source": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value }}",
+          "settings": {
+            "up_img": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.first_block.value.image.value }}",
+            "description": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.content_heading | metafield_tag }}",
+            "cta_text": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.cta_text.value }}",
+            "cta_link": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.cta_link.value }}",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.display_name.value }}",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_7pzGL3": {
+          "type": "up-block",
+          "source": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value }}",
+          "settings": {
+            "up_img": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.second_block.value.image.value }}",
+            "description": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.content_heading | metafield_tag }}",
+            "cta_text": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.cta_text.value }}",
+            "cta_link": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.cta_link.value }}",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.display_name.value }}",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_DFTM7N": {
+          "type": "up-block",
+          "source": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value }}",
+          "settings": {
+            "up_img": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.third_block.value.image.value }}",
+            "description": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.content_heading | metafield_tag }}",
+            "cta_text": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.cta_text.value }}",
+            "cta_link": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.cta_link.value }}",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "{{ page.metafields.custom[\"2_up_3_up_lifestyle\"].value.display_name.value }}",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_PJTiwy",
+        "up_block_7pzGL3",
+        "up_block_DFTM7N"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-black text-white",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25",
+    "image_text_a4RnVR",
+    "two_three_up_hYTVGp",
+    "two_three_up_jFUAja"
+  ]
+}

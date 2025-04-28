@@ -1,0 +1,42 @@
+{% layout none %}
+
+{%- paginate collection.products by 18 -%}
+{
+  "title": {{- collection.title | json -}},
+  "handle": {{- collection.handle | json -}},
+  "totalProductCount": {{- collection.products_count | json -}},
+  "products": [
+    {%- for product in collection.products -%}
+      {%- render 'product-json', product: product -%}
+      {%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ],
+  "filters": {
+    "defaultShopifyFilters": true,
+    "options": [
+      {%- for filter in collection.filters -%}
+        {
+          "displayType": {{- filter.type | json -}},
+          "filterOptionId": {{- filter.param_name | json -}},
+          "filterType": {{- filter.type | json -}},
+          "label": {{- filter.label | json -}},
+          "selectType": {{- filter.type | json -}},
+          "status": "active",
+          "valueType": "all",
+          "values": [
+            {%- for filter_value in filter.values -%}
+              {
+                "label": {{- filter_value.label | json -}},
+                "value": {{- filter_value.value | json -}},
+                "active": {{- filter_value.active | json -}}
+              }
+              {%- unless forloop.last -%},{%- endunless -%}
+            {%- endfor -%}
+          ]
+        }
+        {%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+    ]
+  }
+}
+{%- endpaginate -%}

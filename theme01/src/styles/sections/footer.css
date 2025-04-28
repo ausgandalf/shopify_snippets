@@ -1,0 +1,39 @@
+.footer__container {
+  * {
+    @apply text-white;
+  }
+
+  a:hover {
+    @apply text-color-4;
+  }
+
+  [data-accordion-container] {
+    [data-accordion-body] {
+      @apply hidden;
+    }
+
+    &.active {
+      @apply pb-4;
+
+      [data-accordion-body] {
+        @apply block;
+      }
+
+      [data-accordion-icon] {
+        @apply rotate-180;
+      }
+    }
+  }
+
+  .contact-info__container {
+    p {
+      @apply text-xs;
+    }
+  }
+
+  .customer-service-info__container {
+    p {
+      @apply text-xs;
+    }
+  }
+}

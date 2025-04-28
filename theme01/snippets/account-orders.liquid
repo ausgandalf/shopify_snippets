@@ -1,0 +1,58 @@
+<div class='account-orders'>
+  {% if customer.orders != blank %}
+    <h3 class='uppercase mb-6'>{{ 'customer.orders.title' | t }}</h3>
+    <div class='lg:border-t-[3px] lg:border-color-1 w-full'>
+      <div class='hidden lg:flex bg-grey-1 lg:border-x lg:border-grey-1 px-6 py-4'>
+        <p class='account-order-label lg:w-1/4 xl:w-[16%]'>{{ 'customer.orders.order_number' | t }}</p>
+        <p class='account-order-label lg:w-1/4 xl:w-[18%]'>{{ 'customer.orders.date' | t }}</p>
+        <p class='account-order-label lg:w-1/4 xl:w-[13%]'>{{ 'customer.orders.status' | t }}</p>
+        <p class='account-order-label lg:w-1/4 xl:w-[11%]'>{{ 'customer.orders.total' | t }}</p>
+      </div>
+      {% paginate customer.orders by 20 %}
+        <div class='border-t border-grey-3 lg:border-x lg:border-t-0 mb-6 md:mb-12'>
+          {% for order in customer.orders %}
+            <div class='flex flex-wrap md:items-center gap-y-6 lg:gap-y-2 border-b border-grey-3 py-6 lg:px-6 lg:py-4'>
+              <div class='w-1/2 md:w-1/4 xl:w-[16%]'>
+                <p class='lg:hidden account-order-label mb-2'>{{ 'customer.orders.order_number' | t }}:</p>
+                <a class='button-link' href='{{ order.order_status_url }}'>{{ order.name }}</a>
+              </div>
+              <div class='w-1/2 md:w-1/4 xl:w-[18%]'>
+                <p class='lg:hidden account-order-label mb-2'>{{ 'customer.orders.date' | t }}</p>
+                <p class=''>{{ order.created_at | date: '%B %e, %Y' }}</p>
+              </div>
+              <div class='w-1/2 md:w-1/4 xl:w-[13%]'>
+                <p class='lg:hidden account-order-label mb-2'>{{ 'customer.orders.status' | t }}</p>
+                <p class='capitalize'>{{ order.fulfillment_status }}</p>
+              </div>
+              <div class='w-1/2 md:w-1/4 xl:w-[11%]'>
+                <p class='lg:hidden account-order-label mb-2'>{{ 'customer.orders.total' | t }}</p>
+                <p class=''>{{ order.total_price | money }}</p>
+              </div>
+              <div class='w-full md:w-1/4 lg:w-1/2 xl:w-[22%] flex items-center gap-2'>
+                {% for item in order.line_items limit: 2 %}
+                  {{ item.image | image_url: width: 84 | image_tag: width: 42, class: 'border border-grey-3', alt: item.title }}
+                {% endfor %}
+                {% if order.line_items.size > 2 %}
+                  {% assign more_count = order.line_items.size | minus: 2 %}
+                  <p class=''>+{{ more_count }} more</p>
+                {% endif %}
+              </div>
+              <div class='w-full md:w-1/4 lg:w-1/2 xl:w-1/5 flex justify-start lg:justify-end'>
+                <a
+                  href='{{ order.order_status_url }}'
+                  class='caps-regular border-2 border-black hover:bg-grey-3 no-underline text-black hover:text-black px-6 py-2'
+                >
+                  View Order
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        {% render 'account-orders-pagination', paginate: paginate %}
+      {% endpaginate %}
+    </div>
+  {% else %}
+    <h3 class='uppercase mb-4'>{{ 'customer.orders.title' | t }}</h3>
+    <p class='text-sm leading-normal'>{{ 'customer.orders.none' | t }}</p>
+  {% endif %}
+</div>

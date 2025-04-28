@@ -1,0 +1,27 @@
+.brand-value-callout {
+  @apply lg:px-8 lg:py-[4.5rem];
+}
+
+.container .brand-value-callout {
+  @apply -mx-[15px] lg:mx-0;
+}
+
+.brand-value-callout-media {
+  @apply w-full lg:flex-1 relative;
+}
+
+.brand-value-callout-media button {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+.brand-value-callout-content {
+  @apply w-full lg:flex-1 px-6 py-12 lg:p-0;
+}
+
+.brand-value-callout-content p {
+  @apply text-sm leading-normal;
+}
+
+.brand-value-callout-description {
+  @apply flex-1;
+}

@@ -1,0 +1,123 @@
+#recharge-customer-portal .recharge-theme {
+  /* Color: Brand */
+  --recharge-color-brand: #241E18;
+  --recharge-color-brand-120: #090706;
+  --recharge-color-brand-20: #504b46;
+  --recharge-color-brand-40: #7c7874;
+  --recharge-color-brand-60: #a7a5a3;
+  --recharge-color-brand-75: #c8c7c5;
+  --recharge-color-brand-85: #dedddc;
+
+  /* Color: Neutral */
+  --recharge-color-neutral: hsl(30, 35%, 7%);
+  --recharge-color-neutral-80: hsl(30, 7%, 25%);
+  --recharge-color-neutral-70: hsl(30, 5%, 35%);
+  --recharge-color-neutral-40: hsl(30, 3%, 63%);
+  --recharge-color-neutral-10: hsl(30, 2%, 91%);
+
+  /* Color: Positive */
+  /* --recharge-color-positive120: hsl(148, 100%, 27%);
+  --recharge-color-positive: hsl(148, 100%, 33%);
+  --recharge-color-positive80: hsl(148, 57%, 46%);
+  --recharge-color-positive60: hsl(148, 49%, 60%);
+  --recharge-color-positive40: hsl(148, 49%, 73%);
+  --recharge-color-positive20: hsl(148, 50%, 87%);
+  --recharge-color-positive10: hsl(148, 49%, 93%); */
+
+  /* Color: Caution */
+  /* --recharge-color-caution120: hsl(43, 100%, 40%);
+  --recharge-color-caution: hsl(43, 100%, 50%);
+  --recharge-color-caution80: hsl(43, 100%, 60%);
+  --recharge-color-caution60: hsl(43, 100%, 70%);
+  --recharge-color-caution40: hsl(43, 100%, 80%);
+  --recharge-color-caution20: hsl(43, 100%, 90%);
+  --recharge-color-caution10: hsl(43, 100%, 95%); */
+
+  /* Color: Critical */
+  /* --recharge-color-critical120: hsl(12, 87%, 40%);
+  --recharge-color-critical: hsl(12, 87%, 50%);
+  --recharge-color-critical80: hsl(12, 86%, 70%);
+  --recharge-color-critical60: hsl(12, 85%, 80%);
+  --recharge-color-critical40: hsl(12, 85%, 80%);
+  --recharge-color-critical20: hsl(12, 85%, 90%);
+  --recharge-color-critical10: hsl(12, 85%, 95%); */
+
+  /* App */
+  --recharge-app-background: #F7F7F7;
+  --recharge-app-container: 1200px;
+  --recharge-app-vertical-padding: 0;
+  --recharge-views-background: #F7F7F7;
+  /* --recharge-app-zIndex: 9999999; */
+  /* --recharge-views-background: #FFFFFF; */
+  /* --recharge-view-container: 752px; */
+
+  /* Images */
+  --recharge-images-ratio: 1;
+
+  /* Corners */
+  --recharge-corners-radius: 0px;
+
+  /* Cards */
+  --recharge-cards-background: #FFFFFF;
+  --recharge-cards-border-color: RGBA(0,0,0,0);
+
+  /* Typography */
+  --recharge-typography-light: #FFFFFF;
+  --recharge-typography-primary: var(--recharge-color-neutral);
+  --recharge-typography-secondary: var(--recharge-color-neutral-70);
+  --recharge-typography-scale: 16px;
+  --recharge-typography-size-1: calc(3 * var(--recharge-typography-scale));
+  --recharge-typography-size-2: calc(2.25 * var(--recharge-typography-scale));
+  --recharge-typography-size-3: calc(1.625 * var(--recharge-typography-scale));
+  --recharge-typography-size-4: calc(1.25 * var(--recharge-typography-scale));
+  --recharge-typography-size-5: calc(1 * var(--recharge-typography-scale));
+  --recharge-typography-size-6: calc(0.875 * var(--recharge-typography-scale));
+  --recharge-typography-size-7: calc(0.75 * var(--recharge-typography-scale));
+
+  /* Buttons */
+  --recharge-button-brand: var(--recharge-color-brand);
+  --recharge-button-color: #FFFFFF;
+  --recharge-button-border-radius: 0px;
+  --recharge-button-font-family: inherit;
+  
+  --recharge-button-secondary: #C53D00;
+  --recharge-button-secondary-120: #982f00;
+  --recharge-button-secondary-60: #dc8b66;
+}
+
+.subscription-hero {
+  @apply bg-grey-1 px-5 py-6 lg:px-8 lg:py-12;
+}
+.subscription-hero h1 {
+  @apply max-w-[75rem] uppercase tracking-[1px] mx-auto;
+}
+.recharge-container {
+  @apply pb-6 lg:pb-20;
+}
+
+.active > div {
+  @apply opacity-100;
+}
+.active .recharge-card {
+  @apply bg-color-3 text-black;
+}
+
+.recharge-button {
+  @apply text-h6 uppercase !font-bold !tracking-[1px] !py-2.5;
+}
+.recharge-button.recharge-button-primary {
+  @apply bg-[var(--btn-primary-bg)] text-[var(--btn-primary-text)] border-[var(--btn-primary-border)];
+}
+.recharge-button.recharge-button-primary:hover {
+  @apply bg-[var(--btn-primary-hover)] border-[var(--btn-primary-hover)];
+}
+.recharge-button.recharge-button-secondary {
+  @apply bg-[var(--btn-secondary-bg)] text-[var(--btn-secondary-text)] border-[var(--btn-secondary-border)];
+}
+.recharge-button.recharge-button-secondary:hover {
+  @apply bg-[var(--btn-secondary-hover)] border-[var(--btn-secondary-border)];
+}
+
+.recharge-section-product-carousel [data-testid="recharge-internal-browse-all-products-button"] {
+  @apply button-link border-none hover:bg-transparent !font-bold !tracking-wider !px-0 !py-0.5;
+}

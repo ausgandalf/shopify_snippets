@@ -1,0 +1,257 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25": {
+      "type": "hero-section",
+      "blocks": {
+        "hero_value_prop_bGeYgk": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "hero_value_prop_bGeYgk"
+      ],
+      "custom_css": [
+        ".hero-content {background-color: rgba(0, 0, 0, 0);}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/LE-BlueLagoon_Web-Landing-Page-Assets-Desktop01.png",
+        "image_mobile": "shopify:\/\/shop_images\/LE-BlueLagoon_Web-Landing-Page-Assets-Mobile01.png",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 300,
+        "media_height_mobile": 210,
+        "subheading": "",
+        "heading": "",
+        "copy": "",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_YtMyVe": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "{{ section.settings.featured_product.metafields.custom.image_text_cta.value.desktop_image.value }}",
+        "image_mobile": "{{ section.settings.featured_product.metafields.custom.image_text_cta.value.mobile_image.value }}",
+        "video_url": "",
+        "subheading": "{{ section.settings.featured_product.metafields.custom.image_text_cta.value.subheading.value }}",
+        "heading": "{{ section.settings.featured_product.metafields.custom.image_text_cta.value.heading | metafield_tag }}",
+        "copy": "<p>Get supercharged energy that packs a punch of sweet pineapple, lime, & orange flavors!<\/p><h6>45 servings  per tub<\/h6><p>($1.11 per serving!)<\/p>{{ section.settings.featured_product.metafields.custom.image_text_cta.value.copy | metafield_tag }}",
+        "cta_text_1": "{{ section.settings.featured_product.metafields.custom.image_text_cta.value.cta_1_text.value }}",
+        "cta_url_1": "{{ section.settings.featured_product.metafields.custom.image_text_cta.value.cta_1_url.value }}",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "{{ page.metafields.custom.image_text_cta.value.featured_product.value }}",
+        "featured_variant": "{{ section.settings.featured_product.metafields.custom.image_text_cta.value.featured_variant.value }}",
+        "atc_cta_text": "{{ section.settings.featured_product.metafields.custom.image_text_cta.value.add_to_cart_cta_text.value }}",
+        "atc_cta_type": "button button--primary-invert",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#e8e8e8",
+        "content_bg_color": "#000000",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-first",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_a4RnVR": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/bluelagoon-lifestlye-2.jpg",
+        "subheading": "IT'S BACK",
+        "heading": "<h2>BLUE LAGOON - IGNITE<\/h2>",
+        "copy": "<p>The perfect tropical blend with hints of orange bitters, lemonade and Blue Curaçao flavors that will send your taste buds on a supercharged tasty vacay!<\/p>",
+        "cta_text_1": "Button Label",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "ignite",
+        "featured_variant": "41585506385962",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241E18",
+        "content_bg_color": "#F7F7F7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "two_three_up_jFUAja": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_PJTiwy": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/bluelagoon-lifestlye-3.jpg",
+            "description": "",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_7pzGL3": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/bluelagoon-lifestlye-2.jpg",
+            "description": "",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_DFTM7N": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/bluelagoon-lifestlye-1.jpg",
+            "description": "",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_PJTiwy",
+        "up_block_7pzGL3",
+        "up_block_DFTM7N"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-black text-white",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "two_three_up_hYTVGp": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_M7hTmx": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/IGNITE_BlueLagoon_45S_SC-Tub_Splash_b8996138-5b78-4cd1-97bf-0e7250446c85.png",
+            "description": "<h6>Limited Edition<\/h6><h3>IGNITE<\/h3><p>Get supercharged energy that packs a punch of orange bitters, lemonade, and Blue Curaçao flavors!<\/p><h6>45 servings per tub<\/h6>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "ignite",
+            "featured_variant": "41585506385962",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_M7hTmx"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>BLUE LAGOON IS BACK<\/h2>",
+        "copy": "<p>The perfect tropical blend with hints of orange bitters, lemonade and Blue Curaçao flavors that will send your taste buds on a supercharged tasty vacay!<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25",
+    "image_text_YtMyVe",
+    "image_text_a4RnVR",
+    "two_three_up_jFUAja",
+    "two_three_up_hYTVGp"
+  ]
+}

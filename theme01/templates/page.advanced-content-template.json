@@ -1,0 +1,1468 @@
+{
+  "sections": {
+    "744d5ee9-4a54-4703-b580-d1d1f2f595cc": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/bg.jpg",
+        "bg_video": "shopify:\/\/files\/videos\/a7165f5534d35a6495c929e04a666e13.mp4",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 35,
+        "media_height": 800,
+        "media_height_mobile": 210,
+        "subheading": "",
+        "heading": "<h1>New Arrivals<\/h1>",
+        "copy": "<p>Harness the powerful energy and unmatched focus of the legendary <em>Wapiti<\/em> with this supercharged and insanely delicious blue raspberry cream limited edition flavor.<\/p>",
+        "cta_text_1": "Shop now",
+        "cta_url_1": "shopify:\/\/collections",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch More",
+        "video_cta_url": "https:\/\/www.youtube.com\/watch?v=DudFe0T5TYE",
+        "video_cta_pos": "cta-2",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 350,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 36,
+        "bottom_margin_mobile": 16
+      }
+    },
+    "cf65dd5e-d9bd-445c-90d2-e7819725d50c": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/bg.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 500,
+        "media_height_mobile": 210,
+        "subheading": "",
+        "heading": "<h1>New Arrivals<\/h1>",
+        "copy": "<p>Harness the powerful energy and unmatched focus of the legendary <em>Wapiti<\/em> with this supercharged and insanely delicious blue raspberry cream limited edition flavor.<\/p>",
+        "cta_text_1": "Shop now",
+        "cta_url_1": "shopify:\/\/collections",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "https:\/\/www.youtube.com\/watch?v=DudFe0T5TYE",
+        "video_cta_pos": "cta-2",
+        "video_cta_type": "button button--secondary",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": false,
+        "logo_size": 350,
+        "content_text_color": "#3d3935",
+        "content_bg_color": "#ffffff",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 36,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "192b9268-8df2-42f1-8a23-4fd3440d00d6": {
+      "type": "hero-section",
+      "blocks": {
+        "ffd84012-bc37-4d04-8c08-334938d1e0e2": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_img": "shopify:\/\/shop_images\/Blood_Flow_to_Muscles.svg",
+            "prop_label": "Blood Flow to the Muscles"
+          }
+        },
+        "8ad5a46c-71e0-4b3c-8186-95835172cdaa": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_img": "shopify:\/\/shop_images\/Blood_Flow_to_Muscles.svg",
+            "prop_label": "Blood Flow to the Muscles"
+          }
+        },
+        "ca507f39-e322-4e0d-baa5-1d206fc01f38": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_img": "shopify:\/\/shop_images\/Blood_Flow_to_Muscles.svg",
+            "prop_label": "Blood Flow to the Muscles"
+          }
+        },
+        "d2c1f4af-01b1-4dd8-935b-a5527257403d": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_img": "shopify:\/\/shop_images\/Blood_Flow_to_Muscles.svg",
+            "prop_label": "Blood Flow to the Muscles"
+          }
+        }
+      },
+      "block_order": [
+        "ffd84012-bc37-4d04-8c08-334938d1e0e2",
+        "8ad5a46c-71e0-4b3c-8186-95835172cdaa",
+        "ca507f39-e322-4e0d-baa5-1d206fc01f38",
+        "d2c1f4af-01b1-4dd8-935b-a5527257403d"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/bg.jpg",
+        "bg_video": "shopify:\/\/files\/videos\/a7165f5534d35a6495c929e04a666e13.mp4",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 35,
+        "media_height": 800,
+        "media_height_mobile": 210,
+        "subheading": "Value Props in Content",
+        "heading": "<h1>New Arrivals<\/h1>",
+        "copy": "<p>Harness the powerful energy and unmatched focus of the legendary <em>Wapiti<\/em> with this supercharged and insanely delicious blue raspberry cream limited edition flavor.<\/p>",
+        "cta_text_1": "Shop now",
+        "cta_url_1": "shopify:\/\/collections",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch More",
+        "video_cta_url": "https:\/\/www.youtube.com\/watch?v=DudFe0T5TYE",
+        "video_cta_pos": "cta-2",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 350,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#241e18",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 36,
+        "bottom_margin_mobile": 16
+      }
+    },
+    "511f1063-0dfc-44b3-8d63-a23f37185b48": {
+      "type": "hero-section",
+      "blocks": {
+        "eccf94de-825d-46ac-a406-2223f65e055c": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_img": "shopify:\/\/shop_images\/Blood_Flow_to_Muscles.svg",
+            "prop_label": "Blood Flow to the Muscles"
+          }
+        },
+        "2b9cd219-e9df-411a-8530-c31a1ef3f99b": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_img": "shopify:\/\/shop_images\/Blood_Flow_to_Muscles.svg",
+            "prop_label": "Blood Flow to the Muscles"
+          }
+        },
+        "fdb5a874-a0be-4ed3-869f-fee7b74f55c1": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_img": "shopify:\/\/shop_images\/Blood_Flow_to_Muscles.svg",
+            "prop_label": "Blood Flow to the Muscles"
+          }
+        },
+        "fcf4b1c7-3dc9-4719-9f67-09842a50f0de": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_img": "shopify:\/\/shop_images\/Blood_Flow_to_Muscles.svg",
+            "prop_label": "Blood Flow to the Muscles"
+          }
+        }
+      },
+      "block_order": [
+        "eccf94de-825d-46ac-a406-2223f65e055c",
+        "2b9cd219-e9df-411a-8530-c31a1ef3f99b",
+        "fdb5a874-a0be-4ed3-869f-fee7b74f55c1",
+        "fcf4b1c7-3dc9-4719-9f67-09842a50f0de"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/bg.jpg",
+        "bg_video": "shopify:\/\/files\/videos\/a7165f5534d35a6495c929e04a666e13.mp4",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 35,
+        "media_height": 800,
+        "media_height_mobile": 210,
+        "subheading": "",
+        "heading": "<h5>Full-Width Hero with CTA Form<\/h5><h2>Apply to be an Ambassador<\/h2>",
+        "copy": "<p>Harness the powerful energy and unmatched focus of the legendary <em>Wapiti<\/em> with this supercharged and insanely delicious blue raspberry cream limited edition flavor.<\/p>",
+        "cta_text_1": "Shop now",
+        "cta_url_1": "shopify:\/\/collections",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-2",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "vnl18w96dvRlWZE3cpKIiw",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 350,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#241e18",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 36,
+        "bottom_margin_mobile": 16
+      }
+    },
+    "8d0b14b4-0937-4d94-a2ca-17f30ce8a310": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Group_34.jpg",
+        "video_url": "",
+        "subheading": "Featured Product",
+        "heading": "<h3>Womens Health Bundle<\/h3>",
+        "copy": "<h5>$134.99<\/h5><p>Our Women’s Health Bundle gives you everything you need to not only look good, but feel GREAT every day. It’s the first and most important step in the right direction to a new, radiant, glowing and healthier you!<\/p>",
+        "cta_text_1": "Shop now",
+        "cta_url_1": "shopify:\/\/collections",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "Learn More",
+        "cta_url_2": "shopify:\/\/pages\/contact-us",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#3d3935",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-center",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "a03ce62f-40c4-4439-9f33-8780d5d8ed7a": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Group_34.jpg",
+        "video_url": "https:\/\/youtu.be\/rxT-3AaZxtI?si=zE5O-IWhn9Hvt5sl",
+        "subheading": "Featured Product",
+        "heading": "<h3>Womens Health Bundle<\/h3>",
+        "copy": "<h5>$134.99<\/h5><p>Our Women’s Health Bundle gives you everything you need to not only look good, but feel GREAT every day. It’s the first and most important step in the right direction to a new, radiant, glowing and healthier you!<\/p>",
+        "cta_text_1": "Shop now",
+        "cta_url_1": "shopify:\/\/collections",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "Learn More",
+        "cta_url_2": "shopify:\/\/pages\/contact-us",
+        "cta_type_2": "button button--secondary-invert",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": false,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-center",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "d6f1eff6-3da9-40e5-9418-40cdf56beac4": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/AMMO-Bottle-ChocolateMint-1200_900x_38389d2b-b27d-4316-8bec-2c8a63cd8855.webp",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h2>Image\/Text CTA<\/h2><h5>\"Featured Variant\" Customization<\/h5>",
+        "copy": "<p>You have the option to merchandise this module to have an \"Add to Cart\" button for a specific product variant. <\/p><p><strong>Step 1: <\/strong>In your settings, scroll down to Featured Variant and select the parent product from the link field. <\/p><p><strong>Step 2: <\/strong>In another tab, visit the Product admin for that product and locate the specific variant you want to populate. Click 'Edit.' <\/p><p><strong>Step 3:<\/strong> In the URL, copy the variant ID that follows \"\/products\/\" and paste it into the theme setting here called \"Featured Variant\". <\/p><p>You should see the product's price and an \"Add to Cart\" button appear.<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "See Product Details",
+        "cta_url_2": "shopify:\/\/products\/ammo",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "ammo",
+        "featured_variant": "14859412733994",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#3d3935",
+        "content_bg_color": "#ffffff",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "524537b0-6510-4d20-bdc7-b03447f193e9": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/AMMO-Bottle-ChocolateMint-1200_900x_38389d2b-b27d-4316-8bec-2c8a63cd8855.webp",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h2>Ammo<\/h2><h5>Now in Mint Chocolate<\/h5>",
+        "copy": "<p>Overflowing with vitamins and other essential nutrients, AMMO was made to keep your body firing on all cylinders and performing to its fullest potential.<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "See Product Details",
+        "cta_url_2": "shopify:\/\/products\/ammo",
+        "cta_type_2": "button button--secondary-invert",
+        "featured_product": "ammo",
+        "featured_variant": "14859412733994",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary-invert",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "db277925-bf27-4482-9a4c-f2ee4bbcb5d4": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "102917e9-588a-45f6-9227-4b069c45b5ed": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo01.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "5f6fa832-6d8b-4b4f-a529-79eec1e89086": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo02.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "3972b851-66dd-42a5-99c0-00c778ee635b": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo03.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "6bca4a70-219f-4a57-a71b-6c3ed25715d6": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo04.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "ef0ad40e-deb4-4691-a582-bf5a46b8311a": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo05.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "e8e3bed0-7d3b-4470-8011-a299610de2b9": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo06.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "7ce7af3e-0954-4143-b976-526e55f1ef0e": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo07.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "ebbbdc3b-7d17-40ae-bcbe-2513bf41e896": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo01.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "ec63b6a8-2df4-47c3-80ef-7ece383664da": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo01.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "8d21b006-e7d5-4570-ae72-fb6b7245cb4f": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo02.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "da6a6e0b-2e61-4ce0-b552-e8ff96e3a580": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo03.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "00aa8613-05e2-48de-bdaa-ce501ff481d7": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo04.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "0b26763f-f70f-446f-a0c6-39eca3927e13": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo05.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "e1f93dc1-b985-4e9f-83d4-2a8bbfb7c20a": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo06.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "2a16dc35-7345-40e8-b50f-4dde57c7e087": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo07.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "0ad26668-be40-4eeb-a393-08c8f7ec4c25": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo01.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "102917e9-588a-45f6-9227-4b069c45b5ed",
+        "5f6fa832-6d8b-4b4f-a529-79eec1e89086",
+        "3972b851-66dd-42a5-99c0-00c778ee635b",
+        "6bca4a70-219f-4a57-a71b-6c3ed25715d6",
+        "ef0ad40e-deb4-4691-a582-bf5a46b8311a",
+        "e8e3bed0-7d3b-4470-8011-a299610de2b9",
+        "7ce7af3e-0954-4143-b976-526e55f1ef0e",
+        "ebbbdc3b-7d17-40ae-bcbe-2513bf41e896",
+        "ec63b6a8-2df4-47c3-80ef-7ece383664da",
+        "8d21b006-e7d5-4570-ae72-fb6b7245cb4f",
+        "da6a6e0b-2e61-4ce0-b552-e8ff96e3a580",
+        "00aa8613-05e2-48de-bdaa-ce501ff481d7",
+        "0b26763f-f70f-446f-a0c6-39eca3927e13",
+        "e1f93dc1-b985-4e9f-83d4-2a8bbfb7c20a",
+        "2a16dc35-7345-40e8-b50f-4dde57c7e087",
+        "0ad26668-be40-4eeb-a393-08c8f7ec4c25"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h3>AVAILABLE AT THESE TRUSTED PARTNERS<\/h3>",
+        "cta_text": "See More Stockists",
+        "cta_url": "shopify:\/\/pages\/contact-us",
+        "cta_type": "button button--primary",
+        "full_width": false,
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "fef630f9-439b-418d-919c-a866e54c6221": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "faddae73-835a-499f-bfd6-948bf5ecbb73": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Blood_Flow_to_Muscles.svg",
+            "logo_link": "#",
+            "logo_label": "<p><strong>Blood Flow to Muscles<\/strong><\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "16ee7dcd-eb9d-4009-b51c-8befb1c36c39": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Increase_Muscle_Build.svg",
+            "logo_link": "#",
+            "logo_label": "<p><strong>Increase Muscle Build<\/strong><\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "a55e9ac4-71c7-494f-98be-cc994aadfc6d": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Explosive_Sustained_Energy.svg",
+            "logo_link": "#",
+            "logo_label": "<p><strong>Explosive Sustained Energy<\/strong><\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "00ad7805-96a8-4371-be61-321dc7bb0759": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Amazing_Taste.svg",
+            "logo_link": "#",
+            "logo_label": "<p><strong>Amazing Taste<\/strong><\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "faddae73-835a-499f-bfd6-948bf5ecbb73",
+        "16ee7dcd-eb9d-4009-b51c-8befb1c36c39",
+        "a55e9ac4-71c7-494f-98be-cc994aadfc6d",
+        "00ad7805-96a8-4371-be61-321dc7bb0759"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "cta_text": "",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-black_text-white",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "cf002369-bd2f-469f-8147-4dd2aff50ad6": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "5095b037-efd6-4e94-9f46-51470a84df09": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#FE5000\"><\/circle>\n<path d=\"M31.9897 12C31.6573 12.0032 31.3405 12.1375 31.1095 12.3748C30.877 12.6122 30.749 12.9323 30.7521 13.2634V17.5611C30.7459 17.8968 30.8739 18.2216 31.108 18.4621C31.3436 18.7026 31.6651 18.8369 32.0007 18.8369C32.3378 18.8369 32.6593 18.7026 32.895 18.4621C33.1291 18.2216 33.257 17.8968 33.2492 17.5611V13.2634C33.2539 12.9277 33.1228 12.6044 32.8856 12.3655C32.6484 12.1281 32.3253 11.9969 31.9897 12ZM18.7521 17.4878C18.2449 17.4878 17.7876 17.797 17.5972 18.2686C17.4068 18.7403 17.5223 19.2806 17.8875 19.6351L20.9183 22.6693C21.1493 22.913 21.4692 23.0519 21.8048 23.0566C22.1403 23.0613 22.4634 22.9301 22.7022 22.6928C22.9394 22.4554 23.072 22.1337 23.0689 21.7979C23.0674 21.4622 22.93 21.1421 22.6881 20.9078L19.6479 17.8657C19.4123 17.6236 19.0892 17.4878 18.7521 17.4878ZM45.213 17.4972C44.8915 17.505 44.584 17.6362 44.3577 17.8657L41.3238 20.9078C41.06 21.1343 40.9009 21.4607 40.8884 21.8089C40.8743 22.1571 41.007 22.4944 41.2536 22.7412C41.4986 22.9864 41.8357 23.1191 42.1837 23.1051C42.5318 23.0926 42.8579 22.9348 43.0842 22.6694L46.1244 19.6351C46.4896 19.2744 46.5973 18.7278 46.396 18.2562C46.1946 17.783 45.7249 17.4831 45.213 17.4972ZM29.3425 20.4112C28.8742 20.4565 28.4716 20.7642 28.3015 21.203L23.8847 32.5016C23.7348 32.8858 23.7832 33.3199 24.0158 33.6619C24.2499 34.0023 24.6354 34.2069 25.0489 34.2069H28.7258V42.3416C28.7227 42.8898 29.077 43.3754 29.5998 43.5394C30.1211 43.705 30.6892 43.5098 31.0013 43.06L39.9783 30.2326H39.9767C40.2436 29.85 40.2748 29.3534 40.061 28.9396C39.8457 28.5273 39.4211 28.2681 38.9561 28.2681H34.4034L36.5494 22.0607C36.6773 21.6797 36.6149 21.2611 36.3824 20.9332C36.1483 20.6068 35.7722 20.4132 35.3711 20.4116H29.4624C29.4219 20.4085 29.3828 20.4085 29.3423 20.4116L29.3425 20.4112ZM30.3116 22.9099H33.6171L31.4712 29.1065C31.3385 29.4891 31.3994 29.9123 31.6335 30.2418C31.8692 30.5713 32.2484 30.7665 32.6526 30.7665H36.5683L31.223 38.3843V32.9529C31.2199 32.2657 30.6659 31.7114 29.9792 31.7082H26.8735L30.3116 22.9099ZM13.1582 30.7492C12.4809 30.7991 11.9659 31.3816 12.0018 32.0609C12.0361 32.7402 12.6073 33.2681 13.2877 33.2478H17.5719C17.9074 33.2556 18.232 33.126 18.4724 32.8917C18.7127 32.6559 18.8485 32.3342 18.8485 31.9985C18.8485 31.6627 18.7127 31.3395 18.4724 31.1052C18.2321 30.8694 17.9074 30.7413 17.5719 30.7491H13.2877C13.244 30.746 13.2019 30.746 13.1582 30.7492ZM46.3004 30.7492C45.6215 30.7991 45.1081 31.3816 45.144 32.0609C45.1783 32.7402 45.7495 33.2681 46.43 33.2478H50.7249H50.7234C51.0605 33.2556 51.3851 33.126 51.6254 32.8917C51.8658 32.6559 52 32.3342 52 31.9985C52 31.6627 51.8658 31.3395 51.6254 31.1052C51.3851 30.8694 51.0605 30.7413 50.7234 30.7491H46.43C46.3863 30.746 46.3441 30.746 46.3004 30.7492ZM42.1897 40.9388C41.6793 40.9388 41.222 41.248 41.0317 41.7211C40.8413 42.1943 40.9568 42.7347 41.3235 43.0876L44.3575 46.1218C44.5869 46.3717 44.9084 46.5185 45.2486 46.5263C45.5888 46.5341 45.9181 46.4029 46.16 46.1624C46.4004 45.9235 46.533 45.594 46.5268 45.2536C46.5205 44.9131 46.3754 44.5899 46.1241 44.3587L43.0839 41.3261C42.8498 41.0809 42.5268 40.9403 42.1897 40.9388ZM21.7761 40.9481C21.4515 40.9575 21.144 41.0934 20.9177 41.3261L17.8869 44.3588C17.6216 44.5852 17.464 44.9131 17.4515 45.2598C17.4375 45.6081 17.5701 45.9454 17.8152 46.1921C18.0617 46.4373 18.3988 46.57 18.7469 46.5575C19.0949 46.5435 19.4211 46.3857 19.6474 46.1218L22.6875 43.0876C23.0543 42.7284 23.162 42.1803 22.9607 41.7071C22.7593 41.2339 22.2895 40.9325 21.7761 40.9481ZM31.9889 45.163C31.6549 45.1661 31.3365 45.302 31.104 45.5409C30.873 45.7798 30.745 46.1031 30.7513 46.4357V50.7226C30.745 51.0599 30.873 51.3847 31.1071 51.6252C31.3428 51.8657 31.6642 52 31.9998 52C32.3369 52 32.6584 51.8657 32.8941 51.6252C33.1282 51.3847 33.2562 51.0599 33.2484 50.7226V46.4357C33.2562 46.0984 33.1251 45.772 32.8878 45.5331C32.6506 45.2926 32.326 45.1583 31.9889 45.163Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "description": "<h6>Explosive & Energy<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "a072915a-5b09-4c0b-bc6c-58f31b76c2d6": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#FE5000\"><\/circle>\n<path d=\"M47.918 39.7975L45.2517 22.4638C45.218 22.2475 45.1317 22.0425 45.0005 21.8663L41.0005 16.5325V16.5338C40.7492 16.1975 40.3542 16 39.9342 16H34.6005C34.1555 16 33.7392 16.2225 33.4917 16.5938L30.8255 20.5938C30.5268 21.0412 30.5268 21.6238 30.8255 22.0725L33.4917 26.0725C33.7392 26.4438 34.1555 26.6663 34.6005 26.6663H38.3966L37.7379 31.2788C36.1041 29.9462 34.0416 29.2538 31.9341 29.3338C29.8015 29.2325 27.6877 29.7713 25.8627 30.88C24.5814 27.1002 22.6227 22.6662 17.2678 22.6662V25.3337C20.9715 25.3337 22.279 28.465 23.719 32.8873L23.7178 32.8861C23.809 33.4223 24.0477 33.9223 24.4077 34.3286C24.719 34.5711 25.119 34.6698 25.5077 34.5986C25.8965 34.5286 26.2365 34.2973 26.4452 33.9611C26.4902 33.8811 27.6152 31.9998 31.9339 31.9998C36.1851 31.9998 37.2952 34.9748 37.3365 35.0873C37.5452 35.6586 38.1127 36.0186 38.7177 35.9636C39.3239 35.9086 39.8177 35.4536 39.9202 34.8548L41.254 25.5211C41.3015 25.1398 41.1852 24.7561 40.9327 24.4661C40.6815 24.1761 40.3177 24.0061 39.934 23.9998H35.3138L33.5338 21.3336L35.3113 18.6673L39.2675 18.6661L42.6675 23.1999L45.1712 39.4773C43.0525 41.1835 34.04 47.3259 17.5338 44.0261L17 46.6399C20.2662 47.3099 23.5901 47.6549 26.9251 47.6711C40.6202 47.6711 47.209 41.2711 47.5389 40.9425L47.5376 40.9412C47.8401 40.6425 47.9801 40.2175 47.9176 39.7975L47.918 39.7975Z\" fill=\"white\"><\/path>\n<path d=\"M33.2681 42.6663V38.4913L35.1943 39.7763L36.6731 37.5575L32.6731 34.8913C32.2231 34.6013 31.6444 34.6013 31.1943 34.8913L27.1943 37.5575L28.6731 39.7763L30.6006 38.4925V42.6663L33.2681 42.6663Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "description": "<h6>Increase Muscle Build<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "f2635b5e-d164-4333-abd7-efdb2d327cbe": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#FE5000\"><\/circle>\n<path d=\"M42.6048 26.9178H21.9027C19.5935 26.9178 17.7156 25.0401 17.7156 22.7308C17.7156 20.4215 19.5934 18.5437 21.9027 18.5437C22.6228 18.5437 23.2062 17.9604 23.2062 17.2403C23.2062 16.5201 22.6228 15.9368 21.9027 15.9368C18.1562 15.9353 15.1089 18.9842 15.1089 22.7306C15.1089 26.477 18.1563 29.5244 21.9027 29.5244H42.6048C44.914 29.5244 46.7918 31.4022 46.7918 33.7115C46.7918 36.0208 44.9141 37.8986 42.6048 37.8986H28.4741C24.7275 37.8986 21.6803 40.946 21.6803 44.6924C21.6803 48.4388 24.7277 51.4862 28.4741 51.4862H31.968C32.6882 51.4862 33.2715 50.9029 33.2715 50.1828C33.2715 49.4626 32.6882 48.8793 31.968 48.8793H28.4741C26.1648 48.8793 24.287 47.0015 24.287 44.6922C24.287 42.3845 26.1648 40.5067 28.4741 40.5067H42.6048C46.3513 40.5067 49.3986 37.4578 49.3986 33.7114C49.3986 29.9649 46.3512 26.9178 42.6048 26.9178Z\" fill=\"white\"><\/path>\n<path d=\"M25.953 17.2403L23.9399 19.2534C23.4303 19.763 23.4303 20.5869 23.9399 21.0981C24.194 21.3522 24.5278 21.48 24.8615 21.48C25.1953 21.48 25.529 21.3522 25.7831 21.0981L29.6407 17.2405L25.7831 13.3829C25.2734 12.8732 24.448 12.8732 23.9384 13.3829C23.4287 13.8925 23.4287 14.7164 23.9384 15.2261L25.953 17.2403Z\" fill=\"white\"><\/path>\n<path d=\"M42.6055 18.5436C44.9148 18.5436 46.7926 20.4229 46.7926 22.7307C46.7926 23.4959 46.5851 24.2446 46.1897 24.8956C45.8169 25.512 46.0138 26.3133 46.6302 26.6861C46.8407 26.8139 47.0737 26.8756 47.3052 26.8756C47.7457 26.8756 48.1757 26.6516 48.4208 26.2472C49.0612 25.1887 49.401 23.974 49.401 22.7322C49.401 18.9856 46.3521 15.9368 42.6072 15.9368C41.887 15.9368 41.3037 16.5201 41.3037 17.2403C41.3007 17.9589 41.8854 18.5436 42.6055 18.5436Z\" fill=\"white\"><\/path>\n<path d=\"M22.3749 39.3346C22.4801 38.6219 21.99 37.9589 21.2774 37.8522C19.2463 37.5485 17.7158 35.7684 17.7158 33.7102C17.7158 32.8712 17.9623 32.0624 18.4299 31.3708C18.8328 30.774 18.6765 29.9637 18.0796 29.5607C17.4843 29.1578 16.6724 29.3142 16.2695 29.911C15.5103 31.0371 15.1089 32.3496 15.1089 33.7117C15.1089 37.0508 17.5955 39.9405 20.8939 40.432C20.9601 40.441 21.0247 40.447 21.0879 40.447C21.7223 40.447 22.2787 39.9825 22.3749 39.3346Z\" fill=\"white\"><\/path>\n<path d=\"M40.8437 41.8151C40.1566 42.0286 39.7717 42.7592 39.9852 43.4478C40.11 43.8492 40.1731 44.2672 40.1731 44.6926C40.1731 47.0019 38.2939 48.8797 35.9861 48.8797C35.2659 48.8797 34.6826 49.463 34.6826 50.1832C34.6826 50.9033 35.2659 51.4866 35.9861 51.4866C39.7326 51.4866 42.7799 48.4377 42.7799 44.6928C42.7799 44.0042 42.6777 43.3247 42.4747 42.6722C42.2612 41.9867 41.5308 41.6016 40.8437 41.8151Z\" fill=\"white\"><\/path>\n<path d=\"M39.6468 21.4782C39.9805 21.4782 40.3143 21.3504 40.5683 21.0963C41.078 20.5867 41.078 19.7613 40.5683 19.2516L38.5553 17.2385L40.5683 15.2254C41.078 14.7158 41.078 13.8904 40.5683 13.3822C40.0587 12.8726 39.2333 12.8726 38.7236 13.3822L34.8672 17.2387L38.7248 21.0963C38.9789 21.3519 39.3126 21.4782 39.6464 21.4782L39.6468 21.4782Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "description": "<h6>Blood Flow to Muscle<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "fc20171f-8059-4962-8054-9f4b65ba3f79": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#FE5000\"><\/circle>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M25.9455 49.104C25.1348 49.104 24.4783 48.4474 24.4783 47.6368C24.4783 46.8261 25.1348 46.1696 25.9455 46.1696H41.595C41.7234 46.1696 41.8499 46.1182 41.9416 46.0265C42.0333 45.9348 42.0847 45.8101 42.0847 45.6799V23.1822C42.0847 22.9126 41.8664 22.6925 41.595 22.6925H23.9885C23.719 22.6925 23.4989 22.9107 23.4989 23.1822V30.0285C23.4989 30.8391 22.8423 31.4957 22.0317 31.4957C21.221 31.4957 20.5645 30.8391 20.5645 30.0285V23.1822C20.5645 21.2931 22.0958 19.7581 23.9885 19.7581H41.595C43.4858 19.7581 45.0191 21.2913 45.0191 23.1822V45.6799C45.0191 46.5877 44.6596 47.4589 44.0159 48.0989C43.374 48.7426 42.5028 49.1021 41.5968 49.1021H25.9473L25.9455 49.104Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.0839 16.3378V21.2291C42.0839 22.0397 41.4274 22.6963 40.6167 22.6963H24.9672C24.1566 22.6963 23.5 22.0397 23.5 21.2291V16.3378C23.5 15.5271 24.1566 14.8706 24.9672 14.8706H40.6167C41.4274 14.8706 42.0839 15.5271 42.0839 16.3378ZM39.1495 17.805H26.4344V19.7619H39.1495V17.805Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M43.5512 27.5856C42.7405 27.5856 42.084 26.929 42.084 26.1184C42.084 25.3077 42.7405 24.6512 43.5512 24.6512H46.4856C49.4567 24.6512 51.8647 27.0592 51.8647 30.0303V37.856C51.8647 40.8271 49.4567 43.2351 46.4856 43.2351H43.5512C42.7405 43.2351 42.084 42.5786 42.084 41.7679C42.084 40.9573 42.7405 40.3007 43.5512 40.3007H46.4856C47.8354 40.3007 48.9303 39.2058 48.9303 37.856V30.0303C48.9303 28.6805 47.8354 27.5856 46.4856 27.5856H43.5512Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M37.0395 16.9924C36.6782 17.7187 35.796 18.0122 35.0716 17.649C34.3453 17.2877 34.0519 16.4056 34.415 15.6811L37.3494 9.8123C37.7107 9.08603 38.5929 8.79259 39.3173 9.15575C40.0436 9.51705 40.337 10.3992 39.9739 11.1236L37.0395 16.9924Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.0503 44.3489C12.0484 44.3489 12.0429 44.3434 12.0411 44.3434C10.4345 43.0339 9.60555 40.9927 9.84762 38.9314C10.0934 36.8443 11.4029 35.0323 13.3084 34.1448L16.4904 32.6611C18.3959 31.7735 20.6242 31.933 22.3812 33.0884C24.118 34.2274 25.1487 36.175 25.1176 38.2473L25.4513 43.0654C25.455 43.1131 25.455 43.1589 25.455 43.2085C25.3927 45.5028 24.0373 47.5679 21.9557 48.5397C19.8742 49.5099 17.4239 49.2201 15.6231 47.7933C15.5864 47.7639 15.5515 47.7327 15.5149 47.6997L12.0486 44.3527L12.0503 44.3489ZM14.0328 42.1848C14.0328 42.1848 17.4991 45.53 17.5138 45.5392C18.4345 46.2343 19.6669 46.3645 20.7178 45.8748C21.7723 45.3833 22.4674 44.3471 22.5206 43.1861L22.1868 38.3793C22.1831 38.3316 22.1831 38.2858 22.1831 38.2381C22.2125 37.1542 21.6806 36.1308 20.7728 35.5366C19.865 34.9406 18.7151 34.8581 17.732 35.3147L14.55 36.8003C13.5651 37.2588 12.8902 38.1923 12.7637 39.2707C12.6372 40.3472 13.0773 41.4128 13.9265 42.0877C13.9632 42.117 14.0017 42.1482 14.0347 42.1812L14.0328 42.1848Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.8199 34.0512C17.1959 34.7683 16.9171 35.656 16.2001 36.0301C15.483 36.4061 14.5953 36.1273 14.2212 35.4102C14.2212 35.4102 12.024 31.071 13.3886 27.5479C13.6802 26.7923 14.5312 26.4163 15.2868 26.7079C16.0424 27.0013 16.4184 27.8523 16.1249 28.6079C15.1804 31.0508 16.8237 34.0495 16.8237 34.0495L16.8199 34.0512Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.2814 33.4784C16.9747 33.8984 17.1929 34.8026 16.7729 35.494C16.3529 36.1873 15.4488 36.4073 14.7573 35.9855L10.5098 33.4032C9.81832 32.9833 9.59827 32.0791 10.0182 31.3877C10.4382 30.6944 11.3424 30.4762 12.0357 30.8961L16.2814 33.4784Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "description": "<h6>Amazing Taste<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "57f036a0-31ab-4043-9158-7c1abddc961e": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#FE5000\"><\/circle>\n<path d=\"M42.6048 26.9178H21.9027C19.5935 26.9178 17.7156 25.0401 17.7156 22.7308C17.7156 20.4215 19.5934 18.5437 21.9027 18.5437C22.6228 18.5437 23.2062 17.9604 23.2062 17.2403C23.2062 16.5201 22.6228 15.9368 21.9027 15.9368C18.1562 15.9353 15.1089 18.9842 15.1089 22.7306C15.1089 26.477 18.1563 29.5244 21.9027 29.5244H42.6048C44.914 29.5244 46.7918 31.4022 46.7918 33.7115C46.7918 36.0208 44.9141 37.8986 42.6048 37.8986H28.4741C24.7275 37.8986 21.6803 40.946 21.6803 44.6924C21.6803 48.4388 24.7277 51.4862 28.4741 51.4862H31.968C32.6882 51.4862 33.2715 50.9029 33.2715 50.1828C33.2715 49.4626 32.6882 48.8793 31.968 48.8793H28.4741C26.1648 48.8793 24.287 47.0015 24.287 44.6922C24.287 42.3845 26.1648 40.5067 28.4741 40.5067H42.6048C46.3513 40.5067 49.3986 37.4578 49.3986 33.7114C49.3986 29.9649 46.3512 26.9178 42.6048 26.9178Z\" fill=\"white\"><\/path>\n<path d=\"M25.953 17.2403L23.9399 19.2534C23.4303 19.763 23.4303 20.5869 23.9399 21.0981C24.194 21.3522 24.5278 21.48 24.8615 21.48C25.1953 21.48 25.529 21.3522 25.7831 21.0981L29.6407 17.2405L25.7831 13.3829C25.2734 12.8732 24.448 12.8732 23.9384 13.3829C23.4287 13.8925 23.4287 14.7164 23.9384 15.2261L25.953 17.2403Z\" fill=\"white\"><\/path>\n<path d=\"M42.6055 18.5436C44.9148 18.5436 46.7926 20.4229 46.7926 22.7307C46.7926 23.4959 46.5851 24.2446 46.1897 24.8956C45.8169 25.512 46.0138 26.3133 46.6302 26.6861C46.8407 26.8139 47.0737 26.8756 47.3052 26.8756C47.7457 26.8756 48.1757 26.6516 48.4208 26.2472C49.0612 25.1887 49.401 23.974 49.401 22.7322C49.401 18.9856 46.3521 15.9368 42.6072 15.9368C41.887 15.9368 41.3037 16.5201 41.3037 17.2403C41.3007 17.9589 41.8854 18.5436 42.6055 18.5436Z\" fill=\"white\"><\/path>\n<path d=\"M22.3749 39.3346C22.4801 38.6219 21.99 37.9589 21.2774 37.8522C19.2463 37.5485 17.7158 35.7684 17.7158 33.7102C17.7158 32.8712 17.9623 32.0624 18.4299 31.3708C18.8328 30.774 18.6765 29.9637 18.0796 29.5607C17.4843 29.1578 16.6724 29.3142 16.2695 29.911C15.5103 31.0371 15.1089 32.3496 15.1089 33.7117C15.1089 37.0508 17.5955 39.9405 20.8939 40.432C20.9601 40.441 21.0247 40.447 21.0879 40.447C21.7223 40.447 22.2787 39.9825 22.3749 39.3346Z\" fill=\"white\"><\/path>\n<path d=\"M40.8437 41.8151C40.1566 42.0286 39.7717 42.7592 39.9852 43.4478C40.11 43.8492 40.1731 44.2672 40.1731 44.6926C40.1731 47.0019 38.2939 48.8797 35.9861 48.8797C35.2659 48.8797 34.6826 49.463 34.6826 50.1832C34.6826 50.9033 35.2659 51.4866 35.9861 51.4866C39.7326 51.4866 42.7799 48.4377 42.7799 44.6928C42.7799 44.0042 42.6777 43.3247 42.4747 42.6722C42.2612 41.9867 41.5308 41.6016 40.8437 41.8151Z\" fill=\"white\"><\/path>\n<path d=\"M39.6468 21.4782C39.9805 21.4782 40.3143 21.3504 40.5683 21.0963C41.078 20.5867 41.078 19.7613 40.5683 19.2516L38.5553 17.2385L40.5683 15.2254C41.078 14.7158 41.078 13.8904 40.5683 13.3822C40.0587 12.8726 39.2333 12.8726 38.7236 13.3822L34.8672 17.2387L38.7248 21.0963C38.9789 21.3519 39.3126 21.4782 39.6464 21.4782L39.6468 21.4782Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "description": "<h6>Blood Flow to Muscle<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "bd0dd747-f10c-4e9b-92de-38f01c754672": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#FE5000\"><\/circle>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M25.9455 49.104C25.1348 49.104 24.4783 48.4474 24.4783 47.6368C24.4783 46.8261 25.1348 46.1696 25.9455 46.1696H41.595C41.7234 46.1696 41.8499 46.1182 41.9416 46.0265C42.0333 45.9348 42.0847 45.8101 42.0847 45.6799V23.1822C42.0847 22.9126 41.8664 22.6925 41.595 22.6925H23.9885C23.719 22.6925 23.4989 22.9107 23.4989 23.1822V30.0285C23.4989 30.8391 22.8423 31.4957 22.0317 31.4957C21.221 31.4957 20.5645 30.8391 20.5645 30.0285V23.1822C20.5645 21.2931 22.0958 19.7581 23.9885 19.7581H41.595C43.4858 19.7581 45.0191 21.2913 45.0191 23.1822V45.6799C45.0191 46.5877 44.6596 47.4589 44.0159 48.0989C43.374 48.7426 42.5028 49.1021 41.5968 49.1021H25.9473L25.9455 49.104Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.0839 16.3378V21.2291C42.0839 22.0397 41.4274 22.6963 40.6167 22.6963H24.9672C24.1566 22.6963 23.5 22.0397 23.5 21.2291V16.3378C23.5 15.5271 24.1566 14.8706 24.9672 14.8706H40.6167C41.4274 14.8706 42.0839 15.5271 42.0839 16.3378ZM39.1495 17.805H26.4344V19.7619H39.1495V17.805Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M43.5512 27.5856C42.7405 27.5856 42.084 26.929 42.084 26.1184C42.084 25.3077 42.7405 24.6512 43.5512 24.6512H46.4856C49.4567 24.6512 51.8647 27.0592 51.8647 30.0303V37.856C51.8647 40.8271 49.4567 43.2351 46.4856 43.2351H43.5512C42.7405 43.2351 42.084 42.5786 42.084 41.7679C42.084 40.9573 42.7405 40.3007 43.5512 40.3007H46.4856C47.8354 40.3007 48.9303 39.2058 48.9303 37.856V30.0303C48.9303 28.6805 47.8354 27.5856 46.4856 27.5856H43.5512Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M37.0395 16.9924C36.6782 17.7187 35.796 18.0122 35.0716 17.649C34.3453 17.2877 34.0519 16.4056 34.415 15.6811L37.3494 9.8123C37.7107 9.08603 38.5929 8.79259 39.3173 9.15575C40.0436 9.51705 40.337 10.3992 39.9739 11.1236L37.0395 16.9924Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.0503 44.3489C12.0484 44.3489 12.0429 44.3434 12.0411 44.3434C10.4345 43.0339 9.60555 40.9927 9.84762 38.9314C10.0934 36.8443 11.4029 35.0323 13.3084 34.1448L16.4904 32.6611C18.3959 31.7735 20.6242 31.933 22.3812 33.0884C24.118 34.2274 25.1487 36.175 25.1176 38.2473L25.4513 43.0654C25.455 43.1131 25.455 43.1589 25.455 43.2085C25.3927 45.5028 24.0373 47.5679 21.9557 48.5397C19.8742 49.5099 17.4239 49.2201 15.6231 47.7933C15.5864 47.7639 15.5515 47.7327 15.5149 47.6997L12.0486 44.3527L12.0503 44.3489ZM14.0328 42.1848C14.0328 42.1848 17.4991 45.53 17.5138 45.5392C18.4345 46.2343 19.6669 46.3645 20.7178 45.8748C21.7723 45.3833 22.4674 44.3471 22.5206 43.1861L22.1868 38.3793C22.1831 38.3316 22.1831 38.2858 22.1831 38.2381C22.2125 37.1542 21.6806 36.1308 20.7728 35.5366C19.865 34.9406 18.7151 34.8581 17.732 35.3147L14.55 36.8003C13.5651 37.2588 12.8902 38.1923 12.7637 39.2707C12.6372 40.3472 13.0773 41.4128 13.9265 42.0877C13.9632 42.117 14.0017 42.1482 14.0347 42.1812L14.0328 42.1848Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.8199 34.0512C17.1959 34.7683 16.9171 35.656 16.2001 36.0301C15.483 36.4061 14.5953 36.1273 14.2212 35.4102C14.2212 35.4102 12.024 31.071 13.3886 27.5479C13.6802 26.7923 14.5312 26.4163 15.2868 26.7079C16.0424 27.0013 16.4184 27.8523 16.1249 28.6079C15.1804 31.0508 16.8237 34.0495 16.8237 34.0495L16.8199 34.0512Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.2814 33.4784C16.9747 33.8984 17.1929 34.8026 16.7729 35.494C16.3529 36.1873 15.4488 36.4073 14.7573 35.9855L10.5098 33.4032C9.81832 32.9833 9.59827 32.0791 10.0182 31.3877C10.4382 30.6944 11.3424 30.4762 12.0357 30.8961L16.2814 33.4784Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "description": "<h6>Amazing Taste<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5095b037-efd6-4e94-9f46-51470a84df09",
+        "a072915a-5b09-4c0b-bc6c-58f31b76c2d6",
+        "f2635b5e-d164-4333-abd7-efdb2d327cbe",
+        "fc20171f-8059-4962-8054-9f4b65ba3f79",
+        "57f036a0-31ab-4043-9158-7c1abddc961e",
+        "bd0dd747-f10c-4e9b-92de-38f01c754672"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>KEEP HAMMERING PRE-WORKOUT™ BENEFITS<\/h2>",
+        "image_desktop": "shopify:\/\/shop_images\/BVP_Callout_-_9x16_2x_969a7f5b-8a57-405b-a9a6-f2d68cea12b4.png",
+        "image_mobile": "shopify:\/\/shop_images\/brandvaluecallout.jpg",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 32
+      }
+    },
+    "39cedc52-1e43-4168-ad7f-e5bd2bea1ac7": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "e21ab86a-0c9a-4007-a2ea-602ab3f8c61b": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#FE5000\"><\/circle>\n<path d=\"M31.9897 12C31.6573 12.0032 31.3405 12.1375 31.1095 12.3748C30.877 12.6122 30.749 12.9323 30.7521 13.2634V17.5611C30.7459 17.8968 30.8739 18.2216 31.108 18.4621C31.3436 18.7026 31.6651 18.8369 32.0007 18.8369C32.3378 18.8369 32.6593 18.7026 32.895 18.4621C33.1291 18.2216 33.257 17.8968 33.2492 17.5611V13.2634C33.2539 12.9277 33.1228 12.6044 32.8856 12.3655C32.6484 12.1281 32.3253 11.9969 31.9897 12ZM18.7521 17.4878C18.2449 17.4878 17.7876 17.797 17.5972 18.2686C17.4068 18.7403 17.5223 19.2806 17.8875 19.6351L20.9183 22.6693C21.1493 22.913 21.4692 23.0519 21.8048 23.0566C22.1403 23.0613 22.4634 22.9301 22.7022 22.6928C22.9394 22.4554 23.072 22.1337 23.0689 21.7979C23.0674 21.4622 22.93 21.1421 22.6881 20.9078L19.6479 17.8657C19.4123 17.6236 19.0892 17.4878 18.7521 17.4878ZM45.213 17.4972C44.8915 17.505 44.584 17.6362 44.3577 17.8657L41.3238 20.9078C41.06 21.1343 40.9009 21.4607 40.8884 21.8089C40.8743 22.1571 41.007 22.4944 41.2536 22.7412C41.4986 22.9864 41.8357 23.1191 42.1837 23.1051C42.5318 23.0926 42.8579 22.9348 43.0842 22.6694L46.1244 19.6351C46.4896 19.2744 46.5973 18.7278 46.396 18.2562C46.1946 17.783 45.7249 17.4831 45.213 17.4972ZM29.3425 20.4112C28.8742 20.4565 28.4716 20.7642 28.3015 21.203L23.8847 32.5016C23.7348 32.8858 23.7832 33.3199 24.0158 33.6619C24.2499 34.0023 24.6354 34.2069 25.0489 34.2069H28.7258V42.3416C28.7227 42.8898 29.077 43.3754 29.5998 43.5394C30.1211 43.705 30.6892 43.5098 31.0013 43.06L39.9783 30.2326H39.9767C40.2436 29.85 40.2748 29.3534 40.061 28.9396C39.8457 28.5273 39.4211 28.2681 38.9561 28.2681H34.4034L36.5494 22.0607C36.6773 21.6797 36.6149 21.2611 36.3824 20.9332C36.1483 20.6068 35.7722 20.4132 35.3711 20.4116H29.4624C29.4219 20.4085 29.3828 20.4085 29.3423 20.4116L29.3425 20.4112ZM30.3116 22.9099H33.6171L31.4712 29.1065C31.3385 29.4891 31.3994 29.9123 31.6335 30.2418C31.8692 30.5713 32.2484 30.7665 32.6526 30.7665H36.5683L31.223 38.3843V32.9529C31.2199 32.2657 30.6659 31.7114 29.9792 31.7082H26.8735L30.3116 22.9099ZM13.1582 30.7492C12.4809 30.7991 11.9659 31.3816 12.0018 32.0609C12.0361 32.7402 12.6073 33.2681 13.2877 33.2478H17.5719C17.9074 33.2556 18.232 33.126 18.4724 32.8917C18.7127 32.6559 18.8485 32.3342 18.8485 31.9985C18.8485 31.6627 18.7127 31.3395 18.4724 31.1052C18.2321 30.8694 17.9074 30.7413 17.5719 30.7491H13.2877C13.244 30.746 13.2019 30.746 13.1582 30.7492ZM46.3004 30.7492C45.6215 30.7991 45.1081 31.3816 45.144 32.0609C45.1783 32.7402 45.7495 33.2681 46.43 33.2478H50.7249H50.7234C51.0605 33.2556 51.3851 33.126 51.6254 32.8917C51.8658 32.6559 52 32.3342 52 31.9985C52 31.6627 51.8658 31.3395 51.6254 31.1052C51.3851 30.8694 51.0605 30.7413 50.7234 30.7491H46.43C46.3863 30.746 46.3441 30.746 46.3004 30.7492ZM42.1897 40.9388C41.6793 40.9388 41.222 41.248 41.0317 41.7211C40.8413 42.1943 40.9568 42.7347 41.3235 43.0876L44.3575 46.1218C44.5869 46.3717 44.9084 46.5185 45.2486 46.5263C45.5888 46.5341 45.9181 46.4029 46.16 46.1624C46.4004 45.9235 46.533 45.594 46.5268 45.2536C46.5205 44.9131 46.3754 44.5899 46.1241 44.3587L43.0839 41.3261C42.8498 41.0809 42.5268 40.9403 42.1897 40.9388ZM21.7761 40.9481C21.4515 40.9575 21.144 41.0934 20.9177 41.3261L17.8869 44.3588C17.6216 44.5852 17.464 44.9131 17.4515 45.2598C17.4375 45.6081 17.5701 45.9454 17.8152 46.1921C18.0617 46.4373 18.3988 46.57 18.7469 46.5575C19.0949 46.5435 19.4211 46.3857 19.6474 46.1218L22.6875 43.0876C23.0543 42.7284 23.162 42.1803 22.9607 41.7071C22.7593 41.2339 22.2895 40.9325 21.7761 40.9481ZM31.9889 45.163C31.6549 45.1661 31.3365 45.302 31.104 45.5409C30.873 45.7798 30.745 46.1031 30.7513 46.4357V50.7226C30.745 51.0599 30.873 51.3847 31.1071 51.6252C31.3428 51.8657 31.6642 52 31.9998 52C32.3369 52 32.6584 51.8657 32.8941 51.6252C33.1282 51.3847 33.2562 51.0599 33.2484 50.7226V46.4357C33.2562 46.0984 33.1251 45.772 32.8878 45.5331C32.6506 45.2926 32.326 45.1583 31.9889 45.163Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "description": "<h6>Explosive & Energy<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "d01953c6-cf84-4115-be41-ee4d5d4e82be": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#FE5000\"><\/circle>\n<path d=\"M47.918 39.7975L45.2517 22.4638C45.218 22.2475 45.1317 22.0425 45.0005 21.8663L41.0005 16.5325V16.5338C40.7492 16.1975 40.3542 16 39.9342 16H34.6005C34.1555 16 33.7392 16.2225 33.4917 16.5938L30.8255 20.5938C30.5268 21.0412 30.5268 21.6238 30.8255 22.0725L33.4917 26.0725C33.7392 26.4438 34.1555 26.6663 34.6005 26.6663H38.3966L37.7379 31.2788C36.1041 29.9462 34.0416 29.2538 31.9341 29.3338C29.8015 29.2325 27.6877 29.7713 25.8627 30.88C24.5814 27.1002 22.6227 22.6662 17.2678 22.6662V25.3337C20.9715 25.3337 22.279 28.465 23.719 32.8873L23.7178 32.8861C23.809 33.4223 24.0477 33.9223 24.4077 34.3286C24.719 34.5711 25.119 34.6698 25.5077 34.5986C25.8965 34.5286 26.2365 34.2973 26.4452 33.9611C26.4902 33.8811 27.6152 31.9998 31.9339 31.9998C36.1851 31.9998 37.2952 34.9748 37.3365 35.0873C37.5452 35.6586 38.1127 36.0186 38.7177 35.9636C39.3239 35.9086 39.8177 35.4536 39.9202 34.8548L41.254 25.5211C41.3015 25.1398 41.1852 24.7561 40.9327 24.4661C40.6815 24.1761 40.3177 24.0061 39.934 23.9998H35.3138L33.5338 21.3336L35.3113 18.6673L39.2675 18.6661L42.6675 23.1999L45.1712 39.4773C43.0525 41.1835 34.04 47.3259 17.5338 44.0261L17 46.6399C20.2662 47.3099 23.5901 47.6549 26.9251 47.6711C40.6202 47.6711 47.209 41.2711 47.5389 40.9425L47.5376 40.9412C47.8401 40.6425 47.9801 40.2175 47.9176 39.7975L47.918 39.7975Z\" fill=\"white\"><\/path>\n<path d=\"M33.2681 42.6663V38.4913L35.1943 39.7763L36.6731 37.5575L32.6731 34.8913C32.2231 34.6013 31.6444 34.6013 31.1943 34.8913L27.1943 37.5575L28.6731 39.7763L30.6006 38.4925V42.6663L33.2681 42.6663Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "description": "<h6>Increase Muscle Build<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "7fbeb661-a537-44a6-8cc2-3a1078115be6": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#FE5000\"><\/circle>\n<path d=\"M42.6048 26.9178H21.9027C19.5935 26.9178 17.7156 25.0401 17.7156 22.7308C17.7156 20.4215 19.5934 18.5437 21.9027 18.5437C22.6228 18.5437 23.2062 17.9604 23.2062 17.2403C23.2062 16.5201 22.6228 15.9368 21.9027 15.9368C18.1562 15.9353 15.1089 18.9842 15.1089 22.7306C15.1089 26.477 18.1563 29.5244 21.9027 29.5244H42.6048C44.914 29.5244 46.7918 31.4022 46.7918 33.7115C46.7918 36.0208 44.9141 37.8986 42.6048 37.8986H28.4741C24.7275 37.8986 21.6803 40.946 21.6803 44.6924C21.6803 48.4388 24.7277 51.4862 28.4741 51.4862H31.968C32.6882 51.4862 33.2715 50.9029 33.2715 50.1828C33.2715 49.4626 32.6882 48.8793 31.968 48.8793H28.4741C26.1648 48.8793 24.287 47.0015 24.287 44.6922C24.287 42.3845 26.1648 40.5067 28.4741 40.5067H42.6048C46.3513 40.5067 49.3986 37.4578 49.3986 33.7114C49.3986 29.9649 46.3512 26.9178 42.6048 26.9178Z\" fill=\"white\"><\/path>\n<path d=\"M25.953 17.2403L23.9399 19.2534C23.4303 19.763 23.4303 20.5869 23.9399 21.0981C24.194 21.3522 24.5278 21.48 24.8615 21.48C25.1953 21.48 25.529 21.3522 25.7831 21.0981L29.6407 17.2405L25.7831 13.3829C25.2734 12.8732 24.448 12.8732 23.9384 13.3829C23.4287 13.8925 23.4287 14.7164 23.9384 15.2261L25.953 17.2403Z\" fill=\"white\"><\/path>\n<path d=\"M42.6055 18.5436C44.9148 18.5436 46.7926 20.4229 46.7926 22.7307C46.7926 23.4959 46.5851 24.2446 46.1897 24.8956C45.8169 25.512 46.0138 26.3133 46.6302 26.6861C46.8407 26.8139 47.0737 26.8756 47.3052 26.8756C47.7457 26.8756 48.1757 26.6516 48.4208 26.2472C49.0612 25.1887 49.401 23.974 49.401 22.7322C49.401 18.9856 46.3521 15.9368 42.6072 15.9368C41.887 15.9368 41.3037 16.5201 41.3037 17.2403C41.3007 17.9589 41.8854 18.5436 42.6055 18.5436Z\" fill=\"white\"><\/path>\n<path d=\"M22.3749 39.3346C22.4801 38.6219 21.99 37.9589 21.2774 37.8522C19.2463 37.5485 17.7158 35.7684 17.7158 33.7102C17.7158 32.8712 17.9623 32.0624 18.4299 31.3708C18.8328 30.774 18.6765 29.9637 18.0796 29.5607C17.4843 29.1578 16.6724 29.3142 16.2695 29.911C15.5103 31.0371 15.1089 32.3496 15.1089 33.7117C15.1089 37.0508 17.5955 39.9405 20.8939 40.432C20.9601 40.441 21.0247 40.447 21.0879 40.447C21.7223 40.447 22.2787 39.9825 22.3749 39.3346Z\" fill=\"white\"><\/path>\n<path d=\"M40.8437 41.8151C40.1566 42.0286 39.7717 42.7592 39.9852 43.4478C40.11 43.8492 40.1731 44.2672 40.1731 44.6926C40.1731 47.0019 38.2939 48.8797 35.9861 48.8797C35.2659 48.8797 34.6826 49.463 34.6826 50.1832C34.6826 50.9033 35.2659 51.4866 35.9861 51.4866C39.7326 51.4866 42.7799 48.4377 42.7799 44.6928C42.7799 44.0042 42.6777 43.3247 42.4747 42.6722C42.2612 41.9867 41.5308 41.6016 40.8437 41.8151Z\" fill=\"white\"><\/path>\n<path d=\"M39.6468 21.4782C39.9805 21.4782 40.3143 21.3504 40.5683 21.0963C41.078 20.5867 41.078 19.7613 40.5683 19.2516L38.5553 17.2385L40.5683 15.2254C41.078 14.7158 41.078 13.8904 40.5683 13.3822C40.0587 12.8726 39.2333 12.8726 38.7236 13.3822L34.8672 17.2387L38.7248 21.0963C38.9789 21.3519 39.3126 21.4782 39.6464 21.4782L39.6468 21.4782Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "description": "<h6>Blood Flow to Muscle<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "49e6a62e-6cbf-47ed-b0a8-f4f144f178b6": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#FE5000\"><\/circle>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M25.9455 49.104C25.1348 49.104 24.4783 48.4474 24.4783 47.6368C24.4783 46.8261 25.1348 46.1696 25.9455 46.1696H41.595C41.7234 46.1696 41.8499 46.1182 41.9416 46.0265C42.0333 45.9348 42.0847 45.8101 42.0847 45.6799V23.1822C42.0847 22.9126 41.8664 22.6925 41.595 22.6925H23.9885C23.719 22.6925 23.4989 22.9107 23.4989 23.1822V30.0285C23.4989 30.8391 22.8423 31.4957 22.0317 31.4957C21.221 31.4957 20.5645 30.8391 20.5645 30.0285V23.1822C20.5645 21.2931 22.0958 19.7581 23.9885 19.7581H41.595C43.4858 19.7581 45.0191 21.2913 45.0191 23.1822V45.6799C45.0191 46.5877 44.6596 47.4589 44.0159 48.0989C43.374 48.7426 42.5028 49.1021 41.5968 49.1021H25.9473L25.9455 49.104Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.0839 16.3378V21.2291C42.0839 22.0397 41.4274 22.6963 40.6167 22.6963H24.9672C24.1566 22.6963 23.5 22.0397 23.5 21.2291V16.3378C23.5 15.5271 24.1566 14.8706 24.9672 14.8706H40.6167C41.4274 14.8706 42.0839 15.5271 42.0839 16.3378ZM39.1495 17.805H26.4344V19.7619H39.1495V17.805Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M43.5512 27.5856C42.7405 27.5856 42.084 26.929 42.084 26.1184C42.084 25.3077 42.7405 24.6512 43.5512 24.6512H46.4856C49.4567 24.6512 51.8647 27.0592 51.8647 30.0303V37.856C51.8647 40.8271 49.4567 43.2351 46.4856 43.2351H43.5512C42.7405 43.2351 42.084 42.5786 42.084 41.7679C42.084 40.9573 42.7405 40.3007 43.5512 40.3007H46.4856C47.8354 40.3007 48.9303 39.2058 48.9303 37.856V30.0303C48.9303 28.6805 47.8354 27.5856 46.4856 27.5856H43.5512Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M37.0395 16.9924C36.6782 17.7187 35.796 18.0122 35.0716 17.649C34.3453 17.2877 34.0519 16.4056 34.415 15.6811L37.3494 9.8123C37.7107 9.08603 38.5929 8.79259 39.3173 9.15575C40.0436 9.51705 40.337 10.3992 39.9739 11.1236L37.0395 16.9924Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.0503 44.3489C12.0484 44.3489 12.0429 44.3434 12.0411 44.3434C10.4345 43.0339 9.60555 40.9927 9.84762 38.9314C10.0934 36.8443 11.4029 35.0323 13.3084 34.1448L16.4904 32.6611C18.3959 31.7735 20.6242 31.933 22.3812 33.0884C24.118 34.2274 25.1487 36.175 25.1176 38.2473L25.4513 43.0654C25.455 43.1131 25.455 43.1589 25.455 43.2085C25.3927 45.5028 24.0373 47.5679 21.9557 48.5397C19.8742 49.5099 17.4239 49.2201 15.6231 47.7933C15.5864 47.7639 15.5515 47.7327 15.5149 47.6997L12.0486 44.3527L12.0503 44.3489ZM14.0328 42.1848C14.0328 42.1848 17.4991 45.53 17.5138 45.5392C18.4345 46.2343 19.6669 46.3645 20.7178 45.8748C21.7723 45.3833 22.4674 44.3471 22.5206 43.1861L22.1868 38.3793C22.1831 38.3316 22.1831 38.2858 22.1831 38.2381C22.2125 37.1542 21.6806 36.1308 20.7728 35.5366C19.865 34.9406 18.7151 34.8581 17.732 35.3147L14.55 36.8003C13.5651 37.2588 12.8902 38.1923 12.7637 39.2707C12.6372 40.3472 13.0773 41.4128 13.9265 42.0877C13.9632 42.117 14.0017 42.1482 14.0347 42.1812L14.0328 42.1848Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.8199 34.0512C17.1959 34.7683 16.9171 35.656 16.2001 36.0301C15.483 36.4061 14.5953 36.1273 14.2212 35.4102C14.2212 35.4102 12.024 31.071 13.3886 27.5479C13.6802 26.7923 14.5312 26.4163 15.2868 26.7079C16.0424 27.0013 16.4184 27.8523 16.1249 28.6079C15.1804 31.0508 16.8237 34.0495 16.8237 34.0495L16.8199 34.0512Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.2814 33.4784C16.9747 33.8984 17.1929 34.8026 16.7729 35.494C16.3529 36.1873 15.4488 36.4073 14.7573 35.9855L10.5098 33.4032C9.81832 32.9833 9.59827 32.0791 10.0182 31.3877C10.4382 30.6944 11.3424 30.4762 12.0357 30.8961L16.2814 33.4784Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "description": "<h6>Amazing Taste<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "e2226838-a99d-4031-94f3-ce37b8bc670f": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#FE5000\"><\/circle>\n<path d=\"M42.6048 26.9178H21.9027C19.5935 26.9178 17.7156 25.0401 17.7156 22.7308C17.7156 20.4215 19.5934 18.5437 21.9027 18.5437C22.6228 18.5437 23.2062 17.9604 23.2062 17.2403C23.2062 16.5201 22.6228 15.9368 21.9027 15.9368C18.1562 15.9353 15.1089 18.9842 15.1089 22.7306C15.1089 26.477 18.1563 29.5244 21.9027 29.5244H42.6048C44.914 29.5244 46.7918 31.4022 46.7918 33.7115C46.7918 36.0208 44.9141 37.8986 42.6048 37.8986H28.4741C24.7275 37.8986 21.6803 40.946 21.6803 44.6924C21.6803 48.4388 24.7277 51.4862 28.4741 51.4862H31.968C32.6882 51.4862 33.2715 50.9029 33.2715 50.1828C33.2715 49.4626 32.6882 48.8793 31.968 48.8793H28.4741C26.1648 48.8793 24.287 47.0015 24.287 44.6922C24.287 42.3845 26.1648 40.5067 28.4741 40.5067H42.6048C46.3513 40.5067 49.3986 37.4578 49.3986 33.7114C49.3986 29.9649 46.3512 26.9178 42.6048 26.9178Z\" fill=\"white\"><\/path>\n<path d=\"M25.953 17.2403L23.9399 19.2534C23.4303 19.763 23.4303 20.5869 23.9399 21.0981C24.194 21.3522 24.5278 21.48 24.8615 21.48C25.1953 21.48 25.529 21.3522 25.7831 21.0981L29.6407 17.2405L25.7831 13.3829C25.2734 12.8732 24.448 12.8732 23.9384 13.3829C23.4287 13.8925 23.4287 14.7164 23.9384 15.2261L25.953 17.2403Z\" fill=\"white\"><\/path>\n<path d=\"M42.6055 18.5436C44.9148 18.5436 46.7926 20.4229 46.7926 22.7307C46.7926 23.4959 46.5851 24.2446 46.1897 24.8956C45.8169 25.512 46.0138 26.3133 46.6302 26.6861C46.8407 26.8139 47.0737 26.8756 47.3052 26.8756C47.7457 26.8756 48.1757 26.6516 48.4208 26.2472C49.0612 25.1887 49.401 23.974 49.401 22.7322C49.401 18.9856 46.3521 15.9368 42.6072 15.9368C41.887 15.9368 41.3037 16.5201 41.3037 17.2403C41.3007 17.9589 41.8854 18.5436 42.6055 18.5436Z\" fill=\"white\"><\/path>\n<path d=\"M22.3749 39.3346C22.4801 38.6219 21.99 37.9589 21.2774 37.8522C19.2463 37.5485 17.7158 35.7684 17.7158 33.7102C17.7158 32.8712 17.9623 32.0624 18.4299 31.3708C18.8328 30.774 18.6765 29.9637 18.0796 29.5607C17.4843 29.1578 16.6724 29.3142 16.2695 29.911C15.5103 31.0371 15.1089 32.3496 15.1089 33.7117C15.1089 37.0508 17.5955 39.9405 20.8939 40.432C20.9601 40.441 21.0247 40.447 21.0879 40.447C21.7223 40.447 22.2787 39.9825 22.3749 39.3346Z\" fill=\"white\"><\/path>\n<path d=\"M40.8437 41.8151C40.1566 42.0286 39.7717 42.7592 39.9852 43.4478C40.11 43.8492 40.1731 44.2672 40.1731 44.6926C40.1731 47.0019 38.2939 48.8797 35.9861 48.8797C35.2659 48.8797 34.6826 49.463 34.6826 50.1832C34.6826 50.9033 35.2659 51.4866 35.9861 51.4866C39.7326 51.4866 42.7799 48.4377 42.7799 44.6928C42.7799 44.0042 42.6777 43.3247 42.4747 42.6722C42.2612 41.9867 41.5308 41.6016 40.8437 41.8151Z\" fill=\"white\"><\/path>\n<path d=\"M39.6468 21.4782C39.9805 21.4782 40.3143 21.3504 40.5683 21.0963C41.078 20.5867 41.078 19.7613 40.5683 19.2516L38.5553 17.2385L40.5683 15.2254C41.078 14.7158 41.078 13.8904 40.5683 13.3822C40.0587 12.8726 39.2333 12.8726 38.7236 13.3822L34.8672 17.2387L38.7248 21.0963C38.9789 21.3519 39.3126 21.4782 39.6464 21.4782L39.6468 21.4782Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "description": "<h6>Blood Flow to Muscle<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        },
+        "811ab211-40f8-429a-b1db-b38960181d8a": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "<svg width=\"64\" height=\"64\" viewbox=\"0 0 64 64\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<circle cx=\"32\" cy=\"32\" r=\"32\" fill=\"#FE5000\"><\/circle>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M25.9455 49.104C25.1348 49.104 24.4783 48.4474 24.4783 47.6368C24.4783 46.8261 25.1348 46.1696 25.9455 46.1696H41.595C41.7234 46.1696 41.8499 46.1182 41.9416 46.0265C42.0333 45.9348 42.0847 45.8101 42.0847 45.6799V23.1822C42.0847 22.9126 41.8664 22.6925 41.595 22.6925H23.9885C23.719 22.6925 23.4989 22.9107 23.4989 23.1822V30.0285C23.4989 30.8391 22.8423 31.4957 22.0317 31.4957C21.221 31.4957 20.5645 30.8391 20.5645 30.0285V23.1822C20.5645 21.2931 22.0958 19.7581 23.9885 19.7581H41.595C43.4858 19.7581 45.0191 21.2913 45.0191 23.1822V45.6799C45.0191 46.5877 44.6596 47.4589 44.0159 48.0989C43.374 48.7426 42.5028 49.1021 41.5968 49.1021H25.9473L25.9455 49.104Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.0839 16.3378V21.2291C42.0839 22.0397 41.4274 22.6963 40.6167 22.6963H24.9672C24.1566 22.6963 23.5 22.0397 23.5 21.2291V16.3378C23.5 15.5271 24.1566 14.8706 24.9672 14.8706H40.6167C41.4274 14.8706 42.0839 15.5271 42.0839 16.3378ZM39.1495 17.805H26.4344V19.7619H39.1495V17.805Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M43.5512 27.5856C42.7405 27.5856 42.084 26.929 42.084 26.1184C42.084 25.3077 42.7405 24.6512 43.5512 24.6512H46.4856C49.4567 24.6512 51.8647 27.0592 51.8647 30.0303V37.856C51.8647 40.8271 49.4567 43.2351 46.4856 43.2351H43.5512C42.7405 43.2351 42.084 42.5786 42.084 41.7679C42.084 40.9573 42.7405 40.3007 43.5512 40.3007H46.4856C47.8354 40.3007 48.9303 39.2058 48.9303 37.856V30.0303C48.9303 28.6805 47.8354 27.5856 46.4856 27.5856H43.5512Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M37.0395 16.9924C36.6782 17.7187 35.796 18.0122 35.0716 17.649C34.3453 17.2877 34.0519 16.4056 34.415 15.6811L37.3494 9.8123C37.7107 9.08603 38.5929 8.79259 39.3173 9.15575C40.0436 9.51705 40.337 10.3992 39.9739 11.1236L37.0395 16.9924Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.0503 44.3489C12.0484 44.3489 12.0429 44.3434 12.0411 44.3434C10.4345 43.0339 9.60555 40.9927 9.84762 38.9314C10.0934 36.8443 11.4029 35.0323 13.3084 34.1448L16.4904 32.6611C18.3959 31.7735 20.6242 31.933 22.3812 33.0884C24.118 34.2274 25.1487 36.175 25.1176 38.2473L25.4513 43.0654C25.455 43.1131 25.455 43.1589 25.455 43.2085C25.3927 45.5028 24.0373 47.5679 21.9557 48.5397C19.8742 49.5099 17.4239 49.2201 15.6231 47.7933C15.5864 47.7639 15.5515 47.7327 15.5149 47.6997L12.0486 44.3527L12.0503 44.3489ZM14.0328 42.1848C14.0328 42.1848 17.4991 45.53 17.5138 45.5392C18.4345 46.2343 19.6669 46.3645 20.7178 45.8748C21.7723 45.3833 22.4674 44.3471 22.5206 43.1861L22.1868 38.3793C22.1831 38.3316 22.1831 38.2858 22.1831 38.2381C22.2125 37.1542 21.6806 36.1308 20.7728 35.5366C19.865 34.9406 18.7151 34.8581 17.732 35.3147L14.55 36.8003C13.5651 37.2588 12.8902 38.1923 12.7637 39.2707C12.6372 40.3472 13.0773 41.4128 13.9265 42.0877C13.9632 42.117 14.0017 42.1482 14.0347 42.1812L14.0328 42.1848Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.8199 34.0512C17.1959 34.7683 16.9171 35.656 16.2001 36.0301C15.483 36.4061 14.5953 36.1273 14.2212 35.4102C14.2212 35.4102 12.024 31.071 13.3886 27.5479C13.6802 26.7923 14.5312 26.4163 15.2868 26.7079C16.0424 27.0013 16.4184 27.8523 16.1249 28.6079C15.1804 31.0508 16.8237 34.0495 16.8237 34.0495L16.8199 34.0512Z\" fill=\"white\"><\/path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.2814 33.4784C16.9747 33.8984 17.1929 34.8026 16.7729 35.494C16.3529 36.1873 15.4488 36.4073 14.7573 35.9855L10.5098 33.4032C9.81832 32.9833 9.59827 32.0791 10.0182 31.3877C10.4382 30.6944 11.3424 30.4762 12.0357 30.8961L16.2814 33.4784Z\" fill=\"white\"><\/path>\n<\/svg>",
+            "description": "<h6>Amazing Taste<\/h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e21ab86a-0c9a-4007-a2ea-602ab3f8c61b",
+        "d01953c6-cf84-4115-be41-ee4d5d4e82be",
+        "7fbeb661-a537-44a6-8cc2-3a1078115be6",
+        "49e6a62e-6cbf-47ed-b0a8-f4f144f178b6",
+        "e2226838-a99d-4031-94f3-ce37b8bc670f",
+        "811ab211-40f8-429a-b1db-b38960181d8a"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>KEEP HAMMERING PRE-WORKOUT™ BENEFITS<\/h2>",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-3",
+        "color_scheme": "bg-grey-1_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "129f6bbe-f45f-4738-a380-b7e5d1388a80": {
+      "type": "two-three-up",
+      "blocks": {
+        "0f17c2d1-2988-4b2b-bcdb-cefff2f4c712": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/two-three-up1.png",
+            "description": "<h3>Ignite Lite<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p><h5>$44.95<\/h5>",
+            "cta_text": "Shop now",
+            "cta_link": "shopify:\/\/products\/ignite-lite",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "5699e7dd-1b2b-44d3-8f7b-3baef9ef177d": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/two-three-up2.png",
+            "description": "<h3>super greens<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p><h5>$44.95<\/h5>",
+            "cta_text": "Shop now",
+            "cta_link": "shopify:\/\/products\/greens",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "0f17c2d1-2988-4b2b-bcdb-cefff2f4c712",
+        "5699e7dd-1b2b-44d3-8f7b-3baef9ef177d"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Shop Nutrition<\/h2>",
+        "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>",
+        "cta_text": "Shop all",
+        "cta_link": "shopify:\/\/collections",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "before:bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "da584a8f-ab20-4967-b75a-974e00a7ba84": {
+      "type": "two-three-up",
+      "blocks": {
+        "9a5ac860-52f1-4f3f-a637-1b1cbd11da5a": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/FPO_-_3Up-3x2-1.png",
+            "description": "<h3>Ignite Lite<\/h3><h5>Energy & Focus<\/h5><h5>$44.95<\/h5><ul><li>Optimum 2:1:1: Ratio<\/li><li>Lean Muscle Growth<\/li><li>Pre\/Intra\/Post Workout<\/li><li>Rapid Muscle Recovery<\/li><\/ul>",
+            "cta_text": "shop now",
+            "cta_link": "shopify:\/\/products\/ignite-lite",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "90112efa-188e-4334-bdc1-cb9d2e9bed8e": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/FPO_-_3Up-3x2-2.png",
+            "description": "<h3>hydration<\/h3><h5>Enhanced Hydration<\/h5><h5>$44.95<\/h5><ul><li>Optimum 2:1:1: Ratio<\/li><li>Lean Muscle Growth<\/li><li>Pre\/Intra\/Post Workout<\/li><li>Rapid Muscle Recovery<\/li><\/ul>",
+            "cta_text": "Shop now",
+            "cta_link": "shopify:\/\/products\/hydrate",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "817e02fa-497e-4609-9263-ac301bdcc488": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/FPO_-_3Up-3x2-3.png",
+            "description": "<h3>super greens<\/h3><h5>Everyday Health<\/h5><h5>$44.95<\/h5><ul><li>Optimum 2:1:1: Ratio<\/li><li>Lean Muscle Growth<\/li><li>Pre\/Intra\/Post Workout<\/li><li>Rapid Muscle Recovery<\/li><\/ul>",
+            "cta_text": "Shop now",
+            "cta_link": "shopify:\/\/products\/greens",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-grey-1 text-black",
+            "text_align": "text-center items-center",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "9a5ac860-52f1-4f3f-a637-1b1cbd11da5a",
+        "90112efa-188e-4334-bdc1-cb9d2e9bed8e",
+        "817e02fa-497e-4609-9263-ac301bdcc488"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Shop Nutrition<\/h2>",
+        "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>",
+        "cta_text": "Shop all",
+        "cta_link": "shopify:\/\/collections",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 48,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "3d602b22-b60f-48db-8bc2-e9c716257c0e": {
+      "type": "two-three-up",
+      "blocks": {
+        "168534b3-0a2c-45f5-a13a-d554275b20c3": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/FPO_-_3Up-3x2-1.png",
+            "description": "<h3>Ignite Lite<\/h3><h5>Energy & Focus<\/h5><ul><li>Optimum 2:1:1: Ratio<\/li><li>Lean Muscle Growth<\/li><li>Pre\/Intra\/Post Workout<\/li><li>Rapid Muscle Recovery<\/li><\/ul>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "ignite-lite",
+            "featured_variant": "40514117566506",
+            "atc_cta_text": "Buy Raspberry Lemonade",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "47fb0970-af27-4fc3-8db1-0eec0579449c": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/FPO_-_3Up-3x2-2.png",
+            "description": "<h3>hydrate<\/h3><h5>Enhanced Hydration<\/h5><h5>$44.95<\/h5><ul><li>Optimum 2:1:1: Ratio<\/li><li>Lean Muscle Growth<\/li><li>Pre\/Intra\/Post Workout<\/li><li>Rapid Muscle Recovery<\/li><\/ul>",
+            "cta_text": "Shop now",
+            "cta_link": "shopify:\/\/products\/hydrate",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "hydrate",
+            "featured_variant": "40538693697578",
+            "atc_cta_text": "Buy Lemonade",
+            "atc_cta_type": "button button--primary-invert"
+          }
+        },
+        "cc0940b1-9295-40da-928c-473db4e596a7": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/FPO_-_3Up-3x2-3.png",
+            "description": "<h3>super greens<\/h3><h5>Everyday Health<\/h5><h5>$44.95<\/h5><ul><li>Optimum 2:1:1: Ratio<\/li><li>Lean Muscle Growth<\/li><li>Pre\/Intra\/Post Workout<\/li><li>Rapid Muscle Recovery<\/li><\/ul>",
+            "cta_text": "Shop now",
+            "cta_link": "shopify:\/\/products\/greens",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-grey-1 text-black",
+            "text_align": "text-center items-center",
+            "featured_product": "greens",
+            "featured_variant": "",
+            "atc_cta_text": "Buy Now",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "168534b3-0a2c-45f5-a13a-d554275b20c3",
+        "47fb0970-af27-4fc3-8db1-0eec0579449c",
+        "cc0940b1-9295-40da-928c-473db4e596a7"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>3-Up \"Featured Variant\"<\/h2>",
+        "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.<\/p>",
+        "cta_text": "Shop all",
+        "cta_link": "shopify:\/\/collections",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 48,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "774a67ae-4ac8-4253-b21d-6d8e56ed288e": {
+      "type": "two-three-up",
+      "blocks": {
+        "5325e2ef-0007-45f9-accf-6f2190c0f484": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/FPO_-_2Up-a.png",
+            "description": "<h3>For Hunting<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Learn More",
+            "cta_link": "shopify:\/\/blogs\/education",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-grey-1 text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "f9f3e9f8-c5a6-4f38-aedd-a5add724324e": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/FPO_-_2Up-b.png",
+            "description": "<h3>For Workouts<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Learn More",
+            "cta_link": "shopify:\/\/blogs\/fitness",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "5325e2ef-0007-45f9-accf-6f2190c0f484",
+        "f9f3e9f8-c5a6-4f38-aedd-a5add724324e"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Shop by Activity<\/h2>",
+        "copy": "<p>Tips on how to use our products, whether you are hunting or training at the gym.<\/p>",
+        "cta_text": "Learn More",
+        "cta_link": "shopify:\/\/collections",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1a89dec9-43a1-4e7c-9e1d-a99463ebf743": {
+      "type": "two-three-up",
+      "blocks": {
+        "99f12f59-00ff-4b80-9f10-bb9954341d52": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>For Hunting<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Learn More",
+            "cta_link": "shopify:\/\/blogs\/education",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-grey-1 text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "1e400f7c-d443-4b8b-9be3-fb0cc9938690": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>For Workouts<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Learn More",
+            "cta_link": "shopify:\/\/blogs\/fitness",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "99f12f59-00ff-4b80-9f10-bb9954341d52",
+        "1e400f7c-d443-4b8b-9be3-fb0cc9938690"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "shopify:\/\/collections",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "334581f6-1a3f-4dde-9558-c2a044ec8946": {
+      "type": "two-three-up",
+      "blocks": {
+        "2c3c9c39-2b9c-4d4c-9195-8ff9cbeb0e4f": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/FPO_-_2Up-a.png",
+            "description": "<h3>Hunting<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Learn More",
+            "cta_link": "shopify:\/\/blogs\/education",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "d4879817-c210-404b-8c5e-90b6d02e1abe": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/FPO_-_2Up-b.png",
+            "description": "<h3>Gym <\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Learn More",
+            "cta_link": "shopify:\/\/blogs\/fitness",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "46f7a960-fb73-46ab-80ea-62359bb8a61e": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/FPO_-_2Up-b.png",
+            "description": "<h3>Outdoor <\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Learn More",
+            "cta_link": "shopify:\/\/blogs\/fitness",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "2c3c9c39-2b9c-4d4c-9195-8ff9cbeb0e4f",
+        "d4879817-c210-404b-8c5e-90b6d02e1abe",
+        "46f7a960-fb73-46ab-80ea-62359bb8a61e"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "shopify:\/\/collections",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "effe157f-a402-43c5-83f2-8e96a80a3307": {
+      "type": "two-three-up",
+      "blocks": {
+        "5bdfb5e6-572b-4c91-9705-8ac7fa6dc5c2": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>Hunting<\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Learn More",
+            "cta_link": "shopify:\/\/blogs\/education",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "99d9ada2-c1ea-40c3-8f7e-780d8769ca78": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>Gym <\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Learn More",
+            "cta_link": "shopify:\/\/blogs\/fitness",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "aca9e08a-5371-4542-beaa-9e113b82c92b": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>Outdoor <\/h3><p>Lorem ipsum dolor sit amet, co nsectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet.<\/p>",
+            "cta_text": "Learn More",
+            "cta_link": "shopify:\/\/blogs\/fitness",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "5bdfb5e6-572b-4c91-9705-8ac7fa6dc5c2",
+        "99d9ada2-c1ea-40c3-8f7e-780d8769ca78",
+        "aca9e08a-5371-4542-beaa-9e113b82c92b"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "shopify:\/\/collections",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "82018156-89d3-4d79-9580-861b8bf90ac2": {
+      "type": "category-row",
+      "blocks": {
+        "template--14974458167338__82018156-89d3-4d79-9580-861b8bf90ac2-row-category-1": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/cat1.png",
+            "cat_url": "shopify:\/\/collections",
+            "cat_label": "Energy",
+            "cat_copy": ""
+          }
+        },
+        "template--14974458167338__82018156-89d3-4d79-9580-861b8bf90ac2-row-category-2": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/cat2.png",
+            "cat_url": "",
+            "cat_label": "Hydration",
+            "cat_copy": ""
+          }
+        },
+        "template--14974458167338__82018156-89d3-4d79-9580-861b8bf90ac2-row-category-3": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/cat3.png",
+            "cat_url": "",
+            "cat_label": "Superfoods",
+            "cat_copy": ""
+          }
+        },
+        "template--14974458167338__82018156-89d3-4d79-9580-861b8bf90ac2-row-category-4": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/cat4.png",
+            "cat_url": "",
+            "cat_label": "Recovery",
+            "cat_copy": ""
+          }
+        },
+        "template--14974458167338__82018156-89d3-4d79-9580-861b8bf90ac2-row-category-5": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/cat5.png",
+            "cat_url": "",
+            "cat_label": "Sleep",
+            "cat_copy": ""
+          }
+        },
+        "template--14974458167338__82018156-89d3-4d79-9580-861b8bf90ac2-row-category-6": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/cat6.png",
+            "cat_url": "",
+            "cat_label": "Everyday",
+            "cat_copy": ""
+          }
+        },
+        "f04ed9ca-44af-4128-bda8-711c6a567311": {
+          "type": "row-category",
+          "disabled": true,
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/cat1.png",
+            "cat_url": "",
+            "cat_label": "Energy",
+            "cat_copy": ""
+          }
+        },
+        "230eff4a-455c-4847-8cfb-5cad4e4fe99a": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/cat2.png",
+            "cat_url": "",
+            "cat_label": "Hydration",
+            "cat_copy": ""
+          }
+        },
+        "a601f43a-396b-4092-a91f-ba26b1e97c8d": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/cat3.png",
+            "cat_url": "",
+            "cat_label": "Superfoods",
+            "cat_copy": ""
+          }
+        },
+        "8bd94371-70b9-4331-a44c-12098c001bb5": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/cat4.png",
+            "cat_url": "",
+            "cat_label": "Recovery",
+            "cat_copy": ""
+          }
+        },
+        "f0613e09-cc04-4852-8b9e-027debdac189": {
+          "type": "row-category",
+          "disabled": true,
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/cat5.png",
+            "cat_url": "",
+            "cat_label": "Sleep",
+            "cat_copy": ""
+          }
+        },
+        "464f4282-c8e1-46dd-b2ef-f2f396709bb3": {
+          "type": "row-category",
+          "disabled": true,
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/cat6.png",
+            "cat_url": "",
+            "cat_label": "Everyday",
+            "cat_copy": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14974458167338__82018156-89d3-4d79-9580-861b8bf90ac2-row-category-1",
+        "template--14974458167338__82018156-89d3-4d79-9580-861b8bf90ac2-row-category-2",
+        "template--14974458167338__82018156-89d3-4d79-9580-861b8bf90ac2-row-category-3",
+        "template--14974458167338__82018156-89d3-4d79-9580-861b8bf90ac2-row-category-4",
+        "template--14974458167338__82018156-89d3-4d79-9580-861b8bf90ac2-row-category-5",
+        "template--14974458167338__82018156-89d3-4d79-9580-861b8bf90ac2-row-category-6",
+        "f04ed9ca-44af-4128-bda8-711c6a567311",
+        "230eff4a-455c-4847-8cfb-5cad4e4fe99a",
+        "a601f43a-396b-4092-a91f-ba26b1e97c8d",
+        "8bd94371-70b9-4331-a44c-12098c001bb5",
+        "f0613e09-cc04-4852-8b9e-027debdac189",
+        "464f4282-c8e1-46dd-b2ef-f2f396709bb3"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Shop nutrition<\/h2>",
+        "cta_text": "Shop all",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "964a7283-a992-4151-8430-691c8f40be60": {
+      "type": "basic-html",
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "html_code": "<div class=\"klaviyo-form-WzhrPm\"><\/div>",
+        "full_width": false,
+        "content_align": "justify-center",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "16960178576ec9e435": {
+      "type": "apps",
+      "blocks": {
+        "89d17b63-dae9-438b-b3f4-28a89e8af6cb": {
+          "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/form-block\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "vnl18w96dvRlWZE3cpKIiw",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#ffffff",
+            "input_background_color_focus": "#f4dada",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2d2727",
+            "input_font_color": "#3d3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#ebe9e9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#f3f3f3",
+            "sub_btn_bg_color": "#3f3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#ffffff",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "89d17b63-dae9-438b-b3f4-28a89e8af6cb"
+      ],
+      "settings": {
+      }
+    },
+    "f03376e9-2e62-414f-9366-ebe6f8595b6d": {
+      "type": "basic-html",
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "html_code": "<!-- LightWidget WIDGET --><script src=\"https:\/\/cdn.lightwidget.com\/widgets\/lightwidget.js\"><\/script><iframe src=\"\/\/lightwidget.com\/widgets\/783636499fb75cabb7d4fef67c5ec27c.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"><\/iframe>",
+        "full_width": true,
+        "content_align": "justify-center",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "faq_accordions_aWjDYi": {
+      "type": "faq-accordions",
+      "blocks": {
+        "faq_accordion_iUVPkR": {
+          "type": "faq-accordion",
+          "settings": {
+            "faq_question": "<p>FAQ Question<\/p>",
+            "faq_answer": "<p>FAQ Answer<\/p>"
+          }
+        },
+        "faq_accordion_dPU9Ym": {
+          "type": "faq-accordion",
+          "settings": {
+            "faq_question": "<p>FAQ Question<\/p>",
+            "faq_answer": "<p>FAQ Answer<\/p>"
+          }
+        },
+        "faq_accordion_4xFCrP": {
+          "type": "faq-accordion",
+          "settings": {
+            "faq_question": "<p>FAQ Question<\/p>",
+            "faq_answer": "<p>FAQ Answer<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_accordion_iUVPkR",
+        "faq_accordion_dPU9Ym",
+        "faq_accordion_4xFCrP"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>FAQ Questions<\/h2>",
+        "cta_text": "Button label",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "744d5ee9-4a54-4703-b580-d1d1f2f595cc",
+    "cf65dd5e-d9bd-445c-90d2-e7819725d50c",
+    "192b9268-8df2-42f1-8a23-4fd3440d00d6",
+    "511f1063-0dfc-44b3-8d63-a23f37185b48",
+    "8d0b14b4-0937-4d94-a2ca-17f30ce8a310",
+    "a03ce62f-40c4-4439-9f33-8780d5d8ed7a",
+    "d6f1eff6-3da9-40e5-9418-40cdf56beac4",
+    "524537b0-6510-4d20-bdc7-b03447f193e9",
+    "db277925-bf27-4482-9a4c-f2ee4bbcb5d4",
+    "fef630f9-439b-418d-919c-a866e54c6221",
+    "cf002369-bd2f-469f-8147-4dd2aff50ad6",
+    "39cedc52-1e43-4168-ad7f-e5bd2bea1ac7",
+    "129f6bbe-f45f-4738-a380-b7e5d1388a80",
+    "da584a8f-ab20-4967-b75a-974e00a7ba84",
+    "3d602b22-b60f-48db-8bc2-e9c716257c0e",
+    "774a67ae-4ac8-4253-b21d-6d8e56ed288e",
+    "1a89dec9-43a1-4e7c-9e1d-a99463ebf743",
+    "334581f6-1a3f-4dde-9558-c2a044ec8946",
+    "effe157f-a402-43c5-83f2-8e96a80a3307",
+    "82018156-89d3-4d79-9580-861b8bf90ac2",
+    "964a7283-a992-4151-8430-691c8f40be60",
+    "16960178576ec9e435",
+    "f03376e9-2e62-414f-9366-ebe6f8595b6d",
+    "faq_accordions_aWjDYi"
+  ]
+}

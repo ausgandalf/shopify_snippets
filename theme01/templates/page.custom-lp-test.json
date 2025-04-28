@@ -1,0 +1,311 @@
+{
+  "sections": {
+    "image_text_iDYkA9": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "samplerzone",
+        "image_desktop": "shopify:\/\/shop_images\/IGNITE_SAMPLER_MOCKUP_4c858af9-e26e-4394-b313-2f7486d18946.png",
+        "image_mobile": "shopify:\/\/shop_images\/IGNITE_SAMPLER_MOCKUP_MOBILE.png",
+        "video_url": "",
+        "subheading": "CLAIM YOUR OFFER",
+        "heading": "<h1>free ignite sampler<\/h1>",
+        "copy": "<p>Free crusher. 5 free Ignite stick packs. Even a fresh decal. What more can you ask for?<\/p>",
+        "cta_text_1": "Add to Cart",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "ignite-energy-sampler",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "free_product": true,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 50,
+        "bottom_margin_mobile": 30
+      }
+    },
+    "image_text_UUmUEX": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/ignite-benefits-img_94c1e3a6-f79f-4415-968d-6af13da4ac50.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/ignite-benefits-mobile-img_41075ceb-1f2c-4838-b737-2a92bd4ffa19.png",
+        "subheading": "",
+        "heading": "<h2>BENEFITS OF IGNITE<\/h2>",
+        "copy": "<ul><li><strong>DELICIOUS FLAVOR<\/strong><\/li><li><strong>COGNITIVE CLARITY<\/strong><\/li><li><strong>SUSTAINED ENERGY<\/strong><\/li><li><strong>PRODUCTIVITY BOOST<\/strong><\/li><li><strong>NITRIC OXIDE BOOST<\/strong><\/li><li><strong>MENTAL FOCUS<\/strong><\/li><\/ul>",
+        "cta_text_1": "CLAIM OFFER",
+        "cta_url_1": "#offer",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241E18",
+        "content_bg_color": "#F7F7F7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 50,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "brand_value_callout_zgUt8L": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "brand_value_callout_tJVQ6D": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h5>DELICIOUS FLAVOR<\/h5><p><\/p>"
+          }
+        },
+        "brand_value_callout_UKWj4n": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h5>COGNITIVE CLARITY<\/h5><p><\/p>"
+          }
+        },
+        "brand_value_callout_XyN8rc": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h5>SUSTAINED ENERGY<\/h5><p><\/p>"
+          }
+        },
+        "brand_value_callout_cjPaBf": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h5>PRODUCTIVITY BOOST<\/h5><p><\/p>"
+          }
+        },
+        "brand_value_callout_LhMQkQ": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h5>NITRIC OXIDE BOOST<\/h5><p><\/p>"
+          }
+        },
+        "brand_value_callout_NpUN6Y": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h5>MENTAL FOCUS<\/h5><p><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "brand_value_callout_tJVQ6D",
+        "brand_value_callout_UKWj4n",
+        "brand_value_callout_XyN8rc",
+        "brand_value_callout_cjPaBf",
+        "brand_value_callout_LhMQkQ",
+        "brand_value_callout_NpUN6Y"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>IGNITE BENEFITS<\/h2>",
+        "image_desktop": "shopify:\/\/shop_images\/ignite-benefits-img.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/ignite-benefits-mobile-img.png",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 50,
+        "bottom_margin_mobile": 30
+      }
+    },
+    "3ebcf79a-f60e-4b08-b60b-b884109925ca": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/LASER_FOCUS-IMG.jpg",
+            "description": "<h3>Beyond Laser Focus<\/h3><p>Ready to lock-in? With just the right amount of caffeine and nootropic blend, your idea of focus will change forever.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/UNMATCHED_ENERGY-IMG.jpg",
+            "description": "<h3>unmatched Energy<\/h3><p>This isn't just another energy drink. Be prepared to tackle life like you never have before.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-1",
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-2"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "wysiwyg_xcmprc": {
+      "type": "wysiwyg",
+      "settings": {
+        "section_custom_id": "",
+        "section_content": "<h1>Over 5,000 5-Star Reviews<\/h1>",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "170567206981b73f8d": {
+      "type": "apps",
+      "blocks": {
+        "stamped_product_reviews_ugc_full_page_gxMCLW": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/full-page\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "product_image": false,
+            "take": 10,
+            "label_substitute": "+5500",
+            "color_star": "",
+            "color_verified": "",
+            "color_text": "",
+            "color_link": "",
+            "review_ids": "",
+            "product_ids": "798593777706",
+            "category": "",
+            "product_brand": "",
+            "tags": "",
+            "min_rating": "none",
+            "fill_empty": false,
+            "random": false,
+            "with_photos": false
+          }
+        }
+      },
+      "block_order": [
+        "stamped_product_reviews_ugc_full_page_gxMCLW"
+      ],
+      "custom_css": [
+        "#stamped-reviews-widget#stamped-reviews-widget .stamped-widget-buttons {display: none !important;}",
+        "div#stamped-reviews-widget {padding: 40px 20px;}"
+      ],
+      "settings": {
+      }
+    },
+    "image_text_tNeKLq": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/ignite-sampler-hero-img.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/ignite-sampler-mobile-hero-img.jpg",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h2>Ignite Energy Sampler KIT<\/h2>",
+        "copy": "<p>Ready to try the product that redefined energy drinks? Claim your free sample below and get started today.<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "#samplerzone",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "ignite-energy-sampler",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "free_product": true,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1705676363d52baee1": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_UQUmPf": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "130645",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_UQUmPf"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "image_text_iDYkA9",
+    "image_text_UUmUEX",
+    "brand_value_callout_zgUt8L",
+    "3ebcf79a-f60e-4b08-b60b-b884109925ca",
+    "wysiwyg_xcmprc",
+    "170567206981b73f8d",
+    "image_text_tNeKLq",
+    "1705676363d52baee1"
+  ]
+}

@@ -1,0 +1,478 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25": {
+      "type": "hero-section",
+      "blocks": {
+        "hero_value_prop_EraLep": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "hero_value_prop_EraLep"
+      ],
+      "custom_css": [
+        ".hero-content {background-color: #191919d6;}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/lift-run-shoot-bg.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/lift-run-shoot-bg.jpg",
+        "bg_video": "shopify:\/\/files\/videos\/lrs-background-vid.webm",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 20,
+        "media_height": 800,
+        "media_height_mobile": 350,
+        "subheading": "JUNE 21st - 23rd",
+        "heading": "<h1>LIFT RUN SHOOT<\/h1>",
+        "copy": "<p>Back by popular demand! Don't miss out on the experience of a lifetime with Cam Hanes himself in Eugene, Oregon. Spots are selling out so act fast!<\/p>",
+        "cta_text_1": "GET YOUR TICKET",
+        "cta_url_1": "#lrsticket",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "#lrsrun",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 500,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 50
+      }
+    },
+    "wysiwyg_e9hVkY": {
+      "type": "wysiwyg",
+      "settings": {
+        "section_custom_id": "",
+        "section_content": "<h3>CAM HANES & YOU<\/h3><p><\/p><p>WHITELABEL is partnering with Cam Hanes and its closest manufacturing partners to present another chapter in the Lift, Run, Shoot series, back in EUGENE, OR for the 2nd year.  These three pillars of Cam’s daily life are what have made him the prolific hunter and athlete that he has become today and now you will have a chance to learn from the legend himself.<\/p><p>Over the course of a few days, you'll lift with Cam, run a 10k with Cam, and hone your archery skills with individual bow set up and instruction provided by THE BOW RACK!!<\/p><p>Snag your ticket today and have the experience of a lifetime to learn the tricks of the master’s trade!<\/p>",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 50
+      }
+    },
+    "image_text_ecikzG": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "lrsticket",
+        "image_desktop": "shopify:\/\/shop_images\/4-1-24-LiftRunShoot_hero.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/4-1-24-LiftRunShoot_hero_74f08f64-767c-48e3-a1c0-44ea87533ef3.jpg",
+        "video_url": "",
+        "subheading": "LIMITED SPOTS AVAILABLE",
+        "heading": "<h3>WHATS INCLUDED<\/h3><p><\/p>",
+        "copy": "<ul><li>Hoyt Alpha X Bow<\/li><li>1 Dozen Easton Arrows<\/li><li>Speedland Running Shoes<\/li><li>GoRuck Plate Carrier<\/li><li>Premium Optics Package<\/li><li>Grizzly 45qt Cooler<\/li><li>Origin Raptor Package<\/li><li>1-On-1 Bow Training @ THE BOW RACK<\/li><li>Fat Stack of WHITELABEL<\/li><li>Lodging, Food and Shuttles <\/li><li>Lift Run Shoot experience with Cam Hanes<\/li><\/ul>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "lift-run-shoot-savage-division",
+        "featured_variant": "",
+        "atc_cta_text": "BUY NOW",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_6dRCw6": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "lrsrun",
+        "image_desktop": "shopify:\/\/shop_images\/4-5-24-KeepHammering-10KLaunch-Web-LP-Banner.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/4-5-24-KeepHammering-10KLaunch-Web-LP-Banner_2e4dac41-b0d3-4864-962d-f51a278cd08d.jpg",
+        "video_url": "",
+        "subheading": "MAY 5th 2024",
+        "heading": "<h2>KEEP HAMMERING 10K<\/h2>",
+        "copy": "<p>Come joing us in Texas for our KEEP HAMMERING 10K. It will only cost you $50 to enter and  each participant with recieve a free shirt, and we have some killer prizes for the male and female winners! We only have 500 spots available so jump on it!<\/p><p><br\/><\/p>",
+        "cta_text_1": "SIGN UP TODAY!",
+        "cta_url_1": "https:\/\/www.athleteguild.com\/event\/manor-tx\/2024-keep-hammering-10k-austin-tx",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_RLt6xF": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/keep-hammering-systemsupplements2115010730-584916.png",
+        "video_url": "",
+        "subheading": "CAM HANES STACK",
+        "heading": "<h2>GET THE WHOLE SYSTEM<\/h2>",
+        "copy": "<p>Get the core products Cam uses on a daily basis at a discount!<\/p>",
+        "cta_text_1": "Button Label",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "keep-hammering-system",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "basic_html_wR4fND": {
+      "type": "basic-html",
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "html_code": "<p style=\"color: red; margin-top: -30px; margin-bottom: 30px; font-size: 15px; font-style:italic;\">*Discount Codes not accepted on purchase of Lift Run Shoot ticket*<\/p>",
+        "full_width": true,
+        "content_align": "justify-center",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "brand_value_logo_BUFyQK": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "brand_value_logo_BnRQfE": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/hoyt-logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_4fqFgW": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/easton-logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_EmRj8z": {
+          "type": "brand-value-logo",
+          "disabled": true,
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/ArcheryCountry-logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_MFzRJt": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Grizzly-LOGO.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_Pe9Mfk": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Origin-logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_itRxkn": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/speedland-logo_fda86345-b464-4212-8a36-616d2c2e294e.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_4QCzeF": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/goruck-logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_V7tKrE": {
+          "type": "brand-value-logo",
+          "disabled": true,
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/GoHunt-white-logo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "brand_value_logo_BnRQfE",
+        "brand_value_logo_4fqFgW",
+        "brand_value_logo_EmRj8z",
+        "brand_value_logo_MFzRJt",
+        "brand_value_logo_Pe9Mfk",
+        "brand_value_logo_itRxkn",
+        "brand_value_logo_4QCzeF",
+        "brand_value_logo_V7tKrE"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h3>THANKS TO OUR PARTERS<\/h3>",
+        "cta_text": "",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-black_text-white",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 50
+      }
+    },
+    "two_three_up_RKJgJ4": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_dmd76j": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/magnumsupplements3115870129-454162.png",
+            "description": "<h4>KEEP HAMMERING PROTEIN<\/h4><p>The Keep Hammering Protein is a post-workout muscle formula developed to increase the building up of muscles after the process of tearing them down. With a mix of milk and whey proteins, the protein is absorbed immediately, flooding your muscles with critical amino acids.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "kh-protein",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_cYQBce": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/keep-hammering-bcaa-211supplements2115290130-276323.png",
+            "description": "<h4>KEEP HAMMERING BCAA's<\/h4><p>The Keep Hammering BCAA is a branch chain amino acid formula designed with a BCAA ratio of 2:1:1 (leucine, isoleucine, valine). This ratio gives your muscles the optimum levels needed to aid in protein synthesis for rapid lean muscle build and recovery.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "kh-bcaa",
+            "featured_variant": "40477553328170",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_bkfeBp": {
+          "type": "up-block",
+          "disabled": true,
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/keep-hammering-pre-workoutsupplements1115630120-409686.png",
+            "description": "<h3>KEEP HAMMERING PRE-WORKOUT<\/h3><p>The Keep Hammering Pre-Workout was built to help build you. With an extended-release of nitric oxide flowing through your veins, this pre-workout gives you sustained energy and endurance with an explosive pump to reach those PRs.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "kh-pre-workout",
+            "featured_variant": "",
+            "atc_cta_text": "SOLD OUT",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_dmd76j",
+        "up_block_cYQBce",
+        "up_block_bkfeBp"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h3>FUEL UP<\/h3>",
+        "copy": "<p>This event is no joke! Be sure to get fueled up and start training. <\/p>",
+        "cta_text": "SHOP ALL CAM PRODUCTS",
+        "cta_link": "shopify:\/\/collections\/keep-hammering-line",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 50
+      }
+    },
+    "wysiwyg_bniX3i": {
+      "type": "wysiwyg",
+      "disabled": true,
+      "custom_css": [
+        "h2 {text-align: center;}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "section_content": "<h2>BUNDLE UP AND SAVE<\/h2>",
+        "bottom_margin_desktop": 50,
+        "bottom_margin_mobile": 30
+      }
+    },
+    "17091341279ca6bc33": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_NAg6Kz": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "136616",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_NAg6Kz"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1708622852f64031b1": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_AmHLLU": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "123553",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_AmHLLU"
+      ],
+      "settings": {
+      }
+    },
+    "hero_section_UzgV7L": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Untitled-2_44c33cd0-bcfa-4f53-9cc8-4bd3411e4592.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Untitled-2_44c33cd0-bcfa-4f53-9cc8-4bd3411e4592.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 720,
+        "media_height_mobile": 360,
+        "subheading": "",
+        "heading": "",
+        "copy": "<p>\"To push like I do, I know what my body needs. I need to fuel properly and I know I get out what I put in.\" - Cam Hanes<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-end",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25",
+    "wysiwyg_e9hVkY",
+    "image_text_ecikzG",
+    "image_text_6dRCw6",
+    "image_text_RLt6xF",
+    "basic_html_wR4fND",
+    "brand_value_logo_BUFyQK",
+    "two_three_up_RKJgJ4",
+    "wysiwyg_bniX3i",
+    "17091341279ca6bc33",
+    "1708622852f64031b1",
+    "hero_section_UzgV7L"
+  ]
+}

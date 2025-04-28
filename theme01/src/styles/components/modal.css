@@ -1,0 +1,38 @@
+/* ============================================================== */
+/* These are the modal styles */
+/* ============================================================== */
+.modal {
+  @apply hidden fixed w-screen h-screen top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-max;
+}
+
+.modal.active {
+  @apply block;
+}
+
+.modal__container {
+  @apply relative my-12 h-full;
+}
+
+.modal__backdrop {
+  @apply fixed block w-full h-full bg-black opacity-95 top-0 left-0;
+}
+
+.modal__inner {
+  @apply relative grid col-span-12 grid-cols-12 lg:gap-x-0 gap-x-0 h-[calc(100%-96px)] overflow-y-auto z-1;
+}
+
+.modal__inner .iframe-container {
+  @apply col-span-12 pt-8 relative before:block before:pt-[56.25%];
+}
+
+.modal__close {
+  @apply absolute -top-8 right-4 lg:right-8 cursor-pointer text-white z-1;
+}
+
+.modal__close svg {
+  @apply w-5 h-5;
+}
+
+.modal__inner iframe {
+  @apply absolute w-full h-full top-0 left-0;
+}

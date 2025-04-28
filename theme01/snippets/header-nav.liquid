@@ -1,0 +1,137 @@
+{%- assign navigation_items_html = null -%}
+
+{%- for block in section.blocks -%}
+  {%- liquid
+    assign linklist = block.settings.linklist
+    assign active_links = linklists[linklist].links.size
+
+    if active_links >= 5
+      assign available_ctas = 0
+    elsif active_links >= 3
+      assign available_ctas = 1
+    elsif active_links >= 1
+      assign available_ctas = 2
+    else
+      assign available_ctas = 3
+    endif
+  -%}
+
+  {%- capture navigation_dropdown -%}
+    {%- if linklist != blank -%}
+      <nav class="header-nav__dropdown w-80" data-nav-dropdown="{{ block.id }}">
+        <ul class="grid gap-4 py-8 px-4 list-none">
+          {%- for link in linklists[linklist].links -%}
+            {%- liquid
+              assign link_class = 'text-color-2 no-underline hover:text-color-6'
+
+              if sublink.title contains ':red'
+                assign link_class = 'text-error font-bold no-underline'
+              endif
+
+              if sublink.title contains ':bold'
+                assign link_class = 'text-color-2 font-bold underline hover:text-color-6'
+              endif
+            -%}
+
+            <li>
+              <a href='{{ link.url }}' class='{{ link_class }}'>
+                {{ link.title | remove: ':red' | remove: ':bold' }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+    {%- endif -%}
+  {%- endcapture -%}
+
+  {%- capture megamenu_dropdown -%}
+    <div class="header-nav__dropdown w-screen" data-nav-dropdown="{{ block.id }}">
+      <div class="container">
+        <nav class="flex justify-center items-start lg:gap-6 pt-12 pb-20">
+          {%- if linklist != blank -%}
+            {%- for link in linklists[linklist].links limit: 6 -%}
+              <ul class='grid gap-4 w-full max-w-[10rem] xl:max-w-[11.875rem] list-none{% if forloop.index == 1 %} {{ grid_start }}{% endif %}'>
+                <li>
+                  <a href='{{ link.url }}' class='caps-small no-underline text-grey-7'>
+                    {{ link.title }}
+                  </a>
+                </li>
+
+                {%- for sublink in link.links -%}
+                  {%- liquid
+                    assign sublink_class = 'text-color-2 no-underline hover:text-color-6'
+
+                    if sublink.title contains ':red'
+                      assign sublink_class = 'text-error font-bold no-underline'
+                    endif
+
+                    if sublink.title contains ':bold'
+                      assign sublink_class = 'text-color-2 font-bold underline hover:text-color-6'
+                    endif
+                  -%}
+
+                  <li>
+                    <a href='{{ sublink.url }}' class='{{ sublink_class }} '>
+                      {{ sublink.title | remove: ':red' | remove: ':bold' }}
+                    </a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endfor -%}
+          {%- endif -%}
+
+          {%- for index in (1..3)  limit: available_ctas -%}
+            {%- render 'header-nav-cta', _block: block, _index: index -%}
+          {%- endfor -%}
+        </nav>
+      </div>
+    </div>
+  {%- endcapture -%}
+
+  {%- capture product_dropdown -%}
+    <div class="header-nav__dropdown w-screen" data-nav-dropdown="{{ block.id }}">
+      <div class="container">
+        <div class="pt-12 pb-20">
+          {%- if block.settings.title != blank -%}
+            <p class='text-lg text-center mb-5 text-blackest'>{{ block.settings.title }}</p>
+          {%- endif -%}
+
+          <div class="flex justify-center items-start">
+            {%- for index in (1..6) -%}
+              {%- render 'header-nav-product', _block: block, _index: index -%}
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  {%- endcapture -%}
+
+  {%- capture navigation_item -%}
+    {%- assign nav_item = block.settings.navigation_item -%}
+
+    {%- if nav_item != blank -%}
+      <div class="flex flex-col text-center{% if block.type == 'simple' %} relative{% endif %}" data-nav-wrapper="{{ block.id }}">
+        {%- if block.settings.navigation_url != blank -%}
+          <a class="no-underline {{ block.settings.navigation_item_color }}" href="{{ block.settings.navigation_url | default: 'javascript:void(0);' }}">
+            <span class="header-nav__item h-full" data-nav-item="{{ block.id }}">{{ nav_item }}</span>
+          </a>
+        {%- else -%}
+          <span class="header-nav__item h-full {{ block.settings.navigation_item_color }}" data-nav-item="{{ block.id }}">{{ nav_item }}</span>
+        {%- endif -%}
+
+        {%- case block.type -%}
+          {%- when 'simple' -%}
+            {{ navigation_dropdown }}
+          {%- when 'product_mega_menu' -%}
+            {{ product_dropdown }}
+          {%- when 'mega_menu' -%}
+            {{ megamenu_dropdown }}
+        {%- endcase -%}
+      </div>
+    {%- endif -%}
+  {%- endcapture -%}
+
+  {%- assign navigation_items_html = navigation_items_html | append: navigation_item -%}
+{%- endfor -%}
+
+{{ navigation_items_html }}

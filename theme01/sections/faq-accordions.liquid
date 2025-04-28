@@ -1,0 +1,211 @@
+{%- liquid
+  assign section_custom_id = section.settings.section_custom_id
+  assign heading = section.settings.heading
+  assign cta_text = section.settings.cta_text
+  assign cta_url = section.settings.cta_url
+  assign cta_type = section.settings.cta_type
+
+  assign full_width = section.settings.full_width
+  assign color_scheme = section.settings.color_scheme
+  assign colors = color_scheme | split: '_'
+  assign bg_color = colors[0]
+  assign text_color = colors[1]
+-%}
+
+{% if section.blocks.size > 0 %}
+  <div
+    {% if section_custom_id != blank %}
+      id='{{ section_custom_id }}'
+    {% endif %}
+    class='w-full{% unless full_width %} container{% endunless %}'
+  >
+    <div class='px-6 py-12 lg:py-16 {{ bg_color }} {{ text_color }}'>
+      {% if heading != blank %}
+        <div class='text-center uppercase mb-12 lg:mb-16'>{{- heading -}}</div>
+      {% endif %}
+
+      <div class='max-w-[60rem] mx-auto'>
+        {% for block in section.blocks %}
+          {%- liquid
+            assign faq_question = block.settings.faq_question
+            assign faq_answer = block.settings.faq_answer
+          -%}
+
+          {% if faq_question != blank and faq_answer != blank %}
+            <details
+              {% if bg_color == 'bg-black' %}
+                class='dark-mode links-inverted rte'
+              {% endif %}
+            >
+              <summary>
+                {{- faq_question -}}
+              </summary>
+              <div class='mt-5'>
+                {{- faq_answer -}}
+              </div>
+            </details>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {% if cta_text != blank %}
+        <div class='text-center w-full mt-10'>
+          <a href='{{- cta_url | default: 'javascript:void(0);' -}}' class='{{ cta_type }}'>{{- cta_text -}}</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {%- render 'spacer', _mobile_space: section.settings.bottom_margin_mobile, _desktop_space: section.settings.bottom_margin_desktop -%}
+{% endif %}
+
+{% schema %}
+{
+  "name": "FAQ Accordions",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Optional. Please use only one H1 per page and then use H2 for the content below the fold.",
+      "default": "<h2>FAQ Questions</h2>"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA URL"
+    },
+    {
+      "type": "select",
+      "id": "cta_type",
+      "label": "CTA Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button button--primary"
+        },
+        {
+          "label": "Primary Dark",
+          "value": "button button--primary-invert"
+        },
+        {
+          "label": "Secondary",
+          "value": "button button--secondary"
+        },
+        {
+          "label": "Secondary Dark",
+          "value": "button button--secondary-invert"
+        }
+      ],
+      "default": "button button--primary"
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "options": [
+        {
+          "label": "Light Mode",
+          "value": "bg-white_text-black"
+        },
+        {
+          "label": "Dark Mode",
+          "value": "bg-black_text-white"
+        },
+        {
+          "label": "Light Grey",
+          "value": "bg-grey-1_text-black"
+        }
+      ],
+      "default": "bg-white_text-black"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq-accordion",
+      "name": "FAQ Accordion",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "faq_question",
+          "label": "FAQ Question",
+          "default": "<p>FAQ Question</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_answer",
+          "label": "FAQ Answer",
+          "default": "<p>FAQ Answer</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Accordions",
+      "blocks": [
+        {
+          "type": "faq-accordion"
+        },
+        {
+          "type": "faq-accordion"
+        },
+        {
+          "type": "faq-accordion"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

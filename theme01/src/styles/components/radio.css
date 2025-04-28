@@ -1,0 +1,93 @@
+/*
+ * ==========================================================================
+ * Radio Buttons
+ * ==========================================================================
+*/
+
+@layer base {
+  .check-wrap,
+  .radio-wrap {
+    @apply inline-flex items-center;
+  }
+
+  input[type='radio'],
+  input[type='checkbox'] {
+    @apply relative mr-3 border-2 border-grey-5 rounded-none bg-white appearance-none cursor-pointer transition-all;
+  }
+
+  input[type='radio']:focus,
+  input[type='checkbox']:focus,
+  input[type='radio']:active,
+  input[type='checkbox']:active {
+    @apply outline-[var(--ada-outline)];
+  }
+
+  input[type='radio'] {
+    @apply rounded-full w-5 h-5 bg-[var(--radio-bg)] border-[var(--radio-border)];
+  }
+
+  input[type='radio']:checked {
+    @apply bg-[var(--radio-active-bg)] border-[var(--radio-active-border)];
+  }
+
+  input[type='radio']:disabled {
+    @apply bg-[var(--radio-disabled-bg)] border-[var(--radio-disabled-border)] cursor-not-allowed;
+  }
+
+  input[type='radio']::before {
+    content: '';
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full w-0 h-0 bg-[var(--radio-active-content)] transition-all;
+  }
+
+  input[type='radio']:checked::before {
+    @apply w-2 h-2;
+  }
+
+  input[type='radio']:checked:disabled {
+    @apply bg-[var(--radio-active-disabled-bg)] border-[var(--radio-active-disabled-border)] cursor-not-allowed;
+  }
+
+  input[type='radio']:checked:disabled::before {
+    @apply bg-[var(--radio-active-disabled-content)];
+  }
+
+  input[type='radio'] + label,
+  input[type='checkbox'] + label {
+    @apply cursor-pointer;
+  }
+
+  input[type='radio']:disabled + label,
+  input[type='checkbox']:disabled + label {
+    @apply cursor-not-allowed;
+  }
+
+  input[type='checkbox'] {
+    @apply w-5 h-5 bg-[var(--checkbox-bg)] border-[var(--checkbox-border)];
+  }
+
+  input[type='checkbox']:checked {
+    @apply bg-[var(--checkbox-active-bg)] border-[var(--checkbox-active-border)];
+  }
+
+  input[type='checkbox']:disabled {
+    @apply bg-[var(--checkbox-disabled-bg)] border-[var(--checkbox-disabled-border)] cursor-not-allowed;
+  }
+
+  input[type='checkbox']:checked::after {
+    @apply content-[""] absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 bg-[var(--checkbox-active-icon)] w-4 h-2.5;
+    mask-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.57789 8.33087L13.0025 0.90625L13.9306 1.83433L5.57789 10.187L0.9375 5.54664L1.86558 4.61856L5.57789 8.33087Z' fill='white'/%3E%3C/svg%3E%0A");
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.57789 8.33087L13.0025 0.90625L13.9306 1.83433L5.57789 10.187L0.9375 5.54664L1.86558 4.61856L5.57789 8.33087Z' fill='white'/%3E%3C/svg%3E%0A");
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+  }
+
+  input[type='checkbox']:checked:disabled {
+    @apply bg-[var(--checkbox-active-disabled-bg)] border-[var(--checkbox-active-disabled-border)] cursor-not-allowed;
+  }
+
+  input[type='checkbox']:checked:disabled::after {
+    @apply bg-[var(--checkbox-active-disabled-icon)];
+  }
+}

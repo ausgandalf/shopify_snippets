@@ -1,0 +1,46 @@
+{
+  "parent": "index.json",
+  "context": {
+    "b2b": true
+  },
+  "sections": {
+    "hero_section_ryd9dU": {
+      "settings": {
+        "subheading": "OUTDOOR PERFORMANCE SUPPLEMENTS",
+        "heading": "<h2>WELCOME DEALERS<\/h2>",
+        "copy": "<p>Our premium supplements enhance energy, endurance, and overall health, ensuring you conquer every day with confidence.<\/p>"
+      },
+      "blocks": {
+      }
+    },
+    "f35b5118-9cb9-493d-ba62-fdf3c67fa75e": {
+      "disabled": false,
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "db277925-bf27-4482-9a4c-f2ee4bbcb5d4": {
+      "disabled": true,
+      "settings": {
+      },
+      "blocks": {
+      }
+    },
+    "f605cc38-c725-4cab-959b-8407709023ea": {
+      "disabled": true,
+      "settings": {
+      },
+      "blocks": {
+      }
+    }
+  },
+  "order": [
+    "hero_section_ryd9dU",
+    "334581f6-1a3f-4dde-9558-c2a044ec8946",
+    "f605cc38-c725-4cab-959b-8407709023ea",
+    "f797ac28-4437-4b3f-88fd-99272b137a1c",
+    "f35b5118-9cb9-493d-ba62-fdf3c67fa75e",
+    "db277925-bf27-4482-9a4c-f2ee4bbcb5d4"
+  ]
+}

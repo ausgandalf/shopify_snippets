@@ -1,0 +1,121 @@
+<div class="main-register w-full bg-grey-1 p-6 lg:py-24">
+  <div class="w-full max-w-[30rem] bg-white p-6 lg:p-12 mx-auto">
+    <div class="mb-6">
+      <h3 class="uppercase tracking-[1px] text-center mb-4" tabindex="-1">
+        {{ 'customer.register.title' | t }}
+      </h3>
+      <p class="text-center">
+        {{ 'customer.register.subtext' | t }}
+        <a href="{{ routes.account_login_url }}" class="capitalize">
+          {{ 'customer.register.sign_in' | t }}
+        </a>
+      </p>
+    </div>
+  
+    {%- form 'create_customer', novalidate: 'novalidate', class: 'form flex flex-col items-center' -%}
+      
+      {%- if form.errors -%}
+        <div class="alert error-alert mb-6" tabindex="-1" autofocus>
+          {%- for field in form.errors -%}
+            <p class="text-sm leading-normal">
+              {%- if field == 'form' -%}
+                {{ form.errors.messages[field] }}
+              {%- else -%}
+                {{ form.errors.translated_fields[field] | capitalize }}
+                {{ form.errors.messages[field] }}
+              {%- endif -%}
+            </p>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      <div class="field input-wrap w-full mb-6">
+        <input
+          type="text"
+          name="customer[first_name]"
+          id="RegisterForm-FirstName"
+          {% if form.first_name %}
+            value="{{ form.first_name }}"
+          {% endif %}
+          autocomplete="given-name"
+          placeholder=" "
+          class="w-full !min-w-0"
+        >
+        <label for="RegisterForm-FirstName" class="capitalize">
+          {{ 'customer.register.first_name' | t }}
+        </label>
+      </div>
+      <div class="field input-wrap w-full mb-6">
+        <input
+          type="text"
+          name="customer[last_name]"
+          id="RegisterForm-LastName"
+          {% if form.last_name %}
+            value="{{ form.last_name }}"
+          {% endif %}
+          autocomplete="family-name"
+          placeholder=" "
+          class="w-full !min-w-0"
+        >
+        <label for="RegisterForm-LastName" class="capitalize">
+          {{ 'customer.register.last_name' | t }}
+        </label>
+      </div>
+      <div class="field input-wrap w-full mb-6">
+        <input
+          type="email"
+          name="customer[email]"
+          id="RegisterForm-email"
+          {% if form.email %}
+            value="{{ form.email }}"
+          {% endif %}
+          spellcheck="false"
+          autocapitalize="off"
+          autocomplete="email"
+          aria-required="true"
+          {% if form.errors contains 'email' %}
+            aria-invalid="true"
+            aria-describedby="RegisterForm-email-error"
+          {% endif %}
+          placeholder=" "
+          class="w-full !min-w-0"
+        >
+        <label for="RegisterForm-email">
+          {{ 'customer.register.email' | t }}
+        </label>
+      </div>
+      <div class="field input-wrap w-full mb-6">
+        <input
+          type="password"
+          name="customer[password]"
+          id="RegisterForm-password"
+          aria-required="true"
+          {% if form.errors contains 'password' %}
+            aria-invalid="true"
+            aria-describedby="RegisterForm-password-error"
+          {% endif %}
+          placeholder=" "
+          class="w-full !min-w-0"
+        >
+        <label for="RegisterForm-password">
+          {{ 'customer.register.password' | t }}
+        </label>
+      </div>
+      <button class="form-submit w-full button button--primary tracking-[1px]">
+        {{ 'customer.register.submit' | t }}
+      </button>
+    {%- endform -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Account Register",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Account Register"
+    }
+  ]
+}
+{% endschema %}

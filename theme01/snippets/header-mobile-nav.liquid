@@ -1,0 +1,159 @@
+<nav class='header-mobile-nav' data-mobile-nav>
+  <ul class='relative bg-white pt-12 h-full list-none'>
+    <div class='absolute top-[1.125rem] right-[1.125rem] cursor-pointer' data-close-mobile-nav>
+      {%- render 'icons', icon: 'close' -%}
+    </div>
+
+    {%- for block in section.blocks -%}
+      {%- liquid
+        assign linklist = block.settings.linklist
+        assign active_links = linklists[linklist].links.size
+
+        if active_links >= 5
+          assign available_ctas = 0
+        elsif active_links >= 3
+          assign available_ctas = 1
+        elsif active_links >= 1
+          assign available_ctas = 2
+        else
+          assign available_ctas = 3
+        endif
+      -%}
+
+      <li
+        class='flex justify-between items-center text-color-2 px-5 py-4 border-t border-color-3'
+        {%- if block.type != 'link' -%}
+          data-mobile-menu-one='{{ block.id | append: forloop.index }}'
+        {%- endif -%}
+      >
+        {%- if block.type == 'link' -%}
+          <a class='no-underline block w-full text-color-2' href='{{ block.settings.navigation_url | default: 'javascript:void(0);' }}'>
+            <span class='block caps-regular' data-nav-item='{{ block.id }}'>{{ block.settings.navigation_item }}</span>
+          </a>
+        {%- else -%}
+          <span class='block caps-regular'>{{ block.settings.navigation_item }}</span>
+
+          {%- render 'icons', icon: 'chevron-right' -%}
+        {%- endif -%}
+      </li>
+
+      {%- unless block.type == 'link' -%}
+        <nav class='header-mobile-nav__second-tab' data-mobile-menu-two='{{ block.id | append: forloop.index }}'>
+          <div class='header-mobile-nav__return' data-menu-return>
+            {%- render 'icons', icon: 'chevron-left' -%}
+
+            <span class='block caps-regular'>{{ block.settings.navigation_item }}</span>
+          </div>
+
+          <div class='absolute top-3.5 right-[1.125rem] cursor-pointer' data-close-mobile-nav>
+            {%- render 'icons', icon: 'close', class: 'w-5 h-5' -%}
+          </div>
+
+          <ul class='flex flex-col overflow-scroll h-full pb-12 border-t border-color-3'>
+            {%- for link in linklists[linklist].links -%}
+              {%- liquid
+                assign link_class = 'text-color-2 no-underline hover:text-color-6'
+
+                if link.title contains ':red'
+                  assign link_class = 'text-error font-bold no-underline'
+                endif
+
+                if link.title contains ':bold'
+                  assign link_class = 'text-color-2 font-bold underline hover:text-color-6'
+                endif
+              -%}
+
+              <div class='border-b border-color-3'>
+                <li
+                  class='header-mobile-nav__dropdown-title'
+                  {%- if link.links != blank -%}
+                    data-dropdown-header='{{ link.title | handleize | append: '-' | append: forloop.index }}'
+                  {%- endif -%}
+                >
+                  <a href='{{ link_url | default: 'javascript:void(0);' }}' class='block caps-regular {{ link_class }}'>
+                    {{ link.title | remove: ':red' | remove: ':bold' }}
+                  </a>
+
+                  {%- if link.links != blank -%}
+                    {%- render 'icons', icon: 'chevron-down' -%}
+                  {%- endif -%}
+                </li>
+
+                {%- if link.links != blank -%}
+                  <div
+                    class='header-mobile-nav__dropdown'
+                    data-dropdown-content='{{ link.title | handleize | append: '-' | append: forloop.index }}'
+                  >
+                    <ul class='grid gap-4 px-5 pt-4 pb-9 border-t border-color-3'>
+                      {%- for sublink in link.links -%}
+                        {%- liquid
+                          assign sublink_class = 'text-color-2 no-underline hover:text-color-6'
+
+                          if sublink.title contains ':red'
+                            assign sublink_class = 'text-error font-bold no-underline'
+                          endif
+
+                          if sublink.title contains ':bold'
+                            assign sublink_class = 'text-color-2 font-bold underline hover:text-color-6'
+                          endif
+                        -%}
+
+                        <li>
+                          <a href='{{ sublink.url }}' class='{{ sublink_class }}'>
+                            {{ sublink.title | remove: ':red' | remove: ':bold' }}
+                          </a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+
+            <div class='grid gap-4 px-6 py-4'>
+              {%- for index in (1..3) limit: available_ctas -%}
+                {%- liquid
+                  assign hide_mobile_handle = 'hide_on_mobile_' | append: index
+                  assign hide_on_mobile = block.settings[hide_mobile_handle]
+                -%}
+
+                {%- unless hide_on_mobile -%}
+                  {%- render 'header-nav-cta', _block: block, _index: index -%}
+                {%- endunless -%}
+              {%- endfor -%}
+
+              {%- for index in (1..6) -%}
+                {%- render 'header-nav-product', _block: block, _index: index -%}
+              {%- endfor -%}
+            </div>
+          </ul>
+        </nav>
+      {% endunless %}
+    {% endfor %}
+
+    {%- if shop.customer_accounts_enabled -%}
+      <li>
+        <a
+          href='{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}'
+          class='text-color-2 flex items-center gap-3.5 px-5 py-4 border-t border-color-3 caps-small no-underline'
+        >
+          {%- render 'icons', icon: 'account' -%}
+
+          {{ 'customer.account_fallback' | t }}
+
+          <span class='sr-only'>
+            {%- liquid
+              if customer
+                echo 'customer.account_fallback' | t
+              else
+                echo 'customer.log_in' | t
+              endif
+            -%}
+          </span>
+        </a>
+      </li>
+    {%- endif -%}
+  </ul>
+</nav>
+
+<div class='header-mobile-nav__backdrop' data-close-mobile-nav></div>

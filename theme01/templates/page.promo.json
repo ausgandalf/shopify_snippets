@@ -1,0 +1,144 @@
+{
+  "sections": {
+    "110a694a-a343-4eb2-98db-bd8d496c0b33": {
+      "type": "hero-section",
+      "custom_css": [
+        ".hero-content {background-color: rgba(0, 0, 0, 0.5); box-shadow: 0px 0px 40px 40px rgba(0, 0, 0, 0.5);}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/LP-LP-LARGE-HERO_bb12e603-fc28-461a-87e5-cd480f737538.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/liberty-pop-lp-lifestlye-1_1e34e6fd-0680-4bbf-87c5-1c78793f419d.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 800,
+        "media_height_mobile": 310,
+        "subheading": "LIMITED EDITION",
+        "heading": "<h2>LIBERTY POP - <\/h2><h2>PRE WORKOUT<\/h2>",
+        "copy": "<p>Available in both YETI & YETI-MODE Liberty Pop is a delicious, sweet, popsicle-like flavor that represents liberty and energy for all. Get Yours today.<\/p>",
+        "cta_text_1": "SHOP NOW",
+        "cta_url_1": "#products",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_d74f4d": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/liberty-pop-lifestlye-2.png",
+        "image_mobile": "shopify:\/\/shop_images\/liberty-pop-lifestlye-2_eac4e5a3-23b1-4602-9eb9-f41c3fb200f0.png",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h2>WHY USE YETI \/<\/h2><h2> YETI-MODE?<\/h2>",
+        "copy": "<p>Utilizing a pre-workout supplement offers several benefits:<\/p><ul><li><strong>Enhanced Energy Levels:<\/strong> Provides a significant energy boost to power through intense workouts.<\/li><li><strong>Improved Focus:<\/strong> Increases mental alertness and concentration during exercise.<\/li><li><strong>Increased Endurance:<\/strong> Helps reduce fatigue, allowing for longer and more effective workouts.<\/li><\/ul><p><\/p>",
+        "cta_text_1": "BUY NOW",
+        "cta_url_1": "#products",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "3ebcf79a-f60e-4b08-b60b-b884109925ca": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/yetisupplements1101670130-794046.png",
+            "description": "<h3>YETI - LIBERTY POP<\/h3><p>YETI's Explosive Pre-Workout formula gives you the energy to take your performance to the extreme. With 30 servings per tub, YETI helps provide you with smooth energy, strength, recovery, and everything you need to elevate your workouts.<\/p><ul><li>200mg Caffiene<\/li><li>1g Beta-Alanine<\/li><li>2g Creatine<\/li><li>Explosive Pre-Workout<\/li><li>Smooth Energy \/ Massive Pumps<\/li><\/ul>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "yeti",
+            "featured_variant": "40878169227306",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/yeti-modesupplements1131670130-800121.png",
+            "description": "<h3>YETI MODE - LIBERTY POP<\/h3><p>With YETI-MODE, you will feel like a beast in the gym and during your outdoor adventures. With 30 servings per tub, YETI-MODE helps provide you with energy, strength, recovery, and everything you need to ramp up the intensity of your workouts.<\/p><ul><li>300mg Caffeine<\/li><li>3.2g Beta-Alanine<\/li><li>3g Creatine<\/li><li>Intense \/ High-Stim Pre-Workout<\/li><li>Intense Energy \/ Monster Pumps<br\/><\/li><\/ul>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "yeti-mode",
+            "featured_variant": "40943847473194",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-1",
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-2"
+      ],
+      "settings": {
+        "section_custom_id": "products",
+        "heading": "<h2>Preworkouts to fit your workout needs<\/h2><h2><\/h2>",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "110a694a-a343-4eb2-98db-bd8d496c0b33",
+    "image_text_d74f4d",
+    "3ebcf79a-f60e-4b08-b60b-b884109925ca"
+  ]
+}

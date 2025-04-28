@@ -1,0 +1,86 @@
+{% liquid
+  assign active_link = ''
+  if template.directory == 'customers'
+    if template.name == 'account' or template.name == 'order'
+      assign active_link = 'order'
+    elsif template.name == 'addresses'
+      assign active_link = 'address'
+    endif
+  endif
+
+  if request.path contains 'tools/recurring/portal'
+    assign active_link = 'subscriptions'
+  endif
+
+  assign customer_hash = null
+  if customer.metafields.subscriptions != blank
+    assign customer_hash = customer.metafields.subscriptions.customer_string
+  endif
+%}
+
+<div class='account-nav'>
+  <div class='hidden lg:block mb-6'>
+    <div class='flex items-start justify-between'>
+      <h4>
+        Hello, {% unless customer.first_name == blank %}{{ customer.first_name }}{% else %}Customer{% endunless %}
+      </h4>
+    </div>
+  </div>
+  <ul class='list-none hidden lg:block w-full p-0'>
+    <li class='w-full flex items-center{% if active_link == 'order' %} active{% endif %} py-3'>
+      {% render 'icons', icon: 'item-bar', class: 'text-color-1 mr-3' %}
+      <a
+        href='{% if active_link == 'order' %}javascript:void(0){% else %}{{ routes.account_url }}{% endif %}'
+        class='caps-regular text-black no-underline hover:no-underline'
+        >Order History</a
+      >
+    </li>
+    {% comment %}
+      <li class="w-full flex items-center{% if active_link == 'address' %} active{% endif %} py-3">
+        {% render 'icons', icon: 'item-bar', class: 'text-color-1 mr-3' %}
+        <a href="{% if active_link == 'address' %}javascript:void(0){% else %}{{ routes.account_addresses_url }}{% endif %}"
+          class="caps-regular text-black no-underline hover:no-underline"
+        >Saved Addresses</a>
+      </li>
+    {% endcomment %}
+    {% if customer_hash != blank %}
+      <li class='w-full flex items-center{% if active_link == 'subscriptions' %} active{% endif %} py-3'>
+        {% render 'icons', icon: 'item-bar', class: 'text-color-1 mr-3' %}
+        <a
+          href='{% if active_link == 'subscriptions' %}javascript:void(0){% else %}{{ '/tools/recurring/portal/HASH/overview' | replace: 'HASH', customer_hash }}{% endif %}'
+          class='caps-regular text-black no-underline hover:no-underline'
+          >Autoship Subscriptions</a
+        >
+      </li>
+    {% endif %}
+    <li class='w-full flex items-center py-3'>
+      {% render 'icons', icon: 'item-bar', class: 'text-color-1 mr-3' %}
+      <a href='{{ routes.account_logout_url }}' class='caps-regular text-black no-underline hover:no-underline'>Sign Out</a>
+    </li>
+  </ul>
+
+  <div class='account-nav-mobile select-wrap'>
+    <select class='w-full caps-small border-none bg-select-arrow-nav' data-account-mobile-nav>
+      <option
+        {% if active_link == 'order' %}
+          selected
+        {% endif %}
+        value='{{ routes.account_url }}'
+      >
+        Order History
+      </option>
+      {% comment %} <option {% if active_link == 'address' %}selected{% endif %} value="{{ routes.account_addresses_url }}">Saved Addresses</option> {% endcomment %}
+      {% if customer_hash != blank %}
+        <option
+          {% if active_link == 'subscriptions' %}
+            selected
+          {% endif %}
+          value='{{ '/tools/recurring/portal/HASH/overview' | replace: 'HASH', customer_hash }}'
+        >
+          Autoship Subscriptions
+        </option>
+      {% endif %}
+      <option value='{{ routes.account_logout_url }}'>Sign Out</option>
+    </select>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+{% assign section_custom_id = section.settings.section_custom_id %}
+
+{%- if section.settings.section_content != blank -%}
+  <div
+    {% if section_custom_id != blank %}
+      id='{{ section_custom_id }}'
+    {% endif %}
+    class='container'
+  >
+    <div class='rte'>{{ section.settings.section_content }}</div>
+  </div>
+
+  {%- render 'spacer', _mobile_space: section.settings.bottom_margin_mobile, _desktop_space: section.settings.bottom_margin_desktop -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "WYSIWYG",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    },
+    {
+      "id": "section_content",
+      "label": "Section Content",
+      "type": "richtext",
+      "default": "<p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "id": "bottom_margin_desktop",
+      "label": "Bottom Margin - Desktop",
+      "type": "range",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 70
+    },
+    {
+      "id": "bottom_margin_mobile",
+      "label": "Bottom Margin - Mobile",
+      "type": "range",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "WYSIWYG",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}

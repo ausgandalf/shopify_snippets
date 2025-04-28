@@ -1,0 +1,97 @@
+{%- capture email_signup_settings -%}
+  {
+    "backgroundColor": {{- section.settings.email_signup_bg | json -}},
+    "textColor": {{- section.settings.email_signup_color | json -}},
+    "title": {{- section.settings.email_signup_title | json -}},
+    "content": {{- section.settings.email_signup_content | json -}},
+    "inputLabel": {{- section.settings.email_signup_input_label | json -}},
+    "ctaLabel": {{- section.settings.email_signup_cta | json -}},
+    "successMessage": {{- section.settings.success_message | json -}},
+    "errorMessage": {{- section.settings.error_message | json -}},
+    "klaviyoListId": {{- section.settings.klaviyo_list_id | json -}}
+  }
+{%- endcapture -%}
+
+{%- assign email_signup_settings = email_signup_settings | replace: "'", '’' -%}
+
+<div id='EmailSignup' props='{{- email_signup_settings | escape -}}'></div>
+
+{% schema %}
+{
+  "name": "Email Signup",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "This section ID is EmailSignup and can't be changed."
+    },
+    {
+      "type": "color",
+      "id": "email_signup_bg",
+      "label": "Background Color",
+      "default": "#241E18"
+    },
+    {
+      "type": "select",
+      "id": "email_signup_color",
+      "label": "Text Color",
+      "options": [
+        {
+          "value": "text-white",
+          "label": "Light"
+        },
+        {
+          "value": "text-color-2",
+          "label": "Dark"
+        }
+      ],
+      "default": "text-white"
+    },
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "text",
+      "id": "email_signup_title",
+      "label": "Title",
+      "default": "Sign up for our newsletter"
+    },
+    {
+      "type": "richtext",
+      "id": "email_signup_content",
+      "label": "Content",
+      "default": "<p>Receive news, product announcements & special offers weekly.</p>"
+    },
+    {
+      "type": "text",
+      "id": "email_signup_input_label",
+      "label": "Input Label",
+      "default": "Enter your email"
+    },
+    {
+      "type": "text",
+      "id": "email_signup_cta",
+      "label": "CTA Label",
+      "default": "Sign Up"
+    },
+    {
+      "type": "text",
+      "id": "success_message",
+      "label": "Success Message",
+      "default": "You've signed up! Check your email for confirmation."
+    },
+    {
+      "type": "text",
+      "id": "error_message",
+      "label": "Error Message",
+      "default": "Oops, something went wrong!"
+    },
+    {
+      "type": "text",
+      "id": "klaviyo_list_id",
+      "label": "Klaviyo List Id"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,399 @@
+{
+  "sections": {
+    "image_text_8y6EfC": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "15447544365098",
+        "image_desktop": "shopify:\/\/shop_images\/crushtv-lp-main.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/crushtv-lp-main_c36dacc4-51f3-407c-888a-d65a4faa173e.jpg",
+        "video_url": "",
+        "subheading": "WHITELABEL | CRUSH",
+        "heading": "<h1>Lee & Tiffany Lakosky<\/h1>",
+        "copy": "<p>We joined forces with popular TV hosts of Outdoor Channel’s top-rated, award-winning <em>Crush with Lee & Tiffan<\/em>y! Together with their children, their labrador retrievers, and a revolving roster of family and friends, the duo have figured out the formula for crushing some of the biggest game there is.<\/p>",
+        "cta_text_1": "SHOP CRUSH PRODUCTS",
+        "cta_url_1": "#crush",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "brand_value_callout_PcyVC7": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "brand_value_callout_YCT9QM": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/famliy-lg.svg",
+            "description": "<h6>FAMILY<\/h6><p>As producers of 'The Crush with Lee and Tiffany, the Lakosky's have shared their love of family with the world.  Every member of the Lakosky family has been baptised into the world of hunting, including their dogs.<\/p>"
+          }
+        },
+        "brand_value_callout_pjKWgW": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/Faith.svg",
+            "description": "<h6>FAITH<\/h6><p>The Lakosky's successfully navigate the wins and losses of their lives and careers while maintaining their faith as their true core value.<\/p>"
+          }
+        },
+        "brand_value_callout_cUkYxF": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/fittest.png",
+            "description": "<h6>FITNESS<\/h6><p>Lee and Tiffany are arguably the most successful husband and wife combo in the outdoor community.  Living their lives devoted to their children and their passion of hunting across the country, their relentless pursuit of fitness is a daily focus.<\/p>"
+          }
+        },
+        "brand_value_callout_wrANTU": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/CHAMPION_6968f90a-fda5-4933-84e6-961e82bee6ff.svg",
+            "description": "<h6>FRIENDS<\/h6><p>It's no secret that raising children takes a village, insert managing thousands of acres of farm ground, producing an award winning television show, and consistently pursuing excellence in all of the above.  The Lakosky's friends are not only a key to their success, but they are accepted as a part of their family.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "brand_value_callout_YCT9QM",
+        "brand_value_callout_pjKWgW",
+        "brand_value_callout_cUkYxF",
+        "brand_value_callout_wrANTU"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Get to Know CRUSH<\/h2>",
+        "image_desktop": "shopify:\/\/shop_images\/crush-tv-lp-support2.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/crush-tv-lp-support2_4924f42a-ebbb-4e7a-89d5-0165970f19f4.jpg",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 36,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "two_three_up_VxCamP": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_mM8qJj": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/crush-pineapplesupplements1101290130-947498.png",
+            "description": "<h4>YETI<\/h4><h6>30 Servings per Tub <\/h6><p>YETI was formulated to deliver explosive training results and provide smooth, non-jittery performance for the athlete that trains year-round.<\/p><ul><li>Explosive Energy<\/li><li>Nitric Oxide Production<\/li><li>Strength & Endurance<\/li><li>200mg Caffeine<\/li><li>2g Creatine<\/li><li>1g Beta Alanine<\/li><li>Sugar Free<\/li><\/ul>",
+            "cta_text": "SHOP ALL",
+            "cta_link": "shopify:\/\/collections\/gear",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "yeti",
+            "featured_variant": "40463654420522",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_PthXCy": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/crush-pineapplesupplements1102290130-485388.png",
+            "description": "<h4>ENDURO<\/h4><h6>30 Servings per Tub <\/h6><p>ENDURO is a non-caffeinated energy booster designed with two special ingredients, L-Arginine & L-Citrulline, which help support normal blood flow and oxygen to the muscles and cells of the body.<\/p><ul><li>Cardiovascular Endurance<\/li><li>Caffeine-Free Energy<\/li><li>Nitric Oxide Production<\/li><li>Caffeine Free<\/li><li>Sugar Free<br\/><\/li><\/ul>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "enduro",
+            "featured_variant": "40152120066090",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_aKqWFN": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/crush-pineapplesupplements1104290145-495834.png",
+            "description": "<h4>IGNITE<\/h4><h6>45 Servings per Tub <\/h6><p>IGNITE delivers smooth, long-lasting, great tasting energy and improve cognitive function for hours, providing a clean and healthy energy alternative to help you conquer the day.<\/p><ul><li>Energy Boost <\/li><li>Improve Cognitive Function<\/li><li>Supercharged Performance<\/li><li>Nitric Oxide Production<\/li><li>200mg Caffeine<\/li><li>Sugar Free<\/li><\/ul>",
+            "cta_text": "",
+            "cta_link": "shopify:\/\/collections\/supplements",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "ignite",
+            "featured_variant": "40463637053482",
+            "atc_cta_text": "OUT OF STOCK",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_mM8qJj",
+        "up_block_PthXCy",
+        "up_block_aKqWFN"
+      ],
+      "settings": {
+        "section_custom_id": "crush",
+        "heading": "<h2>CRUSH PRODUCTS<\/h2>",
+        "copy": "<p>Crush Pineapple is one of our most popular flavors so be sure to purchase it in one of our energy products below<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "two_three_up_npqNBc": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_eQ6dgz": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>$500 WHITELABEL GIFTCARD<\/h3><p><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_FTVgaR": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>MAYHEM ATHLETE ACCESS<\/h3><p>Get 6-month access to the SAME training methods and coaching Rich and team used to go on and win a decade of CrossFit® Games gold medals.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_dyyTQ4": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>$150 MAYHEM NATION GIFTACARD<\/h3><p><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_eQ6dgz",
+        "up_block_FTVgaR",
+        "up_block_dyyTQ4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>RICH'S STACK GIVEAWAY<\/h2>",
+        "copy": "<p>NOW THROUGH THE 13TH BUY ONE OF RICH'S STACKS AND YOU'LL GET ENTERED TO WIN THE FOLLOWING PRIZES<\/p>",
+        "cta_text": "SHOP STACK",
+        "cta_link": "#shopify-section-template--15447544365098__category_row_hmz79C",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_QdQNV9": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/CRUSH-TV-STACK.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/CRUSH-TV-STACK_8c9f97ad-756e-494c-b3c6-bee4a77e24f9.jpg",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h2>Crushs Favorite Products<\/h2>",
+        "copy": "<p><\/p><ul><li><strong>IGNITE<\/strong> - Smooth, long-lasting, great tasting energy and improve cognitive function for hours, providing a clean and healthy energy alternative to help you conquer the day.<\/li><li><strong>Performance Bars<\/strong> -featuring 10 Bars per box with 20 grams of blended protein including whey isolate, whey concentrate, and collagen per bar. 4 grams or less in added sugar and top-notch flavor,<\/li><li><strong>HYDRATE<\/strong> - specifically crafted with a unique blend of essential electrolytes, vitamins, and minerals to help improve overall hydration and performance both at the gym or on the mountain.<\/li><li><strong>CREATINE<\/strong> - a widely studied \/ well known exercise & weight-lifting product that helps customers perform at a high level - building muscle strength, improving power output, and increasing muscle mass.<\/li><\/ul><p><\/p><p><\/p><p><\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "170561287220a8f9b6": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_KDLxwA": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "148316",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_KDLxwA"
+      ],
+      "settings": {
+      }
+    },
+    "two_three_up_nTyYM3": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_AkAG6k": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/webpc-passthru.webp",
+            "description": "<h3>Mayhem Athlete<\/h3><p>Looking for that edge in your fitness routine? Mayhem Athlete is the standard in programming for both the elite and the beginner.<\/p>",
+            "cta_text": "LEARN MORE",
+            "cta_link": "https:\/\/www.mayhemathletes.com\/",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_AdYRzX": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/download.png",
+            "description": "<h3>Froning Farms<\/h3><p>Only the highest quality Bison products, straight from Rich's actual farm. Check out the keto-friendly snacks and awesome apparel.<\/p>",
+            "cta_text": "LEARN MORE",
+            "cta_link": "https:\/\/froningfarms.com\/",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_AkAG6k",
+        "up_block_AdYRzX"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Exclusive Access<\/h2>",
+        "copy": "<p>Gain access to Mayhem Athlete and Froning Farms with your first purchase with WHITELABEL.<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "hero_section_NEjUMq": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/crush-lp-endorsement.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/crush-lp-endorsement_2c767e53-ed03-41c7-a572-12dd0f9917d6.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 800,
+        "media_height_mobile": 500,
+        "subheading": "",
+        "heading": "",
+        "copy": "<p>\"As a family that lives an incredibly active outdoor lifestyle, every day is an adventure.  From farming, hunting, traveling, producing content, raising two children, homeschooling, and everything in between, our health, nutrition and fitness are a nonnegotiable!  WHITELABEL products continue to keep our entire family happy, healthy, and able to conquer every day, no matter what is on the agenda!\"<\/p><p>- CRUSH<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-end",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "image_text_8y6EfC",
+    "brand_value_callout_PcyVC7",
+    "two_three_up_VxCamP",
+    "two_three_up_npqNBc",
+    "image_text_QdQNV9",
+    "170561287220a8f9b6",
+    "two_three_up_nTyYM3",
+    "hero_section_NEjUMq"
+  ]
+}

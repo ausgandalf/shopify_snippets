@@ -1,0 +1,72 @@
+/*
+ * ==========================================================================
+ * Accordion
+ * ==========================================================================
+*/
+
+@layer base {
+  details {
+    @apply border-[3px] border-grey-7 px-8 py-6 transition-colors;
+  }
+
+  details[open] {
+    @apply bg-grey-1;
+  }
+
+  details.dark-mode[open] {
+    @apply bg-color-2;
+  }
+
+  details:hover {
+    @apply bg-grey-2;
+  }
+
+  details.dark-mode:hover {
+    @apply bg-grey-7;
+  }
+
+  details:not(:first-of-type) {
+    @apply border-t-0;
+  }
+
+  details:last-of-type {
+    @apply mb-8 md:mb-14;
+  }
+
+  details summary {
+    @apply relative list-none text-base font-bold cursor-pointer;
+  }
+
+  details summary::before,
+  details summary::after {
+    @apply content-[""] absolute bg-currentColor;
+  }
+
+  details:hover summary::before,
+  details:hover summary::after,
+  details[open] summary::before,
+  details[open] summary::after {
+    @apply bg-color-1;
+  }
+
+  details summary::after {
+    @apply right-0 top-1/2 -translate-y-1/2 w-4 h-[3px];
+  }
+
+  details summary::before {
+    @apply right-[0.40625rem] top-1/2 -translate-y-1/2 w-[3px] h-4 transition-transform;
+  }
+
+  details[open] summary::before {
+    @apply scale-0;
+  }
+
+  details summary::-webkit-details-marker,
+  details summary::marker {
+    display: none;
+  }
+
+  details > div {
+    @apply mt-5 border-t-2 border-grey-8 pt-4;
+  }
+}

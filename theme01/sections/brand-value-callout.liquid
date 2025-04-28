@@ -1,0 +1,348 @@
+{%- liquid
+  assign section_custom_id = section.settings.section_custom_id
+  assign heading = section.settings.heading
+  assign image_desktop = section.settings.image_desktop
+  assign image_mobile = section.settings.image_mobile | default: image_desktop
+  assign video_url = section.settings.video_url
+
+  assign full_width = section.settings.full_width
+  assign content_align_desktop = section.settings.content_align_desktop
+  assign content_align_mobile = section.settings.content_align_mobile
+  assign values_per_row = section.settings.values_per_row
+  assign color_scheme = section.settings.color_scheme
+  assign colors = color_scheme | split: '_'
+  assign text_color = colors[1]
+  assign bg_color = colors[0]
+
+  if section.index > 2
+    assign loading = 'lazy'
+  else
+    assign loading = 'eager'
+  endif
+-%}
+
+{%- if section.blocks.size > 0 -%}
+  <div
+    {% if section_custom_id != blank %}
+      id='{{ section_custom_id }}'
+    {% endif %}
+    class='w-full{% unless full_width %} container{% endunless %}'
+  >
+    <div class='brand-value-callout {{ bg_color }} {{ text_color }}' data-brand-value-callout data-modal-container>
+      <div class='max-w-[75rem] flex flex-col lg:flex-row lg:gap-x-12 mx-auto'>
+        {%- if image_desktop != blank -%}
+          <div class='brand-value-callout-media'>
+            {%- if image_desktop != blank -%}
+              {%- capture desktop_widths -%}{{ image_desktop.width }}, {{ image_desktop.width | times: 1.5 | round }}, {{ image_desktop.width | times: 2 }}{%- endcapture -%}
+              {%- capture desktop_sizes %}(max-width: {{ 2880 | times: 2 }}px) 50vw, {{ 2880 }}px{% endcapture -%}
+              {%- capture mobile_widths -%}{{ image_mobile.width }}, {{ image_mobile.width | times: 1.5 | round }}, {{ image_mobile.width | times: 2 }}{%- endcapture -%}
+              {%- capture mobile_sizes %}(max-width: {{ 1024 | times: 2 }}px) 50vw, {{ 1024 }}px{% endcapture -%}
+              {{
+                image_desktop
+                | image_url: width: 2880
+                | image_tag:
+                  width: image_desktop.width,
+                  class: 'inset-0 w-full h-full object-cover object-center max-lg:hidden',
+                  sizes: desktop_sizes,
+                  alt: image_desktop.alt,
+                  widths: desktop_widths,
+                  loading: loading
+              }}
+
+              {{
+                image_mobile
+                | image_url: width: 1024
+                | image_tag:
+                  width: image_mobile.width,
+                  class: 'inset-0 w-full h-full object-cover object-center lg:hidden',
+                  sizes: mobile_sizes,
+                  alt: image_mobile.alt,
+                  widths: mobile_widths,
+                  loading: loading
+              }}
+            {%- endif -%}
+
+            {%- if video_url != blank -%}
+              <button data-modal-open>
+                {%- render 'icons', icon: 'youtube-play', class: 'text-color-1' -%}
+              </button>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+
+        <div class='brand-value-callout-content {{ content_align_mobile }} {{ content_align_desktop }}'>
+          {%- if heading != blank -%}
+            <div class='uppercase mb-9 lg:mb-11 rte'>{{- heading -}}</div>
+          {%- endif -%}
+          <div class='grid grid-cols-1 md:grid-cols-2 {% if image_desktop != blank %}lg:grid-cols-2{% else %}{{ values_per_row }}{% endif %} gap-6 lg:gap-12'>
+            {%- for block in section.blocks -%}
+              {%- liquid
+                assign icon_svg = block.settings.icon_svg
+                assign icon_img = block.settings.icon_img
+                assign description = block.settings.description
+              -%}
+
+              {%- if description != blank -%}
+                <div class='flex flex-row lg:flex-col gap-4'>
+                  {%- if icon_svg != blank or icon_img != blank -%}
+                    <div class='w-16 h-16'>
+                      {%- if icon_svg != blank -%}
+                        {{- icon_svg -}}
+                      {%- elsif icon_img != blank -%}
+                        {{ icon_img | image_url: width: 128 | image_tag: width: 128, alt: icon_img.alt }}
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                  <div class='brand-value-callout-description rte'>
+                    {{- description -}}
+                  </div>
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+
+      {% if video_url != blank %}
+        <div class='modal' data-modal>
+          <div class='modal__container container'>
+            <div class='modal__close' data-modal-close>
+              {%- render 'icons', icon: 'close' -%}
+            </div>
+
+            <div class='modal__inner'>
+              <div class='iframe-container'>
+                {% if video_url contains 'vimeo' %}
+                  <iframe
+                    data-modal-video
+                    class='video'
+                    src=''
+                    data-src='https://player.vimeo.com/video/{{ video_url.id }}'
+                    width='640'
+                    height='360'
+                    frameborder='0'
+                    allow='autoplay; fullscreen; picture-in-picture'
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    allowfullscreen
+                    loading='lazy'
+                  ></iframe>
+                {% else %}
+                  <iframe
+                    data-modal-video
+                    class='video'
+                    src=''
+                    data-src='https://www.youtube.com/embed/{{ video_url.id }}?rel=0&version=3&controls=1&showinfo=0&loop=1&autoplay=0&enablejsapi=1'
+                    title='YouTube video player'
+                    frameborder='0'
+                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                    allowfullscreen
+                    data-youtube-id='{{ video_url.id }}'
+                    loading='lazy'
+                  ></iframe>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          <span class='modal__backdrop' data-modal-backdrop></span>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {%- render 'spacer', _mobile_space: section.settings.bottom_margin_mobile, _desktop_space: section.settings.bottom_margin_desktop -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Split Brand Value Callout",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Optional. Please use only one H1 per page and then use H2 for the content below the fold.",
+      "default": "<h2>Split Brand Value Callout</h2>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_desktop",
+      "label": "Desktop Image",
+      "info": "Recommended dimensions: '1200x1200'"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile Image",
+      "info": "Recommended dimensions: '375x375'"
+    },
+    {
+      "type": "video_url",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ],
+      "id": "video_url",
+      "label": "Video URL",
+      "info": "Youtube or Vimeo url"
+    },
+    {
+      "type": "header",
+      "content": "Content Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "content_align_desktop",
+      "label": "Content Alignment - Desktop",
+      "options": [
+        {
+          "label": "Content Left / Image Right",
+          "value": "lg:order-first"
+        },
+        {
+          "label": "Image Left / Content Rgiht",
+          "value": "lg:order-last"
+        }
+      ],
+      "default": "lg:order-first"
+    },
+    {
+      "type": "select",
+      "id": "content_align_mobile",
+      "label": "Content Alignment - Mobile",
+      "options": [
+        {
+          "label": "Image Top / Content Bottom",
+          "value": "order-last"
+        },
+        {
+          "label": "Content Top / Image Bottom",
+          "value": "order-first"
+        }
+      ],
+      "default": "order-last"
+    },
+    {
+      "type": "select",
+      "id": "values_per_row",
+      "label": "Brand Value Per Row (No Image) - Desktop",
+      "options": [
+        {
+          "label": "3-Column",
+          "value": "lg:grid-cols-3"
+        },
+        {
+          "label": "4-Column",
+          "value": "lg:grid-cols-4"
+        }
+      ],
+      "default": "lg:grid-cols-4"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "options": [
+        {
+          "label": "Light Mode",
+          "value": "bg-white_text-black"
+        },
+        {
+          "label": "Dark Mode",
+          "value": "bg-black_text-white"
+        },
+        {
+          "label": "Light Grey",
+          "value": "bg-grey-1_text-black"
+        }
+      ],
+      "default": "bg-white_text-black"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Mobile",
+      "default": 0
+    }
+  ],
+  "max_blocks": 6,
+  "blocks": [
+    {
+      "type": "brand-value-callout",
+      "name": "Brand Value Callout",
+      "settings": [
+        {
+          "type": "html",
+          "id": "icon_svg",
+          "label": "Callout Icon (SVG)"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_img",
+          "label": "Callout Icon (Image)"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Callout Description",
+          "default": "<h6>Callout Title</h6><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Split Brand Value Callout",
+      "blocks": [
+        {
+          "type": "brand-value-callout"
+        },
+        {
+          "type": "brand-value-callout"
+        },
+        {
+          "type": "brand-value-callout"
+        },
+        {
+          "type": "brand-value-callout"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

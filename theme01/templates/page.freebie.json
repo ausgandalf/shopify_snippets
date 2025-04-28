@@ -1,0 +1,190 @@
+{
+  "sections": {
+    "110a694a-a343-4eb2-98db-bd8d496c0b33": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/bino-harnessgear8006037901-739265.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/bino-harnessgear8006037901-739265.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 640,
+        "media_height_mobile": 360,
+        "subheading": "Weekend BOGO",
+        "heading": "<h2>FREE APPAREL WITH SUPPLEMENT PURCHASE<\/h2>",
+        "copy": "<p>Who's ready for free gear? This weekend only, take your pick of a free gear item from our curated collection with a purchase of any supplement. Just use code <strong>FREEBIE <\/strong>and get shopping!<\/p>",
+        "cta_text_1": "Shop Now",
+        "cta_url_1": "#shopify-section-template--15000216600618__image_text_iDYkA9",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1697737002a001f31d": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_FFRmN7": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "123553",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "rebuy_personalization_engine_rebuy_widget_z7dNE4": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "149419",
+            "product_id_enabled": false,
+            "collection_id_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_FFRmN7",
+        "rebuy_personalization_engine_rebuy_widget_z7dNE4"
+      ],
+      "settings": {
+      }
+    },
+    "category_row_dJgiWK": {
+      "type": "category-row",
+      "blocks": {
+        "row_category_iLhHNT": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/Rich-Froning-Supplements-img.jpg",
+            "cat_url": "shopify:\/\/collections\/supplements",
+            "cat_label": "Supplements",
+            "cat_copy": ""
+          }
+        },
+        "row_category_FyEcCG": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/BLOWOUT-GEAR-SALE-IMG.jpg",
+            "cat_url": "",
+            "cat_label": "Gear Sale",
+            "cat_copy": ""
+          }
+        },
+        "row_category_HWipAF": {
+          "type": "row-category",
+          "settings": {
+            "cat_url": "",
+            "cat_label": "",
+            "cat_copy": ""
+          }
+        },
+        "row_category_KnCkzh": {
+          "type": "row-category",
+          "settings": {
+            "cat_url": "",
+            "cat_label": "",
+            "cat_copy": ""
+          }
+        },
+        "row_category_BKFcen": {
+          "type": "row-category",
+          "settings": {
+            "cat_url": "",
+            "cat_label": "",
+            "cat_copy": ""
+          }
+        },
+        "row_category_hrJhxM": {
+          "type": "row-category",
+          "settings": {
+            "cat_url": "",
+            "cat_label": "",
+            "cat_copy": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_category_iLhHNT",
+        "row_category_FyEcCG",
+        "row_category_HWipAF",
+        "row_category_KnCkzh",
+        "row_category_BKFcen",
+        "row_category_hrJhxM"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "cta_text": "Shop all",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_3qjyCT": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "149419",
+        "image_desktop": "shopify:\/\/shop_images\/mens-gear-collection-image.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/mens-gear-collection-image.jpg",
+        "subheading": "BOGO Weekend",
+        "heading": "<h2>Shop Freebie Gear<\/h2>",
+        "copy": "<p>Check out our gear availalbe <\/p>",
+        "cta_text_1": "SHOP NOW",
+        "cta_url_1": "shopify:\/\/collections\/on-sale",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241E18",
+        "content_bg_color": "#F7F7F7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "110a694a-a343-4eb2-98db-bd8d496c0b33",
+    "1697737002a001f31d",
+    "category_row_dJgiWK",
+    "image_text_3qjyCT"
+  ]
+}

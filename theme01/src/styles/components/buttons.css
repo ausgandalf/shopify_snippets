@@ -1,0 +1,184 @@
+/*
+ * ==========================================================================
+ * Buttons
+ * ==========================================================================
+*/
+
+@layer base {
+  .button-small,
+  .button {
+    @apply relative inline-flex justify-center items-center border-button rounded-button py-2 lg:py-4 px-6 lg:px-8 min-w-[16.875rem] min-h-[3.75rem] text-center font-primary text-sm no-underline uppercase transition-all;
+  }
+
+  .button:not(.button-small):not(.button-normal):not(:disabled):hover {
+    @apply pr-20 lg:pr-24;
+  }
+
+  .button::after {
+    mask-image: url("data:image/svg+xml,%3Csvg width='34' height='18' viewBox='0 0 34 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6791 3.11831L26.7818 7.21411H13.0924V10.851H26.7818L22.6791 14.9468L25.2505 17.5209L33.7501 9.03257L25.2505 0.544189L22.6791 3.11831Z' fill='currentColor'/%3E%3Cpath d='M8.72852 7.21411H10.9106V10.8509H8.72852V7.21411Z' fill='currentColor'/%3E%3Cpath d='M4.36426 7.21411H6.54636V10.8509H4.36426V7.21411Z' fill='currentColor'/%3E%3Cpath d='M0 7.21411H2.1821V10.8509H0V7.21411Z' fill='currentColor'/%3E%3C/svg%3E%0A");
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='34' height='18' viewBox='0 0 34 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.6791 3.11831L26.7818 7.21411H13.0924V10.851H26.7818L22.6791 14.9468L25.2505 17.5209L33.7501 9.03257L25.2505 0.544189L22.6791 3.11831Z' fill='currentColor'/%3E%3Cpath d='M8.72852 7.21411H10.9106V10.8509H8.72852V7.21411Z' fill='currentColor'/%3E%3Cpath d='M4.36426 7.21411H6.54636V10.8509H4.36426V7.21411Z' fill='currentColor'/%3E%3Cpath d='M0 7.21411H2.1821V10.8509H0V7.21411Z' fill='currentColor'/%3E%3C/svg%3E%0A");
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+  }
+
+  button:focus,
+  .button:focus {
+    @apply outline-none shadow-none;
+  }
+
+  /* Disabled comes first so active can properly restyle */
+  button:disabled,
+  .button:disabled,
+  a.button.disabled {
+    @apply !cursor-not-allowed bg-[var(--btn-disabled-bg)] border-[var(--btn-disabled-bg)] text-[var(--btn-disabled-text)] !opacity-100;
+  }
+
+  button:not(:disabled):active,
+  button:not(:disabled):active:focus,
+  .button:not(:disabled).active,
+  .button:not(:disabled).active:focus {
+    @apply shadow-none;
+  }
+
+  /* Future-proof disabling of clicks on `<a>` elements */
+  a.button.disabled,
+  fieldset:disabled a.button {
+    @apply pointer-events-none;
+  }
+
+  .button--primary:not(:disabled) {
+    @apply text-[var(--btn-primary-text)] bg-[var(--btn-primary-bg)] border-[var(--btn-primary-border)] hover:text-[var(--btn-primary-text)];
+  }
+
+  .button--primary-invert:not(:disabled) {
+    @apply text-[var(--btn-primary-invert-text)] bg-[var(--btn-primary-invert-bg)] border-[var(--btn-primary-invert-border)] hover:text-[var(--btn-primary-invert-text)];
+  }
+
+  .button--primary::before,
+  .button--primary::after,
+  .button--primary-invert::before,
+  .button--primary-invert::after {
+    @apply content-[""] absolute h-button-after w-14 lg:w-[4.375rem] -top-[var(--btn-border-thickness)] -right-[var(--btn-border-thickness)] scale-x-0 origin-right rounded-r-button opacity-0 transition-all;
+  }
+
+  .button--primary:not(:disabled):hover::after,
+  .button--primary:not(:disabled):hover::before,
+  .button--primary-invert:not(:disabled):hover::after,
+  .button--primary-invert:not(:disabled):hover::before {
+    @apply scale-100 opacity-100;
+  }
+
+  .button--primary::before {
+    @apply bg-[var(--btn-primary-hover)];
+  }
+
+  .button--primary-invert::before {
+    @apply bg-[var(--btn-primary-invert-hover)];
+  }
+
+  .button--primary::after {
+    @apply bg-[var(--btn-primary-hover-arrow)];
+  }
+
+  .button--primary-invert::after {
+    @apply bg-[var(--btn-primary-invert-hover-arrow)];
+  }
+
+  .button--secondary:not(:disabled) {
+    @apply text-[var(--btn-secondary-text)] bg-[var(--btn-secondary-bg)] border-[var(--btn-secondary-border)] overflow-hidden hover:text-[var(--btn-secondary-text)];
+  }
+
+  .button--secondary-invert:not(:disabled) {
+    @apply text-[var(--btn-secondary-invert-text)] bg-[var(--btn-secondary-invert-bg)] border-[var(--btn-secondary-invert-border)] overflow-hidden hover:text-[var(--btn-secondary-invert-text)];
+  }
+
+  .button--secondary::before,
+  .button--secondary::after,
+  .button--secondary-invert::before,
+  .button--secondary-invert::after {
+    @apply content-[""] absolute h-full w-14 lg:w-[4.375rem] top-0 right-0 scale-x-0 origin-right transition-transform;
+  }
+
+  .button--secondary:not(:disabled):hover::after,
+  .button--secondary:not(:disabled):hover::before,
+  .button--secondary-invert:not(:disabled):hover::after,
+  .button--secondary-invert:not(:disabled):hover::before {
+    @apply scale-100;
+  }
+
+  .button--secondary::before {
+    @apply bg-[var(--btn-secondary-hover)] border-l-2 border-[var(--btn-secondary-border)];
+  }
+
+  .button--secondary-invert::before {
+    @apply bg-[var(--btn-secondary-invert-hover)] border-l-2 border-[var(--btn-secondary-invert-border)];
+  }
+
+  .button--secondary::after {
+    @apply bg-[var(--btn-secondary-hover-arrow)];
+  }
+
+  .button--secondary-invert::after {
+    @apply bg-[var(--btn-secondary-invert-hover-arrow)];
+  }
+
+  .button--small-primary {
+    @apply py-2 px-6 bg-[var(--btn-primary-bg)] text-[var(--btn-primary-text)] border-[var(--btn-primary-border)];
+  }
+
+  .button--small-secondary {
+    @apply py-2 px-6 bg-[var(--btn-secondary-bg)] text-[var(--btn-secondary-text)] border-[var(--btn-secondary-border)];
+  }
+
+  .button--small-primary:not(:disabled):hover {
+    @apply bg-[var(--btn-primary-hover)] border-[var(--btn-primary-hover)];
+  }
+
+  .button--small-secondary:not(:disabled):hover {
+    @apply bg-[var(--btn-secondary-hover)];
+  }
+
+  /* Make a button look and behave like a link */
+  .button-link {
+    @apply relative text-left font-bold uppercase tracking-wider no-underline text-grey-8 hover:text-grey-8;
+  }
+
+  .button-link::after {
+    @apply content-[""] absolute w-5 h-0.5 bottom-0 left-0 bg-[var(--btn-link-color)] transition-all;
+  }
+
+  .button-link:not(:disabled):hover::after {
+    @apply w-full;
+  }
+
+  .button--block {
+    @apply block w-full;
+  }
+
+  a {
+    @apply underline text-[var(--inline-link-color)] hover:text-[var(--inline-link-color-hover)] transition-colors;
+  }
+
+  .links-inverted a {
+    @apply text-[var(--inline-link-color-invert)] hover:text-[var(--inline-link-color-invert-hover)];
+  }
+
+  /* Normal Button w/o Arrow */
+  .button-normal {
+    @apply before:hidden after:hidden min-w-0;
+  }
+  .button-normal.button--primary:not(:disabled) {
+    @apply hover:border-black hover:bg-white hover:text-black;
+  }
+  .button-normal.button--primary-invert:not(:disabled) {
+    @apply hover:bg-black hover:text-white;
+  }
+  .button-normal.button--secondary:not(:disabled) {
+    @apply hover:bg-black hover:text-white;
+  }
+  .button-normal.button--secondary-invert:not(:disabled) {
+    @apply hover:bg-white hover:text-black;
+  }
+}

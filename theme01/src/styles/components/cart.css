@@ -1,0 +1,11 @@
+.right-cart {
+  @apply right-[-30rem];
+}
+
+.show-header .order-summary {
+  @apply lg:top-44;
+}
+
+.tooltip-content * {
+  @apply text-xs;
+}

@@ -1,0 +1,351 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25": {
+      "type": "hero-section",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/ConquerHunger-LandingPage-DesktopHeroBackground_b4d8b870-9bfa-485f-b0b5-73ebb87128a6.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/ConquerHunter-LandingPage-MobileHeroBackground_51c4d145-ec48-472d-9c0b-e2e862e354fa.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 720,
+        "media_height_mobile": 360,
+        "logo": "shopify:\/\/shop_images\/ch-logo-white_80a61fdb-51cb-4a2d-9595-7f372e1bb843.svg",
+        "subheading": "",
+        "heading": "",
+        "copy": "<h3>EVERY ORDER = 1 MEAL<\/h3>",
+        "cta_text_1": "LEARN MORE",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 500,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1dc84725-ecba-489d-9a9c-6fe0b9f737ff": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-1": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h3>1 IN 8 AMERICANS<\/h3><p>do not get enough food to eat on a daily basis.<\/p>"
+          }
+        },
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-2": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h3>3.1 MILLION CHILDREN<\/h3><p>under the age of five die every year due to poor nutrition<\/p>"
+          }
+        },
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-3": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h3>66 MILLION CHILDREN<\/h3><p>go to school every day on an empty stomach<\/p>"
+          }
+        },
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-4": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h3>1 IN 4 CHILDREN<\/h3><p>in Davis County go home to an empty pantry.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-1",
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-2",
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-3",
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "image_desktop": "shopify:\/\/shop_images\/ConquerHunger-LandingPage-DesktopBrandCalloutImg_242e7d7c-0079-4dcd-8798-fe3eb55fbc6c.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/ConquerHunter-LandingPage-MobileBrandCalloutImg_daf6bb36-bb9e-4c9e-903b-55439de86708.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=dvikgLar9iw&t=2s",
+        "full_width": true,
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "da23238a-5a8c-4aff-9115-6c708a9107cc": {
+      "type": "wysiwyg",
+      "disabled": true,
+      "custom_css": [
+        "p {padding: 10px;}",
+        "h3 {padding: 5px 0 10px 0;}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "section_content": "<h2>EVERY WHITELABEL PURCHASE<\/h2><h3>HELPS FEED A FAMILY IN NEED<\/h3><p>Our ultimate goal at WHITELABEL is to spread health as a lifestyle through becoming and staying active. The products we have developed can be taken throughout your life, to improve your life. We each have experienced many benefits from using our products and have had the chance to share them with those around us. But that’s not enough. We want to use our business to give more.<\/p><p>To do this we created Operation Conquer Hunger, an initiative that works with charity partners to deliver nutritious meals to families in need around the world. Uniquely, each of the founders of WHITELABEL have lived and spent time in impoverished areas of the world. We have seen firsthand the sadness and suffering that is caused by malnutrition. Through Operation Conquer Hunger, we hope to lift others as we rise by sharing health and nutrition with those who otherwise would not have the chance to receive it.<\/p><p><\/p>",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "d4d4fe46-b435-4b02-889d-b956b6795b04": {
+      "type": "hero-section",
+      "disabled": true,
+      "custom_css": [
+        ".hero-content {background-color: #00000000;}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/ConquerHunger-LandingPage-DesktopContentBackground.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/ConquerHunter-LandingPage-MobileContentBackground.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 500,
+        "media_height_mobile": 210,
+        "subheading": "",
+        "heading": "",
+        "copy": "",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "63dec1c4-5d51-49c7-8fe5-a96c99185c87": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--14974455971882__63dec1c4-5d51-49c7-8fe5-a96c99185c87-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "description": "<p>1. Every time a purchase is made at whitelabel.com, a nutritious meal is prepared for families in need.<br\/><\/p>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--14974455971882__63dec1c4-5d51-49c7-8fe5-a96c99185c87-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "description": "<p>2. The Operation Conquer Hunger team works with charity partners to manufacture these nutritious meals.<br\/><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "91a7b4ec-ccbf-4a66-9411-43d40432df15": {
+          "type": "up-block",
+          "settings": {
+            "description": "<p>3. Charity partners work with validated organizations and local governments for transportion and distribution.<br\/><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--14974455971882__63dec1c4-5d51-49c7-8fe5-a96c99185c87-up-block-1",
+        "template--14974455971882__63dec1c4-5d51-49c7-8fe5-a96c99185c87-up-block-2",
+        "91a7b4ec-ccbf-4a66-9411-43d40432df15"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>HOW IT WORKS<\/h2>",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "9450d7c9-3c6b-4bb0-9812-354a647cc56f": {
+      "type": "wysiwyg",
+      "disabled": true,
+      "custom_css": [
+        "p {padding: 10px;}",
+        "h2 {padding: 5px 0 10px 0;}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "section_content": "<h2>WHERE DO THESE MEALS GO? <\/h2><p>Our hearts break knowing that 1 out of 4 children in our local community go home to an empty pantry after school. For these children, a lack of food brings a lack of confidence and hope. It leaves many feeling depressed and unloved and maybe even alone. We are blessed with the opportunity to package meals for these kids and to help create awareness of the growing local need in our own community.<\/p><p>Our mission, to improve the lives of individuals and families, is fulfilled through these efforts when we are able to help these children feel a sense of hope and confidence. We are able to help them know and feel that they are loved and that someone is aware of them.<\/p><p>Conquer Hunger Background: Since 2016, the Conquer Hunger initiative has donated over MILLIONS of MEALS to families in need of food. These meals have been sent all over the world to bless the lives of children and their families. Starting this year, we have brought the majority of these meals back into the United States and into our own backyard in Davis County, Utah.<\/p><p><\/p><p><\/p>",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "83ab6f3e-9aa4-4d01-8754-165ad9578f92": {
+      "type": "hero-section",
+      "disabled": true,
+      "custom_css": [
+        ".hero-content {background-color: #00000000;}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Conquer_Hunger_August_2019_edited_photo_17_b608b2a0-d618-4302-a528-44f3b81da1fe.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Conquer_Hunger_August_2019_edited_photo_17_b608b2a0-d618-4302-a528-44f3b81da1fe.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 500,
+        "media_height_mobile": 210,
+        "subheading": "",
+        "heading": "",
+        "copy": "",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 20,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "4f1a6797-b351-4cdf-9237-10898e0154ad": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "template--14974455971882__4f1a6797-b351-4cdf-9237-10898e0154ad-brand-value-logo-1": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/PartnerFooterLogo-Scheels.svg",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--14974455971882__4f1a6797-b351-4cdf-9237-10898e0154ad-brand-value-logo-2": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/walmart-landing-callout.svg",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--14974455971882__4f1a6797-b351-4cdf-9237-10898e0154ad-brand-value-logo-3": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Agile-PartnerLogo.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "template--14974455971882__4f1a6797-b351-4cdf-9237-10898e0154ad-brand-value-logo-1",
+        "template--14974455971882__4f1a6797-b351-4cdf-9237-10898e0154ad-brand-value-logo-2",
+        "template--14974455971882__4f1a6797-b351-4cdf-9237-10898e0154ad-brand-value-logo-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>PROUD PARTNERS<\/h2>",
+        "cta_text": "",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 20,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25",
+    "1dc84725-ecba-489d-9a9c-6fe0b9f737ff",
+    "da23238a-5a8c-4aff-9115-6c708a9107cc",
+    "d4d4fe46-b435-4b02-889d-b956b6795b04",
+    "63dec1c4-5d51-49c7-8fe5-a96c99185c87",
+    "9450d7c9-3c6b-4bb0-9812-354a647cc56f",
+    "83ab6f3e-9aa4-4d01-8754-165ad9578f92",
+    "4f1a6797-b351-4cdf-9237-10898e0154ad"
+  ]
+}

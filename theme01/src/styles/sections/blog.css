@@ -1,0 +1,7 @@
+.blog-background::after {
+  @apply content-[''] absolute inset-0 w-full h-full;
+}
+
+.blog__mobile-nav select {
+  @apply border-0 text-xs font-bold uppercase w-full bg-select-arrow-nav text-blackest;
+}

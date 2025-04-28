@@ -1,0 +1,37 @@
+<section class="footer-accordions border-b-[3px] border-grey-5">
+  <nav class="accordions">
+    <ul>
+      {%- for link in menu.links -%}
+        <li class="border-t-[3px] border-grey-5" data-accordion-container>
+          <div class="flex items-center justify-between border-l-4 border-transparent px-7 py-5 lg:py-3.5 font-semibold cursor-pointer" data-accordion-heading>
+            {%- if link.url -%}
+              <a class="no-underline" href="{{ link.url }}">
+                <span class="mb-4 h6 uppercase">
+                  {{ link.title }}
+                </span>
+              </a>
+            {%- else -%}
+              <span class="mb-4 h6 uppercase">
+                {{ link.title }}
+              </span>
+            {%- endif -%}
+            <span class="ml-4" data-accordion-icon>
+              {%- render 'icons' icon: 'plus' -%}
+            </span>
+          </div>
+          <div data-accordion-body>
+            <div class="p-s px-8 pt-2 lg:pt-1 pb-4 lg:pb-6">
+              <ul class="flex flex-col gap-4">
+                {%- for sublink in link.links -%}
+                  <li>
+                    <a class="no-underline hover:underline" href="{{ sublink.url }}">{{- sublink.title -}}</a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </nav>
+</section>

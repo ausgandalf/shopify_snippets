@@ -1,0 +1,31 @@
+{%- liquid
+  assign facebook_link = settings.social_facebook
+  assign tiktok_link = settings.social_tiktok
+  assign instagram_link = settings.social_instagram
+  assign youtube_link = settings.social_youtube
+-%}
+
+<section class="footer-social-icons__container">
+  <div class="footer-social-icons__content flex flex-row gap-4 items-center justify-center lg:justify-start">
+    {%- if facebook_link != blank -%}
+      <a href="{{ facebook_link }}">{%- render 'icons' icon: 'facebook', class: 'hover:stroke-color-4 stroke-grey-5 lg:stroke-white' -%}
+        <span class="hidden">Facebook</span>
+      </a>
+    {%- endif -%}
+    {%- if tiktok_link != blank -%}
+      <a href="{{ tiktok_link }}">{%- render 'icons' icon: 'tiktok', class: 'hover:stroke-color-4 stroke-grey-5 lg:stroke-white' -%}
+        <span class="hidden">Tiktok</span>
+      </a>
+    {%- endif -%}
+    {%- if instagram_link != blank -%}
+      <a href="{{ instagram_link }}">{%- render 'icons' icon: 'instagram', class: 'hover:stroke-color-4 stroke-grey-5 lg:stroke-white' -%}
+        <span class="hidden">Instagram</span>
+      </a>
+    {%- endif -%}
+    {%- if youtube_link != blank -%}
+      <a href="{{ youtube_link }}">{%- render 'icons' icon: 'youtube', class: 'hover:stroke-color-4 stroke-grey-5 lg:stroke-white' -%}
+        <span class="hidden">Youtube</span>
+      </a>
+    {%- endif -%}
+  </div>
+</section>

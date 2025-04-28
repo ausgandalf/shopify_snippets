@@ -1,0 +1,23 @@
+<div class="account">
+  <div class="w-full h-full max-w-[79rem] flex flex-col lg:flex-row lg:px-8 lg:mx-auto">
+    <div class="w-full lg:max-w-[16rem] bg-grey-1">
+      {% render 'account-nav' %}
+    </div>
+    <div class="w-full bg-white">
+      {% render 'account-orders' %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Account",
+  "class": "account-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Account Settings"
+    }
+  ]
+}
+{% endschema %}

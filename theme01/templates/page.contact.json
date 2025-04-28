@@ -1,0 +1,134 @@
+{
+  "sections": {
+    "contact-hero": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/contact-bg.webp",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 50,
+        "media_height": 360,
+        "media_height_mobile": 250,
+        "subheading": "",
+        "heading": "<h1>CONTACT<br\/>WHITELABEL<\/h1>",
+        "copy": "<p>You are the reason we are in business and we would love to hear from you. Please reach out to us. We look forward to taking care of your needs!<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "rgba(0,0,0,0)",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "contact-info": {
+      "type": "contact-info",
+      "blocks": {
+        "5664a790-9c86-4e41-9588-ddca9f286ce4": {
+          "type": "contact-info-block",
+          "settings": {
+            "info_heading": "call us",
+            "info_copy": "<p><a href=\"tel:888-760-3393\" title=\"888-760-3393\">888-760-3393<\/a><\/p>"
+          }
+        },
+        "fd837c23-851a-4672-9a6b-a37070ae1c3d": {
+          "type": "contact-info-block",
+          "settings": {
+            "info_heading": "email us",
+            "info_copy": "<p><a href=\"mailto:support@whitelabel.com\" title=\"support@whitelabel.com\">support@whitelabel.com<\/a><\/p>"
+          }
+        },
+        "cdde95cd-79ac-4290-8c7f-d95e2f6fa104": {
+          "type": "contact-info-block",
+          "settings": {
+            "info_heading": "Customer service",
+            "info_copy": "<p>Monday - Friday 10am - 4pm<\/p>"
+          }
+        },
+        "32918f1f-5374-4811-a0fb-333dd529624c": {
+          "type": "contact-info-block",
+          "settings": {
+            "info_heading": "The WHITELABEL Store",
+            "info_copy": "<p>Monday - Friday 9am - 5pm<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5664a790-9c86-4e41-9588-ddca9f286ce4",
+        "fd837c23-851a-4672-9a6b-a37070ae1c3d",
+        "cdde95cd-79ac-4290-8c7f-d95e2f6fa104",
+        "32918f1f-5374-4811-a0fb-333dd529624c"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h3>Get in touch with us.<\/h3>",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "contact-form": {
+      "type": "apps",
+      "blocks": {
+        "f00798ad-2ab1-47de-b189-af194ade285c": {
+          "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/form-block\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "JtDdmWoNmSij9g0bjnlEfQ",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#ffffff",
+            "input_background_color_focus": "#f4dada",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2d2727",
+            "input_font_color": "#3d3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#ebe9e9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#f3f3f3",
+            "sub_btn_bg_color": "#3f3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#ffffff",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "f00798ad-2ab1-47de-b189-af194ade285c"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "contact-hero",
+    "contact-info",
+    "contact-form"
+  ]
+}

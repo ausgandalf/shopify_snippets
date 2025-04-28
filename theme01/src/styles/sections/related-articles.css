@@ -1,0 +1,26 @@
+.related-articles .swiper-wrapper {
+  @apply w-fit mx-auto;
+}
+
+.related-articles .swiper-button-prev,
+.related-articles .swiper-button-next {
+  @apply flex border-2 w-12 h-12 after:hidden items-center justify-center top-[11.6rem] bg-white;
+}
+
+.related-articles .swiper-button-next.swiper-button-disabled,
+.related-articles .swiper-button-prev.swiper-button-disabled {
+  @apply opacity-0;
+}
+
+.related-articles .swiper-button-next svg,
+.related-articles .swiper-button-prev svg {
+  @apply h-4;
+}
+
+.related-articles .swiper-scrollbar {
+  @apply relative w-[calc(100%-12px)] md:w-1/2 h-1.5 top-0 left-0 rounded-none mx-auto mt-6 lg:mt-12;
+}
+
+.related-articles .swiper-scrollbar-drag {
+  @apply h-1.5 rounded-none;
+}

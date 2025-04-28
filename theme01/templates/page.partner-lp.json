@@ -1,0 +1,415 @@
+{
+  "sections": {
+    "image_text_8y6EfC": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "15447544365098",
+        "image_desktop": "shopify:\/\/shop_images\/Rich-Froning-lp-hero-img-desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Rich-Froning-lp-hero-img-desktop.jpg",
+        "video_url": "",
+        "subheading": "WHITELABEL | Rich Froning",
+        "heading": "<h2>Fittest Man on Earth<\/h2>",
+        "copy": "<p>We joined forces with the 10-Time CrossFit Games Champion to bring you unparalleled access to lifestyle, fitness, and self-improvement tips. Start your journey with Rich's stack and other products 20% off today!<\/p>",
+        "cta_text_1": "Unlock Offer",
+        "cta_url_1": "#shopify-section-template--15447544365098__category_row_hmz79C",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "brand_value_callout_PcyVC7": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "brand_value_callout_YCT9QM": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/CHAMPION_6968f90a-fda5-4933-84e6-961e82bee6ff.svg",
+            "description": "<h6>10-Time Champion<\/h6><p>Starting in 2010, Rich has dominated the sport of CrossFit like no one has seen before. Titling 10 titles in all, Rich is one of the most successful athletes of all time.<\/p>"
+          }
+        },
+        "brand_value_callout_cUkYxF": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/fittest.png",
+            "description": "<h6>Fittest Man on Earth<\/h6><p>As the first person ever to win the CrossFit Games 4 times in a row, Rich is considered to be the pinnacle of fitness, performance, and excellence.<\/p>"
+          }
+        },
+        "brand_value_callout_pjKWgW": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/Faith.svg",
+            "description": "<h6>Man of Faith<\/h6><p>It is his first core value and the thing that drives everything he does. As a devout man of God, Rich is proud to publically represent his Christian faith and is open to speaking about it to anyone who asks.<\/p>"
+          }
+        },
+        "brand_value_callout_wrANTU": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/outdoors.svg",
+            "description": "<h6>Avid Outdoorsman<\/h6><p>The relentless drive that made Rich successful at CrossFit is the same drive he brings to the outdoors. And like a true outdoorsman, the thing that keeps him coming back for more is the challenge of a good hunt.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "brand_value_callout_YCT9QM",
+        "brand_value_callout_cUkYxF",
+        "brand_value_callout_pjKWgW",
+        "brand_value_callout_wrANTU"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Get to Know Rich<\/h2>",
+        "image_desktop": "shopify:\/\/shop_images\/Rich-Fronning-huntlifestyle.jpg",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 36,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "two_three_up_npqNBc": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_eQ6dgz": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>$500 WHITELABEL GIFTCARD<\/h3><p><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_FTVgaR": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>MAYHEM ATHLETE ACCESS<\/h3><p>Get 6-month access to the SAME training methods and coaching Rich and team used to go on and win a decade of CrossFit® Games gold medals.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_dyyTQ4": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h3>$150 MAYHEM NATION GIFTACARD<\/h3><p><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_eQ6dgz",
+        "up_block_FTVgaR",
+        "up_block_dyyTQ4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>RICH'S STACK GIVEAWAY<\/h2>",
+        "copy": "<p>NOW THROUGH THE 13TH BUY ONE OF RICH'S STACKS AND YOU'LL GET ENTERED TO WIN THE FOLLOWING PRIZES<\/p>",
+        "cta_text": "SHOP STACK",
+        "cta_link": "#shopify-section-template--15447544365098__category_row_hmz79C",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "wysiwyg_xzhdPq": {
+      "type": "wysiwyg",
+      "custom_css": [
+        "p {display: none;}"
+      ],
+      "settings": {
+        "section_custom_id": "shopify-section-template--15447544365098__category_row_hmz79C",
+        "section_content": "<p>a<\/p>",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "17065500171cc6a5cc": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_VeXPCP": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "132137",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_VeXPCP"
+      ],
+      "settings": {
+      }
+    },
+    "image_text_QdQNV9": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Rich-Froning-Stack-Lifestyle.jpg",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h2>What's in Rich's Stack<\/h2>",
+        "copy": "<p><\/p><ul><li><strong>MAGNUM<\/strong> - Whey protein blend to help you build strength, and support muscle recovery & gains!<\/li><li><strong>YETI MODE<\/strong> - High-Stimulant Pre-Workout formula that gives you energy to go beyond the next level.<\/li><li><strong>HYDRATE<\/strong> - Advanced hydration packs loaded with over 1,000mg electrolytes for optimal performance.<\/li><li><strong>CREATINE<\/strong> - 100% Pure Micronized Creatine Monohydrate for muscle development, strength, power output, and mass gains!<\/li><\/ul><p><\/p><p><\/p><p><\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "170561287220a8f9b6": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_KDLxwA": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "131532",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_KDLxwA"
+      ],
+      "settings": {
+      }
+    },
+    "two_three_up_VxCamP": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_aKqWFN": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Rich-Froning-Supplements-img.jpg",
+            "description": "<h4>SUPPLEMENTS<\/h4><p><\/p>",
+            "cta_text": "SHOP ALL",
+            "cta_link": "shopify:\/\/collections\/supplements",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_mM8qJj": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Rich-Froning-Gear-img.jpg",
+            "description": "<h4>APPAREL \/ GEAR<\/h4><p><\/p>",
+            "cta_text": "SHOP ALL",
+            "cta_link": "shopify:\/\/collections\/gear",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_aKqWFN",
+        "up_block_mM8qJj"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>20% SITEWIDE DISCOUNT<\/h2>",
+        "copy": "<p>Do you like other WHITELABEL products that aren't on this page? No worries! You can use this discount across our whole site<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "two_three_up_nTyYM3": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_AkAG6k": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/webpc-passthru.webp",
+            "description": "<h3>Mayhem Athlete<\/h3><p>Looking for that edge in your fitness routine? Mayhem Athlete is the standard in programming for both the elite and the beginner.<\/p>",
+            "cta_text": "LEARN MORE",
+            "cta_link": "https:\/\/www.mayhemathletes.com\/",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_AdYRzX": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/download.png",
+            "description": "<h3>Froning Farms<\/h3><p>Only the highest quality Bison products, straight from Rich's actual farm. Check out the keto-friendly snacks and awesome apparel.<\/p>",
+            "cta_text": "LEARN MORE",
+            "cta_link": "https:\/\/froningfarms.com\/",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_AkAG6k",
+        "up_block_AdYRzX"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Exclusive Access<\/h2>",
+        "copy": "<p>Gain access to Mayhem Athlete and Froning Farms with your first purchase with WHITELABEL.<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "hero_section_NEjUMq": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Richfroning-lifestyle-background.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Rich-froning-lifestyle-background-mobile.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 460,
+        "media_height_mobile": 300,
+        "subheading": "",
+        "heading": "",
+        "copy": "<p>\"I joined with WHITELABEL because of the alignment of strong core values and bonafide products that drive performance. I can't wait to show the world what we're going to do together in health, fitness, and our communities.\"<\/p><p>- Rich Froning<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-end",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "image_text_8y6EfC",
+    "brand_value_callout_PcyVC7",
+    "two_three_up_npqNBc",
+    "wysiwyg_xzhdPq",
+    "17065500171cc6a5cc",
+    "image_text_QdQNV9",
+    "170561287220a8f9b6",
+    "two_three_up_VxCamP",
+    "two_three_up_nTyYM3",
+    "hero_section_NEjUMq"
+  ]
+}

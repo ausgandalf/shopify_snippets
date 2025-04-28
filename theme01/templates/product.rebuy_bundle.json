@@ -1,0 +1,52 @@
+{
+  "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "disabled": true,
+      "settings": {
+        "button_unavailable_label": "Not Offered",
+        "unavailable_message": "We're sorry, this combination of options does not exist for this product. Please update your selections.",
+        "first_open": true,
+        "first_accordion_label": "About This Product",
+        "second_accordion_label": "Product Facts",
+        "third_accordion_label": "Benefits",
+        "fourth_accordion_label": "Recommended usage",
+        "fifth_accordion_label": "Highlights",
+        "sixth_accordion_label": "Materials & Specs",
+        "bottom_margin_mobile": 40,
+        "bottom_margin_desktop": 70
+      }
+    },
+    "1697740467f5b4aa8a": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "shogun-helper",
+    "shogun-above",
+    "main-product",
+    "1697740467f5b4aa8a",
+    "shogun-below"
+  ]
+}

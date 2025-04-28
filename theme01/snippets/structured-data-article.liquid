@@ -1,0 +1,45 @@
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "articleBody": "{{ article.content | strip_html }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ shop.url }}{{ page.url }}"
+    },
+    "headline": "{{ article.title }}",
+    {% if article.excerpt != blank %}
+    "description": "{{ article.excerpt | strip_html }}",
+    {% endif %}
+    {% if article.image %}
+    "image": [
+      "https:{{ article | image_url: width: article.image.width }}"
+    ],
+    {% endif %}
+    "datePublished": "{{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+    "dateCreated": "{{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ article.author }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      {% if settings.share_image %}
+      "logo": {
+        "@type": "ImageObject",
+        "height": "{{ settings.share_image.height }}",
+        "url": "https:{{ settings.share_image | image_url: width: settings.share_image.width }}",
+        "width": "{{ settings.share_image.width }}"
+      },
+      {% elsif article.image %}
+      "logo": {
+        "@type": "ImageObject",
+        "height": "{{ article.image.height }}",
+        "url": "https:{{ article.image | image_url: width: article.image.width }}",
+        "width": "{{ article.image.width }}"
+      },
+      {% endif %}
+      "name": "{{ shop.name }}"
+    }
+  }
+</script>

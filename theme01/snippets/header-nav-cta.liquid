@@ -1,0 +1,55 @@
+{%- liquid
+  assign image_handle = 'cta_image_desktop_' | append: _index
+  assign mobile_image_handle = 'cta_image_mobile_' | append: _index
+  assign heading_handle = 'cta_heading_' | append: _index
+  assign url_handle = 'cta_url_' | append: _index
+
+  assign cta_image = _block.settings[image_handle]
+  assign cta_image_mobile = _block.settings[mobile_image_handle] | default: cta_image
+  assign cta_heading = _block.settings[heading_handle]
+  assign cta_url = _block.settings[url_handle]
+-%}
+
+{%- if cta_image != blank -%}
+  <div class='w-full max-w-[17.1875rem] lg:max-w-[25rem] self-stretch lg:'>
+    <a
+      href='{{ cta_url | default: 'javascript:void(0);' }}'
+      class='flex flex-col gap-4 h-full no-underline text-blackest hover:text-color-6 group'
+    >
+      <div class='relative overflow-hidden pb-[calc(100/420*280)%]'>
+        {%- capture sizes -%}(max-width: {{ cta_image.width | times: 2 }}px) 50vw, {{ cta_image.width }}px{%- endcapture -%}
+        {%- capture widths -%}{{ cta_image.width }}, {{ cta_image.width | times: 1.5 | round }}, {{ cta_image.width | times: 2 }}{%- endcapture -%}
+        {%- capture sizes_mobile -%}(max-width: {{ cta_image_mobile.width | times: 2 }}px) 50vw, {{ cta_image_mobile.width }}px{%- endcapture -%}
+        {%- capture widths_mobile -%}{{ cta_image_mobile.width }}, {{ cta_image_mobile.width | times: 1.5 | round }}, {{ cta_image_mobile.width | times: 2 }}{%- endcapture -%}
+
+        {{
+          cta_image
+          | image_url: width: 500
+          | image_tag:
+            class: 'hidden lg:block object-cover absolute top-0 left-0 w-full h-full group-hover:scale-110 transition-transform duration-700',
+            widths: widths,
+            width: cta_image.width,
+            alt: cta_image.alt,
+            sizes: sizes,
+            loading: 'lazy'
+        }}
+
+        {{
+          cta_image_mobile
+          | image_url: width: 400
+          | image_tag:
+            class: 'lg:hidden object-cover absolute top-0 left-0 w-full h-full',
+            widths: widths_mobile,
+            width: cta_image_mobile.width,
+            alt: cta_image_mobile.alt,
+            sizes: sizes_mobile,
+            loading: 'lazy'
+        }}
+      </div>
+
+      {%- if cta_heading != blank -%}
+        <p class='caps-large lg:caps-regular'>{{ cta_heading }}</p>
+      {%- endif -%}
+    </a>
+  </div>
+{%- endif -%}

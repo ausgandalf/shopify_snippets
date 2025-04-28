@@ -1,0 +1,39 @@
+<div class='flex items-center py-10 max-lg:pb-0 gap-6'>
+  <h6 class='caps-regular'>Share:</h6>
+
+  <a
+    class='text-grey-8'
+    target='_blank'
+    title='facebook sharing'
+    href='//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}'
+  >
+    {% render 'icons', icon: 'facebook-share' %}
+  </a>
+
+  <a
+    class='text-grey-8'
+    target='_blank'
+    title='twitter sharing'
+    href='//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}'
+  >
+    {% render 'icons', icon: 'twitter-share' %}
+  </a>
+
+  <a
+    class='text-grey-8'
+    target='_blank'
+    title='pinterest sharing'
+    href='//pinterest.com/pin/create/button/?url={{ shop.url | append: share_permalink }}&amp;media={{ share_image | image_url: width: 1024 }}&amp;description={{ share_title | url_param_escape }}'
+  >
+    {% render 'icons', icon: 'pinterest-share' %}
+  </a>
+
+  <a
+    class='text-grey-8'
+    target='_blank'
+    title='linkedin sharing'
+    href='//www.linkedin.com/shareArticle?mini=true&url={{ shop.url | append: share_permalink }}&amp;title={{ share_title | url_param_escape }}&amp;source={{ shop.url }}'
+  >
+    {% render 'icons', icon: 'linkedin-share' %}
+  </a>
+</div>

@@ -1,0 +1,129 @@
+{%- liquid
+  assign section_custom_id = section.settings.section_custom_id
+  assign menu_handle = page.metafields.page.navigation
+  assign main_menu = linklists[menu_handle]
+
+  assign has_hero = false
+  assign hero_image = page.metafields.hero.hero_image_desktop
+  assign hero_image_mobile = page.metafields.hero.hero_image_mobile | default: hero_image
+
+  if hero_image or hero_image_mobile
+    assign has_hero = true
+  endif
+
+  assign hero_overlay_opacity = page.metafields.hero.hero_overlay_opacity
+  assign hero_text_color = page.metafields.hero.hero_text_color | default: '#FFFFFF'
+
+  if menu_handle != blank
+    assign has_navigation = true
+  endif
+-%}
+
+<div
+  {% if section_custom_id != blank %}
+    id='{{ section_custom_id }}'
+  {% endif %}
+  class='general-content'
+>
+  {%- if has_hero -%}
+    <div class='general-content__hero relative'>
+      {{
+        hero_image
+        | image_url: width: 3840
+        | image_tag: width: 3840, class: 'hidden lg:block', sizes: '100vw', widths: '1100, 1500, 1780, 2000, 3000, 3840'
+      }}
+
+      {{
+        hero_image_mobile
+        | image_url: width: 1100
+        | image_tag: width: 1100, class: 'lg:hidden', sizes: '100vw', widths: '375, 550, 750, 1100'
+      }}
+
+      <h1 class='absolute px-6 top-1/2 -translate-y-1/2 w-full text-center uppercase z-10' style='color: {{ hero_text_color }};'>
+        {{ page.title }}
+      </h1>
+    </div>
+
+    {%- style -%}
+      .general-content__hero:after {
+        opacity: {{ hero_overlay_opacity | times: 0.01 }};
+      }
+    {%- endstyle -%}
+  {%- endif -%}
+
+  <div class='container'>
+    <div class='lg:grid lg:grid-cols-12 lg:gap-x-6 lg:items-start{% if has_hero %} lg:py-20{% else %} lg:py-32{% endif %}'>
+      {% if has_navigation == true %}
+        <nav class='hidden lg:block lg:col-span-3'>
+          <ul class='list-none'>
+            {% for link in main_menu.links %}
+              <li class='general-content__nav-item{% if page.url == link.url %} active{% endif %}'>
+                <a
+                  {% if page.url == link.url %}
+                    href='javascript:void(0);'
+                  {% else %}
+                    href='{{ link.url }}'
+                  {% endif %}
+                >
+                  {{- link.title -}}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+
+        <div class='general-content__mobile-nav block lg:hidden -mx-5 select-wrap'>
+          <select>
+            {% for link in main_menu.links %}
+              <option
+                {% if page.url == link.url %}
+                  selected='selected'
+                {% endif %}
+                value='{{ link.url }}'
+              >
+                {{ link.title }}
+              </option>
+            {% endfor %}
+          </select>
+        </div>
+      {% endif %}
+
+      <div class='rte mt-8 lg:mt-0{% if has_navigation %} lg:col-span-8{% else %} lg:col-span-10 lg:col-start-2{% endif %}'>
+        {%- unless has_hero -%}
+          <h1 class='uppercase'>{{ page.title }}</h1>
+        {%- endunless -%}
+
+        {% render 'shortcode-content', _content: page.content %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "General Content",
+  "templates": [
+    "page"
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    },
+    {
+      "type": "header",
+      "content": "Product Description Section",
+      "info": "This section is editable on a page level. To edit, go to the page admin and update the WYSIWYG field."
+    }
+  ],
+  "presets": [
+    {
+      "name": "General Content",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

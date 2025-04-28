@@ -1,0 +1,232 @@
+{%- capture cart_settings -%}
+  {
+    "title": {{- section.settings.cart_title | json -}},
+    "headerText": {{- section.settings.cart_title_color | json -}},
+    "headerBackground": {{- section.settings.cart_title_background | json -}},
+    "thresholds": [
+      {% for block in section.blocks %}
+        {
+          "thresholdType": {{- block.type | json -}},
+          "thresholdAmount": {{- block.settings.threshold | times: 100 | default: 0 | json -}},
+          "thresholdMessage": {{- block.settings.threshold_text | json -}},
+          "thresholdReachedMessage": {{- block.settings.threshold_reached_text | json -}}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    "rebuyGiftID": {{- section.settings.rebuy_gift_id | json -}},
+    "thresholdBackground": {{- section.settings.threshold_background | json -}},
+    "thresholdTextColor": {{- section.settings.threshold_text_color | json -}},
+    "thresholdBarBackground": {{- section.settings.threshold_bar_color | json -}},
+    "thresholdBarFillBackground": {{- section.settings.threshold_bar_fill_color | json -}},
+    "disclaimerBackground": {{- section.settings.disclaimer_background | json -}},
+    "disclaimerTextColor": {{- section.settings.disclaimer_color | json -}},
+    "disclaimerText": {{- section.settings.disclaimer_text | json -}},
+    "rebuyWidgetID": {{- section.settings.rebuy_widget_id | json -}},
+    "emptyCartMessage": {{- section.settings.empty_cart_message | json -}},
+    "continueShoppingText": {{- section.settings.continue_shopping_text | json -}},
+    "continueShoppingURL": {{- section.settings.continue_shopping_url | default: "/collections/all" | json -}},
+    "continueShoppingType": {{- section.settings.continue_shopping_type | json -}}
+  }
+{%- endcapture -%}
+
+{%- assign cart_settings = cart_settings | replace: "'", '’' -%}
+
+<div id='InlineCart' props='{{- cart_settings -}}'></div>
+
+
+<script type='text/javascript'>
+  document.addEventListener('DOMContentLoaded', () => {
+    window.setState('cartState', {%- render 'cart-json' -%});
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Inline Cart & Cart Page",
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "text",
+      "id": "cart_title",
+      "label": "Cart Title",
+      "default": "Shopping Cart"
+    },
+    {
+      "type": "color",
+      "id": "cart_title_color",
+      "label": "Cart Title Color",
+      "default": "#000000",
+      "info": "Only for Inline Cart"
+    },
+    {
+      "type": "color",
+      "id": "cart_title_background",
+      "label": "Cart Title Background",
+      "default": "#FFFFFF",
+      "info": "Only for Inline Cart"
+    },
+    {
+      "type": "header",
+      "content": "Threshold Settings"
+    },
+    {
+      "type": "number",
+      "id": "rebuy_gift_id",
+      "label": "Rebuy Gift ID",
+      "default": 119547
+    },
+    {
+      "type": "color",
+      "id": "threshold_background",
+      "label": "Threshold Background",
+      "default": "#F1F1F1"
+    },
+    {
+      "type": "color",
+      "id": "threshold_text_color",
+      "label": "Threshold Text Color",
+      "default": "#241E18"
+    },
+    {
+      "type": "color",
+      "id": "threshold_bar_color",
+      "label": "Threshold Bar Color",
+      "default": "#D9D8D6"
+    },
+    {
+      "type": "color",
+      "id": "threshold_bar_fill_color",
+      "label": "Threshold Bar Fill Color",
+      "default": "#FE5000"
+    },
+    {
+      "type": "header",
+      "content": "Cart Disclaimer"
+    },
+    {
+      "type": "color",
+      "id": "disclaimer_color",
+      "label": "Disclaimer Color",
+      "default": "#000000",
+      "info": "Only for Inline Cart"
+    },
+    {
+      "type": "color",
+      "id": "disclaimer_background",
+      "label": "Disclaimer Background",
+      "default": "#F1F1F1",
+      "info": "Only for Inline Cart"
+    },
+    {
+      "type": "text",
+      "id": "disclaimer_text",
+      "label": "Disclaimer Text",
+      "default": "*Shipping & taxes calculated at checkout"
+    },
+    {
+      "type": "header",
+      "content": "Recommended Products (Rebuy)"
+    },
+    {
+      "type": "text",
+      "id": "rebuy_widget_id",
+      "label": "Rebuy widget ID",
+      "default": "110215",
+      "info": "On the Rebuy Dashboard find your widget and copy the ID"
+    },
+    {
+      "type": "header",
+      "content": "Empty Cart Settings"
+    },
+    {
+      "type": "richtext",
+      "id": "empty_cart_message",
+      "label": "Empty Cart Message",
+      "default": "<p>Your cart is currently empty.</p>"
+    },
+    {
+      "type": "text",
+      "id": "continue_shopping_text",
+      "label": "Continue Shopping Text",
+      "default": "Continue Shopping"
+    },
+    {
+      "type": "url",
+      "id": "continue_shopping_url",
+      "label": "Continue Shopping URL",
+      "info": "If left blank, the 'Continue Shopping' button will direct user to /collections/all."
+    },
+    {
+      "type": "select",
+      "id": "continue_shopping_type",
+      "label": "Continue Shopping Button Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button--primary"
+        },
+        {
+          "label": "Secondary",
+          "value": "button--secondary"
+        }
+      ],
+      "default": "button--primary"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "free_shipping",
+      "name": "Free Shipping",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "number",
+          "id": "threshold",
+          "label": "Threshold",
+          "default": 90
+        },
+        {
+          "type": "textarea",
+          "id": "threshold_text",
+          "label": "Threshold Text",
+          "default": "Spend $$TOTAL more to unlock FREE SHIPPING"
+        },
+        {
+          "type": "textarea",
+          "id": "threshold_reached_text",
+          "label": "Threshold Reached Text",
+          "default": "You've unlocked FREE SHIPPING!"
+        }
+      ]
+    },
+    {
+      "type": "free_gift",
+      "name": "Free Gift",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "number",
+          "id": "threshold",
+          "label": "Threshold",
+          "default": 90
+        },
+        {
+          "type": "textarea",
+          "id": "threshold_text",
+          "label": "Threshold Text",
+          "default": "Spend $$TOTAL more to unlock a FREE GIFT"
+        },
+        {
+          "type": "textarea",
+          "id": "threshold_reached_text",
+          "label": "Threshold Reached Text",
+          "default": "You've unlocked a FREE GIFT!"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,109 @@
+
+<div class="w-full bg-grey-1 p-6 lg:py-24">
+  <div class="w-full max-w-[30rem] bg-white p-6 lg:p-12 mx-auto">
+    <div class="mb-6">
+      <h3 class="uppercase tracking-[1px] text-center mb-4" tabindex="-1">
+        {{ 'customer.activate_account.title' | t }}
+      </h3>
+      <p class="text-center">
+        {{ 'customer.activate_account.subtext' | t }}
+      </p>
+    </div>
+  
+    {%- form 'activate_customer_password', novalidate: 'novalidate', class: 'form flex flex-col items-center' -%}
+
+      {%- if form.errors -%}
+        <div class="alert error-alert mb-6" tabindex="-1" autofocus>
+          {%- for field in form.errors -%}
+            <p class="text-sm leading-normal">
+              {%- if field == 'form' -%}
+                {{ form.errors.messages[field] }}
+              {%- else -%}
+                {{ form.errors.translated_fields[field] | capitalize }}
+                {{ form.errors.messages[field] }}
+              {%- endif -%}
+            </p>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      <div class="field w-full mb-6">
+        <div class="input-wrap w-full">
+          <input
+            type="password"
+            name="customer[password]"
+            id="password"
+            autocomplete="new-password"
+            {% if form.errors contains 'password' %}
+              aria-invalid="true"
+              aria-describedby="password-error"
+            {% endif %}
+            placeholder=" "
+            class="w-full !min-w-0{% if form.errors contains 'password' %} input-invalid{% endif %}"
+          >
+          <label for="password">
+            {{ 'customer.activate_account.password' | t }}
+          </label>
+        </div>
+        {%- if form.errors contains 'password' -%}
+          <p class="flex text-xs text-error mt-2">
+            {% render 'icons', icon: 'error' %}
+            <span class="ml-1">
+              {{ form.errors.translated_fields.password | capitalize }}
+              {{ form.errors.messages.password }}
+            </span>
+          </p>
+        {%- endif -%}
+      </div>
+
+      <div class="field w-full mb-6">
+        <div class="input-wrap w-full">
+          <input
+            type="password"
+            name="customer[password_confirmation]"
+            id="password_confirmation"
+            autocomplete="new-password"
+            {% if form.errors contains 'password_confirmation' %}
+              aria-invalid="true"
+              aria-describedby="password_confirmation-error"
+            {% endif %}
+            placeholder=" "
+            class="w-full !min-w-0{% if form.errors contains 'password_confirmation' %} input-invalid{% endif %}"
+          >
+          <label for="password_confirmation">
+            {{ 'customer.activate_account.password_confirm' | t }}
+          </label>
+        </div>
+        {%- if form.errors contains 'password_confirmation' -%}
+          <p class="flex text-xs text-error mt-2">
+            {% render 'icons', icon: 'error' %}
+            <span class="ml-1">
+              {{ form.errors.translated_fields.password_confirmation | capitalize }}
+              {{ form.errors.messages.password_confirmation }}
+            </span>
+          </p>
+        {%- endif -%}
+      </div>
+
+      <button class="form-submit w-full button button--primary tracking-[1px] mb-6">
+        {{ 'customer.activate_account.submit' | t }}
+      </button>
+
+      <a href="{{ routes.account_login_url }}" class="button-link tracking-[1px]">
+        {{ 'customer.activate_account.cancel' | t }}
+      </a>
+    {%- endform -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Account Activation",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Account Activation"
+    }
+  ]
+}
+{% endschema %}

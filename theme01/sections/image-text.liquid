@@ -1,0 +1,636 @@
+{%- liquid
+  assign section_custom_id = section.settings.section_custom_id
+  assign image_desktop = section.settings.image_desktop
+  assign image_mobile = section.settings.image_mobile | default: image_desktop
+  assign video_url = section.settings.video_url
+
+  assign subheading = section.settings.subheading
+  assign heading = section.settings.heading
+  assign copy = section.settings.copy
+
+  assign featured_product = section.settings.featured_product
+  assign featured_variant = section.settings.featured_variant | plus: 0
+  assign atc_cta_text = section.settings.atc_cta_text
+  assign atc_cta_type = section.settings.atc_cta_type
+  assign atc_cta_pos = section.settings.atc_cta_pos
+  assign free_product = section.settings.free_product
+  assign free_product_message = section.settings.free_product_message | default: 'FREE'
+  assign p_variant = null
+  if featured_product != blank
+    assign p_variant = featured_product.variants | where: 'id', featured_variant
+    assign p_variant = p_variant[0] | default: featured_product.variants[0]
+  endif
+
+  assign form_cta_text = section.settings.form_cta_text
+  assign form_id = section.settings.form_id
+  assign form_cta_pos = section.settings.form_cta_pos
+  assign form_cta_type = section.settings.form_cta_type
+
+  assign full_width = section.settings.full_width
+  assign content_text_color = section.settings.content_text_color
+  assign content_bg_color = section.settings.content_bg_color
+  assign text_align = section.settings.text_align
+  assign content_align_desktop = section.settings.content_align_desktop
+  assign content_align_mobile = section.settings.content_align_mobile
+  assign discount_style = section.settings.discount_style
+  assign is_discounted = false
+
+  if settings.enable_site_wide_discount and settings.site_wide_discount != 0
+    assign is_discounted = true
+    assign discount_message = "Sale"
+    assign discount_percentage = 100 | minus: settings.site_wide_discount | divided_by: 100.0
+  endif
+
+  if customer.tags contains 'ExpertVoice' and customer != blank
+    assign is_discounted = true
+    assign discount_message = "Pro Discount"
+    assign discount_percentage = 0.7
+  endif
+
+  assign include_discount = true
+  if featured_product.tags contains 'exclude-pro-discount' or featured_product.tags contains 'exclude-sitewide-discount'
+    assign include_discount = false
+  endif
+
+  if section.index > 2
+    assign loading = 'lazy'
+  else
+    assign loading = 'eager'
+  endif
+-%}
+
+{%- capture ctas_html -%}
+  {%- for i in (1..2) -%}
+    {%- if atc_cta_pos contains i and atc_cta_text != blank and p_variant != blank %}
+      <button data-atc class="button-normal {{ atc_cta_type }}" data-variant-id="{{ p_variant.id }}"{% if free_product %} data-product-free{% endif %}{% unless p_variant.available %} disabled{% endunless %}>
+        {{ atc_cta_text }}
+      </button>
+    {% elsif form_cta_pos contains i and form_id != blank and form_cta_text != blank %}
+      <button data-modal-open class="button-normal {{ form_cta_type }}">
+        {{ form_cta_text }}
+      </button>
+    {%- else -%}
+      {%- liquid
+        assign index_cta_text = 'cta_text_' | append: i
+        assign index_cta_url = 'cta_url_' | append: i
+        assign index_cta_type = 'cta_type_' | append: i
+        assign cta_text = section.settings[index_cta_text]
+        assign cta_url = section.settings[index_cta_url]
+        assign cta_type = section.settings[index_cta_type]
+      -%}
+      {%- if cta_text != blank -%}
+        <a class="{{ cta_type }} max-xl:min-w-[12.675rem]" href="{{- cta_url | default: 'javascript:void(0);' -}}">{{- cta_text -}}</a>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- if image_desktop != blank -%}
+  <div
+    {% if section_custom_id != blank %}
+      id='{{ section_custom_id }}'
+    {% endif %}
+    class='w-full{% unless full_width %} container{% endunless %}'
+  >
+    <div id='section-{{- section.id -}}' class='image-text-cta' data-image-text-cta data-modal-container>
+      {%- style -%}
+        #section-{{ section.id }} .image-text-cta-content {
+          color: {{- content_text_color -}};
+          background-color: {{- content_bg_color -}};
+        }
+      {%- endstyle -%}
+
+      <div class='image-text-cta-media'>
+        {%- if image_desktop != blank -%}
+          {%- capture desktop_widths -%}{{ image_desktop.width }}, {{ image_desktop.width | times: 1.5 | round }}, {{ image_desktop.width | times: 2 }}{%- endcapture -%}
+          {%- capture desktop_sizes %}(max-width: {{ 1200 | times: 2 }}px) 50vw, {{ 1200 }}px{% endcapture -%}
+          {%- capture mobile_widths -%}{{ image_mobile.width }}, {{ image_mobile.width | times: 1.5 | round }}, {{ image_mobile.width | times: 2 }}{%- endcapture -%}
+          {%- capture mobile_sizes %}(max-width: {{ 1024 | times: 2 }}px) 50vw, {{ 1024 }}px{% endcapture -%}
+
+          {{
+            image_desktop
+            | image_url: width: 1200
+            | image_tag:
+              width: image_desktop.width,
+              class: 'h-full max-lg:hidden object-cover',
+              sizes: desktop_sizes,
+              alt: image_desktop.alt,
+              widths: desktop_widths,
+              loading: loading
+          }}
+
+          {{
+            image_mobile
+            | image_url: width: 1024
+            | image_tag:
+              width: image_mobile.width,
+              class: 'lg:hidden',
+              sizes: mobile_sizes,
+              alt: image_mobile.alt,
+              widths: mobile_widths,
+              loading: loading
+          }}
+        {%- endif -%}
+
+        {%- if video_url != blank -%}
+          <button data-modal-open>
+            {%- render 'icons', icon: 'youtube-play', class: 'text-color-1' -%}
+          </button>
+        {%- endif -%}
+      </div>
+
+      <div class='image-text-cta-content {{ content_align_mobile }} {{ content_align_desktop }} {{ text_align }}'>
+        <div class='lg:max-w-[42.75rem] px-6 py-10 lg:p-12'>
+          {%- if subheading != blank -%}
+            <p class='inline-flex items-center caps-regular mb-4'>
+              {{- subheading -}}
+            </p>
+          {%- endif -%}
+          {%- if heading != blank -%}
+            <div class='uppercase rte mb-4'>{{- heading -}}</div>
+          {%- endif -%}
+          {%- if copy != blank -%}
+            <div class='image-text-cta-content__copy rte mb-6 lg:mb-8'>{{- copy -}}</div>
+          {%- endif -%}
+          {%- if p_variant != blank -%}
+            {%- unless free_product -%}
+              {%- if include_discount and is_discounted -%}
+                {%- if p_variant.price == p_variant.compare_at_price or p_variant.compare_at_price == blank -%}
+                  <p class='-mt-2 mb-4'>
+                    <span class='inline-block {{ discount_style }} caps-small pl-1.5 pr-1'>{{ discount_message }}</span>
+                  </p>
+                  <p class='text-h5-m -mt-2 mb-6 lg:mb-8'>
+                    <span class='font-bold{% if discount_style contains 'text-white' %} text-error{% endif %}'>
+                      {{- p_variant.price | times: discount_percentage | money -}}
+                    </span>
+                    <span class='ml-1 font-normal line-through'>{{- p_variant.price | money -}}</span>
+                  </p>
+                {%- endif -%}
+              {%- else -%}
+                <p class='text-h5-m -mt-2 mb-6 lg:mb-8'>
+                  <span class='font-bold'>{{- p_variant.price | money -}}</span>
+                  {%- if p_variant.price < p_variant.compare_at_price and p_variant.compare_at_price != blank -%}
+                    <span class='ml-1 font-normal line-through'>{{- p_variant.compare_at_price | money -}}</span>
+                  {%- endif -%}
+                </p>
+              {%- endif -%}
+            {%- else -%}
+              <p class='text-h5-m -mt-2 mb-6 lg:mb-8'>
+                <span class='font-normal line-through'>{{- p_variant.price | money -}}</span>
+                <span class='ml-1 font-bold text-color-1'>{{- free_product_message -}}</span>
+              </p>
+            {%- endunless -%}
+          {%- endif -%}
+          {%- if ctas_html != blank -%}
+            {% comment %}MAU! THIS IS TO BLOCK LRS FROM CERTAIN TAGGED USERS {% endcomment %}
+            {%- if page.handle == "lift-run-shoot" -%}
+              {%- if customer.tags contains "Family" or customer.tags contains "Employee" or customer.email contains "@whitelabel.com" or customer.tags contains "Industry" or customer.tags contains "Guide/Outfitter" or customer.tags contains "Military" or customer.tags contains "Law Enforcement" or customer.tags contains "Serviceman" or customer.tags contains "First Responder" or customer.tags contains "Firefighter" or customer.tags contains "Government" or customer.tags contains "Medical" or customer.tags contains "Teacher" or customer.tags contains "Ambassador" or customer.tags contains "ExpertVoice" or customer.tags contains "Dealer" or customer.tags contains "OpsFriend" or customer.tags contains "Trucking & Distribution" -%}
+                <div class='image-text-cta-content__buttons'>
+                  Not available to Discount Customers Please Log Out to Purchase
+                </div>
+              {%- else -%}
+                <div class='image-text-cta-content__buttons'>
+                  {{- ctas_html -}}
+                </div>
+              {%- endif -%}
+            {%- else -%}
+              <div class='image-text-cta-content__buttons'>
+                {{- ctas_html -}}
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+      </div>
+
+      {% if video_url != blank or form_id != blank %}
+        <div class='modal' data-modal>
+          <div class='modal__container container'>
+            <div class='modal__close' data-modal-close>
+              {%- render 'icons', icon: 'close' -%}
+            </div>
+
+            <div class='modal__inner'>
+              {% if video_url != blank %}
+                <div class='iframe-container'>
+                  {% if video_url contains 'vimeo' %}
+                    <iframe
+                      data-modal-video
+                      class='video'
+                      src=''
+                      data-src='https://player.vimeo.com/video/{{ video_url.id }}'
+                      width='640'
+                      height='360'
+                      frameborder='0'
+                      allow='fullscreen; autoplay; fullscreen; picture-in-picture'
+                      loading='lazy'
+                    ></iframe>
+                  {% else %}
+                    <iframe
+                      data-modal-video
+                      class='video'
+                      src=''
+                      data-src='https://www.youtube.com/embed/{{ video_url.id }}?rel=0&version=3&controls=1&showinfo=0&loop=1&autoplay=0&enablejsapi=1'
+                      title='YouTube video player'
+                      frameborder='0'
+                      allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                      data-youtube-id='{{ video_url.id }}'
+                      loading='lazy'
+                    ></iframe>
+                  {% endif %}
+                </div>
+              {% else %}
+                <div style='margin:0 auto;' class='pxFormGenerator' id='{{ form_id }}'></div>
+              {% endif %}
+            </div>
+          </div>
+
+          <span class='modal__backdrop' data-modal-backdrop></span>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {%- render 'spacer', _mobile_space: section.settings.bottom_margin_mobile, _desktop_space: section.settings.bottom_margin_desktop -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Image / Text CTA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID"
+    },
+    {
+      "type": "header",
+      "content": "Media"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_desktop",
+      "label": "Desktop Image",
+      "info": "Recommended dimensions: '1200x1200'"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile Image",
+      "info": "Recommended dimensions: '375x375'"
+    },
+    {
+      "type": "video_url",
+      "accept": ["youtube", "vimeo"],
+      "id": "video_url",
+      "label": "Video URL",
+      "info": "Youtube or Vimeo url"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "info": "Optional",
+      "default": "Subheading"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Optional. Please use only one H1 per page and then use H2 for the content below the fold.",
+      "default": "<h2>Image / Text CTA</h2>"
+    },
+    {
+      "type": "richtext",
+      "id": "copy",
+      "label": "Copy",
+      "info": "Optional",
+      "default": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>"
+    },
+    {
+      "type": "header",
+      "content": "CTAs"
+    },
+    {
+      "type": "text",
+      "id": "cta_text_1",
+      "label": "CTA 1 Text",
+      "default": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "cta_url_1",
+      "label": "CTA 1 URL"
+    },
+    {
+      "type": "select",
+      "id": "cta_type_1",
+      "label": "CTA 1 Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button button--primary"
+        },
+        {
+          "label": "Primary Dark",
+          "value": "button button--primary-invert"
+        },
+        {
+          "label": "Secondary",
+          "value": "button button--secondary"
+        },
+        {
+          "label": "Secondary Dark",
+          "value": "button button--secondary-invert"
+        }
+      ],
+      "default": "button button--primary"
+    },
+    {
+      "type": "text",
+      "id": "cta_text_2",
+      "label": "CTA 2 Text",
+      "default": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "cta_url_2",
+      "label": "CTA 2 URL"
+    },
+    {
+      "type": "select",
+      "id": "cta_type_2",
+      "label": "CTA 2 Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button button--primary"
+        },
+        {
+          "label": "Primary Dark",
+          "value": "button button--primary-invert"
+        },
+        {
+          "label": "Secondary",
+          "value": "button button--secondary"
+        },
+        {
+          "label": "Secondary Dark",
+          "value": "button button--secondary-invert"
+        }
+      ],
+      "default": "button button--secondary"
+    },
+    {
+      "type": "header",
+      "content": "Featured Variant"
+    },
+    {
+      "type": "product",
+      "id": "featured_product",
+      "label": "Featured Product"
+    },
+    {
+      "type": "text",
+      "id": "featured_variant",
+      "label": "Featured Variant",
+      "info": "This will contain variant ID."
+    },
+    {
+      "type": "text",
+      "id": "atc_cta_text",
+      "label": "\"Add to Cart\" CTA Text",
+      "default": "Add to Cart"
+    },
+    {
+      "type": "select",
+      "id": "atc_cta_type",
+      "label": "\"Add to Cart\" CTA Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button button--primary"
+        },
+        {
+          "label": "Primary Dark",
+          "value": "button button--primary-invert"
+        },
+        {
+          "label": "Secondary",
+          "value": "button button--secondary"
+        },
+        {
+          "label": "Secondary Dark",
+          "value": "button button--secondary-invert"
+        }
+      ],
+      "default": "button button--primary"
+    },
+    {
+      "type": "select",
+      "id": "atc_cta_pos",
+      "label": "\"Add to Cart\" CTA Position",
+      "options": [
+        {
+          "value": "cta-1",
+          "label": "CTA 1 (Left)"
+        },
+        {
+          "value": "cta-2",
+          "label": "CTA 2 (Right)"
+        }
+      ],
+      "default": "cta-1"
+    },
+    {
+      "type": "select",
+      "id": "discount_style",
+      "label": "\"Discount\" Label Style",
+      "options": [
+        {
+          "value": "bg-color-2 text-white",
+          "label": "Light Theme"
+        },
+        {
+          "value": "bg-color-3 text-black",
+          "label": "Dark Theme"
+        }
+      ],
+      "default": "bg-color-2 text-white"
+    },
+    {
+      "type": "checkbox",
+      "id": "free_product",
+      "label": "Make this product Free",
+      "default": false,
+      "info": "WARNING! If this checkbox is selected, the product offered will be free for everyone! Caution with its usage."
+    },
+    {
+      "type": "text",
+      "id": "free_product_message",
+      "label": "Free Product Message",
+      "default": "FREE",
+      "info": "This message will replace the price"
+    },
+    {
+      "type": "header",
+      "content": "Form CTA",
+      "info": "Form will display on modal. The Video has priority over the Form. They can't happen both at the same time."
+    },
+    {
+      "type": "text",
+      "id": "form_cta_text",
+      "label": "Form CTA Text",
+      "default": "Complete Form"
+    },
+    {
+      "type": "text",
+      "id": "form_id",
+      "label": "Form ID (Hulk)"
+    },
+    {
+      "type": "radio",
+      "id": "form_cta_pos",
+      "label": "Form CTA Position",
+      "options": [
+        {
+          "value": "cta-1",
+          "label": "CTA 1 (Left)"
+        },
+        {
+          "value": "cta-2",
+          "label": "CTA 2 (Right)"
+        }
+      ],
+      "default": "cta-1"
+    },
+    {
+      "type": "select",
+      "id": "form_cta_type",
+      "label": "Form CTA Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button button--primary"
+        },
+        {
+          "label": "Primary Dark",
+          "value": "button button--primary-invert"
+        },
+        {
+          "label": "Secondary",
+          "value": "button button--secondary"
+        },
+        {
+          "label": "Secondary Dark",
+          "value": "button button--secondary-invert"
+        }
+      ],
+      "default": "button button--primary-invert"
+    },
+    {
+      "type": "header",
+      "content": "Content Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "content_text_color",
+      "label": "Content Text Color",
+      "default": "#241E18"
+    },
+    {
+      "type": "color",
+      "id": "content_bg_color",
+      "label": "Content BG Color",
+      "default": "#F7F7F7"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text Alignment",
+      "options": [
+        {
+          "label": "Left",
+          "value": "text-left"
+        },
+        {
+          "label": "Center",
+          "value": "text-center"
+        }
+      ],
+      "default": "text-left"
+    },
+    {
+      "type": "select",
+      "id": "content_align_desktop",
+      "label": "Content Alignment - Desktop",
+      "options": [
+        {
+          "label": "Content Left / Image Right",
+          "value": "lg:order-first"
+        },
+        {
+          "label": "Image Left / Content Rgiht",
+          "value": "lg:order-last"
+        }
+      ],
+      "default": "lg:order-first"
+    },
+    {
+      "type": "select",
+      "id": "content_align_mobile",
+      "label": "Content Alignment - Mobile",
+      "options": [
+        {
+          "label": "Image Top / Content Bottom",
+          "value": "order-last"
+        },
+        {
+          "label": "Content Top / Image Bottom",
+          "value": "order-first"
+        }
+      ],
+      "default": "order-last"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Mobile",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image / Text CTA"
+    }
+  ]
+}
+{% endschema %}

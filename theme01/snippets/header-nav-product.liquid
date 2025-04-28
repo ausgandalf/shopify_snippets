@@ -1,0 +1,47 @@
+{%- liquid
+  assign image_handle = 'cta_image_' | append: _index
+  assign heading_handle = 'cta_heading_' | append: _index
+  assign description_handle = 'cta_description_' | append: _index
+  assign url_handle = 'cta_url_' | append: _index
+
+  assign cta_image = _block.settings[image_handle]
+  assign cta_heading = _block.settings[heading_handle]
+  assign cta_description = _block.settings[description_handle]
+  assign cta_url = _block.settings[url_handle]
+-%}
+
+{%- if cta_image != blank -%}
+  <div class='w-full lg:max-w-[13.75rem] lg:self-stretch lg:px-3 lg:pt-5 lg:pb-7 border-2 border-transparent hover:border-color-3 transition-colors'>
+    <a
+      href='{{ cta_url | default: 'javascript:void(0);' }}'
+      class='flex lg:flex-col max-lg:items-center gap-4 h-full no-underline text-color-2 hover:text-color-6 group lg:text-center'
+    >
+      <div class='relative overflow-hidden max-lg:w-[7.5rem] max-lg:h-28 lg:pb-[calc(100/193*181)%]'>
+        {%- capture sizes -%}(max-width: {{ cta_image.width | times: 2 }}px) 50vw, {{ cta_image.width }}px{%- endcapture -%}
+        {%- capture widths -%}{{ cta_image.width }}, {{ cta_image.width | times: 1.5 | round }}, {{ cta_image.width | times: 2 }}{%- endcapture -%}
+
+        {{
+          cta_image
+          | image_url: width: 300
+          | image_tag:
+            class: 'object-contain absolute top-0 left-0 w-full h-full group-hover:scale-110 transition-transform duration-700',
+            widths: widths,
+            width: cta_image.width,
+            alt: cta_image.alt,
+            sizes: sizes,
+            loading: 'lazy'
+        }}
+      </div>
+
+      <div class='flex-1 lg:flex-none'>
+        {%- if cta_heading != blank -%}
+          <p class='caps-regular lg:caps-large'>{{ cta_heading }}</p>
+        {%- endif -%}
+
+        {%- if cta_description != blank -%}
+          <div class='header-nav__product-desc text-color-2 mt-1 lg:mt-4 rte'>{{ cta_description }}</div>
+        {%- endif -%}
+      </div>
+    </a>
+  </div>
+{%- endif -%}

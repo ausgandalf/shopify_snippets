@@ -1,0 +1,89 @@
+{%- capture cart_settings -%}
+  {
+    {% if section.settings.donation_product != blank %}
+    "donationProduct": {{- all_products[section.settings.donation_product] | json -}},
+    {% endif %}
+    "donationMessage": {{- section.settings.donation_message | json -}},
+    "donationTooltip": {{- section.settings.donation_tooltip | json -}},
+    "enableGovxID": {{- section.settings.enable_goxvid | json -}},
+    "govxIDMessage": {{- section.settings.govxid_message | json -}}
+  }
+{%- endcapture -%}
+
+{%- assign cart_settings = cart_settings | replace: "'", '’' -%}
+
+<div id='CartPage' class='container max-lg:px-0' props='{{- cart_settings -}}'></div>
+
+{%- render 'spacer', _mobile_space: section.settings.bottom_margin_mobile, _desktop_space: section.settings.bottom_margin_desktop -%}
+
+{% schema %}
+{
+  "name": "Cart",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "This section ID is CartPage and can't be changed."
+    },
+    {
+      "type": "header",
+      "content": "Donation Settings"
+    },
+    {
+      "type": "product",
+      "id": "donation_product",
+      "label": "Donation Product"
+    },
+    {
+      "type": "richtext",
+      "id": "donation_message",
+      "label": "Donation Message",
+      "default": "<p>Add $25 for <a href=\"#tooltip\" title=\"#tooltip\">#ConquerHunger <\/a><\/p>",
+      "info": "To display the tooltip use a link with the url: #tooltip"
+    },
+    {
+      "type": "richtext",
+      "id": "donation_tooltip",
+      "label": "Donation Tooltip",
+      "default": "<p>Donate a small portion of your purchase to support Operation Conquer Huger.</p>"
+    },
+    {
+      "type": "header",
+      "content": "GovxID Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_goxvid",
+      "label": "Enable GovxID",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "govxid_message",
+      "label": "GovxID Message",
+      "default": "Military, First Responder, Government Employee and Teacher discount available. Verify with GovX ID to instantly unlock your savings."
+    },
+    {
+      "type": "header",
+      "content": "Cart Settings"
+    },
+    {
+      "id": "bottom_margin_desktop",
+      "label": "Bottom Margin - Desktop",
+      "type": "range",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 70
+    },
+    {
+      "id": "bottom_margin_mobile",
+      "label": "Bottom Margin - Mobile",
+      "type": "range",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    }
+  ]
+}
+{% endschema %}

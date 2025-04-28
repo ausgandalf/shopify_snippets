@@ -1,0 +1,104 @@
+.two-three-up {
+  @apply py-12 lg:py-[4.5rem];
+}
+
+.two-three-up-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6 lg:gap-x-6;
+}
+
+.two-three-up-grid.two-up {
+  @apply lg:grid-cols-2;
+}
+
+.two-three-up-grid.three-up {
+  @apply lg:grid-cols-3;
+}
+.two-three-up-item {
+  @apply relative flex flex-col py-7 hover:before:border-color-1;
+}
+
+.two-three-up-item::before {
+  @apply content-[''] block absolute top-0 bottom-0 left-0 w-full border-l-[5px];
+}
+
+.two-three-up-item.has-media {
+  @apply pt-0;
+}
+
+.two-three-up-item.has-media::before {
+  @apply top-16;
+}
+
+.two-three-up-item-image {
+  @apply relative w-full mb-2 lg:mb-3 z-1;
+}
+
+.two-up .two-three-up-item-image {
+  @apply aspect-[3/2] lg:aspect-video;
+}
+
+.three-up .two-three-up-item-image {
+  @apply aspect-[3/2];
+}
+
+.two-three-up-item-image img {
+  @apply absolute inset-0 w-full h-full object-contain;
+}
+
+.two-three-up-item-description {
+  @apply flex-grow px-7 mb-4 lg:mb-6 z-1 ml-[5px];
+}
+
+.two-up .two-three-up-item-description {
+  @apply lg:px-16;
+}
+
+.three-up .two-three-up-item-description {
+  @apply lg:px-10;
+}
+
+.two-three-up-item-description > * {
+  @apply mb-2 lg:mb-4 last:mb-0;
+}
+
+.two-three-up-item-description h1,
+.two-three-up-item-description h2,
+.two-three-up-item-description h3 {
+  @apply uppercase;
+}
+
+.two-three-up-item-description ul {
+  @apply list-disc text-sm leading-normal pl-6;
+}
+
+.two-three-up-item-price {
+  @apply px-7 z-1 -mt-2 mb-4 lg:mb-6 ml-[5px];
+}
+
+.two-up .two-three-up-item-price {
+  @apply lg:px-16;
+}
+
+.three-up .two-three-up-item-price {
+  @apply lg:px-10;
+}
+
+.two-three-up-item-cta {
+  @apply px-7 z-1;
+}
+
+.two-up .two-three-up-item-cta {
+  @apply lg:px-16;
+}
+
+.three-up .two-three-up-item-cta {
+  @apply lg:px-10;
+}
+
+.two-three-up-item-cta .button {
+  @apply h-[3.75rem] flex items-center justify-center;
+}
+
+.three-up .two-three-up-item-cta .button {
+  @apply lg:min-w-[13.5rem] xl:min-w-[16.875rem];
+}

@@ -1,0 +1,135 @@
+{% liquid
+  assign video_url = article.metafields.custom.video_url | metafield_tag
+  assign video_cover_image = article.metafields.custom.video_cover_image
+  assign show_video_styling = article.metafields.custom.show_video_styling
+%}
+
+<a class='flex flex-col flex-1 no-underline group' href='{{ article.url }}'>
+  <div class='block w-full relative overflow-hidden group h-0 pb-[66.66%]'>
+    {% if video_url != blank and show_video_styling %}
+      {% if video_cover_image != blank %}
+        {{
+          video_cover_image
+          | image_url: width: 564
+          | image_tag:
+            width: 564,
+            class: 'object-cover absolute w-full h-full md:group-hover:scale-105 transition-transform duration-300',
+            alt: article.title,
+            loading: 'lazy'
+        }}
+      {% else %}
+        {% if video_url contains 'vimeo' %}
+          {% liquid
+            assign video_id = video_url | split: 'https://vimeo.com/' | last | split: '"' | first
+            assign video_url = 'https://player.vimeo.com/video/' | append: video_id | append: '?background=1&autoplay=0'
+          %}
+
+          <iframe
+            src='{{ video_url }}'
+            title='YouTube video player'
+            class='absolute top-0 left-0 w-full h-full object-cover bg-black md:group-hover:scale-105 transition-transform duration-300 pointer-events-none'
+            frameborder='0'
+            allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            loading='lazy'
+          ></iframe>
+        {% else %}
+          {% liquid
+            if video_url contains 'youtube'
+              assign video_id = video_url | split: 'v=' | last | split: '&' | first
+            elsif video_url contains 'youtu.be'
+              assign video_id = video_url | split: 'youtu.be/' | last
+            endif
+
+            assign image_video_url = 'http://img.youtube.com/vi/' | append: video_id | append: '/maxresdefault.jpg'
+          %}
+
+          {% # theme-check-disable RemoteAsset %}
+          <img
+            src='{{ image_video_url }}'
+            class='object-cover absolute w-full h-full md:group-hover:scale-105 transition-transform duration-300'
+            alt='{{ article.title }}'
+            width='564'
+            height='376'
+            loading='lazy'
+          >
+          {% # theme-check-enable RemoteAsset %}
+        {% endif %}
+      {% endif %}
+
+      <div class='absolute top-0 left-0 border-l-[5px] border-color-1 pl-[5px]'>
+        <span class='caps-small text-white bg-color-1 px-2 py-1 flex items-center gap-2.5'>
+          Video {% render 'icons', icon: 'play', class: 'h-3.5 w-3.5' -%}
+        </span>
+      </div>
+    {% else %}
+      {% if article.image != blank %}
+        {%- capture widths -%}{{ article.image.width }}, {{ article.image.width | times: 1.5 | round }}, {{ article.image.width | times: 2 }}{%- endcapture -%}
+        {%- capture sizes %}(max-width: {{ 564 | times: 2 }}px) 50vw, {{ 564 }}px{% endcapture -%}
+
+        {{
+          article.image
+          | image_url: width: 564
+          | image_tag:
+            width: article.image.width,
+            class: 'object-cover absolute w-full h-full md:group-hover:scale-105 transition-transform duration-300',
+            sizes: sizes,
+            alt: article.image.alt,
+            widths: widths,
+            loading: 'lazy'
+        }}
+      {% else %}
+        {%- capture widths -%}{{ placeholder_image.width }}, {{ placeholder_image.width | times: 1.5 | round }}, {{ placeholder_image.width | times: 2 }}{%- endcapture -%}
+        {%- capture sizes %}(max-width: {{ 564 | times: 2 }}px) 50vw, {{ 564 }}px{% endcapture -%}
+
+        {{
+          placeholder_image
+          | image_url: width: 564
+          | image_tag:
+            width: placeholder_image.width,
+            class: 'object-contain absolute w-full h-full md:group-hover:scale-105 transition-transform duration-300',
+            sizes: sizes,
+            alt: placeholder_image.alt,
+            widths: widths,
+            loading: 'lazy'
+        }}
+      {% endif %}
+
+      {% assign has_category = false %}
+
+      {%- for tag in article.tags -%}
+        {% if has_category == false and tag contains 'category:' %}
+          {% assign has_category = true %}
+
+          <div class='absolute top-0 left-0 border-l-[5px] border-grey-8 pl-[5px]'>
+            <span class='caps-small text-white bg-grey-8 px-2 py-0.5 block'>{{ tag | remove: 'category:' }}</span>
+          </div>
+        {% endif %}
+      {%- endfor -%}
+    {% endif %}
+  </div>
+
+  <div class='grow px-6 py-8 flex flex-col items-start bg-grey-2'>
+    <h5 class='mb-2 text-grey-8'>{{ article.title }}</h5>
+
+    <p class='text-sm text-grey-8 grow mb-4'>{{- article.excerpt | strip_html | truncate: 90 -}}</p>
+
+    <div class='button-link inline-block'>
+      {% if video_url != blank and show_video_styling %}
+        <span>Watch</span>
+      {% else %}
+        <span>Read More</span>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if show_publish_date or show_author %}
+    <div class='px-6 py-4 bg-grey-2 border-t border-grey-4 flex items-center'>
+      {% if show_publish_date %}
+        <p class='text-xs text-color-2 pr-2'>{{ article.created_at | date: '%b %d, %Y' }}</p>
+      {% endif %}
+      {% if show_author %}
+        <p class='text-xs text-color-2{% if show_publish_date %} border-l border-grey-4 pl-2{% endif %}'>By {{ article.author }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+</a>

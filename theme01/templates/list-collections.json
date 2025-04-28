@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "page-404": {
+      "type": "page-404",
+      "settings": {
+        "title": "404",
+        "title_image": "shopify:\/\/shop_images\/404.svg",
+        "copy": "<p>We're sorry, we can't find the page you're looking for.<\/p>",
+        "cta_text": "Continue Shopping",
+        "cta_url": "\/",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "page-404"
+  ]
+}

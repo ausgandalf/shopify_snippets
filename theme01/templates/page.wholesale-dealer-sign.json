@@ -1,0 +1,21 @@
+{
+  "sections": {
+    "wholesale-dealer-sign": {
+      "type": "wholesale-dealer-sign",
+      "settings": {
+        "heading": "<h1>WHITELABEL WHOLESALE<\/h1>",
+        "signin_title": "Current Dealers",
+        "signin_copy": "Already have a wholesale account? Sign in at our wholesale portal.",
+        "signin_cta_text": "Log in to Wholesale Portal",
+        "signin_cta_link": "https:\/\/dealers.whitelabel.com\/accounts\/sign_in",
+        "signup_title": "Prospective Dealers",
+        "signup_copy": "Interested in carrying WHITELABEL products at your store? Please fill out our dealer application and we will get right back with you about becoming a WHITELABEL dealer.",
+        "signup_cta_text": "Go to Dealer Application",
+        "signup_cta_link": "shopify:\/\/pages\/dealer-application"
+      }
+    }
+  },
+  "order": [
+    "wholesale-dealer-sign"
+  ]
+}

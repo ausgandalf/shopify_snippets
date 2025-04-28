@@ -1,0 +1,23 @@
+<script type='text/javascript'>
+  window.eHS = {
+    template: {{- template | json -}},
+    cart: {{- cart | json -}},
+    customerTags: {{- customer.tags | json -}},
+    cartThreshold: {{- settings.cart_threshold | times: 100.0 | json -}},
+    isB2bCustomer: {{- customer.b2b? | json -}},
+    cartErrorMessage: {{- settings.cart_error_message | json -}}
+  };
+
+  {% if settings.enable_site_wide_discount and settings.site_wide_discount != 0 %}
+    window.eHS.sideWideDiscount = {{- settings.site_wide_discount | json -}}
+  {% endif %}
+
+  {%- if template.name == 'product' -%}
+    window.eHS.sizingChart = [];
+    window.eHS.product = {%- render 'product-json' -%};
+  {%- endif -%}
+
+  {%- if collection != blank -%}
+    window.eHS.collection = {%- render 'collection-json' -%};
+  {%- endif -%}
+</script>

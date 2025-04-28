@@ -1,0 +1,62 @@
+{% if section.blocks.size > 0 %}
+  <script>
+    window.eHS.sizingChart = [
+      {%- for block in section.blocks -%}
+        {% liquid
+          assign product_type = block.settings.product_type
+          assign product_tag = block.settings.product_tag
+          assign size_chart_image = block.settings.size_chart_image
+          assign cta_text = block.settings.cta_text
+        %}
+
+        {% if product_type != blank and product_tag != blank and size_chart_image != blank %}
+        {
+          productType: {{ product_type | json }},
+          productTag: {{ product_tag | json }},
+          sizeChartImage: {{ size_chart_image | image_url: width: 500 | json }},
+          ctaText: {{ cta_text | json }}
+        }{% unless forloop.last %},{% endunless %}
+        {% endif %}
+      {%- endfor -%}
+    ]
+  </script>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Sizing Chart",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "sizing-chart",
+      "name": "Sizing Chart",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_type",
+          "label": "Product Type",
+          "info": "Select the product type we want this image to show. In order to have multiple types, just list them with commas (e.g Hoodies, Sweatshirt)"
+        },
+        {
+          "type": "text",
+          "id": "product_tag",
+          "label": "Product Tag",
+          "info": "Select the product tag we want this image to show"
+        },
+        {
+          "type": "image_picker",
+          "id": "size_chart_image",
+          "label": "Image",
+          "info": "Recommended dimensions: 120 x 120 px"
+        },
+        {
+          "type": "text",
+          "id": "cta_text",
+          "label": "CTA Text",
+          "info": "Select the CTA text appearing on the PDP. The default value will be: Sizing Chart/Specs"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,98 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "enable_social_share": true,
+        "hero_image_mobile": "{{ article.metafields.custom.hero_image_mobile.value }}"
+      }
+    },
+    "category_row_YDftai": {
+      "type": "category-row",
+      "blocks": {
+        "row_category_H7d947": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/MAGNUM_C-Lifestyle.png",
+            "cat_url": "shopify:\/\/products\/magnum",
+            "cat_label": "Magnum",
+            "cat_copy": ""
+          }
+        },
+        "row_category_ALeXEL": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/AMMO_C-Lifestyle.jpg",
+            "cat_url": "shopify:\/\/products\/ammo",
+            "cat_label": "Ammo",
+            "cat_copy": ""
+          }
+        },
+        "row_category_JExjAQ": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/PERFORMANCE-BAR_C-Lifestyle.png",
+            "cat_url": "shopify:\/\/products\/performance-bars",
+            "cat_label": "Performance Bars",
+            "cat_copy": ""
+          }
+        },
+        "row_category_bePX77": {
+          "type": "row-category",
+          "settings": {
+            "cat_img": "shopify:\/\/shop_images\/venture-barsupplements4133110810-689325.jpg",
+            "cat_url": "shopify:\/\/products\/venture-bar",
+            "cat_label": "Venture Bar",
+            "cat_copy": ""
+          }
+        },
+        "row_category_g7Nrrb": {
+          "type": "row-category",
+          "settings": {
+            "cat_url": "",
+            "cat_label": "",
+            "cat_copy": ""
+          }
+        },
+        "row_category_YTJ64M": {
+          "type": "row-category",
+          "settings": {
+            "cat_url": "",
+            "cat_label": "",
+            "cat_copy": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_category_H7d947",
+        "row_category_ALeXEL",
+        "row_category_JExjAQ",
+        "row_category_bePX77",
+        "row_category_g7Nrrb",
+        "row_category_YTJ64M"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Shop Protein<\/h2>",
+        "cta_text": "Shop all",
+        "cta_url": "shopify:\/\/collections\/proteins-meal-replacements",
+        "cta_type": "button button--primary",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "58430cab-e5db-42f8-9bda-022cc065792c": {
+      "type": "related-articles",
+      "settings": {
+        "section_custom_id": "",
+        "title": "Related Posts"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "category_row_YDftai",
+    "58430cab-e5db-42f8-9bda-022cc065792c"
+  ]
+}

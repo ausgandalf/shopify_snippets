@@ -1,0 +1,33 @@
+/*
+ * ==========================================================================
+ * Resets
+ * ==========================================================================
+*/
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-secondary text-sm font-normal text-black tracking-normal antialiased max-w-screen;
+  }
+
+  [tabindex='-1']:focus {
+    @apply outline-none;
+  }
+
+  .hide-preview-bar #preview-bar-iframe {
+    @apply hidden;
+  }
+
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    @apply h-px w-px overflow-hidden absolute whitespace-nowrap;
+  }
+
+  .visually-hidden::before {
+    @apply content-[""] absolute;
+  }
+}

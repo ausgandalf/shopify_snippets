@@ -1,0 +1,178 @@
+{%- liquid
+  assign collection_title = 'All Products'
+  assign collection_link = '/collections/all'
+
+  unless collection == blank
+    assign collection_title = collection.title
+    assign collection_link = collection.url
+  endunless
+
+  for tag in product.tags
+    if tag == 'Hidden'
+      assign hide_product = true
+    endif
+  endfor
+-%}
+
+{%- unless hide_product -%}
+  <div class='container'>
+    <ul class='w-full my-4 flex items-center text-xs text-color-2'>
+      <li><a href='/' class='no-underline text-color-2'> Home </a></li>
+      <li>{%- render 'icons', icon: 'separator', class: 'mx-4' -%}</li>
+      <li>
+        <a href='{{- collection_link -}}' class='no-underline text-color-2 whitespace-nowrap'>
+          {{- collection_title -}}
+        </a>
+      </li>
+      <li>{%- render 'icons', icon: 'separator', class: 'mx-4' -%}</li>
+      <li class='truncate'>
+        {{- product.title -}}
+      </li>
+    </ul>
+  </div>
+{%- endunless -%}
+
+{%- capture product_settings -%}
+  {
+    "flavorLayout": {{- section.settings.flavor_layout | json -}},
+    "buttonUnavailableLabel": {{- section.settings.button_unavailable_label | json -}},
+    "unavailableMessage": {{- section.settings.unavailable_message | json -}},
+    "firstOpen": {{- section.settings.first_open | json -}},
+    "firstAccordionLabel": {{- section.settings.first_accordion_label | json -}},
+    "secondAccordionLabel": {{- section.settings.second_accordion_label | json -}},
+    "thirdAccordionLabel": {{- section.settings.third_accordion_label | json -}},
+    "fourthAccordionLabel": {{- section.settings.fourth_accordion_label | json -}},
+    "fifthAccordionLabel": {{- section.settings.fifth_accordion_label | json -}},
+    "sixthAccordionLabel": {{- section.settings.sixth_accordion_label | json -}}
+  }
+{%- endcapture -%}
+
+{%- assign product_settings = product_settings | replace: "'", '’' -%}
+
+<div id='ProductBuybox' class='pt-8 lg:pt-16 min-h-[50rem] lg:min-h-[37.5rem]' props='{{- product_settings | escape -}}'></div>
+
+{% if hide_product %}
+  <script>
+    window.location.href = '/';
+  </script>
+{% endif %}
+
+{% comment %} {%- render 'find-product-locally' -%} {% endcomment %}
+
+{%- render 'spacer', _mobile_space: section.settings.bottom_margin_mobile, _desktop_space: section.settings.bottom_margin_desktop -%}
+
+{% schema %}
+{
+  "name": "Product Buybox",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "This section ID is ProductBuybox and can't be changed."
+    },
+    {
+      "type": "header",
+      "content": "Product Options"
+    },
+    {
+      "type": "select",
+      "id": "flavor_layout",
+      "label": "Flavor Options Layout",
+      "options": [
+        {
+          "value": "box",
+          "label": "Box"
+        },
+        {
+          "value": "dropdown",
+          "label": "Dropdown"
+        }
+      ],
+      "default": "box"
+    },
+    {
+      "type": "header",
+      "content": "Product Not Available"
+    },
+    {
+      "type": "text",
+      "id": "button_unavailable_label",
+      "label": "Button Unavailable Label",
+      "default": "Not available"
+    },
+    {
+      "type": "textarea",
+      "id": "unavailable_message",
+      "label": "Unavailable Message",
+      "default": "We're sorry, this combination of options does not exist for this product. Please update your selections."
+    },
+    {
+      "type": "header",
+      "content": "Accordions"
+    },
+    {
+      "type": "checkbox",
+      "id": "first_open",
+      "label": "Keep first accordion open",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "first_accordion_label",
+      "label": "First Accordion Label",
+      "default": "About This Product"
+    },
+    {
+      "type": "text",
+      "id": "second_accordion_label",
+      "label": "Second Accordion Label",
+      "default": "Product Facts"
+    },
+    {
+      "type": "text",
+      "id": "third_accordion_label",
+      "label": "Third Accordion Label",
+      "default": "Benefits"
+    },
+    {
+      "type": "text",
+      "id": "fourth_accordion_label",
+      "label": "Fourth Accordion Label",
+      "default": "Recommended usage"
+    },
+    {
+      "type": "text",
+      "id": "fifth_accordion_label",
+      "label": "Fifth Accordion Label",
+      "default": "Highlights"
+    },
+    {
+      "type": "text",
+      "id": "sixth_accordion_label",
+      "label": "Sixth Accordion Label",
+      "default": "Materials & Specs"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "id": "bottom_margin_mobile",
+      "label": "Bottom Margin - Mobile",
+      "type": "range",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 40
+    },
+    {
+      "id": "bottom_margin_desktop",
+      "label": "Bottom Margin - Desktop",
+      "type": "range",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 70
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,7 @@
+.gift-card__copy-success {
+  @apply hidden;
+}
+
+.gift-card__copy-success.show {
+  @apply inline-block;
+}

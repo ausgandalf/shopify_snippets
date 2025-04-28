@@ -1,0 +1,289 @@
+{
+  "sections": {
+    "image_text_jMC3jG": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/entered-hunt-img.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/entered-hunt-img_1f08828a-35b3-4319-920d-268665dd5ef0.jpg",
+        "video_url": "",
+        "subheading": "WHITELABEL",
+        "heading": "<h2>YOU'VE OFFICIALLY ENTERED OUR GIVEAWAY!<\/h2>",
+        "copy": "<p>Now that you have entered our giveaway do you want even more entries? Take a look below on how to get more entries and boost your chances of winning.<\/p>",
+        "cta_text_1": "Claim more",
+        "cta_url_1": "#increaseChances",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "two_three_up_8Epmqt": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_DDTUCF": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/ignitesupplements1104290145-666836.png",
+            "description": "<h3>IGNITE<\/h3><p>A clean, healthy energy alternative that boosts cognitive function<\/p><p><strong>Contains:<\/strong><\/p><ul><li>Energy Boost<\/li><li>Improve Cognitive Function<\/li><li>Supercharged Performance<\/li><li>Nitric Oxide Production<\/li><\/ul>",
+            "cta_text": "SUBSCRIBE TO IGNITE",
+            "cta_link": "shopify:\/\/products\/ignite",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_FHwVcW": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/slumbersupplements2107880130-276471.png",
+            "description": "<h3>SLUMBER<\/h3><p>A special sleep formula that promotes deep sleep & recovery to help you feel calm, relaxed, rested, and rejuvenated.<\/p><p><strong>Contains: <\/strong><\/p><ul><li>Deep Sleep Recovery<\/li><li>Calming Sleep<\/li><li>Rest & Rejuvenation<\/li><\/ul>",
+            "cta_text": "SUBSCRIBE TO SLUMBER",
+            "cta_link": "shopify:\/\/products\/slumber",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_zFPUYj": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/HYDRATE_MangoPeach_20CT_TP-Pouch_Splash.png",
+            "description": "<h3>HYDRATE<\/h3><p>Enhanced hydration packs loaded with over 1,000mg electrolytes for optimal performance.<\/p><p><strong>Contains:<\/strong> <\/p><ul><li>Enhanced Hydration<\/li><li>Stamina & Endurance<\/li><li>Cellular Fluid Balance<\/li><\/ul>",
+            "cta_text": "SUBSCRIBE TO HYDRATE",
+            "cta_link": "shopify:\/\/products\/hydrate",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_DDTUCF",
+        "up_block_FHwVcW",
+        "up_block_zFPUYj"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "section_custom_id": "increaseChances",
+        "heading": "<h2>SUBSCRIPTIONS - 100 ENTRIES<\/h2>",
+        "copy": "<p>Subscribe to ANY of our products and receive 100 entries! If you’re already a subscriber no worries your extra entries will be added!       <\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 50,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "171639747362b151f0": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_7i9XTa": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_7i9XTa"
+      ],
+      "settings": {
+      }
+    },
+    "two_three_up_HAjJwn": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_RAbTW3": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/yetisupplements1101670130-794046.png",
+            "description": "<h3>YETI - LIBERY POP<\/h3><p>YETI's Explosive Pre-Workout formula gives you the energy to take your performance to the extreme. With 30 servings per tub, YETI helps provide you with smooth energy, strength, recovery, and everything you need to elevate your workouts.<\/p><ul><li>200mg Caffiene<\/li><li>1g Beta-Alanine<\/li><li>2g Creatine<\/li><li>Explosive Pre-Workout<\/li><li>Smooth Energy \/ Massive Pumps<\/li><\/ul>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "yeti",
+            "featured_variant": "40878169227306",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_U798jn": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/yeti-modesupplements1131670130-800121.png",
+            "description": "<h3>YETI MODE - LIBERY POP<\/h3><p>With YETI-MODE, you will feel like a beast in the gym and during your outdoor adventures. With 30 servings per tub, YETI-MODE helps provide you with energy, strength, recovery, and everything you need to ramp up the intensity of your workouts.<\/p><ul><li>300mg Caffeine<\/li><li>3.2g Beta-Alanine<\/li><li>3g Creatine<\/li><li>Intense \/ High-Stim Pre-Workout<\/li><li>Intense Energy \/ Monster Pumps<br\/><\/li><\/ul>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "yeti-mode",
+            "featured_variant": "40943847473194",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_RAbTW3",
+        "up_block_U798jn"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>LIBERY POP - 50 ENTRIES<\/h2>",
+        "copy": "<p>Available in both YETI & YETI-MODE Liberty Pop is a delicious, sweet, popsicle-like flavor that represents liberty and energy for all. Get Yours today.<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_aEd64n": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/colors-teeshirt8206639001-348705.jpg",
+        "video_url": "",
+        "subheading": "EXTRA ENTRY OPPORTUNITY",
+        "heading": "<h2>NEW GEAR    - 25 ENTRIES<\/h2>",
+        "copy": "<p>Pick up some new tees, hats, or accessories from our new summer collection.<\/p>",
+        "cta_text_1": "SHOP NEW GEAR",
+        "cta_url_1": "shopify:\/\/collections\/new-gear",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1706809539b574a7ff": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_email_marketing_sms_form_embed_block_qkDVNH": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "U9yCQZ"
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_email_marketing_sms_form_embed_block_qkDVNH"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "4f1a6797-b351-4cdf-9237-10898e0154ad": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "template--14974455971882__4f1a6797-b351-4cdf-9237-10898e0154ad-brand-value-logo-1": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Mayhem_Athlete_Primary_Logo_Option1.png",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "brand_value_logo_xL7Yg4": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Plunge_Icon_-_Black.svg",
+            "logo_link": "",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "template--14974455971882__4f1a6797-b351-4cdf-9237-10898e0154ad-brand-value-logo-1",
+        "brand_value_logo_xL7Yg4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>PROUD PARTNERS<\/h2>",
+        "cta_text": "",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 20,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "image_text_jMC3jG",
+    "two_three_up_8Epmqt",
+    "171639747362b151f0",
+    "two_three_up_HAjJwn",
+    "image_text_aEd64n",
+    "1706809539b574a7ff",
+    "4f1a6797-b351-4cdf-9237-10898e0154ad"
+  ]
+}

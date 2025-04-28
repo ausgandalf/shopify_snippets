@@ -1,0 +1,112 @@
+.metafield-rich_text_field p,
+.metafield-rich_text_field ol,
+.metafield-rich_text_field ul,
+.metafield-rich_text_field h1,
+.metafield-rich_text_field h2,
+.metafield-rich_text_field h3,
+.metafield-rich_text_field h4,
+.metafield-rich_text_field h5,
+.metafield-rich_text_field h6 {
+  @apply mb-3 last:mb-0;
+}
+
+.metafield-rich_text_field p {
+  @apply text-sm;
+}
+
+.metafield-rich_text_field ol {
+  counter-reset: list-counter;
+}
+
+.metafield-rich_text_field ol li,
+.metafield-rich_text_field ul li {
+  @apply pl-6 relative;
+}
+
+.metafield-rich_text_field ol li {
+  counter-increment: list-counter;
+}
+
+.metafield-rich_text_field ol li::before {
+  content: counter(list-counter) '.';
+  @apply font-tertiary text-sm absolute top-0 left-0;
+}
+
+.metafield-rich_text_field ul li::before {
+  @apply content-[''] w-1 h-1 rounded-full bg-black absolute top-2 left-2.5;
+}
+
+.sticky-banner {
+  @apply top-0;
+}
+
+.show-header .sticky-banner {
+  @apply top-[3.8125rem] lg:top-[9.3125rem];
+}
+
+.lcly-primary-trigger {
+  @apply button button--primary h-[2.5rem] py-2 px-3;
+}
+
+#ProductBuybox #lcly-button-0:not(.lcly-pl-widget-parent) {
+  @apply hidden;
+}
+
+#ProductBuybox .lcly-pl-widget-parent {
+  @apply p-3 border-2 border-grey-7;
+}
+
+#ProductBuybox a.lcly-primary-trigger,
+#ProductBuybox button.lcly-primary-trigger {
+  @apply mb-4;
+}
+
+#ProductBuybox a.lcly-primary-trigger span:hover,
+#ProductBuybox button.lcly-primary-trigger:hover {
+  @apply bg-transparent text-white;
+}
+
+#ProductBuybox .lcly-location-prompt {
+  @apply text-sm text-grey-8;
+}
+
+#ProductBuybox .lcly-location-prompt a {
+  @apply text-color-6;
+}
+
+#ProductBuybox .lcly-location-switcher-wrap {
+  @apply h-auto;
+}
+
+#ProductBuybox .lcly-location-switcher-input {
+  @apply min-w-full !h-12 !leading-[inherit] !py-3 !px-5 !border-input !border-[var(--input-active-border)];
+}
+
+#ProductBuybox .lcly-location-switcher-input:hover {
+  @apply !border-[var(--input-hover-border)] !bg-[var(--input-hover-bg)] !text-[var(--input-hover-text)];
+}
+
+#ProductBuybox .lcly-location-switcher-button {
+  @apply h-12 text-black bg-color-5 border-grey-7 rounded-none hover:opacity-90 font-primary text-sm no-underline uppercase border-button border-solid transition-colors;
+}
+
+#ProductBuybox .lcly-autocomplete-suggestions {
+  @apply !border-none !w-[95%];
+}
+
+#ProductBuybox .lcly-suggestions-ul {
+  @apply border-2 border-solid border-black max-h-[12.5rem] overflow-y-scroll;
+}
+
+#ProductBuybox .lcly-autocomplete-suggestion {
+  @apply !border-none !p-0;
+}
+
+#ProductBuybox .lcly-autocomplete-suggestion a {
+  @apply block p-3;
+}
+
+
+.is-b2b-customer .product-subscription-widget {
+  @apply !hidden;
+}

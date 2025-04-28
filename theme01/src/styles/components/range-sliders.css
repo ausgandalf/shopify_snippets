@@ -1,0 +1,21 @@
+.price-slider {
+  -webkit-appearance: none;
+  @apply w-full h-2 bg-transparent pointer-events-none;
+  touch-action: none;
+}
+
+/* Input Thumb */
+.price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  @apply border border-black rounded-full h-4 w-4 bg-white pointer-events-auto cursor-pointer;
+  touch-action: auto;
+  border: 1px solid black;
+}
+
+/* Input Track */
+.price-slider::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  @apply border-0 bg-transparent pointer-events-none;
+  touch-action: none;
+}

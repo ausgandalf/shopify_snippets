@@ -1,0 +1,203 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "image_text_jrPKJm": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/BP-LP-Hero-Mobile.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/BP-LP-Hero-Mobile.jpg",
+        "video_url": "",
+        "subheading": "WHITELABEL x Born Primitive",
+        "heading": "<h2>two great brands partnering to help you #conquermore<\/h2>",
+        "copy": "<p>We partnered with our friends at Born Primitive to offer Born Primitive customers $20 off any WHITELABEL purchase<\/p>",
+        "cta_text_1": "Unlock offer",
+        "cta_url_1": "https:\/\/whitelabel.com\/\/discount\/BORNPRIMITIVE?redirect=\/pages\/born-primitive#offers",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 30
+      }
+    },
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25": {
+      "type": "hero-section",
+      "blocks": {
+        "hero_value_prop_EraLep": {
+          "type": "hero-value-prop",
+          "settings": {
+            "prop_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "hero_value_prop_EraLep"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".hero-content {background-color: #191919d6;}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/lift-run-shoot-bg.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/lift-run-shoot-bg.jpg",
+        "bg_video": "shopify:\/\/files\/videos\/lrs-background-vid.webm",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 20,
+        "media_height": 800,
+        "media_height_mobile": 350,
+        "subheading": "May 3rd - 5th",
+        "heading": "<h1>LIFT RUN SHOOT<\/h1>",
+        "copy": "<p>Back by popular demand! Don't miss out on the experience of a lifetime with Cam Hanes himself. Spots are selling out so act fast!<\/p>",
+        "cta_text_1": "GET YOUR TICKET",
+        "cta_url_1": "#lrstickets",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 500,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 50
+      }
+    },
+    "image_text_ecikzG": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/A-_0065_Group_66.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/A-_0065_Group_66.jpg",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h3><strong>WHITELABEL x Born Primitive<\/strong><\/h3><p><\/p>",
+        "copy": "<ul><li>Products built to improve your inner athlete, no matter what level you are at<\/li><li>WHITELABEL & Born Primitive  founded with giving back at the core of our businesses<\/li><\/ul><p><\/p><p><\/p><h6><\/h6>",
+        "cta_text_1": "UNLOCK OFFER",
+        "cta_url_1": "https:\/\/whitelabel.com\/discount\/BORNPRIMITIVE?redirect=\/pages\/born-primitive#offers",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "BUY NOW",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 40,
+        "bottom_margin_mobile": 20
+      }
+    },
+    "17091341279ca6bc33": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_NAg6Kz": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "137366",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_NAg6Kz"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "wysiwyg_e9hVkY": {
+      "type": "wysiwyg",
+      "custom_css": [
+        "p {text-align: center; color: red;}"
+      ],
+      "settings": {
+        "section_custom_id": "offers",
+        "section_content": "<p>*PRODUCT DISCOUNT IS REFLECTED AT CHECKOUT*<\/p>",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1708622852f64031b1": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_AmHLLU": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "123553",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_AmHLLU"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "image_text_jrPKJm",
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25",
+    "image_text_ecikzG",
+    "17091341279ca6bc33",
+    "wysiwyg_e9hVkY",
+    "1708622852f64031b1"
+  ]
+}

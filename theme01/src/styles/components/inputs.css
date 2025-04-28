@@ -1,0 +1,135 @@
+/*
+ * ==========================================================================
+ * Inputs
+ * ==========================================================================
+*/
+
+@layer base {
+  textarea,
+  input[type='text'],
+  input[type='number'],
+  input[type='email'],
+  input[type='password'],
+  input[type='date'],
+  input[type='tel'] {
+    @apply rounded-input border-input border-[var(--input-active-border)] py-3 px-5 min-w-[20.625rem] bg-[var(--input-active-bg)] text-[var(--input-active-text)] cursor-pointer transition-colors;
+  }
+
+  textarea:not(:disabled):placeholder-shown,
+  input[type='text']:not(:disabled):placeholder-shown,
+  input[type='number']:not(:disabled):placeholder-shown,
+  input[type='email']:not(:disabled):placeholder-shown,
+  input[type='password']:not(:disabled):placeholder-shown,
+  input[type='date']:not(:disabled):placeholder-shown,
+  input[type='tel']:not(:disabled):placeholder-shown {
+    @apply border-[var(--input-border)] bg-[var(--input-bg)] text-[var(--input-text)];
+  }
+
+  input.email-signup__input:not(:disabled):placeholder-shown,
+  input.email-signup__input {
+    @apply border-white;
+  }
+
+  textarea:not(:disabled):hover,
+  input[type='text']:not(:disabled):hover,
+  input[type='number']:not(:disabled):hover,
+  input[type='email']:not(:disabled):hover,
+  input[type='password']:not(:disabled):hover,
+  input[type='date']:not(:disabled):hover,
+  input[type='tel']:not(:disabled):hover {
+    @apply border-[var(--input-hover-border)] bg-[var(--input-hover-bg)] text-[var(--input-hover-text)];
+  }
+
+  input[type='text']:not(:disabled):active,
+  input[type='number']:not(:disabled):active,
+  input[type='email']:not(:disabled):active,
+  input[type='password']:not(:disabled):active,
+  input[type='date']:not(:disabled):active,
+  input[type='tel']:not(:disabled):active,
+  input[type='search']:not(:disabled):active,
+  textarea:not(:disabled):active,
+  input[type='text']:not(:disabled):focus-visible,
+  input[type='number']:not(:disabled):focus-visible,
+  input[type='email']:not(:disabled):focus-visible,
+  input[type='password']:not(:disabled):focus-visible,
+  input[type='date']:not(:disabled):focus-visible,
+  input[type='tel']:not(:disabled):focus-visible,
+  input[type='search']:not(:disabled):focus-visible,
+  textarea:not(:disabled):focus-visible,
+  input[type='text']:not(:disabled):focus,
+  input[type='number']:not(:disabled):focus,
+  input[type='email']:not(:disabled):focus,
+  input[type='password']:not(:disabled):focus,
+  input[type='date']:not(:disabled):focus,
+  input[type='tel']:not(:disabled):focus,
+  input[type='search']:not(:disabled):focus,
+  textarea:focus {
+    @apply outline-none border-[var(--input-focus-border)] bg-[var(--input-focus-bg)] text-[var(--input-focus-text)];
+  }
+
+  input.email-signup__input:not(:disabled):active,
+  input.email-signup__input:not(:disabled):focus-visible,
+  input.email-signup__input:not(:disabled):focus {
+    @apply border-color-5;
+  }
+
+  textarea.input-invalid:not(:disabled),
+  input.input-invalid:not(:disabled),
+  input.input-invalid:not(:disabled):active,
+  input.input-invalid:not(:disabled):focus {
+    @apply !border-error;
+  }
+
+  textarea:disabled,
+  input[type='text']:disabled,
+  input[type='number']:disabled,
+  input[type='email']:disabled,
+  input[type='password']:disabled,
+  input[type='date']:disabled,
+  input[type='tel']:disabled {
+    @apply cursor-not-allowed bg-[var(--input-disabled)] border-[var(--input-disabled)];
+  }
+
+  .input-wrap {
+    @apply relative inline-block;
+  }
+
+  .input-wrap label,
+  .input-wrap textarea:not(:disabled):focus:placeholder-shown + label,
+  .input-wrap input:not(:disabled):focus:placeholder-shown + label,
+  .input-wrap textarea:not(:disabled):active:placeholder-shown + label,
+  .input-wrap input:not(:disabled):active:placeholder-shown + label {
+    @apply absolute top-0 left-5 px-1 -translate-y-1/2 text-xxs text-[var(--input-active-text)] font-medium pointer-events-none bg-white transition-all;
+  }
+
+  .input-wrap input:placeholder-shown + label {
+    @apply left-5 top-1/2 px-0 text-[var(--input-text)] font-normal bg-transparent text-base;
+  }
+
+  .input-wrap textarea:placeholder-shown + label {
+    @apply left-5 top-6 px-0 text-[var(--input-text)] font-normal bg-transparent text-base;
+  }
+
+  .input-wrap textarea:not(:disabled):hover:placeholder-shown + label,
+  .input-wrap input:not(:disabled):hover:placeholder-shown + label {
+    @apply text-[var(--input-hover-text)];
+  }
+
+  .input-wrap textarea:not(:disabled):focus:placeholder-shown + label,
+  .input-wrap input:not(:disabled):focus:placeholder-shown + label {
+    @apply text-[var(--input-focus-text)];
+  }
+
+  .input-wrap textarea.input-invalid:not(:disabled) ~ label,
+  .input-wrap input.input-invalid:not(:disabled) ~ label {
+    @apply text-error;
+  }
+
+  .input-error {
+    @apply mt-1 text-xs text-error flex gap-1;
+  }
+
+  .input-error::before {
+    @apply content-[""] bg-warning-icon bg-no-repeat bg-center inline-block w-3.5 h-3.5;
+  }
+}

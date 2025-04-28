@@ -1,0 +1,319 @@
+{
+  "sections": {
+    "3f577830-f36a-4671-b2f1-73fa161242fa": {
+      "type": "hero-section",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/contact-bg.webp",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 650,
+        "media_height_mobile": 250,
+        "subheading": "",
+        "heading": "<h5>Join our growing team<\/h5><h1>WHITELABEL Careers<\/h1>",
+        "copy": "<p>Our team is passionate about their work and has an understanding of how their responsibilities directly impact the WHITELABEL mission. If you are interested in working here, please read over our core values and make sure our \"why\" aligns with yours.<\/p>",
+        "video_cta_text": "Who We Are",
+        "video_cta_url": "https:\/\/youtu.be\/ABIHWUzctk4?si=Kjit6WLabwYuignm",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "cta_text_1": "Button Label",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#1b1b1b",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-end",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 100,
+        "bottom_margin_mobile": 32
+      }
+    },
+    "3624b8c1-66da-40c5-87d2-672f0e31b0cc": {
+      "type": "image-text",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/conquermore-conquer-hunger-service.jpg",
+        "subheading": "",
+        "heading": "<h2>Our Philosophy<\/h2>",
+        "copy": "<p>Our mission at WHITELABEL is to improve the lives of individuals and families... and that starts with our own team. This is not just a place to work, it is a place that fosters self-improvement, growth and opportunities to Conquer More each day. <\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "full_width": false,
+        "content_text_color": "#241E18",
+        "content_bg_color": "#ffffff",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 32
+      }
+    },
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "cb9fb8d7-a4ca-4cc6-90fe-74e233c909ad": {
+      "type": "image-text",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/LP-Careers.webp",
+        "subheading": "",
+        "heading": "<h2>Current Job Openings<\/h2>",
+        "copy": "<p>We do not currently have open positions available. But check back soon for more updates!<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "full_width": false,
+        "content_text_color": "#241E18",
+        "content_bg_color": "#ffffff",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 32
+      }
+    },
+    "fa0644e4-0200-41fd-bfbe-ca7f2ae87387": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15047270924330__fa0644e4-0200-41fd-bfbe-ca7f2ae87387-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/season_prep-hike-lifestyle-062218_Farmington_Hike-9644_75d9abff-10a4-42e0-82e0-eb22e29043f5.jpg",
+            "description": "<h4>RECOGNIZING GOD<\/h4><p>We believe in involving God, even in the workplace, and acknowledge His hand in all things.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "08f074f3-c576-4c59-be53-bca25f32681b": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/2023-yellowstone-lifestyle-1.png",
+            "description": "<h4>INTERDEPENDENCE<\/h4><p>We work with a team to accomplish great things collectively that we could not do independently.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "8b9332f2-be78-4c5f-b738-1779553ca299": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/ProtechHoodie-Lifestyle-1.png",
+            "description": "<h4>OPPORTUNITY<\/h4><p>We foster an atmosphere that gives others the opportunity to rise to his or her full potential.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15047270924330__fa0644e4-0200-41fd-bfbe-ca7f2ae87387-up-block-1",
+        "08f074f3-c576-4c59-be53-bca25f32681b",
+        "8b9332f2-be78-4c5f-b738-1779553ca299"
+      ],
+      "settings": {
+        "heading": "<h2>WHITELABEL Core Values<\/h2>",
+        "copy": "<p>At the heart of WHITELABEL, we strive each day to conquer more by abiding by a set of core values and beliefs that will reflect in our interactions.<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "fec321fd-59ab-44fa-8826-b25052cc21ff": {
+      "type": "two-three-up",
+      "blocks": {
+        "19b63f7e-2a87-4fa0-93e3-b4bcd0c6c929": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Conquer_Hunger_August_2019_edited_photo_17.png",
+            "description": "<h4>SERVICE<\/h4><p>We believe in making a positive contribution of our time, talents and leadership to our respective communities.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "07bf1617-f4e0-4a5a-a617-2a0a7b8b11bb": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Battleground_Merino_Beanie_Lifestyle-2_1.png",
+            "description": "<h4>GRATITUDE<\/h4><p>Gratitude for both our successes and our challenges helps us have joy in our current circumstances while facilitating our growth and progress toward an even brighter future.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "1a9ae39e-41e9-4b06-9be0-1959a4921f97": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/trust-core-value-bg.png",
+            "description": "<h4>TRUST<\/h4><p>We believe in being worthy of others’ trust, both in person and online. We are reliable, respectful, and honest with the information we provide to people along with the information they provide to us.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "19b63f7e-2a87-4fa0-93e3-b4bcd0c6c929",
+        "07bf1617-f4e0-4a5a-a617-2a0a7b8b11bb",
+        "1a9ae39e-41e9-4b06-9be0-1959a4921f97"
+      ],
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "b5acac09-d6d3-42af-82e5-daeba6e13222": {
+      "type": "two-three-up",
+      "blocks": {
+        "9090afef-592a-4ffb-b1ad-b827afdce0c0": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/family-core-value-bg.png",
+            "description": "<h4>COMMUNITY<\/h4><p>Because we believe family is the fundamental unit of community, we desire the type of environment that promotes healthy families. We work hard and honestly so that we may enjoy a secure life with the ones we love.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "99c7587a-0400-43f3-9526-5860a17c223b": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/MidMountain1_4Zip-lifestyle-1.png",
+            "description": "<h4>DESIRE<\/h4><p>We value highly ambitious people – driven by a desire to succeed, but with an attitude of temperance and kindness both online and in person.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "5c07503f-9021-413a-8ce2-cf8bb175df7a": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Hydrate-lifestyle-gallery-1_1.png",
+            "description": "<h4>CONSERVATION<\/h4><p>We believe in the protection, preservation, and management of our public lands, waters, and wildlife. We are committed to actively participating and serving with our conservation partners to fulfill this belief.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "9090afef-592a-4ffb-b1ad-b827afdce0c0",
+        "99c7587a-0400-43f3-9526-5860a17c223b",
+        "5c07503f-9021-413a-8ce2-cf8bb175df7a"
+      ],
+      "settings": {
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 32
+      }
+    }
+  },
+  "order": [
+    "3f577830-f36a-4671-b2f1-73fa161242fa",
+    "3624b8c1-66da-40c5-87d2-672f0e31b0cc",
+    "general-content",
+    "cb9fb8d7-a4ca-4cc6-90fe-74e233c909ad",
+    "fa0644e4-0200-41fd-bfbe-ca7f2ae87387",
+    "fec321fd-59ab-44fa-8826-b25052cc21ff",
+    "b5acac09-d6d3-42af-82e5-daeba6e13222"
+  ]
+}

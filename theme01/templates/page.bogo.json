@@ -1,0 +1,122 @@
+{
+  "sections": {
+    "110a694a-a343-4eb2-98db-bd8d496c0b33": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/5-5-24-CincoDeMango-Hero-Web-Desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/5-5-24-CincoDeMango-Hero-Web-Mobile.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#3d3935",
+        "bg_overlay_opacity": 15,
+        "media_height": 640,
+        "media_height_mobile": 360,
+        "subheading": "CINCO DE MANGO",
+        "heading": "<h2>FREE CRUSHER WITH PURCHASE<\/h2>",
+        "copy": "<p>Get a free crusher with a purchase of any of our Mayan Mango Products!<\/p>",
+        "cta_text_1": "claim your offer",
+        "cta_url_1": "#offer",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-first",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "3ebcf79a-f60e-4b08-b60b-b884109925ca": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/ignitesupplements1104320145-249916.jpg",
+            "description": "<h3>IGNITE - MAYAN MANGO<\/h3><p><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "ignite",
+            "featured_variant": "40898948464682",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/yetisupplements1101320130-672956.png",
+            "description": "<h3>YETI - MAYAN MANGO<\/h3><p><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "yeti",
+            "featured_variant": "40713093382186",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-1",
+        "template--15000216600618__3ebcf79a-f60e-4b08-b60b-b884109925ca-up-block-2"
+      ],
+      "settings": {
+        "section_custom_id": "offer",
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1697737002a001f31d": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_QYfUCj": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "109551",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_QYfUCj"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "110a694a-a343-4eb2-98db-bd8d496c0b33",
+    "3ebcf79a-f60e-4b08-b60b-b884109925ca",
+    "1697737002a001f31d"
+  ]
+}

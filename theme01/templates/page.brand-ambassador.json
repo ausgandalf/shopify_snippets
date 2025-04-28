@@ -1,0 +1,330 @@
+{
+  "sections": {
+    "3f577830-f36a-4671-b2f1-73fa161242fa": {
+      "type": "hero-section",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/ambassadors.webp",
+        "image_mobile": "shopify:\/\/shop_images\/ambassadors.webp",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 550,
+        "media_height_mobile": 250,
+        "subheading": "",
+        "heading": "<h1>WHITELABEL Brand Partners<\/h1>",
+        "copy": "<p>Share our passion for fitness and lifestyle? Check out our ambassador opportunities below.<\/p>",
+        "video_cta_text": "",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "full_width": true,
+        "logo_size": 300,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#1b1b1b",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-end",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "b255539b-626a-4b13-a3e9-ef555d3ebcae": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15048156217386__b255539b-626a-4b13-a3e9-ef555d3ebcae-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h4>Affiliates<\/h4><p>With loyal customers and high-quality products, our Affiliate Program makes it easy for you to turn your passion for health and nutrition into commissions on qualifying sales. Join our team today with a competitive commission structure, dedicated team, high-quality creative and more!<\/p>",
+            "cta_text": "Become an Affiliate",
+            "cta_link": "https:\/\/app.impact.com\/advertiser-advertiser-info\/WHITELABEL.brand",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--15048156217386__b255539b-626a-4b13-a3e9-ef555d3ebcae-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h4>Brand Ambassadors<\/h4><p>Are you interested in being a part of the WHITELABEL Ambassador Community? We are seeking individuals who are looking to #ConquerMore in the gym, and on the mountain, while using WHITELABEL products.<\/p>",
+            "cta_text": "Apply to be an Ambassador",
+            "cta_link": "https:\/\/whitelabel.grin.live\/ambassadorapplications",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "5bd08e3d-c038-46e7-bb7f-793113c50e1f": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h4>Pro Program<\/h4><p>The WHITELABEL Pro Program is a membership program for qualified first responders, outdoor industry professionals, industry partners, to receive special pricing ranging from 20-40% off MSRP.<\/p>",
+            "cta_text": "Apply for Pro Program",
+            "cta_link": "shopify:\/\/pages\/pro",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15048156217386__b255539b-626a-4b13-a3e9-ef555d3ebcae-up-block-1",
+        "template--15048156217386__b255539b-626a-4b13-a3e9-ef555d3ebcae-up-block-2",
+        "5bd08e3d-c038-46e7-bb7f-793113c50e1f"
+      ],
+      "settings": {
+        "heading": "<h2>Types of Partnerships<\/h2>",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 16
+      }
+    },
+    "0e487b3f-42b9-4da6-bd76-0d36b8996d45": {
+      "type": "image-text",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/Zenith-Lifestyle.jpg",
+        "subheading": "",
+        "heading": "<h2>Affiliate Program<\/h2>",
+        "copy": "<p>With loyal customers and high-quality products, our Affiliate Program makes it easy for you to turn your passion for health and nutrition into commissions on qualifying sales. <\/p><p><strong>Join our team today with a competitive commission structure, dedicated team, high-quality creative and more!<\/strong><\/p>",
+        "cta_text_1": "Become an Affiliate",
+        "cta_url_1": "https:\/\/app.impact.com\/advertiser-advertiser-info\/WHITELABEL.brand",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "full_width": false,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#2c2c2c",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "6948b4ed-17b5-4a5d-a424-6d938fbae9bd": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "template--15048156217386__6948b4ed-17b5-4a5d-a424-6d938fbae9bd-brand-value-logo-1": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "logo_link": "",
+            "logo_label": "<h6>Real-time inventory<\/h6>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "9043b36b-9fc3-48c9-8032-7e8fce1fdd5d": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "logo_link": "",
+            "logo_label": "<h6>Dedicated affiliate management<\/h6>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "b2f52e49-d040-4f79-a1b6-94f25217d8f7": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "logo_link": "",
+            "logo_label": "<h6>Consistent maintenance of data feed<\/h6>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "d52386b1-0263-42db-ba84-f7df6b4b5661": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "logo_link": "",
+            "logo_label": "<h6>High-quality creative<\/h6>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "56c05ba3-38e9-48fe-a47d-515d68445e7e": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "logo_link": "",
+            "logo_label": "<h6>Proven science behind our products<\/h6>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "da7e6f15-4641-4bcc-bd94-ed21bdaf772a": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "logo_link": "",
+            "logo_label": "<h6>100% satisfaction guarantee with our products<\/h6>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "49947737-abaf-4b43-b38b-0c5565f315e1": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "logo_link": "",
+            "logo_label": "<h6>Partners with 2% for Conservation<\/h6>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "5cdb9c81-0c60-4c55-aacc-5694a46618f8": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Swatch_Default_Image.svg",
+            "logo_link": "",
+            "logo_label": "<h6>Every purchase provides a meal to a child in need<\/h6>",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "template--15048156217386__6948b4ed-17b5-4a5d-a424-6d938fbae9bd-brand-value-logo-1",
+        "9043b36b-9fc3-48c9-8032-7e8fce1fdd5d",
+        "b2f52e49-d040-4f79-a1b6-94f25217d8f7",
+        "d52386b1-0263-42db-ba84-f7df6b4b5661",
+        "56c05ba3-38e9-48fe-a47d-515d68445e7e",
+        "da7e6f15-4641-4bcc-bd94-ed21bdaf772a",
+        "49947737-abaf-4b43-b38b-0c5565f315e1",
+        "5cdb9c81-0c60-4c55-aacc-5694a46618f8"
+      ],
+      "settings": {
+        "heading": "<h3>Affiliate Benefits<\/h3>",
+        "cta_text": "",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "40701f17-50a0-4b51-9be5-6edb5673f63c": {
+      "type": "hero-section",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/contact-bg.webp",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 550,
+        "media_height_mobile": 250,
+        "subheading": "",
+        "heading": "<h2>Brand Ambassadors<\/h2>",
+        "copy": "<p>Are you interested in being a part of the WHITELABEL Ambassador Community? We are seeking individuals who are looking to #ConquerMore in the gym, and on the mountain, while using WHITELABEL products. Apply below to be a part of the WHITELABEL team and help us spread the word about conquering more.<\/p>",
+        "video_cta_text": "",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "cta_text_1": "Apply to be an Ambassador",
+        "cta_url_1": "#",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "full_width": false,
+        "logo_size": 300,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#1b1b1b",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-end",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 16
+      }
+    },
+    "general-content": {
+      "type": "general-content",
+      "settings": {
+      }
+    },
+    "98bf4eac-9126-4e8d-8c33-8c9a8e6e2637": {
+      "type": "basic-html",
+      "settings": {
+        "html_code": "[HTML code can be included in here, if Klaviyo form is utilized instead.]",
+        "full_width": true,
+        "content_align": "justify-center",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1697680488578d9afe": {
+      "type": "apps",
+      "blocks": {
+        "d0636e2f-4f45-421b-8a58-2554fc5b6e53": {
+          "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/form-block\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "vnl18w96dvRlWZE3cpKIiw",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#FFF",
+            "input_background_color_focus": "#F4DADA",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2D2727",
+            "input_font_color": "#3D3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#EBE9E9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#F3F3F3",
+            "sub_btn_bg_color": "#3F3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#FFFFFF",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "d0636e2f-4f45-421b-8a58-2554fc5b6e53"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "3f577830-f36a-4671-b2f1-73fa161242fa",
+    "b255539b-626a-4b13-a3e9-ef555d3ebcae",
+    "0e487b3f-42b9-4da6-bd76-0d36b8996d45",
+    "6948b4ed-17b5-4a5d-a424-6d938fbae9bd",
+    "40701f17-50a0-4b51-9be5-6edb5673f63c",
+    "general-content",
+    "98bf4eac-9126-4e8d-8c33-8c9a8e6e2637",
+    "1697680488578d9afe"
+  ]
+}

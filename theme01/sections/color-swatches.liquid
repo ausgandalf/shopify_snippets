@@ -1,0 +1,133 @@
+{% style %}
+  {%- for block in section.blocks -%}
+    {% if block.settings.swatch_name != blank and block.settings.swatch_color != blank %}
+      .swatch-{{ block.settings.swatch_name | handleize }},
+      .boost-sd__swatch-{{ block.settings.swatch_name | handleize }},
+      .boost-sd__filter-option-item-button[title='{{ block.settings.swatch_name }}'] .boost-sd__filter-option-swatch-item-img {
+        background-color: {{ block.settings.swatch_color }} !important;
+      }
+    {% endif %}
+
+    {% if block.settings.swatch_name_2 != blank and block.settings.swatch_color_2 != blank %}
+      .swatch-{{ block.settings.swatch_name_2 | handleize }},
+      .boost-sd__swatch-{{ block.settings.swatch_name_2 | handleize }},
+      .boost-sd__filter-option-item-button[title='{{ block.settings.swatch_name_2 }}'] .boost-sd__filter-option-swatch-item-img {
+        background-color: {{ block.settings.swatch_color_2 }} !important;
+      }
+    {% endif %}
+
+    {% if block.settings.swatch_name_3 != blank and block.settings.swatch_color_3 != blank %}
+      .swatch-{{ block.settings.swatch_name_3 | handleize }},
+      .boost-sd__swatch-{{ block.settings.swatch_name_3 | handleize }},
+      .boost-sd__filter-option-item-button[title='{{ block.settings.swatch_name_3 }}'] .boost-sd__filter-option-swatch-item-img {
+        background-color: {{ block.settings.swatch_color_3 }} !important;
+      }
+    {% endif %}
+
+    {% if block.settings.swatch_name_4 != blank and block.settings.swatch_color_4 != blank %}
+      .swatch-{{ block.settings.swatch_name_4 | handleize }},
+      .boost-sd__swatch-{{ block.settings.swatch_name_4 | handleize }},
+      .boost-sd__filter-option-item-button[title='{{ block.settings.swatch_name_4 }}'] .boost-sd__filter-option-swatch-item-img {
+        background-color: {{ block.settings.swatch_color_4 }} !important;
+      }
+    {% endif %}
+
+    {% if block.settings.swatch_name_5 != blank and block.settings.swatch_color_5 != blank %}
+      .swatch-{{ block.settings.swatch_name_5 | handleize }},
+      .boost-sd__swatch-{{ block.settings.swatch_name_5 | handleize }},
+      .boost-sd__filter-option-item-button[title='{{ block.settings.swatch_name_5 }}'] .boost-sd__filter-option-swatch-item-img {
+        background-color: {{ block.settings.swatch_color_5 }} !important;
+      }
+    {% endif %}
+  {%- endfor -%}
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Color Swatches",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "color-swatch",
+      "name": "Color",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Color 1"
+        },
+        {
+          "id": "swatch_name",
+          "label": "Name",
+          "type": "text",
+          "info": "Use the same name of the product variant"
+        },
+        {
+          "id": "swatch_color",
+          "label": "Color",
+          "type": "color"
+        },
+        {
+          "type": "header",
+          "content": "Color 2"
+        },
+        {
+          "id": "swatch_name_2",
+          "label": "Name",
+          "type": "text",
+          "info": "Use the same name of the product variant"
+        },
+        {
+          "id": "swatch_color_2",
+          "label": "Color",
+          "type": "color"
+        },
+        {
+          "type": "header",
+          "content": "Color 3"
+        },
+        {
+          "id": "swatch_name_3",
+          "label": "Name",
+          "type": "text",
+          "info": "Use the same name of the product variant"
+        },
+        {
+          "id": "swatch_color_3",
+          "label": "Color",
+          "type": "color"
+        },
+        {
+          "type": "header",
+          "content": "Color 4"
+        },
+        {
+          "id": "swatch_name_4",
+          "label": "Name",
+          "type": "text",
+          "info": "Use the same name of the product variant"
+        },
+        {
+          "id": "swatch_color_4",
+          "label": "Color",
+          "type": "color"
+        },
+        {
+          "type": "header",
+          "content": "Color 5"
+        },
+        {
+          "id": "swatch_name_5",
+          "label": "Name",
+          "type": "text",
+          "info": "Use the same name of the product variant"
+        },
+        {
+          "id": "swatch_color_5",
+          "label": "Color",
+          "type": "color"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,16 @@
+{
+  "parent": "product.json",
+  "context": {
+    "b2b": true
+  },
+  "sections": {
+    "main-product": {
+      "custom_css": [
+      ],
+      "settings": {
+      },
+      "blocks": {
+      }
+    }
+  }
+}

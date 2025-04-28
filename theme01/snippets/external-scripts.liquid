@@ -1,0 +1,82 @@
+{% # theme-check-disable %}
+<script src='{{- 'layout.build.js' | asset_url -}}' defer></script>
+
+{%- assign dont_load = 'gift_card' -%}
+
+{%- unless dont_load contains template.name or request.path contains '/tools/recurring/portal/' -%}
+  <script src='{{- template.name | append: '.build.js' | asset_url -}}' defer></script>
+{%- endunless -%}
+
+{% if request.path contains '/tools/recurring/portal/' %}
+  <script src='{{- 'account.build.js' | asset_url -}}' defer></script>
+{% endif %}
+
+{%- if template.name == 'product' -%}
+  {{ 'fslightbox.js' | asset_url | script_tag }}
+{%- endif -%}
+
+{% comment %} Start Stamped {% endcomment %}
+<script
+  defer
+  type='text/javascript'
+  data-api-key='6014581e-be2a-4edf-9d1e-ac23c4a7100f'
+  id='stamped-script-widget'
+  src='https://cdn1.stamped.io/files/widget.min.js'
+></script>
+{% comment %} End Stamped {% endcomment %}
+
+{% comment %} Start Klavijo BIS {% endcomment %}
+<script src='https://a.klaviyo.com/media/js/onsite/onsite.js'></script>
+<script>
+  var klaviyo = klaviyo || [];
+  klaviyo.init({
+    account: 'NbNrRX',
+    platform: 'shopify',
+  });
+  klaviyo.enable('backinstock', {
+    trigger: {
+      product_page_text: 'Notify Me When Available',
+      product_page_class: 'button',
+      product_page_text_align: 'center',
+      product_page_margin: '0px',
+      replace_anchor: false,
+    },
+    modal: {
+      headline: '{product_name}',
+      body_content: 'Register to receive a notification when this item comes back in stock.',
+      email_field_label: 'Email',
+      button_label: 'NOTIFY ME WHEN AVAILABLE',
+      subscription_success_label: "You're in! We'll let you know when it's back.",
+      footer_content: '',
+      additional_styles: `
+        @import url('{{ 'klaviyo-bis-modal.css' | asset_url }}');
+        @font-face {
+          font-family: 'Kairos Sans W1G';
+          src: url({{ 'KairosSansW1G-Bold.eot' | asset_url }});
+          src: url({{ 'KairosSansW1G-Bold.eot?#iefix' | asset_url }}) format('embedded-opentype'),
+              url({{ 'KairosSansW1G-Bold.woff2' | asset_url }}) format('woff2'),
+              url({{ 'KairosSansW1G-Bold.woff' | asset_url }}) format('woff'),
+              url({{ 'KairosSansW1G-Bold.ttf' | asset_url }}) format('truetype'),
+              url({{ 'KairosSansW1G-Bold.svg#KairosSansW1G-Bold' | asset_url }}) format('svg');
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+        }`,
+      drop_background_color: '#000',
+      background_color: '#fff',
+      text_color: '#241e18',
+      button_text_color: '#fff',
+      button_background_color: '#241e18',
+      close_button_color: '#3d3935',
+      error_background_color: '#FFE1E1',
+      error_text_color: '#D32F2F',
+      success_background_color: '#E5F1EA',
+      success_text_color: '#3F9643',
+    },
+  });
+</script>
+{% comment %} End Klavijo BIS {% endcomment %}
+
+{% comment %} Start Rebuy {% endcomment %}
+<script async src='https://cdn.rebuyengine.com/onsite/js/rebuy.js?shop={{ shop.permanent_domain }}'></script>
+{% comment %} End Rebuy {% endcomment %}

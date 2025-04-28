@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "bg_overlay_color": "#3D3935",
+        "bg_overlay_opacity": 40,
+        "placeholder_article_image": "shopify:\/\/shop_images\/Blog-Listing-Tile-FPO_2x_fcfd93da-85af-4662-9bae-4b85a276ad5b.svg",
+        "show_publish_date": false,
+        "show_author": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

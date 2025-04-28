@@ -1,0 +1,195 @@
+{% assign section_custom_id = section.settings.section_custom_id %}
+
+{% if section.blocks.size > 0 %}
+  <div
+    {% if section_custom_id != blank %}
+      id='{{ section_custom_id }}'
+    {% endif %}
+    class='promo-banner swiper max-lg:hidden {{ section.settings.text_color }}'
+    style='background-color: {{ section.settings.background_color }}'
+    {% if section.settings.autorotate_enable %}
+      data-autoplay-delay='{{ section.settings.autorotate_timer | times: 1000 }}'
+    {% endif %}
+    data-promo-banner
+  >
+    <div class='swiper-wrapper'>
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign show_message = true
+          assign hide_desktop = block.settings.hide_desktop
+          assign message = block.settings.message
+
+          if hide_desktop or message == blank or block.settings.only_homepage and request.page_type != 'index'
+            assign show_message = false
+          endif
+        -%}
+
+        {%- if show_message -%}
+          <div class='swiper-slide py-1.5 flex items-center'>
+            <div class='container'>
+              <div class='promo-banner__message rte'>{{ message }}</div>
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    {%- if section.blocks.size > 1 -%}
+      <div class='swiper-buttons'>
+        <div class='swiper-button-prev'>
+          {%- render 'icons', icon: 'chevron-left', class: section.settings.text_color -%}
+        </div>
+        <div class='swiper-button-next'>
+          {%- render 'icons', icon: 'chevron-right', class: section.settings.text_color -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div
+    class='promo-banner swiper lg:hidden {{ section.settings.text_color }}'
+    style='background-color: {{ section.settings.background_color }}'
+    {% if section.settings.autorotate_enable %}
+      data-autoplay-delay='{{ section.settings.autorotate_timer | times: 1000 }}'
+    {% endif %}
+    data-promo-banner-mobile
+  >
+    <div class='swiper-wrapper'>
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign show_message_mobile = true
+          assign hide_mobile = block.settings.hide_mobile
+          assign message_mobile = block.settings.message_mobile | default: block.settings.message
+
+          if hide_mobile or message_mobile == blank or block.settings.only_homepage and request.page_type != 'index'
+            assign show_message_mobile = false
+          endif
+        -%}
+
+        {%- if show_message_mobile -%}
+          <div class='swiper-slide py-1.5 flex items-center'>
+            <div class='container'>
+              <div class='promo-banner__message rte'>{{ message_mobile }}</div>
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    {%- if section.blocks.size > 1 -%}
+      <div class='swiper-buttons'>
+        <div class='swiper-button-prev'>
+          {%- render 'icons', icon: 'chevron-left', class: section.settings.text_color -%}
+        </div>
+        <div class='swiper-button-next'>
+          {%- render 'icons', icon: 'chevron-right', class: section.settings.text_color -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Promo Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    },
+    {
+      "type": "header",
+      "content": "Slider Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "autorotate_enable",
+      "label": "Enable autorotate",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autorotate_timer",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "sec",
+      "label": "Autorotate timer",
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Appearance"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#3D3935",
+      "info": "Make sure the background is ADA compliance with the text color"
+    },
+    {
+      "type": "select",
+      "id": "text_color",
+      "label": "Text Color",
+      "options": [
+        {
+          "label": "Dark",
+          "value": "text-color-2 fill-color-2"
+        },
+        {
+          "label": "Light",
+          "value": "text-white fill-white links-inverted"
+        }
+      ],
+      "default": "text-white fill-white links-inverted"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Banner",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "only_homepage",
+          "label": "Show only on Homepage?",
+          "default": false,
+          "info": "If checked, the message won't appear on any other page except homepage."
+        },
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_desktop",
+          "label": "Hide on desktop?",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "message",
+          "label": "Message - Desktop",
+          "info": "Recommended 60-character count max per message."
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "Hide on mobile?",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "message_mobile",
+          "label": "Message - Mobile",
+          "info": "Recommended 40-character count max per message. Use desktop by default"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

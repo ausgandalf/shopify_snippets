@@ -1,0 +1,277 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/ConsultPortal-Hero-Desktop_5ffb110d-c7a8-4a2e-b92b-543df210fd76.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 400,
+        "media_height_mobile": 260,
+        "subheading": "",
+        "heading": "",
+        "copy": "",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 500,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": true,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1f11bc50-a7b3-4504-bca1-adcfab0aefe9": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Text_CTA_-_ConsultPortalVid-Desktop_249ca536-090b-4dce-a192-f7e51ae9aca1.jpg",
+        "video_url": "",
+        "subheading": "WE'RE HERE TO HELP",
+        "heading": "<h2>TALK WITH A CERTIFIED PRO<\/h2>",
+        "copy": "<p>We have a dedicated team of certified fitness specialists who's sole purpose is to give you all the tools and knowledge to help live a better and healthier lifestyle. It doesn't matter what level of fitness you are currently, we welcome you with open arms.<\/p>",
+        "cta_text_1": "SCHEDULE YOUR CONSULTATION",
+        "cta_url_1": "https:\/\/whitelabel.youcanbook.me\/",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-first",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "63dec1c4-5d51-49c7-8fe5-a96c99185c87": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--14974455971882__63dec1c4-5d51-49c7-8fe5-a96c99185c87-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Consult-3Up-1.jpg",
+            "description": "<p><\/p><p>Schedule your Intro Call with one of our certified fitness specialists so we can get a sense of your goals and story.<br\/><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--14974455971882__63dec1c4-5d51-49c7-8fe5-a96c99185c87-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Consult-3Up-2.jpg",
+            "description": "<p><\/p><p>On your call we'll run through your macros, diet and nutrition, as well as training programs to maximize your results.<br\/><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "91a7b4ec-ccbf-4a66-9411-43d40432df15": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Consult-3Up-3.jpg",
+            "description": "<p><\/p><p>From there it's go time. Take what you learned into action and schedule a follow up with us to have us help hold you accountable. You were made to conquer.<br\/><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--14974455971882__63dec1c4-5d51-49c7-8fe5-a96c99185c87-up-block-1",
+        "template--14974455971882__63dec1c4-5d51-49c7-8fe5-a96c99185c87-up-block-2",
+        "91a7b4ec-ccbf-4a66-9411-43d40432df15"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>HOW IT WORKS<\/h2>",
+        "copy": "",
+        "cta_text": "SCHEDULE YOUR CONSULTATION",
+        "cta_link": "https:\/\/whitelabel.youcanbook.me\/",
+        "cta_type": "button button--secondary-invert",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-black text-white",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "d4d4fe46-b435-4b02-889d-b956b6795b04": {
+      "type": "hero-section",
+      "custom_css": [
+        ".hero-content {background-color: #00000000;}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/ConquerMoreChallenge-CommunityBG.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 500,
+        "media_height_mobile": 210,
+        "subheading": "",
+        "heading": "",
+        "copy": "",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "01134d30-9f09-4095-8189-3890c305f26c": {
+      "type": "two-three-up",
+      "blocks": {
+        "8d1a41fc-bb28-488f-ae78-ef618c53836c": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Review-3Up-James.jpg",
+            "description": "<h3><\/h3><p>\"My experience with WHITELABEL was to say the least life changing in so many ways. The physical maybe the most impressive to some didn't even scratch the surface of the total transformation I went through. The mental, social and most important spiritual changes I went through by far exceeded the physical. Through the guidance of the WHITELABEL team and their line of what I truly believe to be the best supplements on the market to date I was able to achieve a level of myself I never thought possible. I owe my current state of happiness and well being to the WHITELABEL family.\"<br\/><br\/><strong>JAMES STONE<\/strong><br\/><em>2023 FITNESS CHALLENGE WINNER<\/em><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "2d4aaf2c-f62b-4885-b2a3-d2455a576992": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Review-3Up-Abby.jpg",
+            "description": "<h3><\/h3><p>\"I committed to the challenge and I was hooked! I started dropping weight, including my daughter in workouts, and became involved in the WHITELABEL Community. I am now about 15lbs under my pre-baby weight, full of life, and confident in all aspects of my life! I go to bed every night knowing I’m the best wife, mother, and business owner that I can be. This is all because WHITELABEL changed my mentality and my health.\"<br\/><br\/><strong>ABBY GALLEGOS<\/strong><br\/><em>2023 FITNESS CHALLENGE WINNER<\/em><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "4e516588-51e4-40a5-9629-e90efc633b69": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Review-3Up-Wade.jpg",
+            "description": "<h3><\/h3><p>\"I started using Yeti for my pre workout and ignite to make it through the day and was making great progress. Then I ordered the strength system and found out it came with a health and Fitness consult with one of the WHITELABEL experts. This is when my life changed completely!!! Learning my macronutrients and how to fuel my body for my new active lifestyle was the most important part of my success. In 2021 I lost a total of 125 pounds and am still maintaining by following my macros and exercising regularly. WHITELABEL is an amazing company and has done so much to help me stay motivated and focused but I’ll always credit their elite health\/fitness experts for helping me understand both my diet as well as the science and benefits that their products offer.\"<br\/><br\/><strong>WADE WILLIAMS<\/strong><br\/><em>2022 FITNESS CHALLENGE WINNER<\/em><\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "8d1a41fc-bb28-488f-ae78-ef618c53836c",
+        "2d4aaf2c-f62b-4885-b2a3-d2455a576992",
+        "4e516588-51e4-40a5-9629-e90efc633b69"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>REAL PEOPLE. REAL RESULTS.<\/h2>",
+        "copy": "<p>Because of our Consult Team we've been able to help improve the lives of thousands of individuals in all aspects of their lives physically, spiritually, socially and mentally by giving them the tools they need to maximize their results.<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25",
+    "1f11bc50-a7b3-4504-bca1-adcfab0aefe9",
+    "63dec1c4-5d51-49c7-8fe5-a96c99185c87",
+    "d4d4fe46-b435-4b02-889d-b956b6795b04",
+    "01134d30-9f09-4095-8189-3890c305f26c"
+  ]
+}

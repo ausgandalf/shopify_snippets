@@ -1,0 +1,204 @@
+{% liquid
+  assign video_url = article.metafields.custom.video_url | metafield_tag
+  assign video_cover_image = article.metafields.custom.video_cover_image
+  assign hero_image_mobile = section.settings.hero_image_mobile | default: article.image
+
+  if video_url contains 'vimeo'
+    assign video_id = video_url | split: 'https://vimeo.com/' | last | split: '"' | first
+  else
+    if video_url contains 'youtube'
+      assign video_id = video_url | split: 'v=' | last | split: '&' | first
+    elsif video_url contains 'youtu.be'
+      assign video_id = video_url | split: 'youtu.be/' | last
+    endif
+  endif
+
+  for tag in article.tags
+    if tag contains 'category:'
+      assign tag_name = tag | remove: 'category:'
+      break
+    endif
+  endfor
+%}
+
+<div data-modal-container>
+  {% if video_url != blank or article.image != blank %}
+    <div class='relative h-[23.4375rem] lg:h-[34.375rem] w-full'>
+      {% if video_url != blank %}
+        {% if video_cover_image != blank %}
+          {{
+            video_cover_image
+            | image_url: width: 2880
+            | image_tag: width: 2880, class: 'object-cover absolute w-full h-full', alt: article.title
+          }}
+        {% else %}
+          {% if video_url contains 'vimeo' %}
+            {% assign video_url = 'https://player.vimeo.com/video/' | append: video_id %}
+
+            <iframe
+              src='{{ video_url }}'
+              title='YouTube video player'
+              class='absolute top-0 left-0 w-full h-full object-cover bg-black pointer-events-none'
+              frameborder='0'
+              allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              loading='lazy'
+            ></iframe>
+          {% else %}
+            {% assign image_video_url = 'http://img.youtube.com/vi/' | append: video_id | append: '/maxresdefault.jpg' %}
+
+            {% # theme-check-disable RemoteAsset %}
+            <img
+              src='{{ image_video_url }}'
+              class='object-cover absolute w-full h-full'
+              alt='{{ article.title }}'
+              width='2880'
+              height='376'
+              loading='lazy'
+            >
+            {% # theme-check-enable RemoteAsset %}
+          {% endif %}
+        {% endif %}
+
+        <div class='absolute top-0 left-0 w-full h-full object-cover z-1 bg-grey-8 opacity-50'></div>
+
+        <div class='w-full h-full flex items-center justify-center absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+          <button data-modal-open class='button-normal button button--secondary-invert'>
+            <span class='mr-2.5'>Watch Video</span>
+            {%- render 'icons', icon: 'play' -%}
+          </button>
+        </div>
+      {% else %}
+        {%- capture widths -%}{{ article.image.width }}, {{ article.image.width | times: 1.5 | round }}, {{ article.image.width | times: 2 }}{%- endcapture -%}
+        {%- capture mobile_widths -%}{{ hero_image_mobile.width }}, {{ hero_image_mobile.width | times: 1.5 | round }}, {{ hero_image_mobile.width | times: 2 }}{%- endcapture -%}
+        {%- capture sizes %}(max-width: {{ 2880 | times: 2 }}px) 50vw, {{ 2880 }}px{% endcapture -%}
+        {%- capture mobile_sizes %}(max-width: {{ 1024 | times: 2 }}px) 50vw, {{ 1024 }}px{% endcapture -%}
+
+        {{
+          article.image
+          | image_url: width: 2880
+          | image_tag:
+            width: article.image.width,
+            class: 'object-cover absolute w-full h-full max-lg:hidden',
+            sizes: sizes,
+            alt: article.image.alt,
+            widths: widths
+        }}
+
+        {{
+          hero_image_mobile
+          | image_url: width: 1024
+          | image_tag:
+            width: hero_image_mobile.width,
+            class: 'object-cover absolute w-full h-full lg:hidden',
+            sizes: mobile_sizes,
+            alt: hero_image_mobile.alt,
+            widths: mobile_widths
+        }}
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class='lg:grid lg:grid-cols-10 lg:gap-x-6 lg:items-start px-6 mx-auto py-12'>
+    <div class='lg:col-span-6 lg:col-start-3'>
+      <div class='mb-6'>
+        {% assign article_url = article.handle | split: '/' | first %}
+        {% assign blog_url = shop.url | append: '/blogs/' | append: article_url %}
+        <a
+          href='{{ blog_url }}'
+          class='inline-flex items-center caps-regular text-color-2 no-underline gap-x-3'
+        >
+          <span class='w-5 h-4 bg-page-nav-arrow bg-no-repeat bg-contain rotate-180'></span>
+          <span>Back to all posts</span>
+        </a>
+      </div>
+
+      <h1 class='mb-4 uppercase'>{{ article.title }}</h1>
+
+      <div class='flex items-center gap-x-4'>
+        {% if tag_name != blank %}
+          <div class='border-l-[5px] border-grey-8 pl-[5px]'>
+            <span class='caps-small text-white bg-grey-8 px-2 py-0.5 block'>{{ tag_name | remove: 'category:' }}</span>
+          </div>
+        {% endif %}
+
+        <div class='flex items-center'>
+          <p class='text-sm text-color-2 pr-2'>{{ article.created_at | date: '%b %d, %Y' }}</p>
+          <p class='text-sm text-color-2 border-l border-grey-4 pl-2'>By {{ article.author }}</p>
+        </div>
+      </div>
+
+      <div class='rte mt-6'>
+        {% render 'shortcode-content', _content: article.content %}
+      </div>
+
+      {% if section.settings.enable_social_share %}
+        {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+      {% endif %}
+    </div>
+  </div>
+
+  {% if video_url != blank %}
+    <div class='modal' data-modal>
+      <div class='modal__container container'>
+        <div class='modal__close' data-modal-close>
+          {%- render 'icons', icon: 'close' -%}
+        </div>
+
+        <div class='modal__inner'>
+          <div class='iframe-container'>
+            {% if video_url contains 'vimeo' %}
+              <iframe
+                data-modal-video
+                class='video'
+                src=''
+                data-src='https://player.vimeo.com/video/{{ video_id }}'
+                width='640'
+                height='360'
+                frameborder='0'
+                allow='autoplay; fullscreen; picture-in-picture'
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+                loading='lazy'
+              ></iframe>
+            {% else %}
+              <iframe
+                data-modal-video
+                class='video'
+                src=''
+                data-src='https://www.youtube.com/embed/{{ video_id }}?rel=0&version=3&controls=1&showinfo=0&loop=1&autoplay=0&enablejsapi=1'
+                title='YouTube video player'
+                frameborder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowfullscreen
+                data-youtube-id='{{ video_id }}'
+                loading='lazy'
+              ></iframe>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <span class='modal__backdrop' data-modal-backdrop></span>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Main Article",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_social_share",
+      "label": "Enable Social Share",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image_mobile",
+      "label": "Hero Image - Mobile"
+    }
+  ]
+}
+{% endschema %}

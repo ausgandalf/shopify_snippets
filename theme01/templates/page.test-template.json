@@ -1,0 +1,730 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "3f577830-f36a-4671-b2f1-73fa161242fa": {
+      "type": "hero-section",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Conquer90Challenge-Hero-Desktop.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 800,
+        "media_height_mobile": 210,
+        "logo": "shopify:\/\/shop_images\/Conquer90Challenge-Logo-FullColor.svg",
+        "subheading": "",
+        "heading": "",
+        "copy": "<p>This isn’t your ordinary “Fitness Challenge”. The CONQUER 90 is a life-changing challenge designed to improve your life spiritually, mentally, socially as well as physically.<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "https:\/\/youtu.be\/yep80P8J9ms?si=B-JyuzDPT0czGcq5",
+        "cta_type_1": "button button--secondary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--primary",
+        "video_cta_text": "WATCH VIDEO",
+        "video_cta_url": "https:\/\/www.youtube.com\/watch?v=yep80P8J9ms",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--secondary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 320,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#131313",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-first",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "810b62da-36d2-4c3b-baa4-73640f4cffa8": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "template--15310424965162__810b62da-36d2-4c3b-baa4-73640f4cffa8-brand-value-callout-1": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>$10,000 COLD HARD CASH<\/h4><p>Nothing short compared to the knowledge and transformation you'll go through - but it sure helps.<\/p>"
+          }
+        },
+        "template--15310424965162__810b62da-36d2-4c3b-baa4-73640f4cffa8-brand-value-callout-2": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>$1,000 WHITELABEL CREDIT<\/h4><p>Stock up on all your favorite gear or apparel or save it to use on your monthly stacks.<\/p>"
+          }
+        },
+        "template--15310424965162__810b62da-36d2-4c3b-baa4-73640f4cffa8-brand-value-callout-3": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>TRIP TO OUR HEADQUARTERS<\/h4><p>You'll meet the team, test out new products, run through our DAY TO CONQUER to celebrate your win!<\/p>"
+          }
+        },
+        "template--15310424965162__810b62da-36d2-4c3b-baa4-73640f4cffa8-brand-value-callout-4": {
+          "type": "brand-value-callout",
+          "disabled": true,
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>WHOLE NEW VIEW ON LIFE<\/h4><p><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15310424965162__810b62da-36d2-4c3b-baa4-73640f4cffa8-brand-value-callout-1",
+        "template--15310424965162__810b62da-36d2-4c3b-baa4-73640f4cffa8-brand-value-callout-2",
+        "template--15310424965162__810b62da-36d2-4c3b-baa4-73640f4cffa8-brand-value-callout-3",
+        "template--15310424965162__810b62da-36d2-4c3b-baa4-73640f4cffa8-brand-value-callout-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "whatyouwin",
+        "heading": "<h3>2 GRAND PRIZE WINNERS WILL GET:<\/h3><p><\/p>",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-black_text-white",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "196412ce-f328-4db3-8d16-f3e01e795c89": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "template--15310424965162__196412ce-f328-4db3-8d16-f3e01e795c89-brand-value-logo-1": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Conquer90-signup.svg",
+            "logo_link": "",
+            "logo_label": "<p>Dig deep, find your why and head on over to WHITELABEL.com\/challenge to join the challenge<\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--15310424965162__196412ce-f328-4db3-8d16-f3e01e795c89-brand-value-logo-2": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Conquer90-engage.svg",
+            "logo_link": "",
+            "logo_label": "<p>Join our Conquer More Facebook Group and surround yourself with thousand of like-minded individuals to keep you accountable.<\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--15310424965162__196412ce-f328-4db3-8d16-f3e01e795c89-brand-value-logo-3": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/Conquer90-inspire.svg",
+            "logo_link": "",
+            "logo_label": "<p>After the 90 days, get ready to be answered some tough questions for how you grew physically, mentally, socially and spiritually.<\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "template--15310424965162__196412ce-f328-4db3-8d16-f3e01e795c89-brand-value-logo-1",
+        "template--15310424965162__196412ce-f328-4db3-8d16-f3e01e795c89-brand-value-logo-2",
+        "template--15310424965162__196412ce-f328-4db3-8d16-f3e01e795c89-brand-value-logo-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>HOW IT WORKS:<\/h2>",
+        "cta_text": "",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-grey-1_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "e1881256-b498-4800-9ddf-109b5f110ef1": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Text_CTA_-_JamesStoneFilm-Desktop.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=Mn37HIdJXjc",
+        "subheading": "2023 CHALLENGE WINNER",
+        "heading": "<h2>JAMES STONE'S CONQUER STORY<\/h2>",
+        "copy": "<p>James is the perfect example of hard work and dedication and was able to conquer his addiction and rewire his habits with positive ones that ultimately led him to winning our 2023 challenge and taking home a massive cash prize.<\/p>",
+        "cta_text_1": "WATCH JAMES'S STORY",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#3d3935",
+        "content_bg_color": "#ffffff",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "da166895-7950-4f0f-badc-8e6924f7d396": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "97aa6ed6-c6ca-47ab-9c32-6219592a4ba7": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>1. SIGN UP<\/h4><p>SIGNUP HAS ENDED<\/p>"
+          }
+        },
+        "16532549-6cc7-430b-a8c5-6bfb79aafd4b": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>2. ENGAGE<\/h4><p>Join our Conquer More Facebook Group and surround yourself with thousands of like-minded individuals to keep you accountable.<\/p>"
+          }
+        },
+        "357104b6-f0d3-42d1-940b-9bc389bbbca8": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>3. PUT IN THE WORK<\/h4><p>After 30 days, get ready to answer some tough questions for how you grew physically, mentally, socially and spiritually.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "97aa6ed6-c6ca-47ab-9c32-6219592a4ba7",
+        "16532549-6cc7-430b-a8c5-6bfb79aafd4b",
+        "357104b6-f0d3-42d1-940b-9bc389bbbca8"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "signup",
+        "heading": "<h3>HOW THE CHALLENGE WORKS<\/h3>",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-3",
+        "color_scheme": "bg-black_text-white",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "5855ba79-2b0e-4703-af11-7ee0e746ddf0": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Text_CTA_-_ConsultPortalVid-Desktop.jpg",
+        "video_url": "",
+        "subheading": "SUCCESS BEYOND THE SCALE",
+        "heading": "<h2>MORE THAN JUST A FITNESS CHALLENGE<\/h2>",
+        "copy": "<p>This challenge is designed to instill the culture of what it means to CONQUER MORE by bringing lite to the 4 CORE quadrants of your life - Physical, Mental, Social and Spiritual - to produce monumental changes outside just the scale.<\/p>",
+        "cta_text_1": "WATCH VIDEO",
+        "cta_url_1": "https:\/\/whitelabel.youcanbook.me\/",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#3d3935",
+        "content_bg_color": "#ffffff",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_dcgnPd": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Vanquish_Hoodie_-_Gym_Lifestyle-14.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Vanquish_Hoodie_-_Gym_Lifestyle-14.jpg",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h2>Challenge is on<\/h2>",
+        "copy": "<p>Submissions are officially closed. Good luck to everyone who has signed up! Be sure to remember your reasons why you submitted to this challenge and let it motivate you through the hard times! We are rooting for all of you and want to see this become your best year yet.<\/p>",
+        "cta_text_1": "SUPPLEMENTS",
+        "cta_url_1": "shopify:\/\/collections\/supplements",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "APPAREL",
+        "cta_url_2": "shopify:\/\/collections\/apparel",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "dd24b6b7-9ae3-45d1-a83f-d82030b0824e": {
+      "type": "hero-section",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Challenge-Hero-Desktop.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 550,
+        "media_height_mobile": 250,
+        "logo": "shopify:\/\/shop_images\/Conquer_Fitness_100K_Challenge.svg",
+        "subheading": "",
+        "heading": "",
+        "copy": "<p>Have you got what it takes to bring home the cash prize? Commit to your self to making this year your happiest, strongest, healthiest year yet!<\/p>",
+        "cta_text_1": "COMING SOON",
+        "cta_url_1": "",
+        "cta_type_1": "button button--secondary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 230,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#131313",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "3624b8c1-66da-40c5-87d2-672f0e31b0cc": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/ConquerMoreMenu-Consultations.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/12-6-21-NewGearDrop-Fitness-BG.jpg",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h5>Not sure where to start?<\/h5>",
+        "copy": "<h2>TRY OUR FREE CALORIE CALCULATOR<\/h2><p>We understand that just getting started and knowing where to begin can sometimes be the hardest part. That is why we created a Free Calorie Calculator to help guide you. <\/p><p><strong>Fill out the form below and w'll provide you with recommendations on meal plans and training programs to help kickstart your health and fitness journey.<\/strong><\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#f7f7f7",
+        "content_bg_color": "#1b1b1b",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "7f701cfe-012d-491a-9f56-63bf12cea3ac": {
+      "type": "hero-section",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/workout-fitness-lifestyle.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 550,
+        "media_height_mobile": 250,
+        "subheading": "",
+        "heading": "<h3>Conquer Fitness Programs<\/h3>",
+        "copy": "<p>These programs have been developed to give you a great starting point on your fitness journey. We are fully confident that if you follow these programs, fuel your body with healthy foods, and use our products, you will acheive your fitness goals of getting fit, stronger, faster, thinner, mentally happier, etc. Whatever your goal may be, consistency is the key to your success.<\/p>",
+        "cta_text_1": "COMING SOON",
+        "cta_url_1": "",
+        "cta_type_1": "button button--secondary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 300,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#131313",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "fa0644e4-0200-41fd-bfbe-ca7f2ae87387": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15047270924330__fa0644e4-0200-41fd-bfbe-ca7f2ae87387-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Conquer_Fitness_-_Erick_McCormack_-_4.jpg",
+            "description": "<h4>LOSE WEIGHT<\/h4>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "8b2abcee-133a-4bf1-84b2-d87d7f3f3f8d": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Conquer_Fitness_-_Erick_McCormack_-_4.jpg",
+            "description": "<h4>GAIN STRENGTH<\/h4>",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15047270924330__fa0644e4-0200-41fd-bfbe-ca7f2ae87387-up-block-1",
+        "8b2abcee-133a-4bf1-84b2-d87d7f3f3f8d"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "17030206940d2c1d64": {
+      "type": "apps",
+      "blocks": {
+        "cedcbb31-92db-4a7b-a133-21e2a42c42bf": {
+          "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/form-block\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "25pEiuo-1ZWugsb-rMvkdw",
+            "form_settings": false,
+            "font_color": "#3d3935",
+            "size": 14,
+            "input_background_color": "#ffffff",
+            "input_background_color_focus": "#f4dada",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2d2727",
+            "input_font_color": "#3d3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#ebe9e9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#f3f3f3",
+            "sub_btn_bg_color": "#3f3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#ffffff",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "cedcbb31-92db-4a7b-a133-21e2a42c42bf"
+      ],
+      "settings": {
+      }
+    },
+    "1bf40a76-0f94-4593-b5bb-4109ca146b47": {
+      "type": "two-three-up",
+      "blocks": {
+        "72d59f72-b0ad-45d0-957e-9ff97405cd81": {
+          "type": "up-block",
+          "settings": {
+            "description": "<h4>IGNITE<\/h4><h6>Supercharged Energy & Mental Clarity<\/h6><ul><li>Energy Boost<\/li><li>Improve Cognitive Function<\/li><li>Supercharged Performance<\/li><li>Nitric Oxide Production<\/li><\/ul>",
+            "cta_text": "SHOP IGNITE",
+            "cta_link": "shopify:\/\/products\/ignite",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "1604984d-0a5a-4903-bf1d-1b83ac7ea328": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/magnumsupplements3105900129-123845.png",
+            "description": "<h4>MAGNUM<\/h4><h6>Muscle protein <\/h6><ul><li>Muscle Building Protein<\/li><li>Muscle Recovery<\/li><li>Protein Blend for Ideal Absorption<\/li><\/ul>",
+            "cta_text": "SHOP MAGNUM",
+            "cta_link": "shopify:\/\/products\/magnum",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "c29a3724-35ce-4ee9-8679-5be1549d07ed": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/HYDRATE_MangoPeach_20CT_TP-Pouch_Splash.png",
+            "description": "<h4>HYDRATE<\/h4><ul><li>Enhanced Hydration<\/li><li>Stamina & Endurance<\/li><li>Cellular Fluid Balance<\/li><\/ul>",
+            "cta_text": "SHOP HYDRATE",
+            "cta_link": "shopify:\/\/products\/hydrate",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "72d59f72-b0ad-45d0-957e-9ff97405cd81",
+        "1604984d-0a5a-4903-bf1d-1b83ac7ea328",
+        "c29a3724-35ce-4ee9-8679-5be1549d07ed"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h3>LAST DAY TO SAVE 30% ON YOUR ORDER WITH CODE [PREP20]<\/h3>",
+        "copy": "<p>Now whether you've chosen to sign up or not snag some of our best selling supplments down below to give you the edge on becoming the person you want to be for yourself and your family<\/p>",
+        "cta_text": "Shop All Supplements",
+        "cta_link": "shopify:\/\/collections\/supplements",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "f83f7282-7510-432f-9897-023d906f6b08": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15310424965162__f83f7282-7510-432f-9897-023d906f6b08-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/ignite-lifestyle-outdoor-hiking-DSC01359.jpg",
+            "description": "<h3>OUTDOOR <\/h3><p>Everything you need to become a beast in the outdoors<\/p>",
+            "cta_text": "SHOP OUTDOOR",
+            "cta_link": "shopify:\/\/collections\/outdoor-supplements",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--15310424965162__f83f7282-7510-432f-9897-023d906f6b08-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/fitness-lifestyle-indoor-gym-FST-091418_FST_Outdoors_Gym_Visit-06281.jpg",
+            "description": "<h3>GYM<\/h3><p>Everything you need to crush your workout<\/p>",
+            "cta_text": "SHOP GYM",
+            "cta_link": "shopify:\/\/collections\/gym-supplements",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "822b734f-25cf-4211-9948-6c44177109e1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Everyday_health_lifestyle.jpg",
+            "description": "<h3>EVERYDAY<\/h3><p>Everything you need to help you maintain your everyday health<\/p>",
+            "cta_text": "SHOP EVERYDAY",
+            "cta_link": "shopify:\/\/collections\/everyday-supplements",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15310424965162__f83f7282-7510-432f-9897-023d906f6b08-up-block-1",
+        "template--15310424965162__f83f7282-7510-432f-9897-023d906f6b08-up-block-2",
+        "822b734f-25cf-4211-9948-6c44177109e1"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>CORE COLLECTIONS<\/h2>",
+        "copy": "<p>What are you're goals this year, Better endurance? Get stronger? Everyday health? Use the collections below to find the supplements that will help you with your goals!<\/p>",
+        "cta_text": "Button label",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "801e0d14-0b1b-49b5-afde-2b79fe70eb57": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Text_CTA_-_CommunityBG-Desktop.jpg",
+        "video_url": "",
+        "subheading": "JOIN THE INNER CIRCLE",
+        "heading": "<h2>CONQUER MORE FACEBOOK GROUP<\/h2>",
+        "copy": "<p>We have an incredible community full of support, product knowledge and motivation. Join our Conquer More Community Facebook Group to engage with highly motivated and inspiring people that will help you succeed in your goals and continue to #CONQUERMORE!<\/p>",
+        "cta_text_1": "JOIN OUR FB GROUP",
+        "cta_url_1": "https:\/\/www.facebook.com\/groups\/162390341188702",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#3d3935",
+        "content_bg_color": "#ffffff",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "3f577830-f36a-4671-b2f1-73fa161242fa",
+    "810b62da-36d2-4c3b-baa4-73640f4cffa8",
+    "196412ce-f328-4db3-8d16-f3e01e795c89",
+    "e1881256-b498-4800-9ddf-109b5f110ef1",
+    "da166895-7950-4f0f-badc-8e6924f7d396",
+    "5855ba79-2b0e-4703-af11-7ee0e746ddf0",
+    "image_text_dcgnPd",
+    "dd24b6b7-9ae3-45d1-a83f-d82030b0824e",
+    "3624b8c1-66da-40c5-87d2-672f0e31b0cc",
+    "7f701cfe-012d-491a-9f56-63bf12cea3ac",
+    "fa0644e4-0200-41fd-bfbe-ca7f2ae87387",
+    "17030206940d2c1d64",
+    "1bf40a76-0f94-4593-b5bb-4109ca146b47",
+    "f83f7282-7510-432f-9897-023d906f6b08",
+    "801e0d14-0b1b-49b5-afde-2b79fe70eb57"
+  ]
+}

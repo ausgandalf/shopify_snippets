@@ -1,0 +1,200 @@
+{% liquid
+  assign description = blog.metafields.custom.hero_description | metafield_tag
+  assign hero_image_desktop = section.settings.hero_image_desktop
+  assign hero_image_mobile = section.settings.hero_image_mobile | default: hero_image_desktop
+  assign bg_overlay_color = section.settings.bg_overlay_color
+  assign bg_overlay_opacity = section.settings.bg_overlay_opacity | divided_by: 100.00
+%}
+
+<div
+  id='hero-{{ section.id }}'
+  class='py-6 lg:py-12 bg-grey-2 relative overflow-hidden flex items-center{% if hero_image_desktop != blank %} min-h-[22.5rem]{% endif %}'
+>
+  {% style %}
+    #hero-{{ section.id }} .blog-background::after {
+      background-color: {{ bg_overlay_color | color_modify: 'alpha', bg_overlay_opacity }}
+    }
+  {% endstyle %}
+
+  {%- if hero_image_desktop != blank -%}
+    <div class='blog-background absolute inset-0 w-full h-full z-0'>
+      {%- capture desktop_widths -%}{{ hero_image_desktop.width }}, {{ hero_image_desktop.width | times: 1.5 | round }}, {{ hero_image_desktop.width | times: 2 }}{%- endcapture -%}
+      {%- capture desktop_sizes %}(max-width: {{ 2880 | times: 2 }}px) 50vw, {{ 2880 }}px{% endcapture -%}
+      {%- capture mobile_widths -%}{{ hero_image_mobile.width }}, {{ hero_image_mobile.width | times: 1.5 | round }}, {{ hero_image_mobile.width | times: 2 }}{%- endcapture -%}
+      {%- capture mobile_sizes %}(max-width: {{ 1024 | times: 2 }}px) 50vw, {{ 1024 }}px{% endcapture -%}
+
+      {{
+        hero_image_desktop
+        | image_url: width: 2880
+        | image_tag:
+          width: hero_image_desktop.width,
+          class: 'object-cover object-center w-full h-full max-lg:hidden',
+          sizes: desktop_sizes,
+          alt: hero_image_desktop.alt,
+          widths: desktop_widths
+      }}
+
+      {{
+        hero_image_mobile
+        | image_url: width: 1024
+        | image_tag:
+          width: hero_image_mobile.width,
+          class: 'object-cover object-center w-full h-full lg:hidden',
+          sizes: mobile_sizes,
+          alt: hero_image_mobile.alt,
+          widths: mobile_widths
+      }}
+    </div>
+  {%- endif -%}
+
+  <div class='container max-lg:px-6 relative'>
+    <h1 class='mb-4 uppercase{% if hero_image_desktop != blank %} text-white{% endif %}'>{{ blog.title }}</h1>
+
+    {% if description != blank %}
+      <div class='max-w-lg blog-content{% if hero_image_desktop != blank %} text-white{% endif %}'>{{ description }}</div>
+    {% endif %}
+  </div>
+</div>
+
+<div class='border-b border-color-3{% if section.index0 == 0 %} max-lg:border-t lg:bg-grey-2{% endif %}'>
+  <div class='container'>
+    <div class='max-lg:hidden flex items-center justify-start gap-x-12'>
+      <a
+        class='caps-small py-4 no-underline text-grey-8 tracking-[0.19em]{% unless request.path contains 'tagged' %} border-b-2 border-color-1{% endunless %}'
+        href='{{ blog.url }}'
+      >
+        All
+      </a>
+
+      {% for tag in blog.all_tags %}
+        {% assign tag_handle = tag | handleize %}
+
+        {% if tag contains 'category:' %}
+          <a
+            class='caps-small py-4 no-underline text-grey-8 tracking-[0.19em]{% if request.path contains tag_handle %} border-b-2 border-color-1{% endif %}'
+            href='{{ blog.url }}/tagged/{{ tag_handle }}'
+          >
+            <span>{{ tag | remove: 'category:' }}</span>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class='blog__mobile-nav block lg:hidden -mx-[0.9375rem] select-wrap'>
+      <select onchange='if (this.value) window.location.href=this.value'>
+        <option
+          value='{{ blog.url }}'
+          {% unless request.path contains 'tagged' %}
+            selected
+          {% endunless %}
+        >
+          All
+        </option>
+
+        {% for tag in blog.all_tags %}
+          {% assign tag_handle = tag | handleize %}
+
+          {% if tag contains 'category:' %}
+            <option
+              {% if request.path contains tag_handle %}
+                selected='selected'
+              {% endif %}
+              value='{{ blog.url }}/tagged/{{ tag_handle }}'
+            >
+              {{ tag | remove: 'category:' }}
+            </option>
+          {% endif %}
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class='container pt-12 pb-24'>
+  {% paginate blog.articles by 48 %}
+    <div id='blog-grid-container' class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6'>
+      {% for article in blog.articles %}
+        {%- render 'article-card',
+          article: article,
+          placeholder_image: section.settings.placeholder_article_image,
+          show_publish_date: section.settings.show_publish_date,
+          show_author: section.settings.show_author
+        -%}
+      {% endfor %}
+    </div>
+
+    <div id='blog-grid-pagination' class='flex flex-col items-center justify-center mt-12'>
+      <p class='text-sm mb-4'>
+        <span id='blog-grid-items'>{{ blog.articles.size }}</span> of {{ paginate.items }} results
+      </p>
+
+      {% if paginate.next %}
+        <a
+          href='{{ paginate.next.url }}'
+          class='button button-normal button--secondary max-w-[17rem] w-full'
+        >
+          Load More
+        </a>
+      {% endif %}
+    </div>
+  {% endpaginate %}
+</div>
+
+{% schema %}
+{
+  "name": "Main Blog",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Blog Hero"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image_desktop",
+      "label": "Hero Image - Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image_mobile",
+      "label": "Hero Image - Mobile"
+    },
+    {
+      "type": "color",
+      "id": "bg_overlay_color",
+      "label": "Background Overlay Color",
+      "default": "#241E18"
+    },
+    {
+      "type": "range",
+      "id": "bg_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Background Overlay Opacity",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Blog Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "placeholder_article_image",
+      "label": "Placeholder Article Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_publish_date",
+      "label": "Show Publish Date",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show Author",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

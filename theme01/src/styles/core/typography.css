@@ -1,0 +1,121 @@
+/*
+ * ==========================================================================
+ * Typography
+ * ==========================================================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    @apply font-bold tracking-normal;
+  }
+
+  h1,
+  .h1 {
+    @apply text-h1-m lg:text-h1 font-primary;
+  }
+
+  h2,
+  .h2 {
+    @apply text-h2-m lg:text-h2 font-primary;
+  }
+
+  h3,
+  .h3 {
+    @apply text-h3-m lg:text-h3 font-primary;
+  }
+
+  h4,
+  .h4 {
+    @apply text-h4-m lg:text-h4 font-secondary;
+  }
+
+  h5,
+  .h5 {
+    @apply text-h5-m lg:text-h5 font-secondary;
+  }
+
+  h6,
+  .h6 {
+    @apply text-h6-m lg:text-h6 font-primary;
+  }
+
+  .sub-small,
+  .sub-regular,
+  .sub-large,
+  .caps-small,
+  .caps-regular,
+  .caps-large {
+    @apply font-secondary font-bold;
+  }
+
+  .sub-small {
+    @apply text-sub-small;
+  }
+
+  .sub-regular {
+    @apply text-sub-regular;
+  }
+
+  .sub-large {
+    @apply text-sub-large;
+  }
+
+  .caps-small,
+  .caps-regular,
+  .caps-large {
+    @apply uppercase;
+  }
+
+  .caps-small {
+    @apply text-caps-small;
+  }
+
+  .caps-regular {
+    @apply text-caps-regular;
+  }
+
+  .caps-large {
+    @apply text-caps-large;
+  }
+
+  p,
+  .text {
+    @apply text-base;
+  }
+
+  blockquote,
+  .blockquote {
+    @apply relative pl-10 lg:pl-14 text-xl font-bold;
+  }
+
+  blockquote::before,
+  .blockquote::before {
+    @apply content-[""] absolute left-0 top-1.5 w-5 h-6 md:w-8 md:h-9 bg-no-repeat bg-contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='33' height='32' viewBox='0 0 33 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.1982 0.5H32.75V31.556L19.1982 21.318V0.5Z' fill='%23FE5000'/%3E%3Cpath d='M0 0.5H13.5517V31.556L0 21.318V0.5Z' fill='%23FE5000'/%3E%3C/svg%3E%0A");
+  }
+
+  blockquote > *,
+  .blockquote > * {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+  }
+
+  blockquote.blockquote--small,
+  .blockquote.blockquote--small {
+    @apply text-sm;
+  }
+}

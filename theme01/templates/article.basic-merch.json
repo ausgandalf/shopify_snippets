@@ -1,0 +1,77 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "enable_social_share": true,
+        "hero_image_mobile": "{{ article.metafields.custom.hero_image_mobile.value }}"
+      }
+    },
+    "two_three_up_tMjAJp": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_FQACnB": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/BETA-ALANINE_Unflavored_100S_SC-Tub_Splash.png",
+            "description": "<h3>BETA-ALANINE<\/h3><p>Get more out of your workouts with WHITELABEL® BETA-ALANINE. It can be taken daily before workouts and pairs well with other WHITELABEL® ENERGY, STRENGTH, and HYDRATION products. BETA-ALANINE comes in 100-serving tubs. Mix easily into other pre-workouts or your drink of choice and consume for performance benefits.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "beta-alanine",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_GbXiBP": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/CaffeineFree-Pre-Workout_Bundle.png",
+            "description": "<h3>CAFFEINE-FREE PRE-WORKOUT STACK<\/h3><p>Combining BETA-ALANINE, CREATINE, and ENDURO creates an effective Caffeine-Free Pre-Workout formula to help you build muscle endurance, muscle strength, and crush your fitness goals.<br\/><\/p><p>Together, these products enhance your endurance, strength, and cardio, creating an excellent pre-workout option.<\/p>",
+            "cta_text": "GET YOUR STACK TODAY",
+            "cta_link": "shopify:\/\/products\/caffeine-free-pre-workout-stack",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_FQACnB",
+        "up_block_GbXiBP"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "58430cab-e5db-42f8-9bda-022cc065792c": {
+      "type": "related-articles",
+      "settings": {
+        "section_custom_id": "",
+        "title": "Related Posts"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "two_three_up_tMjAJp",
+    "58430cab-e5db-42f8-9bda-022cc065792c"
+  ]
+}

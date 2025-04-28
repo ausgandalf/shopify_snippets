@@ -1,0 +1,710 @@
+{%- liquid
+  assign default_id = 'section-' | append: section.id
+  assign section_custom_id = section.settings.section_custom_id | default: default_id
+  assign bg_image_desktop = section.settings.image_desktop
+  assign bg_image_mobile = section.settings.image_mobile | default: bg_image_desktop
+  assign bg_video = section.settings.bg_video
+  assign autoplay_video = section.settings.autoplay_video
+  assign bg_overlay_color = section.settings.bg_overlay_color
+  assign bg_overlay_opacity = section.settings.bg_overlay_opacity | divided_by: 100.00
+  assign media_height_desktop = section.settings.media_height
+  assign media_height_mobile = section.settings.media_height_mobile
+
+  assign logo = section.settings.logo
+  assign subheading = section.settings.subheading
+  assign heading = section.settings.heading
+  assign copy = section.settings.copy
+
+  assign video_cta_text = section.settings.video_cta_text
+  assign video_cta_url = section.settings.video_cta_url
+  assign video_cta_pos = section.settings.video_cta_pos
+  assign video_cta_type = section.settings.video_cta_type
+
+  assign form_cta_text = section.settings.form_cta_text
+  assign form_id = section.settings.form_id
+  assign form_cta_pos = section.settings.form_cta_pos
+  assign form_cta_type = section.settings.form_cta_type
+
+  assign full_width = section.settings.full_width
+  assign logo_size = section.settings.logo_size
+  assign content_text_color = section.settings.content_text_color
+  assign content_bg_color = section.settings.content_bg_color
+  assign text_align = section.settings.text_align
+  assign content_align_desktop = section.settings.content_align_desktop
+  assign content_align_mobile = section.settings.content_align_mobile
+  assign hide_content = section.settings.hide_content
+
+  assign has_brand = false
+  for block in section.blocks
+    if block.settings.prop_label != blank or block.settings.prop_img != blank
+      assign has_brand = true
+      break
+    endif
+  endfor
+
+  if section.index > 2
+    assign loading = 'lazy'
+  else
+    assign loading = 'eager'
+  endif
+-%}
+
+{%- capture ctas_html -%}
+  {%- for i in (1..2) -%}
+    {% if video_cta_pos contains i and video_cta_url != blank and video_cta_text != blank %}
+      <button data-modal-open class="button-normal {{ video_cta_type }}">
+        <span class="mr-2.5">{{ video_cta_text }}</span>
+        {%- render 'icons' icon: 'play' -%}
+      </button>
+    {% elsif form_cta_pos contains i and form_id != blank and form_cta_text != blank %}
+      <button data-modal-open class="button-normal {{ form_cta_type }}">
+        {{ form_cta_text }}
+      </button>
+    {% else %}
+      {%- liquid
+        assign index_cta_text = 'cta_text_' | append: i
+        assign index_cta_url = 'cta_url_' | append: i
+        assign index_cta_type = 'cta_type_' | append: i
+        assign cta_text = section.settings[index_cta_text]
+        assign cta_url = section.settings[index_cta_url]
+        assign cta_type = section.settings[index_cta_type]
+      -%}
+
+      {%- if cta_text != blank -%}
+        <a class="{{ cta_type }}" href="{{- cta_url | default: 'javascript:void(0);' -}}">{{- cta_text -}}</a>
+      {%- endif -%}
+    {% endif %}
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- if bg_image_desktop != blank or bg_video != blank -%}
+  <div
+    id='{{ section_custom_id }}'
+    class='hero-full-width{% unless full_width %} container mx-auto{% endunless %}'
+    data-hero-section
+    data-modal-container
+  >
+    {%- style -%}
+      #{{ section_custom_id }} .hero-background {
+        height: {{- media_height_mobile | append: 'px' -}};
+      }
+      #{{ section_custom_id }} .hero-background::after {
+        background-color: {{ bg_overlay_color | color_modify: 'alpha', bg_overlay_opacity }}
+      }
+      #{{ section_custom_id }} .hero-content {
+        color: {{- content_text_color -}};
+        background-color: {{- content_bg_color -}};
+      }
+      #{{ section_custom_id }} .hero-content__logo img {
+        width: {{- logo_size | append: 'px' -}};
+      }
+      @media (min-width: 1024px) {
+        #{{ section_custom_id }} .hero-background {
+          height: {{- media_height_desktop | append: 'px' -}};
+        }
+      }
+    {%- endstyle -%}
+
+    <div class='hero-background overflow-hidden{% unless content_align_mobile contains 'absolute' %} after:hidden after:lg:block{% endunless %}'>
+      {%- if bg_image_desktop != blank -%}
+        {%- capture desktop_widths -%}{{ bg_image_desktop.width }}, {{ bg_image_desktop.width | times: 1.5 | round }}, {{ bg_image_desktop.width | times: 2 }}{%- endcapture -%}
+        {%- capture desktop_sizes %}(max-width: {{ 2880 | times: 2 }}px) 50vw, {{ 2880 }}px{% endcapture -%}
+        {%- capture mobile_widths -%}{{ bg_image_mobile.width }}, {{ bg_image_mobile.width | times: 1.5 | round }}, {{ bg_image_mobile.width | times: 2 }}{%- endcapture -%}
+        {%- capture mobile_sizes %}(max-width: {{ 1024 | times: 2 }}px) 50vw, {{ 1024 }}px{% endcapture -%}
+
+        {{
+          bg_image_desktop
+          | image_url: width: 2880
+          | image_tag:
+            width: bg_image_desktop.width,
+            class: 'max-lg:hidden',
+            sizes: desktop_sizes,
+            alt: bg_image_desktop.alt,
+            widths: desktop_widths,
+            loading: loading
+        }}
+
+        {{
+          bg_image_mobile
+          | image_url: width: 1024
+          | image_tag:
+            width: bg_image_mobile.width,
+            class: 'lg:hidden',
+            sizes: mobile_sizes,
+            alt: bg_image_mobile.alt,
+            widths: mobile_widths,
+            loading: loading
+        }}
+      {%- endif -%}
+
+      {%- if bg_video != blank -%}
+        {% # theme-check-disable RemoteAsset %}
+        <video
+          data-autoplay='{{ autoplay_video }}'
+          data-inline-video
+          width='100%'
+          muted
+          playsinline
+          loop
+          class='paused absolute top-0 left-0 w-full h-full object-cover transition-all duration-300'
+        >
+          <source src='{{- bg_video.sources[1].url -}}' type='video/mp4'>
+          Your browser does not support the video tag.
+        </video>
+        {% # theme-check-enable RemoteAsset %}
+
+        <button class='hero-play-pause paused' data-play-pause aria-label='Play/Pause Button'>
+          {%- render 'icons', icon: 'play', class: 'play text-white' -%}
+          {%- render 'icons', icon: 'pause', class: 'pause text-white' -%}
+        </button>
+      {%- endif -%}
+    </div>
+
+    {% unless hide_content %}
+      <div class='w-full flex items-center {{ content_align_mobile }} {{ content_align_desktop }} lg:absolute lg:inset-0 lg:h-full lg:px-[4.5rem] lg:py-[5.625rem] pointer-events-none z-10'>
+        <div class='hero-content'>
+          <div class='{{ text_align }}'>
+            {%- if logo != blank -%}
+              <div class='hero-content__logo'>
+                {%- capture logo_widths -%}{{ logo.width }}, {{ logo.width | times: 1.5 | round }}, {{ logo.width | times: 2 }}{%- endcapture -%}
+                {%- capture logo_sizes %}(max-width: {{ 200 | times: 2 }}px) 50vw, {{ 200 }}px{% endcapture -%}
+
+                {{
+                  logo
+                  | image_url: width: 200
+                  | image_tag: width: logo.width, sizes: desktop_sizes, alt: logo.alt, widths: desktop_widths
+                }}
+              </div>
+            {%- endif -%}
+            {%- if subheading != blank -%}
+              <p class='inline-flex items-center caps-regular mb-4'>
+                {{- subheading -}}
+              </p>
+            {%- endif -%}
+            {%- if heading != blank -%}
+              <div class='uppercase rte'>{{- heading -}}</div>
+            {%- endif -%}
+            {%- if copy != blank -%}
+              <div class='hero-content__copy rte mt-4'>{{- copy -}}</div>
+            {%- endif -%}
+            {%- if has_brand -%}
+              <div class='flex flex-wrap gap-y-6 -mx-1.5 md:-mx-2 mt-6 lg:mt-8 {% if text_align == 'text-center' %}justify-center{% else %}justify-start{% endif %}'>
+                {%- for block in section.blocks -%}
+                  {%- assign prop_img = block.settings.prop_img -%}
+                  {%- assign prop_label = block.settings.prop_label -%}
+                  {%- if prop_label != blank or prop_img != blank -%}
+                    <div class='{{ text_align }} w-1/2 md:w-1/4 px-1.5 md:px-2'>
+                      {%- if prop_img != blank -%}
+                        <div class='inline-block w-[50px] h-[50px] lg:w-16 lg:h-16 mb-2'>
+                          {{- prop_img | image_url: width: 128 | image_tag: alt: prop_img.alt -}}
+                        </div>
+                      {%- endif -%}
+                      {%- if prop_label != blank -%}
+                        <p class='sub-small lg:text-sub-regular'>{{- prop_label -}}</p>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+            {%- if ctas_html != blank -%}
+              <div class='hero-content__buttons mt-6 lg:mt-8'>
+                {{- ctas_html -}}
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+
+      {% if video_cta_url != blank or form_id != blank %}
+        <div class='modal' data-modal>
+          <div class='modal__container container'>
+            <div class='modal__close' data-modal-close>
+              {%- render 'icons', icon: 'close' -%}
+            </div>
+
+            <div class='modal__inner'>
+              {% if video_cta_url != blank %}
+                <div class='iframe-container'>
+                  {% if video_cta_url contains 'vimeo' %}
+                    <iframe
+                      data-modal-video
+                      class='video'
+                      src=''
+                      data-src='https://player.vimeo.com/video/{{ video_cta_url.id }}'
+                      width='640'
+                      height='360'
+                      frameborder='0'
+                      allow='fullscreen; autoplay; fullscreen; picture-in-picture'
+                      loading='lazy'
+                    ></iframe>
+                  {% else %}
+                    <iframe
+                      data-modal-video
+                      class='video'
+                      src=''
+                      data-src='https://www.youtube.com/embed/{{ video_cta_url.id }}?rel=0&version=3&controls=1&showinfo=0&loop=1&autoplay=0&enablejsapi=1'
+                      title='YouTube video player'
+                      frameborder='0'
+                      allow='fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                      data-youtube-id='{{ video_cta_url.id }}'
+                      loading='lazy'
+                    ></iframe>
+                  {% endif %}
+                </div>
+              {% else %}
+                <div style='margin:0 auto;' class='pxFormGenerator' id='{{ form_id }}'></div>
+              {% endif %}
+            </div>
+          </div>
+
+          <span class='modal__backdrop' data-modal-backdrop></span>
+        </div>
+      {% endif %}
+    {% endunless %}
+  </div>
+
+  {%- render 'spacer', _mobile_space: section.settings.bottom_margin_mobile, _desktop_space: section.settings.bottom_margin_desktop -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Hero - Full-Width",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    },
+    {
+      "type": "header",
+      "content": "Media"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_desktop",
+      "label": "Desktop Image",
+      "info": "Recommended dimensions: '1920x1080'"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile Image",
+      "info": "Recommended dimensions: '375x375'"
+    },
+    {
+      "type": "video",
+      "id": "bg_video",
+      "label": "MP4 Video"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay_video",
+      "label": "Autoplay Video",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "bg_overlay_color",
+      "label": "Background Overlay Color",
+      "default": "#241E18"
+    },
+    {
+      "type": "range",
+      "id": "bg_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Background Overlay Opacity",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Media Settings"
+    },
+    {
+      "type": "range",
+      "id": "media_height",
+      "min": 300,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "label": "Media Height",
+      "default": 720
+    },
+    {
+      "type": "range",
+      "id": "media_height_mobile",
+      "min": 210,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Media Height (Mobile)",
+      "default": 360
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo",
+      "info": "Recommended dimensions: 100 x 50px Image."
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "info": "Optional",
+      "default": "Subheading"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Optional. Please use only one H1 per page and then use H2 for the content below the fold.",
+      "default": "<h2>Hero - Full-Width</h2>"
+    },
+    {
+      "type": "richtext",
+      "id": "copy",
+      "label": "Copy",
+      "info": "Optional",
+      "default": "<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>"
+    },
+    {
+      "type": "header",
+      "content": "CTAs"
+    },
+    {
+      "type": "text",
+      "id": "cta_text_1",
+      "label": "CTA 1 Text",
+      "default": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "cta_url_1",
+      "label": "CTA 1 URL"
+    },
+    {
+      "type": "select",
+      "id": "cta_type_1",
+      "label": "CTA 1 Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button button--primary"
+        },
+        {
+          "label": "Primary Dark",
+          "value": "button button--primary-invert"
+        },
+        {
+          "label": "Secondary",
+          "value": "button button--secondary"
+        },
+        {
+          "label": "Secondary Dark",
+          "value": "button button--secondary-invert"
+        }
+      ],
+      "default": "button button--primary-invert"
+    },
+    {
+      "type": "text",
+      "id": "cta_text_2",
+      "label": "CTA 2 Text",
+      "default": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "cta_url_2",
+      "label": "CTA 2 URL"
+    },
+    {
+      "type": "select",
+      "id": "cta_type_2",
+      "label": "CTA 2 Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button button--primary"
+        },
+        {
+          "label": "Primary Dark",
+          "value": "button button--primary-invert"
+        },
+        {
+          "label": "Secondary",
+          "value": "button button--secondary"
+        },
+        {
+          "label": "Secondary Dark",
+          "value": "button button--secondary-invert"
+        }
+      ],
+      "default": "button button--secondary-invert"
+    },
+    {
+      "type": "header",
+      "content": "Video CTA",
+      "info": "Video will display on modal"
+    },
+    {
+      "type": "text",
+      "id": "video_cta_text",
+      "label": "Video CTA Text",
+      "default": "Watch Video"
+    },
+    {
+      "type": "video_url",
+      "accept": ["youtube", "vimeo"],
+      "id": "video_cta_url",
+      "label": "Video CTA Link"
+    },
+    {
+      "type": "radio",
+      "id": "video_cta_pos",
+      "label": "Video CTA Position",
+      "options": [
+        {
+          "value": "cta-1",
+          "label": "CTA 1 (Left)"
+        },
+        {
+          "value": "cta-2",
+          "label": "CTA 2 (Right)"
+        }
+      ],
+      "default": "cta-1"
+    },
+    {
+      "type": "select",
+      "id": "video_cta_type",
+      "label": "Video CTA Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button button--primary"
+        },
+        {
+          "label": "Primary Dark",
+          "value": "button button--primary-invert"
+        },
+        {
+          "label": "Secondary",
+          "value": "button button--secondary"
+        },
+        {
+          "label": "Secondary Dark",
+          "value": "button button--secondary-invert"
+        }
+      ],
+      "default": "button button--primary-invert"
+    },
+    {
+      "type": "header",
+      "content": "Form CTA",
+      "info": "Form will display on modal. The Video has priority over the Form. They can't happen both at the same time."
+    },
+    {
+      "type": "text",
+      "id": "form_cta_text",
+      "label": "Form CTA Text",
+      "default": "Complete Form"
+    },
+    {
+      "type": "text",
+      "id": "form_id",
+      "label": "Form ID (Hulk)"
+    },
+    {
+      "type": "radio",
+      "id": "form_cta_pos",
+      "label": "Form CTA Position",
+      "options": [
+        {
+          "value": "cta-1",
+          "label": "CTA 1 (Left)"
+        },
+        {
+          "value": "cta-2",
+          "label": "CTA 2 (Right)"
+        }
+      ],
+      "default": "cta-1"
+    },
+    {
+      "type": "select",
+      "id": "form_cta_type",
+      "label": "Form CTA Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button button--primary"
+        },
+        {
+          "label": "Primary Dark",
+          "value": "button button--primary-invert"
+        },
+        {
+          "label": "Secondary",
+          "value": "button button--secondary"
+        },
+        {
+          "label": "Secondary Dark",
+          "value": "button button--secondary-invert"
+        }
+      ],
+      "default": "button button--primary-invert"
+    },
+    {
+      "type": "header",
+      "content": "Content Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "logo_size",
+      "min": 100,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo Size",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "content_text_color",
+      "label": "Content Text Color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "content_bg_color",
+      "label": "Content BG Color",
+      "default": "#3D3935"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text Alignment",
+      "options": [
+        {
+          "label": "Left",
+          "value": "text-left"
+        },
+        {
+          "label": "Center",
+          "value": "text-center"
+        }
+      ],
+      "default": "text-left"
+    },
+    {
+      "type": "select",
+      "id": "content_align_desktop",
+      "label": "Content Alignment - Desktop",
+      "options": [
+        {
+          "label": "Left",
+          "value": "justify-start"
+        },
+        {
+          "label": "Center",
+          "value": "justify-center"
+        },
+        {
+          "label": "Right",
+          "value": "justify-end"
+        }
+      ],
+      "default": "justify-start"
+    },
+    {
+      "type": "select",
+      "id": "content_align_mobile",
+      "label": "Content Alignment - Mobile",
+      "options": [
+        {
+          "label": "Media Top / Content Bottom",
+          "value": "order-last"
+        },
+        {
+          "label": "Media Bottom / Content Top",
+          "value": "order-first"
+        },
+        {
+          "label": "Content Inside Media",
+          "value": "absolute inset-0 h-full p-6"
+        }
+      ],
+      "default": "order-last"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_content",
+      "label": "Hide Content",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Mobile",
+      "default": 0
+    }
+  ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "hero-value-prop",
+      "name": "Hero Value Prop",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "prop_img",
+          "label": "Brand Value Icon"
+        },
+        {
+          "type": "text",
+          "id": "prop_label",
+          "label": "Brand Value Label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero - Full-Width"
+    }
+  ]
+}
+{% endschema %}

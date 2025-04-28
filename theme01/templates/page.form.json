@@ -1,0 +1,258 @@
+{
+  "sections": {
+    "image_text_jMC3jG": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/WHATS_YOUR_LEGACY.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/WHATS_YOUR_LEGACY_661aecb0-b081-4694-b8fb-ac122df7ad54.jpg",
+        "video_url": "",
+        "subheading": "",
+        "heading": "<h2>TELL US YOUR LEGACY<\/h2><h2><\/h2>",
+        "copy": "<p>We all have different hunting stories that have made us who we are today and also made us want to share these experiences with our loved ones! Whether it was the difficulty of the hunt, the company you were with, your child's first hunt, the location, or whatever the reason is, we want to hear all about your hunt legacy!<\/p>",
+        "cta_text_1": "TELL US TODAY",
+        "cta_url_1": "https:\/\/kpil8mhop73.typeform.com\/to\/DLjTPSqo",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_hBUedK": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Package_img_0f380581-b8fc-4ea4-b15d-4b9bc44fa4de.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Package_img_48d0fd93-a9bc-4258-b786-639ddd4ff5f4.jpg",
+        "video_url": "",
+        "subheading": "GEAR PACKAGE",
+        "heading": "<h2>WHATS INCLUDED<\/h2>",
+        "copy": "<ul><li>CUSTOM GUNWERKS 6.5 PRC \/\/ $5,975<\/li><li>REVIC ACURA RS25i SCOPE \/\/ $2,195<\/li><li>REVIC BLR10b BINOCULARS \/\/ $2,700 <\/li><li>SITKA INTERCEPT PANTS \/\/ $289<\/li><li>SITKA CORE LIGHTWEIGHT HOODIE \/\/ $129<\/li><li>SITKA AMBIENT 100 JACKET \/\/ $299<\/li><li>SITKA TRAVERSE HAT \/\/ $35<\/li><li>SITKA OPTICS HARNESS \/\/ $159<\/li><li>WHITELABEL SUPPS AND GEAR \/\/ $500<\/li><\/ul>",
+        "cta_text_1": "GET ENTERED",
+        "cta_url_1": "#form",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "pro_discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "two_three_up_wfCEAa": {
+      "type": "two-three-up",
+      "blocks": {
+        "up_block_MypQWY": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/hunt-legacy-lifestyle3.jpg",
+            "description": "",
+            "cta_text": "",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_t8adTq": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/hunt-legacy-lifestyle2.jpg",
+            "description": "",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_Xe4Va9": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/hunt-legacy-lifestyle.jpg",
+            "description": "",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_MypQWY",
+        "up_block_t8adTq",
+        "up_block_Xe4Va9"
+      ],
+      "custom_css": [
+        ".before\\:bg-white:before {background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0);}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "copy": "",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-black text-white",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1dc84725-ecba-489d-9a9c-6fe0b9f737ff": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-1": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>LODGING<\/h4><p>Staying at gorgias Perennial Outfitting Lodge<\/p><p><\/p>"
+          }
+        },
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-2": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>TRAVEL<\/h4><p>Plane ticket to San Antonio Airport and taxi to property<\/p>"
+          }
+        },
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-3": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>FOOD<\/h4><p>Everything you'll need to keep you fueled up on your hunt<\/p>"
+          }
+        },
+        "brand_value_callout_UM3Ugz": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h4>HUNTING TAG<\/h4><p>Wouldn't be a giveaway with out the tag to hunt these gorgeous deer<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-1",
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-2",
+        "template--14974455971882__1dc84725-ecba-489d-9a9c-6fe0b9f737ff-brand-value-callout-3",
+        "brand_value_callout_UM3Ugz"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h1>What's Included<\/h1>",
+        "image_desktop": "shopify:\/\/shop_images\/axis_scouting.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/axis_scouting.jpg",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 50,
+        "bottom_margin_mobile": 20
+      }
+    },
+    "hero_section_qeNYrm": {
+      "type": "hero-section",
+      "custom_css": [
+        ".hero-content {background-color: rgba(0, 0, 0, 0);}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/lose_weight.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 360,
+        "media_height_mobile": 240,
+        "subheading": "",
+        "heading": "",
+        "copy": "",
+        "cta_text_1": "",
+        "cta_url_1": "shopify:\/\/pages\/giveaway-terms-and-conditions",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "image_text_jMC3jG",
+    "image_text_hBUedK",
+    "two_three_up_wfCEAa",
+    "1dc84725-ecba-489d-9a9c-6fe0b9f737ff",
+    "hero_section_qeNYrm"
+  ]
+}

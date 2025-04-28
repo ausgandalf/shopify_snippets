@@ -1,0 +1,150 @@
+.general-content__hero::before {
+  @apply content-[''] block relative pt-[62%] lg:pt-[22.9%];
+}
+
+.general-content__hero::after {
+  @apply content-[''] block absolute top-0 left-0 w-full h-full bg-blackest;
+}
+
+.general-content__hero img {
+  @apply absolute top-0 left-0 w-full h-full object-cover;
+}
+
+.general-content__nav-item a {
+  @apply caps-regular relative no-underline block py-3.5 pl-8 text-color-2;
+}
+
+.general-content__nav-item a:before {
+  @apply content-[""] absolute bg-page-nav-arrow bg-no-repeat w-6 h-4 left-0 top-1/2 -translate-y-1/2 -translate-x-full opacity-0 transition-all;
+}
+
+.general-content__nav-item.active a,
+.general-content__nav-item a:hover {
+  @apply text-black;
+}
+
+.general-content__nav-item.active a::before,
+.general-content__nav-item a:hover::before {
+  @apply translate-x-0 opacity-100;
+}
+
+.general-content__mobile-nav select {
+  @apply border-0 border-b text-xs font-bold uppercase w-full bg-select-arrow-nav text-blackest;
+}
+
+.rte h1,
+.rte h2,
+.rte h3,
+.rte h4,
+.rte h5,
+.rte h6,
+.rte .iframe-container,
+.rte img,
+.rte p,
+.rte small,
+.rte ul,
+.rte ol {
+  @apply mb-4 lg:mb-5;
+}
+
+.rte h1 > *,
+.rte h2 > *,
+.rte h3 > *,
+.rte h4 > *,
+.rte h5 > *,
+.rte h6 > *,
+.rte small > * {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+.rte h1:empty,
+.rte h2:empty,
+.rte h3:empty,
+.rte h4:empty,
+.rte h5:empty,
+.rte h6:empty,
+.rte p:empty,
+.rte small:empty,
+.rte blockquote:empty,
+.rte a:empty,
+.rte div:empty,
+.rte span:empty {
+  @apply hidden;
+}
+
+.rte h1:only-child,
+.rte h2:only-child,
+.rte h3:only-child,
+.rte h4:only-child,
+.rte h5:only-child,
+.rte h6:only-child,
+.rte p:only-child,
+.rte small:only-child,
+.rte blockquote:only-child,
+.rte a:only-child,
+.rte div:only-child,
+.rte span:only-child,
+.rte h1:last-child,
+.rte h2:last-child,
+.rte h3:last-child,
+.rte h4:last-child,
+.rte h5:last-child,
+.rte h6:last-child,
+.rte p:last-child,
+.rte small:last-child,
+.rte blockquote:last-child,
+.rte a:last-child,
+.rte div:last-child,
+.rte span:last-child {
+  @apply mb-0;
+}
+
+.rte blockquote {
+  @apply mb-8 lg:mb-14;
+}
+
+.rte blockquote > * {
+  @apply mb-5 last:mb-0;
+}
+
+.rte .iframe-container {
+  @apply relative before:pt-[56%] before:w-full before:block;
+}
+
+.rte .iframe-container iframe {
+  @apply absolute top-0 left-0 w-full h-full max-w-full;
+}
+
+.rte small {
+  @apply mt-3 block text-xs;
+}
+
+.rte img {
+  @apply w-full;
+}
+
+.rte ol {
+  counter-reset: list-counter;
+}
+
+.rte ol li,
+.rte ul li {
+  @apply mb-5 relative list-none;
+}
+
+.rte ol li {
+  counter-increment: list-counter;
+}
+
+.rte ol li::before {
+  content: counter(list-counter) '.';
+  @apply font-tertiary text-sm inline-block mr-6 align-middle;
+}
+
+.rte ul li::before {
+  @apply content-[''] w-1.5 h-1.5 bg-currentColor inline-block mr-8 align-middle;
+}

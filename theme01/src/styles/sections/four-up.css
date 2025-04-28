@@ -1,0 +1,105 @@
+.four-up {
+  @apply py-12 lg:py-[4.5rem];
+}
+
+.four-up-grid {
+  @apply grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6 lg:gap-x-6;
+}
+.four-up-grid.two-stack {
+  @apply lg:grid-cols-2;
+}
+.four-up-grid.four-column {
+  @apply lg:grid-cols-4;
+}
+.four-up-item {
+  @apply relative flex flex-col py-6 hover:before:border-color-1;
+}
+
+.four-up-item::before {
+  @apply content-[''] block absolute top-0 bottom-0 left-0 w-full border-l-[5px];
+}
+
+.two-stack .four-up-item.has-media {
+  @apply lg:pl-[10.5rem];
+}
+.four-up-item.has-media::before {
+  @apply top-[10rem]; 
+}
+.two-stack .four-up-item.has-media::before {
+  @apply lg:top-0;
+}
+.four-up-item-wrapper {
+  @apply px-4 md:pl-0;
+}
+.two-stack .four-up-item-wrapper {
+  @apply lg:pl-[6.25rem];
+}
+.four-up-item-wrapper.swiper-slide {
+  height: auto;
+}
+.four-up-item-image {
+  @apply relative w-full mb-2 lg:mb-3 z-[2];
+}
+.two-stack .four-up-item-image {
+  @apply lg:absolute lg:left-[-6.25rem] lg:w-[16.75rem] lg:top-[50%] lg:translate-y-[-50%];
+}
+.four-up-slider .four-up-item-image {
+  @apply aspect-[1/1];
+}
+.two-stack .four-up-item-image {
+  @apply aspect-[3/2] md:aspect-auto;
+}
+
+.four-column .four-up-item-image {
+  @apply aspect-[3/2] md:aspect-auto;
+}
+
+.four-up-item-image img {
+  @apply absolute inset-0 w-full h-full object-contain md:relative;
+}
+
+.four-up-item-description {
+  @apply flex-grow px-4 mb-4 lg:mb-6 z-1 ml-[5px];
+}
+
+.two-stack .four-up-item-description {
+  @apply lg:px-[1.5rem];
+}
+
+.four-up-item-description > * {
+  @apply mb-2 lg:mb-4 last:mb-0;
+}
+
+.four-up-item-description h1,
+.four-up-item-description h2,
+.four-up-item-description h3 {
+  @apply uppercase;
+}
+
+.four-up-item-description ul {
+  @apply list-disc text-sm leading-normal pl-6;
+}
+
+.four-up-item-price {
+  @apply px-4 z-1 -mt-2 mb-4 lg:mb-6 ml-[5px];
+}
+.two-stack .four-up-item-price {
+  @apply lg:px-[1.5rem];
+}
+
+.four-up-item-cta {
+  @apply px-4 z-1 w-full;
+}
+
+.two-stack .four-up-item-cta {
+  @apply lg:px-[1.5rem];
+}
+
+
+.four-up-item-cta .button {
+  @apply h-[3.75rem] flex items-center justify-center;
+}
+
+.four-up-item-cta .button {
+  @apply min-w-0 w-[270px] max-w-full;
+}

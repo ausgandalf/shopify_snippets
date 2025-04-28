@@ -1,0 +1,450 @@
+{
+  "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {
+      }
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "settings": {
+        "flavor_layout": "box",
+        "button_unavailable_label": "Not Offered",
+        "unavailable_message": "We're sorry, this combination of options does not exist for this product. Please update your selections.",
+        "first_open": true,
+        "first_accordion_label": "About This Product",
+        "second_accordion_label": "Product Facts",
+        "third_accordion_label": "Benefits",
+        "fourth_accordion_label": "Recommended usage",
+        "fifth_accordion_label": "Highlights",
+        "sixth_accordion_label": "Materials & Specs",
+        "bottom_margin_mobile": 40,
+        "bottom_margin_desktop": 70
+      }
+    },
+    "1697740467f5b4aa8a": {
+      "type": "apps",
+      "blocks": {
+        "5a1da1af-e278-4178-b46c-ba37e0b0574a": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "113719",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "5a1da1af-e278-4178-b46c-ba37e0b0574a"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16976493533f45d012": {
+      "type": "apps",
+      "blocks": {
+        "6022ee10-81ec-49df-b531-3e5a6456fe3f": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "109551",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "6022ee10-81ec-49df-b531-3e5a6456fe3f"
+      ],
+      "settings": {
+      }
+    },
+    "faq_accordions_FBkgF7": {
+      "type": "faq-accordions",
+      "blocks": {
+        "faq_accordion_DXthcr": {
+          "type": "faq-accordion",
+          "repeater": "{{ product.metafields.custom.faq_accordions.value }}",
+          "settings": {
+            "faq_question": "{{ block.repeater.question | metafield_tag }}",
+            "faq_answer": "{{ block.repeater.answer | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "faq_accordion_DXthcr"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "{{ product.metafields.custom.faq_accordions_title | metafield_tag }}",
+        "cta_text": "{{ product.metafields.custom.faq_accordions_cta_text.value }}",
+        "cta_url": "{{ product.metafields.custom.faq_accordions_cta_link.value }}",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-black_text-white",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "c71713aa-ade2-4b88-b42d-8aecd6b69474": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "template--14974455611434__c71713aa-ade2-4b88-b42d-8aecd6b69474-brand-value-logo-1": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/OWNERSHIP-VALUE_12627b0a-4994-4609-9623-f61660794008.png",
+            "logo_link": "",
+            "logo_label": "<p>Performance-Backed<\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--14974455611434__c71713aa-ade2-4b88-b42d-8aecd6b69474-brand-value-logo-2": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/GRATITUDE-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<p>Faith-Based<\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--14974455611434__c71713aa-ade2-4b88-b42d-8aecd6b69474-brand-value-logo-3": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/GOLDEN-RULE-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<p>Trustworthy<\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--14974455611434__c71713aa-ade2-4b88-b42d-8aecd6b69474-brand-value-logo-4": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/OPPORTUNITY-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<p>Service-Driven<\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "template--14974455611434__c71713aa-ade2-4b88-b42d-8aecd6b69474-brand-value-logo-1",
+        "template--14974455611434__c71713aa-ade2-4b88-b42d-8aecd6b69474-brand-value-logo-2",
+        "template--14974455611434__c71713aa-ade2-4b88-b42d-8aecd6b69474-brand-value-logo-3",
+        "template--14974455611434__c71713aa-ade2-4b88-b42d-8aecd6b69474-brand-value-logo-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>made for the mountain. made for you.<\/h2>",
+        "cta_text": "",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "071a0741-0542-46e1-8cf4-18693f125725": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--14974455611434__071a0741-0542-46e1-8cf4-18693f125725-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Vanquish_Hoodie_-_Gym_Lifestyle-14.jpg",
+            "description": "<h3>TRAIN INSIDE<\/h3><p>You know those moments when you think you're done and can't go any further? That's where we come in. One more set. One more rep. One more life changed. Fuel your workouts with WHITELABEL. <\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--14974455611434__071a0741-0542-46e1-8cf4-18693f125725-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/contact-bg.webp",
+            "description": "<h3>CONQUER OUTSIDE<\/h3><p>Performance knows no boundaries. Whether you're packing out a bull or on a casual hike, our products are made to do one thing: make that experience unforgettable.<\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--14974455611434__071a0741-0542-46e1-8cf4-18693f125725-up-block-1",
+        "template--14974455611434__071a0741-0542-46e1-8cf4-18693f125725-up-block-2"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>CONQUER MORE<\/h2>",
+        "copy": "<p>Each WHITELABEL product is carefully designed to support performance in every capacity.<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "9ec1a9d5-bcf3-4309-a4cc-256618126658": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "template--14974455611434__9ec1a9d5-bcf3-4309-a4cc-256618126658-brand-value-callout-1": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/Asset_6.svg",
+            "description": "<h6>Performance-Backed<\/h6><p>Our products are made to help you perform at your absolute best, day in and day out. <\/p>"
+          }
+        },
+        "template--14974455611434__9ec1a9d5-bcf3-4309-a4cc-256618126658-brand-value-callout-2": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/Asset_8.svg",
+            "description": "<h6>Faith-Based<\/h6><p>We always put God first in our mission so we can spread joy to a world that needs it.<\/p>"
+          }
+        },
+        "template--14974455611434__9ec1a9d5-bcf3-4309-a4cc-256618126658-brand-value-callout-3": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/TrustPromise.svg",
+            "description": "<h6><strong>Guarantee<\/strong><\/h6><p>We stand by our products and put our money where our mouth is. Our customers are everything.<\/p>"
+          }
+        },
+        "template--14974455611434__9ec1a9d5-bcf3-4309-a4cc-256618126658-brand-value-callout-4": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "icon_img": "shopify:\/\/shop_images\/Asset_9.svg",
+            "description": "<h6>Mission-Driven<\/h6><p>Through operation Conquer Hunger, each purchase donates a meal to a community and child in need. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14974455611434__9ec1a9d5-bcf3-4309-a4cc-256618126658-brand-value-callout-1",
+        "template--14974455611434__9ec1a9d5-bcf3-4309-a4cc-256618126658-brand-value-callout-2",
+        "template--14974455611434__9ec1a9d5-bcf3-4309-a4cc-256618126658-brand-value-callout-3",
+        "template--14974455611434__9ec1a9d5-bcf3-4309-a4cc-256618126658-brand-value-callout-4"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Our Promise<\/h2>",
+        "image_desktop": "shopify:\/\/shop_images\/brandvaluecallout.jpg",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "33a20497-b359-4050-a15a-a55e2ea0f4be": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Conquer_Hunger_August_2019_edited_photo_17_b608b2a0-d618-4302-a528-44f3b81da1fe.jpg",
+        "video_url": "https:\/\/youtu.be\/dvikgLar9iw",
+        "subheading": "Fighting Food Insecurity",
+        "heading": "<h2>Operation Conquer Hunger<\/h2>",
+        "copy": "<p>Did you know 1 in 8 children in our local communities go to bed hungry? Learn more about how we're combating food insecurity in our own backyards.<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "16956680304ce2d885": {
+      "type": "apps",
+      "blocks": {
+        "e4221b46-6e83-4b0f-9745-868e211d9778": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "e4221b46-6e83-4b0f-9745-868e211d9778"
+      ],
+      "settings": {
+      }
+    },
+    "cd812d74-65a4-4ecd-a2e4-24bc8468b2c6": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "template--14974455611434__cd812d74-65a4-4ecd-a2e4-24bc8468b2c6-brand-value-logo-1": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_link": "",
+            "logo_label": "<p>Logo label<\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--14974455611434__cd812d74-65a4-4ecd-a2e4-24bc8468b2c6-brand-value-logo-2": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_link": "",
+            "logo_label": "<p>Logo label<\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--14974455611434__cd812d74-65a4-4ecd-a2e4-24bc8468b2c6-brand-value-logo-3": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_link": "",
+            "logo_label": "<p>Logo label<\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "template--14974455611434__cd812d74-65a4-4ecd-a2e4-24bc8468b2c6-brand-value-logo-4": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_link": "",
+            "logo_label": "<p>Logo label<\/p>",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "template--14974455611434__cd812d74-65a4-4ecd-a2e4-24bc8468b2c6-brand-value-logo-1",
+        "template--14974455611434__cd812d74-65a4-4ecd-a2e4-24bc8468b2c6-brand-value-logo-2",
+        "template--14974455611434__cd812d74-65a4-4ecd-a2e4-24bc8468b2c6-brand-value-logo-3",
+        "template--14974455611434__cd812d74-65a4-4ecd-a2e4-24bc8468b2c6-brand-value-logo-4"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>Catch Us on Social<\/h2>",
+        "cta_text": "",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "f8486224-dd85-499b-b4db-ce7669d8d122": {
+      "type": "basic-html",
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "html_code": "<!-- LightWidget WIDGET --><script src=\"https:\/\/cdn.lightwidget.com\/widgets\/lightwidget.js\"><\/script><iframe src=\"\/\/lightwidget.com\/widgets\/783636499fb75cabb7d4fef67c5ec27c.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"><\/iframe>",
+        "full_width": true,
+        "content_align": "justify-center",
+        "bottom_margin_desktop": 48,
+        "bottom_margin_mobile": 32
+      }
+    },
+    "48277208-0c37-42de-a165-b11c37819388": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/App-Lifestyle-Mockup_7533bd6c-0f76-443a-b1f4-03a10e686518.jpg",
+        "video_url": "",
+        "subheading": "Stay connected",
+        "heading": "<h2>download our app<\/h2>",
+        "copy": "<p>Take the power of OPS to the palm of your hands with the WHITELABEL App - available on iOS and Android devices<\/p>",
+        "cta_text_1": "APPLE iOS",
+        "cta_url_1": "https:\/\/apps.apple.com\/ar\/app\/whitelabel\/id1606243485?l=en-GB",
+        "cta_type_1": "button button--secondary",
+        "cta_text_2": "ANDROID",
+        "cta_url_2": "https:\/\/play.google.com\/store\/apps\/details?id=co.tapcart.app.id_ztV3PEIvST&pcampaignid=web_share",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": false,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 48,
+        "bottom_margin_mobile": 32
+      }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "shogun-helper",
+    "shogun-above",
+    "main-product",
+    "1697740467f5b4aa8a",
+    "16976493533f45d012",
+    "faq_accordions_FBkgF7",
+    "c71713aa-ade2-4b88-b42d-8aecd6b69474",
+    "071a0741-0542-46e1-8cf4-18693f125725",
+    "9ec1a9d5-bcf3-4309-a4cc-256618126658",
+    "33a20497-b359-4050-a15a-a55e2ea0f4be",
+    "16956680304ce2d885",
+    "cd812d74-65a4-4ecd-a2e4-24bc8468b2c6",
+    "f8486224-dd85-499b-b4db-ce7669d8d122",
+    "48277208-0c37-42de-a165-b11c37819388",
+    "shogun-below"
+  ]
+}

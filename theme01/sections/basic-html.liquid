@@ -1,0 +1,110 @@
+{% liquid
+  assign section_custom_id = section.settings.section_custom_id
+  assign heading = section.settings.heading
+  assign html_code = section.settings.html_code
+  assign full_width = section.settings.full_width
+  assign content_align = section.settings.content_align
+%}
+
+{%- if html_code != blank -%}
+  <div
+    {% if section_custom_id != blank %}
+      id='{{ section_custom_id }}'
+    {% endif %}
+    class='basic-html w-full{% unless full_width %} container{% else %} px-4 lg:px-8{% endunless %}'
+  >
+    <div class='flex flex-wrap {{ content_align }} pt-14'>
+      {%- if heading != blank -%}
+        <div class='basic-html-heading w-full text-center mb-8 lg:mb-16 rte'>{{- heading -}}</div>
+      {%- endif -%}
+      {{- html_code -}}
+    </div>
+  </div>
+{%- endif -%}
+
+{%- render 'spacer', _mobile_space: section.settings.bottom_margin_mobile, _desktop_space: section.settings.bottom_margin_desktop -%}
+
+{% schema %}
+{
+  "name": "Basic HTML",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Optional. Please use only one H1 per page and then use H2 for the content below the fold."
+    },
+    {
+      "type": "html",
+      "id": "html_code",
+      "label": "HTML Code"
+    },
+    {
+      "type": "header",
+      "content": "Content Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "content_align",
+      "label": "Content Alignment",
+      "options": [
+        {
+          "value": "justify-start",
+          "label": "Left Align"
+        },
+        {
+          "value": "justify-center",
+          "label": "Center Align"
+        }
+      ],
+      "default": "justify-center"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Mobile",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Basic HTML"
+    }
+  ]
+}
+{% endschema %}

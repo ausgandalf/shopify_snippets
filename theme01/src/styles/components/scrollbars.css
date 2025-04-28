@@ -1,0 +1,32 @@
+.scrollbar {
+  @apply overflow-x-auto;
+}
+
+.scrollbar::-webkit-scrollbar {
+  @apply h-1 w-1;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-grey-8;
+}
+
+.scrollbar::-webkit-scrollbar-track-piece {
+  @apply bg-grey-1;
+}
+
+.scrollbar--white::-webkit-scrollbar-track-piece {
+  @apply bg-opacity-0;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
+.snap-mandatory {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.snap-center {
+  scroll-snap-align: center;
+}

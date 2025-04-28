@@ -1,0 +1,266 @@
+{%- liquid
+  assign section_custom_id = section.settings.section_custom_id
+  assign heading = section.settings.heading
+  assign cta_text = section.settings.cta_text
+  assign cta_url = section.settings.cta_url
+  assign cta_type = section.settings.cta_type
+
+  assign full_width = section.settings.full_width
+  assign color_scheme = section.settings.color_scheme
+  assign colors = color_scheme | split: '_'
+  assign text_color = colors[1]
+  assign bg_color = colors[0]
+-%}
+
+{% if section.blocks.size > 0 %}
+  <div
+    {% if section_custom_id != blank %}
+      id='{{ section_custom_id }}'
+    {% endif %}
+    class='w-full{% unless full_width %} container{% endunless %}'
+  >
+    <div class='brand-value-logo {{ bg_color }} {{ text_color }}' data-brand-value-logo>
+      {% if heading != blank %}
+        <div class='uppercase mb-12 lg:mb-16'>{{- heading -}}</div>
+      {% endif %}
+
+      <div class='max-w-[60rem] {% if section.blocks.size > 4 %}inline-grid grid-cols-2 md:grid-cols-4{% else %}mx-auto flex justify-center{% endif %} gap-x-4 gap-y-6 lg:gap-x-[3.75rem] lg:gap-y-16'>
+        {% assign logo_count = 0 %}
+        {% for block in section.blocks %}
+          {%- liquid
+            assign logo_img = block.settings.logo_img
+            assign logo_link = block.settings.logo_link | default: 'javascript:void(0)'
+            assign logo_label = block.settings.logo_label
+            assign logo_label_p_style = block.settings.logo_label_p_style
+          -%}
+
+          {% if logo_img != blank %}
+            {% assign logo_count = logo_count | plus: 1 %}
+            <div
+              class='flex lg:flex flex-col items-center gap-y-3 lg:gap-y-6{% if logo_count > 8 %} hidden{% endif %}'
+              data-brand-value-logo-item
+            >
+              <a
+                href='{{- logo_link -}}'
+                class='max-w-[7.5rem] lg:max-w-[8.75rem] aspect-[2/1] flex items-center justify-center hover:opacity-50'
+              >
+                {%- capture widths -%}{{ logo_img.width }}, {{ logo_img.width | times: 1.5 | round }}, {{ logo_img.width | times: 2 }}{%- endcapture -%}
+                {%- capture sizes %}(max-width: {{ 240 | times: 2 }}px) 50vw, {{ 240 }}px{% endcapture -%}
+
+                {{ logo_img | image_url: width: 240 | image_tag: width: logo_img.width, sizes: sizes, alt: logo_img.alt, widths: widths }}
+              </a>
+              {% if logo_label != blank %}
+                <div class='brand-value-logo-item-label rte{% if text_color == 'text-white' %} links-inverted{% endif %} {{ logo_label_p_style }}'>
+                  {{ logo_label }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class='text-center{% if cta_text != blank %} mt-8{% endif %}'>
+        {% if logo_count > 8 %}
+          <a
+            href='javascript:void(0)'
+            class='brand-value-logo-view-btn collapsed{% unless cta_text != blank %} mt-8{% endunless %}'
+            data-more-btn
+          >
+            <span class='brand-value-logo-view-btn__more'>View More +</span>
+            <span class='brand-value-logo-view-btn__less'>Show Less –</span>
+          </a>
+        {% endif %}
+      </div>
+      {% if cta_text != blank %}
+        <div class='w-full mt-10'>
+          <a href='{{- cta_url | default: 'javascript:void(0);' -}}' class='{{ cta_type }}'>{{- cta_text -}}</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  {%- render 'spacer', _mobile_space: section.settings.bottom_margin_mobile, _desktop_space: section.settings.bottom_margin_desktop -%}
+{% endif %}
+
+{% schema %}
+{
+  "name": "Brand Values / Logos",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Optional. Please use only one H1 per page and then use H2 for the content below the fold.",
+      "default": "<h2>Brand Values / Logos</h2>"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Text",
+      "default": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA URL"
+    },
+    {
+      "type": "select",
+      "id": "cta_type",
+      "label": "CTA Type",
+      "options": [
+        {
+          "label": "Primary",
+          "value": "button button--primary"
+        },
+        {
+          "label": "Primary Dark",
+          "value": "button button--primary-invert"
+        },
+        {
+          "label": "Secondary",
+          "value": "button button--secondary"
+        },
+        {
+          "label": "Secondary Dark",
+          "value": "button button--secondary-invert"
+        }
+      ],
+      "default": "button button--primary"
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "options": [
+        {
+          "label": "Light Mode",
+          "value": "bg-white_text-black"
+        },
+        {
+          "label": "Dark Mode",
+          "value": "bg-black_text-white"
+        },
+        {
+          "label": "Light Grey",
+          "value": "bg-grey-1_text-black"
+        }
+      ],
+      "default": "bg-white_text-black"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand-value-logo",
+      "name": "Brand Value Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo_img",
+          "label": "Logo (Image)"
+        },
+        {
+          "type": "url",
+          "id": "logo_link",
+          "label": "Logo Link"
+        },
+        {
+          "type": "richtext",
+          "id": "logo_label",
+          "label": "Logo Label",
+          "info": "Optional",
+          "default": "<p>Logo label</p>"
+        },
+        {
+          "type": "select",
+          "id": "logo_label_p_style",
+          "label": "Logo Label - Additional Paragraph Styles",
+          "info": "These are additional Paragraph styles available if the above Logo Label is using Paragraph text. Will not apply to styles H1-H6.",
+          "options": [
+            {
+              "label": "Paragraph Large",
+              "value": "p-lg"
+            },
+            {
+              "label": "Paragraph Normal",
+              "value": "p-nm"
+            },
+            {
+              "label": "Paragraph Small",
+              "value": "p-sm"
+            },
+            {
+              "label": "Paragraph XSmall",
+              "value": "p-xs"
+            }
+          ],
+          "default": "p-nm"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Values / Logos",
+      "blocks": [
+        {
+          "type": "brand-value-logo"
+        },
+        {
+          "type": "brand-value-logo"
+        },
+        {
+          "type": "brand-value-logo"
+        },
+        {
+          "type": "brand-value-logo"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,664 @@
+{
+  "sections": {
+    "hero_section_ryd9dU": {
+      "type": "hero-section",
+      "custom_css": [
+        ".hero-content {background-color: rgba(0, 0, 0, 0.56);}"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Hero-Desktop-Color.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Hero-Mobile-Color.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 720,
+        "media_height_mobile": 320,
+        "subheading": "OUTDOOR PERFORMANCE SUPPLEMENTS",
+        "heading": "<h2>TRAIN INSIDE <\/h2><h2>CONQUER OUTSIDE<\/h2>",
+        "copy": "<p>Our premium supplements enhance energy, endurance, and overall health, ensuring you conquer every day with confidence.<\/p>",
+        "cta_text_1": "SHOP SUPPLEMENTS",
+        "cta_url_1": "shopify:\/\/collections\/supplements",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "SHOP APPAREL",
+        "cta_url_2": "shopify:\/\/collections\/apparel",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#ffffff",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-last",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_X6ChWN": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/dale-brisby-ol-son-launch-hp.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/dale-brisby-ol-son-launch-hp_d891651b-792a-444e-b080-1a3c3da7fb62.jpg",
+        "video_url": "",
+        "subheading": "CAN WE GET A DALE YEAH!?",
+        "heading": "<h2>OL' SON SUPER PUNCH IGNITE<\/h2>",
+        "copy": "<p>Packed with the punch of a bucking wild bull and the flavor as smooth as the open range, this drink is sure to give you one heck of a good ol’ “RODEO TIME”!<\/p>",
+        "cta_text_1": "Button Label",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "ignite",
+        "featured_variant": "41132185747498",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "four_up_wb7Xr4": {
+      "type": "four-up",
+      "blocks": {
+        "up_block_hURHfi": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/yetisupplements1101670130-794046.png",
+            "description": "<h3>YETI<\/h3><p>Explosive Pre-Workout formula that gives you energy to take your performance to the extreme.  <\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "yeti",
+            "featured_variant": "40878169227306",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_WYdpYE": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/yeti-modesupplements1131670130-800121.png",
+            "description": "<h3>YETI MODE<\/h3><p>High-Stimulant Pre-Workout formula that gives you energy to go beyond the next level. <\/p>",
+            "cta_text": "Button label",
+            "cta_link": "",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "yeti-mode",
+            "featured_variant": "40943847473194",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_WLwGpk": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/base-muscle-gains-stack-485141_1.png",
+            "description": "<h3>GYM STACK<\/h3><ul><li>1 YETI <\/li><li>1 HYDRATE <\/li><li>1 MAGNUM <\/li><\/ul>",
+            "cta_text": "VIEW OPTIONS",
+            "cta_link": "https:\/\/mtnops.com\/products\/base-muscle-gains-stack",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-grey-1 text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "base-muscle-gains-stack",
+            "featured_variant": "41219303309354",
+            "atc_cta_text": "VIEW OPTIONS",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "up_block_FPwaxF": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/high-stim-gym-stack-290327.png",
+            "description": "<h3>NEXT LEVEL GYM STACK<\/h3><ul><li>1 YETI MODE <\/li><li>1 CREATINE <\/li><li>1 BCAA <\/li><li>1 MAGNUM<\/li><\/ul>",
+            "cta_text": "VIEW OPTIONS",
+            "cta_link": "https:\/\/mtnops.com\/products\/high-stim-gym",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "high-stim-gym",
+            "featured_variant": "",
+            "atc_cta_text": "VIEW OPTIONS",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "up_block_hURHfi",
+        "up_block_WYdpYE",
+        "up_block_WLwGpk",
+        "up_block_FPwaxF"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>4-Up <\/h2>",
+        "copy": "<p>Like a cold popsicle on a hot summer day. This best-selling flavor  is guaranteed to be your favorite way to keep you energized all summer long!⁣<\/p>",
+        "cta_text": "",
+        "cta_link": "",
+        "cta_type": "button button--secondary-invert",
+        "full_width": true,
+        "desktop_layout_style": "two-stack",
+        "mobile_layout_style": "slider",
+        "equal_height": true,
+        "color_scheme": "bg-black text-white",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 24
+      }
+    },
+    "f605cc38-c725-4cab-959b-8407709023ea": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/IGNITE_GYM_LIFESTYLE.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=AQ7YAAmH8TI&list=PLWLll_TUoOtgoWyaxis75Rp0RcaFCQe92&index=13",
+        "subheading": "OUR #1 PRODUCT",
+        "heading": "<h2>IGNITE<\/h2>",
+        "copy": "<p>Are you feeling drained and unfocused in your daily routine? MTN OPS Ignite is the solution you need. Ignite boosts energy, focus, and endurance, giving you the energy you need to conquer your everyday life.<\/p><ul><li>200mg Caffeine<\/li><li>Energy Boost<\/li><li>Mental Focus<\/li><li>Supercharged Performance<\/li><li>Nitric Oxide Production<\/li><\/ul>",
+        "cta_text_1": "BUY IGNITE",
+        "cta_url_1": "shopify:\/\/products\/ignite",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "hydrate-hydration-sampler",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": false,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-last",
+        "content_align_mobile": "order-first",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "334581f6-1a3f-4dde-9558-c2a044ec8946": {
+      "type": "two-three-up",
+      "blocks": {
+        "2c3c9c39-2b9c-4d4c-9195-8ff9cbeb0e4f": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Homepage-3Up-BuildMuscle.jpg",
+            "description": "<h3>BUILD MUSCLE<\/h3>",
+            "cta_text": "SHOP NOW",
+            "cta_link": "shopify:\/\/collections\/gym-supplements",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "ammo",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary-invert"
+          }
+        },
+        "d4879817-c210-404b-8c5e-90b6d02e1abe": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Homepage-3Up-LoseWeight.jpg",
+            "description": "<h3>LOSE WEIGHT<\/h3>",
+            "cta_text": "SHOP NOW",
+            "cta_link": "shopify:\/\/collections\/weight-loss-products",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "46f7a960-fb73-46ab-80ea-62359bb8a61e": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/Homepage-3Up-Wellness.jpg",
+            "description": "<h3>DAILY HEALTH<\/h3>",
+            "cta_text": "SHOP NOW",
+            "cta_link": "shopify:\/\/collections\/everyday-supplements",
+            "cta_type": "button button--primary-invert",
+            "color_scheme": "before:bg-black text-white",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "2c3c9c39-2b9c-4d4c-9195-8ff9cbeb0e4f",
+        "d4879817-c210-404b-8c5e-90b6d02e1abe",
+        "46f7a960-fb73-46ab-80ea-62359bb8a61e"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h3>Shop by Fitness Goal<\/h3>",
+        "copy": "",
+        "cta_text": "Shop All",
+        "cta_link": "\/collections\/all",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_text_hhGwED": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/rush-teeshirt8206007801-953699.jpg",
+        "video_url": "",
+        "subheading": "SPRING GEAR",
+        "heading": "<h2>ALL NEW GEAR<\/h2>",
+        "copy": "<p>Spring is right around the corner and that means Fresh New MTN OPS Apparel & Gear! Get em while their hot!<\/p>",
+        "cta_text_1": "CHECK IT OUT!",
+        "cta_url_1": "shopify:\/\/collections\/new-gear",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 30
+      }
+    },
+    "image_text_P7NFRp": {
+      "type": "image-text",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "video_url": "",
+        "subheading": "Subheading",
+        "heading": "<h2>LIBERTY POP<\/h2><h5>All-New Limited-Edition Flavor<\/h5>",
+        "copy": "<p>MTN OPS YETI  and YETI MODE now available in this delicious patriotic flavor! Grab a bottle for yourself before it's gone<\/p>",
+        "cta_text_1": "Button Label",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary",
+        "cta_text_2": "Button Label",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#241e18",
+        "content_bg_color": "#f7f7f7",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "f35b5118-9cb9-493d-ba62-fdf3c67fa75e": {
+      "type": "image-text",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Text_CTA_-_ConquerHunger-Desktop_93d844e1-2780-45da-af19-6b20200ab272.jpg",
+        "video_url": "https:\/\/youtu.be\/dvikgLar9iw",
+        "subheading": "",
+        "heading": "<h2>Operation Conquer Hunger<\/h2><h5>Every Order = 1 Meal<\/h5>",
+        "copy": "<p>In everything we do, we improve the lives of individuals and families. That is why we donate one meal for every order placed through our website.<\/p>",
+        "cta_text_1": "Learn More",
+        "cta_url_1": "shopify:\/\/pages\/conquer-hunger-qa",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary",
+        "featured_product": "",
+        "featured_variant": "",
+        "atc_cta_text": "Add to Cart",
+        "atc_cta_type": "button button--primary",
+        "atc_cta_pos": "cta-1",
+        "discount_style": "bg-color-2 text-white",
+        "free_product": false,
+        "free_product_message": "FREE",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "content_text_color": "#f7f7f7",
+        "content_bg_color": "#241e18",
+        "text_align": "text-left",
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "bottom_margin_desktop": 50,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "db277925-bf27-4482-9a4c-f2ee4bbcb5d4": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "102917e9-588a-45f6-9227-4b069c45b5ed": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo01.png",
+            "logo_link": "shopify:\/\/pages\/store-locator",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "5f6fa832-6d8b-4b4f-a529-79eec1e89086": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo02.png",
+            "logo_link": "shopify:\/\/pages\/store-locator",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "ef0ad40e-deb4-4691-a582-bf5a46b8311a": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo05.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "e8e3bed0-7d3b-4470-8011-a299610de2b9": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo06.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "6bca4a70-219f-4a57-a71b-6c3ed25715d6": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo04.png",
+            "logo_link": "shopify:\/\/pages\/store-locator",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "3972b851-66dd-42a5-99c0-00c778ee635b": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo03.png",
+            "logo_link": "shopify:\/\/pages\/store-locator",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "ebbbdc3b-7d17-40ae-bcbe-2513bf41e896": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/MeatEaterLogo-Black.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "ec63b6a8-2df4-47c3-80ef-7ece383664da": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/MURDOCH_SLOGO.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "7ce7af3e-0954-4143-b976-526e55f1ef0e": {
+          "type": "brand-value-logo",
+          "disabled": true,
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo07.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "8d21b006-e7d5-4570-ae72-fb6b7245cb4f": {
+          "type": "brand-value-logo",
+          "disabled": true,
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo02.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "da6a6e0b-2e61-4ce0-b552-e8ff96e3a580": {
+          "type": "brand-value-logo",
+          "disabled": true,
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo03.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "00aa8613-05e2-48de-bdaa-ce501ff481d7": {
+          "type": "brand-value-logo",
+          "disabled": true,
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo04.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "0b26763f-f70f-446f-a0c6-39eca3927e13": {
+          "type": "brand-value-logo",
+          "disabled": true,
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo05.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "e1f93dc1-b985-4e9f-83d4-2a8bbfb7c20a": {
+          "type": "brand-value-logo",
+          "disabled": true,
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo06.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "2a16dc35-7345-40e8-b50f-4dde57c7e087": {
+          "type": "brand-value-logo",
+          "disabled": true,
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo07.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        },
+        "0ad26668-be40-4eeb-a393-08c8f7ec4c25": {
+          "type": "brand-value-logo",
+          "disabled": true,
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/logo01.png",
+            "logo_link": "#",
+            "logo_label": "",
+            "logo_label_p_style": "p-nm"
+          }
+        }
+      },
+      "block_order": [
+        "102917e9-588a-45f6-9227-4b069c45b5ed",
+        "5f6fa832-6d8b-4b4f-a529-79eec1e89086",
+        "ef0ad40e-deb4-4691-a582-bf5a46b8311a",
+        "e8e3bed0-7d3b-4470-8011-a299610de2b9",
+        "6bca4a70-219f-4a57-a71b-6c3ed25715d6",
+        "3972b851-66dd-42a5-99c0-00c778ee635b",
+        "ebbbdc3b-7d17-40ae-bcbe-2513bf41e896",
+        "ec63b6a8-2df4-47c3-80ef-7ece383664da",
+        "7ce7af3e-0954-4143-b976-526e55f1ef0e",
+        "8d21b006-e7d5-4570-ae72-fb6b7245cb4f",
+        "da6a6e0b-2e61-4ce0-b552-e8ff96e3a580",
+        "00aa8613-05e2-48de-bdaa-ce501ff481d7",
+        "0b26763f-f70f-446f-a0c6-39eca3927e13",
+        "e1f93dc1-b985-4e9f-83d4-2a8bbfb7c20a",
+        "2a16dc35-7345-40e8-b50f-4dde57c7e087",
+        "0ad26668-be40-4eeb-a393-08c8f7ec4c25"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h3>AVAILABLE AT THESE TRUSTED PARTNERS<\/h3>",
+        "cta_text": "FIND A DEALER",
+        "cta_url": "shopify:\/\/pages\/store-locator",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-grey-1_text-black",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 32
+      }
+    },
+    "faq_accordions_KrE48V": {
+      "type": "faq-accordions",
+      "blocks": {
+        "faq_accordion_wNDj7T": {
+          "type": "faq-accordion",
+          "settings": {
+            "faq_question": "<p>FAQ Question<\/p>",
+            "faq_answer": "<p>FAQ Answer<\/p>"
+          }
+        },
+        "faq_accordion_rVBFMF": {
+          "type": "faq-accordion",
+          "settings": {
+            "faq_question": "<p>FAQ Question<\/p>",
+            "faq_answer": "<p>FAQ Answer<\/p>"
+          }
+        },
+        "faq_accordion_Nx9pUQ": {
+          "type": "faq-accordion",
+          "settings": {
+            "faq_question": "<p>FAQ Question<\/p>",
+            "faq_answer": "<p>FAQ Answer. Rich text that can be <a href=\"#\" target=\"_blank\" title=\"#\">linked<\/a>.<\/p><ul><li>List item<\/li><li>List item<\/li><\/ul><ol><li>List item<\/li><li>List item<\/li><\/ol>"
+          }
+        },
+        "faq_accordion_EQaXFQ": {
+          "type": "faq-accordion",
+          "settings": {
+            "faq_question": "<p>FAQ Question<\/p>",
+            "faq_answer": "<p>FAQ Answer<\/p>"
+          }
+        },
+        "faq_accordion_9C4nVt": {
+          "type": "faq-accordion",
+          "settings": {
+            "faq_question": "<p>FAQ Question<\/p>",
+            "faq_answer": "<p>FAQ Answer<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_accordion_wNDj7T",
+        "faq_accordion_rVBFMF",
+        "faq_accordion_Nx9pUQ",
+        "faq_accordion_EQaXFQ",
+        "faq_accordion_9C4nVt"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>FAQ Questions<\/h2>",
+        "cta_text": "Button label",
+        "cta_url": "",
+        "cta_type": "button button--primary-invert",
+        "full_width": true,
+        "color_scheme": "bg-black_text-white",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "f03376e9-2e62-414f-9366-ebe6f8595b6d": {
+      "type": "basic-html",
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "html_code": "<!-- LightWidget WIDGET --><script src=\"https:\/\/cdn.lightwidget.com\/widgets\/lightwidget.js\"><\/script><iframe src=\"https:\/\/cdn.lightwidget.com\/widgets\/783636499fb75cabb7d4fef67c5ec27c.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"><\/iframe>",
+        "full_width": true,
+        "content_align": "justify-center",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 32
+      }
+    }
+  },
+  "order": [
+    "hero_section_ryd9dU",
+    "image_text_X6ChWN",
+    "four_up_wb7Xr4",
+    "f605cc38-c725-4cab-959b-8407709023ea",
+    "334581f6-1a3f-4dde-9558-c2a044ec8946",
+    "image_text_hhGwED",
+    "image_text_P7NFRp",
+    "f35b5118-9cb9-493d-ba62-fdf3c67fa75e",
+    "db277925-bf27-4482-9a4c-f2ee4bbcb5d4",
+    "faq_accordions_KrE48V",
+    "f03376e9-2e62-414f-9366-ebe6f8595b6d"
+  ]
+}

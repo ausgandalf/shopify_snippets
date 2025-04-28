@@ -1,0 +1,492 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "d7faf5e2-8754-4043-b810-8d1a103d897e": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/NYNY-Hero-Desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/NYNY-Hero-Mobile.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 720,
+        "media_height_mobile": 240,
+        "subheading": "NEW YEAR NEW YOU",
+        "heading": "<h2>LAST DAY TO SAVE 30% OFF SITE WIDE WITH CODE [PREP20]<\/h2>",
+        "copy": "<p>Are you ready to be your healthiest and strongest self for those you care about? Let's work together to achieve your goals!<\/p>",
+        "cta_text_1": "START SHOPPING",
+        "cta_url_1": "#nynyshop",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--primary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "order-first",
+        "hide_content": false,
+        "bottom_margin_desktop": 60,
+        "bottom_margin_mobile": 35
+      }
+    },
+    "ad011dbf-4358-4751-9f60-efa1e5178f48": {
+      "type": "wysiwyg",
+      "settings": {
+        "section_custom_id": "",
+        "section_content": "<h3>THE NEW YEAR IS HERE<\/h3><p>Gear up for 2024 with WHITELABEL as your fitness co-pilot! This year, let the gym become your high-energy playground, where every workout is a step towards weight-loss victories, endurance breakthroughs, and a lifestyle that you've been dreaming of. Embrace the journey, ignite your passion, and sculpt a stronger, more adventurous you – LETS CONQUER MORE!<\/p>",
+        "bottom_margin_desktop": 70,
+        "bottom_margin_mobile": 20
+      }
+    },
+    "9ca4996b-80f2-4e8c-8db0-f15d2fef12b9": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15340815941674__9ca4996b-80f2-4e8c-8db0-f15d2fef12b9-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/ignitesupplements1104310145-852540.png",
+            "description": "<h3>IGNITE<\/h3><p>A clean, healthy energy alternative that boosts cognitive function<\/p>",
+            "cta_text": "SHOP IGNITE",
+            "cta_link": "shopify:\/\/products\/ignite",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--15340815941674__9ca4996b-80f2-4e8c-8db0-f15d2fef12b9-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/super-greenssupplements2129460330-448415.png",
+            "description": "<h3>GREENS<\/h3><p>Superfoods that support your overall health, wellness, energy, and vitality.<\/p>",
+            "cta_text": "SHOP SUPER GREENS",
+            "cta_link": "shopify:\/\/products\/greens",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "9a9f1985-cb9b-41a0-826c-246d638de160": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/slumber-gummiessupplements2139661160-642253.png",
+            "description": "<h3>SLUMBER GUMMIES<\/h3><p>Enjoy a restful slumber<\/p>",
+            "cta_text": "SHOP SLUMBER GUMMIES",
+            "cta_link": "shopify:\/\/products\/slumber-gummies",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15340815941674__9ca4996b-80f2-4e8c-8db0-f15d2fef12b9-up-block-1",
+        "template--15340815941674__9ca4996b-80f2-4e8c-8db0-f15d2fef12b9-up-block-2",
+        "9a9f1985-cb9b-41a0-826c-246d638de160"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>EVERYDAY<\/h2>",
+        "copy": "<p>For those looking to show up better for their families and themselves<\/p>",
+        "cta_text": "SHOP EVERYDAY",
+        "cta_link": "shopify:\/\/collections\/everyday-supplements",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "1bf40a76-0f94-4593-b5bb-4109ca146b47": {
+      "type": "two-three-up",
+      "blocks": {
+        "72d59f72-b0ad-45d0-957e-9ff97405cd81": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/yetisupplements1101670130-794046.png",
+            "description": "<h3>YETI<\/h3><p>Explosive Pre-Workout <\/p>",
+            "cta_text": "SHOP YETI",
+            "cta_link": "shopify:\/\/products\/yeti",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "1604984d-0a5a-4903-bf1d-1b83ac7ea328": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/magnumsupplements3105880129-446853.png",
+            "description": "<h3>MAGNUM<\/h3><p>Muscle Protein<\/p>",
+            "cta_text": "SHOP MAGNUM",
+            "cta_link": "shopify:\/\/products\/magnum",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "b39bc65c-a084-4ffb-9083-e32afd585449": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/creatine-monohydratesupplements2135000150-175722.png",
+            "description": "<h3>CREATINE<\/h3><p>muscle development<\/p>",
+            "cta_text": "SHOP CREATINE",
+            "cta_link": "shopify:\/\/products\/creatine-monohydrate",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "72d59f72-b0ad-45d0-957e-9ff97405cd81",
+        "1604984d-0a5a-4903-bf1d-1b83ac7ea328",
+        "b39bc65c-a084-4ffb-9083-e32afd585449"
+      ],
+      "settings": {
+        "section_custom_id": "nynyshop",
+        "heading": "<h3>GYM PERFORMANCE<\/h3>",
+        "copy": "<p>For those who want to perform better in the gym, put on muscle, and excel<\/p>",
+        "cta_text": "SHOP ALL GYM",
+        "cta_link": "shopify:\/\/collections\/gym-supplements",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "bb6a90b0-4175-47c1-9d30-5fce6debcfd9": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/NYNY-Hero-Desktop.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 30,
+        "media_height": 300,
+        "media_height_mobile": 210,
+        "subheading": "",
+        "heading": "",
+        "copy": "",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--secondary",
+        "form_cta_text": "",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 100,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "rgba(0,0,0,0)",
+        "text_align": "text-left",
+        "content_align_desktop": "justify-start",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "712a2a83-85ec-4194-ac2a-e2358f7d5bfa": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15340815941674__712a2a83-85ec-4194-ac2a-e2358f7d5bfa-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/ammosupplements3106950128-299198.png",
+            "description": "<h3>AMMO<\/h3><p>Meal Replacement Protein <\/p>",
+            "cta_text": "SHOP AMMO",
+            "cta_link": "shopify:\/\/products\/ammo",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--15340815941674__712a2a83-85ec-4194-ac2a-e2358f7d5bfa-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/blazesupplements1103000430-154873.png",
+            "description": "<h3>BLAZE<\/h3><p>FAT BURNER & ENERGY<\/p>",
+            "cta_text": "SHOP BLAZE",
+            "cta_link": "shopify:\/\/products\/blaze",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "10cb587a-e6cc-4785-847d-1d9e71a4b4db": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/renusupplements2110000430-572061.png",
+            "description": "<h3>RENU<\/h3><p>Gentle Digestive Cleanse<\/p>",
+            "cta_text": "SHOP RENU",
+            "cta_link": "shopify:\/\/products\/renu",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15340815941674__712a2a83-85ec-4194-ac2a-e2358f7d5bfa-up-block-1",
+        "template--15340815941674__712a2a83-85ec-4194-ac2a-e2358f7d5bfa-up-block-2",
+        "10cb587a-e6cc-4785-847d-1d9e71a4b4db"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>WEIGHT LOSS<\/h2>",
+        "copy": "<p>For those looking to lose weight<\/p>",
+        "cta_text": "SHOP ALL WEIGHT LOSS",
+        "cta_link": "shopify:\/\/collections\/weight-loss-products",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-grey-1 text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "781afd16-4257-4b80-ae06-c01d200371ea": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15340815941674__781afd16-4257-4b80-ae06-c01d200371ea-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/endurosupplements1102290130-609570.png",
+            "description": "<h3>ENDURO<\/h3><p>Caffine-Free Energy<\/p>",
+            "cta_text": "SHOP ENDURO",
+            "cta_link": "shopify:\/\/products\/enduro",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--15340815941674__781afd16-4257-4b80-ae06-c01d200371ea-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/hydratesupplements1134270320-224604.jpg",
+            "description": "<h3>HYDRATE<\/h3><p>Enhanced hydration<\/p>",
+            "cta_text": "SHOP HYDRATE",
+            "cta_link": "shopify:\/\/products\/hydrate",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "f675f11a-051f-42d8-be8a-52e0a13ce4e4": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/bcaasupplements2123590130-798734.png",
+            "description": "<h3>BCAA<\/h3><p>support your body’s muscle building & recovery processes<\/p>",
+            "cta_text": "SHOP BCAA",
+            "cta_link": "shopify:\/\/products\/bcaa",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15340815941674__781afd16-4257-4b80-ae06-c01d200371ea-up-block-1",
+        "template--15340815941674__781afd16-4257-4b80-ae06-c01d200371ea-up-block-2",
+        "f675f11a-051f-42d8-be8a-52e0a13ce4e4"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>ENDURANCE<\/h2>",
+        "copy": "<p>For those looking to go harder for longer<\/p>",
+        "cta_text": "SHOP ENDURANCE",
+        "cta_link": "shopify:\/\/collections\/outdoor-supplements",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "three-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "3f577830-f36a-4671-b2f1-73fa161242fa": {
+      "type": "hero-section",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/Conquer90Challenge-Hero-Desktop.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 730,
+        "media_height_mobile": 210,
+        "logo": "shopify:\/\/shop_images\/Conquer90Challenge-Logo-FullColor.svg",
+        "subheading": "",
+        "heading": "",
+        "copy": "<p>With the goals you've set this year why not earn some cash with your amazing transformations? Checkout our Conquer 90 Fitness Challenge<br\/><\/p>",
+        "cta_text_1": "LEARN MORE",
+        "cta_url_1": "shopify:\/\/pages\/conquer-90-challenge",
+        "cta_type_1": "button button--secondary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--primary",
+        "video_cta_text": "",
+        "video_cta_url": "https:\/\/www.youtube.com\/watch?v=_OrTd9mrI1c&t=5s",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--secondary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 320,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#131313",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "order-first",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "b0302772-6cb6-4cdc-8dfb-db9c4cebf776": {
+      "type": "two-three-up",
+      "blocks": {
+        "template--15340815941674__b0302772-6cb6-4cdc-8dfb-db9c4cebf776-up-block-1": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/weight-loss-systemsupplements2116190730-305039.png",
+            "description": "<h3>LOSE WEIGHT<\/h3>",
+            "cta_text": "SHOP WEIGHT-LOSS STACK",
+            "cta_link": "shopify:\/\/products\/weight-loss-system",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        },
+        "template--15340815941674__b0302772-6cb6-4cdc-8dfb-db9c4cebf776-up-block-2": {
+          "type": "up-block",
+          "settings": {
+            "up_img": "shopify:\/\/shop_images\/strength-systemsupplements2124010730-358584.png",
+            "description": "<h3>BUILD STRENGTH<\/h3>",
+            "cta_text": "SHOP STRENGTH",
+            "cta_link": "shopify:\/\/products\/strength-system",
+            "cta_type": "button button--primary",
+            "color_scheme": "before:bg-white text-black",
+            "text_align": "text-left items-start",
+            "featured_product": "",
+            "featured_variant": "",
+            "atc_cta_text": "Add to Cart",
+            "atc_cta_type": "button button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--15340815941674__b0302772-6cb6-4cdc-8dfb-db9c4cebf776-up-block-1",
+        "template--15340815941674__b0302772-6cb6-4cdc-8dfb-db9c4cebf776-up-block-2"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>GOAL-SPECIFIC STACKS<\/h2>",
+        "copy": "<p>No matter your fitness goals, WHITELABEL offers a variety of healthy products to support the hard work you are putting your body through. Check out these bundles and maximize your results.<\/p>",
+        "cta_text": "SHOP ALL BUNDLED STACKS",
+        "cta_link": "shopify:\/\/collections\/stacks",
+        "cta_type": "button button--secondary",
+        "full_width": true,
+        "layout_style": "two-up",
+        "color_scheme": "bg-white text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "d7faf5e2-8754-4043-b810-8d1a103d897e",
+    "ad011dbf-4358-4751-9f60-efa1e5178f48",
+    "9ca4996b-80f2-4e8c-8db0-f15d2fef12b9",
+    "1bf40a76-0f94-4593-b5bb-4109ca146b47",
+    "bb6a90b0-4175-47c1-9d30-5fce6debcfd9",
+    "712a2a83-85ec-4194-ac2a-e2358f7d5bfa",
+    "781afd16-4257-4b80-ae06-c01d200371ea",
+    "3f577830-f36a-4671-b2f1-73fa161242fa",
+    "b0302772-6cb6-4cdc-8dfb-db9c4cebf776"
+  ]
+}

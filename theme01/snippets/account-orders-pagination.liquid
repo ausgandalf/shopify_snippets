@@ -1,0 +1,42 @@
+{%- if paginate.pages > 1 -%}
+  <nav class="pagination" aria-label="Pagination">
+    <ul>
+      <li class="prev">
+        <a href="{% if paginate.previous.is_link %}{{ paginate.previous.url }}{% else %}javascript:void(0);{% endif %}"
+          class="{% unless paginate.previous.is_link %}disabled{% endunless %}"
+        >
+          <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.071 14.9142L6.9683 10.8184H20.6577V7.18158H6.9683L11.071 3.08577L8.49966 0.511583L3.8147e-06 8.99996L8.49966 17.4883L11.071 14.9142Z" fill="currentColor"/>
+          </svg>
+        </a>
+      </li>
+      {% for part in paginate.parts %}
+        {% if part.is_link %}
+          <li>
+            <a href="{{ part.url }}" aria-label="Go to page {{ part.title }}">{{ part.title }}</a>
+          </li>
+        {% else %}
+          {% if part.title == '&hellip;' %}
+            <li>
+              <span>{{ part.title }}</span>
+            </li>
+          {% else %}
+            <li aria-label="Page {{ part.title }}" aria-current="true" class="active">
+              <span>{{ part.title }}</span>
+            </li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      <li class="next">
+        <a href="{% if paginate.next.is_link %}{{ paginate.next.url }}{% else %}javascript:void(0);{% endif %}"
+          class="{% unless paginate.next.is_link %}disabled{% endunless %}"
+        >
+          <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.92902 3.08571L14.0317 7.18152H0.342316V10.8184H14.0317L9.92902 14.9142L12.5004 17.4884L21 8.99998L12.5004 0.511597L9.92902 3.08571Z" fill="currentColor"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+{% endif %}
+  

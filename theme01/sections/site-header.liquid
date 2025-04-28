@@ -1,0 +1,445 @@
+{% assign section_custom_id = section.settings.section_custom_id %}
+
+<div
+  {% if section_custom_id != blank %}
+    id='{{ section_custom_id }}'
+  {% endif %}
+  class='site-header relative bg-white top-0 w-full z-header border-b border-b-color-3'
+  data-header
+>
+  <div class='container'>
+    <div class='grid grid-cols-12 lg:gap-6 items-center py-2.5 lg:pb-0 lg:pt-6'>
+      <div class='flex lg:hidden gap-6 col-span-3'>
+        <div class='text-color-2' data-mobile-navigation>
+          {%- render 'icons', icon: 'hamburger' -%}
+        </div>
+
+        <div class='text-color-2' data-mobile-header-search>
+          {%- render 'icons', icon: 'search' -%}
+        </div>
+      </div>
+
+      <div class='col-span-6 lg:col-span-3'>
+        {%- render 'header-logo' -%}
+      </div>
+
+      <div class='col-span-3 lg:col-start-7 lg:col-span-6 xl:col-start-8 xl:col-span-5'>
+        {%- render 'header-utils' -%}
+      </div>
+
+      <div class='hidden lg:flex lg:items-end lg:justify-between col-span-12'>
+        {%- render 'header-nav' -%}
+      </div>
+
+      <div class='header-nav__dropdown-backdrop' data-dropdown-backdrop></div>
+    </div>
+  </div>
+
+  {%- render 'header-mobile-nav' -%}
+</div>
+
+{% schema %}
+{
+  "name": "Site Header",
+  "tag": "header",
+  "max_blocks": 8,
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_custom_id",
+      "label": "Section Custom ID",
+      "info": "This field is used to anchor this section on any link. Make sure to not repeat an ID on the same page. Usage #ExampleID",
+      "placeholder": "ExampleID"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "mega_menu",
+      "name": "Classic Mega Menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "navigation_item",
+          "label": "Navigation Item"
+        },
+        {
+          "type": "select",
+          "id": "navigation_item_color",
+          "label": "Navigation Item Color",
+          "options": [
+            {
+              "value": "text-color-2 hover:text-color-2",
+              "label": "Normal"
+            },
+            {
+              "value": "text-error hover:text-error",
+              "label": "Red"
+            },
+            {
+              "value": "text-color-6 hover:text-color-6",
+              "label": "Orange"
+            }
+          ],
+          "default": "text-color-2 hover:text-color-2"
+        },
+        {
+          "type": "link_list",
+          "id": "linklist",
+          "label": "Menu"
+        },
+        {
+          "type": "header",
+          "content": "First CTA",
+          "info": "If the menu has more than 4 columns, then CTAs won't appear"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_on_mobile_1",
+          "label": "Hide on mobile",
+          "default": false
+        },
+        {
+          "type": "image_picker",
+          "id": "cta_image_desktop_1",
+          "label": "Image - Desktop",
+          "info": "Recommended Size: 840x560px (width x height)"
+        },
+        {
+          "type": "image_picker",
+          "id": "cta_image_mobile_1",
+          "label": "Image - Mobile",
+          "info": "Recommended Size: 550x360px (width x height)"
+        },
+        {
+          "type": "text",
+          "id": "cta_heading_1",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "cta_url_1",
+          "label": "URL"
+        },
+        {
+          "type": "header",
+          "content": "Second CTA",
+          "info": "If the menu has more than 4 columns, then CTAs won't appear"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_on_mobile_2",
+          "label": "Hide on mobile",
+          "default": false
+        },
+        {
+          "type": "image_picker",
+          "id": "cta_image_desktop_2",
+          "label": "Image - Desktop",
+          "info": "Recommended Size: 840x560px (width x height)"
+        },
+        {
+          "type": "image_picker",
+          "id": "cta_image_mobile_2",
+          "label": "Image - Mobile",
+          "info": "Recommended Size: 550x360px (width x height)"
+        },
+        {
+          "type": "text",
+          "id": "cta_heading_2",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "cta_url_2",
+          "label": "URL"
+        },
+        {
+          "type": "header",
+          "content": "Third CTA",
+          "info": "If the menu has more than 4 columns, then CTAs won't appear"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_on_mobile_3",
+          "label": "Hide on mobile",
+          "default": false
+        },
+        {
+          "type": "image_picker",
+          "id": "cta_image_desktop_3",
+          "label": "Image - Desktop",
+          "info": "Recommended Size: 840x560px (width x height)"
+        },
+        {
+          "type": "image_picker",
+          "id": "cta_image_mobile_3",
+          "label": "Image - Mobile",
+          "info": "Recommended Size: 550x360px (width x height)"
+        },
+        {
+          "type": "text",
+          "id": "cta_heading_3",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "cta_url_3",
+          "label": "URL"
+        }
+      ]
+    },
+    {
+      "type": "product_mega_menu",
+      "name": "Image CTA Mega Menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "navigation_item",
+          "label": "Navigation Item"
+        },
+        {
+          "type": "select",
+          "id": "navigation_item_color",
+          "label": "Navigation Item Color",
+          "options": [
+            {
+              "value": "text-color-2 hover:text-color-2",
+              "label": "Normal"
+            },
+            {
+              "value": "text-error hover:text-error",
+              "label": "Red"
+            },
+            {
+              "value": "text-color-6 hover:text-color-6",
+              "label": "Orange"
+            }
+          ],
+          "default": "text-color-2 hover:text-color-2"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "header",
+          "content": "First Product"
+        },
+        {
+          "type": "image_picker",
+          "id": "cta_image_1",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "cta_heading_1",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "cta_description_1",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "cta_url_1",
+          "label": "URL"
+        },
+        {
+          "type": "header",
+          "content": "Second Product"
+        },
+        {
+          "type": "image_picker",
+          "id": "cta_image_2",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "cta_heading_2",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "cta_description_2",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "cta_url_2",
+          "label": "URL"
+        },
+        {
+          "type": "header",
+          "content": "Third Product"
+        },
+        {
+          "type": "image_picker",
+          "id": "cta_image_3",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "cta_heading_3",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "cta_description_3",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "cta_url_3",
+          "label": "URL"
+        },
+        {
+          "type": "header",
+          "content": "Fourth Product"
+        },
+        {
+          "type": "image_picker",
+          "id": "cta_image_4",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "cta_heading_4",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "cta_description_4",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "cta_url_4",
+          "label": "URL"
+        },
+        {
+          "type": "header",
+          "content": "Fifth Product"
+        },
+        {
+          "type": "image_picker",
+          "id": "cta_image_5",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "cta_heading_5",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "cta_description_5",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "cta_url_5",
+          "label": "URL"
+        },
+        {
+          "type": "header",
+          "content": "Sixth Product"
+        },
+        {
+          "type": "image_picker",
+          "id": "cta_image_6",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "cta_heading_6",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "cta_description_6",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "cta_url_6",
+          "label": "URL"
+        }
+      ]
+    },
+    {
+      "type": "simple",
+      "name": "Simple Dropdown",
+      "settings": [
+        {
+          "type": "text",
+          "id": "navigation_item",
+          "label": "Navigation Item"
+        },
+        {
+          "type": "select",
+          "id": "navigation_item_color",
+          "label": "Navigation Item Color",
+          "options": [
+            {
+              "value": "text-color-2 hover:text-color-2",
+              "label": "Normal"
+            },
+            {
+              "value": "text-error hover:text-error",
+              "label": "Red"
+            },
+            {
+              "value": "text-color-6 hover:text-color-6",
+              "label": "Orange"
+            }
+          ],
+          "default": "text-color-2 hover:text-color-2"
+        },
+        {
+          "type": "link_list",
+          "id": "linklist",
+          "label": "Menu"
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "name": "Single Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "navigation_item",
+          "label": "Navigation Item"
+        },
+        {
+          "type": "select",
+          "id": "navigation_item_color",
+          "label": "Navigation Item Color",
+          "options": [
+            {
+              "value": "text-color-2 hover:text-color-2",
+              "label": "Normal"
+            },
+            {
+              "value": "text-error hover:text-error",
+              "label": "Red"
+            },
+            {
+              "value": "text-color-6 hover:text-color-6",
+              "label": "Orange"
+            }
+          ],
+          "default": "text-color-2 hover:text-color-2"
+        },
+        {
+          "type": "url",
+          "id": "navigation_url",
+          "label": "Navigation URL"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

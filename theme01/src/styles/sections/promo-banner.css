@@ -1,0 +1,20 @@
+.promo-banner {
+  @apply relative z-promo-banner;
+}
+
+.promo-banner__message {
+  @apply text-center max-lg:px-4;
+}
+
+.promo-banner__message * {
+  @apply text-xs;
+}
+
+.promo-banner .swiper-buttons {
+  @apply container absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-0 z-1 flex justify-between;
+}
+
+.promo-banner .swiper-button-prev,
+.promo-banner .swiper-button-next {
+  @apply bg-transparent top-0.5 h-5 translate-y-1/2 after:content-none;
+}

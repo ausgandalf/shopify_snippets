@@ -1,0 +1,351 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "disabled": true,
+      "settings": {
+        "section_custom_id": ""
+      }
+    },
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25": {
+      "type": "hero-section",
+      "settings": {
+        "section_custom_id": "",
+        "image_desktop": "shopify:\/\/shop_images\/TacomaTruckGiveaway-Lifestyle-Mountains.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/TacomaTruckGiveaway-Lifestyle-Mountains.jpg",
+        "autoplay_video": true,
+        "bg_overlay_color": "#241e18",
+        "bg_overlay_opacity": 0,
+        "media_height": 550,
+        "media_height_mobile": 500,
+        "subheading": "",
+        "heading": "<h2>OUR MISSION<\/h2>",
+        "copy": "<p>In everything we do, we improve the lives of individuals and families. Our commitment to you is made manifest through this proclamation. The journey of transformation spiritually, physically, mentally, and socially is a journey to conquer. WHITELABEL is your trusted partner.<\/p>",
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-invert",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-invert",
+        "video_cta_text": "Watch Video",
+        "video_cta_url": "https:\/\/www.youtube.com\/watch?v=DudFe0T5TYE",
+        "video_cta_pos": "cta-1",
+        "video_cta_type": "button button--secondary-invert",
+        "form_cta_text": "Complete Form",
+        "form_id": "",
+        "form_cta_pos": "cta-1",
+        "form_cta_type": "button button--primary-invert",
+        "full_width": true,
+        "logo_size": 500,
+        "content_text_color": "#ffffff",
+        "content_bg_color": "#3d3935",
+        "text_align": "text-center",
+        "content_align_desktop": "justify-center",
+        "content_align_mobile": "absolute inset-0 h-full p-6",
+        "hide_content": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "4021777a-9bd2-4541-a02b-d4a25ad337d1": {
+      "type": "brand-value-logo",
+      "blocks": {
+        "7ccc5e2f-b954-4577-8ddf-5078269c889f": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/recognize-god-no-text.png",
+            "logo_link": "",
+            "logo_label": "<h4>RECOGNIZING GOD<\/h4><p>We believe in recognizing God, even in the workplace, and acknowledge His hand in all things. The individuals at WHITELABEL are mindful and prayerful in considering how we produce products and services that will benefit the human family.<\/p>",
+            "logo_label_p_style": "p-xs"
+          }
+        },
+        "c353709a-6b16-46e0-a3d8-8fd33d2c66aa": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/OWNERSHIP-VALUE_12627b0a-4994-4609-9623-f61660794008.png",
+            "logo_link": "",
+            "logo_label": "<h4>OWNERSHIP<\/h4><p>We believe that ownership is the essence of leadership. We take full and personal responsibility for our actions and outcomes, especially those that affect our customers. At the end of the day, each of us must take responsibility for the outcomes we desire in life. In the words of William Ernest Henley, “I am the master of my fate, I am the captain of my soul.” We challenge you to own the day and the choices that direct you to conquer more in life.<\/p>",
+            "logo_label_p_style": "p-xs"
+          }
+        },
+        "83dbf128-1731-4351-9d56-c1d1582cea66": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/TRUST-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<h4>TRUST<\/h4><p>We believe in being worthy of others’ trust. We are reliable, respectful, and honest with the information we provide to you along with the information you provide to us. We are impeccable with our word. Your journey of transformation can be trusted to WHITELABEL.<\/p>",
+            "logo_label_p_style": "p-xs"
+          }
+        },
+        "2f534d0c-eeef-46ad-ba3a-3e97a2ea2580": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/INTERDEPENDENCE-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<h4>INTERDEPENDENCE<\/h4><p>Our team works together with true interdependence to accomplish great things collectively that we could not do independently. You are now a part of this incredible WHITELABEL FAMILY and we expect each member of the family to play a role in lifting where they stand in our efforts to conquer more.<\/p>",
+            "logo_label_p_style": "p-xs"
+          }
+        },
+        "97d536ac-540a-48b3-af46-487f9cdf0737": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/DILIGENCE-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<h4>DILIGENCE<\/h4><p>We commit to diligence in exerting a constant, earnest, and energetic effort to help you conquer your goals.<\/p>",
+            "logo_label_p_style": "p-xs"
+          }
+        },
+        "85798748-5ad1-497c-a04d-b4eee652a48e": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/OPPORTUNITY-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<h4>OPPORTUNITY<\/h4><p>We foster an atmosphere that gives you and others an opportunity to rise to your full potential<\/p>",
+            "logo_label_p_style": "p-xs"
+          }
+        },
+        "b2f8a876-9954-45b8-a281-c718a7926c66": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/FAMILY-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<h4>FAMILY<\/h4><p>Because we believe family is the fundamental unit of community, we desire the type of environment that promotes healthy families. All WHITELABEL content, events, and experiences will remain family-friendly.<\/p>",
+            "logo_label_p_style": "p-xs"
+          }
+        },
+        "46f74bf8-ac31-4bb4-80b1-1088c304ad7a": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/DESIRE-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<h4>DESIRE<\/h4><p>We value highly ambitious people - driven by a desire to succeed but with an attitude of temperance. We will work with you to ambitiously transform your life, all the while realizing that it takes time and patience for results to be achieved. Let's win each day and trust the process.<\/p>",
+            "logo_label_p_style": "p-xs"
+          }
+        },
+        "2d17ad8e-ed0d-40c4-a0bf-b300339f00ab": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/SERVICE-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<h4>SERVICE<\/h4><p>We believe in making a positive contribution of our time, talents, and leadership through service to our respective communities. With every one of your orders, we have donated a meal to a child in need. Our community has now produced the resources to feed millions of children all across the country and internationally through our OPERATION CONQUER HUNGER.<\/p>",
+            "logo_label_p_style": "p-xs"
+          }
+        },
+        "629b127a-9f42-4783-a073-8ee77a32bb48": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/GOLDEN-RULE-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<h4>GOLDEN RULE<\/h4><p>We believe in the golden rule and in treating you and everyone exactly how we would like to be treated in regard to honesty, responsiveness, follow-through, and in going the extra mile to ensure that your needs and desires are met.<\/p>",
+            "logo_label_p_style": "p-xs"
+          }
+        },
+        "6759b57a-db71-40ef-85b5-e8479ae4fdc8": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/GRATITUDE-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<h4>GRATITUDE<\/h4><p>We believe in the golden rule and in treating you and everyone exactly how we would like to be treated in regard to honesty, responsiveness, follow-through, and in going the extra mile to ensure that your needs and desires are met.<\/p>",
+            "logo_label_p_style": "p-xs"
+          }
+        },
+        "b2f3ec7e-c710-4546-b9f7-242f8a5ff350": {
+          "type": "brand-value-logo",
+          "settings": {
+            "logo_img": "shopify:\/\/shop_images\/JOY-VALUE.png",
+            "logo_link": "",
+            "logo_label": "<h4>JOY<\/h4><p>How happy we are in life has very little to do with the circumstances of our lives and everything to do with the focus on our lives. Amidst all the distractions of daily living, we focus on finding joy in the journey and invite you to trust in us on this journey of joy.<\/p>",
+            "logo_label_p_style": "p-xs"
+          }
+        }
+      },
+      "block_order": [
+        "7ccc5e2f-b954-4577-8ddf-5078269c889f",
+        "c353709a-6b16-46e0-a3d8-8fd33d2c66aa",
+        "83dbf128-1731-4351-9d56-c1d1582cea66",
+        "2f534d0c-eeef-46ad-ba3a-3e97a2ea2580",
+        "97d536ac-540a-48b3-af46-487f9cdf0737",
+        "85798748-5ad1-497c-a04d-b4eee652a48e",
+        "b2f8a876-9954-45b8-a281-c718a7926c66",
+        "46f74bf8-ac31-4bb4-80b1-1088c304ad7a",
+        "2d17ad8e-ed0d-40c4-a0bf-b300339f00ab",
+        "629b127a-9f42-4783-a073-8ee77a32bb48",
+        "6759b57a-db71-40ef-85b5-e8479ae4fdc8",
+        "b2f3ec7e-c710-4546-b9f7-242f8a5ff350"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h2>CORE VALUES<\/h2>",
+        "cta_text": "",
+        "cta_url": "",
+        "cta_type": "button button--primary",
+        "full_width": true,
+        "color_scheme": "bg-grey-1_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "920842d2-2534-4894-926c-4f3fb5f2c48b": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "template--15070811029546__920842d2-2534-4894-926c-4f3fb5f2c48b-brand-value-callout-1": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>RECOGNIZING GOD<\/h6><p>We believe in recognizing God, even in the workplace, and acknowledge His hand in all things. The individuals at WHITELABEL are mindful and prayerful in considering how we produce products and services that will benefit the human family.<\/p><p><\/p>"
+          }
+        },
+        "template--15070811029546__920842d2-2534-4894-926c-4f3fb5f2c48b-brand-value-callout-2": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>OWNERSHIP<\/h6><p>We believe that ownership is the essence of leadership. We take full and personal responsibility for our actions and outcomes, especially those that affect our customers. At the end of the day, each of us must take responsibility for the outcomes we desire in life. In the words of William Ernest Henley, “I am the master of my fate, I am the captain of my soul.” We challenge you to own the day and the choices that direct you to conquer more in life.<\/p>"
+          }
+        },
+        "template--15070811029546__920842d2-2534-4894-926c-4f3fb5f2c48b-brand-value-callout-3": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>TRUST<\/h6><p>We believe in being worthy of others’ trust. We are reliable, respectful, and honest with the information we provide to you along with the information you provide to us. We are impeccable with our word. Your journey of transformation can be trusted to WHITELABEL.<\/p><p><\/p>"
+          }
+        },
+        "template--15070811029546__920842d2-2534-4894-926c-4f3fb5f2c48b-brand-value-callout-4": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>INTERDEPENDENCE<\/h6><p>Our team works together with true interdependence to accomplish great things collectively that we could not do independently. You are now a part of this incredible WHITELABEL FAMILY and we expect each member of the family to play a role in lifting where they stand in our efforts to conquer more.<\/p><h6><\/h6>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15070811029546__920842d2-2534-4894-926c-4f3fb5f2c48b-brand-value-callout-1",
+        "template--15070811029546__920842d2-2534-4894-926c-4f3fb5f2c48b-brand-value-callout-2",
+        "template--15070811029546__920842d2-2534-4894-926c-4f3fb5f2c48b-brand-value-callout-3",
+        "template--15070811029546__920842d2-2534-4894-926c-4f3fb5f2c48b-brand-value-callout-4"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "<h3>CORE VALUES<br\/><\/h3><p>At the heart of WHITELABEL, we strive each day to conquer more by abiding by a set of core values and beliefs that will reflect in our interactions, but also in our product and services you have trusted us to provide. The following is our commitment to you.<\/p><h6><\/h6>",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "2417f0fb-2ae5-4f75-b553-0dfce30d92b9": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "1582292e-9218-4d15-8782-de45b69b11c6": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>DILIGENCE<\/h6><p>We commit to diligence in exerting a constant, earnest, and energetic effort to help you conquer your goals.<\/p>"
+          }
+        },
+        "27599e3a-b28d-4a48-b86a-664d9598d700": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>OPPORTUNITY<\/h6><p>We foster an atmosphere that gives you and others an opportunity to rise to your full potential<\/p>"
+          }
+        },
+        "60ba115d-852a-443b-8cbb-f87cff16f071": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>FAMILY<\/h6><p>Because we believe family is the fundamental unit of community, we desire the type of environment that promotes healthy families. All WHITELABEL content, events, and experiences will remain family-friendly.<\/p>"
+          }
+        },
+        "16e65a35-5fdf-41e6-b136-9b583a06471c": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>DESIRE<\/h6><p>We value highly ambitious people - driven by a desire to succeed but with an attitude of temperance. We will work with you to ambitiously transform your life, all the while realizing that it takes time and patience for results to be achieved. Let's win each day and trust the process.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1582292e-9218-4d15-8782-de45b69b11c6",
+        "27599e3a-b28d-4a48-b86a-664d9598d700",
+        "60ba115d-852a-443b-8cbb-f87cff16f071",
+        "16e65a35-5fdf-41e6-b136-9b583a06471c"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "aaea9345-5f34-4860-8ad5-82eb7958fa77": {
+      "type": "brand-value-callout",
+      "blocks": {
+        "6d6eac28-df28-44b9-af32-4678553178ca": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>SERVICE<\/h6><p>We believe in making a positive contribution of our time, talents, and leadership through service to our respective communities. With every one of your orders, we have donated a meal to a child in need. Our community has now produced the resources to feed millions of children all across the country and internationally through our OPERATION CONQUER HUNGER.<\/p>"
+          }
+        },
+        "e926bcfd-c9b5-43ff-87cc-19ec5e775615": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>GOLDEN RULE<\/h6><p>We believe in the golden rule and in treating you and everyone exactly how we would like to be treated in regard to honesty, responsiveness, follow-through, and in going the extra mile to ensure that your needs and desires are met.<\/p>"
+          }
+        },
+        "3f3e1189-bd14-4a5b-a2a5-d0bb3c602e35": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>GRATITUDE<\/h6><p>Gratitude for both our successes and our challenges helps us have joy in our current circumstances while facilitating our growth and progress toward and even brighter future. We thank you for trusting WHITELABEL to support you in your transformational goals.<\/p>"
+          }
+        },
+        "ee5e6b3d-ddab-4f25-9c95-22fae27f91e8": {
+          "type": "brand-value-callout",
+          "settings": {
+            "icon_svg": "",
+            "description": "<h6>JOY<\/h6><p>How happy we are in life has very little to do with the circumstances of our lives and everything to do with the focus on our lives. Amidst all the distractions of daily living, we focus on finding joy in the journey and invite you to trust in us on this journey of joy.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "6d6eac28-df28-44b9-af32-4678553178ca",
+        "e926bcfd-c9b5-43ff-87cc-19ec5e775615",
+        "3f3e1189-bd14-4a5b-a2a5-d0bb3c602e35",
+        "ee5e6b3d-ddab-4f25-9c95-22fae27f91e8"
+      ],
+      "settings": {
+        "section_custom_id": "",
+        "heading": "",
+        "video_url": "",
+        "full_width": true,
+        "content_align_desktop": "lg:order-first",
+        "content_align_mobile": "order-last",
+        "values_per_row": "lg:grid-cols-4",
+        "color_scheme": "bg-white_text-black",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "general-content",
+    "ea77978b-4203-4bc9-9d73-0aaa19277d25",
+    "4021777a-9bd2-4541-a02b-d4a25ad337d1",
+    "920842d2-2534-4894-926c-4f3fb5f2c48b",
+    "2417f0fb-2ae5-4f75-b553-0dfce30d92b9",
+    "aaea9345-5f34-4860-8ad5-82eb7958fa77"
+  ]
+}

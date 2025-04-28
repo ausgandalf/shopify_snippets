@@ -1,0 +1,118 @@
+{%- liquid
+  assign heading = section.settings.heading
+  assign signin_title = section.settings.signin_title
+  assign signin_copy = section.settings.signin_copy
+  assign signin_cta_text = section.settings.signin_cta_text
+  assign signin_cta_link = section.settings.signin_cta_link
+  assign signup_title = section.settings.signup_title
+  assign signup_copy = section.settings.signup_copy
+  assign signup_cta_text = section.settings.signup_cta_text
+  assign signup_cta_link = section.settings.signup_cta_link
+-%}
+
+<div class="bg-grey-1 w-full text-center px-6 py-12 lg:px-8 lg:py-24">
+  {%- if heading != blank -%}
+    <div class="mb-12 rte">{{- heading -}}</div>
+  {%- endif -%}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 w-full lg:max-w-[64rem] lg:mx-auto">
+    <div class="flex flex-col items-center justify-center bg-white text-black p-6 md:px-12 md:py-20">
+      {%- if signin_title != blank -%}
+        <h3 class="uppercase lg:tracking-[1px] mb-4">{{- signin_title -}}</h3>
+      {%- endif -%}
+      {%- if signin_copy != blank -%}
+        <p class="mb-6">{{- signin_copy -}}</p>
+      {%- endif -%}
+      {%- if signin_cta_text != blank and signin_cta_link != blank -%}
+        <a href="{{- signin_cta_link -}}" class="button button-normal button--primary w-full">{{- signin_cta_text -}}</a>
+      {%- endif -%}
+    </div>
+    <div class="flex flex-col items-center justify-center bg-black text-white p-6 md:px-12 md:py-20">
+      {%- if signup_title != blank -%}
+        <h3 class="uppercase lg:tracking-[1px] mb-4">{{- signup_title -}}</h3>
+      {%- endif -%}
+      {%- if signup_copy != blank -%}
+        <p class="mb-6">{{- signup_copy -}}</p>
+      {%- endif -%}
+      {%- if signup_cta_text != blank and signup_cta_link != blank -%}
+        <a href="{{- signup_cta_link -}}" class="button button-normal button--primary-invert w-full">{{- signup_cta_text -}}</a>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Wholesale Dealer Sign",
+    "templates": [
+      "page"
+    ],
+    "settings": [
+      {
+        "type": "header",
+        "content": "Page Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "heading",
+        "label": "Heading",
+        "info": "Optional. Please use only one H1 per page and then use H2 for the content below the fold.",
+        "default": "<h1>WHITELABEL WHOLESALE</h1>"
+      },
+      {
+        "type": "header",
+        "content": "Dealer Login Settings"
+      },
+      {
+        "type": "text",
+        "id": "signin_title",
+        "label": "Dealer Login Title",
+        "default": "Current Dealers"
+      },
+      {
+        "type": "text",
+        "id": "signin_copy",
+        "label": "Dealer Login Copy",
+        "default": "Already have a wholesale account? Sign in at our wholesale portal."
+      },
+      {
+        "type": "text",
+        "id": "signin_cta_text",
+        "label": "Dealer Login CTA Text",
+        "default": "Log in to Wholesale Portal"
+      },
+      {
+        "type": "url",
+        "id": "signin_cta_link",
+        "label": "Dealer Login CTA Link"
+      },
+      {
+        "type": "header",
+        "content": "Dealer Register Settings"
+      },
+      {
+        "type": "text",
+        "id": "signup_title",
+        "label": "Dealer Register Title",
+        "default": "Prospective Dealers"
+      },
+      {
+        "type": "text",
+        "id": "signup_copy",
+        "label": "Dealer Register Copy",
+        "default": "Interested in carrying WHITELABEL products at your store? Please fill out our dealer application and we will get right back with you about becoming a WHITELABEL dealer."
+      },
+      {
+        "type": "text",
+        "id": "signup_cta_text",
+        "label": "Dealer Register CTA Text",
+        "default": "Go to Dealer Application"
+      },
+      {
+        "type": "url",
+        "id": "signup_cta_link",
+        "label": "Dealer Register CTA Link"
+      }
+    ]
+  }
+{% endschema %}
+  

@@ -1,0 +1,164 @@
+.hero-section {
+  @apply relative max-w-[1920px] mx-auto;
+
+  .hero-background {
+
+    img {
+      @apply w-full h-full;
+    }
+    
+
+    video.paused {
+      @apply opacity-0;
+    }
+  }
+
+  .hero-section-inner-container {
+    @apply absolute top-1/2 translate-y-[-50%] w-full;
+
+    &.vertical--top {
+      @apply top-0 translate-y-0;
+    }
+
+    &.vertical--bottom {
+      @apply bottom-0 translate-y-0;
+    }
+  }
+
+  .hero-content {
+    @apply px-[1rem] lg:px-[3.75rem] py-[3.5rem] lg:py-[5rem] lg:rounded-[0.625rem] xl:col-span-6 lg:col-span-8 col-span-12;
+
+    /* Content Box Alignment */
+    &.hero-content--left {
+      @apply lg:col-start-1;
+    }
+
+    &.hero-content--center {
+      @apply xl:col-start-4 lg:col-start-3;
+    }
+
+    &.hero-content--right {
+      @apply xl:col-start-7 lg:col-start-5;
+    }
+
+    /* Text Alignment */
+    &.text-align-left {
+      @apply text-left;
+    }
+
+    &.text-align-center {
+      @apply text-center;
+    }
+
+    &.text-align-right {
+      @apply text-right;
+    }
+  }
+
+  .hero-content__heading,
+  .hero-content__subheading,
+  .hero-content__copy,
+  .hero-content__copy p,
+  .hero-content__copy a,
+  .hero-content__copy strong {
+    color: inherit;
+  } 
+
+  .hero-content__copy p + p{
+    @apply mt-4;
+  }
+
+  .hero-content__buttons {
+    @apply mt-[2rem] flex-wrap;
+
+    &.hero-content__buttons--left{
+      @apply justify-start;
+    }
+    
+    &.hero-content__buttons--center {
+      @apply justify-center;
+    }
+
+    &.hero-content__buttons--right {
+      @apply justify-end;
+    }
+    
+    .button {
+      @apply text-center mx-[1rem] mt-4;
+    }
+  }
+
+  .hero-play-pause {
+    @apply absolute lg:bottom-[3rem] lg:left-[3rem] left-4 top-4 lg:top-[initial] w-[2.5rem] h-[2.5rem] z-10;
+
+    svg {
+      @apply absolute top-0 left-0 transition-all duration-300;
+    }
+
+    .icon-pause-button {
+      @apply opacity-100;
+    }
+
+    .icon-play-button {
+      @apply opacity-0;
+    }
+  }
+
+  .hero-play-pause.paused {
+    .icon-pause-button {
+      @apply opacity-0;
+    }
+
+    .icon-play-button {
+      @apply opacity-100;
+    }
+  }
+}
+
+.hero-full-width {
+  @apply relative flex flex-col;
+}
+.hero-full-width .hero-background {
+  @apply relative;
+}
+.hero-full-width .hero-background::after {
+  @apply content-[''] absolute inset-0 w-full h-full z-[2];
+}
+.hero-full-width .hero-background img,
+.hero-full-width .hero-background video {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+.hero-full-width .hero-background video {
+  @apply z-1;
+}
+.hero-full-width .hero-background .hero-play-pause {
+  @apply absolute right-5 bottom-5 lg:right-11 lg:bottom-11 w-7 h-7 flex items-center justify-center text-white z-[3];
+}
+.hero-full-width .hero-background .hero-play-pause .play {
+  @apply hidden;
+}
+.hero-full-width .hero-background .hero-play-pause .pause {
+  @apply block;
+}
+.hero-full-width .hero-background .hero-play-pause.paused .play {
+  @apply block;
+}
+.hero-full-width .hero-background .hero-play-pause.paused .pause {
+  @apply hidden;
+}
+
+.hero-full-width .hero-content {
+  @apply pointer-events-auto lg:max-w-[42.75rem] h-full flex items-center p-6 lg:px-12;
+}
+.hero-full-width .hero-content__logo {
+  @apply block mb-4;
+}
+.hero-full-width .hero-content__logo img {
+  @apply inline-block;
+}
+.hero-full-width .hero-content__buttons {
+  @apply inline-flex flex-col items-stretch md:flex-row gap-4 w-full md:w-auto;
+}
+.hero-full-width .hero-content__buttons .button {
+  @apply h-[3.75rem] inline-flex items-center justify-center;
+}
