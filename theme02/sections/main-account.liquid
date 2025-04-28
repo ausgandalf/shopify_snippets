@@ -1,0 +1,89 @@
+{%- assign wholesale_url = 'https://shopify.com/2347341/account' -%}
+
+{%- liquid
+  assign strippedUrl = canonical_url |  remove: 'https://whitelabelisbetter.com'
+  if strippedUrl == '/account'
+  assign isActive = true
+  endif
+
+  assign customer_hash = ''
+  if customer.metafields.subscriptions != blank
+    assign customer_hash = customer.metafields.subscriptions.customer_string
+  endif
+-%}
+
+
+<div class="customer account py-6 lg:py-24 !container lg:flex">
+  <div id="account-navigation" class="w-full lg:w-[254px] lg:mr-[84px] mb-6 lg:mb-0">
+    <div class="flex justify-between">
+      <h5 class="pb-4">Hello, {{ customer.first_name }}</h5>
+      <a class="sub-lg lg:hidden" onclick="location.href='{{ routes.account_logout_url }}'">Sign Out</a>
+    </div>
+
+    <div id="account-navigation-block" class="hidden lg:flex mt-10 gap-6 flex-col">
+      <div class="yotpo-widget-instance" data-yotpo-instance-id="749644"></div>
+      <button onclick="location.href='/account'" class="h6 !m-0 !w-fit content-link {% if isActive %}!bg-primary-1{% endif %}">Order History</button>
+      <button onclick="location.href='{{ routes.account_addresses_url  }}'" class="h6 !m-0 !w-fit content-link">Saved Addresses</button>
+      {%- if customer_hash != '' -%}
+        <button onclick="location.href='/tools/recurring/portal/{{ customer_hash }}/subscriptions'" class="h6 !m-0 !w-fit content-link">Subscriptions</button>
+      {%- endif -%}
+      <button onclick="location.href='{{ routes.account_logout_url }}'" class="h6 !m-0 !w-fit content-link">Sign Out</button>
+    </div>
+
+    <div class="w-full lg:hidden">
+      <div class="yotpo-widget-instance" data-yotpo-instance-id="749644"></div>
+    </div>
+    <select data-account-navigation-mobile class="w-full lg:hidden"> here
+      <option value="/account">Order History</option>
+      <option value="{{ routes.account_addresses_url }}">Saved Addresses</option>
+      {%- if customer_hash != '' -%}
+        <option value="/tools/recurring/portal/{{ customer_hash }}/subscriptions">Subscriptions</option>
+      {%- endif -%}
+    </select>
+  </div>
+
+  <div id="account-main" class="w-full lg:w-[840px] flex flex-col">
+    <div id="account-nav-block" class="flex flex-col-reverse lg:flex-col">
+      <div>
+        <h3 class="font-bold mb-4 lg:mb-8">{{ 'customer.orders.title' | t }}</h3>
+
+        <div class="bg-black w-full h-[3px] lg:hidden"></div>
+      </div>
+    </div>
+    {%- render 'account-orders-table' -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-account.name",
+  "class": "customer-account",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

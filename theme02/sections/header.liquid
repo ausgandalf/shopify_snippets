@@ -1,0 +1,93 @@
+{%-liquid
+  assign main_nav = section.settings.main_nav
+  assign wholesale_nav = section.settings.wholesale_nav
+  assign logo = settings.logo
+  assign wholesale_logo = settings.wholesale_logo
+  assign wholesale_logo_link = settings.wholesale_logo_link
+  assign blocks = section.blocks
+-%}
+{% if request.path contains '/tools/recurring/get-subscription-access' %}
+<div class="site-header border-b border-black bg-white">
+  <div class="flex items-center justify-center h-[56px] lg:h-[85px]">
+      <a class="block max-w-[48px] lg:max-w-[58px] h-auto mx-auto" href="/">
+        <img class="max-w-full" src="{{ logo | image_url }}" alt="Whitelabel Logo"/>
+      </a>
+  </div>
+</div>
+{%- else -%}
+<div class="site-header relative border-b border-black bg-white">
+  <div class="container py-2 lg:py-0">
+    <div class="flex items-center">
+      <div class="flex-1 flex gap-5 lg:hidden items-center">
+        <button aria-label="Menu" class="flex items-center justify-center w-6 h-6 group" data-header-nav-toggler>
+          <span data-toggler-icon-inactive>
+            {%- render 'icon-hamburger' -%}
+            <span class="hidden">Open Menu</span>
+          </span>
+          <span data-toggler-icon-active>
+            {%- render 'icon-close' -%}
+            <span class="hidden">Close Menu</span>
+          </span>
+        </button>
+      </div>
+      <div class="lg:flex-1">
+        {% if customer.tags contains 'wholesale-customer' and wholesale_logo != blank %}
+        <a class="flex items-center max-w-[120px] lg:max-w-[150px]" href="{{ wholesale_logo_link }}">
+          <img class="w-full" src="{{ wholesale_logo | image_url }}" alt="Whitelabel Logo"/>
+        </a>
+        {% else %}
+        <a class="flex items-center max-w-[48px] lg:max-w-[58px]" href="/">
+          <img class="max-w-full" src="{{ logo | image_url }}" alt="Whitelabel Logo"/>
+        </a>
+        {% endif %}
+      </div>
+      <div class="flex">
+        {% if customer.tags contains 'wholesale-customer' and wholesale_nav != blank %}
+          {%- render 'header-nav', nav: wholesale_nav, blocks: blocks -%}
+          {% else %}
+          {%- render 'header-nav', nav: main_nav, blocks: blocks -%}
+          {% endif %}
+      </div>
+      <ul class="flex-1 flex items-center justify-end gap-5 lg:gap-8 list-none m-0 p-0">
+        <li class="relative transition-all icon-wrapper flex items-center justify-center p-0 m-0 ">
+          <a href="{{ routes.account_url }}" title="Account" class="flex items-center justify-center w-6 h-6 group">
+            {%- render 'icon-account' -%}
+          </a>
+        </li>
+        <li class="icon-wrapper transition-all flex items-center justify-center p-0 m-0 relative">
+          <a href="{{ routes.cart_url }}" title="Cart" class="flex items-center justify-center w-6 h-6 group {% if cart.empty? %}cart-empty{% endif %}" data-header-cart>
+            <span class="!hidden" aria-hidden="true" data-cart-count>{{ cart.item_count }}</span>
+              {%- render 'icon-cart', class: 'icon icon-cart absolute' -%}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+{%- endif -%}
+
+{% schema %}
+
+{
+  "name": "Header",
+  "tag": "header",
+  "class": "header-wrapper sticky",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "id": "main_nav",
+      "type": "link_list",
+      "label": "Main Navigation"
+    },
+    {
+      "id": "wholesale_nav",
+      "type": "link_list",
+      "label": "Wholesale Navigation"
+    }
+  ]
+}
+
+{% endschema %}

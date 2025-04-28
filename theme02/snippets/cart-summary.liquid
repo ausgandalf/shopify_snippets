@@ -1,0 +1,56 @@
+{%-liquid
+  assign points = cart.total_price | divided_by: 100 | floor
+  assign remains = settings.threshold | times: 100 | minus: cart.total_price
+
+  assign has_subscription = false
+
+  for item in cart.items
+    if item.selling_plan_allocation
+      assign has_subscription = true
+    endif
+  endfor
+-%}
+<div class="cart-summary lg:min-w-[363px] bg-grey-1 px-4 py-6 h-full">
+  <h5 class="mb-4 text-center">Order Summary</h5>
+
+  {% render 'free-shipping-bar', text_classes: 'text-center', padding_classes: 'px-4' %}
+
+  <div class="flex items-center justify-between border-t border-grey-2 py-4 lg:py-6">
+    <p>Subtotal</p>
+    <p>{{ cart.total_price | money }}</p>
+  </div>
+
+  <div class="border-t border-grey-2 py-4 lg:py-6">
+    <div class="flex items-center justify-between mb-1">
+      <p>Shipping</p>
+      {%- if remains < 0 or has_subscription or customer.tags contains 'Active Subscriber' or customer.tags contains 'wholesale-customer' or customer.tags contains 'swell_vip_premier' -%}
+        <p>Free</p>
+      {%- else -%}
+        <p>$6.99</p>
+      {%- endif -%}
+    </div>
+    <p class="text-[12px] leading-[130%] text-grey-5">*Within the contiguous US</p>
+  </div>
+
+  <div class="flex items-center justify-between border-t border-grey-2 py-4 lg:py-6">
+    <p>Tax</p>
+    <p>TBD</p>
+  </div>
+
+  <div class="flex items-center justify-between border-t border-grey-2 py-4 lg:py-6">
+    <p class="h6 uppercase font-heading font-bold">Total</p>
+    <p class="h6 uppercase font-heading font-bold">{{ cart.total_price | money }}</p>
+  </div>
+
+  <a href="/checkout" class="button button--primary-dark !max-w-none !w-full">Checkout</a>
+
+  {%- if settings.rewards_text != blank -%}
+  <div class="flex justify-center gap-x-2 mt-4">
+    {%- render 'icon-rewards', class: 'w-6 h-6' -%}
+    <div class="text-sm custom-content rewards-text">
+      {%- capture rewards_point_html -%}{%- render 'product-reward-points', points: points -%}{%- endcapture -%}
+      {{ settings.rewards_text | replace: '[x]', rewards_point_html }}
+    </div>
+  </div>
+  {%- endif -%}
+</div>

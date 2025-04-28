@@ -1,0 +1,45 @@
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    window.badges = [
+      {%- for badge in section.blocks -%}
+        { "title": {{- badge.settings.title | json -}}, "color": {{- badge.settings.color | json -}} }
+        {%- unless forloop.last -%},{%- endunless -%}
+      {%- endfor -%}
+    ];
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Product Badges",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "badge",
+        "name": "Badge",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Badge Title",
+            "info": "Sort blocks in the priority they should appear for products (badges are case sensitive)"
+          },
+          {
+            "type": "select",
+            "id": "color",
+            "label": "Badge Color",
+            "options": [
+              { "value": "white", "label": "White" },
+              { "value": "ocean", "label": "Ocean" },
+              { "value": "ice", "label": "Ice" },
+              { "value": "sunshine", "label": "Sunshine" },
+              { "value": "green", "label": "Green" },
+              { "value": "gray", "label": "Gray" },
+              { "value": "error", "label": "Error" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,156 @@
+{%- liquid
+  assign recharge_selling_plan_group = product.selling_plan_groups | where: 'app_id', '294517' | first
+
+  if recharge_selling_plan_group != blank
+    assign selling_plans = recharge_selling_plan_group.selling_plans
+  endif
+
+  assign wholesale_price = current_variant.price | times: 0.10
+  assign wholesale_subscription = first_plan_variant_price | times: 0.10
+  -%}
+<div class="my-4">
+  <div class="flex flex-col" data-subscription-wrapper>
+    {%- unless product.requires_selling_plan -%}
+    <div class="flex justify-between items-center radio-wrap w-full py-4">
+      <div class="flex items-center">
+        <input
+          type="radio"
+          name="selling_plan_radio"
+          id="onetime-purchase"
+          class="!mr-2"
+          checked
+          data-onetime-purchase
+          value="onetime"
+        />
+        <label for="onetime-purchase" class="sub-reg">One-Time Purchase</label>
+      </div>
+      <div class="text-lg" data-buybox-price="{{ current_variant.price }}">
+        {% if customer.tags contains 'wholesale-customer' and product.tags contains 'wholesale' %}
+          <span class="visually-hidden">Original Price</span><span class="line-through text-grey-4 text-reg">{{ current_variant.price | money }}</span>
+        {% elsif current_variant.compare_at_price > current_variant.price %}
+          <span class="visually-hidden">Original Price</span><span class="line-through text-grey-4 text-reg">{{ current_variant.compare_at_price | money }}</span>
+        {% endif %}
+        {% if customer.tags contains 'wholesale-customer' and product.tags contains 'wholesale' %}
+          <span class="visually-hidden">Wholesale Price</span><span class="text-lg text-error"> {{ current_variant.price | minus: wholesale_price | money }} </span>
+        {% else %}
+        <span class="visually-hidden">Price</span><span class="text-lg {% if current_variant.compare_at_price > current_variant.price %}text-error{% endif %}">{{ current_variant.price | money }}</span>
+        {% endif %}
+      </div>
+    </div>
+    {%- endunless -%}
+    {%- if selling_plans != blank -%}
+      {%- liquid
+        assign first_selling_plan = selling_plans | first
+        assign first_plan_price = first_selling_plan.price_adjustments | first
+        assign first_discount_type = first_plan_price.value_type
+        assign first_discount_amount = first_plan_price.value
+        assign first_plan_variant_price = current_variant.price
+        assign first_plan_discounted_variant_price = current_variant.price
+
+        assign wholesale_subscription = first_plan_variant_price | times: 0.10
+
+        if first_discount_type == 'percentage'
+          assign first_discount_percent = 100 | minus: first_discount_amount
+          assign first_plan_discounted_variant_price = first_plan_discounted_variant_price | times: first_discount_percent | divided_by: 100
+          assign saving = first_discount_amount | append: '%'
+        elsif first_discount_type == 'fixed'
+          assign first_plan_discounted_variant_price = first_plan_discounted_variant_price | minus: first_discount_amount
+          assign saving = first_discount_amount | times: 100 | money
+        endif
+        -%}
+
+      {%- unless product.requires_selling_plan -%}
+      <div class="border-t border-grey-2"></div>
+      {%- endunless -%}
+      <div class="py-4">
+        <div class="radio-wrap w-full flex justify-between items-center">
+          <div class="flex items-center">
+            <input
+              type="radio"
+              name="selling_plan_radio"
+              id="subscription-purchase"
+              class="!mr-2"
+              data-subscription-purchase
+              value="subscription"
+              {%- if product.requires_selling_plan -%}
+                checked
+              {%- endif -%}
+            />
+            <label for="subscription-purchase">
+              <strong class="sub-reg">Subscribe</strong>
+              {%- if first_discount_amount != 0 -%}
+                <strong class="inline-block rounded border-2 border-primary-4 px-3 pb-0.5 ml-1 sub-sm bg-primary-4" data-badge-saving>Save {{ saving }}
+              {%- endif -%}
+              </strong>
+            </label>
+          </div>
+          <div class="flex items-end gap-x-1" data-subscription-price="{{ first_plan_discounted_variant_price }}">
+            {% if customer.tags contains 'wholesale-customer' or first_discount_amount != 0 %}
+              <span class="visually-hidden">Original Price</span><span class="line-through text-grey-4 text-reg">{{ first_plan_variant_price | money }}</span>
+            {%- endif -%}
+          <span class="visually-hidden">Price with Subscription Discount</span><span class="text-lg {% if first_discount_amount != 0 or customer.tags contains 'wholesale-customer' %}text-error{% endif %}">{% if first_discount_amount != 0 %}{{ first_plan_discounted_variant_price | money }}{% elsif customer.tags contains 'wholesale-customer' %}{{ first_plan_variant_price | minus: wholesale_subscription | money }}{%- endif -%}</span>
+          </div>
+        </div>
+
+        {%- if section.settings.wholesale_text != blank and customer.tags contains 'wholesale-customer' and product.tags contains 'wholesale' -%}
+          <div class="mt-2 ml-8 text-sm text-grey-4">
+            {{ section.settings.wholesale_text }}
+          </div>
+        {%- elsif section.settings.secondary_text != blank  -%}
+        {%- assign secondary_text = section.settings.secondary_text | replace: '##SAVE##', saving -%}
+          <div class="mt-2 ml-8 text-sm text-grey-4" data-secondary-text>
+            {{ secondary_text }}
+          </div>
+        {%- endif -%}
+
+        {%- if section.settings.promo_code_message != blank -%}
+          {%- assign promo_code_message = section.settings.promo_code_message | replace: '##SAVE##', saving -%}
+          <div class="inline-block mt-2 ml-8 py-1.5 px-2 rounded-[24px] bg-primary-1 text-[12px] lg:text-[13px] font-bold leading-[130%] font-paragraph text-grey-5">
+            <span data-promo-code-message>{{- promo_code_message -}}</span>
+            {% if section.settings.show_tooltip %}
+              <div class="relative inline ml-1 leading-[0]" data-buybox-tooltip-parent>
+                <span class="cursor-pointer hover:text-primary-2" data-buybox-tooltip-open>
+                  {% render 'icon-questionmark', class: 'inline' %}</span>
+                </span>
+                <div class="text-center" data-buybox-tooltip>
+                  <span class="absolute right-2 top-2 cursor-pointer hover:text-primary-2" data-buybox-tooltip-close>
+                    {%- render 'icon-close-small' -%}
+                  </span>
+
+                  {%- assign tooltipTitle = section.settings.tooltip_title | replace: '##SAVE##', saving -%}
+                  <div class="sub-lg font-semibold text-black" data-buybox-tooltip-title>{{ tooltipTitle }}</div>
+
+                  {%- if section.settings.tooltip_content != blank -%}
+                    {%- assign tooltipContent = section.settings.tooltip_content | replace: '##SAVE##', saving -%}
+                    <div class="custom-content font-normal text-sm mt-3" data-buybox-tooltip-content>{{ tooltipContent }}</div>
+                  {%- endif -%}
+
+                  {%- if section.settings.tooltip_cta_label != blank and section.settings.tooltip_cta_link != blank -%}
+                    <a href="{{ section.settings.tooltip_cta_link }}" class="focus-link text-sm font-normal inline-block mt-4">{{ section.settings.tooltip_cta_label }}</a>
+                  {%- endif -%}
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        {%- endif -%}
+
+        <div class="mt-4 hidden" data-selling-plans-wrapper>
+          <div class="w-full select-wrap">
+            <select id="selling_plan" aria-label="Select Frequency" class="w-full" data-selling-plans>
+              {%- for selling_plan in selling_plans -%}
+                <option value="{{ selling_plan.id }}" {% if forloop.first %}selected{% endif %}>
+                  {{ selling_plan.name }}
+                </option>
+              {%- endfor -%}
+            </select>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+  {% if customer.tags contains 'wholesale-customer' and product.tags contains 'wholesale' %}
+    <div class="flex gap-[3px] items-center pt-4">
+      {%- render 'icon-asterisk' -%}<div class="font-bold text-sm">Wholesale discount applied in cart</div>
+    </div>
+  {%- endif -%}
+</div>

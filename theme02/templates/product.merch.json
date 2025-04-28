@@ -1,0 +1,329 @@
+{
+  "sections": {
+    "buybox": {
+      "type": "buybox",
+      "blocks": {
+        "value_prop_fa3TUW": {
+          "type": "value_prop",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Brand_Elements.svg",
+            "title": "Free US Shipping on All Orders"
+          }
+        },
+        "rewards_cJG9rK": {
+          "type": "rewards",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Brand_Elements_1.svg",
+            "title": "Earn [x] points on this purchase! <a href=\"\/pages\/rewards\" title=\"Rewards\">Learn More<\/a>"
+          }
+        }
+      },
+      "block_order": [
+        "value_prop_fa3TUW",
+        "rewards_cJG9rK"
+      ],
+      "settings": {
+        "secondary_text": "",
+        "wholesale_text": "Say goodbye to single use plastic! Get convenient, automated deliveries. Adjust anytime.",
+        "free_gift_title": "",
+        "free_gift_desc": "",
+        "show_tooltip": false,
+        "promo_code_message": "",
+        "tooltip_title": "Extra ##SAVE## Off",
+        "tooltip_content": "<p>Get an extra ##SAVE## off your first order! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<\/p>",
+        "tooltip_cta_label": "Read More",
+        "tooltip_cta_link": "shopify:\/\/pages\/beach-terms"
+      }
+    },
+    "fifty_fifty_NzLFiQ": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_VpNUey": {
+          "type": "text",
+          "settings": {
+            "icon_text": "📦 Pallet pricing available for orders of 30+ cases. Reach out to hello@whitelabelisbetter.com"
+          }
+        },
+        "text_9VnABQ": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌎 Support environmental causes like tree planting and beach clean-ups."
+          }
+        },
+        "text_Q8Hgmm": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🏷️ Enjoy special wholesale pricing for your business!"
+          }
+        },
+        "text_mLHtmL": {
+          "type": "text",
+          "settings": {
+            "icon_text": "⭐ Our 5-star customer service team is always available to help with any questions or concerns."
+          }
+        },
+        "text_EJQcif": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🪧 Let your customers know about your sustainable initiatives throughout your business with dedicated point of purchase items."
+          }
+        }
+      },
+      "block_order": [
+        "text_VpNUey",
+        "text_9VnABQ",
+        "text_Q8Hgmm",
+        "text_mLHtmL",
+        "text_EJQcif"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "Say <strong>Goodbye to Plastic Bottles! <\/strong>",
+        "heading_style": "h2",
+        "description": "Switch to 92% plant-based packaging to support the planet with the most renewable option in the water aisle!",
+        "featured_img": "shopify:\/\/shop_images\/b2b_product5050.jpg",
+        "column_img": "right",
+        "display_badge": true,
+        "cta_url": "\/",
+        "cta_text": "",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "product_recommendations_CWBiMe": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "<strong>Recommended Products<\/strong>",
+        "cta_text": "SHOP ALL",
+        "cta_url": "shopify:\/\/collections\/merch",
+        "recommended_collection": "merch",
+        "secondary_text": ""
+      }
+    },
+    "four_col_RJXn4F": {
+      "type": "four-col",
+      "blocks": {
+        "text_b3GnyW": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_footprints_icon_ea7c5af5-1e03-4461-9aa2-be00ddd0a397.svg",
+            "icon_title": "Lower Footprint",
+            "icon_text": "36% lower carbon footprint than plastic bottles and aluminum cans"
+          }
+        },
+        "text_kA7xDY": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_carton_icon_00997995-79df-4e5b-81d3-8ecda1da6f7f.svg",
+            "icon_title": "Plant Based",
+            "icon_text": "92% renewable cartons made with FSC paper and plant-based cap"
+          }
+        },
+        "text_BWbeh4": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_recycle_icon_1457ce40-5807-4eea-9ab9-66b67e0b4ab6.svg",
+            "icon_title": "Recyclable",
+            "icon_text": "100% recyclable cartons vs. only 5% of plastic that's recycled"
+          }
+        },
+        "text_cbNmrc": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_water_icon_85a83796-6c18-47fc-81c7-da1ba51b2655.svg",
+            "icon_title": "Pure Water",
+            "icon_text": "Sustainably sourced water, purified and free of PFAS or additives"
+          }
+        }
+      },
+      "block_order": [
+        "text_b3GnyW",
+        "text_kA7xDY",
+        "text_BWbeh4",
+        "text_cbNmrc"
+      ],
+      "settings": {
+        "image_d": "shopify:\/\/shop_images\/icon_background_nature.png",
+        "image_m": "shopify:\/\/shop_images\/icon_background_nature.png",
+        "title": "<strong>A Better Alternative <\/strong>",
+        "heading_text_color": "black",
+        "cta_url": "shopify:\/\/collections\/wholesale-shop-all",
+        "cta_text": "",
+        "button_style": "primary",
+        "block_text_color": "black",
+        "bg_color": "white",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "shop_by_category_Eqn3eP": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_thcxBf": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/250.jpg",
+            "title": "250ML Whitelabel",
+            "description": "<p>Convenient mini size for retail.<\/p>",
+            "cta_url": "shopify:\/\/products\/250ml-24-pack-wholesale"
+          }
+        },
+        "list_item_JWHzzc": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/330.jpg",
+            "title": "330ML Whitelabel",
+            "description": "<p>Eco-friendly hydration for office spaces. <\/p>",
+            "cta_url": "shopify:\/\/products\/330ml-24-pack"
+          }
+        },
+        "list_item_MkU7Wx": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/550.jpg",
+            "title": "500ML Whitelabel",
+            "description": "<p>Memorable events with our standard size.<\/p>",
+            "cta_url": "shopify:\/\/products\/500ml-24-pack-wholesale"
+          }
+        },
+        "list_item_firCcP": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1L.jpg",
+            "title": "1 Liter Whitelabel",
+            "description": "<p>Maximum hydration during workouts.<\/p>",
+            "cta_url": "shopify:\/\/products\/1l-12-pack-wholesale"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_thcxBf",
+        "list_item_JWHzzc",
+        "list_item_MkU7Wx",
+        "list_item_firCcP"
+      ],
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "A size for <strong>every occasion<\/strong>",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
+    "fifty_fifty_fxyPRa": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_zCQYwG": {
+          "type": "text",
+          "settings": {
+            "icon_text": "Less than 30 cases shop standard UPS or FedEx Ground in 3-5 business days."
+          }
+        },
+        "text_GBbrJi": {
+          "type": "text",
+          "settings": {
+            "icon_text": "30+ cases ship on a palet via freight in 2-3 weeks."
+          }
+        },
+        "text_LcwGmf": {
+          "type": "text",
+          "settings": {
+            "icon_text": "Enjoy complimentary shipping on all orders in the lower 48 states."
+          }
+        },
+        "text_Fq87Cz": {
+          "type": "text",
+          "settings": {
+            "icon_text": "PRO TIP: Enjoy hassle free automated deliveries when you subscribe."
+          }
+        }
+      },
+      "block_order": [
+        "text_zCQYwG",
+        "text_GBbrJi",
+        "text_LcwGmf",
+        "text_Fq87Cz"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "<strong>How do items ship?<\/strong>",
+        "heading_style": "h2",
+        "description": "",
+        "featured_img": "shopify:\/\/shop_images\/5050_B2B_Shipping.jpg",
+        "column_img": "left",
+        "display_badge": false,
+        "cta_url": "shopify:\/\/collections\/wholesale-merch-best-selling",
+        "cta_text": "",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "product_recommendations_cabzgD": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "<strong>FRESH FRUIT FLAVORS. PLANET-FRIENDLY CARTON.<\/strong>",
+        "cta_text": "Explore Flavors",
+        "cta_url": "shopify:\/\/collections\/wholesale-fruit-flavors",
+        "recommended_collection": "wholesale-fruit-flavors",
+        "secondary_text": ""
+      }
+    },
+    "hero_JbCzrk": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/b2b_hero_pdp.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/600x600_hero_1.jpg",
+        "subheading": "",
+        "heading": "<strong>How can we help?<\/strong>",
+        "heading_mobile": "<strong>How can we help?<\/strong>",
+        "heading_type": "h2",
+        "copy": "<p>Reach out with any questions or concerns. <\/p><p>We'd love to hear from you!<\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "contact us",
+        "cta_url_1": "shopify:\/\/pages\/contact-us",
+        "cta_type_1": "button button--primary-dark",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    }
+  },
+  "order": [
+    "buybox",
+    "fifty_fifty_NzLFiQ",
+    "product_recommendations_CWBiMe",
+    "four_col_RJXn4F",
+    "shop_by_category_Eqn3eP",
+    "fifty_fifty_fxyPRa",
+    "product_recommendations_cabzgD",
+    "hero_JbCzrk"
+  ]
+}

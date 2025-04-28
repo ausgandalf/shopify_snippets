@@ -1,0 +1,71 @@
+{% liquid
+assign image_product = product.media[1]
+
+assign wholesale_price = product.price | times: 0.10
+assign defaultVariant = product.selected_or_first_available_variant
+assign recharge_selling_plan_group = product.selling_plan_groups | where: 'app_id', '294517' | first
+
+if recharge_selling_plan_group != blank
+  assign first_selling_plan = recharge_selling_plan_group.selling_plans | first
+endif
+%}
+
+
+<div class="w-full" data-options='{{ product.options_with_values | json }}' data-variants='{{ product.variants | json }}' data-product-tile>
+  <a aria-label="Shop {{ product.title }} {%- if customer.tags contains 'wholesale-customer' and product.tags contains 'wholesale' -%} {{ product.price | minus: wholesale_price | money }} {%- else -%} {{ product.price | money }} {%- endif -%}" href="{{ product.url }}">
+  <span class="hidden">Shop {{ product.title }}</span>
+  <div tabindex="0" class="product-img-container relative overflow-hidden group" data-product-tile-image>
+    <div class="absolute top-0 left-0 max-w-fit m-2.5 z-10" data-product-badges="{%- render 'product-tags', product: product -%}"></div>
+      <img src="{{ product.featured_image | image_url: width: 320 }}" class="{% if image_product != blank %}lg:hover:opacity-0{% endif %} opacity-100 absolute left-0 top-0 w-full h-full object-cover bg-grey-1" alt="{{ product.featured_image.alt | default: product.featured_image.title | escape }}" />
+    {%- if image_product != blank -%}
+      <img src="{{ image_product | image_url: width: 320 }}" class="opacity-0 lg:hover:opacity-100 absolute left-0 top-0 w-full h-full object-cover bg-grey-1" alt="{{ image_product.alt | default: image_product.title | escape }}" />
+    {%- endif -%}
+    <div tabindex="0" class="absolute bottom-0 right-0 lg:w-full px-2 py-2 lg:px-4 lg:pb-4 {% unless defaultVariant.available %}disabled{% endunless %}" data-quick-buy-btn {% if product.has_only_default_variant and defaultVariant.available %}data-quick-add data-variant-id="{{ defaultVariant.id }}"{% else %}data-quick-add-btn{% endif %} {% if product.requires_selling_plan and first_selling_plan %}data-selling-plan="{{ first_selling_plan.id }}"{% endif %} {% if product.tags contains 'merch' %}data-merch-item{% endif %}>
+      <div class="button button--secondary-dark lg:!w-full !max-w-none !hidden lg:!inline-flex !bg-white hover:!bg-black">
+        <span class="!text-[16px] !tracking-[1.2px] !font-bold mr-1">Quick Add</span>
+        {%- render 'icon-add' -%}
+      </div>
+      <div class="lg:hidden">
+        {% render 'icon-quick-buy' %}
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 w-full px-2 pb-2 lg:px-4 lg:pb-4" data-variant-options></div>
+  </div>
+  </a>
+  <a aria-label="Shop {{ product.title }} {%- if customer.tags contains 'wholesale-customer' and product.tags contains 'wholesale' -%} {{ product.price | minus: wholesale_price | money }} {%- else -%} {{ product.price | money }} {%- endif -%}" href="{{ product.url }}">
+  <span class="hidden">Shop {{ product.title }}</span>
+    <div class="flex justify-between pt-2 lg:pt-4">
+      <div class="sub-reg">{{ product.title }}</div>
+      <div class="lg:block hidden text-right lg:pr-5">
+      {%- if product.compare_at_price > product.price -%}
+        <span class="visually-hidden">Original Price</span><span class="text-grey-4 line-through text-[13px] lg:text-[16px] leading-[130%]">{{ product.compare_at_price | money }}</span>
+        <span class="visually-hidden">Price</span><span class="text-error text-[13px] lg:text-[16px] leading-[130%]">{{ product.price | money }}</span>
+      {%- elsif customer.tags contains 'wholesale-customer' and product.tags contains 'wholesale' -%}
+        <span class="visually-hidden">Original Price</span><span class="text-grey-4 line-through text-[13px] lg:text-[16px] leading-[130%]">{{ product.price | money }}</span>
+        <span class="visually-hidden">Wholesale Price</span><span class="text-error text-[13px] lg:text-[16px] leading-[130%]">{{ product.price | minus: wholesale_price | money }}</span>
+      {%- else -%}
+      <span class="text-black text-[13px] lg:text-[16px] leading-[130%]">{{ product.price | money }}</span>
+      <span class="text-black text-[13px] lg:text-[16px] leading-[130%]">{% if product.price_min < product.price_max %}+{% endif %}</span>
+      {%- endif -%}
+      </div>
+    </div>
+    </a>
+    {% if product.metafields.custom.subtitle %}
+      <div class="mt-2 text-grey-4">{{ product.metafields.custom.subtitle | metafield_tag }}</div>
+    {% endif %}
+    <a aria-label="Shop {{ product.title }} {{ product.price | money }} +" href="{{ product.url }}">
+    <span class="hidden">Shop {{ product.title }}</span>
+    <div class="lg:hidden block pt-2">
+      {%- if product.compare_at_price > product.price -%}
+        <span class="text-grey-4 line-through text-[13px] lg:text-[16px] leading-[130%]">{{ product.compare_at_price | money }}</span>
+        <span class="text-error text-[13px] lg:text-[16px] leading-[130%]">{{ product.price | money }}</span>
+      {%- elsif customer.tags contains 'wholesale-customer' and product.tags contains 'wholesale' -%}
+        <span class="text-grey-4 line-through text-[13px] lg:text-[16px] leading-[130%]">{{ product.price | money }}</span>
+        <span class="text-error text-[13px] lg:text-[16px] leading-[130%]">{{ product.price | minus: wholesale_price | money }}</span>
+      {%- else -%}
+        <span class="text-black text-[13px] lg:text-[16px] leading-[130%]">{{ product.price | money }}</span>
+        <span class="text-black text-[13px] lg:text-[16px] leading-[130%]">{% if product.price_min < product.price_max %}+{% endif %}</span>
+      {%- endif -%}
+      </div>
+      </a>
+</div>

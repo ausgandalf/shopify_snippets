@@ -1,0 +1,72 @@
+{%-liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign value_props_html = ''
+-%}
+
+{%- form 'product', product, data-buybox-form: '', data-variant-id: current_variant.id -%}
+  <select name="id" class="hidden" aria-label="Select Variant" data-buybox-variant-id>
+    {%- for variant in product.variants -%}
+      <option value="{{ variant.id }}" {% if current_variant.id == variant.id %}selected{% endif %} data-variant-option-text="{{ variant.metafields.custom.size_info.value }}" data-case-quantity="{{ variant.metafields.whitelabel.case_quantity.value }}"> {{ variant.title }}</option>
+    {%- endfor -%}
+  </select>
+  <script type="application/json" data-buybox-product-json hidden>{{ product | json }}</script>
+  <script type="application/json" data-buybox-settings-json hidden>{{ section.settings | json }}</script>
+
+  <h1 class="h4 !font-bold uppercase">{{ product.title }}</h1>
+
+  {%- assign subtitle = product.metafields.custom.subtitle -%}
+  {%- if subtitle != blank -%}
+    <div class="custom-content text-reg text-grey-4 mt-2">{{ subtitle | metafield_tag }}</div>
+  {%- endif -%}
+
+  {%- assign promo_message = product.metafields.custom.promo_message -%}
+  {%- if promo_message != blank -%}
+    <div class="custom-content text-reg text-error mt-2">{{ promo_message | metafield_tag }}</div>
+  {%- endif -%}
+
+  {% if customer.tags contains 'wholesale-customer' and product.tags contains 'wholesale' %}
+    {%- render 'wholesale-table' -%}
+  {%- endif -%}
+
+  <div class="{% unless product.has_only_default_variant %}pt-4{% endunless %} pb-8 mt-4 border-t {% unless product.gift_card? %} border-b{% endunless %} border-grey-2">
+    {%- if product.metafields.custom.alien_products != blank -%}
+      <div class="mb-6">
+        {%- render 'buybox-alien-products' -%}
+      </div>
+    {%- endif -%}
+
+    {%- unless product.has_only_default_variant -%}
+      <div class="mb-4">
+        {%- render 'buybox-options', current_variant: current_variant -%}
+      </div>
+    {%- endunless -%}
+
+    {%- render 'buybox-subscription', current_variant: current_variant -%}
+
+    <div class="{% unless current_variant.available %}!hidden{% endunless %}" data-buybox-atc-wrapper>
+      <div class="flex gap-4">
+        {% unless product.gift_card? %}
+          <div class="flex items-center border border-grey-2 px-4 py-2.5" data-buybox-quantity-wrapper>
+            <button class="flex items-center justify-center w-4 h-4" data-buybox-quantity-minus>
+              {%- render 'icon-minus' -%}
+              <span class="sr-only">Decrease Quantity</span>
+            </button>
+            <input class="!border-none !min-w-0 !w-[40px] !text-center !text-black !font-bold !font-heading !text-[22px] !leading-[90%] !tracking-[0.88px] !uppercase !px-1 !pt-0 !pb-1 !h-8" type="number" name="quantity" value="1" min="1"  aria-label="quantity" data-buybox-quantity />
+            <button class="flex items-center justify-center w-4 h-4" data-buybox-quantity-plus>
+              {%- render 'icon-plus' -%}
+              <span class="sr-only">Increase Quantity</span>
+            </button>
+          </div>
+        {% endunless %}
+        <button class="button button--primary-dark atc-button flex-1 !max-w-none !max-h-none !py-4" type="submit" data-buybox-form-submit>
+            Add to Cart
+        </button>
+
+      </div>
+    </div>
+
+    <a class="button button--secondary-dark w-full !max-w-none !max-h-none !py-4 klaviyo-bis-trigger {% if current_variant.available %}!hidden{% endif %}" href="#" data-buybox-notify>
+      Notify Me When Available
+    </a>
+  </div>
+{%- endform -%}

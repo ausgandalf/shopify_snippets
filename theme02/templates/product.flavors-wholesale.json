@@ -1,0 +1,496 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "buybox": {
+      "type": "buybox",
+      "blocks": {
+        "value_prop_fa3TUW": {
+          "type": "value_prop",
+          "settings": {
+            "icon": "shopify://shop_images/Brand_Elements.svg",
+            "title": "Free US Shipping on All Orders"
+          }
+        },
+        "rewards_cJG9rK": {
+          "type": "rewards",
+          "settings": {
+            "icon": "shopify://shop_images/Brand_Elements_1.svg",
+            "title": "Earn [x] points on this purchase! <a href=\"https://whitelabelisbetter.com/pages/rewards\" title=\"https://whitelabelisbetter.com/pages/rewards\">Learn More</a>"
+          }
+        }
+      },
+      "block_order": [
+        "value_prop_fa3TUW",
+        "rewards_cJG9rK"
+      ],
+      "settings": {
+        "secondary_text": "",
+        "wholesale_text": "",
+        "free_gift_title": "",
+        "free_gift_desc": "<p>11.16 ounces of 100% purified water, perfect for when you need a little hydration.</p>",
+        "show_tooltip": false,
+        "promo_code_message": "",
+        "tooltip_title": "30% off your first subscription order",
+        "tooltip_content": "<p>30% off only applied to full retail price on customer's first subscription order. One redemption per customer. After initial order, standard subscription rates apply. Offer valid from June 17, 2024 at 12:01am ET to July 15, 2024 at 11:59pm ET online at whitelabelisbetter.com. Coupon code must be entered at checkout. Additional discount codes will not apply.</p>",
+        "tooltip_cta_label": "Learn More",
+        "tooltip_cta_link": "shopify://pages/wholesale-subscribe"
+      }
+    },
+    "value_props_F4xaqh": {
+      "type": "value-props",
+      "blocks": {
+        "value_prop_7ac3nf": {
+          "type": "value-prop",
+          "repeater": "{{ product.metafields.custom.value_props.value }}",
+          "settings": {
+            "icon": "{{ block.repeater.icon.value }}",
+            "title": "{{ block.repeater.title.value }}",
+            "description": "{{ block.repeater.description | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "value_prop_7ac3nf"
+      ],
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "product_details_YMhiB7": {
+      "type": "product-details",
+      "blocks": {
+        "accordion_LtK4Mg": {
+          "type": "accordion",
+          "repeater": "{{ product.metafields.custom.product_details.value }}",
+          "settings": {
+            "text_alignment": "text-left",
+            "title": "{{ block.repeater.title.value }}",
+            "description": "{{ block.repeater.description | metafield_tag }}",
+            "highlight_icon_1": "{{ block.repeater.highlight_icon_1.value }}",
+            "highlight_text_1": "{{ block.repeater.highlight_text_1.value }}",
+            "highlight_icon_2": "{{ block.repeater.highlight_icon_2.value }}",
+            "highlight_text_2": "{{ block.repeater.highlight_text_2.value }}",
+            "highlight_text_3": "",
+            "review_name_1": "",
+            "review_text_1": "",
+            "review_name_2": "",
+            "review_text_2": ""
+          }
+        },
+        "accordion_kD3M86": {
+          "type": "accordion",
+          "settings": {
+            "text_alignment": "text-left",
+            "title": "Reviews",
+            "description": "",
+            "highlight_text_1": "",
+            "highlight_text_2": "",
+            "highlight_text_3": "",
+            "review_name_1": "April",
+            "review_text_1": "Perfect for the office. We have this water on subscription for our office, it tastes good and we enjoy the shipments every month.",
+            "review_name_2": "Saige S.",
+            "review_text_2": "We love our new Whitelabel and our patients love it too! So easy with the subscription - never have to worry about re-ordering."
+          }
+        },
+        "accordion_AFr9Qj": {
+          "type": "accordion",
+          "settings": {
+            "text_alignment": "text-left",
+            "title": "Shipping Information",
+            "description": "<p>Enjoy complimentary shipping on all orders in the lower 48 states. <strong>PRO TIP: </strong>Enjoy hassle free automated deliveries when you subscribe.</p>",
+            "highlight_icon_1": "shopify://shop_images/website_icons_1.svg",
+            "highlight_text_1": "Less than 30 cases ship standard UPS or FedEx Ground",
+            "highlight_icon_2": "shopify://shop_images/website_icons_1.svg",
+            "highlight_text_2": "More than 30 cases?Reach out to hello@whitelabelisbetter.com for assistance.",
+            "highlight_text_3": "",
+            "review_name_1": "",
+            "review_text_1": "",
+            "review_name_2": "",
+            "review_text_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_LtK4Mg",
+        "accordion_kD3M86",
+        "accordion_AFr9Qj"
+      ],
+      "settings": {
+        "bg_color": "bg-grey-1",
+        "img_1": "shopify://shop_images/FitnessBW.svg",
+        "img_2": "shopify://shop_images/flavorspd.svg",
+        "img_3": "shopify://shop_images/grapefruitdiscovery.svg",
+        "img_4": "shopify://shop_images/HotelBW.svg",
+        "value_icon_1": "shopify://shop_images/black_carton_icon_174cde8a-f6ba-40a8-a4f4-c0a03c91382b.svg",
+        "value_title_1": "The Earth Loves Our Box",
+        "value_description_1": "Thousands agree that pure water in a plant-based box is simply better.",
+        "value_icon_2": "shopify://shop_images/Delivered_straight_to_your_doorstep_2e05d4c6-403e-4940-8f3c-157b246a42e7.svg",
+        "value_title_2": "Free Auto-Replenish",
+        "value_description_2": "We'll keep you stocked with sustainable hydration.",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "four_col_DU7QmH": {
+      "type": "four-col",
+      "blocks": {
+        "text_eN38TJ": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/11.svg",
+            "icon_title": "IT'S STILL 92% RENEWABLE",
+            "icon_text": "You'll remember our flavored water by its crisp, award-winning taste. With no minerals added, it's 100% pure and comes in a plant-based carton that's a better option for our planet."
+          }
+        },
+        "text_jpnmiC": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/12.svg",
+            "icon_title": "BETTER NATURAL FRUIT FLAVOR",
+            "icon_text": "Pick a flavor based on your mood. Choose Lemon or Grapefruit to brighten your morning. Grab Cucumber when you’re treating yourself to a spa day. Blackberry is great when you're looking for a better alternative to sugary drinks."
+          }
+        },
+        "text_QGt9gR": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/13.svg",
+            "icon_title": "SAME BETTER PROMISE",
+            "icon_text": "When you choose Whitelabel Flavored\nWater, you are lowering your carbon footprint by 36% and protecting our planet from the overuse of single-use plastic bottles and aluminum cans."
+          }
+        }
+      },
+      "block_order": [
+        "text_eN38TJ",
+        "text_jpnmiC",
+        "text_QGt9gR"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "<strong>ZERO CALORIES. ZERO SUGAR.</strong>",
+        "heading_text_color": "black",
+        "cta_url": "/",
+        "cta_text": "",
+        "button_style": "primary",
+        "block_text_color": "black",
+        "bg_color": "white",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_fGNitT": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_hmRiHt": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🍋 A burst of natural energizing lemon"
+          }
+        },
+        "text_4iXNTq": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🍉 Watermelon: Our fan-favorite, natural watermelon flavor"
+          }
+        },
+        "text_UYG9bz": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🥒 Cool and calming cucumber for relaxation"
+          }
+        },
+        "text_4wpLMC": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🍊 Tart - sweet, energizing grapefruit flavor"
+          }
+        },
+        "text_D4nmDx": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🍇 A natural essence of fresh blackberries"
+          }
+        }
+      },
+      "block_order": [
+        "text_hmRiHt",
+        "text_4iXNTq",
+        "text_UYG9bz",
+        "text_4wpLMC",
+        "text_D4nmDx"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "<strong>FRESH FRUIT FLAVORS</strong>",
+        "heading_style": "h2",
+        "description": "Try it with a twist! With fresh fruit flavors, staying hydrated is anything but boring. And with our safely sealed, 92% plant-based packaging, you'll have a delicious, convenient, and sustainable alternative to bottled water.",
+        "featured_img": "shopify://shop_images/flavor_features_FINAL.jpg",
+        "column_img": "left",
+        "display_badge": false,
+        "cta_url": "#shopify-section-template--16031219417199__product_recommendations_cabzgD",
+        "cta_text": "",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "product_recommendations_cabzgD": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "MORE FLAVORS",
+        "cta_text": "SHOP ALL",
+        "cta_url": "shopify://collections/wholesale-fruit-flavors",
+        "recommended_collection": "wholesale-fruit-flavors",
+        "secondary_text": "<p><strong>Simplify Business: </strong><a href=\"/pages/wholesale-subscribe\" title=\"Wholesale Subscribe\">Start a subscription</a> to enjoy effortless automated deliveries.</p>"
+      }
+    },
+    "two_three_up_apEQp3": {
+      "type": "two-three-up",
+      "blocks": {
+        "cta_qdLdKQ": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "Bold and Energizing",
+            "link": "shopify://products/lemon-500ml-whitelabel",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/11.jpg",
+            "bg_image_mobile": "shopify://shop_images/2-up_subscribepage-mobile2.jpg",
+            "text_color": "text-white",
+            "button_style": "primary"
+          }
+        },
+        "cta_UWEm46": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "Fun and Refreshing",
+            "link": "shopify://products/blackberry-500ml-whitelabel",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/2_5bb00598-a2ff-4bd6-9bf8-4e5368298580.jpg",
+            "bg_image_mobile": "shopify://shop_images/2up_flavors_m.jpg",
+            "text_color": "text-black",
+            "button_style": "primary"
+          }
+        },
+        "cta_BN6eF3": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "Cool and Calming",
+            "link": "shopify://products/cucumber-500ml-whitelabel",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/3_f17cc8ff-fabd-4011-a33e-f6fd774ae0ef.jpg",
+            "bg_image_mobile": "shopify://shop_images/2up_flavors_m2.jpg",
+            "text_color": "text-white",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "cta_qdLdKQ",
+        "cta_UWEm46",
+        "cta_BN6eF3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "A flavor for <strong>every Mood...</strong>",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_MM6TxC": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_9FzK9H": {
+          "type": "text",
+          "settings": {
+            "icon_text": "Less than 30 cases shop standard UPS or FedEx Ground in 3-5 business days."
+          }
+        },
+        "text_VJ8HRN": {
+          "type": "text",
+          "settings": {
+            "icon_text": "30+ cases ship on a pallet. Reach out to hello@whitelabelisbetter.com for assistance."
+          }
+        },
+        "text_pibkQD": {
+          "type": "text",
+          "settings": {
+            "icon_text": "Pallet pricing available for orders of 30+ cases. Reach out to hello@whitelabelisbetter.com"
+          }
+        },
+        "text_QYbeez": {
+          "type": "text",
+          "settings": {
+            "icon_text": "Enjoy complimentary shipping on all orders in the lower 48 states."
+          }
+        },
+        "text_nLwzTW": {
+          "type": "text",
+          "settings": {
+            "icon_text": "PRO TIP: Enjoy hassle free automated deliveries when you subscribe."
+          }
+        }
+      },
+      "block_order": [
+        "text_9FzK9H",
+        "text_VJ8HRN",
+        "text_pibkQD",
+        "text_QYbeez",
+        "text_nLwzTW"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "<strong>How do Items Ship?</strong>",
+        "heading_style": "h2",
+        "description": "",
+        "featured_img": "shopify://shop_images/5050_B2B_Shipping.jpg",
+        "column_img": "right",
+        "display_badge": true,
+        "cta_url": "/",
+        "cta_text": "",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "hero_iVQfzF": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/hero_flavorscollection_watermelon_1.svg",
+        "image_mobile": "shopify://shop_images/bw-watermelon-slider.jpg",
+        "subheading": "BY POPULAR DEMAND",
+        "heading": "<strong>Watermelon is back!</strong>",
+        "heading_mobile": "<strong>Watermelon is back!</strong>",
+        "heading_type": "h2",
+        "copy": "<p>Our fan favorite, Watermelon Flavored Water is back and here to stay! Now available for subscription orders. </p>",
+        "show_overlay": false,
+        "stack_on_mobile": true,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "Subscribe Now",
+        "cta_url_1": "shopify://products/watermelon-500ml-whitelabel",
+        "cta_type_1": "button button--primary-dark",
+        "cta_text_2": "",
+        "cta_url_2": "shopify://products/watermelon-500ml-whitelabel",
+        "cta_type_2": "button button--primary-dark",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "left",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "left",
+        "control_align_vertical_mobile": "top"
+      }
+    },
+    "fifty_fifty_NpwjMr": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_wPEpWn": {
+          "type": "text",
+          "settings": {
+            "icon_text": "0️⃣ Zero Calories, Zero Sugar"
+          }
+        },
+        "text_Bdapb4": {
+          "type": "text",
+          "settings": {
+            "icon_text": "♻️ 100% Recyclable, Refillable and BPA - Free"
+          }
+        },
+        "text_HRrTcp": {
+          "type": "text",
+          "settings": {
+            "icon_text": "💦 Purified Water with natural flavor"
+          }
+        },
+        "text_N3DGpB": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌿 92% Plant- Based Package"
+          }
+        },
+        "text_H68X4e": {
+          "type": "text",
+          "settings": {
+            "icon_text": "👣 64% less carbon emissions compared to plastic bottles"
+          }
+        }
+      },
+      "block_order": [
+        "text_wPEpWn",
+        "text_Bdapb4",
+        "text_HRrTcp",
+        "text_N3DGpB",
+        "text_H68X4e"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "<strong>FRESH FRUIT FLAVORS.</strong> PLANT-FRIENDLY CARTON.",
+        "heading_style": "h2",
+        "description": "Try it with a twist! With fresh fruit flavors, staying hydrated is anything but boring.",
+        "featured_img": "shopify://shop_images/flavor_features_FINAL.jpg",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "/",
+        "cta_text": "",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "1717016970c70e09ea": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_ugc_reviews_wXQrTz": {
+          "type": "shopify://apps/yotpo-product-reviews-ugc/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_ugc_reviews_wXQrTz"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "buybox",
+    "value_props_F4xaqh",
+    "product_details_YMhiB7",
+    "four_col_DU7QmH",
+    "fifty_fifty_fGNitT",
+    "product_recommendations_cabzgD",
+    "two_three_up_apEQp3",
+    "fifty_fifty_MM6TxC",
+    "hero_iVQfzF",
+    "fifty_fifty_NpwjMr",
+    "1717016970c70e09ea"
+  ]
+}

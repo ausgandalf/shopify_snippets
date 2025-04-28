@@ -1,0 +1,117 @@
+
+{% if section.settings.gallery_id != blank %}
+<script type="text/javascript">
+  (function e(){var e=document.createElement("script");
+  e.type="text/javascript",e.async=true,
+  e.src="//staticw2.yotpo.com/JMR4piw0MyZY8EknyneRkgsoUjDyYDTA0K8ZSjLw/widget.js";
+  var t=document.getElementsByTagName("script")[0];
+  t.parentNode.insertBefore(e,t)})();
+</script>
+  <div id="section-{{ section.id }}">
+    <div class="container my-12">
+      <div class="flex flex-col lg:flex-row w-full justify-between items-end">
+        <div>
+        {% if section.settings.heading != blank %}
+          <h1 class="h4 text-center lg:text-left mb-4">{{ section.settings.heading }}</h1>
+        {% endif %}        
+        {% if section.settings.copy != blank %}
+          <p class="text-center w-full lg:text-left lg:max-w-xxl">{{ section.settings.copy }}</p>
+        {% endif %}
+        </div>
+        {%- if section.settings.cta_text != blank and section.settings.cta_url != blank -%}
+          <a class="button button--secondary-dark !max-w-none opacity-0 md-max:h-0 md-max:p-0 lg:opacity-100" href="{{- section.settings.cta_url -}}" target=”_blank”>
+            {{- section.settings.cta_text -}}
+          </a>
+        {%- endif -%}
+      </div>
+      <div
+        class="yotpo yotpo-pictures-widget"
+        data-gallery-id="{{ section.settings.gallery_id }}">
+      </div>
+      {%- if section.settings.cta_text != blank and section.settings.cta_url != blank -%}
+        <a class="button button--secondary-dark !max-w-none lg:hidden w-full mx-auto text-center" href="{{- section.settings.cta_url -}}" target=”_blank”>
+          {{- section.settings.cta_text -}}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+{% endif %}
+
+{% style %}
+  #section-{{ section.id }} {
+    padding-bottom: {{ section.settings.bottom_padding_mobile }}px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    #section-{{ section.id }} {
+      padding-bottom: {{ section.settings.bottom_padding_desktop }}px;
+    }
+  }
+{% endstyle %}
+
+{% schema %}
+  {
+    "name": "Visual UGC Gallery",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "heading",
+        "label": " Heading"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "copy",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "cta_text",
+        "label": "CTA Text"
+      },
+      {
+        "type": "url",
+        "id": "cta_url",
+        "label": "CTA URL"
+      },
+      {
+        "type": "text",
+        "id": "gallery_id",
+        "label": "Gallery ID",
+        "info": "Please get a gallery id from yotpo visual UGC.",
+        "default": "66311c05ab02aa8897e6615c"
+      },
+      {
+        "type": "header",
+        "content": "Spacing"
+      },
+      {
+        "id": "bottom_padding_mobile",
+        "label": "Bottom Padding - Mobile",
+        "type": "range",
+        "min": 0,
+        "max": 200,
+        "step": 2,
+        "default": 30
+      },
+      {
+        "id": "bottom_padding_desktop",
+        "label": "Bottom Padding - Desktop",
+        "type": "range",
+        "min": 0,
+        "max": 200,
+        "step": 2,
+        "default": 80
+      }
+    ],
+    "presets": [
+      {
+        "name": "Visual UGC Gallery",
+        "category": "Homepage"
+      }
+    ]
+  }
+{% endschema %}

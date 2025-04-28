@@ -1,0 +1,110 @@
+<style type="text/css">
+  #section-{{- section.id -}} {
+    margin-bottom: {{- section.settings.margin_mobile | append: 'px' -}};
+  }
+
+  @media (min-width: 1025px) {
+    #section-{{- section.id -}} {
+      margin-bottom: {{- section.settings.margin_desktop | append: 'px' -}};
+    }
+  }
+</style>
+
+<div id="section-{{- section.id -}}" class="product-recommendations" data-section-type="product-recommendations">
+  <div class="max-w-[1920px] mx-auto flex flex-col px-0 py-12 lg:px-12 lg:py-20">
+    <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-y-6 px-4 lg:px-0">
+      {%- if section.settings.title != blank -%}
+        <h1 class="h4 custom-heading">{{ section.settings.title }}</h1>
+      {%- endif -%}
+
+      {%- if section.settings.cta_text != blank and section.settings.cta_url != blank -%}
+        <a href="{{ section.settings.cta_url }}" class="button button--secondary-dark font-heading w-full lg:w-auto !max-w-none">
+          {{ section.settings.cta_text }}
+        </a>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.recommended_collection != blank -%}
+    <div class="mt-6 snap-x snap-mandatory overflow-x-auto pb-6 scrollbar">
+      <div class="flex gap-x-6 px-4 lg:px-0 w-max lg:w-auto">
+        {%- for product in collections[section.settings.recommended_collection].products limit: 8 -%}
+          <div class="basis-[240px] min-w-[240px] lg:basis-[calc(25%-18px)] lg:min-w-[calc(25%-18px)] snap-center product-tile">
+            {%- render 'product-tile', product: product -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- endif -%}
+
+    {%- if section.settings.secondary_text != blank -%}
+    <div class="mt-6 lg:mt-8 px-4 lg:px-0">
+      <div class="bg-primary-1 text-center p-4 custom-content secondary-text">
+        {{- section.settings.secondary_text -}}
+      </div>
+    </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Recommendations",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "margin_desktop",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Desktop",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "margin_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Mobile",
+        "default": 36
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "cta_text",
+        "label": "CTA Text"
+      },
+      {
+        "type": "url",
+        "id": "cta_url",
+        "label": "CTA URL"
+      },
+      {
+        "type": "collection",
+        "id": "recommended_collection",
+        "label": "Recommended Collection"
+      },
+      {
+        "type": "richtext",
+        "id": "secondary_text",
+        "label": "Secondary Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Recommendations"
+      }
+    ]
+  }
+{% endschema %}

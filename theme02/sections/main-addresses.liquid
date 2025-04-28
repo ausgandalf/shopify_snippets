@@ -1,0 +1,209 @@
+{%- assign wholesale_url = 'https://shopify.com/2347341/account' -%}
+
+{%- liquid
+  assign strippedUrl = canonical_url |  remove: 'https://whitelabelisbetter.com'
+  if strippedUrl == routes.account_addresses_url
+  assign isActive = true
+  endif
+  
+  assign customer_hash = ''
+  if customer.metafields.subscriptions != blank
+    assign customer_hash = customer.metafields.subscriptions.customer_string
+  endif
+-%}
+
+
+<div class="customer account py-6 lg:py-24 !container lg:flex">
+  <div id="account-navigation" class="w-full lg:w-[254px] lg:mr-[84px] mb-6 lg:mb-0">
+    <div class="flex justify-between">
+      <h5 class="pb-4">Hello, {{ customer.first_name }}</h5>
+      <a class="sub-lg lg:hidden" onclick="location.href='{{ routes.account_logout_url }}'">Sign Out</a>
+    </div>
+
+    <div id="account-navigation-block" class="hidden lg:flex mt-10 gap-6 flex-col">
+      <div class="yotpo-widget-instance" data-yotpo-instance-id="749644"></div>
+      <button onclick="location.href='/account'" class="h6 !m-0 !w-fit content-link">Order History</button>
+      <button onclick="location.href='{{ routes.account_addresses_url  }}'" class="h6 !m-0 !w-fit content-link {% if isActive %}!bg-primary-1{% endif %}">Saved Addresses</button>
+      {%- if customer_hash != '' -%}
+        <button onclick="location.href='/tools/recurring/portal/{{ customer_hash }}/subscriptions'" class="h6 !m-0 !w-fit content-link">Subscriptions</button>
+      {%- endif -%}
+      <button onclick="location.href='{{ routes.account_logout_url }}'" class="h6 !m-0 !w-fit content-link">Sign Out</button>
+    </div>
+
+    <div class="w-full lg:hidden">
+      <div class="yotpo-widget-instance" data-yotpo-instance-id="749644"></div>
+    </div>
+    <select data-account-navigation-mobile class="w-full lg:hidden">
+      <option value="/account">Order History</option>
+      <option value="{{ routes.account_addresses_url }}">Saved Addresses</option>
+      {%- if customer_hash != '' -%}
+        <button onclick="location.href='/tools/recurring/portal/{{ customer_hash }}/subscriptions'" class="h6 !m-0 !w-fit content-link">Subscriptions</button>
+      {%- endif -%}
+    </select>
+
+  </div>
+
+  <div data-saved-addresses id="account-main" class="w-full lg:w-[880px] flex flex-col lg:mb-8">
+    {%- paginate customer.addresses by 10 -%}
+      
+      
+      <div class="customer addresses w-full" data-customer-addresses>
+        <div data-address-list-view>
+          <div class="flex flex-col lg:flex-row justify-between text-left lg:items-center px-6 py-4 lg:p-0">
+            <h3 class="font-bold mb-6 lg:mb-0">Saved Addresses</h3>
+
+            <button
+              aria-expanded="false"
+              aria-controls="AddAddress"
+              data-add-address
+              class="button button--secondary-dark !w-full !max-w-full lg:!w-fit !m-0">
+              Add Address
+            </button>
+          </div>
+          <ul role="list" class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6">
+            <li
+            data-address
+            class="bg-grey-1 p-6 text-left relative overflow-hidden mx-6 lg:m-0 order-1">
+
+              <div id="defaultCirlce" class=" absolute top-0 right-0 bg-primary-3 rounded-full">
+                <p id="defaultText" class="text-white sub-sm absolute ">Default</p>
+              </div>
+
+            {{ customer.default_address | format_address  }}
+            <button
+              type="button"
+              class="mt-4 content-link"
+              data-edit-address="{{ customer.default_address.id }}"
+              aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
+              aria-controls="EditAddress_{{ customer.default_address.id }}"
+              aria-expanded="false">
+              {{ 'customer.addresses.edit' | t }}
+            </button>
+            <button
+              type="button content-link"
+              class="mt-4 ml-4 content-link"
+              aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
+              data-target-delete="{{ customer.default_address.url }}"
+              data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}">
+              {{ 'customer.addresses.delete' | t }}
+            </button>
+          </li>
+            {%- liquid
+              assign AddressList = customer.default_address
+              assign AddressList = customer.addresses 
+            -%}
+
+            {%- for address in AddressList -%}
+
+            
+              <li
+                data-address
+                class="bg-grey-1 p-6 text-left relative overflow-hidden mx-6 lg:m-0 {% if address == customer.default_address %} hidden {% else %} order-2{% endif %}">
+                {{ address | format_address }}
+                <button
+                  type="button"
+                  class="mt-4 content-link"
+                  data-edit-address="{{ address.id }}"
+                  aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
+                  aria-controls="EditAddress_{{ address.id }}"
+                  aria-expanded="false">
+                  {{ 'customer.addresses.edit' | t }}
+                </button>
+                <button
+                  type="button content-link"
+                  class="mt-4 ml-4 content-link"
+                  aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
+                  data-target-delete="{{ address.url }}"
+                  data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}">
+                  {{ 'customer.addresses.delete' | t }}
+                </button>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+
+        <!-- Address forms Edit & Add -->
+
+        <div data-address-add-view class="hidden">
+          {%- render 'account-address-module', type: 'add' -%}
+        </div>
+
+        <div data-address-edit-view class="hidden">
+          {%- for address in AddressList -%}
+            {%- render 'account-address-module', type: 'edit', address: address -%}
+          {%- endfor -%}
+        </div>
+
+        <!-- END ddress forms Edit & Add -->
+
+        {%- if paginate.pages > 1 -%}
+          {%- if paginate.parts.size > 0 -%}
+            <nav class="pagination" role="navigation" aria-label="{{ 'general.pagination.label' | t }}">
+              <ul role="list">
+               
+
+              {%- for part in paginate.parts -%}
+                <li>
+                  {%- if part.is_link -%}
+                    <a href="{{ part.url }}" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">
+                      {{- part.title -}}
+                    </a>
+                  {%- else -%}
+                    {%- if part.title == paginate.current_page -%}
+                      <span aria-current="page" aria-label="{{ 'general.pagination.page' | t: number: part.title }}">
+                        <p>{{- part.title -}}</p>
+                      </span>
+                    {%- else -%}
+                      <span>{{ part.title }}</span>
+                    {%- endif -%}
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+
+               
+              </ul>
+            </nav>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    {%- endpaginate -%}
+  </div>
+</div>
+
+<script>
+  window.addEventListener('load', () => {
+    typeof CustomerAddresses !== 'undefined' && new CustomerAddresses()
+  })
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.main-addresses.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

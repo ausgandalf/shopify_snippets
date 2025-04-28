@@ -1,0 +1,68 @@
+{
+  "sections": {
+    "hero_48DxpH": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/desktop_girl_shopping_with_whitelabel.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Mobile_girl_shopping_whitelabel.jpg",
+        "subheading": "WHERE TO BUY",
+        "heading": "FIND A STORE NEAR YOU",
+        "heading_mobile": "WHERE TO BUY",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-white",
+        "controls_color": "text-white",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "fifty_fifty_UfYNRG": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "Order Online",
+        "title": "Whitelabel Shipped To Your Door",
+        "heading_style": "h1",
+        "description": "Can’t find Whitelabel at your local store? No problem. Order online and we’ll ship it right to you. Making a better choice doesn’t get much easier.",
+        "featured_img": "shopify:\/\/shop_images\/blonde_girl_in_bed_with_grapefruit.jpg",
+        "column_img": "right",
+        "display_badge": true,
+        "cta_url": "shopify:\/\/collections\/order-online-page",
+        "cta_text": "Shop All Water",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "hero_48DxpH",
+    "main",
+    "fifty_fifty_UfYNRG"
+  ]
+}

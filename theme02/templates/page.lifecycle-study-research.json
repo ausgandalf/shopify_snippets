@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "general-content"
+  ]
+}

@@ -1,0 +1,30 @@
+@layer base {
+  .alert {
+    @apply flex justify-start p-4 text-grey-2;
+  }
+
+  .alert span,
+  .alert li {
+    @apply text-center text-reg font-normal;
+  }
+
+  .alert h1,
+  .alert h2,
+  .alert h3,
+  .alert h4,
+  .alert h5,
+  .alert h6,
+  .alert p,
+  .alert li,
+  .alert span {
+    color: inherit;
+  }
+
+  .success-alert {
+    @apply bg-success;
+  }
+
+  .error-alert {
+    @apply bg-error;
+  }
+}

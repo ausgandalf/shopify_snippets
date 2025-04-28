@@ -1,0 +1,77 @@
+{
+  "sections": {
+    "hero_kj9XpY": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/party_whitelabel_purple_background.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/250mlpartyimage.jpg",
+        "subheading": "",
+        "heading": "",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "https:\/\/whitelabelisbetter.com\/pages\/wholesale",
+        "cta_type_1": "button button--primary-dark",
+        "cta_text_2": "",
+        "cta_url_2": "shopify:\/\/pages\/how-we-compare",
+        "cta_type_2": "button button--primary-dark",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "top",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "17157079231d598b4d": {
+      "type": "apps",
+      "blocks": {
+        "collabs_application_page_JAyV9z": {
+          "type": "shopify:\/\/apps\/collabs\/blocks\/application-page\/54758706-9f25-4fa9-a553-64720a4c998b",
+          "settings": {
+            "heading": "Our Community",
+            "show_square_logo": false,
+            "show_partnership_info": true,
+            "button_text": "Apply now",
+            "number_of_images": "4",
+            "logo_position": "above",
+            "corner_style": "square",
+            "button_background_color": "#1f1f1f",
+            "button_label_color": "#ffffff",
+            "link_color": "#1f1f1f"
+          }
+        }
+      },
+      "block_order": [
+        "collabs_application_page_JAyV9z"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "hero_kj9XpY",
+    "main",
+    "17157079231d598b4d"
+  ]
+}

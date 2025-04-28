@@ -1,0 +1,104 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "nav_link_VpDRHh": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Fruit Flavors",
+            "link": "#fruit-flavors"
+          }
+        },
+        "nav_link_g7qdB8": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Best Sellers",
+            "link": "#best-sellers"
+          }
+        },
+        "nav_link_8xqrCR": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Gift Products",
+            "link": "#gift-products"
+          }
+        },
+        "nav_link_qxXETn": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Carbon Neutral Certified",
+            "link": "#carbon-neutral-certified"
+          }
+        },
+        "nav_link_aghpde": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Merch",
+            "link": "#merch"
+          }
+        }
+      },
+      "block_order": [
+        "nav_link_VpDRHh",
+        "nav_link_g7qdB8",
+        "nav_link_8xqrCR",
+        "nav_link_qxXETn",
+        "nav_link_aghpde"
+      ],
+      "settings": {
+        "title": "{{ collection.title }}",
+        "image": "{{ collection.metafields.custom.banner_image.value }}",
+        "image_m": "{{ collection.metafields.custom.banner_image_mobile.value }}"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "collection_R4Aqe8": {
+          "type": "collection",
+          "settings": {
+            "additional_collection": "fruit-flavors"
+          }
+        },
+        "collection_MP6ipF": {
+          "type": "collection",
+          "settings": {
+            "additional_collection": "best-sellers"
+          }
+        },
+        "collection_RymJMQ": {
+          "type": "collection",
+          "settings": {
+            "additional_collection": "gift-products"
+          }
+        },
+        "collection_weRdTA": {
+          "type": "collection",
+          "settings": {
+            "additional_collection": "carbon-neutral-certified"
+          }
+        },
+        "collection_cmTdwb": {
+          "type": "collection",
+          "settings": {
+            "additional_collection": "merch"
+          }
+        }
+      },
+      "block_order": [
+        "collection_R4Aqe8",
+        "collection_MP6ipF",
+        "collection_RymJMQ",
+        "collection_weRdTA",
+        "collection_cmTdwb"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid"
+  ]
+}

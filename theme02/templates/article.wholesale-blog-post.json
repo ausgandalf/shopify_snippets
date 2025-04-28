@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "blog_show_date": true,
+        "blog_show_tags": true,
+        "sidebar_ad_image": "shopify:\/\/shop_images\/wholesale-blog-banner.jpg",
+        "sidebar_ad_title": "Wholesale discounts available",
+        "text_color": "black",
+        "sidebar_ad_cta_url": "shopify:\/\/collections\/order-online-page",
+        "sidebar_ad_cta_text": "APPLY NOW"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

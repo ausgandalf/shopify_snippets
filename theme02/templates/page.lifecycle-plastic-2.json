@@ -1,0 +1,234 @@
+{
+  "sections": {
+    "hero_AieDWV": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 42,
+        "margin_mobile": 47,
+        "image_desktop": "shopify:\/\/shop_images\/plastic-header-mobile.jpg",
+        "subheading": "PLASTIC PRODUCTION IS",
+        "heading": "POLLUTING OUR PLANET",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "general-content": {
+      "type": "general-content",
+      "blocks": {
+        "nav_link_6qtd6n": {
+          "type": "nav_link",
+          "disabled": true,
+          "settings": {
+            "title": "Menu Item One",
+            "hyperlink": "#content1"
+          }
+        },
+        "nav_link_VyDVML": {
+          "type": "nav_link",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "hyperlink": ""
+          }
+        },
+        "nav_link_Q6G9aP": {
+          "type": "nav_link",
+          "disabled": true,
+          "settings": {
+            "title": "Menu Item Two",
+            "hyperlink": "#content5"
+          }
+        },
+        "nav_link_pQYfhy": {
+          "type": "nav_link",
+          "disabled": true,
+          "settings": {
+            "title": "Menu Item Three",
+            "hyperlink": "#content2"
+          }
+        },
+        "nav_link_CwVhDY": {
+          "type": "nav_link",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "hyperlink": ""
+          }
+        },
+        "nav_link_9EHrY4": {
+          "type": "nav_link",
+          "disabled": true,
+          "settings": {
+            "title": "Menu Item Four",
+            "hyperlink": "#content4"
+          }
+        },
+        "nav_link_PVKncY": {
+          "type": "nav_link",
+          "disabled": true,
+          "settings": {
+            "title": "Menu Item Five",
+            "hyperlink": "#content6"
+          }
+        }
+      },
+      "block_order": [
+        "nav_link_6qtd6n",
+        "nav_link_VyDVML",
+        "nav_link_Q6G9aP",
+        "nav_link_pQYfhy",
+        "nav_link_CwVhDY",
+        "nav_link_9EHrY4",
+        "nav_link_PVKncY"
+      ],
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "four_col_f9hjiz": {
+      "type": "four-col",
+      "blocks": {
+        "text_V6KRdN": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/plastic-stats-1.svg",
+            "icon_title": "2x global impact",
+            "icon_text": "Blow molding plastic\ncontributes to 2X\nthe global impact."
+          }
+        },
+        "text_ikmjRg": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/plastic-stats-2.svg",
+            "icon_title": "880,000 gallons of oil",
+            "icon_text": "880,000 gallons of oil are\nsent to the ocean per year\nfrom U.S. drilling ops."
+          }
+        },
+        "text_Gf9XKT": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/plastic-stats-3.svg",
+            "icon_title": "18x Greater Ozone impact",
+            "icon_text": "18X more impact on ozone depletion than a Whitelabel carton."
+          }
+        }
+      },
+      "block_order": [
+        "text_V6KRdN",
+        "text_ikmjRg",
+        "text_Gf9XKT"
+      ],
+      "settings": {
+        "image_d": "shopify:\/\/shop_images\/light_blue_4_column_value_prop.jpg",
+        "image_m": "shopify:\/\/shop_images\/light_blue_4_column_value_prop.jpg",
+        "title": "",
+        "heading_text_color": "black",
+        "cta_url": "\/",
+        "cta_text": "",
+        "button_style": "primary",
+        "block_text_color": "black",
+        "bg_color": "transparent",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_UNK9Ag": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_B4XCt3": {
+          "type": "text",
+          "settings": {
+            "icon_text": "* SOURCE: A lusher, microplastics in the marine environment: distribution, interactions and effects, marine antrhropeogenic letter, 2015."
+          }
+        }
+      },
+      "block_order": [
+        "text_B4XCt3"
+      ],
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "Recycling isn't enough",
+        "heading_style": "h1",
+        "description": "We're producing more than we can sustainably manage. We need to analyze the effects of production on the environment.",
+        "featured_img": "shopify:\/\/shop_images\/plastic_production_graph.jpg",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "\/",
+        "cta_text": "",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "two_three_up_erKHdh": {
+      "type": "two-three-up",
+      "blocks": {
+        "cta_HCTcjp": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "HOW WE COMPARE TO ALUMINUM",
+            "link": "shopify:\/\/pages\/the-life-cycle-aluminum",
+            "button_text": "",
+            "bg_image_desktop": "shopify:\/\/shop_images\/aluminum_lca.jpg",
+            "bg_image_mobile": "shopify:\/\/shop_images\/aluminum_lca.jpg",
+            "text_color": "text-black",
+            "button_style": "primary"
+          }
+        },
+        "cta_VpW38N": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "The full lifecycle study",
+            "link": "shopify:\/\/pages\/the-life-cycle-definitions-research",
+            "button_text": "",
+            "bg_image_desktop": "shopify:\/\/shop_images\/whitelabel_lca.jpg",
+            "bg_image_mobile": "shopify:\/\/shop_images\/whitelabel_lca.jpg",
+            "text_color": "text-black",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "cta_HCTcjp",
+        "cta_VpW38N"
+      ],
+      "settings": {
+        "title": "More Research",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "hero_AieDWV",
+    "general-content",
+    "four_col_f9hjiz",
+    "fifty_fifty_UNK9Ag",
+    "two_three_up_erKHdh"
+  ]
+}

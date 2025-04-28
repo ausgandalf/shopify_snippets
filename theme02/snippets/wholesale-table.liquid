@@ -1,0 +1,33 @@
+
+  <div class="mt-5 mb-4 inline-block rounded px-2 pb-[.2rem] sub-xs bg-primary-4">Buy More Save More</div>
+  <div class="parent-display">
+      <div class="flex justify-center">
+        <div class="flex w-full flex-col items-center text-center bg-grey-1">
+          <span class="sub-sm p-2 border-black border-b-[1px] w-full bg-white">Save 10%</span>
+          <div class="my-3 w-full border-r border-grey-2">
+            <div class="py-1 text-xs">Spend $1-$220</div>
+          </div>
+        </div>
+        <div class="flex w-full flex-col items-center text-center bg-grey-1">
+          <span class="sub-sm p-2 border-black border-b-[1px] w-full bg-white">Save 15%</span>
+          <div class="my-3 w-full border-r border-grey-2">
+            <div class="py-1 text-xs">$221-$440</div>
+          </div>
+        </div>
+        <div class="flex w-full flex-col items-center text-center bg-grey-1">
+          <span class="sub-sm p-2 border-black border-b-[1px] w-full bg-white">Save 20%</span>
+          <div class="my-3 w-full border-r border-grey-2">
+            <div class="py-1 text-xs">$441-$680</div>
+          </div>
+        </div>
+        <div class="flex w-full flex-col items-center text-center bg-grey-1">
+          <span class="sub-sm p-2 border-black border-b-[1px] w-full bg-white">Save 25%</span>
+          <div class="my-3 w-full">
+            <div class="py-1 text-xs">$680+</div>
+          </div>
+        </div>
+      </div>
+      {% if product.tags contains 'wholesale--water' or product.tags contains 'wholesale--flavored' %}
+      <div class="bg-grey-1 italic text-grey-5 text-xs px-2 lg:px-4 pt-1 pb-2"><a class="text-xs focus-link" href="mailto:hello@whitelabelisbetter.com">Contact us</a> if ordering 30+ cases for additional shipping options and discounts</div>
+      {% endif %}
+  </div>

@@ -1,0 +1,193 @@
+<div id="section-{{- section.id -}}" class="article-template w-full" data-section-id="{{ section.id }}">
+  {%- if article.image -%}
+  {% capture article_image %}
+  <img class="w-full h-full object-cover object-center" srcset="
+        {% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+        {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+        {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+        {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+        {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+        {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+        {{ article.image | image_url }} {{ article.image.width }}w
+      "
+    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+    src="{{ article.image | image_url: width: 1100 }}" loading="eager" fetchpriority="high"
+    width="{{ article.image.width }}" height="{{ article.image.height }}" alt="{{ article.image.alt | escape }}">
+  {% endcapture %}
+  <div class="container w-full grid grid-cols-1 gap-12 lg:grid-cols-2 px-4 pt-8 pb-6 lg:px-12 lg:pt-10 lg:pb-2">
+    <div class="grid grid-flow-row col-span-1 gap-y-6 justify-items-center lg:aspect-square lg:flex lg:flex-wrap lg:content-between h-full lg:w-full xl:max-w-[679px]">
+      <div class="article-template__back">
+        <a href="{{ blog.url }}" class="article-template__link link content-link !pl-0">
+          <span class="inline-block w-min">{%- render 'icon-chevron-left' -%}</span>
+          {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
+        </a>
+      </div>
+      {%- if section.settings.blog_show_date and article.published_at != blank -%}
+      <span class="text-reg text-grey-4 -mb-2 lg:hidden " itemprop="dateCreated pubdate datePublished">
+        {{- article.published_at | time_tag: format: 'date' -}}
+      </span>
+      {%- endif -%}
+
+      <h1 class="article-template__title custom-heading !font-bold !normal-case	text-center lg:text-left" itemprop="headline">
+        {{ article.title | escape }}
+      </h1>
+
+      <div class="grid grid-flow-row col-span-1 gap-y-6 justify-items-center lg:justify-items-start w-full">
+      {%- if section.settings.blog_show_date and article.published_at != blank -%}
+        <span class="text-reg text-grey-4 -mb-2 hidden lg:block" itemprop="dateCreated pubdate datePublished">
+          {{- article.published_at | time_tag: format: 'date' -}}
+        </span>
+        <hr class="w-full border-t border-black mt-3 hidden lg:block">
+        {%- endif -%}
+      {%- if section.settings.blog_show_tags and article.tags != blank -%}
+      <div class="article-template__tags text-center lg:text-left">
+        {% for tag in article.tags %}
+          {%- assign tag_handle = tag | handleize %}
+        <a href="{{ blog.url }}/tagged/{{ tag_handle }}" class="tag underline text-reg !leading-[160%] lg:hover:text-primary-3">{{ tag }}</a>
+        {% unless forloop.last %}
+        <svg class="inline-block w-4 px-1" width="4" height="5" viewBox="0 0 4 5" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="2" cy="2.5" r="2" fill="#1F1F1F" />
+        </svg>
+        {% endunless %}
+        {% endfor %}
+      </div>
+      {%- endif -%}
+      <div class="article-template__social-sharing">
+        {% render 'social-sharing' %}
+      </div>
+      </div>
+    </div>
+    <div class="hidden lg:block aspect-square my-auto overflow-hidden max-h-[343px] max-w-[343px] lg:max-h-[679px] lg:max-w-[679px]">
+      {{ article_image }}
+    </div>
+  </div>
+  {%- endif -%}
+
+  <div class="w-full grid grid-cols-1 lg:grid-cols-3 container max-md:px-0 border-t lg:border-t-0 border-black ">
+    <div
+      class="content-left px-4 lg:px-0 py-0 lg:py-14 lg:pr-8 lg:self-start lg:sticky lg:top-0 col-span-1 grid grid-flow-row gap-y-6 justify-items-center lg:justify-items-start">
+    
+      {% capture cta_content %}
+      <blog-sidebar-ad post-url="{{ shop.url | append: article.url }}">
+        {% assign custom_banner = article.metafields.custom.blog_banner %}
+        {% if custom_banner != blank %}
+        <a href="{{ custom_banner.value.cta_url }}" class="relative text-center w-full block p-4 mx-auto lg:p-0">
+          {{
+          custom_banner.value.image
+          | image_url: width: 400
+          | image_tag: width: 400, loading: 'lazy', class: 'block w-full'
+          }}
+          <div class="flex items-start justify-center pt-10 absolute inset-0">
+            <div class="space-y-10">
+              <h4 class="font-bold" style="color: {{ section.settings.text_color }}">
+                {{ custom_banner.value.title | newline_to_br }}
+              </h4>
+              <div class=" button {% if section.settings.text_color == 'white' %}button--primary-light{% else %}button--primary-dark{% endif %} !w-fit !max-w-none">
+                {{ custom_banner.value.cta_text }}
+              </div>
+            </div>
+          </div>
+        </a>
+        {% else %}
+        <a href="{{ section.settings.sidebar_ad_cta_url }}" class="relative text-center w-full block p-4 mx-auto lg:p-0">
+          {{
+          section.settings.sidebar_ad_image
+          | image_url: width: 400
+          | image_tag:
+          width: 400,
+          loading: 'lazy',
+          class: 'block w-full'
+          }}
+          <div class="flex items-start justify-center pt-10 absolute inset-0">
+            <div class="space-y-10">
+              <h4 class="font-bold" style="color: {{ section.settings.text_color }}">
+                {{ section.settings.sidebar_ad_title | newline_to_br }}
+              </h4>
+              <div class="button {% if section.settings.text_color == 'white' %}button--primary-light{% else %}button--primary-dark{% endif %} !w-fit !max-w-none">
+                {{ section.settings.sidebar_ad_cta_text }}
+              </div>
+            </div>
+          </div>
+        </a>
+        {% endif %}
+      </blog-sidebar-ad>
+      {% endcapture %}
+      <span class="article-template__cta hidden lg:block">
+        {{ cta_content }}
+      </span>
+    </div>
+    <div class="content-right py-12 grid gap-12 lg:py-14 lg:col-span-2 lg:pl-12 w-full general-content">
+      {%- if article.image -%}
+      <div class="lg:hidden aspect-square mx-auto overflow-hidden content-wrapper max-h-[888px] max-w-[888px]">
+        {{ article_image }}
+      </div>
+      {%- endif -%}
+      <div id="content" class="rte content-wrapper max-w-[888px]">
+        {{ article.content }}
+      </div>
+    </div>
+  </div>
+
+  <span class="article-template__cta lg:hidden">
+    {{ cta_content }}
+  </span>
+
+</div>
+
+{% schema %}
+{
+  "name": "Article",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "blog_show_date",
+      "label": "Show Date",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_tags",
+      "label": "Show Tags",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "sidebar_ad_image",
+      "label": "Sidebar Ad Image",
+      "info": "Recommended dimensions: 400 x 544px"
+    },
+    {
+      "type": "text",
+      "id": "sidebar_ad_title",
+      "label": "Sidebar Ad Title"
+    },
+    {
+      "type": "select",
+      "id": "text_color",
+      "label": "Select Title Color",
+      "options": [
+        {
+          "value": "black",
+          "label": "Black"
+        },
+        {
+          "value": "white",
+          "label": "White"
+        }
+      ],
+      "default": "black"
+    },
+    {
+      "type": "url",
+      "id": "sidebar_ad_cta_url",
+      "label": "Sidebar Ad CTA URL"
+    },
+    {
+      "type": "text",
+      "id": "sidebar_ad_cta_text",
+      "label": "Sidebar Ad CTA Text"
+    }
+    ]
+}
+{% endschema %}

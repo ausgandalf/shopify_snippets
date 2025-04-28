@@ -1,0 +1,88 @@
+<div id="section-{{- section.id -}}" class="general-content w-full" data-section-id="{{ section.id }}">
+  {% if section.settings.banner != blank %}
+  <div class="w-full">
+    <a href="#content">
+      <img class="w-full max-h-[400px] min-h-[200px] object-cover" src="{{ section.settings.banner | image_url }}" alt="Banner"/>
+    </a>
+  </div>
+  {% endif %}
+
+  {% if section.blocks.size > 0 %}
+  <div class="w-full nav-wrapper">
+    <div class="flex py-6 lg:justify-center border-b-2 border-black overflow-x-auto px-4">
+      <div class="flex w-fit gap-x-6 lg:gap-x-10">
+        {% for block in section.blocks %}
+          <a href="{{ block.settings.hyperlink | default: '#' }}" class="nav-link font-heading text-[20px] font-bold leading-[90%] tracking-[0.8px] capitalize p-1 inline-flex gap-x-1 items-center whitespace-nowrap">{{ block.settings.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <div id="content" class="rte content-wrapper max-w-[888px]">
+    {{ page.content }}
+  </div>
+</div>
+
+<style type="text/css">
+  #section-{{- section.id -}} {
+    margin-bottom: {{- section.settings.margin_mobile | append: 'px' -}};
+  }
+  @media (min-width: 1025px) {
+    #section-{{- section.id -}} {
+      margin-bottom: {{- section.settings.margin_desktop | append: 'px' -}};
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "General Content",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner",
+      "label": "Banner Image"
+    },
+    {
+      "type": "range",
+      "id": "margin_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "nav_link",
+      "name": "Nav Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "hyperlink",
+          "label": "Hyperlink"
+        }
+      ]
+    }
+  ]
+}
+
+{% endschema %}

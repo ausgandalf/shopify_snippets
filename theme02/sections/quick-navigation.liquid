@@ -1,0 +1,115 @@
+{%-liquid
+  assign block_count = 0
+
+  for block in section.blocks
+    if block.type == 'ws-link' and customer.tags contains 'wholesale-customer'
+      if section.settings.show_image and block.settings.image != blank
+        assign block_count = block_count | plus: 1
+      elsif section.settings.show_image != true
+        assign block_count = block_count | plus: 1
+      endif
+    elsif block.type == 'link'
+      unless customer.tags contains 'wholesale-customer'
+        if section.settings.show_image and block.settings.image != blank
+          assign block_count = block_count | plus: 1
+        elsif section.settings.show_image != true
+          assign block_count = block_count | plus: 1
+        endif
+      endunless
+    endif
+  endfor
+-%}
+
+{%- if block_count > 0 -%}
+  <div class="quick-navigation lg:hidden text-center w-full overflow-x-auto px-4 py-2 border-b border-black bg-white">
+    <div class="inline-flex justify-center items-end gap-x-4">
+      {%- for block in section.blocks -%}
+        {%- if customer.tags contains 'wholesale-customer' -%}
+          {%- if block.type == 'ws-link' -%}
+            {%- if block.settings.image == blank and section.settings.show_image -%}
+              {%- continue -%}
+            {%- endif -%}
+            <a href="{{ block.settings.url | default: '#' }}" class="flex flex-col items-center gap-y-2">
+              {%- if block.settings.image != blank and section.settings.show_image -%}
+                <div class="w-12 h-12 rounded-full overflow-hidden">
+                    <img src="{{ block.settings.image | image_url: width: 144 }}" alt="{{ block.settings.image.alt | default: block.settings.title | escape }}" class="w-full h-full object-cover" />
+                </div>
+              {%- endif -%}
+              <div class="w-max text-[13px] leading-[130%] font-paragraph min-h-[17px]">{{ block.settings.title }}</div>
+            </a>
+          {%- endif -%}
+        {%- elsif block.type == 'link' -%}
+          {%- if block.settings.image == blank and section.settings.show_image -%}
+            {%- continue -%}
+          {%- endif -%}
+          <a href="{{ block.settings.url | default: '#' }}" class="flex flex-col items-center gap-y-2">
+            {%- if block.settings.image != blank and section.settings.show_image -%}
+            <div class="w-12 h-12 rounded-full overflow-hidden">
+                <img src="{{ block.settings.image | image_url: width: 144 }}" alt="{{ block.settings.image.alt | default: block.settings.title | escape }}" class="w-full h-full object-cover" />
+            </div>
+            {%- endif -%}
+            <div class="w-max text-[13px] leading-[130%] font-paragraph min-h-[17px]">{{ block.settings.title }}</div>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{%- schema -%}
+  {
+    "name": "Quick Navigation",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_image",
+        "label": "Show Image",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Link",
+        "type": "link",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "URL"
+          }
+        ]
+      },
+      {
+        "name": "WholeSale Link",
+        "type": "ws-link",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "URL"
+          }
+        ]
+      }
+    ]
+  }
+{%- endschema -%}

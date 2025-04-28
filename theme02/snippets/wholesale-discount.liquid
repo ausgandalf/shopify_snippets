@@ -1,0 +1,27 @@
+{% liquid
+  assign price = item.variant.price | times: item.quantity
+
+   assign original_discount_10 = price | times: 0.10 
+   assign original_discount_15 = price | times: 0.15
+   assign original_discount_20 = price | times: 0.20
+   assign original_discount_25 = price | times: 0.25
+
+   assign discount_10 = price | minus: original_discount_10
+   assign discount_15 = price | minus: original_discount_15
+   assign discount_20 = price | minus: original_discount_20
+   assign discount_25 = price | minus: original_discount_25
+%}
+
+{% if item.product.tags contains 'wholesale' %}
+<p class="cart-wholesale-label bg-grey-1 rounded-[4px] text-xs px-3 pt-1 pb-1.5 mt-2 font-paragraph w-fit">
+  {% if item.line_price == discount_10 %}
+    Wholesale 10% Off
+  {% elsif item.line_price == discount_15 %}
+    Wholesale 15% Off
+  {% elsif item.line_price == discount_20 %}
+    Wholesale 20% Off
+  {% elsif item.line_price == discount_25 %}
+    Wholesale 25% Off
+  {%- endif -%} 
+</p>
+{% endif %}

@@ -1,0 +1,220 @@
+{%- liquid
+  assign title = section.settings.title
+  assign ctas = section.blocks
+-%}
+
+<div id="section-{{- section.id -}}" class="block" data-section-id="{{ section.id }}">
+  <div class="container max-w-[1920px] mx-auto py-12 px-6 lg:px-12">
+    {%- if title != blank -%}
+      <h3 class="mb-6">{{ title }}</h3>
+    {%- endif -%}
+
+    {%- if ctas.size > 0 -%}
+      {%-liquid
+        assign aspect_ratio = 'aspect-[343/400] lg:aspect-[656/648]'
+        assign cta_max_width = 'max-w-[400px]'
+
+        if ctas.size > 2
+          assign aspect_ratio = 'aspect-[343/400] lg:aspect-[432/648]'
+          assign cta_max_width = 'max-w-[312px]'
+        endif
+
+      -%}
+
+      <div class="flex flex-col lg:flex-row gap-6 {% unless ctas.size > 2 %}gap-x-8{% endunless %}">
+        {%- for cta in ctas -%}
+          {%-liquid
+            assign title = cta.settings.title
+            assign heading = cta.settings.subheading
+            assign link = cta.settings.link
+            assign bg_image_desktop = cta.settings.bg_image_desktop
+            assign bg_image_mobile = cta.settings.bg_image_mobile | default: bg_image_desktop
+            assign text_color = cta.settings.text_color
+            assign button_text = cta.settings.button_text
+            assign button_style = cta.settings.button_style
+            assign button_style_class = ''
+
+            case button_style
+              when 'primary'
+                if text_color == 'text-white'
+                  assign button_style_class = 'button button--primary-light'
+                else
+                  assign button_style_class = 'button button--primary-dark'
+                endif
+              when 'secondary'
+                if text_color == 'text-white'
+                  assign button_style_class = 'button button--secondary-light '
+                else
+                  assign button_style_class = 'button button--secondary-dark'
+                endif
+              when 'link'
+                if text_color == 'text-white'
+                  assign button_style_class = 'content-link-dark w-8 h-8 !p-0 flex justify-center items-center'
+                else
+                  assign button_style_class = 'content-link w-8 h-8 !p-0 flex justify-center items-center'
+                endif
+            endcase
+          -%}
+
+          <div class="bg-grey-4 flex-1 relative {{ aspect_ratio }} overflow-hidden group">
+            {%- if link != blank -%}
+              <a href="{{ link }}">
+            {%- endif -%}
+            {%- if cta.settings.bg_image_desktop %}
+              <img src="{{ bg_image_desktop | image_url }}" class="hidden lg:block absolute left-0 top-0 w-full h-full object-cover transition ease-in-out group-hover:scale-110" alt="{{ bg_image_desktop.alt | default: title }}" />
+              <img src="{{ bg_image_mobile | image_url }}" class="lg:hidden absolute left-0 top-0 w-full h-full object-cover" alt="{{ bg_image_mobile.alt | default: title }}" />
+            {%- endif -%}
+            <div class="absolute left-0 bottom-0 w-full flex flex-col p-4 lg:p-6 {% if title != blank %}justify-between{% else %}justify-end{% endif %}">
+              {%- if heading != blank -%}
+                <p class="sub-lg {{ text_color }} {{ cta_max_width }} mb-2">{{ heading }}</p>
+              {%- endif -%}
+              {%- if title != blank -%}
+                <h5 class="{{ text_color }} {{ cta_max_width }}">{{ title }}</h5>
+              {%- endif -%}
+
+              {%- if link != blank and button_text != blank -%}
+                <button class="{{ button_style_class }} !max-w-none w-fit mt-5">
+                  {{ button_text }}
+                </button>
+
+              {%- endif -%}
+            </div>
+            {%- if link != blank -%}
+              </a>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+<style type="text/css">
+  #section-{{- section.id -}} {
+    margin-bottom: {{- section.settings.margin_mobile | append: 'px' -}};
+  }
+
+  @media (min-width: 1025px) {
+    #section-{{- section.id -}} {
+      margin-bottom: {{- section.settings.margin_desktop | append: 'px' -}};
+    }
+  }
+</style>
+
+{%- schema -%}
+  {
+    "name": "2-Up / 3-Up",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "header",
+        "content": "Spacing"
+      },
+      {
+        "type": "range",
+        "id": "margin_desktop",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "name": "CTA",
+        "type": "cta",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "header",
+            "content": "Content"
+          },
+          {
+            "type": "text",
+            "id": "subheading",
+            "label": "Heading"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text"
+          },
+          {
+            "type": "image_picker",
+            "id": "bg_image_desktop",
+            "label": "Background Image (Desktop)",
+            "info" : "Recommended dimensions - 2-Up: 1312px X 1296px / 3-Up: 864px X 1296px"
+          },
+          {
+            "type": "image_picker",
+            "id": "bg_image_mobile",
+            "label": "Background Image (Mobile)",
+            "info" : "Recommended dimensions: 343px X 400px or 686px X 800px"
+          },
+          {
+            "type": "header",
+            "content": "Appearance"
+          },
+          {
+            "type": "select",
+            "id": "text_color",
+            "label": "Text Color",
+            "options": [
+              { "label": "White", "value": "text-white" },
+              { "label": "Black", "value": "text-black" }
+            ],
+            "default": "text-white"
+          },
+          {
+            "type": "select",
+            "id": "button_style",
+            "label": "Button Style",
+            "options": [
+              { "label": "Primary", "value": "primary" },
+              { "label": "Secondary", "value": "secondary" }
+            ],
+            "default": "primary"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "2-Up / 3-Up"
+      }
+    ]
+  }
+{%- endschema -%}

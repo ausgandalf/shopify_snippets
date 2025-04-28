@@ -1,0 +1,24 @@
+{%- assign remains = settings.threshold | times: 100 | minus: cart.total_price | money -%}
+{%- assign percent = cart.total_price | divided_by: settings.threshold -%}
+
+{%- if percent > 100 -%}
+  {%- assign percent = 100 -%}
+{%- endif -%}
+
+{%- if settings.show_threshold -%}
+<div class="mb-6">
+  {% if percent == 100 %}
+    <p class="sub-reg lg:sub-lg font-bold mb-2 {{ text_classes }}">{{ settings.threshold_reached_text }}</p>
+  {% else %}
+    <p class="sub-reg lg:sub-lg font-bold mb-2 {{ text_classes }}">{{ settings.threshold_text | replace: "$TOTAL", remains }}</p>
+  {% endif %}
+
+  <div class="relative w-full h-[6px] bg-grey-2">
+    <div class="absolute top-0 left-0 h-full bg-gradient w-[{{- percent -}}%]"></div>
+  </div>
+
+  {% if settings.threshold_subtext %}
+    <p class="p-sm text-grey-4 mt-2 {{ text_classes }}">{{ settings.threshold_subtext }}</p>
+  {% endif %}
+</div>
+{%- endif -%}

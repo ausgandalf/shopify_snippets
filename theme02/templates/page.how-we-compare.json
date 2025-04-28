@@ -1,0 +1,306 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "hero_kj9XpY": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "video_desktop": "shopify:\/\/files\/videos\/hwc-header-video.mp4",
+        "video_mobile": "shopify:\/\/files\/videos\/Untitled design (25).mp4",
+        "subheading": "",
+        "heading": "IS WHITELABEL REALLY BETTER?",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "<p>Compared to single-use plastic bottles and canned water, our plant-based cartons have a lower environmental impact throughout their lifecycle.<\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": true,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "shopify:\/\/pages\/the-life-cycle-study",
+        "cta_type_1": "button button--secondary-dark",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "content-link-dark",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "hero_nxK3yi": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/whtie_background_3.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/tall_mobile_hero.svg",
+        "subheading": "",
+        "heading": "BEING SUSTAINABLE TAKES MORE THAN BEING RECYCLABLE",
+        "heading_mobile": "BEING SUSTAINABLE TAKES MORE THAN BEING RECYCLABLE",
+        "heading_type": "h2",
+        "copy": "<p>From renewable resources to responsible production, the story of sustainability goes well <a href=\"https:\/\/storystudio.sfgate.com\/plastic-water-bottles-are-killing-the-planet-this-company-did-something-about-it\/\" target=\"_blank\">beyond recycling<\/a>. Even when they’re recycled, plastic bottles and aluminum cans damage our planet for centuries. While both are recyclable (<a href=\"https:\/\/www.recyclecartons.com\/\" target=\"_blank\">like Whitelabel<\/a>), plastic and aluminum production is largely outpacing recycling efforts. Wishcycling won't erase the choice to use plastic or cans of water.<\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "SHOP SUSTAINABLE WATER",
+        "cta_url_1": "shopify:\/\/collections\/order-online-page",
+        "cta_type_1": "button button--primary-dark",
+        "cta_text_2": "READ THE LIFECYCLE STUDY",
+        "cta_url_2": "shopify:\/\/pages\/the-life-cycle-study",
+        "cta_type_2": "button button--secondary-dark",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "shop_by_category_9VYxhh": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_6WCEYC": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hwc-slide1.jpg",
+            "title": "The world is tired of our trash",
+            "description": "<p>Plastic is overwhelming islands that can no longer recycle our waste, and mining for aluminum creates a <a href=\"https:\/\/www.chemistryworld.com\/news\/hungarys-rivers-in-recovery-after-red-mud-disaster\/7867.article\" target=\"_blank\">toxic red mud <\/a>that is devastating communities.<\/p>",
+            "cta_url": ""
+          }
+        },
+        "list_item_8qBkBn": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hwc-slide2.jpg",
+            "title": "5% of Plastic is Recycled",
+            "description": "<p>Single-use plastic is<a href=\"https:\/\/www.beyondplastics.org\/press-releases\/the-real-truth-about-plastics-recycling\" title=\"https:\/\/www.beyondplastics.org\/press-releases\/the-real-truth-about-plastics-recycling\"> polluting our planet<\/a> at an alarming rate. It is predicted that there will be more plastic than fish in our oceans by 2050.<\/p>",
+            "cta_url": ""
+          }
+        },
+        "list_item_Am7L7W": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hwc-slide3.jpg",
+            "title": "Plastic and Aluminum are Finite",
+            "description": "<p>They are mined once and here forever. Paper is a renewable resource that is grown, harvested, and most importantly, replanted in <a href=\"https:\/\/us.fsc.org\/en-us\/what-we-do\" target=\"_blank\">FSC and SFI-certified forests<\/a>.<\/p><p><\/p>",
+            "cta_url": ""
+          }
+        },
+        "list_item_dk3Tti": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hwc-slide4.jpg",
+            "title": "Canned water has 2x the carbon footprint",
+            "description": "<p>Thousands of acres of <a href=\"https:\/\/www.rainforest-rescue.org\/topics\/aluminum\" target=\"_blank\">forests are eliminated <\/a>annually to mine for aluminum. The energy-intensive production process depletes our ozone.<\/p>",
+            "cta_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "list_item_6WCEYC",
+        "list_item_8qBkBn",
+        "list_item_Am7L7W",
+        "list_item_dk3Tti"
+      ],
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "title": "The truth about bottles and canned water",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hero_PRFgjz": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/mid-page_hero_banner_3.svg",
+        "image_mobile": "shopify:\/\/shop_images\/Mobile_Hero_Image_2_3de0a239-23df-4056-bba6-9ca6b8186b22.svg",
+        "subheading": "",
+        "heading": "",
+        "heading_mobile": "",
+        "heading_type": "h2",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "bottom",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "fifty_fifty_P8F8JM": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "<strong>WHITELABEL IS BETTER <\/strong>THAN PLASTIC.",
+        "heading_style": "h2",
+        "description": "<a href=\"https:\/\/www.reuters.com\/world\/us\/us-plastic-recycling-rate-drops-close-5-report-2022-05-04\/\" title=\"https:\/\/www.reuters.com\/world\/us\/us-plastic-recycling-rate-drops-close-5-report-2022-05-04\/\">Only 5% of plastic is actually recycled.<\/a> The rest ends up in oceans and landfills, and is making its way into human bodies. <a href=\"https:\/\/beachapedia.org\/Offshore_Oil_Drilling#:~:text=Each%20year%2C%20about%20880%2C000%20gallons,disasters%20can%20also%20prompt%20spills  \" title=\"https:\/\/beachapedia.org\/Offshore_Oil_Drilling#:~:text=Each%20year%2C%20about%20880%2C000%20gallons,disasters%20can%20also%20prompt%20spills  \">80K gallons of oil are sent to the ocean per year from U.S. drilling ops.<\/a> Whitelabel cartons have a lower environmental impact in every category compared to plastic bottles.",
+        "featured_img": "shopify:\/\/shop_images\/5050_website_content_blocks_10.svg",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "shopify:\/\/pages\/the-life-cycle-plastic",
+        "cta_text": "Whitelabel vs. Plastic",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_8mqtDF": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "<strong>WHITELABEL IS BETTER <\/strong>THAN ALUMINUM.",
+        "heading_style": "h2",
+        "description": "Despite being touted as infinitely renewable, <a href=\"https:\/\/www.reuters.com\/article\/us-environment-plastic-aluminium-factbox\/factbox-aluminum-cans-get-boost-from-anger-over-plastic-pollution-idUSKBN1WW0KC\/\" title=\"https:\/\/www.reuters.com\/article\/us-environment-plastic-aluminium-factbox\/factbox-aluminum-cans-get-boost-from-anger-over-plastic-pollution-idUSKBN1WW0KC\/\">30% of aluminum cans are still made with virgin aluminum<\/a>, which is not a sustainable resource. <a href=\"https:\/\/www.greenspec.co.uk\/building-design\/aluminium-production-environmental-impact\/#:~:text=Bauxite%20residue%20from%20the%20Bayer,is%20stored%20in%20holding%20ponds \" title=\"https:\/\/www.greenspec.co.uk\/building-design\/aluminium-production-environmental-impact\/#:~:text=Bauxite%20residue%20from%20the%20Bayer,is%20stored%20in%20holding%20ponds \">Mining for virgin aluminum produces 120 million tons of bauxite waste a year.<\/a> Choosing canned water over carton water doubles your carbon footprint. Whitelabel cartons have a lower total environmental profile than aluminum cans.",
+        "featured_img": "shopify:\/\/shop_images\/5050_website_content_blocks_11.svg",
+        "column_img": "left",
+        "display_badge": false,
+        "cta_url": "shopify:\/\/pages\/the-life-cycle-aluminum",
+        "cta_text": "Whitelabel Vs. Aluminum",
+        "button_style": "primary",
+        "margin_desktop": 25,
+        "margin_mobile": 0
+      }
+    },
+    "hero_nDaz3k": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/Title_1.svg",
+        "image_mobile": "shopify:\/\/shop_images\/Mobile_Hero_Image.svg",
+        "subheading": "",
+        "heading": "BETTER FOR THE PLANET.",
+        "heading_mobile": "BETTER FOR OUR PLANET",
+        "heading_type": "h2",
+        "copy": "<p>Plastic packaging is heading in the wrong direction! As production increases, recycling rates decreased to 5%. Explore our renewable packaged option.<\/p>",
+        "show_overlay": true,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-black",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "hero_KmtmPc": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/how_we_compare_splash_desktop.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Mobile_Hero_Image_1_7cee534c-b031-403e-900d-d61525c12ec2.svg",
+        "subheading": "",
+        "heading": "Better for the Planet",
+        "heading_mobile": "",
+        "heading_type": "h2",
+        "copy": "<p>Plastic packaging is heading in the wrong direction! As production increases, recycling rates decreased to 5%. Explore our renewable packaged option.<\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": true,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "top",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "product_recommendations_wpFzRH": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 26,
+        "margin_mobile": 36,
+        "title": "<strong>SHOP WHITELABEL<\/strong>",
+        "cta_text": "SHOP ALL",
+        "cta_url": "shopify:\/\/collections\/order-online-page",
+        "recommended_collection": "best-sellers",
+        "secondary_text": ""
+      }
+    }
+  },
+  "order": [
+    "hero_kj9XpY",
+    "hero_nxK3yi",
+    "shop_by_category_9VYxhh",
+    "main",
+    "hero_PRFgjz",
+    "fifty_fifty_P8F8JM",
+    "fifty_fifty_8mqtDF",
+    "hero_nDaz3k",
+    "hero_KmtmPc",
+    "product_recommendations_wpFzRH"
+  ]
+}

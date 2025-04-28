@@ -1,0 +1,131 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "nav_link_xyPezq": {
+          "type": "nav_link",
+          "settings": {
+            "title": "original water",
+            "link": "#original-water"
+          }
+        },
+        "nav_link_VpDRHh": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Fruit Flavors",
+            "link": "#fruit-flavors"
+          }
+        },
+        "nav_link_g7qdB8": {
+          "type": "nav_link",
+          "disabled": true,
+          "settings": {
+            "title": "Best Sellers",
+            "link": "#best-sellers"
+          }
+        },
+        "nav_link_QeKNEc": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Mixers",
+            "link": "#mixers"
+          }
+        },
+        "nav_link_aghpde": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Merch",
+            "link": "#merch"
+          }
+        },
+        "nav_link_qxXETn": {
+          "type": "nav_link",
+          "disabled": true,
+          "settings": {
+            "title": "Carbon Neutral Certified",
+            "link": "#carbon-neutral-certified"
+          }
+        }
+      },
+      "block_order": [
+        "nav_link_xyPezq",
+        "nav_link_VpDRHh",
+        "nav_link_g7qdB8",
+        "nav_link_QeKNEc",
+        "nav_link_aghpde",
+        "nav_link_qxXETn"
+      ],
+      "settings": {
+        "title": "Shop All",
+        "image": "{{ collection.metafields.custom.banner_image.value }}",
+        "image_m": "{{ collection.metafields.custom.banner_image_mobile.value }}"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "collection_kJeBdT": {
+          "type": "collection",
+          "settings": {
+            "additional_collection": "original-water"
+          }
+        },
+        "collection_R4Aqe8": {
+          "type": "collection",
+          "settings": {
+            "additional_collection": "fruit-flavors"
+          }
+        },
+        "collection_xJMtrg": {
+          "type": "collection",
+          "settings": {
+            "additional_collection": "mixers"
+          }
+        },
+        "collection_MP6ipF": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "additional_collection": "best-sellers"
+          }
+        },
+        "collection_cmTdwb": {
+          "type": "collection",
+          "settings": {
+            "additional_collection": "merch"
+          }
+        },
+        "collection_weRdTA": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "additional_collection": "carbon-neutral-certified"
+          }
+        }
+      },
+      "block_order": [
+        "collection_kJeBdT",
+        "collection_R4Aqe8",
+        "collection_xJMtrg",
+        "collection_MP6ipF",
+        "collection_cmTdwb",
+        "collection_weRdTA"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid"
+  ]
+}

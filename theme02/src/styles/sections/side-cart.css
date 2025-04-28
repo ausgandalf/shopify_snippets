@@ -1,0 +1,119 @@
+side-cart.active {
+  @apply visible;
+}
+
+side-cart.active .side-cart__content {
+  @apply translate-x-0;
+}
+
+side-cart {
+  svg {
+    @apply w-full h-full;
+  }
+}
+
+.upsell-widget {
+  .rebuy-widget-container {
+    @apply relative !pl-6 !pr-0;
+
+    .primary-title {
+      @apply sub-lg font-bold text-left mb-4 !block;
+    }
+
+    [data-bv-show="inline_rating"] {
+      @apply hidden;
+    }
+
+    .flickity-button {
+      @apply absolute -top-[37px] transform-none border-none w-6 h-6 flex justify-center items-center;
+
+      &::after {
+        @apply w-6 h-6;
+      }
+
+      svg {
+        @apply hidden;
+      }
+
+      &.previous {
+        @apply right-[3.5rem] lg:right-[4.5rem] !left-auto;
+        &:after {
+          content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAxMSAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDExLjcyNzJMOC41NTM3NSAwLjc2MDgyOEwxMC4zMjc5IDIuMTQ0NjVMMi44ODE2MyAxMS42OTExTDEwLjMxMDMgMjAuNzM4OUw4LjU3MTM0IDIyLjE2NjZMMCAxMS43MjcyWiIgZmlsbD0iIzFGMUYxRiIvPgo8L3N2Zz4K");
+        }
+      }
+
+      &.next {
+        @apply !right-[1rem] lg:!right-[2rem];
+        &:after {
+          content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAxMSAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSAxMS43MjcyTDIuNDQ2MjUgMC43NjA4MjhMMC42NzIxMTggMi4xNDQ2NUw4LjExODM3IDExLjY5MTFMMC42ODk3MDYgMjAuNzM4OUwyLjQyODY2IDIyLjE2NjZMMTEgMTEuNzI3MloiIGZpbGw9IiMxRjFGMUYiLz4KPC9zdmc+Cg==");
+        }
+      }
+    }
+
+    .rebuy-product-grid {
+      @apply !p-0 relative;
+
+      .flickity-slider {
+        .rebuy-product-block {
+          @apply bg-grey-1 h-[100px] max-w-[255px] lg:max-w-[290px] overflow-hidden mr-4 flex flex-row gap-x-[.25rem] lg:gap-x-4 items-start !p-2;
+
+          .rebuy-product-media {
+            @apply float-none bg-transparent w-[72px] h-[72px] lg:w-[72px] lg:h-[84px];
+          }
+
+          .rebuy-product-actions {
+            @apply absolute bottom-4 right-4 lg:bottom-4 float-none w-auto flex items-end p-0 mt-0;
+            .rebuy-button {
+              @apply !bg-white w-[55px] h-[30px] flex justify-center items-center hover:!text-white hover:!bg-black !border;
+              &:before{
+                content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgOCA4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTMuNTAwMDEgMy40OTk5OFYwLjMzMzMxM0g0LjUwMDAxVjMuNDk5OThINy42NjY2OFY0LjQ5OTk4SDQuNTAwMDFWNy42NjY2NUgzLjUwMDAxVjQuNDk5OThIMC4zMzMzNDRWMy40OTk5OEgzLjUwMDAxWiIgZmlsbD0iIzFGMUYxRiIvPgo8L3N2Zz4K");
+                @apply block h-[1.4rem];
+              }&:hover:before{
+                content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgOCA4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTMuNTAwMDEgMy40OTk5OFYwLjMzMzMxM0g0LjUwMDAxVjMuNDk5OThINy42NjY2OFY0LjQ5OTk4SDQuNTAwMDFWNy42NjY2NUgzLjUwMDAxVjQuNDk5OThIMC4zMzMzNDRWMy40OTk5OEgzLjUwMDAxWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+                @apply block h-[1.4rem];
+              }
+
+              span {
+                @apply !block pl-1.5 !text-[17px] !tracking-[0.04em];
+              }
+            }
+            .working {
+              span {
+                @apply !hidden;
+              }
+            }
+          }
+
+          .rebuy-product-info {
+            @apply flex flex-col justify-start float-none w-auto h-full !m-0 !px-0 !pt-[3px] lg:!pt-1.5 flex-1 max-w-[140px] lg:max-w-[160px];
+
+            .rebuy-product-title {
+              @apply !mt-0 mb-3 lg:mb-2.5;
+              line-height: 17.1px;
+            }
+
+            .rebuy-product-price {
+              @apply !mt-0;
+              .rebuy-money {
+                @apply !text-black
+              }
+              .sale {
+                @apply !text-[#D72608] pr-0 lg:pr-[2px];
+              }
+              .compare-at {
+                @apply !text-[#707476]
+              }
+            }
+
+            .product-desc {
+              @apply hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+  .rebuy-widget {
+    @apply !py-6;
+  }
+}

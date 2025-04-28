@@ -1,0 +1,16 @@
+{
+  "parent": "product.flavors-template.json",
+  "context": {
+    "b2b": true
+  },
+  "sections": {
+    "product_recommendations_cabzgD": {
+      "settings": {
+        "title": "<strong>Explore Flavors<\/strong>",
+        "cta_text": "Shop All"
+      },
+      "blocks": {
+      }
+    }
+  }
+}

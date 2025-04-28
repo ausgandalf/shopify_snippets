@@ -1,0 +1,62 @@
+<div class="{{ class }}" data-position="{{ index }}" data-buybox-media data-media-id="{{ media.id }}" {{ attributes }}>
+  <div class="relative {% if as_thumbnail %}aspect-[60/70]{% else %}aspect-[400/475]{% endif %} bg-grey-1">
+    {%- case media.media_type -%}
+      {%- when 'image' -%}
+        <img
+          src="{{ media | image_url: width: 1200 }}"
+          class="absolute left-0 top-0 w-full h-full object-cover {% if zoom %}lg:cursor-zoom-in{% endif %}"
+          alt="{{ media.alt | split: '|' | first |  default:"Product Image" }}"
+          data-media-id="{{ media.id }}"
+          {% if zoom %}data-buybox-gallery-zoom-trigger="{{ zoom_from }}"{% endif %} />
+        {% comment %} {%- if zoom -%}
+          <span class="flex lg:hidden items-center justify-center absolute right-3 bottom-3 w-8 h-8 bg-white rounded-full pointer-events-none">
+            {%- render 'icon-zoom', class: 'w-4 h-4' -%}
+          </span>
+        {%- endif -%} {% endcomment %}
+      {%- when 'external_video' -%}
+        {%- if media.host == 'youtube' -%}
+          {%- if as_thumbnail -%}
+            <img src="{{ media.preview_image | image_url }}" class="absolute left-0 top-0 w-full h-full object-cover" alt="thumbnail Image" />
+            <div class="absolute left-0 top-0 w-full h-full bg-black opacity-40"></div>
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              {%- render 'icon-video-play' -%}
+            </span>
+          {%- else -%}
+            <img src="{{ media.preview_image | image_url }}" class="absolute left-0 top-0 w-full h-full object-cover z-[1]" alt="Preview Image" data-preview-image />
+            {{ media | external_video_url: muted: true, playsinline: true, loop: false, playlist: media.external_id | external_video_tag: loading: 'lazy', class: 'absolute left-0 top-1/2 w-full max-h-full aspect-video -translate-y-1/2' }}
+            <span class="absolute w-[118px] h-[118px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]" data-icon-play>
+              {%- render 'icon-video-play', class:'w-full h-full' -%}
+            </span>
+          {%- endif -%}
+        {%- else -%}
+          {%- if as_thumbnail -%}
+            <img src="{{ media.preview_image | image_url }}" class="absolute left-0 top-0 w-full h-full object-cover" alt="Preview Image" />
+            <div class="absolute left-0 top-0 w-full h-full bg-black opacity-40"></div>
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              {%- render 'icon-video-play' -%}
+            </span>
+          {%- else -%}
+            <img src="{{ media.preview_image | image_url }}" class="absolute left-0 top-0 w-full h-full object-cover z-[1]" alt="Preview Image" data-preview-image />
+            {{ media | external_video_url: muted: true, playsinline: true, loop: false | external_video_tag: loading: 'lazy', class: 'absolute left-0 top-1/2 w-full max-h-full aspect-video -translate-y-1/2 object-cover' }}
+            <span class="absolute w-[118px] h-[118px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]" data-icon-play>
+              {%- render 'icon-video-play', class:'w-full h-full' -%}
+            </span>
+          {%- endif -%}
+        {%- endif -%}
+      {%- when 'video' -%}
+        {%- if as_thumbnail -%}
+          <img src="{{ media.preview_image | image_url }}" class="absolute left-0 top-0 w-full h-full object-cover" alt="Preview Image" />
+          <div class="absolute left-0 top-0 w-full h-full bg-black opacity-40"></div>
+          <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            {%- render 'icon-video-play' -%}
+          </span>
+        {%- else -%}
+          <img src="{{ media.preview_image | image_url }}" class="absolute left-0 top-0 w-full h-full object-cover z-[1]" alt="Preview Image" data-preview-image />
+          {{ media | media_tag: muted: true, loop: false, controls: true, preload: 'auto', class: 'absolute left-0 top-1/2 w-full max-h-full aspect-video -translate-y-1/2 object-cover' }}
+          <span class="absolute w-[118px] h-[118px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]" data-icon-play>
+            {%- render 'icon-video-play', class:'w-full h-full' -%}
+          </span>
+        {%- endif -%}
+    {%- endcase -%}
+  </div>
+</div>

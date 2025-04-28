@@ -1,0 +1,217 @@
+#vw-root h1 {
+  font-family: "acumin-pro-extra-condensed", sans-serif !important;
+  font-size: 52px !important;
+  text-transform: uppercase !important;
+  line-height: 90% !important;
+  letter-spacing: 2.56px !important;
+  }
+
+#vw-root h2 {
+  font-family: "acumin-pro-extra-condensed", sans-serif !important;
+  font-size: 52px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2.08px !important;
+  }
+
+#vw-root h3 {
+  font-family: "acumin-pro-extra-condensed", sans-serif !important;
+  font-size: 44px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.76px !important;
+  }
+
+#vw-root h4 {
+    font-family: "acumin-pro-extra-condensed", sans-serif !important;
+    font-size: 36px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.44px !important;
+    }
+  
+#vw-root h5 {
+    font-family: "acumin-pro-extra-condensed", sans-serif !important;
+    font-size: 28px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.12px !important;
+    }
+  
+#vw-root h6 {
+    font-family: "acumin-pro-extra-condensed", sans-serif !important;
+    font-size: 20px !important;
+    text-transform: uppercase !important;
+    letter-spacing: .8px !important;
+    }
+
+#vw-root p {
+    font-size: 15px !important;
+    line-height: 130% !important;
+    }
+
+#vw-modal-root button {
+    font-family: "acumin-pro-extra-condensed", sans-serif !important;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 90%;
+    text-transform: uppercase;
+    font-weight: 700;
+    }
+
+#vw-modal-root .vw-cmp__button-shoppable--primary {
+    font-family: "acumin-pro-extra-condensed", sans-serif !important;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 90%;
+    }
+
+#vw-modal-root .vw-cmp__shoppable--title {
+    font-family: "acumin-pro-extra-condensed", sans-serif !important;
+    font-size: 36px;
+    letter-spacing: 1.44px;
+    line-height: 90%;
+    font-weight: 700;
+    text-transform: uppercase;
+    }
+
+#vw-modal-root .vw-cmp__button-shoppable--secondary {
+    font-family: "acumin-pro-extra-condensed", sans-serif !important;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 90%;
+    }
+
+#vw-modal-root .vw-cmp__button-shoppable--primary span {
+    margin-right: 8px !important;
+    }
+
+#vw-modal-root .vw-cmp__shoppable--accordion-body {
+    font-size: 16px !important;
+    line-height: 130% !important;
+    }
+
+#vw-modal-root .vw-cmp__shoppable--accordion-title {
+      font-family: "acumin-pro-extra-condensed", sans-serif !important;
+      font-size: 17px !important;
+      line-height: 120% !important;
+      letter-spacing: 0.76px !important;
+      font-weight: 600;
+      }
+
+#vw-modal-root .vw-cmp__shoppable--price {
+      font-weight: normal !important;
+      }
+
+#vw-modal-root .vw-cmp__recommended-products--item-price-current {
+      font-weight: normal !important;
+      }
+
+#vw-modal-root .vw-cmp__counter-root label {
+    font-size: 14px !important;
+    }
+
+#vw-modal-root .vw-cmp__subscription-title {
+    font-size: 14px !important;
+    }
+
+#vw-modal-root .vw-cmp__recommended-products--item-image {
+    aspect-ratio: 0 !important;
+    max-height: none !important;
+}
+
+#vw-modal-root .vw-cmp__shoppable--sale {
+    width: fit-content !important;
+    margin-top: 8px !important;
+}
+
+#vw-modal-root .vw-cmp__shoppable--card-titlev2 {
+    font-family: "acumin-pro-extra-condensed", sans-serif !important;
+    font-size: 20px !important;
+    text-transform: uppercase !important;
+    letter-spacing: .8px !important;
+}
+
+#vw-modal-root .shoppable-buttonv2 {
+    border-radius: 0 !important;
+}
+
+#vw-modal-root .vw-cmp__shoppable--card-imagev2 {
+  height: auto !important;
+  border-radius: 0 !important;
+}
+
+#vw-modal-root .vw-cmp__recommended-products--item-title {
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-size: 17px !important;
+  line-height: 120% !important;
+  letter-spacing: 0.68px !important;
+  font-weight: 600 !important;
+  overflow-x: visible !important;
+  margin-bottom: 8px;
+}
+
+#vw-modal-root .vw-cmp__subscription-radio--label {
+  text-transform: capitalize;
+}
+
+@media (min-width: 1025px) {
+  #vw-root h1 {
+  font-size: 110px !important;
+  letter-spacing: 4.4px !important;
+  }
+
+  #vw-root h2 {
+    font-size: 64px !important;
+    letter-spacing: 2.56px !important;
+  }
+
+  #vw-root h3 {
+    font-size: 56px !important;
+    letter-spacing: 2.24px !important;
+  }
+
+  #vw-root h4 {
+    font-size: 48px !important;
+    letter-spacing: 1.92px !important;
+  }
+
+  #vw-root h5 {
+    font-size: 36px !important;
+    letter-spacing: 1.442px !important;
+  }
+
+  #vw-root h6 {
+    font-size: 24px !important;
+    letter-spacing: .96px !important;
+  }
+
+  #vw-modal-root .vw-cmp__shoppable--card-titlev2 {
+    font-size: 24px !important;
+    letter-spacing: .96px !important;
+}
+
+#vw-modal-root .vw-cmp__shoppable--accordion-title {
+  font-size: 21px !important;
+  letter-spacing: 0.84px !important;
+  }
+
+#vw-modal-root .vw-cmp__shoppable--price {
+    font-size: 18px !important;
+    }
+
+#vw-modal-root .vw-cmp__recommended-products--item-price-current {
+    font-size: 16px !important;
+    }
+
+#vw-modal-root .vw-cmp__recommended-products--item-title {
+      font-size: 19px !important;
+      letter-spacing: 0.76px !important;
+    }
+    
+#vw-modal-root .vw-cmp__shoppable--title {
+      font-size: 48px;
+      letter-spacing: 1.92px;
+      }
+
+  #vw-root p {
+    font-size: 16px !important;
+    line-height: 130% !important;
+    }
+}

@@ -1,0 +1,32 @@
+{%- liquid
+  assign subscriptionDiscount = false
+  assign hasDiscount = false
+  assign price = item.line_price
+  assign quantity = item.quantity
+
+  if isIndividual
+    assign price = item.price
+    assign quantity = 1
+  endif
+
+  if item.selling_plan_allocation != blank and item.selling_plan_allocation.compare_at_price != item.selling_plan_allocation.price
+    assign subscriptionDiscount = true
+  endif
+
+  if item.selling_plan_allocation != blank
+    assign hasSale = false
+  endif
+
+  if item.line_level_total_discount > 0
+    assign hasDiscount = true
+  endif
+  -%}
+
+<p class="text-reg {% if hasSale or subscriptionDiscount or hasDiscount %}text-error{% endif %}" data-cart-item-line-price>{{ price | money_without_trailing_zeros }}</p>
+{%- if hasSale and hasDiscount == false -%}
+  <s class="text-sm text-grey-4" data-cart-item-line-compare-price>{{ item.variant.compare_at_price | times: quantity | money }}</s>
+{%- endif -%}
+
+{%- if subscriptionDiscount or hasDiscount -%}
+  <s class="text-sm text-grey-4" data-cart-item-line-compare-price>{{ item.variant.price | times: quantity | money_without_trailing_zeros }}</s>
+{%- endif -%}

@@ -1,0 +1,355 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_JKAeVd": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/Desktop_Voices_in_Wellness.svg",
+        "image_mobile": "shopify://shop_images/Desktop_Voices_in_Wellness.svg",
+        "subheading": "SMALL CHOICES. BIG IMPACT.",
+        "heading": "<strong>DIP INTO A HEALTHIER LIFESTYLE</strong>",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "<p>Visionary women and trailblazing experts share their insights and choices for a healthier planet and a more balanced life.</p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "shop_by_category_QbCY4h": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_yde9x8": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/Beem_Sauna_CEO.jpg",
+            "mobile_image": "shopify://shop_images/Co_Founder_of_Beem_Light_Sauna.jpg",
+            "secondary_image": "shopify://shop_images/Co_Founder_of_Beem_Light_Sauna.jpg",
+            "title": "",
+            "description": "",
+            "cta_url": "shopify://blogs/blog/voices-in-wellness-cynthia-may"
+          }
+        },
+        "list_item_ri4A4b": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/Wellness_Campaign.png",
+            "mobile_image": "shopify://shop_images/10.png",
+            "secondary_image": "shopify://shop_images/10.png",
+            "title": "",
+            "description": "",
+            "cta_url": "https://whitelabelisbetter.com/blogs/blog/voices-in-wellness-karen-young"
+          }
+        },
+        "list_item_GEfG9J": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/De_La_Heart_CEO.jpg",
+            "mobile_image": "shopify://shop_images/Gigi_Vogel.jpg",
+            "secondary_image": "shopify://shop_images/Gigi_Vogel.jpg",
+            "title": "",
+            "description": "",
+            "cta_url": "shopify://blogs/blog/voices-in-wellness-gigi-vogel"
+          }
+        },
+        "list_item_8TAjj7": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/Wellness_Campaign.svg",
+            "mobile_image": "shopify://shop_images/1_035ba978-e0f7-44ee-9699-425e83dabc77.svg",
+            "secondary_image": "shopify://shop_images/1_035ba978-e0f7-44ee-9699-425e83dabc77.svg",
+            "title": "",
+            "description": "",
+            "cta_url": ""
+          }
+        },
+        "list_item_DgfHCy": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/Amy_Weiss_-_CEO_Hatch.jpg",
+            "mobile_image": "shopify://shop_images/Wellness_Campaign_af36e020-37b1-4b75-816b-91dcd6ed94d6.jpg",
+            "secondary_image": "shopify://shop_images/Wellness_Campaign_af36e020-37b1-4b75-816b-91dcd6ed94d6.jpg",
+            "title": "",
+            "description": "",
+            "cta_url": "shopify://blogs/blog/voices-in-wellness-ann-crady-weiss"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_yde9x8",
+        "list_item_ri4A4b",
+        "list_item_GEfG9J",
+        "list_item_8TAjj7",
+        "list_item_DgfHCy"
+      ],
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 10,
+        "title": "<strong>Our Panel of Wellness Professionals</strong>",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
+    "173626161867cb0621": {
+      "type": "apps",
+      "blocks": {
+        "videowise_video_commerce_videowise_page_widgets_WDVJLx": {
+          "type": "shopify://apps/videowise-video-commerce/blocks/videowise-page-widgets/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+          "settings": {
+            "videowise_embed": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_677c31ee6128e3003fe63b6c\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "videowise_video_commerce_videowise_page_widgets_WDVJLx"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "fifty_fifty_qiJKbn": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "<strong>Why is choosing sustainable options important to you?</strong>",
+        "heading_style": "h2",
+        "description": "\"Whitelabel reflects our core values, particularly our commitment to health, which encompasses a healthy environment. By supporting brands that prioritize sustainability, we shift towards a healthier planet, which is essential for long-term wellness.\"",
+        "featured_img": "shopify://shop_images/Co_Founder_of_Beem_Light_Sauna.jpg",
+        "column_img": "right",
+        "enable_mute": false,
+        "enable_pause": false,
+        "enable_reset": false,
+        "display_badge": false,
+        "cta_url": "shopify://blogs/blog/voices-in-wellness-cynthia-may",
+        "cta_text": "Read The Full Interview",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_zYGKDf": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "<strong>What's one wellness trend or practice you think more people should embrace?</strong>",
+        "heading_style": "h2",
+        "description": "\"I'm currently on 256 consecutive days of meditation. Having meditated for years and struggling with consistency, I finally realized that I was having such a hard time because I had to build a perfect practice. I hit my stride when I found 10 minutes every morning to simply hold space for myself before everyone else.\"",
+        "featured_img": "shopify://shop_images/10.png",
+        "column_img": "left",
+        "enable_mute": false,
+        "enable_pause": false,
+        "enable_reset": false,
+        "display_badge": false,
+        "cta_url": "shopify://blogs/blog/voices-in-wellness-karen-young",
+        "cta_text": "Read Full Interview",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_FdhtzA": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "<strong>What role does hydration play in your wellness routine?</strong>",
+        "heading_style": "h2",
+        "description": "\"Proper hydration is essential for maintaining healthy, radiant skin and forms the basis for achieving that natural glow we all desire. I begin each morning with 32 oz of room temp water to gently wake up my system and support digestion. Proper hydration reflects in the skin, so I prioritize drinking water consistently throughout the day and use De La Heart’s hydrating skincare products to lock in moisture. Staying hydrated supports my energy levels, enhances my focus, and helps me feel balanced, whether I’m working or practicing self-care rituals.\"",
+        "featured_img": "shopify://shop_images/Gigi_Vogel.jpg",
+        "column_img": "right",
+        "enable_mute": false,
+        "enable_pause": false,
+        "enable_reset": false,
+        "display_badge": false,
+        "cta_url": "shopify://blogs/blog/voices-in-wellness-gigi-vogel",
+        "cta_text": "READ THE FULL INTERVIEW",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_RBJbtV": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "<strong>What’s one small change people can make to their nightly routine to improve both their sleep and overall well-being?</strong>",
+        "heading_style": "h2",
+        "description": "\"A consistent bedtime routine is critical for promoting better sleep and overall well being because it trains your body and mind to recognize when it’s time towind down and rest. Just like we have a skin care routine, we need a sleep routine. This practice supports both your circadian rhythm and your mental and physical health. Hatch was purposefully-built to help with this.\"",
+        "featured_img": "shopify://shop_images/Wellness_Campaign_af36e020-37b1-4b75-816b-91dcd6ed94d6.jpg",
+        "column_img": "left",
+        "enable_mute": false,
+        "enable_pause": false,
+        "enable_reset": false,
+        "display_badge": false,
+        "cta_url": "shopify://blogs/blog/voices-in-wellness-ann-crady-weiss",
+        "cta_text": "READ THE FULL INTERVIEW",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fifty_fifty_eqtz8H": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "<strong>What’s your favorite way to stay grounded and connected to nature during a busy season?</strong>",
+        "heading_style": "h2",
+        "description": "\"It’s funny because touching grass has become somewhat of a joke, but it really is one of the best practices to reset. Even just 5 minutes of being barefoot or lying in the grass will have you feeling like you’ve wiped your slate clean.\"",
+        "featured_img": "shopify://shop_images/1_035ba978-e0f7-44ee-9699-425e83dabc77.svg",
+        "column_img": "right",
+        "enable_mute": false,
+        "enable_pause": false,
+        "enable_reset": false,
+        "display_badge": false,
+        "cta_url": "shopify://blogs/blog/voices-in-wellness-evelynn-escobar",
+        "cta_text": "Read The Full Interview",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "value_props_UBCctd": {
+      "type": "value-props",
+      "blocks": {
+        "value_prop_AQqVK9": {
+          "type": "value-prop",
+          "settings": {
+            "title": "De La Heart",
+            "description": "<p>Our mission is to support women’s well-being and help them feel their best. By reimagining wellness practices and developing approachable rituals and products, DLH enables uncomplicated and flexible solutions for a healthier and more balanced lifestyle.</p>"
+          }
+        },
+        "value_prop_GzWWYV": {
+          "type": "value-prop",
+          "settings": {
+            "title": "beem® Light Sauna",
+            "description": "<p>We specialize in innovative light<br/>therapy experiences that promote wellness through relaxation, detoxification, and<br/>recovery. Our light therapies support physical and mental health, helping members<br/>achieve their wellness goals in a busy world.</p>"
+          }
+        },
+        "value_prop_WTDypw": {
+          "type": "value-prop",
+          "settings": {
+            "title": "Hatch",
+            "description": "<p>We're dreaming up ways to help people sleep better. Our first sleep product, Hatch Rest, has helped more than half a million families get a good night's rest. And now we're on a mission to make sleep easier than ever for everyone with innovative, all-in-one products for newborns through adults.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "value_prop_AQqVK9",
+        "value_prop_GzWWYV",
+        "value_prop_WTDypw"
+      ],
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "shop_by_category_KHGHnJ": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_LgzXwm": {
+          "type": "list-item",
+          "settings": {
+            "title": "",
+            "description": "",
+            "cta_url": ""
+          }
+        },
+        "list_item_8w6pqV": {
+          "type": "list-item",
+          "settings": {
+            "title": "",
+            "description": "",
+            "cta_url": ""
+          }
+        },
+        "list_item_eJp3Em": {
+          "type": "list-item",
+          "settings": {
+            "title": "",
+            "description": "",
+            "cta_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "list_item_LgzXwm",
+        "list_item_8w6pqV",
+        "list_item_eJp3Em"
+      ],
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
+    "product_recommendations_FdXWty": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "Explore <strong>Sustainable Hydration</strong>",
+        "cta_text": "",
+        "cta_url": "",
+        "recommended_collection": "original-water",
+        "secondary_text": ""
+      }
+    }
+  },
+  "order": [
+    "hero_JKAeVd",
+    "shop_by_category_QbCY4h",
+    "173626161867cb0621",
+    "fifty_fifty_qiJKbn",
+    "fifty_fifty_zYGKDf",
+    "fifty_fifty_FdhtzA",
+    "fifty_fifty_RBJbtV",
+    "main",
+    "fifty_fifty_eqtz8H",
+    "value_props_UBCctd",
+    "shop_by_category_KHGHnJ",
+    "product_recommendations_FdXWty"
+  ]
+}

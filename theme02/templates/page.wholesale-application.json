@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "wholesale-form": {
+      "type": "wholesale-form",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "wholesale-form"
+  ]
+}

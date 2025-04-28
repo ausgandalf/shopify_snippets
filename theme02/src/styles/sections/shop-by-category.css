@@ -1,0 +1,5 @@
+.custom-content.desc {
+  p {
+    @apply text-[13px] lg:text-[14px];
+  }
+}

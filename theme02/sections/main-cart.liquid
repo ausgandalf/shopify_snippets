@@ -1,0 +1,25 @@
+<section-cart>
+  <div class="main-cart" data-main-cart data-cart>
+    <div class="container !px-0 lg:!px-12">
+      {%- liquid
+        if cart.empty?
+          render 'cart-empty'
+        else
+          echo '<div class="lg:flex lg:pt-20 pb-6 lg:pb-40 lg:gap-x-9">'
+            render 'cart-items'
+            render 'cart-summary'
+          echo '</div>'
+        endif
+      %}
+    </div>
+  </div>
+</section-cart>
+
+{% schema %}
+{
+  "name": "Cart",
+  "class": "cart",
+  "settings": [
+  ]
+}
+{% endschema %}

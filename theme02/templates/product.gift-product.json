@@ -1,0 +1,288 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "buybox": {
+      "type": "buybox",
+      "blocks": {
+        "value_prop_fa3TUW": {
+          "type": "value_prop",
+          "settings": {
+            "icon": "shopify://shop_images/Brand_Elements.svg",
+            "title": "Free US Shipping on All Orders"
+          }
+        },
+        "rewards_cJG9rK": {
+          "type": "rewards",
+          "settings": {
+            "icon": "shopify://shop_images/Brand_Elements_1.svg",
+            "title": "Earn [x] points on this purchase! <a href=\"#\" title=\"#\">Learn More</a>"
+          }
+        }
+      },
+      "block_order": [
+        "value_prop_fa3TUW",
+        "rewards_cJG9rK"
+      ],
+      "settings": {
+        "secondary_text": "",
+        "wholesale_text": "",
+        "free_gift_title": "Free 330ML 12-Pack Whitelabel",
+        "free_gift_desc": "<p>11.16 ounces of 100% purified water, perfect for when you need a little hydration.</p>",
+        "show_tooltip": false,
+        "promo_code_message": "",
+        "tooltip_title": "FREE GIFT FOR NEW SUBSCRIBERS",
+        "tooltip_content": "<p>Free 330ML 12 Pack of Whitelabel on customer's first new subscription order. One redemption per customer. After the initial order, standard subscription rates apply. Offer valid from August 5, 2024 at 12:01am ET to September 2, 2024 at 11:59pm ET online at whitelabelisbetter.com. Additional discount codes will not apply.</p>",
+        "tooltip_cta_label": "Learn More",
+        "tooltip_cta_link": "https://whitelabelisbetter.com/pages/subscribe#fgwp330ml"
+      }
+    },
+    "17262391467bc211ef": {
+      "type": "apps",
+      "blocks": {
+        "recharge_subscriptions_gifting_widget_8ADthE": {
+          "type": "shopify://apps/recharge-subscriptions/blocks/gifting-widget/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "rc_show_sender_name": true,
+            "rc_show_send_date": true,
+            "rc_gift_months_max": 24,
+            "rc_disable_add_to_cart": true,
+            "rc_gift_recipient_block_title": "Recipient information",
+            "rc_gift_sender_name_text_input": "Sender name",
+            "rc_gift_recipient_firstname_text_input": "First name",
+            "rc_gift_recipient_lastname_text_input": "Last name",
+            "rc_gift_recipient_email_text_input": "Email",
+            "rc_gift_message_text_input": "Message",
+            "rc_gift_send_date_text_input": "When should we tell the recipient about their gift?"
+          }
+        }
+      },
+      "block_order": [
+        "recharge_subscriptions_gifting_widget_8ADthE"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "value_props_PVYPVr": {
+      "type": "value-props",
+      "blocks": {
+        "value_prop_dgVH89": {
+          "type": "value-prop",
+          "repeater": "{{ product.metafields.custom.value_props.value }}",
+          "settings": {
+            "icon": "{{ block.repeater.icon.value }}",
+            "title": "{{ block.repeater.title.value }}",
+            "description": "{{ block.repeater.description | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "value_prop_dgVH89"
+      ],
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "product_details_XNwfGj": {
+      "type": "product-details",
+      "blocks": {
+        "accordion_bt3WYb": {
+          "type": "accordion",
+          "repeater": "{{ product.metafields.custom.product_details.value }}",
+          "settings": {
+            "title": "{{ block.repeater.title.value }}",
+            "description": "{{ block.repeater.description | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_bt3WYb"
+      ],
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "1726163623a1c719a9": {
+      "type": "apps",
+      "blocks": {
+        "videowise_video_platform_ugc_videowise_page_widgets_a3CRiG": {
+          "type": "shopify://apps/videowise-video-commerce/blocks/videowise-page-widgets/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+          "disabled": true,
+          "settings": {
+            "videowise_embed": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_66e31fa8e555370032acfbb4\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "videowise_video_platform_ugc_videowise_page_widgets_a3CRiG"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product_recommendations_cabzgD": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "<strong>Recommended </strong>Products",
+        "cta_text": "Shop Best Sellers",
+        "cta_url": "shopify://collections/best-sellers",
+        "recommended_collection": "best-sellers",
+        "secondary_text": "<p><a href=\"/pages/subscribe\" title=\"Subscribe & Save on Whitelabel - Sustainable Water Delivery\"><strong>Start a monthly subscription</strong></a> and enjoy 10% off and free shipping on all orders. Cancel anytime.</p>"
+      }
+    },
+    "fifty_fifty_NpwjMr": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_N3DGpB": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌿 92% Plant- Based Package"
+          }
+        },
+        "text_HRrTcp": {
+          "type": "text",
+          "settings": {
+            "icon_text": "💦 100% pure, refreshing water with none of the stuff you don’t need"
+          }
+        },
+        "text_Bdapb4": {
+          "type": "text",
+          "settings": {
+            "icon_text": "♻️ 100% Recyclable, Refillable and BPA - Free"
+          }
+        },
+        "text_H68X4e": {
+          "type": "text",
+          "settings": {
+            "icon_text": "👣 36% lower carbon footprint compared to traditional plastic bottles"
+          }
+        },
+        "text_dNVY64": {
+          "type": "text",
+          "settings": {
+            "icon_text": "📦 Boxes shipped flat to the filler to reduce the emissions associated with shipping plastic bottles"
+          }
+        }
+      },
+      "block_order": [
+        "text_N3DGpB",
+        "text_HRrTcp",
+        "text_Bdapb4",
+        "text_H68X4e",
+        "text_dNVY64"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "FEATURES",
+        "heading_style": "h2",
+        "description": "",
+        "featured_img": "shopify://shop_images/Original_Water_5050.jpg",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "/",
+        "cta_text": "",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "shop_by_category_Eqn3eP": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_thcxBf": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/250.jpg",
+            "title": "250ML Whitelabel",
+            "description": "<p>Our original 8oz lunch box size. </p>",
+            "cta_url": "shopify://products/250ml-whitelabel"
+          }
+        },
+        "list_item_JWHzzc": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/330.jpg",
+            "title": "330ML Whitelabel",
+            "description": "<p>11.6 ounces for when you need a little hydration. </p>",
+            "cta_url": "shopify://products/330ml-whitelabel"
+          }
+        },
+        "list_item_MkU7Wx": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/550.jpg",
+            "title": "500ML Whitelabel",
+            "description": "<p>16.9 ounces for 100% pure, refreshing water.</p>",
+            "cta_url": "shopify://products/500ml-whitelabel"
+          }
+        },
+        "list_item_firCcP": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/1L.jpg",
+            "title": "1 Liter Whitelabel",
+            "description": "<p>33.8 ounces perfect for hiking, sports and road trips. </p>",
+            "cta_url": "shopify://products/1l-whitelabel"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_thcxBf",
+        "list_item_JWHzzc",
+        "list_item_MkU7Wx",
+        "list_item_firCcP"
+      ],
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "Shop  your <strong>hydration level</strong>",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
+    "17169279855fc4e9b7": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_ugc_reviews_ABRdRd": {
+          "type": "shopify://apps/yotpo-product-reviews-ugc/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_ugc_reviews_ABRdRd"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "buybox",
+    "17262391467bc211ef",
+    "value_props_PVYPVr",
+    "product_details_XNwfGj",
+    "1726163623a1c719a9",
+    "product_recommendations_cabzgD",
+    "fifty_fifty_NpwjMr",
+    "shop_by_category_Eqn3eP",
+    "17169279855fc4e9b7"
+  ]
+}

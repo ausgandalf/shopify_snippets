@@ -1,0 +1,15 @@
+<div class="flex justify-between items-center w-[120px] border border-grey-3 px-4 py-3 {% unless inline_cart %}lg:w-[140px] lg:px-6 lg:py-4{% endunless %}" data-qty-selector data-variant-id="{{ variant_id }}" data-max-qty="{{ max_qty }}">
+  <button type="button" class="w-3 h-3 link-hover !bg-transparent !border-none" data-qty-minus>
+    {% render 'icon-minus', class: 'icon-minus w-full h-full' %}
+    {% render 'icon-loading', class: 'icon-loading-minus hidden animate-spin w-full h-full' %}
+    <span class="sr-only">Minus</span>
+  </button>
+
+  <span class="cart-item__qty sub-reg pb-0.5 !leading-none" data-qty>{{ current_qty }}</span>
+
+  <button type="button" class="w-3 h-3 link-hover !bg-transparent !border-none" data-qty-plus>
+    {% render 'icon-plus', class: 'icon-plus w-full h-full' %}
+    {% render 'icon-loading', class: 'icon-loading-plus hidden animate-spin w-full h-full' %}
+    <span class="sr-only">Plus</span>
+  </button>
+</div>

@@ -1,0 +1,164 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_QK9V7W": {
+          "type": "announcement",
+          "settings": {
+            "message": "<p><strong>SUBSCRIBER PERKS MONTH </strong>🎉 <strong>NEW PERKS EVERY WEEK </strong><a href=\"https://whitelabelisbetter.com/pages/subscriber-perk-month\" title=\"https://whitelabelisbetter.com/pages/subscriber-perk-month\"><strong>LEARN MORE</strong></a></p>",
+            "message_mobile": "<p><strong>SUBSCRIBER PERKS MONTH 🎉 </strong><a href=\"https://whitelabelisbetter.com/pages/subscriber-perk-month\" title=\"https://whitelabelisbetter.com/pages/subscriber-perk-month\"><strong>LEARN MORE</strong></a></p>"
+          }
+        },
+        "announcement_DywteY": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "message": "<p><strong>PLEASE NOTE: WE WILL BE CLOSED FROM DEC 23–27.  ORDERS WILL BE PROCESSED UPON REOPENING. </strong></p>",
+            "message_mobile": "<p><strong>PLEASE NOTE: WE WILL BE CLOSED FROM DEC 23–27.  ORDERS WILL BE PROCESSED UPON REOPENING. </strong></p>"
+          }
+        },
+        "announcement_mX7HtG": {
+          "type": "announcement",
+          "settings": {
+            "message": "<p><strong>FREE SHIPPING FOR OUR FRIENDS IN THE LOWER 48 STATES</strong></p>",
+            "message_mobile": "<p><strong>FREE SHIPPING IN THE LOWER 48 STATES</strong></p>"
+          }
+        },
+        "announcement_BQ4cXf": {
+          "type": "announcement",
+          "settings": {
+            "message": "<p><a href=\"https://whitelabelisbetter.com/products/mango-500ml-whitelabel\" title=\"Mango Flavor Preorder\">ORDER <strong>NEW MANGO</strong> FLAVOR TODAY </a>🥭</p>",
+            "message_mobile": "<p><a href=\"https://whitelabelisbetter.com/products/mango-500ml-whitelabel\" title=\"New Mango Flavor Preorder\">ORDER <strong>NEW MANGO</strong> FLAVOR TODAY</a></p>"
+          }
+        },
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "message": "<p><strong>NEW: BETTER REWARDS CLUB | </strong><a href=\"/pages/rewards\" title=\"Rewards\"><strong>JOIN NOW</strong></a></p>",
+            "message_mobile": "<p><strong>BETTER REWARDS CLUB | </strong><a href=\"/pages/rewards\" title=\"Rewards\"><strong>JOIN NOW</strong></a></p>"
+          }
+        },
+        "announcement_ciUq9t": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "message": "<p><strong>🍉 🍉 WATERMELON IS BACK  🍉 🍉 </strong><a href=\"/products/watermelon-500ml-whitelabel\" title=\"Watermelon 500mL Whitelabel\"><strong>SHOP NOW</strong></a></p>",
+            "message_mobile": "<p><strong>🍉 🍉 WATERMELON IS BACK 🍉 🍉 </strong><a href=\"/products/watermelon-500ml-whitelabel\" title=\"Watermelon 500mL Whitelabel\"><strong>SHOP NOW</strong></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_QK9V7W",
+        "announcement_DywteY",
+        "announcement_mX7HtG",
+        "announcement_BQ4cXf",
+        "announcement-bar-0",
+        "announcement_ciUq9t"
+      ],
+      "settings": {
+        "show_announcement_bar": true,
+        "auto_rotate": false,
+        "auto_rotate_speed": 3,
+        "color_scheme": "bg-primary-4 text-black"
+      }
+    },
+    "announcement_bar_wholesale_jmhG8t": {
+      "type": "announcement-bar-wholesale",
+      "blocks": {
+        "announcement_YLHJcT": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "message": "<p><strong>PLEASE NOTE: WE WILL BE CLOSED FROM DEC 23–27.  ORDERS WILL BE PROCESSED UPON REOPENING. </strong></p>",
+            "message_mobile": "<p><strong>PLEASE NOTE: WE WILL BE CLOSED FROM DEC 23–27.  ORDERS WILL BE PROCESSED UPON REOPENING. </strong></p>"
+          }
+        },
+        "announcement_azKkNW": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "message": "<p><strong>Free 24 Pack Water on $100+ orders. Automatically added. </strong></p>",
+            "message_mobile": "<p><strong>Free 24 Pack Water on $100+ orders. Automatically added. </strong></p>"
+          }
+        },
+        "announcement_AGkgzt": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "message": "<p><a href=\"https://whitelabelisbetter.com/collections/wholesale/#hurricanehelene\" title=\"https://whitelabelisbetter.com/collections/wholesale/#hurricanehelene\"><strong>LEARN</strong></a><strong> ABOUT THE IMPACT OF HURRICANE HELENE & MILTON ON DELIVERIES</strong></p>",
+            "message_mobile": "<p><a href=\"https://whitelabelisbetter.com/collections/order-online-page/#hurricanehelene\" title=\"https://whitelabelisbetter.com/collections/order-online-page/#hurricanehelene\"><strong>LEARN</strong></a><strong> ABOUT THE IMPACT OF HURRICANE HELENE & MILTON ON DELIVERIES</strong></p>"
+          }
+        },
+        "announcement_rxq6hM": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "message": "<p><strong>SAVE 20% ON FLAVORS! USE CODE </strong><em><strong>SIPANDSAVE </strong></em><strong>(EXCLUDES SUBSCRIPTIONS)</strong></p>",
+            "message_mobile": "<p><strong>20% OFF FLAVORS! USE CODE </strong><em><strong>SIPANDSAVE </strong></em><strong>(EXCLUDES SUBSCRIPTIONS)</strong></p>"
+          }
+        },
+        "announcement_QnnhUy": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "message": "<p><strong>🍉 🍉 WATERMELON IS BACK  🍉 🍉 </strong><a href=\"/products/500ml-24-pack-watermelon\" title=\"500ML 24 PACK WATERMELON\"><strong>SHOP NOW</strong></a></p>",
+            "message_mobile": "<p><strong>🍉 🍉 WATERMELON IS BACK 🍉 🍉 </strong><a href=\"/products/500ml-24-pack-watermelon\" title=\"500ML 24 PACK WATERMELON\"><strong>SHOP NOW</strong></a></p>"
+          }
+        },
+        "announcement_PNi3pX": {
+          "type": "announcement",
+          "settings": {
+            "message": "<p><strong>FREE SHIPPING FOR OUR FRIENDS IN THE LOWER 48 STATES</strong></p>",
+            "message_mobile": "<p><strong>FREE SHIPPING FOR OUR FRIENDS IN THE LOWER 48 STATES</strong></p>"
+          }
+        },
+        "announcement_kb6bAU": {
+          "type": "announcement",
+          "settings": {
+            "message": "<p><strong>AVAILABLE NOW: SUSTAINABLE MONTHLY WATER </strong><a href=\"/pages/wholesale-subscribe\" title=\"Wholesale Subscribe\"><strong>DELIVERIES</strong></a></p>",
+            "message_mobile": "<p><strong>AVAILABLE NOW: SUSTAINABLE MONTHLY WATER </strong><a href=\"/pages/wholesale-subscribe\" title=\"Wholesale Subscribe\"><strong>DELIVERIES</strong></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_YLHJcT",
+        "announcement_azKkNW",
+        "announcement_AGkgzt",
+        "announcement_rxq6hM",
+        "announcement_QnnhUy",
+        "announcement_PNi3pX",
+        "announcement_kb6bAU"
+      ],
+      "settings": {
+        "show_announcement_bar": true,
+        "auto_rotate": false,
+        "auto_rotate_speed": 5,
+        "color_scheme": "bg-primary-3 text-white"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "main_nav": "main-menu-1",
+        "wholesale_nav": "main-menu-wholesale"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "announcement_bar_wholesale_jmhG8t",
+    "header"
+  ]
+}

@@ -1,0 +1,26 @@
+.fifty-section-container {
+  @apply block;
+}
+
+.spin-slow {
+  animation: spin 9s linear infinite;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.fifty-description a {
+  @apply underline hover:text-primary-3 transition-all;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spin-slow {
+    animation: none;
+  }
+}

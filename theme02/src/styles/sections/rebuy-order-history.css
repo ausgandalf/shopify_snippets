@@ -1,0 +1,85 @@
+.rebuy-widget-container {
+  @apply max-w-[1920px] m-auto px-6 lg:px-12;
+}
+
+.rebuy-widget .description {
+  padding-bottom: 16px !important;
+}
+
+.super-title {
+  @apply text-[36px] leading-[90%] tracking-[1.44px] lg:tracking-[1.92px] lg:text-[48px] font-bold !mb-4;
+}
+
+.description {
+  @apply !m-auto max-w-[800px] text-[17px] lg:text-[18px] leading-[130%] !mb-[4px];
+}
+
+.rebuy-product-title {
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  @apply text-[17px] lg:text-[19px] leading-[120%] tracking-[0.68px] lg:tracking-[0.76px] font-semibold;
+}
+
+.rebuy-widget .rebuy-product-block .rebuy-product-info {
+  flex: 0 1 auto !important;
+}
+
+.subscription-checkbox {
+  background: #D7EAF6;
+  padding: 8px !important;
+}
+
+.checkbox-input {
+  background: #D7EAF6;
+  background-color: #D7EAF6 !important;
+  height: 20px !important;
+  width: 20px !important;
+}
+
+.checkbox-input:checked {
+  background-color: #1f1f1f !important;
+}
+
+.rebuy-checkbox:before {
+  color: #ffffff !important;
+  font-size: 14px !important;
+}
+
+.checkbox-label {
+  @apply !pl-1;
+}
+
+.rebuy-button {
+  @apply !font-heading !px-6 !pb-[.82rem] !pt-[.75rem] !inline-flex !items-center !justify-center !text-[20px] !font-bold !no-underline !transition-all !uppercase !tracking-[2px] !leading-[90%] !max-h-[45px] !text-black !border-black !border-[2px] !bg-transparent hover:!bg-black hover:!text-white;
+}
+
+.rebuy-select {
+  background-size: auto !important;
+  min-width: auto !important;
+}
+
+.rebuy-widget .flickity-button.previous {
+  left: -20px !important;
+}
+
+.rebuy-widget .flickity-button.next {
+  right: -20px !important;
+}
+
+.rebuy-money.sale, .rebuy-widget .rebuy-money.sale {
+  color: #D72608 !important;
+}
+
+.rebuy-money.compare-at, .rebuy-widget .rebuy-money.compare-at  {
+  color: #707476 !important;
+}
+
+.rebuy-underline, .rebuy-widget .rebuy-underline {
+  @apply !text-primary-3 !font-bold;
+  border-color: #016DD0 !important;
+}
+
+@media screen and (max-width: 480px) {
+  .rebuy-widget .rebuy-product-grid.small-columns-1 .rebuy-product-block {
+    padding: 0 5px !important;
+  }
+}

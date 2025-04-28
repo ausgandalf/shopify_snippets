@@ -1,0 +1,43 @@
+{% if collection.products.size > 0 %}
+  <div class="container py-11 lg:py-[88px] main-collection">
+    <div class="grid grid-cols-2 xl:grid-cols-4 gap-x-4 xl:gap-x-5 gap-y-6 xl:gap-y-10">
+      {%- for product in collection.products -%}
+        {%- render 'product-tile', product: product -%}
+      {%- endfor -%}
+    </div>
+  </div>
+{% endif %}
+{%- if section.blocks.size > 0 -%}
+  {%- for block in section.blocks -%}
+    <div class="container py-11 lg:py-[88px] main-collection">
+      <h1 id="{{ block.settings.additional_collection.title |  handleize }}" class="h4 product-title !font-bold mb-6">{{ block.settings.additional_collection.title }}</h1>
+      <div class="grid grid-cols-2 xl:grid-cols-4 gap-x-4 xl:gap-x-5 gap-y-6 xl:gap-y-10 additional-collection">
+        {%- for product in collections[block.settings.additional_collection].products -%}
+          {%- render 'product-tile', product: product -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="collection-border w-full"></div>
+  {%- endfor -%}
+{% endif %}
+
+{% schema %}
+  {
+    "name": "t:sections.main-collection-product-grid.name",
+    "class": "collection-section",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Additional Collection",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "additional_collection",
+            "label": "Additional Collection"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

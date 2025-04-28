@@ -1,0 +1,207 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "show_storelocator": false,
+    "storelocator_link": "shopify://pages/about-us",
+    "continue_collection": "order-online-page",
+    "wholesale_continue_collection": "wholesale",
+    "free_shipping_message": "FREE SHIPPING ON U.S. ORDERS",
+    "logo": "shopify://shop_images/Logo.svg",
+    "wholesale_logo": "shopify://shop_images/whitelabel-wholesale.svg",
+    "wholesale_logo_link": "shopify://collections/wholesale",
+    "favicon": "shopify://shop_images/favicon_57fbd943-c80d-41f4-a875-8cf7c94483a4.png",
+    "social_instagram_link": "https://instagram.com/whitelabel",
+    "social_facebook_link": "https://www.facebook.com/whitelabel",
+    "social_linkedin_link": "https://www.linkedin.com/company/whitelabel-is-better",
+    "social_pinterest_link": "https://pin.it/o5veq5qgbrxi4h",
+    "social_tiktok_link": "https://www.tiktok.com/@whitelabel/",
+    "social_twitter_link": "https://twitter.com/whitelabel",
+    "primary_1": "#d7eaf6",
+    "rebuy_widget_id": "196005",
+    "sections": {
+      "side-cart": {
+        "type": "side-cart",
+        "settings": {
+          "rebuy_upsell_id": "189101",
+          "display_rebuy": false
+        }
+      },
+      "quick-navigation": {
+        "type": "quick-navigation",
+        "blocks": {
+          "link_JeWqc8": {
+            "type": "link",
+            "settings": {
+              "image": "shopify://shop_images/shop_all_quick_nav.png",
+              "title": "Shop All",
+              "url": "shopify://collections/order-online-page"
+            }
+          },
+          "link_LmaR7V": {
+            "type": "link",
+            "settings": {
+              "image": "shopify://shop_images/500_quick_nav_no_shadow.png",
+              "title": "Best Seller",
+              "url": "shopify://products/500ml-whitelabel"
+            }
+          },
+          "link_DaQxLF": {
+            "type": "link",
+            "settings": {
+              "image": "shopify://shop_images/250_quick_nav_no_shadow.png",
+              "title": "Mini",
+              "url": "shopify://products/250ml-whitelabel"
+            }
+          },
+          "link_jkLHGa": {
+            "type": "link",
+            "settings": {
+              "image": "shopify://shop_images/lemon_quick_nav_no_shadow.png",
+              "title": "Lemon",
+              "url": "shopify://products/lemon-500ml-whitelabel"
+            }
+          },
+          "link_c9qDRn": {
+            "type": "link",
+            "settings": {
+              "image": "shopify://shop_images/tote_quick_nav.png",
+              "title": "Tote",
+              "url": "shopify://products/mango-sustainable-tote"
+            }
+          },
+          "ws_link_9CwLna": {
+            "type": "ws-link",
+            "settings": {
+              "image": "shopify://shop_images/500_quick_nav_no_shadow.png",
+              "title": "Best-Seller",
+              "url": "shopify://products/500ml-24-pack-wholesale"
+            }
+          },
+          "ws_link_qCNqKm": {
+            "type": "ws-link",
+            "settings": {
+              "image": "shopify://shop_images/250_quick_nav_no_shadow.png",
+              "title": "Mini",
+              "url": "shopify://products/250ml-24-pack-wholesale"
+            }
+          },
+          "ws_link_xfLBe6": {
+            "type": "ws-link",
+            "settings": {
+              "image": "shopify://shop_images/lemon_quick_nav_no_shadow.png",
+              "title": "Lemon",
+              "url": "shopify://products/500ml-24-pack-lemon"
+            }
+          },
+          "ws_link_H9wMHL": {
+            "type": "ws-link",
+            "settings": {
+              "image": "shopify://shop_images/table_tents_quick_nav.png",
+              "title": "Table Tents",
+              "url": "shopify://products/table-tents-8-pack"
+            }
+          }
+        },
+        "block_order": [
+          "link_JeWqc8",
+          "link_LmaR7V",
+          "link_DaQxLF",
+          "link_jkLHGa",
+          "link_c9qDRn",
+          "ws_link_9CwLna",
+          "ws_link_qCNqKm",
+          "ws_link_xfLBe6",
+          "ws_link_H9wMHL"
+        ],
+        "settings": {
+          "show_image": true
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "10641372206048101839": {
+        "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+        "disabled": false,
+        "settings": {}
+      },
+      "17151115064775110295": {
+        "type": "shopify://apps/recharge-subscriptions/blocks/recharge-theme/371eed76-0b44-4869-9813-730372ea378e",
+        "disabled": false,
+        "settings": {
+          "color_brand": "#1f1f1f",
+          "contrast_color": "#ffffff",
+          "color_brand_secondary": "#1f1f1f",
+          "corners": "0px",
+          "app_background": "#f6f6f6",
+          "app_container": 1450,
+          "app_vertical_padding": 32,
+          "images_aspect_ratio": "1",
+          "cards_background": "#ffffff",
+          "cards_border_color": "rgba(0,0,0,0)"
+        }
+      },
+      "7570552984445421165": {
+        "type": "shopify://apps/yotpo-product-reviews-ugc/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": false,
+        "settings": {}
+      },
+      "14339172867238703359": {
+        "type": "shopify://apps/yotpo-product-reviews-ugc/blocks/reviews_tab/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": false,
+        "settings": {
+          "product": ""
+        }
+      },
+      "8962992520437913685": {
+        "type": "shopify://apps/yotpo-loyalty-rewards/blocks/loader-app-embed-block/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
+        "disabled": false,
+        "settings": {
+          "inject_modules_loader": true,
+          "inject_sdk_loader": false
+        }
+      },
+      "15685250022964305326": {
+        "type": "shopify://apps/elevar-conversion-tracking/blocks/dataLayerEmbed/bc30ab68-b15c-4311-811f-8ef485877ad6",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "16987187365865460165": {
+        "type": "shopify://apps/ez-preorder/blocks/pre-order/27f5c03b-584b-4f19-8dc2-99bf52c8c09f",
+        "disabled": false,
+        "settings": {}
+      },
+      "2153490007123654574": {
+        "type": "shopify://apps/consentmo-gdpr/blocks/gdpr_cookie_consent/4fbe573f-a377-4fea-9801-3ee0858cae41",
+        "disabled": false,
+        "settings": {}
+      },
+      "1373006865992778634": {
+        "type": "shopify://apps/impact-com/blocks/utt/adac1a7f-d17f-4936-8a12-45628cdd8add",
+        "disabled": false,
+        "settings": {}
+      },
+      "7885500093077574326": {
+        "type": "shopify://apps/videowise-video-platform-ugc/blocks/script_embed/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Default": {}
+  }
+}

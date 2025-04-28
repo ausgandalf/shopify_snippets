@@ -1,0 +1,161 @@
+{%-liquid
+  assign heading = section.settings.heading
+  assign description = section.settings.description
+  assign currentYear = 'now' | date: '%Y'
+  assign copyright = section.settings.copyright | replace: '[year]', currentYear
+  assign terms_menu = linklists[section.settings.terms_menu] | default: false
+  assign mobile_footer_back = section.settings.mobile_footer_back
+
+  assign logo = settings.logo
+-%}
+
+<div class="site-footer flex flex-col text-black">
+  <div class="footer-mobile-back border-solid border-black lg:border-t-[2px] border-b-[2px]">
+    <div class="container px-0 lg:px-12 py-0 lg:py-20">
+      <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-x-10">
+        <div class="flex flex-col items-center lg:items-start text-center lg:text-left lg:flex-1 lg:max-w-[444px] px-4 lg:px-0 pt-8 pb-10 lg:pt-0 lg:pb-0 lg:!bg-none bg-cover" {% if mobile_footer_back != blank %}style="background-image: url('{{ mobile_footer_back | image_url }}')"{% endif %}>
+          {%- if heading != blank -%}
+            <h1 class="h4 !font-bold">{{ heading }}</h1>
+          {%- endif -%}
+
+          {%- if description != blank -%}
+            <div class="mt-4 max-w-[350px]">{{ description }}</div>
+          {%- endif -%}
+
+          <div class="mt-4 lg:hidden w-full md:w-auto">
+            {%- render 'footer-social-links' -%}
+          </div>
+
+          <div class="mt-4 w-full">
+            {%- render 'footer-newsletter' -%}
+          </div>
+
+          <div class="mt-[30px] hidden lg:block">
+            {%- render 'footer-social-links' -%}
+          </div>
+        </div>
+        <div class="w-full border-solid border-t-[2px] border-black lg:border-t-0 lg:max-w-[592px] px-4 lg:px-0 py-12 lg:py-0 bg-white lg:bg-transparent">
+          <div class="columns-2 md:columns-4 lg:columns-3" data-footer-menu>
+            {%- for link in linklists[section.settings.footer_menu].links -%}
+              <div class="py-3 lg:py-4 text-center lg:text-left">
+                <a href="{{- link.url -}}" class="content-link text-[20px] lg:text-[24px] tracking-[0.8px] lg:tracking-[0.96px] !uppercase">
+                  {{- link.title -}}
+                </a>
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container flex flex-col lg:flex-row lg:justify-between items-center px-4 lg:px-12 py-8 lg:pt-10 lg:pb-6 gap-y-6">
+    <div class="flex flex-col lg:flex-row items-center gap-y-6 gap-x-[72px]">
+      <a class="flex items-center max-w-[125px]" href="/">
+        <img class="max-w-full" src="{{ logo | image_url }}" alt="Whitelabel Logo"/>
+      </a>
+      {% if section.blocks.size > 0 %}
+      <div class="flex lg:items-center gap-x-4 lg:gap-x-6">
+        {% for additional_logo in section.blocks %}
+          <div class="flex">
+            <img class="max-w-full" src="{{ additional_logo.settings.logo | image_url }}" alt="{{ additional_logo.settings.logo.alt }}"/>
+          </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    <div class="flex flex-col items-center lg:items-end gap-y-4">
+      {%- if terms_menu != blank -%}
+        <div class="">
+          <ul class="flex items-center gap-6">
+            {%- for link in terms_menu.links -%}
+              <li class="m-0 p-0 text-center">
+                <a href="{{ link.url }}" class="focus-link text-sm">{{ link.title }}</a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+      <p class="text-sm">{{ copyright }}</p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+
+{
+  "name": "Footer",
+  "class": "siteFooter",
+  "tag": "footer",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Newsletter Form"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Let’s Be Friends!"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "textarea",
+      "id": "success_message",
+      "label": "Signup Success Message",
+      "default": "Thank you for signing up!"
+    },
+    {
+      "type": "text",
+      "id": "klaviyo_list_id",
+      "label": "Klaviyo List ID",
+      "default": "WDSQLJ"
+    },
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "text",
+      "id": "copyright",
+      "label": "Copyright",
+      "default": "© [year] Whitelabel, All Rights Reserved.",
+      "info": "[year] will be replaced with current year"
+    },
+    {
+      "type": "link_list",
+      "id": "footer_menu",
+      "label": "Footer Menu"
+    },
+    {
+      "type": "link_list",
+      "id": "terms_menu",
+      "label": "Terms Menu"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_footer_back",
+      "label": "Mobile Footer Background Image",
+      "info": "Recommended: 750x525px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "additional_logo",
+      "name": "Additional Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Additional Logo",
+          "info": "Recommended dimensions: 144 x 174px"
+        }
+      ]
+    }
+  ]
+}
+
+{% endschema %}

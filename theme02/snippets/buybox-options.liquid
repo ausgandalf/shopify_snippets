@@ -1,0 +1,77 @@
+{%- liquid
+  for option in product.options_with_values
+    if option.name contains 'Color' or option.name contains 'color'
+      assign option_index = forloop.index0
+    endif
+  endfor
+
+  if option_index != blank
+    assign defaultOptionColor = current_variant.options[option_index]
+  endif
+  -%}
+<div class="flex flex-col gap-6" data-buybox-option-group-list>
+  {%- for option in product.options_with_values -%}
+    <div data-buybox-option-group data-group-name={{ option.name }}>
+      <div class="flex items-end gap-x-1">
+        <strong class="sub-sm !font-semibold">{{ option.name }}</strong>
+        <span class="text-sm text-grey-5" data-value="{{ option.selected_value }}" data-buybox-option-selected>{{ option.selected_value }}</span>
+      </div>
+      <div class="flex items-center flex-wrap gap-2 mt-2.5">
+        {%- for value in option.values -%}
+          {%-liquid
+            assign option_value_availability = false
+            assign color_file_name = value | handleize | append: '.png'
+            assign option_text = current_variant.metafields.custom.size_info
+            assign case_quantity = current_variant.metafields.whitelabel.case_quantity.value | plus: 0
+            assign unit_price = current_variant.price | divided_by: case_quantity
+
+            for variant in product.variants
+              if variant.options contains value and variant.available
+                assign option_value_availability = true
+                break
+              endif
+            endfor
+
+            for variant in product.variants
+              assign defaultColorContained = false
+
+              if defaultOptionColor == blank
+                assign defaultColorContained = true
+              endif
+
+              if defaultOptionColor != blank and variant.options contains defaultOptionColor
+                assign defaultColorContained = true
+              endif
+
+              if variant.options contains value and defaultColorContained
+                if variant.metafields.whitelabel.case_quantity != blank
+                  assign option_text = variant.metafields.custom.size_info.value
+                  assign case_quantity = variant.metafields.whitelabel.case_quantity.value | plus: 0
+                  assign unit_price = variant.price | divided_by: case_quantity
+                  break
+                endif
+              endif
+            endfor
+
+            if option_text == blank
+              assign option_text = 'unit'
+            endif
+          -%}
+
+          <span
+            class="{% if value == option.selected_value %}selected{% endif %} {% unless option_value_availability %}unavailable{% endunless %}"
+            data-value="{{ value }}"
+            data-option-name="{{ option.name | handleize }}"
+            data-buybox-option>
+            {%- if option.name contains 'Color' or option.name contains 'color' -%}
+              <span class="bg-center" style="background-image: url({{ color_file_name | file_img_url }});"></span>
+            {%- else -%}
+              <span>{{ value }}</span>
+              <span class="text-sm text-grey-5 {% if case_quantity == 0 %}hidden{% endif %}" data-option-text>{{ unit_price | money }} / {{ option_text }}</span>
+            {%- endif -%}
+          </span>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endfor -%}
+</div>

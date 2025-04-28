@@ -1,0 +1,41 @@
+<div class="" data-buybox-gallery>
+  <div class="hidden lg:block relative" data-buybox-gallery-desktop>
+    <div class="" data-buybox-gallery-slider>
+      {%- for media in product.media -%}
+        {%- render 'buybox-media-thumb',
+              media: media,
+              index: forloop.index,
+              autoplay: false,
+              zoom: false,
+              zoom_from: 'mobile' -%}
+      {%- endfor -%}
+    </div>
+    <div class="absolute bottom-12 left-12 inline-flex gap-x-5" data-gallery-controls>
+      <button aria-label="previous" class="button button--primary-light button-arrow rotate-180 !w-16 !h-16 !max-h-none">{%- render 'icon-arrow', classes: 'w-10 h-10' -%}</button>
+      <button aria-label="next" class="button button--primary-light button-arrow !w-16 !h-16 !max-h-none">{%- render 'icon-arrow', classes: 'w-10 h-10' -%}</button>
+    </div>
+  </div>
+  <div class="lg:hidden" data-buybox-gallery-mobile>
+    <div class="" data-buybox-gallery-main>
+      {%- for media in product.media -%}
+        {%- render 'buybox-media-thumb',
+              media: media,
+              index: forloop.index,
+              autoplay: false,
+              zoom: false,
+              zoom_from: 'mobile' -%}
+      {%- endfor -%}
+    </div>
+    <div class="mt-2 overflow-x-auto no-scrollbar">
+      <div class="flex gap-x-2 px-4 w-max" data-buybox-gallery-thumbs>
+        {%- for media in product.media -%}
+          {%- render 'buybox-media-thumb',
+                media: media,
+                index: forloop.index,
+                as_thumbnail: true,
+                class: "shrink-0 w-[60px] aspect-square" -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>

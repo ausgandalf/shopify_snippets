@@ -1,0 +1,136 @@
+.yotpo-primary-button-link button {
+  @apply !font-heading !px-6 !pb-[.82rem] !pt-[.60rem] inline-flex items-center justify-center !text-[20px] !font-bold no-underline transition-all !uppercase !tracking-[2px] !leading-[90%] !h-[45px] bg-black border-black !border-[2px] text-white hover:text-black hover:bg-white;
+}
+
+.yotpo-action-buttons-tile button {
+  @apply !font-heading !px-6 !pb-[.82rem] !pt-[.60rem] inline-flex items-center justify-center !text-[20px] !font-bold no-underline transition-all !uppercase !tracking-[2px] !leading-[90%] !h-[45px] bg-black border-black !border-[2px] text-white hover:text-black hover:bg-white;
+}
+
+.yotpo-widgets-shared-action-button {
+  @apply !font-heading !px-6 !pb-[.82rem] !pt-[.60rem] inline-flex items-center justify-center !text-[20px] !font-bold no-underline transition-all !uppercase !tracking-[2px] !leading-[90%] !h-[45px] bg-black border-black !border-[2px] text-white hover:text-black hover:bg-white;
+}
+
+.yotpo-overlay-tile button {
+  @apply !font-heading !px-6 !pb-[.82rem] lg:!pt-[.30rem] !pt-[.50rem] inline-flex items-center justify-center !text-[20px] !font-bold no-underline transition-all !uppercase !tracking-[2px] !leading-[90%] max-h-[45px] bg-black border-black !border-[2px] text-white hover:text-black hover:bg-white;
+}
+
+.yotpo-overlay-tile.yotpo-is-mobile button {
+  @apply !font-heading !px-6 !pb-[.82rem] lg:!pt-[.30rem] !pt-[.60rem] inline-flex items-center justify-center !text-[20px] !font-bold no-underline transition-all !uppercase !tracking-[2px] !leading-[90%] max-h-[45px] bg-black border-black !border-[2px] text-white hover:text-black hover:bg-white;
+}
+
+.yotpo-referral-widget-form .yotpo-submit-form {
+  @apply !font-heading !px-6 !pb-[.82rem] !pt-[.75rem] inline-flex items-center justify-center !text-[20px] !font-bold no-underline transition-all !uppercase !tracking-[2px] !leading-[90%] max-h-[45px] bg-black !border-black !border-[2px] !text-white hover:text-black hover:bg-white;
+}
+
+.yotpo-widget-referral-widget .yotpo-filled-button {
+  border: 2px solid #1f1f1f !important;
+}
+
+.yotpo-widget-referral-widget .yotpo-button-style:hover {
+  color: #1f1f1f !important;
+  background-color: #ffffff !important;
+}
+
+.yotpo-widgets-shared-action-button:hover {
+  color: #1f1f1f !important;
+  background-color: #ffffff !important;
+}
+
+.yotpo-overlay-tile button {
+  border: 2px solid #1f1f1f !important;
+}
+
+.yotpo-overlay-tile button:hover {
+  color: #1f1f1f !important;
+  background-color: #ffffff !important;
+}
+
+.yotpo-referral-widget-form .yotpo-submit-form .yotpo-widget-button-text {
+  @apply !text-[20px] !font-bold !uppercase !tracking-[2px] !leading-[90%];
+}
+
+.yotpo-outer-tile {
+  border-radius: 0 !important;
+}
+
+.yotpo-widget-visual-redemption-widget .yotpo-redemption-item {
+  border-radius: 0 !important;
+}
+
+.yotpo-vip-tiers-progress-bar-wrapper {
+  border-radius: 0 !important;
+}
+
+.yotpo-vip-tier-container {
+  border-radius: 0 !important;
+}
+
+.yotpo-input {
+  border-radius: 0 !important;
+}
+
+.yotpo-copy-text-button {
+  border-radius: 0 !important;
+}
+
+.yotpo-share-button-widget {
+  border-radius: 0 !important;
+}
+
+.yotpo-widget-my-rewards-widget .yotpo-is-mobile .yotpo-action-buttons-tile {
+  gap: 24px;
+}
+
+.yotpo-redemption-options-mobile-wrapper .yotpo-arrow-icon path {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-white;
+}
+
+.yotpo-progress-bar-top-right, .yotpo-progress-bar-bottom-right {
+  @apply !text-black;
+}
+
+.yotpo-vip-tiers-grid-benefit-toggle {
+  color: #016DD0;
+}
+
+.yotpo-is-mobile .yotpo-vip-tiers-headline {
+  font-size: 38.4px !important;
+}
+
+.yotpo-logged-out-center-element a {
+  font-family:"acumin-pro", sans-serif !important;
+  color: #016DD0 !important;
+}
+
+.yotpo-widget-date-picker input[type='number'] {
+  min-width: 0 !important;
+}
+
+.yotpo-action-button-widget button {
+  padding-bottom: .30rem !important;
+}
+
+.yotpo-action-button-widget button:hover path {
+  fill: #1F1F1F !important;
+}
+
+.yotpo-action-button-widget button:hover rect {
+  fill: #1F1F1F !important;
+}
+
+.yotpo-widget-campaign-widget .yotpo-container-action-tile .yotpo-flex-row {
+  align-items: center;
+}
+
+.yotpo-widget-mmddyyyy {
+  border-radius: 0;
+}
+
+.yotpo-widget-mmddyyyy {
+  border-radius: 0;
+}

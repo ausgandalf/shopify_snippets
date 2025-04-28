@@ -1,0 +1,92 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "nav_link_xyPezq": {
+          "type": "nav_link",
+          "settings": {
+            "title": "original water",
+            "link": "#wholesale-original-water"
+          }
+        },
+        "nav_link_VpDRHh": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Fruit Flavors",
+            "link": "#wholesale-fruit-flavors"
+          }
+        },
+        "nav_link_aghpde": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Merch",
+            "link": "#wholesale-merch"
+          }
+        },
+        "nav_link_g7qdB8": {
+          "type": "nav_link",
+          "disabled": true,
+          "settings": {
+            "title": "Best Sellers",
+            "link": "shopify:\/\/collections\/best-sellers"
+          }
+        },
+        "nav_link_qxXETn": {
+          "type": "nav_link",
+          "disabled": true,
+          "settings": {
+            "title": "Carbon Neutral Certified",
+            "link": "#carbon-neutral-certified"
+          }
+        }
+      },
+      "block_order": [
+        "nav_link_xyPezq",
+        "nav_link_VpDRHh",
+        "nav_link_aghpde",
+        "nav_link_g7qdB8",
+        "nav_link_qxXETn"
+      ],
+      "settings": {
+        "title": "Shop all",
+        "image": "{{ collection.metafields.custom.banner_image.value }}",
+        "image_m": "{{ collection.metafields.custom.banner_image_mobile.value }}"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "collection_kJeBdT": {
+          "type": "collection",
+          "settings": {
+            "additional_collection": "wholesale-original-water"
+          }
+        },
+        "collection_R4Aqe8": {
+          "type": "collection",
+          "settings": {
+            "additional_collection": "wholesale-fruit-flavors"
+          }
+        },
+        "collection_cmTdwb": {
+          "type": "collection",
+          "settings": {
+            "additional_collection": "wholesale-merch-best-selling"
+          }
+        }
+      },
+      "block_order": [
+        "collection_kJeBdT",
+        "collection_R4Aqe8",
+        "collection_cmTdwb"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid"
+  ]
+}

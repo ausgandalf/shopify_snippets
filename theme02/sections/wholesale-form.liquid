@@ -1,0 +1,68 @@
+<div id="section-{{- section.id -}}" data-section-id="{{ section.id }}" class="container !max-w-[1020px]">
+  <div class="text-center mb-6 lg:mb-8">
+    <h2>{{- section.settings.form_title -}}</h2>
+  </div>
+
+  {{- section.settings.form_html -}}
+</div>
+
+<style type="text/css">
+  #section-{{- section.id -}} {
+    margin-bottom: {{- section.settings.margin_mobile | append: 'px' -}}
+     !important;
+  }
+
+  @media (min-width: 1025px) {
+    #section-{{- section.id -}} {
+      margin-bottom: {{- section.settings.margin_desktop | append: 'px' -}}
+       !important;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Wholesale Form",
+    "settings": [
+      {
+        "type": "text",
+        "id": "form_title",
+        "label": "Title"
+      },
+      {
+        "type": "html",
+        "id": "form_html",
+        "label": "Form Code"
+      },
+      {
+        "type": "header",
+        "content": "Spacing"
+      },
+      {
+        "type": "range",
+        "id": "margin_desktop",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Mobile",
+        "default": 0
+      }
+    ],
+    "presets": [
+      {
+        "name": "Wholesale Form"
+      }
+    ]
+  }
+{% endschema %}

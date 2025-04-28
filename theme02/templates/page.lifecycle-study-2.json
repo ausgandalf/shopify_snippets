@@ -1,0 +1,356 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_AieDWV": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/lifecycle_desktop_header.jpg",
+        "image_mobile": "shopify://shop_images/Lifecycle_Mobile_Hero_Image.jpg",
+        "subheading": "PROVEN BETTER",
+        "heading": "LIFECYCLE STUDY RESULTS",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "<p>The moment you grab an item from the store shelves is just a small piece of that product’s story. Our study shows what makes Whitelabel™ cartons more sustainable than plastic bottles and aluminum cans throughout their entire lifecycle.</p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "general-content": {
+      "type": "general-content",
+      "blocks": {
+        "nav_link_6qtd6n": {
+          "type": "nav_link",
+          "settings": {
+            "title": "What is an LCA?",
+            "hyperlink": "#content1"
+          }
+        },
+        "nav_link_Q6G9aP": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Ozone Depletion",
+            "hyperlink": "#shopify-section-template--16232656797807__fifty_fifty_XLa4CJ"
+          }
+        },
+        "nav_link_pQYfhy": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Global Warming",
+            "hyperlink": "#shopify-section-template--16232656797807__fifty_fifty_JdKgxX"
+          }
+        },
+        "nav_link_9EHrY4": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Algae Bloom",
+            "hyperlink": "#shopify-section-template--16232656797807__fifty_fifty_WN9NzQ"
+          }
+        },
+        "nav_link_PVKncY": {
+          "type": "nav_link",
+          "settings": {
+            "title": "Acidification",
+            "hyperlink": "#shopify-section-template--16232656797807__fifty_fifty_FMbdFH"
+          }
+        }
+      },
+      "block_order": [
+        "nav_link_6qtd6n",
+        "nav_link_Q6G9aP",
+        "nav_link_pQYfhy",
+        "nav_link_9EHrY4",
+        "nav_link_PVKncY"
+      ],
+      "settings": {
+        "margin_desktop": 54,
+        "margin_mobile": 0
+      }
+    },
+    "hero_EeKxEz": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/lifecycle--oilfield.jpg",
+        "image_mobile": "shopify://shop_images/oil_field_mobile_dark.jpg",
+        "subheading": "THE RESULTS ARE CLEAR.",
+        "heading": "Whitelabel™ cartons have a lower total impact on our planet.",
+        "heading_mobile": "",
+        "heading_type": "h2",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "fifty_fifty_XLa4CJ": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "Ozone Depletion",
+        "heading_style": "h2",
+        "description": "The ozone layer shields our planet from harmful ultraviolet rays. After decades of damage, it is trying to heal. Many of the substances needed for oil drilling, like the halogen group of elements, swiftly destroy the Earth’s ozone molecules and impede progress.",
+        "featured_img": "shopify://shop_images/lifecycle--ozone-chart.png",
+        "column_img": "right",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": false,
+        "cta_url": "/",
+        "cta_text": "",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_JdKgxX": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "Global warming",
+        "heading_style": "h2",
+        "description": "A change of only 2 degrees Fahrenheit has already created dangerous extremes such as drought, wildfires, and flooding. Plastic and aluminum production and incineration generates large amounts of greenhouse gas emissions, which leads to global warming.",
+        "featured_img": "shopify://shop_images/lifecycle--global-warming-chart.png",
+        "column_img": "left",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": false,
+        "cta_url": "/",
+        "cta_text": "",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "four_col_dxQnr6": {
+      "type": "four-col",
+      "blocks": {
+        "text_U4TQKX": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/ozone_icon_ef1c1d59-885e-4df5-aee7-fae2c251e229.svg",
+            "icon_title": "50% Lower Ozone Depletion",
+            "icon_text": "Cartons affect less of our ozone layer than aluminum canned water."
+          }
+        },
+        "text_zBg8qk": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/warming_icon_14915224-5571-4bf3-9b92-e4bf62e838a8.svg",
+            "icon_title": "36% Less Global Warming",
+            "icon_text": "Cartons contribute to less global warming as compared with plastic bottled water."
+          }
+        },
+        "text_pYEBdb": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/algea_icon_1436e33f-2970-416e-b793-3388cc02256b.svg",
+            "icon_title": "43% Less Algae Bloom",
+            "icon_text": "Cartons affect the algae bloom in wetlands less than plastic bottled water."
+          }
+        },
+        "text_8BahRf": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/coral_icon_ffe5b562-95b5-4916-bff7-73b36648a01f.svg",
+            "icon_title": "33% Less Acidification",
+            "icon_text": "Carton affect the acidification of oceans less than aluminum canned water."
+          }
+        }
+      },
+      "block_order": [
+        "text_U4TQKX",
+        "text_zBg8qk",
+        "text_pYEBdb",
+        "text_8BahRf"
+      ],
+      "settings": {
+        "image_d": "shopify://shop_images/lifecycle--switch-bg.jpg",
+        "image_m": "shopify://shop_images/lifecycle--switch-bg.jpg",
+        "title": "BETTER FOR OUR PLANET",
+        "heading_text_color": "white",
+        "cta_url": "shopify://collections/order-online-page",
+        "cta_text": "SHOP WHITELABEL",
+        "button_style": "secondary",
+        "block_text_color": "black",
+        "bg_color": "white",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_WN9NzQ": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "Algae Bloom",
+        "heading_style": "h2",
+        "description": "Microplastics and the excessive minerals in aluminum production contaminate coastal waters and wetlands. This leads to excessive algae blooms, toxic red mud, and low-oxygen waters that can eliminate\nentire ecosystems.",
+        "featured_img": "shopify://shop_images/lifecycle--algae-chart.png",
+        "column_img": "right",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": false,
+        "cta_url": "/",
+        "cta_text": "",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_FMbdFH": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "Acidification",
+        "heading_style": "h2",
+        "description": "The pH balance of our oceans is becoming more acidic and our marine species are struggling to survive. Oil drilling and aluminum smelting are releasing carbon dioxide, sulfur dioxide and nitrogen oxides into the atmosphere.",
+        "featured_img": "shopify://shop_images/lifecycle--acid-chart.png",
+        "column_img": "left",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": false,
+        "cta_url": "/",
+        "cta_text": "",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "hero_iKnj77": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/green_waterfall_with_carton.jpg",
+        "image_mobile": "shopify://shop_images/mobile_greenwaterfall_with_carton_square.jpg",
+        "subheading": "",
+        "heading": "Full Life-Cycle Report",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "<p>Our Life-Cycle study was conducted by Anthesis and is consistent with LCA: ISO 14040:2006 and ISO 14044:2006 International Standards and followed the required four-stage iterative process. <strong>Commissioned by Whitelabel Is Better LLC.</strong></p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "READ THE STUDY",
+        "cta_url_1": "shopify://pages/lifecycle-assessment-document",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "bottom",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "two_three_up_FxjahR": {
+      "type": "two-three-up",
+      "blocks": {
+        "cta_8yhm77": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "How We Compare To Plastic",
+            "link": "shopify://pages/the-life-cycle-plastic",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/lifecycle--compare-plastic.jpg",
+            "text_color": "text-white",
+            "button_style": "primary"
+          }
+        },
+        "cta_G33VXi": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "How We Compare to Aluminum",
+            "link": "shopify://pages/the-life-cycle-aluminum",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/lifecycle--compare-aluminum.jpg",
+            "text_color": "text-white",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "cta_8yhm77",
+        "cta_G33VXi"
+      ],
+      "settings": {
+        "title": "",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "hero_AieDWV",
+    "general-content",
+    "hero_EeKxEz",
+    "fifty_fifty_XLa4CJ",
+    "fifty_fifty_JdKgxX",
+    "four_col_dxQnr6",
+    "fifty_fifty_WN9NzQ",
+    "fifty_fifty_FMbdFH",
+    "hero_iKnj77",
+    "two_three_up_FxjahR"
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hero_kj9XpY": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/carbon-neutral-home-slider_e0e17a45-488b-4b07-8561-eb00d5fa2552.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/carbon_neutral_mobile_hero_2.jpg",
+        "subheading": "",
+        "heading": "A smaller footprint.",
+        "heading_mobile": "A smaller footprint.",
+        "heading_type": "h1",
+        "copy": "<p>92% plant-based carton, and now a certified CarbonNeutral® product by Climate Imapct Partners.<\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "Shop Now",
+        "cta_url_1": "shopify:\/\/products\/500ml-whitelabel",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "shopify:\/\/pages\/how-we-compare",
+        "cta_type_2": "button button--primary-dark",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "four_col_KDFzJW": {
+      "type": "four-col",
+      "blocks": {
+        "text_pPjcWz": {
+          "type": "text",
+          "settings": {
+            "icon_title": "A Better Alternative",
+            "icon_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_pPjcWz"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_text_color": "black",
+        "cta_url": "\/",
+        "cta_text": "Shop Original Water",
+        "button_style": "primary",
+        "block_text_color": "black",
+        "bg_color": "white",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_eay6m8": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "CarbonNeutral® Product Certification",
+        "title": "WHAT DOES IT MEAN?",
+        "heading_style": "h1",
+        "description": "In our efforts to always be BETTER, our 500mL cartons are now CarbonNeutral® product certified. What does this mean? We're supporting critical climate programs to offset the carbon footprint of our top-selling product.",
+        "featured_img": "shopify:\/\/shop_images\/carbonneutral_50-50.jpg",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "shopify:\/\/blogs\/blog\/the-most-renewable-bottled-water-is-now-carbonneutral",
+        "cta_text": "EXPLORE OUR INITIATIVE",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "hero_jfPGkx": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/mid-page_hero_banner_1.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/whitelabel_yellow_background_square.jpg",
+        "subheading": "Subscribe and Save",
+        "heading": "130 LBs",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "<p>In one year, you can reduce your carbon footprint by 130 pounds, as compared to plastic bottle users. Bonus: You'll get <strong>10% off each order.<\/strong><\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "SUBSCRIBE AND SAVE",
+        "cta_url_1": "shopify:\/\/pages\/subscribe",
+        "cta_type_1": "button button--secondary-dark",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--primary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "top",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "fifty_fifty_KTRdd3": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "A better solution",
+        "heading_style": "h1",
+        "description": "Help take a step towards saving our planet. 100% purified water (no added minerals), 100% recyclable and refillable with some common sense care. Our plant-based cartons are a better for the planet than plastic bottles and aluminum cans.",
+        "featured_img": "shopify:\/\/shop_images\/BW-Diagram_updated.jpg",
+        "column_img": "left",
+        "display_badge": false,
+        "cta_url": "shopify:\/\/pages\/how-we-compare",
+        "cta_text": "HOW WE COMPARE",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_8q3zP7": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "Renewable Energy",
+        "heading_style": "h1",
+        "description": "We are providing critical financial support to renewable energy programs globally as we offset our own carbon footprint.",
+        "featured_img": "shopify:\/\/shop_images\/wind-turbine.jpg",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "https:\/\/www.climateimpact.com\/global-projects\/renewable-energy-portfolio-global\/",
+        "cta_text": "LEARN MORE",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_kj9XpY",
+    "four_col_KDFzJW",
+    "fifty_fifty_eay6m8",
+    "hero_jfPGkx",
+    "fifty_fifty_KTRdd3",
+    "fifty_fifty_8q3zP7"
+  ]
+}

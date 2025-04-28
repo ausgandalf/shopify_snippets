@@ -1,0 +1,33 @@
+{%-liquid
+  assign option_name = product.metafields.custom.option_name
+  assign alien_products = product.metafields.custom.alien_products.value
+  assign current_display_name = product.metafields.custom.display_name
+-%}
+
+<div data-buybox-alien-products>
+  <div class="flex items-center">
+    <span class="sub-sm font-semibold" data-buybox-alien-display-name>{{ option_name }}</span>
+    <span class="text-sm ml-1 mt-[1.5px]" data-buybox-alien-product-selected>{{ current_display_name }}</span>
+  </div>
+  <div class="flex items-center flex-wrap gap-2 mt-2.5">
+    {%- for alien_product in alien_products -%}
+      {%-liquid
+        assign number_of_units = alien_product.metafields.custom.number_of_units | times: 1
+        if number_of_units
+          assign unit_price = alien_product.price | divided_by: number_of_units | times: 1.00
+        endif
+      -%}
+      <div
+        data-href="{% if alien_product.id != product.id %}{{ alien_product.url }}{% endif %}"
+        class="{% if alien_product.id == product.id %}selected{% endif %} {% unless alien_product.available %}unavailable{% endunless %}"
+        data-value="{{ alien_product.handle }}"
+        data-option-name="Size"
+        data-buybox-alien-product>
+        <span>{{ alien_product.metafields.custom.display_name }}</span>
+        {%- if unit_price %}
+          <span class="sub-xs text-grey-4">{{ unit_price | money }}/unit</span>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>

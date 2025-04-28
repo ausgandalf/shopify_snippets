@@ -1,0 +1,78 @@
+
+<nav class="flex lg:block flex-col justify-between fixed lg:static left-0 top-0 bottom-0 w-full bg-white lg:h-full" data-header-nav>
+  <ul class="list-none w-full h-auto lg:h-full flex flex-col lg:flex-row p-0 lg:gap-10">
+    {%- for link in nav.links -%}
+      {%- assign has_dropdown_menu = false -%}
+      {%- assign item_title = link.title -%}
+      {%- assign item_save = blank -%}
+
+      {%- if link.title contains '##SAVE##' -%}
+        {%- assign item_title = link.title | split: '##SAVE##' | first -%}
+        {%- assign item_save = link.title | split: '##SAVE##' | last -%}
+      {%- endif -%}
+
+      {%- if link.links.size > 0 -%}
+        {%- assign has_dropdown_menu = true -%}
+      {%- endif -%}
+
+      <li
+        class="{% if has_dropdown_menu %}p-0{% else %}p-4{% endif %} lg:px-0 lg:py-7 lg:mt-[2px] group border-b border-solid border-grey-1 {% if has_dropdown_menu %}relative{% endif %}"
+        {% if has_dropdown_menu %}
+          data-dropdown-menu-parent
+        {% endif %}>
+
+        <div class="items-center gap-x-1 {% if has_dropdown_menu %}hidden lg:flex{% else %}flex{% endif %}">
+          <a
+            href="{{ link.url }}"
+            class="content-link !text-[19px] lg:!text-[21px] !font-semibold">
+            {{- item_title -}}
+          </a>
+
+          {%- if item_save != blank -%}
+            <a href="{{ link.url }}" class="save-header rounded border-2 border-primary-4 px-3 pb-0.5 sub-sm bg-primary-4 transition group-hover:bg-transparent">{{- item_save -}}</a>
+          {%- endif -%}
+        </div>
+
+        {%- if has_dropdown_menu -%}
+          <div class="lg:opacity-0 lg:invisible lg:max-h-0 lg:group-hover:max-h-[500px] lg:group-hover:opacity-100 lg:group-hover:visible lg:transition-all lg:delay-300 lg:duration-300 lg:border-t lg:border-black z-[1]" data-dropdown-menu>
+            <div data-menu-accordion>
+              <div class="flex lg:hidden p-4" data-menu-accordion-heading>
+                <div class="flex-1 flex items-center">
+                  <span class="!text-[19px] font-heading px-1 pb-[3px] tracking-[0.8px] leading-[90%] font-semibold">{{- item_title -}}</span>
+                  {%- if item_save != blank -%}
+                    <span class="rounded border-2 border-primary-4 px-3 pb-0.5 sub-sm bg-primary-4">{{- item_save -}}</span>
+                  {%- endif -%}
+                </div>
+                <span class="lg:hidden ml-4" data-menu-accordion-icon>
+                  {%- render 'icon-chevron-down' -%}
+                </span>
+              </div>
+              <div data-menu-accordion-content>
+                <ul class="list-none flex flex-col gap-4 m-0 p-0 lg:px-12 lg:py-8 lg:min-w-[271px]">
+                  {%- for sub_link in link.links -%}
+                    <li class="m-0 p-0 whitespace-nowrap">
+                      <a href="{{ sub_link.url }}" class="inline-block content-link !font-normal !font-paragraph !text-[15px] lg:!text-[16px] !leading-[130%]">
+                        {{ sub_link.title }}
+                      </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+
+  {%- if settings.storelocator_link != blank and settings.show_storelocator -%}
+    <div class="lg:hidden bg-white border-t border-solid border-black">
+      <div class="px-4 py-6">
+          <a aria-label="Storelocator" class="inline-flex items-center" href="{{ settings.storelocator_link }}">
+            {%- render 'icon-storelocator', class: "transition-transform ease-in-out" -%}
+            <span class="ml-1.5 font-paragraph text-[14px] leading-[130%] font-normal">Store Locator</span>
+          </a>
+      </div>
+    </div>
+  {%- endif -%}
+</nav>

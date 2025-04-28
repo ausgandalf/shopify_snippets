@@ -1,0 +1,289 @@
+{% liquid
+  if section.settings.column_img == 'left'
+  assign flex = 'flex-col lg:flex-row-reverse'
+  assign position = 'lg:-right-[80px] lg:top-[85px]'
+  elsif section.settings.column_img == 'right'
+  assign flex = 'flex-col lg:flex-row'
+  assign position = 'lg:-right-0 lg:-left-[80px] lg:top-[85px]'
+  endif
+
+  if section.settings.button_style == 'primary'
+  assign button = 'button--primary-dark'
+  elsif section.settings.button_style == 'secondary'
+  assign button = 'button--secondary-dark'
+  endif
+
+  if section.settings.bg_color == 'white'
+  assign section_color = 'bg-white'
+  elsif section.settings.bg_color == 'gray'
+  assign section_color = 'bg-grey-1'
+  endif
+%}
+
+<div id="section-{{- section.id -}}" class="{{ section_color }}" data-section-type="fifty-fifty" data-section-id="{{ section.id }}">
+  <div class="container max-w-[1440px] justify-center items-start lg:items-center py-12 flex {{ flex }} gap-x-[114px]">
+    <div class="fifty-section-container lg:max-w-[546px]">
+      {% if section.settings.subheading != blank %}
+      <div role="heading" aria-level="2" class="sub-lg">{{- section.settings.subheading -}}</div>
+      {% endif %}
+      {% if section.settings.title != blank %}
+      <h1 class="{{ section.settings.heading_style }} mb-4 lg:mb-6">{{- section.settings.title -}}</h1>
+    {% endif %}
+      {% if section.settings.description != blank %}
+      <p class="mb-6 lg:mb-8 fifty-description">{{- section.settings.description -}}</p>
+      {% endif %}
+      <div class="hidden lg:block">
+      {%- if section.blocks.size > 0 -%}
+      <ul class="mb-8">
+        {%- for block in section.blocks -%}
+          <li class="mb-4 flex items-center">
+          {% if block.settings.icon %}
+            <img src="{{ block.settings.icon | image_url: width: 24 }}" alt="{{ block.settings.icon.alt | default: block.settings.icon_text | escape }}" class="mr-1.5" />
+          {% endif %}
+          {{- block.settings.icon_text -}}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {% endif %}
+    {% if section.settings.cta_url and section.settings.cta_text != blank %}
+      <a href="{{- section.settings.cta_url -}}" class="button {{ button }} !max-w-none">{{- section.settings.cta_text -}}</a>
+    {% endif %}
+    </div>
+    </div>
+    <div class="relative lg:mb-0 mb-6">
+      {% if section.settings.featured_img or section.settings.video %}
+      {% if section.settings.display_badge %}
+        <div class="absolute -top-[20px] right-1 {{ position }} z-09">
+          <div class="relative h-[120px] w-[120px] lg:h-[140px] lg:w-[140px] flex justify-center items-center">
+            {%- render 'icon-badge-text', class: 'absolute top-0 right-0 w-full h-full block spin-slow motion-reduce:transition-none' -%}
+            {%- render 'icon-badge', class: 'w-[72px] lg:w-[84px] z-10' -%}
+          </div>
+        </div>
+      {% endif %}
+      {% endif %}
+      {% if section.settings.featured_img and section.settings.video == blank %}
+      <img src="{{ section.settings.featured_img | image_url: width: 990 }}" class="w-full lg:max-w-[660px]" alt="{{ section.settings.featured_img.alt | default: section.settings.description_text | escape }}" />
+      {% endif %}
+      {%- if section.settings.video != blank -%}
+        <video autoplay muted playsinline loop aria-describedby="fifty-{{ section.id }}" class="w-full aspect-square lg:max-w-[660px] object-cover transition-all duration-300"
+          poster="{{ section.settings.video.preview_image | image_url: width: 800 }}" data-inline-video id="fifty-{{ section.id }}">
+          {% for source in section.settings.video.sources %}
+            <source src="{{- source.url -}}" type="{{ source.mime_type }}">
+          {% endfor %}
+        </video>
+        <div class="absolute left-4 bottom-4 {% if section.settings.column_img == 'left' %}lg:left-6{% else %}lg:right-6{% endif %} lg:bottom-6 flex items-center gap-x-4 z-10">
+          {%- if section.settings.enable_reset -%}
+            <button aria-label="Reset" aria-controls="fifty-{{ section.id }}" class="w-8 h-8 rounded-full hover:bg-white" data-reset>{%- render 'icon-replay', classes: "w-full h-full" -%}<span class="hidden">Reset</span></button>
+          {%- endif -%}
+          {%- if section.settings.enable_mute -%}
+            <button aria-label="Unmute" aria-controls="fifty-{{ section.id }}" class="hidden w-8 h-8 rounded-full hover:bg-white" data-mute>{%- render 'icon-fifty-unmute', classes: "w-full h-full" -%}<span class="hidden">Unmute</span></button>
+            <button aria-label="Mute" aria-controls="fifty-{{ section.id }}" class="w-8 h-8 rounded-full hover:bg-white" data-unmute>{%- render 'icon-fifty-mute', classes: "w-full h-full" -%}<span class="hidden">Mute</span></button>
+          {%- endif -%}
+          {%- if section.settings.enable_pause -%}
+            <button aria-label="Play" aria-controls="fifty-{{ section.id }}" class="hidden w-8 h-8 rounded-full hover:bg-white" data-play>{%- render 'icon-fifty-play', classes: "w-full h-full" -%}<span class="hidden">Play</span></button>
+            <button aria-label="Pause" aria-controls="fifty-{{ section.id }}" class="w-8 h-8 rounded-full hover:bg-white" data-pause>{%- render 'icon-fifty-pause', classes: "w-full h-full" -%}<span class="hidden">Pause</span></button>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+    <div class="lg:hidden block w-full">
+      {%- if section.blocks.size > 0 -%}
+      <ul class="mb-6 lg:mb-8">
+        {%- for block in section.blocks -%}
+          <li class="mb-4 flex items-center">
+          {% if block.settings.icon %}
+            <img src="{{ block.settings.icon | image_url: width: 24 }}" alt="{{ block.settings.icon.alt | default: block.settings.icon_text | escape }}" class="mr-1.5" />
+          {% endif %}
+          {{- block.settings.icon_text -}}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {% endif %}
+    {% if section.settings.cta_url and section.settings.cta_text != blank %}
+    <a href="{{- section.settings.cta_url -}}" class="button {{ button }} w-full !max-w-none">{{- section.settings.cta_text -}}</a>
+    {% endif %}
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+  #section-{{- section.id -}} {
+    margin-bottom: {{- section.settings.margin_mobile | append: 'px' -}};
+  }
+
+  @media (min-width: 1025px) {
+    #section-{{- section.id -}} {
+      margin-bottom: {{- section.settings.margin_desktop | append: 'px' -}};
+    }
+  }
+</style>
+
+{%- schema -%}
+  {
+    "name": "50/50",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "select",
+          "id": "bg_color",
+          "label": "Background Color",
+          "options": [
+            { "label": "White", "value": "white" },
+            { "label": "Gray", "value": "gray" }
+          ],
+        "default": "white"
+      },
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "select",
+          "id": "heading_style",
+          "label": "Heading Type",
+          "options": [
+            { "label": "H1", "value": "h1" },
+            { "label": "H2", "value": "h2" }
+          ],
+        "default": "h1"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "description",
+        "label": "Description Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "featured_img",
+        "label": "Featured Image",
+        "info": "Recommended dimensions: 1320 x 1320px"
+      },
+      {
+        "type": "select",
+          "id": "column_img",
+          "label": "Image Placement",
+          "options": [
+            { "label": "Right", "value": "right" },
+            { "label": "Left", "value": "left" }
+          ],
+        "default": "right"
+      },
+      {
+        "type": "video",
+        "id": "video",
+        "label": "Video",
+        "info": "Video format: 1:1 MP4"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_mute",
+        "label": "Enable Mute/Unmute Button",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_pause",
+        "label": "Enable Play/Pause Button",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_reset",
+        "label": "Enable Reset Button",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "display_badge",
+        "label": "Display Badge",
+        "default": true
+      },
+      {
+        "type": "url",
+        "id": "cta_url",
+        "label": "CTA Link",
+        "default": "/"
+      },
+      {
+        "type": "text",
+        "id": "cta_text",
+        "label": "CTA Text",
+        "default": "Shop Original Water"
+      },
+      {
+        "type": "select",
+        "id": "button_style",
+        "label": "Button Style",
+        "options": [
+            { "label": "Primary", "value": "primary" },
+            { "label": "Secondary", "value": "secondary" }
+          ],
+        "default": "primary"
+      },
+      {
+        "type": "header",
+        "content": "Spacing"
+      },
+      {
+        "type": "range",
+        "id": "margin_desktop",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Icon w/ Text",
+        "type": "text",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "header",
+            "content": "Content"
+          },
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+          },
+          {
+            "type": "text",
+            "id": "icon_text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "50/50"
+      }
+    ]
+  }
+{%- endschema -%}

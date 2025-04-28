@@ -1,0 +1,38 @@
+<div class="flex flex-col overflow-hidden group">
+  <div class="relative aspect-square w-full overflow-hidden">
+    <a href="{{ article.url }}">
+      {%-liquid
+        if article.image != blank
+          assign image_url = article.image | image_url: width: 1000 | image_tag: class: 'absolute left-0 top-0 w-full h-full object-cover group-hover:lg:scale-110 transition ease-in-out', alt: article.image.alt | escape
+        else
+          assign image_url = 'article-tile-placeholder.jpg' | file_img_url: 'large' | image_tag: class: 'absolute left-0 top-0 w-full h-full object-cover group-hover:lg:scale-110 transition ease-in-out', alt: 'blog-image' | escape
+        endif
+      -%}
+      {{ image_url }}
+    </a>
+  </div>
+  <div class="flex-1 flex flex-col items-start p-4 lg:p-6 bg-grey-1">
+    <div class="w-full">
+      {%- if article.tags != blank -%}
+        <div class="flex items-center gap-2 flex-wrap mb-4 lg:mb-6">
+          {%- for tag in article.tags -%}
+            {%- assign tag_handle = tag | handleize %}
+            <a href="{{ blog.url }}/tagged/{{ tag_handle }}" class="underline tag text-sm lg:hover:text-primary-3">{{ tag }}</a>
+            {% unless forloop.last %}
+              <svg class="inline-block" width="4" height="5" viewBox="0 0 4 5" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2" cy="2.5" r="2" fill="#1F1F1F" />
+              </svg>
+            {% endunless %}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+      <a href="{{ article.url }}">
+        <span class="p-sm hidden">{{ article.published_at | date: "%b %d, %Y" }}</span>
+        <h5 class="mt-2 text-left">{{ article.title }}</h5>
+      </a>
+    </div>
+
+    <a href="{{ article.url }}" class="content-link mt-4 lg:mt-6">Read More</a>
+  </div>
+</div>

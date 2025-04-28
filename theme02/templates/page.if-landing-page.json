@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "hero_kj9XpY": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "video_desktop": "shopify:\/\/files\/videos\/if product intro social.mov",
+        "video_mobile": "shopify:\/\/files\/videos\/mobile if product intro - 720WebShareName.mov",
+        "subheading": "",
+        "heading": "BETTER THAN YOU IMAGINED",
+        "heading_mobile": "BETTER THAN YOU IMAGINED",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "SHOP NOW",
+        "cta_url_1": "https:\/\/whitelabelisbetter.com\/pages\/wholesale",
+        "cta_type_1": "button button--primary-dark",
+        "cta_text_2": "",
+        "cta_url_2": "shopify:\/\/pages\/how-we-compare",
+        "cta_type_2": "button button--primary-dark",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "top",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "hero_kj9XpY",
+    "main"
+  ]
+}

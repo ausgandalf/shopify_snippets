@@ -1,0 +1,34 @@
+side-cart.active {
+  @apply visible;
+}
+
+side-cart.active .side-cart__content {
+  @apply translate-x-0;
+}
+
+side-cart {
+  svg {
+    @apply w-full h-full;
+  }
+
+  .custom-content.rewards-text {
+    a,
+    p,
+    strong {
+      @apply text-[13px] lg:text-[14px] leading-[130%];
+    }
+
+    [data-custom-swell-widget] {
+      @apply font-bold;
+    }
+  }
+}
+
+.shipping-text {
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  @apply text-[19px] lg:text-[21px] leading-[120%] tracking-[0.76px] lg:tracking-[0.84px] font-semibold text-center capitalize;
+}
+
+.free-shipping-message b {
+  @apply !font-semibold;
+}

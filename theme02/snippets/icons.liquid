@@ -1,0 +1,40 @@
+{%- comment -%}
+  Renders icons, please add SVG icons here below.
+
+  Accepts:
+  - icon: icon name
+  - class: additional classes
+  - size: icon size
+  - direction_aware: reverse icon
+
+  Usage:
+     {% render 'icons', icon: 'search', class: 'CLASS HERE', direction_aware: false %}
+{%- endcomment -%}
+
+{%- capture class -%}{{ class }} icon icon-{{ icon | handle }} {% if direction_aware %}reverse-icon{% endif %}{%- endcapture -%}
+
+{%- case icon -%}
+  {%- when 'arrow-right' -%}
+    <svg
+      class="{{ class }}"
+      width="{{ size | default: 17 }}"
+      height="{{ size | default: 17 }}"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.136 7.54504L24.2955 14.7045C24.7348 15.1438 24.7348 15.8562 24.2955 16.2955L17.136 23.4549L15.545 21.864L20.784 16.625H7.375L7.375 14.375H20.784C20.784 14.375 16.5042 10.0952 15.545 9.13603L17.136 7.54504Z" fill="#1F1F1F"/>
+      <rect x="1" y="1" width="30" height="30" stroke="#1F1F1F" stroke-width="1.5"/>
+    </svg>
+    <p class="sr-only">{{ icon }}</p>
+
+  {%- when 'empty-carton' -%}
+    <svg
+      class="{{ class }}"
+      width="{{ size | default: 17 }}"
+      height="{{ size | default: 17 }}"
+      viewBox="0 0 81 80"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M65.9165 6.66663H18.4166V18.5858L10.5 34.419V76.3332H55.298L73.8332 70.7726V34.419L65.9165 18.5856V6.66663ZM57.6261 22.4999H23.5404L18.7904 31.9999H52.8762L57.6261 22.4999ZM24.7499 16.1666V13H59.5832V16.1666H24.7499ZM16.8333 38.3332H51.6666V69.9998H16.8333V38.3332ZM67.4999 35.9141V66.0604L57.9999 68.9104V35.9141L62.7499 26.4141L67.4999 35.9141Z" fill="#1F1F1F"/>
+    </svg>
+{%- endcase -%}

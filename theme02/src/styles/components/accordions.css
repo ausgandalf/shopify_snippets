@@ -1,0 +1,15 @@
+[data-accordion] {
+  [data-accordion-content] {
+    @apply invisible opacity-0 max-h-0 transition-all duration-300;
+
+    &.expanded {
+      @apply visible opacity-100 max-h-[800px];
+    }
+  }
+
+  &:has([data-accordion-content].expanded) {
+    [data-accordion-arrow] {
+      @apply transform rotate-180 transition-all duration-300;
+    }
+  }
+}

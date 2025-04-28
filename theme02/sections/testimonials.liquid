@@ -1,0 +1,161 @@
+{%- liquid
+-%}
+
+<div id="section-{{- section.id -}}" class="bg-{{ section.settings.background_color }}" data-section-id="{{- section.id -}}">
+  <div class="max-w-[1920px] mx-auto">
+    {%- if section.settings.title != blank -%}
+    <h1 class="h4 container max-w-[294px] lg:max-w-[346px] mx-auto mb-12 text-center lg:pt-[80px] pt-12 lg:px-0 px-4">{{- section.settings.title -}}</h1>
+    {% endif %}
+    {%- if section.blocks.size > 0 -%}
+    <div class="px-4 lg:px-16 {% if section.settings.cta_text != blank and section.settings.cta_url %}pb-8 lg:pb-12{% else %}lg:pb-[80px] pb-12{% endif %} lg:gap-x-8 gap-y-6 flex lg:flex-row flex-col justify-center">
+        {%- for block in section.blocks -%}
+          <div class="flex flex-col testimonial-block">
+            <div class="lg:w-[416px] w-full bg-white text-center lg:py-12 lg:px-8 p-6 flex flex-col basis-full">
+
+                {%- render 'icon-stars', class: "mb-6 max-w-[120px] mx-auto text-primary-4" -%}
+
+              <div class="text-lg mb-6">{{- block.settings.quote_text -}}</div>
+              <div class="inline-flex justify-center gap-4 items-center">
+                <img class="max-w-[48px]" src="{{- block.settings.reviewer_image | image_url: width: 144 -}}" alt="{{- block.settings.reviewer_image.alt | escape -}}" />
+                <div class="sub-lg">{{- block.settings.reviewer_name -}}</div>
+              </div>
+            </div>
+            {%- if block.settings.product != blank -%}
+            <a href="{{- block.settings.product.url-}}" class="lg:w-[416px] w-full bg-white border-t border-black flex items-center gap-4 p-4">
+              <span class="hidden">Link to Product</span>
+              <img class="max-w-[70px]" src="{{- block.settings.product.featured_image | image_url: width: 2100 -}}" alt="{{- block.settings.featured_image.alt | escape -}}" />
+              <div>
+                <h1 class="h6 mb-2 content-link w-fit inline-block ml-[-.25rem]">{{- block.settings.product.title -}}</h1>
+                {% if block.settings.product.metafields.custom.subtitle %}
+                <div class="text-sm text-grey-4">{{- block.settings.product.metafields.custom.subtitle | metafield_tag -}}</div>
+                {% endif %}
+              </div>
+            </a>
+          {% endif %}
+          </div>
+        {%- endfor -%}
+      </div>
+    {% endif %}
+    {%- if section.settings.cta_text != blank and section.settings.cta_url -%}
+      <div class="container text-center px-4 lg:px-16 lg:pb-[80px] pb-12">
+        <a href="{{- section.settings.cta_url -}}" class="!max-w-none w-full lg:w-fit fit-con button button--secondary-dark">{{- section.settings.cta_text -}}</a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<style type="text/css">
+  #section-{{- section.id -}} {
+    margin-bottom: {{- section.settings.margin_mobile | append: 'px' -}};
+  }
+
+  @media (min-width: 1025px) {
+    #section-{{- section.id -}} {
+      margin-bottom: {{- section.settings.margin_desktop | append: 'px' -}};
+    }
+  }
+</style>
+
+{%- schema -%}
+  {
+    "name": "Testimonials",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "select",
+        "id": "background_color",
+        "label": "Background Color",
+        "options": [
+          { "label": "Light Gray", "value": "grey-1" },
+          { "label": "White", "value": "white" },
+          { "label": "Ice", "value": "primary-1" }
+        ],
+        "default": "grey-1"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "cta_text",
+        "label": "CTA Text"
+      },
+      {
+        "type": "url",
+        "id": "cta_url",
+        "label": "CTA Link"
+      },
+      {
+        "type": "header",
+        "content": "Spacing"
+      },
+      {
+        "type": "range",
+        "id": "margin_desktop",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Testimonial",
+        "type": "testimonial",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "header",
+            "content": "Content"
+          },
+          {
+            "type": "text",
+            "id": "quote_text",
+            "label": "Quote Text"
+          },
+          {
+            "type": "image_picker",
+            "id": "reviewer_image",
+            "label": "Reviewer Image",
+            "info" : "Recommended dimensions - 192px x 192px"
+          },
+          {
+            "type": "text",
+            "id": "reviewer_name",
+            "label": "Reviewer Name"
+          },
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Link to Product"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Testimonials"
+      }
+    ]
+  }
+{%- endschema -%}

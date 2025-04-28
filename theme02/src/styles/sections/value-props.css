@@ -1,0 +1,14 @@
+.product-value-props {
+  .custom-content {
+    p,
+    a,
+    strong,
+    li {
+      @apply text-[13px] lg:text-[14px] leading-[130%] text-grey-5;
+    }
+
+    a {
+      @apply hover:text-primary-3;
+    }
+  }
+}

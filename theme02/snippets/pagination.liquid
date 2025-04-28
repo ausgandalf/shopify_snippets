@@ -1,0 +1,39 @@
+{% comment %}
+  Renders a set of links for paginated results. Must be used within paginate tags.
+
+  Usage:
+  {% paginate results by 2 %}
+    {% render 'pagination', paginate: paginate, anchor: '#yourID' %}
+  {% endpaginate %}
+
+  Accepts:
+  - paginate: {Object}
+  - anchor: {String} (optional) This can be added so that on page reload it takes you to wherever you've placed your anchor tag.
+{% endcomment %}
+
+{%- if paginate.parts.size > 0 -%}
+  <nav class="pagination" role="navigation" aria-label="{{ 'general.pagination.label' | t }}">
+    <ul role="list">
+      
+      {%- for part in paginate.parts -%}
+        <li>
+          {%- if part.is_link -%}
+            <a href="{{ part.url }}">
+              {{- part.title -}}
+            </a>
+          {%- else -%}
+            {%- if part.title == paginate.current_page -%}
+              <span aria-current="page">
+                <p>{{- part.title -}}</p>
+              </span>
+            {%- else -%}
+              <span class="dots">{{ part.title }}</span>
+            {%- endif -%}
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+
+    
+    </ul>
+  </nav>
+{%- endif -%}

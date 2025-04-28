@@ -1,0 +1,130 @@
+<style type="text/css">
+  #section-{{- section.id -}} {
+    margin-bottom: {{- section.settings.margin_mobile | append: 'px' -}};
+  }
+
+  @media (min-width: 1025px) {
+    #section-{{- section.id -}} {
+      margin-bottom: {{- section.settings.margin_desktop | append: 'px' -}};
+    }
+  }
+</style>
+
+<div id="section-{{- section.id -}}" class="{%- if section.settings.bg_color == "grey" -%}bg-grey-1{% elsif section.settings.bg_color == "white" %} bg-white{% endif %} column-rte flex flex-col justify-center px-4 py-10 lg:py-[80px]" data-section-type="column-rte">
+  <h3 class="text-center font-bold lg:mb-14 mb-10">{{ section.settings.title }}</h3>
+  <div class="column-rte-blocks flex lg:flex-row flex-col justify-center lg:gap-14 gap-6">
+    {%- for block in section.blocks -%}
+      {%- if block.settings.rich_text != blank -%}
+        <div class="{%- if section.blocks.size == 1 -%}lg:w-xxxl text-center{% elsif section.blocks.size > 1 %}lg:w-xxl lg:text-left text-center{% endif %} {%- if section.settings.bg_color == "grey" -%}bg-white{% elsif section.settings.bg_color == "white" %}bg-grey-1{% endif %} lg:p-8 py-6 px-4">
+         <div class="column-rte-block">{{ block.settings.rich_text }}</div>
+         {% if block.settings.cta_url != blank %}
+         {% if block.settings.button_type == "primary" %}
+          <a href="{{ block.settings.cta_url }}" class="button button--primary-dark mt-8">{{ block.settings.cta_text }}</a>
+         {% elsif block.settings.button_type == "secondary" %}
+          <a href="{{ block.settings.cta_url }}" class="button button--secondary-dark mt-8">{{ block.settings.cta_text }}</a>
+        {% endif %}
+        {% endif %}
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Column Rich Text Editor",
+    "tag": "section",
+    "max_blocks": 2,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "margin_desktop",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Desktop",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "margin_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Mobile",
+        "default": 36
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title"
+      },
+      {
+            "type": "select",
+            "id": "bg_color",
+            "label": "Select Background Color",
+            "options": [
+              {
+                "value": "grey",
+                "label": "Grey"
+              },
+              {
+                "value": "white",
+                "label": "White"
+              }
+            ],
+           "default": "grey"
+          }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "rich_text",
+            "label": "Rich Text Block"
+          },
+          {
+            "type": "text",
+            "id": "cta_text",
+            "label": "CTA Text"
+          },
+          {
+            "type": "url",
+            "id": "cta_url",
+            "label": "CTA URL"
+          },
+          {
+            "type": "select",
+            "id": "button_type",
+            "label": "Select CTA Type",
+            "options": [
+              {
+                "value": "primary",
+                "label": "Primary Button"
+              },
+              {
+                "value": "secondary",
+                "label": "Secondary Button"
+              }
+            ],
+           "default": "primary"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Column Rich Text Editor"
+      }
+    ]
+  }
+{% endschema %}

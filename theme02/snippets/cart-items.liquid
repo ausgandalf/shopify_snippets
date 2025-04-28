@@ -1,0 +1,19 @@
+<div class="cart-items flex-grow">
+  <h3 class="lg:mb-12 mt-6 lg:mt-0 mb-6 text-center lg:text-left font-bold">{{ 'sections.cart.title' | t }}</h3>
+  <div class="w-full">
+    <div class="hidden lg:flex border-b border-grey-2 pb-4 lg:gap-x-6 xl:gap-x-20">
+      <div class="sub-sm font-bold uppercase flex-grow">Product</div>
+      <div class="sub-sm font-bold uppercase min-w-[80px]">Price</div>
+      <div class="sub-sm font-bold uppercase min-w-[188px]">Quantity</div>
+      <div class="sub-sm font-bold uppercase min-w-[80px]">Total</div>
+    </div>
+
+    <div class="cart-items__list">
+      {%- liquid
+        for item in cart.items
+          render 'cart-item' item: item, forloop: forloop
+        endfor
+      -%}
+    </div>
+  </div>
+</div>

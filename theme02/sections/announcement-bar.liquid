@@ -1,0 +1,173 @@
+{% unless customer.tags contains 'wholesale-customer' %}
+{%- if section.settings.show_announcement_bar -%}
+  {%-liquid
+    assign auto_rotate = section.settings.auto_rotate
+    assign auto_rotate_speed = section.settings.auto_rotate_speed
+    assign color_scheme = section.settings.color_scheme
+
+    assign announcements = section.blocks
+
+    assign hover_text_color = 'hover:text-primary-1'
+
+    if color_scheme == 'bg-primary-4 text-black' or color_scheme == 'bg-primary-1 text-black'
+      assign hover_text_color = 'hover:text-primary-3'
+    endif
+
+    if request.path contains '/tools/recurring/get-subscription-access'
+      assign hidden = 'hidden'
+    endif
+  -%}
+
+  <div class="py-3 {{ color_scheme }} {{ hidden }}">
+    <div class="container">
+      <div class="flex items-center">
+        {%- if settings.storelocator_link != blank and settings.show_storelocator -%}
+        <div class="invisible hidden md:flex items-center w-[120px]">
+            <a aria-label="Storelocator" class="inline-flex items-center {{ hover_text_color }}" href="{{ settings.storelocator_link }}">
+              {%- render 'icon-storelocator' -%}
+              <span class="ml-1.5 text-sm">Store Locator</span>
+            </a>
+        </div>
+      {%- endif -%}
+        <div class="flex-1 max-w-full px-1 sm:px-4">
+          <div class="relative px-6" data-announcement-slider-container>
+            {%- if announcements.size > 0 -%}
+              <div
+                {% if announcements.size > 1 %}
+                  data-announcement-slider
+                  data-autoplay="{{ auto_rotate }}"
+                  data-autoplay-speed="{{ auto_rotate_speed }}"
+                {% endif %}>
+                {%- for announcement in announcements -%}
+                  <div class="flex justify-center text-center text-reg p-inherit" data-announcement-slider-content>
+                    {%- assign message = announcement.settings.message -%}
+                    {%- assign message_mobile = announcement.settings.message_mobile | default: message -%}
+
+                    <div class="hidden md:inline-block">{{ message }}</div>
+                    <div class="md:hidden">{{ message_mobile }}</div>
+                  </div>
+                {%- endfor -%}
+              </div>
+
+              {%- if announcements.size > 1 -%}
+                <div data-announcement-slider-controls class="tns-controls">
+                  <div role="button" aria-label="previous" class="controls-prev absolute left-0 top-1/2 -translate-y-1/2 p-2">
+                    {%- render 'icon-chevron-left' -%}
+                  </div>
+                  <div role="button" aria-label="next" class="controls-next absolute right-0 top-1/2 -translate-y-1/2 p-2">
+                    {%- render 'icon-chevron-right' -%}
+                  </div>
+                </div>
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+        </div>
+        {%- if settings.storelocator_link != blank and settings.show_storelocator -%}
+        <div class="hidden md:flex items-center w-[120px]">
+            <a aria-label="Storelocator" class="inline-flex items-center {{ hover_text_color }}" href="{{ settings.storelocator_link }}">
+              {%- render 'icon-storelocator' -%}
+              <span class="ml-1.5 text-sm">Store Locator</span>
+            </a>
+        </div>
+      {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+{% endunless %}
+
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "class": "siteAnnouncement",
+  "enabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+        "type": "checkbox",
+        "id": "show_announcement_bar",
+        "label": "Show Announcement Bar",
+        "default": true
+      },
+    {
+      "type": "header",
+      "content": "Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_rotate",
+      "label": "Auto-rotate announcements",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "auto_rotate_speed",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "label": "Change every",
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Appearance"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "bg-primary-3 text-white",
+          "label": "Background: Primary 3 & Text: White"
+        },
+        {
+          "value": "bg-primary-4 text-black",
+          "label": "Background: Primary 4 & Text: Black"
+        },
+        {
+          "value": "bg-primary-1 text-black",
+          "label": "Background: Primary 1 & Text: Black"
+        }
+      ],
+      "default": "bg-primary-3 text-white",
+      "label": "Color Scheme"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "Announcement",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "message",
+          "label": "Message",
+          "info": "Maximum 120 characters"
+        },
+        {
+          "type": "richtext",
+          "id": "message_mobile",
+          "label": "Message (Mobile)",
+          "info": "Maximum 40 characters"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement Bar",
+      "blocks": [
+        {
+          "type": "announcement"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

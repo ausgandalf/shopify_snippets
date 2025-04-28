@@ -1,0 +1,265 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_kj9XpY": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/Flavors_Hero-_Desktop_2880_x_1000_px_1.svg",
+        "image_mobile": "shopify://shop_images/Mobile_Hero_Image_7.svg",
+        "subheading": "SMALL CHANGES. BIG IMPACT.",
+        "heading": "Helping The Planet Heal",
+        "heading_mobile": "Helping The Planet",
+        "heading_type": "h1",
+        "copy": "<p>One carton at a time.</p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "Shop Now",
+        "cta_url_1": "shopify://collections/order-online-page-old",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "How We Compare",
+        "cta_url_2": "shopify://pages/how-we-compare",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fifty_fifty_Gf4kFF": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_YDNWiC": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon_text": "💡 2009: Founder, Benjamin Gott, had a simple idea for a new kind of packaged water."
+          }
+        },
+        "text_9GhpPt": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon_text": "🏙️ 2010: Start selling in major cities nationally like NYC, LA, Chicago and Atlanta."
+          }
+        },
+        "text_AAxpgT": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon_text": "🎵 2013: As the official sponsors of Lollapalooza and Austin City Limits, we delivered 300,000 cartons in 72 hours."
+          }
+        },
+        "text_7QeGWQ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon_text": "🌲 2015: We started planting trees with the National Forest Foundation."
+          }
+        },
+        "text_FeFHL4": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon_text": "🍋 2021: Our first round of fruit flavors hit the market."
+          }
+        }
+      },
+      "block_order": [
+        "text_YDNWiC",
+        "text_9GhpPt",
+        "text_AAxpgT",
+        "text_7QeGWQ",
+        "text_FeFHL4"
+      ],
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "Working towards a #Betterplanet",
+        "heading_style": "h2",
+        "description": "Like it says on our box, “hello.” We’re a small team taking on the Big Plastic industry. At Whitelabel™, we obsess over providing the purest water in the most sustainable way.  We were the first to offer a sustainable alternative to plastic water bottles- creating a new category! We hope you carry a refillable bottle and use tap water whenever possible. But when you can’t, reach for our 92% plant-based carton.",
+        "featured_img": "shopify://shop_images/pickleball_couple.jpg",
+        "column_img": "left",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": false,
+        "cta_url": "shopify://collections/order-online-page-old",
+        "cta_text": "SHOP ALL",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_ibCMJN": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "WHAT SETS US APART",
+        "heading_style": "h2",
+        "description": "The most renewable option in the water aisle: our carton is made from 92% renewable materials. The water is sourced close to our consumers to reduce our carbon footprint (instead of islands like Fiji). All cartons are 100% recyclable, refillable, and BPA free.",
+        "featured_img": "shopify://shop_images/plastic_production_graph.svg",
+        "column_img": "right",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": false,
+        "cta_url": "shopify://pages/how-we-compare",
+        "cta_text": "How We Compare",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "hero_9tXWkk": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 45,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/cropped_1_percent_mid-page_banner_jpg.jpg",
+        "image_mobile": "shopify://shop_images/Mobile_Hero_Image_12.svg",
+        "subheading": "",
+        "heading": "MORE THAN A CARTON",
+        "heading_mobile": "",
+        "heading_type": "h2",
+        "copy": "<p>Whitelabel™ is proud to have planted more than <a href=\"https://whitelabelisbetter.com/pages/betterplanet\">1.5 million trees</a> across the country with your help. For every post with #BetterPlanet, we will plant two trees. </p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "top",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "fifty_fifty_hVFLaY": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_XECGYR": {
+          "type": "text",
+          "settings": {
+            "icon_text": "💡 2009: Whitelabel's founders had an idea to change the way water was packaged, shipped, and enjoyed."
+          }
+        },
+        "text_wUP3mL": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🏙️ 2010: Started selling in major cities nationally like NYC, LA, Chicago and Atlanta."
+          }
+        },
+        "text_A7hJzW": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🎵 2013: As the official sponsors of Lollapalooza and Austin City Limits, we delivered 300,000 cartons in 72 hours."
+          }
+        },
+        "text_qT4g9p": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌲 2015: We began planting trees in national forests across the US."
+          }
+        },
+        "text_kFTzfh": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🍋 2021: Our first round of fruit flavors hit the market. They sold out within a week."
+          }
+        }
+      },
+      "block_order": [
+        "text_XECGYR",
+        "text_wUP3mL",
+        "text_A7hJzW",
+        "text_qT4g9p",
+        "text_kFTzfh"
+      ],
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "The first sustainable alternative to plastic",
+        "heading_style": "h2",
+        "description": "Our founding team dropped off several cases of their new concept of Whitelabel® to a local market, and within 3 hours, the first cases were sold out. The rest is history.",
+        "featured_img": "shopify://shop_images/5050_website_content_blocks_4.png",
+        "column_img": "left",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": true,
+        "cta_url": "shopify://collections/order-online-page-old",
+        "cta_text": "Shop All Water",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_Wr3kT9": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "OUR TEAM",
+        "heading_style": "h2",
+        "description": "From Boston to Los Angeles our team is making a lasting difference in our world. Giving back to the planet is a personal passion for everyone here because small changes make a big impact.",
+        "featured_img": "shopify://shop_images/21.png",
+        "column_img": "right",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": false,
+        "cta_url": "https://recruiting.ultipro.com/WIN1014WINDQ/JobBoard/ca19436f-8d09-450b-b1e5-8d309ac2ecbc",
+        "cta_text": "Open Positions",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "hero_kj9XpY",
+    "main",
+    "fifty_fifty_Gf4kFF",
+    "fifty_fifty_ibCMJN",
+    "hero_9tXWkk",
+    "fifty_fifty_hVFLaY",
+    "fifty_fifty_Wr3kT9"
+  ]
+}

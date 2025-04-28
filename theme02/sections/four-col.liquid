@@ -1,0 +1,230 @@
+{% liquid
+    assign img = section.settings.image_d | default: 'none'
+    assign img_m = section.settings.image_m | default: 'none'
+
+  if img
+    assign img = img | image_url: width: 1920 
+  endif
+
+  if img_m
+    assign img_m = img_m | image_url: width: 1534
+  endif
+
+  if section.settings.button_style == 'primary'
+    assign button = 'button--primary'
+  elsif section.settings.button_style == 'secondary'
+    assign button = 'button--secondary'
+  endif
+
+  if section.settings.heading_text_color == 'white'
+  assign heading_text_color = 'text-white'
+  assign button_color = 'light'
+  elsif section.settings.heading_text_color == 'black'
+  assign heading_text_color = 'text-black'
+  assign button_color = 'dark'
+  endif
+
+  if section.settings.block_text_color == 'white'
+  assign block_text_color = 'text-white'
+  elsif section.settings.block_text_color == 'black'
+  assign block_text_color = 'text-black'
+  endif
+
+  if section.settings.bg_color == 'white'
+  assign prop_color = 'bg-white'
+  elsif section.settings.bg_color == 'gray'
+  assign prop_color = 'bg-grey-1'
+  elsif section.settings.bg_color == 'transparent'
+  assign prop_color = 'bg-transparent'
+  endif
+  %}
+
+<div alt="{{ img.alt | default: "section-background-image" | escape }}" id="section-{{- section.id -}}"  class="four-col-section-banner border-b border-black bg-center bg-no-repeat bg-cover {% if section.settings.image_d or section.settings.image_d %}bg-grey-4{% endif %}" style="--bg_m: url('{{ img_m | default:  img }}'); --bg: url('{{ img }}');" data-section-id="{{ section.id }}">
+  <div class="container flex justify-center items-center flex-col py-12 lg:py-[80px] max-w-[1920px]">
+    {% if section.settings.title != blank %}
+      <h1 class="h4 mb-6 lg:mb-8 {{ heading_text_color }}">{{- section.settings.title -}}</h1>
+    {% endif %}
+    {%- if section.blocks.size > 0 -%}
+      <div class="mb-6 lg:mb-8 lg:gap-x-6 gap-y-4 gap flex lg:flex-row flex-col">
+        {%- for block in section.blocks -%}
+          <div class="p-4 lg:p-6 flex flex-row basis-full lg:flex-col gap-x-6 lg:items-center {% if block.settings.icon_text != blank %}items-start{% else %} items-center{% endif %} lg:max-w-[318px] {{ prop_color }} {{ block_text_color }}">
+              {% if block.settings.icon %}
+                  <img class="lg:mb-6 w-[64px] lg:w-[82px]" src="{{ block.settings.icon | image_url: width: 82 }}" alt="{{ block.settings.icon.alt | default: block.settings.icon_title | escape }}" /> 
+              {% endif %}
+            <div class="lg:text-center text-left 1xl:min-w-[270px]">
+              {% if block.settings.icon_title != blank  %}
+                  <h2 class="h6 mb-2">
+                    {{- block.settings.icon_title -}}
+                  </h2>
+              {% endif %}
+              {% if block.settings.icon_text != blank %}
+                  <p class="text-sm text-reg">
+                    {{- block.settings.icon_text -}}
+                  </p>
+              {% endif %}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    {% endif %}
+    {% if section.settings.cta_url and section.settings.cta_text != blank %}
+      <a href="{{- section.settings.cta_url -}}" class="button {{ button }}-{{ button_color }} w-full lg:w-max !max-w-none">{{- section.settings.cta_text -}}</a> 
+    {% endif %}
+  </div>
+</div>
+
+<style type="text/css">
+  #section-{{- section.id -}} {
+    margin-bottom: {{- section.settings.margin_mobile | append: 'px' -}};
+  }
+
+  @media (min-width: 1025px) {
+    #section-{{- section.id -}} {
+      margin-bottom: {{- section.settings.margin_desktop | append: 'px' -}};
+    }
+  }
+</style>
+
+{%- schema -%}
+  {
+    "name": "4 Column Value Prop",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_d",
+        "label": "Background Image Desktop",
+        "info": "Recommended dimensions: 1920 x 960px"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_m",
+        "label": "Background Image Desktop",
+        "info": "Recommended dimensions: 620 x 980px"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "select",
+          "id": "heading_text_color",
+          "label": "Heading Text Color",
+          "options": [
+            { "label": "Black", "value": "black" },
+            { "label": "White", "value": "white" }
+          ],
+        "default": "black"
+      }, 
+      {
+        "type": "url",
+        "id": "cta_url",
+        "label": "CTA Link",
+        "default": "/"
+      },
+      {
+        "type": "text",
+        "id": "cta_text",
+        "label": "CTA Text",
+        "default": "Shop Original Water"
+      },
+      {
+        "type": "select",
+        "id": "button_style",
+        "label": "Button Style",
+        "options": [
+            { "label": "Primary", "value": "primary" },
+            { "label": "Secondary", "value": "secondary" }
+          ],
+        "default": "primary"
+      },
+      {
+        "type": "select",
+          "id": "block_text_color",
+          "label": "Value Prop Text Color",
+          "options": [
+            { "label": "Black", "value": "black" },
+            { "label": "White", "value": "white" }
+          ],
+        "default": "black"
+      }, 
+      {
+        "type": "select",
+          "id": "bg_color",
+          "label": "Value Prop Background Color",
+          "options": [
+            { "label": "White", "value": "white" },
+            { "label": "Gray", "value": "gray" },
+            { "label": "Transparent", "value": "transparent" }
+          ],
+        "default": "white"
+      }, 
+      {
+        "type": "header",
+        "content": "Spacing"
+      },
+      {
+        "type": "range",
+        "id": "margin_desktop",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Value Prop",
+        "type": "text",
+        "limit": 4,
+        "settings": [
+          {
+            "type": "header",
+            "content": "Content"
+          },
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon",
+            "info": "Recommended dimensions: Width 82px and make sure all icons are the same size"
+            
+          },
+          {
+            "type": "text",
+            "id": "icon_title",
+            "label": "Title"
+          },
+          {
+            "type": "textarea",
+            "id": "icon_text",
+            "label": "Description"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "4 Column Value Prop"
+      }
+    ]
+  }
+{%- endschema -%}

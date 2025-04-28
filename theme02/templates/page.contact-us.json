@@ -1,0 +1,77 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "fifty_fifty_696Nmk": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "Your Questions: Answered.",
+        "title": "We're Listening",
+        "heading_style": "h1",
+        "description": "Sustainability is a journey, not a destination. We're here to answer your questions about our product, your orders, or your big event plans.",
+        "featured_img": "shopify:\/\/shop_images\/girls_sharing_box.jpg",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "https:\/\/whitelabel.zendesk.com\/hc\/en-us",
+        "cta_text": "FAQs",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "column_rte_iTL4d9": {
+      "type": "column-rte",
+      "blocks": {
+        "column_96LDxr": {
+          "type": "column",
+          "settings": {
+            "rich_text": "<h5><strong>Help center<\/strong><\/h5><p><\/p><p><strong>Whitelabel Is Better<\/strong><\/p><p>4433 Holland Ave.<\/p><p>Holland, MI 49424 USA<\/p><p><\/p><p><a href=\"mailto:hello@whitelabelisbetter.com\" title=\"mailto:hello@whitelabelisbetter.com\"><strong>hello@whitelabelisbetter.com<\/strong><\/a><\/p><p><strong>(quickest response time)<\/strong><\/p><p><\/p><p>1-844-429-3987<\/p><p><\/p><p>Business hours: M-F (8-5PM EST)<\/p>",
+            "cta_text": "Frequently Asked Questions",
+            "cta_url": "https:\/\/whitelabel.zendesk.com\/hc\/en-us",
+            "button_type": "primary"
+          }
+        },
+        "column_FRcLhg": {
+          "type": "column",
+          "settings": {
+            "rich_text": "<h5>Events & Sponsorship Requests<\/h5><p><\/p><p>Want Whitelabel at your event? <\/p><p><\/p><p>We ask that all requests to be submitted at least <strong>30 days<\/strong> prior to your event. <\/p><p><\/p><p><em>We are unable to donate outside of the contiguous US and Canada.<\/em><\/p>",
+            "cta_text": "Sponsorship Request Form",
+            "cta_url": "https:\/\/ipcen84p3i8.typeform.com\/to\/sFCrT1Tw?typeform-source=whitelabelisbetter.com",
+            "button_type": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "column_96LDxr",
+        "column_FRcLhg"
+      ],
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "title": "Contact Us",
+        "bg_color": "grey"
+      }
+    }
+  },
+  "order": [
+    "fifty_fifty_696Nmk",
+    "main",
+    "column_rte_iTL4d9"
+  ]
+}

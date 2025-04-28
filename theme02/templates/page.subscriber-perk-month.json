@@ -1,0 +1,441 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hero_T7k68R": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/Hero_Image_Subscriber_Perk_Month.jpg",
+        "image_mobile": "shopify://shop_images/Hero_Image_Subscriber_Perk_Month_Mobile.jpg",
+        "subheading": "",
+        "heading": "<strong>Semi-Annual Subscriber Perks Month</strong>",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "<p>We're kicking off our first-ever Subscriber Perks Month, and it’s all about YOU! Each week, we’re dropping exclusive rewards just for our subscribers.</p>",
+        "show_overlay": false,
+        "stack_on_mobile": true,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "*TERMS AND CONDITIONS APPLY",
+        "cta_url_1": "https://whitelabelisbetter.com/pages/subscriber-perk-month#perksmonth",
+        "cta_type_1": "content-link",
+        "cta_text_2": "",
+        "cta_url_2": "shopify://pages/beach-terms",
+        "cta_type_2": "button button--secondary-dark",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-primary-4",
+        "text_align": "left",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "top",
+        "control_align_horizontal_mobile": "left",
+        "control_align_vertical_mobile": "top"
+      }
+    },
+    "shop_by_category_kfAgzL": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_TtFgBy": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/subscriber_perk_giveaway_week_1.jpg",
+            "title": "",
+            "description": "",
+            "cta_url": ""
+          }
+        },
+        "list_item_3BYKy6": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/Slice_9_2.jpg",
+            "title": "",
+            "description": "",
+            "cta_url": ""
+          }
+        },
+        "list_item_e7rgaD": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/Week_3_subscriber_perks.jpg",
+            "title": "",
+            "description": "",
+            "cta_url": ""
+          }
+        },
+        "list_item_dfYYTi": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/Final_subscriber_perk_giveaway.jpg",
+            "title": "",
+            "description": "",
+            "cta_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "list_item_TtFgBy",
+        "list_item_3BYKy6",
+        "list_item_e7rgaD",
+        "list_item_dfYYTi"
+      ],
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "<strong>Quick Glance into the perks</strong>",
+        "cta_text": "",
+        "cta_url": "shopify://pages/subscribe"
+      }
+    },
+    "fifty_fifty_tYL9yA": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_g7xihQ": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🎁 Week 1: 50 winners will receive $50 gift card"
+          }
+        },
+        "text_fJrihk": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🥳 Week 2: Mango 12-Pack giveaway for 50 of our sweet friends"
+          }
+        },
+        "text_HaMxpJ": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🎉 Week 3: Merch Madness – 50 lucky winners score Whitelabel Merch"
+          }
+        },
+        "text_tPHPcE": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🎊 Week 4: 100 loyalty points for ALL subscribers"
+          }
+        }
+      },
+      "block_order": [
+        "text_g7xihQ",
+        "text_fJrihk",
+        "text_HaMxpJ",
+        "text_tPHPcE"
+      ],
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "<strong>Weekly Rewards</strong> Breakdown",
+        "heading_style": "h2",
+        "description": "Current subscribers are automatically entered to win weekly giveaways with a special bonus at the end.",
+        "featured_img": "shopify://shop_images/Slice_7_2.jpg",
+        "column_img": "right",
+        "enable_mute": false,
+        "enable_pause": false,
+        "enable_reset": false,
+        "display_badge": false,
+        "cta_url": "https://whitelabelisbetter.com/pages/subscriber-perk-month#perksmonth",
+        "cta_text": "Read Terms and Conditions",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "product_recommendations_FWpDH3": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "title": "Subscribe to <strong>Whitelabel</strong>",
+        "cta_text": "",
+        "cta_url": "shopify://collections/retail-subscription",
+        "recommended_collection": "retail-subscription",
+        "secondary_text": "<p><a href=\"/pages/subscribe\" title=\"Subscribe & Save on Whitelabel - Sustainable Water Delivery\"><strong>Subscribe today</strong></a><strong> </strong>for automatic entry to Subscriber Perks Month giveaways. </p>"
+      }
+    },
+    "17260043485c3d4e88": {
+      "type": "apps",
+      "blocks": {
+        "videowise_video_platform_ugc_videowise_page_widgets_aEiG4H": {
+          "type": "shopify://apps/videowise-video-commerce/blocks/videowise-page-widgets/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+          "settings": {
+            "videowise_embed": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_66e0a835ef2dc9003306255c\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "videowise_video_platform_ugc_videowise_page_widgets_aEiG4H"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "hero_nVEHdb": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 20,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/subscribe_benefits_desktop.svg",
+        "image_mobile": "shopify://shop_images/subscribe_save_benefits_-_mobile.svg",
+        "subheading": "",
+        "heading": "",
+        "heading_mobile": "",
+        "heading_type": "h2",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "shopify://products/250ml-24-pack-12-months",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "top",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "top",
+        "control_align_horizontal_mobile": "left",
+        "control_align_vertical_mobile": "top"
+      }
+    },
+    "fifty_fifty_b8XmkY": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_3PqbNW": {
+          "type": "text",
+          "settings": {
+            "icon_text": "Make 4 recurring subscription purchases and earn 100 points ($5 off)"
+          }
+        },
+        "text_a7GwDU": {
+          "type": "text",
+          "settings": {
+            "icon_text": "Make 7 recurring subscription purchases and earn 200 points ($10 off)"
+          }
+        }
+      },
+      "block_order": [
+        "text_3PqbNW",
+        "text_a7GwDU"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "<strong>earn discounts </strong>for your orders!",
+        "heading_style": "h2",
+        "description": "Earn points everytime you shop Whitelabel with our Better Rewards Club. Plus, when you become a subscriber you’ll unlock additional points for your sustainable commitment.",
+        "featured_img": "shopify://shop_images/subscribe5050.jpg",
+        "column_img": "right",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": false,
+        "cta_url": "/",
+        "cta_text": "Start Earning",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "shop_by_category_G9p36a": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_nt3bMk": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/250.jpg",
+            "title": "250ML WHITELABEL",
+            "description": "<p>Our original 8oz lunch box size. </p>",
+            "cta_url": ""
+          }
+        },
+        "list_item_ze9Q9d": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/330_89bc36be-230a-437b-bf0e-2bbfd012c656.jpg",
+            "title": "330ML WHITELABEL",
+            "description": "<p>11.16oz for when you need a little hydration. </p>",
+            "cta_url": ""
+          }
+        },
+        "list_item_kR8mkA": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/550.jpg",
+            "title": "500ML WHITELABEL",
+            "description": "<p>16.9 ounces of 100% pure, refreshing water. </p>",
+            "cta_url": ""
+          }
+        },
+        "list_item_3GmDmB": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/1L.jpg",
+            "title": "1 LITER WHITELABEL",
+            "description": "<p>33.8oz perfect for hiking, sports and road trips.</p>",
+            "cta_url": ""
+          }
+        },
+        "list_item_iMkrbN": {
+          "type": "list-item",
+          "settings": {
+            "title": "",
+            "description": "",
+            "cta_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "list_item_nt3bMk",
+        "list_item_ze9Q9d",
+        "list_item_kR8mkA",
+        "list_item_3GmDmB",
+        "list_item_iMkrbN"
+      ],
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "A size for <strong>every occasion</strong>",
+        "cta_text": "",
+        "cta_url": "shopify://collections/retail-all"
+      }
+    },
+    "four_col_KDFzJW": {
+      "type": "four-col",
+      "blocks": {
+        "text_pPjcWz": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/10_off_recurring_orders_08b45165-f274-42ec-ac1a-57c66f35deb0.svg",
+            "icon_title": "10% OFF RECURRING ORDERS",
+            "icon_text": "Subscribe today and enjoy 10% off recurring subscription orders."
+          }
+        },
+        "text_c3bMMR": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/Tree_planting_with_your_first_order_2adcf71b-c640-4be0-9983-820055115c7e.svg",
+            "icon_title": "Tree Planting",
+            "icon_text": "Become a subscriber and we'll plant one tree in a National Forest across the U.S."
+          }
+        },
+        "text_YxfCPF": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/Delivered_straight_to_your_doorstep_2e05d4c6-403e-4940-8f3c-157b246a42e7.svg",
+            "icon_title": "Whitelabel on repeat",
+            "icon_text": "Choose your delivery frequency. Enjoy monthly or quarterly deliveries with one click."
+          }
+        },
+        "text_4dtUEV": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/Pause_edit_or_cancel_anytime_927f3fa5-58d3-4d4a-8623-10418c7dcfb2.svg",
+            "icon_title": "No strings attached",
+            "icon_text": "We make it easy to control your subscription! Edit, swap or cancel anytime."
+          }
+        }
+      },
+      "block_order": [
+        "text_pPjcWz",
+        "text_c3bMMR",
+        "text_YxfCPF",
+        "text_4dtUEV"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_d": "shopify://shop_images/icon_background_nature.png",
+        "image_m": "shopify://shop_images/icon_background_nature.png",
+        "title": "Subscriber <strong>Benefits</strong>",
+        "heading_text_color": "black",
+        "cta_url": "/",
+        "cta_text": "",
+        "button_style": "primary",
+        "block_text_color": "black",
+        "bg_color": "gray",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "two_three_up_ypQb4J": {
+      "type": "two-three-up",
+      "blocks": {
+        "cta_Whb8Kx": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "why whitelabel is better",
+            "link": "shopify://pages/how-we-compare",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/5050_website_content_blocks_1.svg",
+            "bg_image_mobile": "shopify://shop_images/5050_website_content_blocks_1.svg",
+            "text_color": "text-black",
+            "button_style": "primary"
+          }
+        },
+        "cta_cjjDUF": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "Manage your subscription",
+            "link": "https://whitelabel.zendesk.com/hc/en-us/categories/25828247526419-Subscription",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/2-up_subscribepage-mobile.jpg",
+            "bg_image_mobile": "shopify://shop_images/2-up_subscribepage.jpg",
+            "text_color": "text-black",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "cta_Whb8Kx",
+        "cta_cjjDUF"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Subscription <strong>Resources</strong>",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_T7k68R",
+    "shop_by_category_kfAgzL",
+    "fifty_fifty_tYL9yA",
+    "product_recommendations_FWpDH3",
+    "17260043485c3d4e88",
+    "hero_nVEHdb",
+    "fifty_fifty_b8XmkY",
+    "shop_by_category_G9p36a",
+    "four_col_KDFzJW",
+    "two_three_up_ypQb4J"
+  ]
+}

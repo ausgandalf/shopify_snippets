@@ -1,0 +1,185 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "buybox": {
+      "type": "buybox",
+      "blocks": {
+        "value_prop_fa3TUW": {
+          "type": "value_prop",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Brand_Elements.svg",
+            "title": "Free US Shipping on All Orders"
+          }
+        },
+        "rewards_cJG9rK": {
+          "type": "rewards",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Brand_Elements_1.svg",
+            "title": "Earn [x] points on this purchase! <a href=\"#\" title=\"#\">Learn More<\/a>"
+          }
+        }
+      },
+      "block_order": [
+        "value_prop_fa3TUW",
+        "rewards_cJG9rK"
+      ],
+      "settings": {
+        "secondary_text": "",
+        "wholesale_text": "Say goodbye to single use plastic! Get convenient, automated monthly deliveries. Adjust anytime.",
+        "free_gift_title": "",
+        "free_gift_desc": "",
+        "show_tooltip": false,
+        "promo_code_message": "",
+        "tooltip_title": "Extra ##SAVE## Off",
+        "tooltip_content": "<p>Get an extra ##SAVE## off your first order! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<\/p>",
+        "tooltip_cta_label": "Read More",
+        "tooltip_cta_link": "shopify:\/\/pages\/beach-terms"
+      }
+    },
+    "value_props_f7xWfJ": {
+      "type": "value-props",
+      "blocks": {
+        "value_prop_FNYeXL": {
+          "type": "value-prop",
+          "repeater": "{{ product.metafields.custom.value_props.value }}",
+          "settings": {
+            "icon": "{{ block.repeater.icon.value }}",
+            "title": "{{ block.repeater.title.value }}",
+            "description": "{{ block.repeater.description | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "value_prop_FNYeXL"
+      ],
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "product_details_7iA3Fz": {
+      "type": "product-details",
+      "blocks": {
+        "accordion_BJeMYB": {
+          "type": "accordion",
+          "repeater": "{{ product.metafields.custom.product_details.value }}",
+          "settings": {
+            "title": "{{ block.repeater.title.value }}",
+            "description": "{{ block.repeater.description | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_BJeMYB"
+      ],
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "details_title": "Product Details"
+      }
+    },
+    "fifty_fifty_XHnmxp": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_xTFmhG": {
+          "type": "text",
+          "settings": {
+            "icon_text": "• Made of 92% renewable materials"
+          }
+        },
+        "text_iaxLHX": {
+          "type": "text",
+          "settings": {
+            "icon_text": "• 100% pure, refreshing water with none of the stuff you don’t need"
+          }
+        },
+        "text_TJT9YG": {
+          "type": "text",
+          "settings": {
+            "icon_text": "• 100% recyclable boxes with no BPAs to keep your water clean"
+          }
+        },
+        "text_4kAg3D": {
+          "type": "text",
+          "settings": {
+            "icon_text": "• 36% lower carbon footprint compared to traditional plastic bottles"
+          }
+        },
+        "text_4hK3m4": {
+          "type": "text",
+          "settings": {
+            "icon_text": "• Boxes shipped flat to the filler to reduce the emissions associated with shipping plastic bottles"
+          }
+        }
+      },
+      "block_order": [
+        "text_xTFmhG",
+        "text_iaxLHX",
+        "text_TJT9YG",
+        "text_4kAg3D",
+        "text_4hK3m4"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "Tell Me<strong> More<\/strong>",
+        "heading_style": "h1",
+        "description": "The standard size of Whitelabel. 16.9 ounces of purified water, filled in boxes made from paper, a renewable resource. Whitelabel illustrates the simple way we can all improve our planet, health and quality of life.",
+        "featured_img": "shopify:\/\/shop_images\/whitelabel-500-24-pack_8d44df6f-9172-4331-b061-9bd73527c623.jpg",
+        "column_img": "right",
+        "display_badge": true,
+        "cta_url": "\/",
+        "cta_text": "Shop Original Water",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "product_recommendations_KXGtzh": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "Best <strong>Sellers<\/strong>",
+        "cta_text": "Shop all",
+        "cta_url": "",
+        "recommended_collection": "best-sellers",
+        "secondary_text": "<p><a href=\"\/pages\/subscribe\" title=\"Subscribe & Save on Whitelabel - Sustainable Water Delivery\"><strong>Start a monthly subscription<\/strong><\/a> and enjoy 10% off and free shipping on all orders. Cancel anytime.<\/p>"
+      }
+    },
+    "1713984785d71b560b": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_ugc_reviews_bnP3NP": {
+          "type": "shopify:\/\/apps\/yotpo-product-reviews-ugc\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_ugc_reviews_bnP3NP"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "buybox",
+    "value_props_f7xWfJ",
+    "product_details_7iA3Fz",
+    "fifty_fifty_XHnmxp",
+    "product_recommendations_KXGtzh",
+    "1713984785d71b560b"
+  ]
+}

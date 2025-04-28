@@ -1,0 +1,204 @@
+{
+  "parent": "product.original-water-wholesale.json",
+  "context": {
+    "b2b": true
+  },
+  "sections": {
+    "shop_by_category_Eqn3eP": {
+      "settings": {
+        "title": "Shop by your <strong>business needs<\/strong>",
+        "cta_text": ""
+      },
+      "blocks": {
+      }
+    },
+    "four_col_MzgDQ": {
+      "type": "four-col",
+      "disabled": false,
+      "settings": {
+        "header-defbf12d8b88f3e46ac93dcd16f09f99": null,
+        "image_d": "shopify:\/\/shop_images\/icon_background_nature.png",
+        "image_m": "shopify:\/\/shop_images\/icon_background_nature.png",
+        "title": "<strong>A Better Alternative <\/strong>",
+        "heading_text_color": "black",
+        "cta_url": "\/",
+        "cta_text": "",
+        "button_style": "primary",
+        "block_text_color": "black",
+        "bg_color": "white",
+        "header-1c2b03c7fde78a8aaf03051360a60c56": null,
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      },
+      "blocks": {
+        "text_EVX6L": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "header-cd0d14618646f0ef0c2ceb8d8dec0a78": null,
+            "icon": "shopify:\/\/shop_images\/blue_footprints_icon_ea7c5af5-1e03-4461-9aa2-be00ddd0a397.svg",
+            "icon_title": "Lower Footprint",
+            "icon_text": "36% lower carbon footprint than plastic bottle and aluminum cans"
+          }
+        },
+        "text_ebb7x": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "header-cd0d14618646f0ef0c2ceb8d8dec0a78": null,
+            "icon": "shopify:\/\/shop_images\/blue_carton_icon_00997995-79df-4e5b-81d3-8ecda1da6f7f.svg",
+            "icon_title": "Plant Based",
+            "icon_text": "92% renewable cartons made with FSC paper and a plant-based cap"
+          }
+        },
+        "text_CFkdp": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "header-cd0d14618646f0ef0c2ceb8d8dec0a78": null,
+            "icon": "shopify:\/\/shop_images\/blue_recycle_icon_1457ce40-5807-4eea-9ab9-66b67e0b4ab6.svg",
+            "icon_title": "Recyclable",
+            "icon_text": "100% recyclable carton vs only 5% of plastics that's recycled"
+          }
+        },
+        "text_DNTEp": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "header-cd0d14618646f0ef0c2ceb8d8dec0a78": null,
+            "icon": "shopify:\/\/shop_images\/blue_water_icon_85a83796-6c18-47fc-81c7-da1ba51b2655.svg",
+            "icon_title": "Pure Water",
+            "icon_text": "Sustainably sourced water, purified and free of PFAs or additives"
+          }
+        }
+      },
+      "block_order": [
+        "text_EVX6L",
+        "text_ebb7x",
+        "text_CFkdp",
+        "text_DNTEp"
+      ]
+    },
+    "fifty_fifty_HVNYb": {
+      "type": "fifty-fifty",
+      "disabled": false,
+      "settings": {
+        "header-84ece49fa8b2df8b602d8d4ea4328c56": null,
+        "bg_color": "white",
+        "subheading": "",
+        "title": "<strong>How do Items get Shipped? <\/strong>",
+        "heading_style": "h2",
+        "description": "",
+        "featured_img": "shopify:\/\/shop_images\/website_category_images_-_desktop.png",
+        "column_img": "left",
+        "display_badge": false,
+        "cta_url": "\/",
+        "cta_text": "Shop Original Water",
+        "button_style": "primary",
+        "header-bd3dc65292a2d2196d89e8d0c8517b07": null,
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      },
+      "blocks": {
+        "text_dGCrX": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "header-efa1386f9d80e8e62156bf8a863d6a85": null,
+            "icon": null,
+            "icon_text": "Less than 30 cases shop standard UPS or FedEx Ground in 3-5 business days."
+          }
+        },
+        "text_aaLRY": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "header-efa1386f9d80e8e62156bf8a863d6a85": null,
+            "icon": null,
+            "icon_text": "30+ cases ship on a palet via freight in 2-3 weeks."
+          }
+        },
+        "text_qeHqL": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "header-efa1386f9d80e8e62156bf8a863d6a85": null,
+            "icon": null,
+            "icon_text": "Enjoy complimentary shipping on all orders."
+          }
+        },
+        "text_B9Cqt": {
+          "type": "text",
+          "disabled": false,
+          "settings": {
+            "header-efa1386f9d80e8e62156bf8a863d6a85": null,
+            "icon": null,
+            "icon_text": "PRO TIP: Enjoy hassle free automated monthly deliveries when you subscribe."
+          }
+        }
+      },
+      "block_order": [
+        "text_dGCrX",
+        "text_aaLRY",
+        "text_qeHqL",
+        "text_B9Cqt"
+      ]
+    },
+    "hero_mUhVn": {
+      "type": "hero",
+      "disabled": false,
+      "settings": {
+        "header-6e6c799d29bd0ff0d43dba700cd4b5c7": null,
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "header-1ecf15a2e45707a6f794805306e1fe52": null,
+        "image_desktop": "shopify:\/\/shop_images\/whitelabel_yellow_background_square.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Flavors_Hero-_Desktop_2880_x_1000_px_1.svg",
+        "video_desktop": null,
+        "video_mobile": null,
+        "header-7144217c6bf1cb1fa594a41cc9412adc": null,
+        "subheading": "",
+        "heading": "How can we help?",
+        "heading_mobile": "How can we help?",
+        "heading_type": "h1",
+        "copy": "<p>Reach out with any questions or concerns. We'd love to hear from you!<\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "header-5f651980e680604b995812c85a6e610f": null,
+        "cta_text_1": "Contact Us",
+        "cta_url_1": "shopify:\/\/pages\/contact-us",
+        "cta_type_1": "button button--primary-dark",
+        "header-946bbb4877b11fc6d4c50a53ab3b0d10": null,
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "header-afe045087cc1fdab96a456291867f15e": null,
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      },
+      "blocks": {
+      },
+      "block_order": [
+
+      ]
+    }
+  },
+  "order": [
+    "buybox",
+    "four_col_MzgDQ",
+    "shop_by_category_Eqn3eP",
+    "product_recommendations_cabzgD",
+    "fifty_fifty_HVNYb",
+    "hero_mUhVn"
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "sections": {
+    "hero_kj9XpY": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/wholesale_lineup_with_flavors.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Mobile_wholesale_hero_three_items.png",
+        "subheading": "SUSTAINABLE WATER DELIVERY",
+        "heading": "Whitelabel Wholesale",
+        "heading_mobile": "Whitelabel Wholesale",
+        "heading_type": "h2",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "Apply Now",
+        "cta_url_1": "#shopify-section-template--16232657518703__wholesale_form_DUkgM4",
+        "cta_type_1": "button button--primary-dark",
+        "cta_text_2": "",
+        "cta_url_2": "shopify:\/\/pages\/how-we-compare",
+        "cta_type_2": "button button--primary-dark",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "four_col_KDFzJW": {
+      "type": "four-col",
+      "blocks": {
+        "text_iTPYaY": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/black_carton_icon_174cde8a-f6ba-40a8-a4f4-c0a03c91382b.svg",
+            "icon_title": "92% Plant-Based Box",
+            "icon_text": "Paper-based cartons are a better option for our environment than single-use bottles and cans. Our box is renewable and 100% recyclable."
+          }
+        },
+        "text_7EzFaM": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/black_footprint_icon_ddda08e8-9882-4092-9a87-f6cbe5c9e35c.svg",
+            "icon_title": "Lower Your carbon footprint",
+            "icon_text": "Lower your carbon footprint by 36% and protect our planet from the single-use plastic bottles and aluminum cans."
+          }
+        },
+        "text_pPjcWz": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/black_discount_icon_e75ee6b7-6c1e-40c3-a0c0-779fb39dcb60.svg",
+            "icon_title": "Exclusive Discounts",
+            "icon_text": "Save money and safeguard the planet at the same time! We offer wholesale members quantity discounts as well as free business delivery with every order."
+          }
+        },
+        "text_3FVnEn": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/black_star_icon_27e946cc-7126-4130-ba66-e68c69cd54ea.svg",
+            "icon_title": "5-star customer service",
+            "icon_text": "Our customer service is unmatched — we’ve received over 4,500 five-star reviews! Our support team is readily available if you need to get in touch."
+          }
+        }
+      },
+      "block_order": [
+        "text_iTPYaY",
+        "text_7EzFaM",
+        "text_pPjcWz",
+        "text_3FVnEn"
+      ],
+      "settings": {
+        "title": "A Better solution for your business",
+        "heading_text_color": "black",
+        "cta_url": "#shopify-section-template--16232657518703__wholesale_form_DUkgM4",
+        "cta_text": "APPLY NOW",
+        "button_style": "primary",
+        "block_text_color": "black",
+        "bg_color": "white",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "hero_EciNHW": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/Copy_of_Flavors_Hero-_Desktop_2880_x_1440_px.png",
+        "subheading": "",
+        "heading": "",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": true,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "fifty_fifty_Gf4kFF": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "A BETTER OPTION FOR YOUR CUSTOMERS",
+        "heading_style": "h2",
+        "description": "Plastic and aluminum are harming our planet at an alarming rate. In fact, 1500 plastic bottles end up in oceans & landfills every single minute and thousands of acres of forests are destroyed every year during aluminum production. Whitelabel Is Better for our planet. Our paper-based cartons are FSC certified, 92% renewable, and 100% recyclable, making them the most sustainable carton in the water aisle.",
+        "featured_img": "shopify:\/\/shop_images\/BW-Diagram_simplified_desktop.webp",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "shopify:\/\/collections\/order-online-page",
+        "cta_text": "Shop All Water",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "hero_FdgMpq": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/the_reviews_are_in.png",
+        "subheading": "",
+        "heading": "the reviews are in",
+        "heading_mobile": "",
+        "heading_type": "h2",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "#shopify-section-template--16232657518703__wholesale_form_DUkgM4",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "top",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "fifty_fifty_RNtpfb": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_FwB8YY": {
+          "type": "text",
+          "settings": {
+            "icon_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_FwB8YY"
+      ],
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "even better with flavors.",
+        "heading_style": "h2",
+        "description": "Flavored water is even BETTER in plant-based cartons that are 92% renewable. Try Cucumber, Lemon, Watermelon, Grapefruit or Blackberry Whitelabel.",
+        "featured_img": "shopify:\/\/shop_images\/5050_website_content_blocks.png",
+        "column_img": "left",
+        "display_badge": false,
+        "cta_url": "https:\/\/whitelabelisbetter.com\/collections\/order-online-page#fruit-flavors",
+        "cta_text": "Shop Fruit Flavored Water",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "shop_by_category_zcECAM": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_ne7dNy": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3-up_image_1.png",
+            "title": "Finding the Perfect Size for Your Business",
+            "description": "<p>We are committed to making sustainability simple. Whether you’re running a restaurant or coffee shop, own a fitness center or are hosting an event, we have an option that suits your needs.<\/p>",
+            "cta_url": "https:\/\/whitelabelisbetter.com\/blogs\/blog\/how-businesses-are-adapting-to-change-while-balancing-safety-sustainability"
+          }
+        },
+        "list_item_KELMpw": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forest-3_1.jpg",
+            "title": "We've Planted Over 1.5 Million Trees!",
+            "description": "<p>In 2020 we celebrated planting over one million trees in our U.S. National Forests. We've now planted over 1.5 million trees and we're not done yet. Help us plant the next one million!<\/p>",
+            "cta_url": ""
+          }
+        },
+        "list_item_zUrTBp": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/website_category_images_-_desktop.png",
+            "title": "CONTACT A BUSINESS SPECIALIST",
+            "description": "<p>Say hello! Our customer-service is unmatched. We love helping businesses switch to a sustainable solution. Our team is here to help you every step of the way.<\/p>",
+            "cta_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "list_item_ne7dNy",
+        "list_item_KELMpw",
+        "list_item_zUrTBp"
+      ],
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
+    "wholesale_form_DUkgM4": {
+      "type": "wholesale-form",
+      "settings": {
+        "form_title": "Wholesale Form",
+        "form_html": "<div id=\"wufoo-zhgppc50n1xck0\"><\/div> <script type=\"text\/javascript\"> var zhgppc50n1xck0; (function(d, t) { var s = d.createElement(t), options = { 'userName':'whitelabel', 'formHash':'zhgppc50n1xck0', 'autoResize':true, 'height':'1210', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https:\/\/':'http:\/\/') + 'secure.wufoo.com\/scripts\/embed\/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { zhgppc50n1xck0 = new WufooForm(); zhgppc50n1xck0.initialize(options); zhgppc50n1xck0.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); <\/script>",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "hero_kj9XpY",
+    "main",
+    "four_col_KDFzJW",
+    "hero_EciNHW",
+    "fifty_fifty_Gf4kFF",
+    "hero_FdgMpq",
+    "fifty_fifty_RNtpfb",
+    "shop_by_category_zcECAM",
+    "wholesale_form_DUkgM4"
+  ]
+}

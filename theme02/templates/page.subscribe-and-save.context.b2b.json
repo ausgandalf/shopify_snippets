@@ -1,0 +1,8 @@
+{
+  "parent": "page.subscribe-and-save.json",
+  "context": {
+    "b2b": true
+  },
+  "sections": {
+  }
+}

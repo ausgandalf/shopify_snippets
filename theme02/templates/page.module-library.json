@@ -1,0 +1,549 @@
+{
+  "sections": {
+    "hero_UqkFhU": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 28,
+        "margin_mobile": 0,
+        "subheading": "Pure. Convenient. Sustainable.",
+        "heading": "The earth loves our box",
+        "heading_mobile": "The earth loves our box",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": true,
+        "enable_mute": true,
+        "cta_text_1": "Shop now",
+        "cta_url_1": "shopify:\/\/collections\/order-online-page",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "\/",
+        "cta_type_2": "content-link text-black",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-black",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "hero_LzeDaB": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 28,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/Rectangle_217_3b8337f0-f9d6-404f-8f4f-3116ae5be0a8.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Rectangle_217_9b1d8e3b-f82e-4cc7-a34c-3df91b4be154.jpg",
+        "subheading": "Pure. Convenient. Sustainable.",
+        "heading": "The earth loves  our box",
+        "heading_mobile": "The earth loves our box",
+        "heading_type": "h2",
+        "copy": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam<\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "Shop now",
+        "cta_url_1": "shopify:\/\/collections\/order-online-page",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "Learn More",
+        "cta_url_2": "shopify:\/\/metaobjects\/promo\/black-friday-vip",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-black",
+        "text_align": "center",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "hero_94EPzf": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 28,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/hero_flavorscollection_watermelon.svg",
+        "image_mobile": "shopify:\/\/shop_images\/homepage_girl_arms_full.jpg",
+        "subheading": "Pure. Convenient. Sustainable.",
+        "heading": "The earth loves  our box",
+        "heading_mobile": "The earth loves our box",
+        "heading_type": "h2",
+        "copy": "",
+        "show_overlay": true,
+        "stack_on_mobile": true,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "Shop now",
+        "cta_url_1": "shopify:\/\/collections\/order-online-page",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "\/",
+        "cta_type_2": "content-link text-black",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-black",
+        "text_align": "center",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "hero_ypyABX": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "video_desktop": "shopify:\/\/files\/videos\/Whitelabel Is Even Better With Flavors.mp4",
+        "video_mobile": "shopify:\/\/files\/videos\/cafb63745302e6c3f8fe07c873227078.mp4",
+        "subheading": "",
+        "heading": "",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": true,
+        "stack_on_mobile": false,
+        "enable_pause": true,
+        "enable_mute": true,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "shop_by_category_HzJwq6": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_HqYR3g": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pure_water_category_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/M-category.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/pure_water_category_1.jpg",
+            "title": "PURE WATER",
+            "description": "",
+            "cta_url": "shopify:\/\/collections\/original-water"
+          }
+        },
+        "list_item_DmUEUC": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flavors_category_1.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/flavors_category_2.jpg",
+            "title": "Fruit flavors",
+            "description": "",
+            "cta_url": "shopify:\/\/collections\/fruit-flavors"
+          }
+        },
+        "list_item_8HRUVB": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IF_Collab_category_2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/2_d5097a17-0f90-4e3a-8338-0a5f600f6079.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/IF_Collab_category_1.jpg",
+            "title": "COLLABS",
+            "description": "",
+            "cta_url": "shopify:\/\/pages\/ehs-if-landing-page"
+          }
+        },
+        "list_item_dNTLpk": {
+          "type": "list-item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collabs_category_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/collabs_category_1.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/collabs_category_2.jpg",
+            "title": "Collabs",
+            "description": "",
+            "cta_url": "shopify:\/\/collections\/order-online-page"
+          }
+        },
+        "list_item_eExB9C": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/merch_category_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/merch_category_1.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/merch_category_2.jpg",
+            "title": "Merch",
+            "description": "",
+            "cta_url": "shopify:\/\/collections\/merch"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_HqYR3g",
+        "list_item_DmUEUC",
+        "list_item_8HRUVB",
+        "list_item_dNTLpk",
+        "list_item_eExB9C"
+      ],
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "title": "SIP INTO OUR WORLD",
+        "cta_text": "Shop All",
+        "cta_url": "shopify:\/\/collections\/order-online-page-old"
+      }
+    },
+    "shop_by_category_caUx8c": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_xMwPVy": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_219_836d7825-f8d2-46ff-a7ee-9a490003e120.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_219_836d7825-f8d2-46ff-a7ee-9a490003e120.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/pure_water_category_2.jpg",
+            "title": "250ml Whitelabel",
+            "description": "<p>Our original lunch box size. Grab a pack of our smallest Whitelabels for any quick occasion.<\/p>",
+            "cta_url": "shopify:\/\/collections\/original-water"
+          }
+        },
+        "list_item_zFj4Ef": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_219-1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_219-1_a20cc6da-e987-44e5-9cb4-2c59dcb4d2d7.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/flavors_category_2.jpg",
+            "title": "330ml Whitelabel",
+            "description": "<p>Meet our newest product size: 11.16 ounces of 100% purified water for when you need a little hydration. <\/p>",
+            "cta_url": "shopify:\/\/collections\/fruit-flavors"
+          }
+        },
+        "list_item_En4h4i": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_219-2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_219-2_718339f4-6f30-400b-85c7-072526176095.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/IF_Collab_category_1.jpg",
+            "title": "500ml Whitelabel",
+            "description": "<p>The standard size of Whitelabel. 16.9 ounces of purified water.<\/p>",
+            "cta_url": "shopify:\/\/pages\/ehs-if-landing-page"
+          }
+        },
+        "list_item_YKEp7t": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_219-3.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_219-3_fdecca87-b6e6-40ca-9152-12daaeafbde3.jpg",
+            "title": "1 Liter Whitelabel",
+            "description": "<p>Looking to help meet your suggested daily requirement of water? Our 1 liter 12 pack is here to help!<\/p>",
+            "cta_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "list_item_xMwPVy",
+        "list_item_zFj4Ef",
+        "list_item_En4h4i",
+        "list_item_YKEp7t"
+      ],
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "title": "SIP INTO OUR WORLD",
+        "cta_text": "Shop All",
+        "cta_url": "shopify:\/\/collections\/order-online-page-old"
+      }
+    },
+    "fifty_fifty_pHmC8x": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_3q8g7f": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌱 92% plant-based carton"
+          }
+        },
+        "text_VqqXCq": {
+          "type": "text",
+          "settings": {
+            "icon_text": "💧 100% pure water and natural flavors"
+          }
+        },
+        "text_3nR6Lh": {
+          "type": "text",
+          "settings": {
+            "icon_text": "💫 Free shipping in the lower 48 states"
+          }
+        },
+        "text_FnyBXU": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌲 1.5 million trees planted in forests and cities"
+          }
+        }
+      },
+      "block_order": [
+        "text_3q8g7f",
+        "text_VqqXCq",
+        "text_3nR6Lh",
+        "text_FnyBXU"
+      ],
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "BETTER THAN BOTTLED WATER AND CANS",
+        "title": "Paper > Plastic",
+        "heading_style": "h1",
+        "description": "For those times when reusable bottles aren't an option, our paper-based cartons are the most renewable option in the water aisle.",
+        "featured_img": "shopify:\/\/shop_images\/homepage_girl_arms_full.jpg",
+        "column_img": "right",
+        "display_badge": true,
+        "cta_url": "shopify:\/\/collections\/order-online-page",
+        "cta_text": "SHOP NOW",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_h4qRY3": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_xctTKX": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌱 92% plant-based carton"
+          }
+        },
+        "text_PqV7j3": {
+          "type": "text",
+          "settings": {
+            "icon_text": "💧 100% pure water and natural flavors"
+          }
+        },
+        "text_4jiaJN": {
+          "type": "text",
+          "settings": {
+            "icon_text": "💫 Free shipping in the lower 48 states"
+          }
+        },
+        "text_zqCzn3": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌲 1.5 million trees planted in forests and cities"
+          }
+        }
+      },
+      "block_order": [
+        "text_xctTKX",
+        "text_PqV7j3",
+        "text_4jiaJN",
+        "text_zqCzn3"
+      ],
+      "settings": {
+        "bg_color": "white",
+        "subheading": "BETTER THAN BOTTLED WATER AND CANS",
+        "title": "<strong>Paper<\/strong> > Plastic",
+        "heading_style": "h2",
+        "description": "For those times when reusable bottles aren't an option, our paper-based cartons are the most renewable option in the water aisle.",
+        "featured_img": "shopify:\/\/shop_images\/homepage_girl_arms_full.jpg",
+        "column_img": "left",
+        "display_badge": false,
+        "cta_url": "shopify:\/\/collections\/order-online-page",
+        "cta_text": "SHOP NOW",
+        "button_style": "secondary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "product_recommendations_8twtLT": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "title": "<strong>Best Sellers<\/strong>",
+        "cta_text": "Shop all",
+        "cta_url": "#",
+        "recommended_collection": "best-sellers",
+        "secondary_text": "<p>Purchasing for a business? Apply to our <a href=\"\/pages\/wholesale-application-ehs\" title=\"Wholesale Application eHs\">Wholesale Program<\/a><\/p>"
+      }
+    },
+    "four_col_9pV9JC": {
+      "type": "four-col",
+      "blocks": {
+        "text_XJAp97": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_footprints_icon_ea7c5af5-1e03-4461-9aa2-be00ddd0a397.svg",
+            "icon_title": "Lower Footprint",
+            "icon_text": "36% lower carbon footprint than plastic bottles and aluminum cans"
+          }
+        },
+        "text_TmwNPV": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_carton_icon_00997995-79df-4e5b-81d3-8ecda1da6f7f.svg",
+            "icon_title": "Plant Based",
+            "icon_text": "92% renewable cartons made with FSC paper and a plant-based cap"
+          }
+        },
+        "text_rh7hpL": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_recycle_icon_1457ce40-5807-4eea-9ab9-66b67e0b4ab6.svg",
+            "icon_title": "Recyclable",
+            "icon_text": "100% recyclable cartons vs only 5% of plastic that's recycled"
+          }
+        },
+        "text_ccVqDk": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_water_icon_85a83796-6c18-47fc-81c7-da1ba51b2655.svg",
+            "icon_title": "PURE WATER",
+            "icon_text": "Sustainably sourced water, purified and free of PFAS or additives."
+          }
+        }
+      },
+      "block_order": [
+        "text_XJAp97",
+        "text_TmwNPV",
+        "text_rh7hpL",
+        "text_ccVqDk"
+      ],
+      "settings": {
+        "image_d": "shopify:\/\/shop_images\/icon_background_nature.png",
+        "image_m": "shopify:\/\/shop_images\/icon_background_nature.png",
+        "title": "PROVEN<strong> BETTER<\/strong>",
+        "heading_text_color": "black",
+        "cta_url": "shopify:\/\/pages\/how-we-compare",
+        "cta_text": "HOW WE COMPARE",
+        "button_style": "primary",
+        "block_text_color": "black",
+        "bg_color": "white",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "four_col_nVqyML": {
+      "type": "four-col",
+      "blocks": {
+        "text_im4UgM": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_footprints_icon_ea7c5af5-1e03-4461-9aa2-be00ddd0a397.svg",
+            "icon_title": "Lower Footprint",
+            "icon_text": "36% lower carbon footprint than plastic bottles and aluminum cans"
+          }
+        },
+        "text_JxgxJX": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_carton_icon_00997995-79df-4e5b-81d3-8ecda1da6f7f.svg",
+            "icon_title": "Plant Based",
+            "icon_text": "92% renewable cartons made with FSC paper and a plant-based cap"
+          }
+        },
+        "text_fjN89E": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_recycle_icon_1457ce40-5807-4eea-9ab9-66b67e0b4ab6.svg",
+            "icon_title": "Recyclable",
+            "icon_text": "100% recyclable cartons vs only 5% of plastic that's recycled"
+          }
+        },
+        "text_aEdEgF": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_water_icon_85a83796-6c18-47fc-81c7-da1ba51b2655.svg",
+            "icon_title": "PURE WATER",
+            "icon_text": "Sustainably sourced water, purified and free of PFAS or additives."
+          }
+        }
+      },
+      "block_order": [
+        "text_im4UgM",
+        "text_JxgxJX",
+        "text_fjN89E",
+        "text_aEdEgF"
+      ],
+      "settings": {
+        "title": "PROVEN<strong> BETTER<\/strong>",
+        "heading_text_color": "black",
+        "cta_url": "shopify:\/\/pages\/how-we-compare",
+        "cta_text": "HOW WE COMPARE",
+        "button_style": "primary",
+        "block_text_color": "black",
+        "bg_color": "white",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "two_three_up_HcfezB": {
+      "type": "two-three-up",
+      "blocks": {
+        "cta_qEUBVh": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "Flavor Bundles",
+            "link": "shopify:\/\/products\/betterplanet-t-shirt",
+            "button_text": "",
+            "bg_image_desktop": "shopify:\/\/shop_images\/Rectangle_219.jpg",
+            "bg_image_mobile": "shopify:\/\/shop_images\/Blue_042a991a-f526-4afd-b44b-3099c31da563.jpg",
+            "text_color": "text-white",
+            "button_style": "primary"
+          }
+        },
+        "cta_L4afFm": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "Lemon Whitelabel",
+            "link": "\/",
+            "button_text": "",
+            "bg_image_desktop": "shopify:\/\/shop_images\/Rectangle_219_e477a4de-5ffb-4ae6-9d3a-dca59c4d45f3.jpg",
+            "bg_image_mobile": "shopify:\/\/shop_images\/Yellow_9117e6c9-3bbb-451d-9795-9d9b60ccda8f.jpg",
+            "text_color": "text-black",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "cta_qEUBVh",
+        "cta_L4afFm"
+      ],
+      "settings": {
+        "title": "shop <strong>New Arrivals<\/strong>",
+        "margin_desktop": 68,
+        "margin_mobile": 100
+      }
+    }
+  },
+  "order": [
+    "hero_UqkFhU",
+    "hero_LzeDaB",
+    "hero_94EPzf",
+    "hero_ypyABX",
+    "shop_by_category_HzJwq6",
+    "shop_by_category_caUx8c",
+    "fifty_fifty_pHmC8x",
+    "fifty_fifty_h4qRY3",
+    "product_recommendations_8twtLT",
+    "four_col_9pV9JC",
+    "four_col_nVqyML",
+    "two_three_up_HcfezB"
+  ]
+}

@@ -1,0 +1,176 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "hero_Qk4VpK": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/carbon-neutral-home-slider_e0e17a45-488b-4b07-8561-eb00d5fa2552.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/carbon_neutral_mobile_hero_2.jpg",
+        "subheading": "",
+        "heading": "",
+        "heading_mobile": "The most renewable option in the water aisle.",
+        "heading_type": "h1",
+        "copy": "<p>The most renewable option in the water aisle. <\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-white",
+        "controls_color": "text-white",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "top"
+      }
+    },
+    "wholesale_form_pmRmiA": {
+      "type": "wholesale-form",
+      "settings": {
+        "form_title": "",
+        "form_html": "<div id=\"aisle-form-display__clxxo06v500014eh5xna7jx3z\"><\/div>",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "value_props_8ACXha": {
+      "type": "value-props",
+      "blocks": {
+        "value_prop_gRyK8x": {
+          "type": "value-prop",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_footprints_icon_ea7c5af5-1e03-4461-9aa2-be00ddd0a397.svg",
+            "title": "LOWER FOOTPRINT",
+            "description": "<p>36% lower carbon footprint than plastic bottles and aluminum cans<\/p>"
+          }
+        },
+        "value_prop_J96GrU": {
+          "type": "value-prop",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_carton_icon_00997995-79df-4e5b-81d3-8ecda1da6f7f.svg",
+            "title": "PLANT BASED",
+            "description": "<p>92% renewable cartons made with FSC paper and a plant-based cap<\/p>"
+          }
+        },
+        "value_prop_M3j9Fc": {
+          "type": "value-prop",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_recycle_icon_1457ce40-5807-4eea-9ab9-66b67e0b4ab6.svg",
+            "title": "RECYCLABLE",
+            "description": "<p>100% recyclable cartons vs only 5% of plastic that's recycled<\/p>"
+          }
+        },
+        "value_prop_xtV9Rt": {
+          "type": "value-prop",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/blue_water_icon_85a83796-6c18-47fc-81c7-da1ba51b2655.svg",
+            "title": "PURE WATER",
+            "description": "<p>Sustainably sourced water, purified and free of PFAS or additives.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "value_prop_gRyK8x",
+        "value_prop_J96GrU",
+        "value_prop_M3j9Fc",
+        "value_prop_xtV9Rt"
+      ],
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "hero_LixT4A": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/lifecycle_desktop_header.jpg",
+        "subheading": "",
+        "heading": "Where to Buy",
+        "heading_mobile": "Available at select New York Metro areas.",
+        "heading_type": "h2",
+        "copy": "<p>Available at select New York Metro areas. <\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "wholesale_form_9xKanq": {
+      "type": "wholesale-form",
+      "settings": {
+        "form_title": "",
+        "form_html": "<script> window.aisleFormConfigurations = window.aisleFormConfigurations || {}; window.aisleFormConfigurations['clxxo06v500014eh5xna7jx3z'] = { widgetId: 'clxxo06v500014eh5xna7jx3z', rootTargetElement: 'aisle-form-display__clxxo06v500014eh5xna7jx3z' }; <\/script> <script defer src=\"https:\/\/cdn.gotoaisle.com\/embed-forms\/script\/loader\/embedFormLoader.js\" onload=\"window.aisleLoader.loadAssets(window.aisleFormConfigurations['clxxo06v500014eh5xna7jx3z'])\"><\/script>",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "product_recommendations_XJGnqg": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "<strong>Best Sellers<\/strong>",
+        "cta_text": "Shop Best Sellers",
+        "cta_url": "shopify:\/\/collections\/best-sellers",
+        "recommended_collection": "best-sellers",
+        "secondary_text": ""
+      }
+    }
+  },
+  "order": [
+    "hero_Qk4VpK",
+    "wholesale_form_pmRmiA",
+    "value_props_8ACXha",
+    "hero_LixT4A",
+    "main",
+    "wholesale_form_9xKanq",
+    "product_recommendations_XJGnqg"
+  ]
+}

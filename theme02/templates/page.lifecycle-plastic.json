@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "hero_kj9XpY": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/plastic-header-mobile.jpg",
+        "subheading": "",
+        "heading": "Plastic production is polluting our planet",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": true,
+        "enable_mute": true,
+        "cta_text_1": "",
+        "cta_url_1": "https:\/\/whitelabelisbetter.com\/pages\/wholesale",
+        "cta_type_1": "button button--primary-dark",
+        "cta_text_2": "",
+        "cta_url_2": "shopify:\/\/pages\/how-we-compare",
+        "cta_type_2": "button button--primary-dark",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fifty_fifty_RNtpfb": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "even better with flavors.",
+        "heading_style": "h2",
+        "description": "Flavored water is even BETTER in plant-based cartons that are 92% renewable. Try Cucumber, Lemon, Grapefruit or Blackberry Whitelabel.",
+        "featured_img": "shopify:\/\/shop_images\/5050_website_content_blocks.png",
+        "column_img": "left",
+        "display_badge": false,
+        "cta_url": "\/",
+        "cta_text": "Shop Fruit Flavored Water",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "shop_by_category_zcECAM": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_ne7dNy": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3-up_image_1.png",
+            "title": "Finding the Perfect Size for Your Business",
+            "description": "<p>We are committed to making sustainability simple. Whether you’re running a restaurant or coffee shop, own a fitness center or are hosting an event, we have an option that suits your needs.<\/p>",
+            "cta_url": "https:\/\/whitelabelisbetter.com\/blogs\/blog\/how-businesses-are-adapting-to-change-while-balancing-safety-sustainability"
+          }
+        },
+        "list_item_KELMpw": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forest-3_1.jpg",
+            "title": "We've Planted Over 1.5 Million Trees!",
+            "description": "<p>In 2020 we celebrated planting over one million trees in our U.S. National Forests. We've now planted over 1.5 million trees and we're not done yet. Help us plant the next one million!<\/p>",
+            "cta_url": ""
+          }
+        },
+        "list_item_zUrTBp": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3-up_image.png",
+            "title": "CONTACT A BUSINESS SPECIALIST",
+            "description": "<p>Say hello! Our customer-service is unmatched. We love helping businesses switch to a sustainable solution. Our team is here to help you every step of the way.<\/p>",
+            "cta_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "list_item_ne7dNy",
+        "list_item_KELMpw",
+        "list_item_zUrTBp"
+      ],
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    }
+  },
+  "order": [
+    "hero_kj9XpY",
+    "main",
+    "fifty_fifty_RNtpfb",
+    "shop_by_category_zcECAM"
+  ]
+}

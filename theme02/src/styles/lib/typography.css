@@ -1,0 +1,202 @@
+body,html {
+  font-family:"acumin-pro", sans-serif;
+  @apply scroll-smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  @apply uppercase;
+
+  strong {
+    @apply font-heading;
+  }
+
+  &.custom-heading {
+    a {
+      @apply underline hover:text-primary-3 transition-all;
+    }
+  }
+}
+
+h1,
+.h1 {
+  @apply text-[64px] leading-[90%] tracking-[2.56px] lg:tracking-[4.4px] font-light lg:text-[110px];
+
+  &.custom-heading {
+    a {
+      @apply font-heading text-[64px] leading-[90%] tracking-[2.56px] lg:tracking-[4.4px] font-light lg:text-[110px];
+    }
+  }
+}
+
+h1 a,
+.h1 a {
+  @apply text-[64px] leading-[90%] tracking-[2.56px] lg:tracking-[4.4px] font-light lg:text-[110px] underline hover:text-primary-3 transition-all
+}
+
+h2,
+.h2 {
+  @apply text-[52px] leading-[90%] tracking-[2.08px] lg:tracking-[2.56px] font-light lg:text-[64px];
+
+  &.custom-heading {
+    a {
+      @apply font-heading text-[52px] leading-[90%] tracking-[2.08px] lg:tracking-[2.56px] font-light lg:text-[64px];
+    }
+  }
+}
+
+h2 a,
+.h2 a {
+  @apply text-[52px] leading-[90%] tracking-[2.08px] lg:tracking-[2.56px] font-light lg:text-[64px] underline hover:text-primary-3 transition-all
+}
+
+h3,
+.h3 {
+  @apply text-[44px] leading-[90%] tracking-[1.76px] lg:tracking-[2.24px] font-light lg:text-[56px];
+
+  &.custom-heading {
+    a {
+      @apply font-heading text-[44px] leading-[90%] tracking-[1.76px] lg:tracking-[2.24px] font-light lg:text-[56px];
+    }
+  }
+}
+
+h3 a,
+.h3 a {
+  @apply text-[44px] leading-[90%] tracking-[1.76px] lg:tracking-[2.24px] font-light lg:text-[56px] underline hover:text-primary-3 transition-all
+}
+
+h4,
+.h4 {
+  @apply text-[36px] leading-[90%] tracking-[1.44px] lg:tracking-[1.92px] font-light lg:text-[48px];
+
+  &.custom-heading {
+    a {
+      @apply font-heading text-[36px] leading-[90%] tracking-[1.44px] lg:tracking-[1.92px] font-light lg:text-[48px];
+    }
+  }
+}
+
+h4 a,
+.h4 a {
+  @apply text-[36px] leading-[90%] tracking-[1.44px] lg:tracking-[1.92px] font-light lg:text-[48px] underline hover:text-primary-3 transition-all;
+}
+
+h5,
+.h5 {
+  @apply text-[28px] leading-[90%] tracking-[1.12px] lg:tracking-[1.44px] font-bold lg:text-[36px];
+
+  &.custom-heading {
+    a {
+      @apply font-heading text-[28px] leading-[90%] tracking-[1.12px] lg:tracking-[1.44px] font-bold lg:text-[36px];
+    }
+  }
+}
+
+h5 a,
+.h5 a {
+  @apply text-[28px] leading-[90%] tracking-[1.12px] lg:tracking-[1.44px] font-bold lg:text-[36px] underline hover:text-primary-3 transition-all
+}
+
+h6,
+.h6 {
+  @apply text-[20px] leading-[90%] tracking-[.8px] lg:tracking-[.96px] font-bold lg:text-[24px];
+
+  &.custom-heading {
+    a {
+      @apply font-heading text-[20px] leading-[90%] tracking-[.8px] lg:tracking-[.96px] font-bold lg:text-[24px];
+    }
+  }
+}
+
+h6 a,
+.h6 a {
+  @apply text-[20px] leading-[90%] tracking-[.8px] lg:tracking-[.96px] font-bold lg:text-[24px] underline hover:text-primary-3 transition-all
+}
+
+.p,
+p {
+  @apply leading-[1.5rem];
+}
+
+.sub-lg {
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  @apply text-[19px] lg:text-[21px] leading-[120%] tracking-[0.76px] lg:tracking-[0.84px] font-semibold;
+}
+
+.sub-reg {
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  @apply text-[17px] lg:text-[19px] leading-[120%] tracking-[0.68px] lg:tracking-[0.76px] font-semibold;
+}
+
+.sub-sm {
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  @apply text-[15px] lg:text-[17px] leading-[120%] tracking-[0.6px] lg:tracking-[0.68px] font-semibold;
+}
+
+.sub-xs {
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  @apply text-[15px] leading-[18px] tracking-[0.6px] lg:tracking-[0.68px] font-semibold;
+}
+
+.text-lg {
+  @apply text-[17px] lg:text-[18px] leading-[130%];
+}
+
+.text-reg {
+  @apply text-[15px] lg:text-[16px] leading-[130%];
+}
+
+.text-sm {
+  @apply text-[13px] lg:text-[14px] leading-[130%];
+}
+
+.text-xs {
+  @apply text-[12px] lg:text-[13px] leading-[130%];
+}
+
+p,
+a,
+textarea,
+input,
+label,
+div {
+  font-family:"acumin-pro", sans-serif;
+  @apply text-reg;
+}
+
+a.content-link {
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+}
+
+a.content-link-dark {
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.p-inherit p {
+  color: inherit;
+}
+
+.custom-content {
+  a {
+    @apply underline hover:text-primary-3 transition-all;
+  }
+
+  ul {
+    @apply list-disc pl-4;
+  }
+
+  ol {
+    @apply list-decimal pl-4;
+  }
+}

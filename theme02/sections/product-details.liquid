@@ -1,0 +1,389 @@
+{%- liquid
+  assign blocks = section.blocks
+
+  assign bg_color = section.settings.bg_color
+
+  case bg_color
+    when 'bg-white'
+      assign value_prop_bg = 'bg-primary-6'
+    when 'bg-grey-1'
+      assign value_prop_bg = 'bg-primary-1'
+    when 'bg-primary-1'
+      assign value_prop_bg = 'bg-primary-6'
+  endcase
+-%}
+
+{%- if blocks.size > 0 -%}
+  <div
+    id="section-{{- section.id -}}"
+    class="product-details {{ bg_color }}"
+    data-section-type="product-details">
+    <div class="max-w-[1920px] mx-auto px-4 pt-12 pb-10 lg:px-12 lg:py-16">
+      <div class="flex flex-col lg:flex-row justify-center lg:items-start lg:gap-10 gap-6">
+        {% if section.settings.img_1 != blank or section.settings.img_2 != blank and section.settings.img_3 != blank and section.settings.img_4 != blank %}
+        <div class="flex-grow {% if section.settings.img_2 != blank and section.settings.img_3 != blank and section.settings.img_4 != blank %}grid grid-cols-2 grid-rows-2 gap-4{% endif %} {% if section.settings.img_1 == blank %}hidden{% endif %}">
+          {% if section.settings.img_2 == blank
+            or section.settings.img_3 == blank
+            or section.settings.img_4 == blank %}
+            <img
+              src="{{ section.settings.img_1 | image_url: width: 816 }}"
+              class="w-full h-full object-cover"
+              alt="{{ section.settings.img_1 .alt | default: title }}" />
+          {% else %}
+            <img
+              src="{{ section.settings.img_1 | image_url: width: 400 }}"
+              class="w-full h-full object-cover"
+              alt="{{ section.settings.img_1 .alt | default: title }}" />
+            <img
+              src="{{ section.settings.img_2 | image_url: width: 400 }}"
+              class="w-full h-full object-cover"
+              alt="{{ section.settings.img_2.alt | default: title }}" />
+            <img
+              src="{{ section.settings.img_3 | image_url: width: 400 }}"
+              class="w-full h-full object-cover"
+              alt="{{ section.settings.img_3.alt | default: title }}" />
+            <img
+              src="{{ section.settings.img_4 | image_url: width: 400 }}"
+              class="w-full h-full object-cover"
+              alt="{{ section.settings.img_4.alt | default: title }}" />
+          {% endif %}
+        </div>
+        {% endif %}
+        <div class="flex-1 flex flex-col gap-y-6 lg:min-w-[488px] hello">
+          {% if section.settings.value_icon_1 != blank or section.settings.value_icon_2 != blank %}
+            <div class="flex lg:justify-between justify-evenly {{ value_prop_bg }} lg:gap-6 gap-3 lg:p-5 p-2.5 rounded-md">
+              {% if section.settings.value_icon_1 != blank and section.settings.value_title_1 != blank %}
+                <div class="flex flex-col lg:flex-row justify-center items-center gap-3">
+                  <img src="{{ section.settings.value_icon_1 | image_url: width: 40 }}" alt="{{ section.settings.value_icon_1.alt | default: title }}" />
+                  <div class="prop-description-container max-w-[160px] lg:w-[160px] lg:text-left text-center">
+                    <div class="sub-sm mb-1">{{ section.settings.value_title_1 }}</div>
+                    <div class="text-xs">{{ section.settings.value_description_1 }}</div>
+                  </div>
+                </div>
+              {% endif %}
+              {% if section.settings.value_icon_2 != blank and section.settings.value_title_2 != blank %}
+                <div class="flex flex-col lg:flex-row justify-center items-center gap-3">
+                  <img src="{{ section.settings.value_icon_2 | image_url: width: 40 }}" alt="{{ section.settings.value_icon_2.alt | default: title }}" />
+                  <div class="prop-description-container max-w-[160px] lg:w-[160px] lg:text-left text-center">
+                    <div class="sub-sm mb-1">{{ section.settings.value_title_2 }}</div>
+                    <div class="text-xs">{{ section.settings.value_description_2 }}</div>
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+          {%- for block in blocks -%}
+            <div data-accordion>
+              <div class="py-4 px-6 cursor-pointer rounded-[20px] border-black border bg-white" data-accordion-title>
+                <div class="flex justify-between items-center">
+                  <p class="sub-lg">{{ block.settings.title }}</p>
+                  <div data-accordion-arrow>{%- render 'icon-chevron-down' -%}</div>
+                </div>
+                {%- if forloop.length > 0 -%}
+                  <div data-accordion-content class="{% if forloop.first %}expanded{% endif -%}">
+                    <div class="flex flex-row lg:gap-4 gap-2 flex-wrap {% if block.settings.text_alignment == 'text-left' %}justify-start{% else %}justify-center{% endif %}
+highlight-container">
+                      {% if block.settings.highlight_icon_1 != blank and block.settings.highlight_text_1 != blank %}
+                        <div class="custom-highlight bg-primary-4 flex rounded-full py-1 lg:px-4 px-2">
+                          <img class="w-[24px] h-[24px]" src="{{ block.settings.highlight_icon_1 | image_url: width: 24 }}" alt="{{ block.settings.highlight_icon_1.alt | default: title }}" />
+                          <div class="pt-[1px]">{{ block.settings.highlight_text_1 }}</div>
+                        </div>
+                      {% endif %}
+                      {% if block.settings.highlight_icon_2 != blank and block.settings.highlight_text_2 != blank %}
+                        <div class="custom-highlight bg-primary-4 flex rounded-full py-1 px-4">
+                          <img class="w-[24px] h-[24px]" src="{{ block.settings.highlight_icon_2 | image_url: width: 24 }}" alt="{{ block.settings.highlight_icon_2.alt | default: title }}" />
+                          <div class="pt-[1px]">{{ block.settings.highlight_text_2 }}</div>
+                        </div>
+                      {% endif %}
+                      {% if block.settings.highlight_icon_3 != blank and block.settings.highlight_text_3 != blank %}
+                        <div class="custom-highlight bg-primary-4 flex rounded-full py-1 px-4">
+                          <img class="w-[24px] h-[24px]" src="{{ block.settings.highlight_icon_3 | image_url: width: 24 }}" alt="{{ block.settings.highlight_icon_3.alt | default: title }}" />
+                          <div class="pt-[1px]">{{ block.settings.highlight_text_3 }}</div>
+                        </div>
+                      {% endif %}
+                    </div>
+                    <div class="custom-content text-black {% if block.settings.text_alignment == 'text-left' %}text-left{% else %}text-center{% endif %}">
+                      {% if block.settings.description != blank %}
+                      <div class="description-container">
+                        {{ block.settings.description }}
+                      </div>
+                    {% endif %}
+                    </div>
+                    {% if block.settings.review_name_1 != blank or block.settings.review_name_2 != blank %}
+                    <div class="review-content text-black lg:pt-4 pt-6 {% if block.settings.text_alignment == 'text-left' %}text-left{% else %}text-center{% endif %}">
+                      {% if block.settings.review_name_1 != blank and block.settings.review_text_1 != blank %}
+                      <div class="flex flex-col {% if block.settings.text_alignment == 'text-left' %}item-start{% else %}items-center{% endif %} gap-2">
+                        {% render 'icon-5-stars' %}
+                        <div>
+                          {{ block.settings.review_name_1 }}  
+                        </div>
+                        <div>
+                          {{ block.settings.review_text_1 }}
+                        </div>
+                      </div>
+                      {% endif %}
+                      {% if block.settings.review_name_2 != blank and block.settings.review_text_2 != blank %}
+                      <div class="flex flex-col {% if block.settings.text_alignment == 'text-left' %}item-start{% else %}items-center{% endif %} gap-2 lg:mt-4 mt-6">
+                        {% render 'icon-5-stars' %}
+                        <div>
+                          {{ block.settings.review_name_2 }}  
+                        </div>
+                        <div>
+                          {{ block.settings.review_text_2 }}
+                        </div>
+                      </div>
+                      {% endif %}
+                      {% if block.settings.review_name_1 != blank or block.settings.review_name_2 != blank %}
+                      {% if block.settings.review_text_1 != blank or block.settings.review_text_2 != blank %}
+                      <a href="#yotpo-reviews-main-widget" class="button button--secondary-dark !max-w-none mt-4">See All Reviews</a>
+                      {% endif %}
+                      {% endif %}
+                    </div>
+                    {% endif %}
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+<style type="text/css">
+  #section-{{- section.id -}} {
+    margin-bottom: {{- section.settings.margin_mobile | append: 'px' -}};
+  }
+
+  @media (min-width: 1025px) {
+    #section-{{- section.id -}} {
+      margin-bottom: {{- section.settings.margin_desktop | append: 'px' -}};
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Product Details",
+    "settings": [
+      {
+        "type": "select",
+        "id": "bg_color",
+        "label": "Background Color",
+        "options": [
+          {
+            "value": "bg-white",
+            "label": "White"
+          },
+          {
+            "value": "bg-grey-1",
+            "label": "Grey"
+          },
+          {
+            "value": "bg-primary-1",
+            "label": "Ice Blue"
+          }
+        ],
+        "default": "bg-white"
+      },
+      {
+        "type": "image_picker",
+        "id": "img_1",
+        "label": "Details Image 1",
+        "info": "Recommended 400 x 400"
+      },
+      {
+        "type": "image_picker",
+        "id": "img_2",
+        "label": "Details Image 2",
+        "info": "Recommended 400 x 400"
+      },
+      {
+        "type": "image_picker",
+        "id": "img_3",
+        "label": "Details Image 3",
+        "info": "Recommended 400 x 400"
+      },
+      {
+        "type": "image_picker",
+        "id": "img_4",
+        "label": "Details Image 4",
+        "info": "Recommended 400 x 400"
+      },
+      {
+        "type": "header",
+        "content": "Value Prop 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "value_icon_1",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "value_title_1",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "value_description_1",
+        "label": "Description"
+      },
+      {
+        "type": "header",
+        "content": "Value Prop 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "value_icon_2",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "value_title_2",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "value_description_2",
+        "label": "Description"
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "margin_desktop",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "margin_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "type": "accordion",
+        "name": "Accordion",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "select",
+            "id": "text_alignment",
+            "label": "Text alignment",
+            "options": [
+              {
+                "value": "text-left",
+                "label": "Left"
+              },
+              {
+                "value": "text-center",
+                "label": "Center"
+              }
+            ],
+            "default": "text-left"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "header",
+            "content": "Highlight Text 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "highlight_icon_1",
+            "label": "Highlight Icon"
+          },
+          {
+            "type": "text",
+            "id": "highlight_text_1",
+            "label": "Highlight Text"
+          },
+          {
+            "type": "header",
+            "content": "Highlight Text 2"
+          },
+          {
+            "type": "image_picker",
+            "id": "highlight_icon_2",
+            "label": "Highlight Icon"
+          },
+          {
+            "type": "text",
+            "id": "highlight_text_2",
+            "label": "Highlight Text"
+          },
+          {
+            "type": "header",
+            "content": "Highlight Text 3"
+          },
+          {
+            "type": "image_picker",
+            "id": "highlight_icon_3",
+            "label": "Highlight Icon"
+          },
+          {
+            "type": "text",
+            "id": "highlight_text_3",
+            "label": "Highlight Text"
+          },
+          {
+            "type": "header",
+            "content": "Product Review 1"
+          },
+          {
+            "type": "text",
+            "id": "review_name_1",
+            "label": "Reviewer Name"
+          },
+          {
+            "type": "text",
+            "id": "review_text_1",
+            "label": "Review"
+          },
+          {
+            "type": "header",
+            "content": "Product Review 2"
+          },
+          {
+            "type": "text",
+            "id": "review_name_2",
+            "label": "Reviewer Name"
+          },
+          {
+            "type": "text",
+            "id": "review_text_2",
+            "label": "Review"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Details"
+      }
+    ]
+  }
+{% endschema %}

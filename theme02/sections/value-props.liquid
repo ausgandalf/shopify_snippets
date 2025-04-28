@@ -1,0 +1,103 @@
+{%-liquid
+  assign blocks = section.blocks
+-%}
+
+{%- if blocks.size > 0 -%}
+<div id="section-{{- section.id -}}" class="product-value-props lg:border-b lg:border-grey-2" data-section-type="product-value-props">
+  <div class="max-w-[1920px] mx-auto pt-2 lg:px-12 lg:py-10">
+    <div class="flex flex-col lg:flex-row lg:justify-center">
+      {%- for block in blocks -%}
+        <div class="flex-1 first:border-t border-b border-grey-2 lg:first:border-t-0 lg:border-b-0 lg:border-r lg:last:border-r-0 lg:px-4 lg:first:pl-0 lg:last:pr-0">
+          <div class="flex flex-row lg:flex-col gap-x-6 gap-y-4 lg:items-center lg:max-w-[338px] p-6 {% if block.settings.description == blank %}items-center{% endif %}">
+            {%- if block.settings.icon != blank -%}
+              <div class="min-w-8 min-h-8 w-8 h-8 lg:w-12 lg:h-12">
+                <img src="{{ block.settings.icon | image_url }}" alt="{{ block.settings.icon.alt }}" class="inline-block w-full h-full" />
+              </div>
+            {%- endif -%}
+            <div class="flex flex-col gap-y-1 lg:gap-y-2 text-start lg:text-center">
+              <h1 class="h6">{{ block.settings.title }}</h1>
+              <div class="custom-content text-grey-5 lg:text-black">
+                {{ block.settings.description }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+{%- endif -%}
+
+<style type="text/css">
+  #section-{{- section.id -}} {
+    margin-bottom: {{- section.settings.margin_mobile | append: 'px' -}};
+  }
+
+  @media (min-width: 1025px) {
+    #section-{{- section.id -}} {
+      margin-bottom: {{- section.settings.margin_desktop | append: 'px' -}};
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Product Value Props",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "margin_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin Bottom - Mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "value-prop",
+      "name": "Value Prop",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon",
+          "info": "Recommended dimensions: SVG 48 x 48px"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Value Props"
+    }
+  ]
+}
+{% endschema %}

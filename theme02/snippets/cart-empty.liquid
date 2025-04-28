@@ -1,0 +1,13 @@
+<div class="{% if showTitle != false %}min-h-[50vh]{% else %}h-full{% endif %} flex justify-center items-center">
+  <div class="w-fit flex flex-col justify-center items-center">
+    {% unless showTitle == false %}
+      {%- render 'icon-cart-empty' -%}
+    {% endunless %}
+    <h6 class="my-4">{{ 'sections.cart.empty' | t }}</h6>
+    {% if customer.tags contains 'wholesale-customer' %}
+    <a href="{{ settings.wholesale_continue_collection.url | default: '/' }}" class="button button--secondary-dark w-full block !max-w-none">{{ 'general.continue_shopping' | t }}</a>  
+    {% else %}
+    <a href="{{ settings.continue_collection.url | default: '/' }}" class="button button--secondary-dark w-full block !max-w-none">{{ 'general.continue_shopping' | t }}</a>
+    {% endif %}
+  </div>
+</div>

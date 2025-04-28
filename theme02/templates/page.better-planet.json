@@ -1,0 +1,451 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "172831679152927cea": {
+      "type": "apps",
+      "blocks": {
+        "videowise_video_platform_ugc_videowise_page_widgets_3RzNMP": {
+          "type": "shopify://apps/videowise-video-commerce/blocks/videowise-page-widgets/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+          "settings": {
+            "videowise_embed": "<div class=\"videowise-background videowise-background-component_670408cd0b92330033527210\" data-widget-id=\"670408cd0b92330033527210\">\n<video fetchpriority=\"high\" preload=\"none\" width=\"100%\" height=\"auto\" playsinline=\"true\" muted=\"true\" autoplay=\"true\" loop=\"\" src=\"https://cdn2.videowise.com/custom-videos/videos/1728317786047_28147eef-143d-4564-99d6-0e393aa40529.mp4\">\n  <source src=\"https://cdn2.videowise.com/custom-videos/videos/1728317732144_891a1adc-9b49-43a2-bfbe-807226d0a7ce.mp4\" type=\"video/mp4\"> \n    \n</source></video>\n</div>\n<script src=\"https://assets.videowise.com/videowise-bg.js.gz\">\n</script>"
+          }
+        }
+      },
+      "block_order": [
+        "videowise_video_platform_ugc_videowise_page_widgets_3RzNMP"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "hero_BYe6gL": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/Better_Planet.jpg",
+        "image_mobile": "shopify://shop_images/Better_Planet_Mobile_Hero_Image.png",
+        "subheading": "",
+        "heading": "Let’s green the planet together!",
+        "heading_mobile": "Let’s plant together!",
+        "heading_type": "h1",
+        "copy": "<p>Simply post on social media with #BetterPlanet to plant trees and make a difference. </p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "Plant trees now",
+        "cta_url_1": "#shopify-section-template--16232656601199__shop_by_category_DzQmMq",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "Shop now",
+        "cta_url_2": "shopify://collections/best-sellers",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "fifty_fifty_dRMU46": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "<strong>Where we plant</strong>",
+        "heading_style": "h2",
+        "description": "We’ve planted over 1.5 million trees in National Forests and cities throughout the country. Every tree makes a difference, and together, we’re growing a brighter, greener future!",
+        "featured_img": "shopify://shop_images/mobile-map.png",
+        "column_img": "right",
+        "enable_mute": false,
+        "enable_pause": false,
+        "enable_reset": false,
+        "display_badge": false,
+        "cta_url": "/",
+        "cta_text": "",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "shop_by_category_DzQmMq": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_Fr383a": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/you_post._we_plant.jpg",
+            "mobile_image": "shopify://shop_images/2_903b6368-9638-46ea-8050-baf94a7803ff.jpg",
+            "title": "You Post, We Plant",
+            "description": "<p>No purchase necessary—just spread the word!</p><p>Post on social media with #BetterPlanet, and we’ll <strong>plant 2 trees </strong>on your behalf. </p>",
+            "cta_url": "https://www.instagram.com/whitelabel/"
+          }
+        },
+        "list_item_f3j3F3": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/250mlGirl.jpg",
+            "mobile_image": "shopify://shop_images/1_813cc9a0-2334-445b-8cb7-e91e949b6d98.jpg",
+            "title": "Subscribe & Thrive",
+            "description": "<p><strong>Start a monthly subscription</strong> of Whitelabel starting at $26.10 and we’ll plant a tree. </p><p>Enjoy 10% off as a subscriber and more!</p>",
+            "cta_url": "https://whitelabelisbetter.com/pages/subscribe"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_Fr383a",
+        "list_item_f3j3F3"
+      ],
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "<strong>find your perfect way to plant </strong>",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
+    "product_recommendations_EHNya9": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "<strong>Subscribe to make a difference</strong>",
+        "cta_text": "SHOP ALL",
+        "cta_url": "shopify://collections/original-water",
+        "recommended_collection": "original-water",
+        "secondary_text": ""
+      }
+    },
+    "fifty_fifty_hAJwKg": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "<strong>Join THE COMMUNITY #BETTERPLANET</strong>",
+        "heading_style": "h2",
+        "description": "Helping the planet doesn’t require a big wallet—just a big heart. Planting with us is completely free. Post on social media with #BetterPlanet, and we’ll plant 2 trees on your behalf.",
+        "featured_img": "shopify://shop_images/Collage_Better_Planet.svg",
+        "column_img": "right",
+        "enable_mute": false,
+        "enable_pause": false,
+        "enable_reset": false,
+        "display_badge": false,
+        "cta_url": "https://www.instagram.com/whitelabel/",
+        "cta_text": "Plant with us",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "hero_kj9XpY": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/Better_Planet_Desktop_Hero_Image.jpg",
+        "image_mobile": "shopify://shop_images/Better_Planet_Mobile_Hero_Image.png",
+        "subheading": "",
+        "heading": "1.5 Million Trees PLANTED",
+        "heading_mobile": "1.5 Million Trees Planted",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "IN NATIONAL FORESTS",
+        "cta_url_1": "shopify://blogs/blog/meet-the-national-forests-where-whitelabel-is-planting-trees",
+        "cta_type_1": "content-link-dark",
+        "cta_text_2": "IN URBAN CENTERS",
+        "cta_url_2": "shopify://blogs/blog/our-tree-planting-efforts-are-growing",
+        "cta_type_2": "content-link-dark",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "four_col_KDFzJW": {
+      "type": "four-col",
+      "blocks": {
+        "text_pPjcWz": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/Tree_planting_with_your_first_order.svg",
+            "icon_title": "1 Million Acres",
+            "icon_text": "in need of reforestation across our National Forests."
+          }
+        },
+        "text_VErTKT": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/ton_icon_c5b4298a-f5fe-410d-8400-63592c11f4be.svg",
+            "icon_title": "1 ton of co2",
+            "icon_text": "removed from the air over the lifetime of 2 trees."
+          }
+        },
+        "text_BTJ8Xj": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/water_drop_icon_4c32f746-9b98-4067-a6a1-d0e39bd770de.svg",
+            "icon_title": "FRESH WATER",
+            "icon_text": "for millions of Americans comes from National Forests."
+          }
+        },
+        "text_4XcEwb": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/clouds_icon_a86f2a3a-9422-48a0-82d2-f0b3c7b7af8a.svg",
+            "icon_title": "Green Cover",
+            "icon_text": "reduces the negative impacts of urban heat waves."
+          }
+        }
+      },
+      "block_order": [
+        "text_pPjcWz",
+        "text_VErTKT",
+        "text_BTJ8Xj",
+        "text_4XcEwb"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_text_color": "black",
+        "cta_url": "/",
+        "cta_text": "",
+        "button_style": "primary",
+        "block_text_color": "black",
+        "bg_color": "white",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_VAUeRG": {
+      "type": "fifty-fifty",
+      "disabled": true,
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "You post. We plant 2 trees.",
+        "heading_style": "h1",
+        "description": "For every post with Whitelabel and #BetterPlanet, we plant 2 trees in a National Forest. It couldn't be easier to make an impact.",
+        "featured_img": "shopify://shop_images/you_post._we_plant.jpg",
+        "column_img": "right",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": false,
+        "cta_url": "https://www.instagram.com/whitelabel/",
+        "cta_text": "JOIN THE COMMUNITY",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "172831122400a95b3a": {
+      "type": "apps",
+      "blocks": {
+        "videowise_video_platform_ugc_videowise_page_widgets_jkbbje": {
+          "type": "shopify://apps/videowise-video-commerce/blocks/videowise-page-widgets/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+          "settings": {
+            "videowise_embed": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_66fb168919b7923d48056c3a\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "videowise_video_platform_ugc_videowise_page_widgets_jkbbje"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "fifty_fifty_mNVgjX": {
+      "type": "fifty-fifty",
+      "disabled": true,
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "<strong>YOU POST.</strong> WE PLANT 2 TREES",
+        "heading_style": "h2",
+        "description": "For every post with Whitelabel and #BetterPlanet, we plant 2 trees in a National Forest. It couldn't be easier to make an impact.",
+        "column_img": "right",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": false,
+        "cta_url": "/",
+        "cta_text": "START PLANTING",
+        "button_style": "secondary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "hero_yfLn8w": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "subheading": "",
+        "heading": "<strong>YOU POST. </strong>WE PLANT 2 TREES",
+        "heading_mobile": "",
+        "heading_type": "h2",
+        "copy": "<p>For every post with Whitelabel and #BetterPlanet, we plant 2 trees in a National Forest. It couldn't be easier to make an impact.</p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "Start Planting",
+        "cta_url_1": "#",
+        "cta_type_1": "button button--primary-dark",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-primary-1",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "hero_EyqDtr": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/where_we_plant_desktop_final.jpg",
+        "image_mobile": "shopify://shop_images/where_we_plant_mobile_final.jpg",
+        "subheading": "",
+        "heading": "Where we plant",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "FIND THE FORESTS",
+        "cta_url_2": "shopify://blogs/blog/meet-the-national-forests-where-whitelabel-is-planting-trees",
+        "cta_type_2": "button button--primary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "two_three_up_aWRnJL": {
+      "type": "two-three-up",
+      "blocks": {
+        "cta_WKcDxj": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "Nominate a New City",
+            "link": "shopify://blogs/blog/our-tree-planting-efforts-are-growing",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/3-up_nominate_image.jpg",
+            "text_color": "text-white",
+            "button_style": "primary"
+          }
+        },
+        "cta_fx7MTp": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "Shop for a cause",
+            "link": "shopify://collections/order-online-page",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/3-up_water_image.jpg",
+            "text_color": "text-black",
+            "button_style": "secondary"
+          }
+        },
+        "cta_cLVhnN": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "Tree Planting FAQs",
+            "link": "https://whitelabel.zendesk.com/hc/en-us/categories/28969170314771-Better-for-Our-Planet-Trees",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/3-up_FAQ_Image.jpg",
+            "text_color": "text-white",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "cta_WKcDxj",
+        "cta_fx7MTp",
+        "cta_cLVhnN"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "172831679152927cea",
+    "hero_BYe6gL",
+    "fifty_fifty_dRMU46",
+    "shop_by_category_DzQmMq",
+    "product_recommendations_EHNya9",
+    "fifty_fifty_hAJwKg",
+    "hero_kj9XpY",
+    "four_col_KDFzJW",
+    "fifty_fifty_VAUeRG",
+    "172831122400a95b3a",
+    "fifty_fifty_mNVgjX",
+    "hero_yfLn8w",
+    "hero_EyqDtr",
+    "two_three_up_aWRnJL",
+    "main"
+  ]
+}

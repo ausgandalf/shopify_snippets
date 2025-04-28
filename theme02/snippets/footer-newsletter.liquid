@@ -1,0 +1,42 @@
+{%- liquid
+  assign klaviyo_list_id = section.settings.klaviyo_list_id
+  -%}
+<form class="newsletter-form text-white" data-email-signup-form data-list-id="{{ klaviyo_list_id }}">
+  <input type="hidden" name="contact[tags]" value="newsletter">
+  <div class="input-wrap relative w-full md:!max-w-[480px]">
+    <input
+      id="footer_newsletter_email"
+      class="!w-full !border-black !text-black !border-[2px] !bg-transparent !leading-[22px]"
+      type="email"
+      name="contact[email]"
+      data-error-message="Please enter a valid email address"
+      value="{{ form.email }}"
+      aria-required="true"
+      autocorrect="off"
+      autocapitalize="off"
+      autocomplete="email"
+      placeholder=" "
+      required
+      data-email-signup-address
+    >
+    <label class="!text-black" for="footer_newsletter_email">
+      Enter Email Address
+    </label>
+    <p class="mt-3 input-error text-error hidden"
+      data-email-signup-error>
+      {{ section.settings.error_message }}
+    </p>
+    <div class="absolute right-2 top-2">
+      <button aria-label="Submit Email" type="submit" class="button button--secondary-dark button-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.136 3.54504L20.2955 10.7045C20.7348 11.1438 20.7348 11.8562 20.2955 12.2955L13.136 19.4549L11.545 17.864L16.784 12.625H3.375V10.375H16.784C16.784 10.375 12.5042 6.09519 11.545 5.13603L13.136 3.54504Z" fill="currentColor"/>
+          </svg>
+          <span class="hidden">Submit Email</span>
+      </button>
+    </div>
+  </div>
+</form>
+<p class="mx-auto text-success hidden"
+  data-email-signup-success>
+  {{ section.settings.success_message }}
+</p>

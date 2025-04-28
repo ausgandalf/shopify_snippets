@@ -1,0 +1,83 @@
+.focus-link-dark {
+  @apply underline hover:text-primary-1 transition-all;
+}
+.focus-link {
+  @apply underline hover:text-primary-3 transition-all;
+}
+
+.content-link {
+  @apply no-underline font-bold text-[20px] tracking-[0.8px] leading-[90%] px-1 pb-[3px] hover:cursor-pointer;
+}
+
+.link-animated {
+ animation: leave 0.4s forwards;
+}
+
+.content-link-dark {
+  @apply no-underline font-bold text-[20px] tracking-[0.8px] leading-[90%] px-1 pb-[3px] text-white hover:cursor-pointer;
+}
+
+.dark-link-animated {
+  animation: darkleave 0.4s forwards;
+}
+
+.content-link:not(:disabled):hover {
+  animation: hover 0.4s forwards;
+}
+
+.content-link-dark:not(:disabled):hover {
+  animation: darkhover 0.4s forwards;
+}
+
+.link-hover:hover {
+  @apply text-primary-3;
+}
+
+@keyframes hover {
+  from {
+      box-shadow: inset 0 0 0 0.01px var(--primary-1);
+  }
+  to {
+      box-shadow: inset 12.79928em 0 0 0.01px var(--primary-1);
+  }
+}
+
+@keyframes tilehover {
+  from {
+      box-shadow: inset 0 0 0 0.01px var(--primary-1);
+  }
+  to {
+      box-shadow: inset 60.79928em 0 0 0.01px var(--primary-1);
+  }
+}
+
+@keyframes leave {
+  from {
+      box-shadow: inset -12.79928em 0 0 0.01px var(--primary-1);
+  }
+  to {
+      box-shadow: inset 0 0 0 0.01px var(--primary-1);
+  }
+}
+
+@keyframes darkhover {
+  from {
+      box-shadow: inset 0 0 0 0.01px var(--primary-3);
+  }
+  to {
+      box-shadow: inset 12.79928em 0 0 0.01px var(--primary-3);
+  }
+}
+
+@keyframes darkleave {
+  from {
+      box-shadow: inset -12.79928em 0 0 0.01px var(--primary-3);
+  }
+  to {
+      box-shadow: inset 0 0 0 0.01px var(--primary-3);
+  }
+}
+
+.content-link-light:not(:disabled):hover {
+  background-position: 0 100%;
+}

@@ -1,0 +1,21 @@
+{% render 'side-cart' %}
+
+{% schema %}
+  {
+    "name": "Side Cart",
+    "settings": [
+      {
+        "type": "text",
+        "id": "rebuy_upsell_id",
+        "label": "Rebuy Sidecart Upsell Widget ID",
+        "default": "189101"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_rebuy",
+        "label": "Display Rebuy Widget in Sidecart",
+        "default": true
+      }
+    ]
+  }
+  {% endschema %}

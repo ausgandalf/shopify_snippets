@@ -1,0 +1,33 @@
+.main-collection .metafield-rich_text_field p {
+  @apply font-normal text-sm text-grey-4;
+}
+
+.main-collection .metafield-rich_text_field a {
+  @apply font-normal text-sm text-grey-4 underline hover:text-primary-3 transition-all;;
+}
+
+.testimonial-block .metafield-rich_text_field p {
+  @apply font-normal text-sm text-grey-4;
+}
+
+.testimonial-block .metafield-rich_text_field a {
+  @apply font-normal text-sm text-grey-4 underline hover:text-primary-3 transition-all;;
+}
+
+.collection-section .collection-border:not(:last-child) {
+  @apply border-b border-black;
+}
+
+.collection-banner {
+  background-image: var(--bg_m);
+}
+
+.product-img-container {
+  aspect-ratio: 4/4.75;
+}
+
+@media screen and (min-width: 768px) {
+  .collection-banner {
+    background-image: var(--bg);
+  }
+}

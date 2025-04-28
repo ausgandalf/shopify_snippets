@@ -1,0 +1,50 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://use.typekit.net/kks2uzk.css');
+
+@import '../styles/lib/resets.css';
+@import '../styles/lib/typography.css';
+@import '../styles/lib/tiny-slider.css';
+@import '../styles/lib/base.css';
+
+@import '../styles/components/buttons.css';
+@import '../styles/components/links.css';
+@import '../styles/components/radios.css';
+@import '../styles/components/inputs.css';
+@import '../styles/components/alerts.css';
+@import '../styles/components/selects.css';
+@import '../styles/components/scrollbar.css';
+@import '../styles/components/side-cart.css';
+@import '../styles/components/accordions.css';
+@import '../styles/components/product-tile.css';
+@import '../styles/components/yotpo.css';
+@import '../styles/components/pagination.css';
+
+@import '../styles/sections/header.css';
+@import '../styles/sections/customer.css';
+@import '../styles/sections/column-rte.css';
+@import '../styles/sections/general-content.css';
+@import '../styles/sections/shop-by-category.css';
+@import '../styles/sections/fifty-fifty.css';
+@import '../styles/sections/four-col.css';
+@import '../styles/sections/product-recommendations.css';
+@import '../styles/sections/value-props.css';
+@import '../styles/sections/product-details.css';
+@import '../styles/sections/ugc-gallery.css'; 
+@import '../styles/sections/rebuy-order-history.css';
+@import '../styles/sections/side-cart.css'; 
+
+@import '../styles/page/recharge.css';
+@import '../styles/sections/customer.css';
+
+@import '../styles/page/collabs.css';
+@import '../styles/page/recharge.css';
+@import '../styles/page/cart.css';
+@import '../styles/page/yotpo.css';
+
+@import '../styles/templates/main-collection.css';
+@import '../styles/templates/product.css';
+@import '../styles/templates/main-article.css';
+@import '../styles/templates/main-blog.css';

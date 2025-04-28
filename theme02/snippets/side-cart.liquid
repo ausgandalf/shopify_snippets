@@ -1,0 +1,94 @@
+{% comment %}
+  Renders cart drawer
+
+  Usage:
+  {% render 'side-cart' %}
+{% endcomment %}
+{%-liquid
+  assign points = cart.total_price | divided_by: 100 | floor
+-%}
+<side-cart
+  id="SideCart"
+  class="side-cart fixed z-[1000000] left-0 top-0 w-screen h-full flex justify-end invisible {% if cart == empty %} is-empty{% endif %}"
+>
+  <div class="side-cart__overlay transition-all bg-black opacity-50 fixed inset-0" data-cart-overlay></div>
+
+  <div
+    class="side-cart__content flex flex-col overflow-hidden h-full max-w-[21rem] lg:max-w-[27rem] w-full bg-white translate-x-full transition-transform"
+    role="dialog"
+    aria-modal="true"
+    aria-label="{{ 'sections.cart.title' | t }}"
+    tabindex="-1"
+  >
+    <div class="relative flex items-center border-b border-black gap-x-3 p-4" data-cart-header>
+      <h5 class="side-cart__heading">
+        {{ 'sections.cart.title' | t -}}
+      </h5>
+
+      {%- unless cart.empty? -%}
+      <a
+        href="{{ routes.cart_url }}"
+        id="SideCart-CartPage"
+        class="focus-link text-sm mt-2"
+      >
+        View Full Cart
+      </a>
+      {%- endunless -%}
+
+      <button
+        class="side-cart__close absolute top-4 right-4 lg:right-6 lg:top-6 w-6 h-6 link-hover flex justify-center items-center"
+        type="button"
+        data-cart-close
+      >
+        {% render 'icon-close' %}
+        <span class="sr-only">Close</span>
+      </button>
+    </div>
+
+    <div class="grow h-full overflow-y-auto overflow-x-hidden">
+      <side-cart-items class="{% if cart == empty %} is-empty{% endif %}" data-cart-items>
+        
+        {% render 'free-shipping-bar', text_classes: 'text-center', padding_classes: 'px-4 lg:px-10' %}
+
+        {%- liquid
+          if cart.empty?
+            render 'cart-empty', showTitle: false
+          else
+            render 'side-cart-items'
+          endif
+        -%}
+      </side-cart-items>
+      {% if section.settings.display_rebuy %}
+        <div class="upsell-widget">
+          <div data-rebuy-id="{{ section.settings.rebuy_upsell_id }}"></div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div data-cart-footer>
+      <div class="{% if cart == empty %} hidden{% else %} block{% endif %}">
+        {%- if settings.rewards_text != blank -%}
+          <div class="flex justify-center py-4 px-4 lg:px-6 bg-grey-1">
+            <div class="flex items-center gap-x-2">
+              {%- render 'icon-rewards', class: 'w-6 h-6' -%}
+              <div class="text-sm custom-content rewards-text">
+                {%- capture rewards_point_html -%}{%- render 'product-reward-points', points: points -%}{%- endcapture -%}
+                {{ settings.rewards_text | replace: '[x]', rewards_point_html }}
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+        <div
+          class="side-cart__footer flex flex-col items-center px-4 py-6 lg:p-6 bg-white border-t border-grey-2"
+        >
+          <div class="flex justify-between w-full mb-4">
+            <h2 class="h6 font-heading uppercase font-bold">Subtotal</h2>
+            <h2 class="h6 font-heading font-bold">{{ cart.total_price | money }}</h2>
+          </div>
+
+          <a href="/checkout" class="button button--primary-dark !max-w-none !w-full">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</side-cart>

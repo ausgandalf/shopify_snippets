@@ -1,0 +1,54 @@
+{%-liquid
+  assign start_index = 0
+  for tag in blog.all_tags
+    if current_tags contains tag
+      assign start_index = forloop.index0
+    endif
+  endfor
+-%}
+
+<div class="border-b border-t border-black">
+  <div class="md:container relative max-sm:pl-4" data-blog-nav-container>
+    <div class="flex gap-12" data-blog-nav data-start-index={{ start_index }}>
+      <div class="py-4" data-blog-nav-item>
+        <a href="{{ blog.url }}" class="block sub-lg pb-2 px-2 whitespace-nowrap {% if current_tags == blank %}active{% endif %}">All</a>
+      </div>
+
+      {%- for tag in blog.all_tags -%}
+        {%- assign tag_handle = tag | handleize %}
+        <div class="py-4" data-blog-nav-item>
+          <a href="{{ blog.url }}/tagged/{{ tag_handle }}" class="block sub-lg pb-2 px-2 whitespace-nowrap {% if current_tags contains tag %}active{% endif %}" data-blog-nav-item>{{ tag }}</a>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    <div class="hidden md:block" data-blog-nav-controls>
+      <div class="blog-left-arrow absolute left-12 top-1/2 -translate-y-1/2 bg-white pr-10">
+      <button aria-label="previous" class="button button--secondary-dark button-arrow bg-white">
+        <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#1f1f1f" fill-rule="evenodd" d="m13.136 3.607 7.16 7.16c.439.44.439 1.151 0 1.59l-7.16 7.16-1.591-1.59 5.239-5.24H3.375v-2.25h13.409l-5.239-5.239 1.591-1.59Z" clip-rule="evenodd"></path></svg>
+        <span class="hidden">Previous</span>
+      </button>
+      </div>
+      <div class="blog-right-arrow absolute pl-10 right-12 top-1/2 -translate-y-1/2 bg-white"> 
+        <button aria-label="next" class="button button--secondary-dark button-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#1f1f1f" fill-rule="evenodd" d="m13.136 3.607 7.16 7.16c.439.44.439 1.151 0 1.59l-7.16 7.16-1.591-1.59 5.239-5.24H3.375v-2.25h13.409l-5.239-5.239 1.591-1.59Z" clip-rule="evenodd"></path></svg>
+          <span class="hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{%- schema -%}
+  {
+    "name": "Blog Navigation",
+    "settings": [
+    ],
+    "templates": ["blog"],
+    "presets": [
+      {
+        "name": "Blog Navigation"
+      }
+    ]
+  }
+{%- endschema -%}

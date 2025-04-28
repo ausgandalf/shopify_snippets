@@ -1,0 +1,129 @@
+@layer base {
+  textarea,
+  input[type='text'],
+  input[type='number'],
+  input[type='email'],
+  input[type='password'],
+  input[type='date'],
+  input[type='tel'],
+  input[type='file']{
+    @apply min-w-[20.625rem] text-[1rem] leading-[1.5rem] cursor-pointer rounded-none border border-grey-3 px-5 py-3 text-grey-4 transition-colors placeholder:text-grey-4;
+  }
+
+  .input-wrap,
+  .form-group {
+    @apply relative inline-block;
+  }
+
+  textarea:not(:disabled):hover,
+  input[type='text']:not(:disabled):hover,
+  input[type='number']:not(:disabled):hover,
+  input[type='email']:not(:disabled):hover,
+  input[type='password']:not(:disabled):hover,
+  input[type='date']:not(:disabled):hover,
+  input[type='tel']:not(:disabled):hover,
+  input[type='file']:not(:disabled):hover {
+    @apply border-black text-black;
+  }
+
+  input[type='text']:not(:disabled):active,
+  input[type='number']:not(:disabled):active,
+  input[type='email']:not(:disabled):active,
+  input[type='password']:not(:disabled):active,
+  input[type='date']:not(:disabled):active,
+  input[type='tel']:not(:disabled):active,
+  input[type='search']:not(:disabled):active,
+  textarea:not(:disabled):active,
+  input[type='text']:not(:disabled):focus-visible,
+  input[type='number']:not(:disabled):focus-visible,
+  input[type='email']:not(:disabled):focus-visible,
+  input[type='password']:not(:disabled):focus-visible,
+  input[type='date']:not(:disabled):focus-visible,
+  input[type='tel']:not(:disabled):focus-visible,
+  input[type='search']:not(:disabled):focus-visible,
+  textarea:not(:disabled):focus-visible,
+  input[type='text']:not(:disabled):focus,
+  input[type='number']:not(:disabled):focus,
+  input[type='email']:not(:disabled):focus,
+  input[type='password']:not(:disabled):focus,
+  input[type='date']:not(:disabled):focus,
+  input[type='tel']:not(:disabled):focus,
+  input[type='search']:not(:disabled):focus,
+  input[type='file']:not(:disabled):focus,
+  textarea:focus {
+    @apply border-black outline-none shadow-none;
+  }
+
+  textarea.input-invalid:not(:disabled),
+  input.input-invalid:not(:disabled),
+  input.input-invalid:not(:disabled):active,
+  input.input-invalid:not(:disabled):focus {
+    @apply border-error;
+  }
+
+  textarea:disabled,
+  input[type='text']:disabled,
+  input[type='number']:disabled,
+  input[type='email']:disabled,
+  input[type='password']:disabled,
+  input[type='date']:disabled,
+  input[type='tel']:disabled {
+    @apply cursor-not-allowed !bg-grey-1;
+  }
+
+  .input-wrap,
+  .form-group {
+    label,
+    textarea:not(:disabled):focus:placeholder-shown + label,
+    input:not(:disabled):focus:placeholder-shown + label,
+    textarea:not(:disabled):active:placeholder-shown + label,
+    input:not(:disabled):active:placeholder-shown + label {
+      @apply pointer-events-none absolute left-5 top-0 block -translate-y-1/2 bg-white px-1 text-xs font-medium transition-all;
+    }
+  }
+
+  .input-wrap,
+  .form-group {
+    input:placeholder-shown + label {
+      @apply left-5 top-1/2 bg-transparent px-0 text-base font-normal text-grey-4;
+    }
+  }
+
+  .input-wrap,
+  .form-group {
+    textarea:placeholder-shown + label {
+      @apply left-5 top-6 bg-transparent px-0 text-base font-normal text-grey-4;
+    }
+  }
+
+  .input-error {
+    @apply mt-1 flex gap-1 text-sm text-error items-center;
+  }
+
+  .input-error::before {
+    @apply inline-block h-3.5 w-3.5 bg-center bg-no-repeat content-[""];
+  }
+
+  .input-error::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7' cy='7' r='6.5' stroke='%23D32F2F' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7 4V7.5' stroke='%23D32F2F' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='7' cy='9.5' r='0.5' fill='%23D32F2F'/%3E%3C/svg%3E%0A");
+  }
+
+  .input-wrap,
+  .form-group {
+    textarea:not(:disabled):hover:placeholder-shown + label,
+    input:not(:disabled):hover:placeholder-shown + label {
+      @apply text-black;
+    }
+  }
+
+
+  .input-wrap textarea:not(:disabled):focus:placeholder-shown + label,
+  .input-wrap input:not(:disabled):focus:placeholder-shown + label {
+    @apply text-black;
+  }
+
+  .input-wrap textarea.input-invalid:not(:disabled) ~ label,
+  .input-wrap input.input-invalid:not(:disabled) ~ label {
+    @apply text-black;
+  }
+}

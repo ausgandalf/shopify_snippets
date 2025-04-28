@@ -1,0 +1,527 @@
+{%- liquid
+  assign resource = section.settings
+  assign heading = resource.heading
+  assign heading_text = heading | strip_html
+  assign heading_mobile = resource.heading_mobile | default: heading
+  assign heading_type = resource.heading_type
+  assign subheading = resource.subheading
+  assign copy = resource.copy
+
+  assign image_desktop = resource.image_desktop
+  assign image_mobile = resource.image_mobile
+  assign video_desktop = resource.video_desktop
+  assign video_mobile = resource.video_mobile
+
+  if image_mobile == blank
+    assign image_mobile = image_desktop
+  endif
+
+  assign show_overlay = resource.show_overlay
+  assign stack_on_mobile = resource.stack_on_mobile
+
+  assign cta_type_1 = resource.cta_type_1
+  assign cta_type_2 = resource.cta_type_2
+
+  assign content_color = resource.text_color
+  assign overlay_color = resource.overlay_color
+  assign text_align = resource.text_align
+  assign content_align_horizontal = resource.content_align_horizontal
+  assign content_align_vertical = resource.content_align_vertical
+
+  assign control_align_horizontal = resource.control_align_horizontal
+  assign control_align_vertical = resource.control_align_vertical
+  assign control_align_horizontal_mobile = resource.control_align_horizontal_mobile
+  assign control_align_vertical_mobile = resource.control_align_vertical_mobile
+
+  assign control_position_horizontal_class = ''
+  assign control_position_vertical_class = ''
+
+  if control_align_horizontal_mobile == 'left'
+    assign control_position_horizontal_class = 'left-4 '
+  elsif control_align_horizontal_mobile == 'center'
+    assign control_position_horizontal_class = 'left-1/2 -translate-x-1/2 '
+  elsif control_align_horizontal_mobile == 'right'
+    assign control_position_horizontal_class = 'right-4 '
+  endif
+
+  if control_align_horizontal == 'left'
+    assign control_position_horizontal_class = control_position_horizontal_class | append: 'lg:left-12 lg:right-auto lg:translate-x-0'
+  elsif control_align_horizontal == 'center'
+    assign control_position_horizontal_class = control_position_horizontal_class | append: 'lg:left-1/2 lg:-translate-x-1/2 lg:right-auto'
+  elsif control_align_horizontal == 'right'
+    assign control_position_horizontal_class = control_position_horizontal_class | append: 'lg:right-12 lg:left-auto lg:translate-x-0'
+  endif
+
+  if control_align_vertical_mobile == 'top'
+    assign control_position_vertical_class = 'top-4 '
+  elsif control_align_vertical_mobile == 'bottom'
+    assign control_position_vertical_class = 'bottom-4 '
+  endif
+
+  if control_align_vertical == 'top'
+    assign control_position_vertical_class = control_position_vertical_class | append: 'lg:top-6 lg:bottom-auto'
+  elsif control_align_vertical == 'bottom'
+    assign control_position_vertical_class = control_position_vertical_class | append: 'lg:bottom-6 lg:top-auto'
+  endif
+
+  assign wrapper_padding = 'lg:p-12'
+
+  unless show_overlay
+    assign overlay_color = ''
+    assign wrapper_padding = ''
+  endunless
+
+  assign content_vertical_class = 'justify-center'
+
+  if content_align_vertical == 'top'
+    assign content_vertical_class = 'justify-start lg:pt-0 pt-4'
+  elsif content_align_vertical == 'bottom'
+    assign content_vertical_class = 'justify-end lg:pb-0 pb-4'
+  endif
+
+  assign content_class = 'justify-center'
+
+  if content_align_horizontal == 'left'
+    assign content_class = content_class | append: ' lg:justify-start'
+  elsif content_align_horizontal == 'right'
+    assign content_class = content_class | append: ' lg:justify-end'
+  endif
+
+  assign text_align_class = 'text-left'
+  if text_align == 'center'
+    assign text_align_class = 'text-center'
+    assign button_wrapper_class = 'justify-center'
+  endif
+
+  assign stack_classes = "absolute"
+  assign copy_classes = "mb-8"
+  assign content_classes = "px-2 py-4"
+  if stack_on_mobile
+    assign stack_classes = ""
+    assign stack_classes_mobile = "lg:mt-0 mt-4"
+    assign copy_classes = "mb-6"
+    assign content_classes = "px-2 pt-8 pb-10"
+  endif
+%}
+
+  <div id="section-{{- section.id -}}" class="block" data-section-type="hero" data-section-id="{{ section.id }}">
+    <div id="hero-block-{{ section.id }}" class="bg-white section section-hero relative">
+      <div class="hero__media w-full relative {% if image_mobile == blank %} min-h-[70vh] max-h-[100vh]{% endif %}">
+        {% if image_mobile != blank %}
+          <picture>
+            {% if image_desktop != blank %}
+              <source srcset="{{- image_desktop | image_url: width: 1440 -}}" media="(min-width: 1024px)">
+            {% endif %}
+            <img class="w-full object-cover" src="{{- image_mobile | image_url: width: 800 -}}" io-img-src="{{- image_mobile | image_url: width: 800 -}}" alt="{{- image_mobile.alt |  default: heading_text -}}" >
+          </picture>
+        {% endif %}
+
+        {%- if video_desktop != blank -%}
+          <video autoplay muted playsinline loop aria-describedby="hero-description" class="{% unless image_mobile == blank %}{% if video_mobile != blank %}hidden lg:block{% endif %}{% endunless %} absolute top-0 left-0 w-full h-full object-cover transition-all duration-300"
+            poster="{{ video_desktop.preview_image | image_url: width: 1200 }}" data-inline-video id="hero-video">
+            {% for source in video_desktop.sources %}
+              <source src="{{- source.url -}}" type="{{ source.mime_type }}">
+            {% endfor %}
+          </video>
+          <div class="sr-only" id="hero-description">
+            {{- video_desktop.alt -}}
+          </div>
+        {%- endif -%}
+
+        {%- if video_mobile != blank -%}
+          <video autoplay muted playsinline loop aria-describedby="mobile-hero-description" class="lg:hidden absolute top-0 left-0 w-full h-full object-cover transition-all duration-300"
+            poster="{{ video_mobile.preview_image | image_url: width: 1200 }}" data-inline-video-mobile id="hero-video">
+            {% for source in video_mobile.sources %}
+              <source src="{{- source.url -}}" type="{{ source.mime_type }}" >
+            {% endfor %}
+          </video>
+          <div class="sr-only" id="mobile-hero-description">
+            {{- video_mobile.alt -}}
+          </div>
+        {%- endif -%}
+
+        <div class="absolute {{ control_position_vertical_class }} {{ control_position_horizontal_class }} {{ section.settings.controls_color }} flex items-center gap-x-1 z-10">
+          {%- if section.settings.enable_mute -%}
+            <button aria-label="Unmute" aria-controls="hero-video" class="hidden w-10 h-10" data-mute>{%- render 'icon-unmute', classes: "w-full h-full" -%}<span class="hidden">Unmute</span></button>
+            <button aria-label="Mute" aria-controls="hero-video" class="w-10 h-10" data-unmute>{%- render 'icon-mute', classes: "w-full h-full" -%}<span class="hidden">Mute</span></button>
+          {%- endif -%}
+          {%- if section.settings.enable_pause -%}
+            <button aria-label="Play" aria-controls="hero-video" class="hidden w-10 h-10" data-play>{%- render 'icon-play', classes: "w-full h-full" -%}<span class="hidden">Play</span></button>
+            <button aria-label="Pause" aria-controls="hero-video" class="w-10 h-10" data-pause>{%- render 'icon-pause', classes: "w-full h-full" -%}<span class="hidden">Pause</span></button>
+          {%- endif -%}
+        </div>
+      </div>
+
+      {% if subheading != blank or heading != blank or copy != blank or resource.cta_text_1 != blank or resource.cta_text_2 != blank %}
+      <div class="hero__content-wrap lg:absolute left-0 top-0 w-full h-full flex z-[1] {{ wrapper_padding }} {{ content_class }} {{ stack_classes }}">
+        <div class="relative flex flex-col lg:w-auto w-full h-full {{ content_vertical_class }} items-center lg:mx-0 mx-4 {{ stack_classes_mobile }}">
+          <div class="relative min-w-[280px] lg:w-min lg:p-12 py-4 px-2 w-full z-[2] max-h-full overflow-hidden {{ overlay_color }} {{ content_classes }} {{ text_align_class }} {{ content_color }}">
+            {%- if subheading != blank -%}
+              <h1 class="normal-case relative sub-lg z-[2] {{ content_color }}">{{- subheading -}}</h1>
+            {%- endif -%}
+
+            {%- if heading != blank -%}
+              <{{heading_type}} class="md:xl-max:text-[64px] md:xl-max:tracking-[2.56px] hidden lg:block relative z-[2] custom-heading max-w-[560px] w-max">{{- heading -}}</{{heading_type}}>
+              <{{heading_type}} class="lg:hidden relative z-[2] custom-heading">{{- heading_mobile -}}</{{heading_type}}>
+            {%- endif -%}
+
+            {%- if copy != blank -%}
+              <div class="custom-content relative text mt-4 lg:mt-6 z-[2] {{ copy_classes }} {{ content_color }}">{{- copy -}}</div>
+            {%- endif -%}
+
+            <div class="relative flex flex-wrap items-center mt-4 lg:mt-6 gap-x-6 gap-y-4 z-[2] {{ button_wrapper_class }}">
+
+              {%- if resource.cta_text_1 != blank and resource.cta_url_1 != blank -%}
+                <a class="{{ resource.cta_type_1 }} !max-w-none" href="{{- resource.cta_url_1 -}}">
+                  {{- resource.cta_text_1 -}}
+                </a>
+              {%- endif -%}
+
+              {%- if resource.cta_text_2 != blank and resource.cta_url_2 != blank -%}
+                <a class="{{ resource.cta_type_2 }} !max-w-none" href="{{- resource.cta_url_2 -}}">
+                  {{- resource.cta_text_2 -}}
+                </a>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <style type="text/css">
+    #section-{{- section.id -}} {
+      margin-bottom: {{- section.settings.margin_mobile | append: 'px' -}};
+    }
+
+    @media (min-width: 1025px) {
+      #section-{{- section.id -}} {
+        margin-bottom: {{- section.settings.margin_desktop | append: 'px' -}};
+      }
+    }
+  </style>
+  {% if video_mobile != blank %}
+    <style type="text/css">
+      #section-{{- section.id -}} {
+
+      .hero__media {
+        padding-bottom: {{ 1 | divided_by: video_mobile.aspect_ratio | times: 100 | round: 2 }}%;
+        max-height: 0 !important;
+        min-height: 0 !important;
+      }
+    }
+    @media (min-width: 1025px) {
+      #section-{{- section.id -}}  {
+        .hero__media {
+          padding-bottom: {{ 1 | divided_by: video_desktop.aspect_ratio | times: 100 | round: 2 }}%;
+          max-height: 0 !important;
+          min-height: 0 !important;
+        }
+      }
+    }
+    </style>
+    {% elsif video_desktop != blank %}
+    <style type="text/css">
+      #section-{{- section.id -}} {
+      .hero__media {
+        padding-bottom: {{ 1 | divided_by: video_desktop.aspect_ratio | times: 100 | round: 2 }}%;
+        max-height: 0 !important;
+        min-height: 0 !important;
+      }
+    }
+    </style>
+  {% endif %}
+
+  {%- schema -%}
+    {
+      "name": "Hero",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Spacing"
+        },
+        {
+          "type": "range",
+          "id": "margin_desktop",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Margin Bottom - Desktop",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "margin_mobile",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px",
+          "label": "Margin Bottom - Mobile",
+          "default": 0
+        },
+        {
+          "type": "header",
+          "content": "Media"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_desktop",
+          "label": "Desktop Image",
+          "info": "Recommended dimensions: 1920 x 1080 px JPG. Note - minimum 1920px wide, height is not set. Section height determined by height of image."
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Mobile Image",
+          "info": "Recommended dimensions: 600 x 600 px (Square) or 3:2 aspect ratio. Note - minimum 600px wide height is not set. Section height determined by height of image."
+        },
+        {
+          "type": "video",
+          "id": "video_desktop",
+          "label": "Desktop Video",
+          "info": "Recommended dimensions: 1920 x 1080 px. Note - minimum 1920px wide, height is not set. Section height determined by height of video."
+        },
+        {
+          "type": "video",
+          "id": "video_mobile",
+          "label": "Mobile Video",
+          "info": "Recommended dimensions: 600 x 600 px (Square) or 3:2 aspect ratio. Note - minimum 600px wide height is not set. Section height determined by height of video."
+        },
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading_mobile",
+          "label": "Mobile Heading"
+        },
+        {
+          "type": "select",
+          "id": "heading_type",
+          "label": "Heading Type",
+          "options": [
+            { "label": "H1", "value": "h1" },
+            { "label": "H2", "value": "h2" }
+          ],
+          "default": "h1"
+        },
+        {
+          "type": "richtext",
+          "id": "copy",
+          "label": "Description"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_overlay",
+          "label": "Show Overlay",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "stack_on_mobile",
+          "label": "Show content stacked on mobile",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_pause",
+          "label": "Enable Pause",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_mute",
+          "label": "Enable Mute",
+          "default": true
+        },
+        {
+          "type": "header",
+          "content": "CTA 1"
+        },
+        {
+          "type": "text",
+          "id": "cta_text_1",
+          "label": "CTA Text"
+        },
+        {
+          "type": "url",
+          "id": "cta_url_1",
+          "label": "CTA URL"
+        },
+        {
+          "type": "select",
+          "id": "cta_type_1",
+          "label": "CTA Type 1",
+          "options": [
+            { "label": "Primary Light", "value": "button button--primary-light" },
+            { "label": "Primary Dark", "value": "button button--primary-dark" },
+            { "label": "Secondary Light", "value": "button button--secondary-light" },
+            { "label": "Secondary Dark", "value": "button button--secondary-dark" },
+            { "label": "Focus Link Light", "value": "content-link-dark" },
+            { "label": "Focus Link Dark", "value": "content-link" }
+          ],
+          "default": "button button--primary-light"
+        },
+        {
+          "type": "header",
+          "content": "CTA 2"
+        },
+        {
+          "type": "text",
+          "id": "cta_text_2",
+          "label": "CTA Text"
+        },
+        {
+          "type": "url",
+          "id": "cta_url_2",
+          "label": "CTA URL"
+        },
+        {
+          "type": "select",
+          "id": "cta_type_2",
+          "label": "CTA Type 2",
+          "options": [
+            { "label": "Primary Light", "value": "button button--primary-light" },
+            { "label": "Primary Dark", "value": "button button--primary-dark" },
+            { "label": "Secondary Light", "value": "button button--secondary-light" },
+            { "label": "Secondary Dark", "value": "button button--secondary-dark" },
+            { "label": "Focus Link Light", "value": "content-link-dark" },
+            { "label": "Focus Link Dark", "value": "content-link text-black" }
+          ],
+          "default": "button button--secondary-light"
+        },
+        {
+          "type": "header",
+          "content": "Content Style"
+        },
+        {
+          "type": "select",
+          "id": "text_color",
+          "label": "Text Color",
+          "options": [
+            { "label": "White", "value": "text-white" },
+            { "label": "Black", "value": "text-black" }
+          ],
+          "default": "text-black"
+        },
+        {
+          "type": "select",
+          "id": "controls_color",
+          "label": "Controls Color",
+          "options": [
+            { "label": "White", "value": "text-white" },
+            { "label": "Black", "value": "text-black" }
+          ],
+          "default": "text-black"
+        },
+        {
+          "type": "select",
+          "id": "overlay_color",
+          "label": "Overlay Color",
+          "options": [
+            { "label": "White", "value": "bg-white" },
+            { "label": "Black", "value": "bg-black" },
+            { "label": "Ice", "value": "bg-primary-1" },
+            { "label": "Pond", "value": "bg-primary-2" },
+            { "label": "Ocean", "value": "bg-primary-3" },
+            { "label": "Sunshine", "value": "bg-primary-4" },
+            { "label": "Grey 1", "value": "bg-grey-1" }
+          ],
+          "default": "bg-white"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "label": "Text Alignment",
+          "options": [
+            { "label": "Left", "value": "left" },
+            { "label": "Center", "value": "center" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "content_align_horizontal",
+          "label": "Content Alignment - Horizontal",
+          "options": [
+            { "label": "Left", "value": "left" },
+            { "label": "Center", "value": "center" },
+            { "label": "Right", "value": "right" }
+          ],
+          "default": "center",
+          "info": "For Desktop Only"
+        },
+        {
+          "type": "select",
+          "id": "content_align_vertical",
+          "label": "Content Alignment - Vertical",
+          "options": [
+            { "label": "Top", "value": "top" },
+            { "label": "Center", "value": "center" },
+            { "label": "Bottom", "value": "bottom" }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "control_align_horizontal",
+          "label": "Desktop Control Alignment - Horizontal",
+          "options": [
+            { "label": "Left", "value": "left" },
+            { "label": "Center", "value": "center" },
+            { "label": "Right", "value": "right" }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "control_align_vertical",
+          "label": "Desktop Control Alignment - Vertical",
+          "options": [
+            { "label": "Top", "value": "top" },
+            { "label": "Bottom", "value": "bottom" }
+          ],
+          "default": "bottom"
+        },
+        {
+          "type": "select",
+          "id": "control_align_horizontal_mobile",
+          "label": "Mobile Control Alignment - Horizontal",
+          "options": [
+            { "label": "Left", "value": "left" },
+            { "label": "Center", "value": "center" },
+            { "label": "Right", "value": "right" }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "control_align_vertical_mobile",
+          "label": "Mobile Control Alignment - Vertical",
+          "options": [
+            { "label": "Top", "value": "top" },
+            { "label": "Bottom", "value": "bottom" }
+          ],
+          "default": "bottom"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Hero"
+        }
+      ]
+    }
+  {%- endschema -%}

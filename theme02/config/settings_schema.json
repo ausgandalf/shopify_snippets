@@ -1,0 +1,268 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Whitelabel",
+    "theme_version": "1.0.0",
+    "theme_author": "eHouse Studio",
+    "theme_documentation_url": "https:\/\/docs.blanklob.com",
+    "theme_support_url": "https:\/\/help.blanklob.com"
+  },
+  {
+    "name": "Header Settings",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_storelocator",
+        "label": "Show Store Locator",
+        "default": true
+      },
+      {
+        "type": "url",
+        "id": "storelocator_link",
+        "label": "Storelocator Link"
+      }
+    ]
+  },
+  {
+    "name": "Cart settings",
+    "settings": [
+      {
+        "type": "collection",
+        "id": "continue_collection",
+        "label": "Continue Shopping Collection"
+      },
+      {
+        "type": "collection",
+        "id": "wholesale_continue_collection",
+        "label": "Continue Wholesale Shopping Collection"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "rewards_text",
+        "label": "Rewards Text"
+      },
+      {
+        "type": "header",
+        "content": "Shipping Indicator Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_threshold",
+        "label": "Show free shipping indicator*",
+        "default": true
+      },
+      {
+        "type": "number",
+        "id": "threshold",
+        "label": "Threshold Amount*",
+        "default": 120,
+        "info": "Must be greater than 0"
+      },
+      {
+        "type": "text",
+        "id": "threshold_text",
+        "label": "Threshold Text",
+        "default": "You’re <b>$TOTAL</b> Away from Free Shipping"
+      },
+      {
+        "type": "text",
+        "id": "threshold_subtext",
+        "label": "Threshold Auto Text",
+        "default": "Free Shipping for All US Orders"
+      },
+      {
+        "type": "text",
+        "id": "threshold_reached_text",
+        "label": "Threshold Reached Text",
+        "default": "<b>Congrats!</b> You’ve Earned Free Shipping"
+      }
+    ]
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Assets"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo image",
+        "info": "Recommended dimensions: 250 x 106px"
+      },
+      {
+        "type": "image_picker",
+        "id": "wholesale_logo",
+        "label": "Wholesale logo image",
+        "info": "Recommended dimensions: 250 x 106px"
+      },
+      {
+        "type": "url",
+        "id": "wholesale_logo_link",
+        "label": "Wholesale logo link",
+        "default": "\/"
+      },
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon",
+        "info": "PNG, or JPG. Recommended: 512x512 pixels minimum."
+      },
+      {
+        "type": "header",
+        "content": "Social links"
+      },
+      {
+        "type": "url",
+        "id": "social_instagram_link",
+        "label": "Instagram",
+        "info": "https:\/\/instagram.com\/shopify"
+      },
+      {
+        "type": "url",
+        "id": "social_facebook_link",
+        "label": "Facebook",
+        "info": "https:\/\/facebook.com\/shopify"
+      },
+      {
+        "type": "url",
+        "id": "social_linkedin_link",
+        "label": "Linkedin",
+        "info": "https:\/\/linkedin.com\/company\/shopify"
+      },
+      {
+        "type": "url",
+        "id": "social_pinterest_link",
+        "label": "Pinterest",
+        "info": "https:\/\/pinterest.com\/shopify"
+      },
+      {
+        "type": "url",
+        "id": "social_tiktok_link",
+        "label": "Tiktok",
+        "info": "https:\/\/tiktok.com\/@shopify"
+      },
+      {
+        "type": "url",
+        "id": "social_twitter_link",
+        "label": "Twitter",
+        "info": "https:\/\/twitter.com\/shopify"
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Use colors to communicate meaning and create meaningful experiences while also expressing hierarchy, state, and brand identity."
+      },
+      {
+        "type": "header",
+        "content": "Primary colors",
+        "info": "Use it to derive roles for key components such as prominent buttons."
+      },
+      {
+        "type": "color",
+        "id": "primary_1",
+        "label": "Primary Color 1",
+        "default": "#D7EAF6"
+      },
+      {
+        "type": "color",
+        "id": "primary_2",
+        "label": "Primary Color 2",
+        "default": "#029CDE"
+      },
+      {
+        "type": "color",
+        "id": "primary_3",
+        "label": "Primary Color 3",
+        "default": "#016DD0"
+      },
+      {
+        "type": "color",
+        "id": "primary_4",
+        "label": "Primary Color 4",
+        "default": "#FCDA0D"
+      },
+      {
+        "type": "color",
+        "id": "primary_5",
+        "label": "Primary Color 5",
+        "default": "#21A260"
+      },
+      {
+        "type": "color",
+        "id": "primary_6",
+        "label": "Primary Color 6",
+        "default": "#FEF8CF"
+      },
+      {
+        "type": "color",
+        "id": "grey_1",
+        "label": "Grey 1",
+        "default": "#F6F6F6"
+      },
+      {
+        "type": "color",
+        "id": "grey_2",
+        "label": "Grey 2",
+        "default": "#E3E4E4"
+      },
+      {
+        "type": "color",
+        "id": "grey_3",
+        "label": "Grey 3",
+        "default": "#C8CACA"
+      },
+      {
+        "type": "color",
+        "id": "grey_4",
+        "label": "Grey 4",
+        "default": "#707476"
+      },
+      {
+        "type": "color",
+        "id": "grey_5",
+        "label": "Grey 5",
+        "default": "#424749"
+      },
+      {
+        "type": "color",
+        "id": "white",
+        "label": "White",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "black",
+        "label": "Black",
+        "default": "#1F1F1F"
+      },
+      {
+        "type": "color",
+        "id": "color_error",
+        "label": "Error",
+        "default": "#D72608"
+      },
+      {
+        "type": "color",
+        "id": "color_success",
+        "label": "Success",
+        "default": "#29712A"
+      }
+    ]
+  },
+  {
+    "name": "Rebuy Settings",
+    "settings": [
+      {
+        "type": "text",
+        "id": "rebuy_widget_id",
+        "label": "Rebuy GWP Widget ID"
+      }
+    ]
+  }
+]

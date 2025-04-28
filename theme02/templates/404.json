@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "hero_UUEb86": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/D-404_f2435407-2b02-4f6f-8c68-d7122a04501c.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/M-404_e414d534-dd07-4143-85d5-839050f94ac1.jpg",
+        "subheading": "",
+        "heading": "<strong>Oops!<\/strong>  Looks like you've gone adrift",
+        "heading_mobile": "<strong>Oops!<\/strong>  Looks like you've gone adrift",
+        "heading_type": "h2",
+        "copy": "<p>This page doesn't exist, but don't worry we'll get you back on dry land. <\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "Return to Shop All",
+        "cta_url_1": "shopify:\/\/collections",
+        "cta_type_1": "button button--primary-dark",
+        "cta_text_2": "Return to Homepage",
+        "cta_url_2": "https:\/\/whitelabelisbetter.com",
+        "cta_type_2": "button button--secondary-dark",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_UUEb86"
+  ]
+}

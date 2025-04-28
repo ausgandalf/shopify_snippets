@@ -1,0 +1,152 @@
+{%- style -%}
+  .site-header {
+    border-bottom: 0; // Remove the border on header
+  }
+{%- endstyle -%}
+
+<div class="customer register bg-grey-1 pt-12 lg:py-32">
+  <div class="lg:bg-white px-6 pb-6 lg:py-12 lg:px-12 accountCard  text-left  mx-auto">
+    <h3 class="pb-4 font-bold" tabindex="-1">
+      {{ 'customer.register.title' | t }}
+    </h3>
+    <p class="mb-4 text-grey-5">Enter your information.</p>
+    {%- form 'create_customer', novalidate: 'novalidate', class: 'flex flex-col gap-4', return_to: routes.account_url -%}
+      {%- if form.errors -%}
+      <div class="form__message mt-2 mb-2" tabindex="-1" autofocus>
+        <p class="flex gap-1 text-sm text-error font-bold">
+          <span class="visually-hidden">{{ 'accessibility.error' | t }} </span>
+          <svg class="w-5 h-5" aria-hidden="true" focusable="false" viewBox="0 0 13 13">
+            <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
+            <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
+            <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
+            <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+          </svg>
+          Please Adjust the Following:
+        </p>
+
+        <ul class="text-error list-disc text-sm">
+          {%- for field in form.errors -%}
+            <li class="text-sm text-error">
+              {%- if field == 'form' -%}
+                {{ form.errors.messages[field] }}
+              {%- else -%}
+                <a href="#RegisterForm-{{ field }}" class="text-sm text-error">
+                  {{ form.errors.translated_fields[field] | capitalize }}
+                  {{ form.errors.messages[field] }}
+                </a>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+      {%- endif -%}
+
+      <div class="input-wrap">
+        <input
+          type="text"
+          name="customer[first_name]"
+          class="w-full"
+          id="first_name"
+          autocomplete="given-name"
+          placeholder=" ">
+        <label class="absolute top-2 left-2" for="first_name">{{ 'customer.register.first_name' | t }} </label>
+      </div>
+
+      <div class=" input-wrap">
+        <input
+          type="text"
+          name="customer[last_name]"
+          id="last_name"
+          class="w-full"
+          autocomplete="family-name"
+          placeholder=" ">
+        <label class="absolute top-2 left-2" for="last_name">{{ 'customer.register.last_name' | t }}</label>
+      </div>
+
+      <div class=" input-wrap">
+        <input
+          type="email"
+          name="customer[email]"
+          id="email"
+          {% if form.email %}
+            value="{{ form.email }}"
+          {% endif %}
+          spellcheck="false"
+          autocapitalize="off"
+          autocomplete="email"
+          aria-required="true"
+          class="w-full"
+          {% if form.errors contains 'email' %}
+            aria-invalid="true"
+            aria-describedby="RegisterForm-email-error"
+          {% endif %}
+          placeholder=" ">
+        <label class="absolute top-2 left-2" for="email">{{ 'customer.register.email' | t }} </label>
+      </div>
+
+      <div class="input-wrap">
+        <input
+          type="password"
+          name="customer[password]"
+          id="password"
+          class="w-full"
+          aria-required="true"
+          {% if form.errors contains 'password' %}
+            aria-invalid="true"
+            aria-describedby="RegisterForm-password-error"
+          {% endif %}
+          placeholder=" ">
+
+        <label class="absolute top-2 left-2" for="password">{{ 'customer.register.password' | t }} </label>
+      </div>
+
+      <div id="accepts_marketing_checkbox" class="check-wrap items-start">
+        <input class="!w-[3.5rem]" type="checkbox" name="customer[accepts_marketing]" checked="checked" value="true" id="marketing">
+        <label for="marketing" class="flex flex-col"><span class="font-bold">Email me with news and offers</span>
+        <span>By signing up, you are creating a Better Rewards Club loyalty account. We’ll email you program information and special promotions.</span></label>
+      </div>
+
+      <button class="block button button--primary-dark !mb-0 !max-w-full">Create an Account</button>
+
+      <a data-recover-toggle href="/account/login" class="w-fit mx-auto content-link mr-auto text-center">Already have an account? Login</a>
+    {%- endform -%}
+  </div>
+  <div class="bg-grey-3 accountCard h-[1px] mx-auto"></div>
+  <div class="bg-white px-6 py-12 lg:px-12 accountCard flex flex-col gap-4  text-left  mx-auto">
+    <button onclick="location.href='/account/login';" class=" !mt-0 button text-center block button button--secondary-dark !max-w-full">Subscribed without an account?</button>
+
+    <button onclick="location.href='/pages/wholesale';" class="!mt-0 button text-center block button button--secondary-dark !max-w-full">Become a wholesale member</button>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-register.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

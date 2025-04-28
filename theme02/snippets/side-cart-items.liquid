@@ -1,0 +1,146 @@
+<div class="">
+  {%- for item in cart.items -%}
+    {%- liquid
+      assign hasSale = false
+      assign selling_plans = false
+      assign is_gwp_gift = false
+      assign gwp_widget_ids = settings.rebuy_widget_id
+
+      unless item.properties == empty
+        for property in item.properties
+          if property.first == '_widget_id' and gwp_widget_ids contains property.last
+            assign is_gwp_gift = true
+          endif
+        endfor
+      endunless
+
+      if item.variant.compare_at_price and item.variant.price < item.variant.compare_at_price
+        assign hasSale = true
+      endif
+
+      assign recharge_selling_plan_group = item.product.selling_plan_groups | where: 'app_id', '294517' | first
+
+      if recharge_selling_plan_group != blank
+        assign selling_plans = recharge_selling_plan_group.selling_plans
+      endif
+
+      if selling_plans != blank
+        assign first_selling_plan = selling_plans | first
+        assign first_plan_price = first_selling_plan.price_adjustments | first
+        assign first_discount_type = first_plan_price.value_type
+        assign first_discount_amount = first_plan_price.value
+        assign first_plan_variant_price = current_variant.price
+        assign first_plan_discounted_variant_price = current_variant.price
+
+        if first_discount_type == 'percentage'
+          assign first_discount_percent = 100 | minus: first_discount_amount
+          assign first_plan_discounted_variant_price = first_plan_discounted_variant_price | times: first_discount_percent | divided_by: 100
+          assign saving = first_discount_amount | append: '%'
+        elsif first_discount_type == 'fixed'
+          assign first_plan_discounted_variant_price = first_plan_discounted_variant_price | minus: first_discount_amount
+          assign saving = first_discount_amount | times: 100 | money
+        endif
+      endif
+    -%}
+    <div class="cart-item py-6 px-4 lg:px-6 border-b border-grey-2">
+      <div class="flex justify-between">
+        <div class="cart-item__image-title flex gap-x-4 flex-grow">
+          <div class="cart-item__image-wrap">
+            {%- if item.image != blank -%}
+              <a href="{{ item.url }}" class="block w-[80px] h-[93px] lg:w-[100px] lg:h-[117px]">
+                {{ item.image | image_url: width: 240 | image_tag: class: 'cart-item__image w-full h-full object-cover', loading: 'lazy', alt: item.product.title }}
+              </a>
+            {%- endif -%}
+          </div>
+          <div class="flex flex-col items-start justify-between flex-grow">
+            <div class="w-full flex justify-between gap-x-4">
+              <div class="">
+                <a href="{{ item.url }}" class="sub-reg font-bold inline-block hover:underline">{{ item.product.title }}</a>
+
+                {% if customer.tags contains 'wholesale-customer' %}
+                  {% render 'wholesale-discount' item: item %}
+                {% endif %}
+
+                {%- if is_gwp_gift -%}
+                  <p class="bg-grey-1 rounded-[4px] text-xs text-grey-5 px-3 pt-1 pb-1.5 mt-2 font-paragraph w-fit">Free Gift with Purchase</p>
+                {%- endif -%}
+
+                {%- unless item.product.has_only_default_variant -%}
+                  <ul class="cart-item__options mt-2">
+                    {%- for option in item.options_with_values -%}
+                      <li class="text-sm text-grey-4 mb-1">{{ option.name }}: {{ option.value }}</li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endunless -%}
+
+                {% unless item.properties == empty %}
+                  {% for property in item.properties %}
+                    {%- unless property.first contains '_' -%}
+                      <p class="text-sm text-grey-4 mt-2">{{ property.first }}:{{ property.last }}</p>
+                    {% endunless %}
+                  {% endfor %}
+                {% endunless %}
+
+                {% unless item.properties == empty %}
+                  {% for property in item.properties %}{%- if p.first.first != '_' -%}{% continue %}{%- endif -%}
+                    <p class="text-sm text-grey-4 mt-2">{{ property.first }}:
+                    {% if property.last contains '/uploads/' %}
+                      <a href="{{ property.last }}" class="text-sm text-grey-4">{{ property.last | split: '/' | last }}</a></p>
+                    {% else %}
+                      {{ property.last }}</p>
+                    {% endif %}
+                  {% endfor %}
+                {% endunless %}
+
+                {% if customer.tags contains 'wholesale-customer' %}
+                  {% unless item.product.tags contains 'wholesale' %}
+                    <p class="text-sm text-grey-4 mt-2 italic">Excluded from wholesale discount</p>
+                  {% endunless %}
+                {% endif %}
+              </div>
+
+              <button class="link-hover text-small w-4 h-4 min-w-4" data-cart-item-remove data-variant-id="{{ item.variant_id }}">
+                {% render 'icon-remove' %}
+                <span class="sr-only">Remove</span>
+              </button>
+            </div>
+            <div class="flex items-center justify-between mt-4 w-full">
+              {%- if is_gwp_gift -%}
+                <div></div>
+              {%- else -%}
+                {% render 'qty-selector', variant_id: item.variant_id, max_qty: item.variant.inventory_quantity, current_qty: item.quantity, inline_cart: true %}
+              {%- endif -%}
+
+              <div class="flex flex-col text-right">
+                {%- render 'cart-item-price', item: item, hasSale: hasSale -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {%- unless is_gwp_gift -%}
+        {%- if selling_plans != blank -%}
+          <div class="mt-6" data-line="{{ forloop.index }}" data-quantity="{{ item.quantity }}" data-sub-panel>
+            {%- if item.selling_plan_allocation == blank -%}
+              <button class="button button--secondary-dark w-full !max-w-none !text-[16px] lg:!text-[20px]" data-upgrade-to-subscription="{{ first_selling_plan.id }}">Upgrade to Subscription{% if first_discount_amount != 0 %} & Save {{ saving }}{% endif %}</button>
+            {%- else -%}
+              <div class="w-full select-wrap">
+                <select id="selling_plan" aria-label="Select Frequency" class="w-full !min-w-0" data-change-selling-plans>
+                  {%- unless item.product.requires_selling_plan -%}
+                    <option value="onetime">One Time Purchase</option>
+                  {%- endunless -%}
+                  {%- for selling_plan in selling_plans -%}
+                    <option value="{{ selling_plan.id }}" {% if selling_plan.id == item.selling_plan_allocation.selling_plan.id %}selected{% endif %}>
+                      {{ selling_plan.name }}
+                    </option>
+                  {%- endfor -%}
+                </select>
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endunless -%}
+    </div>
+  {%- endfor -%}
+</div>

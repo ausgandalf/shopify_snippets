@@ -1,0 +1,406 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hero_T7k68R": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/subscribe_header_wholesale_2.png",
+        "image_mobile": "shopify:\/\/shop_images\/Untitled_design_3.jpg",
+        "subheading": "Easy, Automated Deliveries",
+        "heading": "<strong>Simplify Business<\/strong>",
+        "heading_mobile": "<strong>Simplify Business<\/strong>",
+        "heading_type": "h1",
+        "copy": "<p>Start a subscription to enjoy effortless automated deliveries. Perfect for all types of businesses, simply set your delivery frequency based on your needs and benefit from recurring discounts and more! <\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": true,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "Start a subscription",
+        "cta_url_1": "#section-template--16232658108527__product_recommendations_FWpDH3",
+        "cta_type_1": "button button--primary-dark",
+        "cta_text_2": "",
+        "cta_url_2": "shopify:\/\/pages\/beach-terms",
+        "cta_type_2": "button button--secondary-dark",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "top",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "top"
+      }
+    },
+    "fifty_fifty_tYL9yA": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_HaMxpJ": {
+          "type": "text",
+          "settings": {
+            "icon_text": "📦 Weekly, monthly or quarterly deliveries"
+          }
+        },
+        "text_rCpj9G": {
+          "type": "text",
+          "settings": {
+            "icon_text": "💨 Easy and quick setup"
+          }
+        },
+        "text_g7xihQ": {
+          "type": "text",
+          "settings": {
+            "icon_text": "⭐ 5- Star customer care team"
+          }
+        },
+        "text_fJrihk": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌱 Tree planting with your first order"
+          }
+        },
+        "text_tPHPcE": {
+          "type": "text",
+          "settings": {
+            "icon_text": "✅ Edit, swap or cancel anytime"
+          }
+        }
+      },
+      "block_order": [
+        "text_HaMxpJ",
+        "text_rCpj9G",
+        "text_g7xihQ",
+        "text_fJrihk",
+        "text_tPHPcE"
+      ],
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "Say <strong>Goodbye to Plastic<\/strong>",
+        "heading_style": "h2",
+        "description": "Put protecting the planet on autopilot with automated Whitelabel deliveries.",
+        "featured_img": "shopify:\/\/shop_images\/ig-2.jpg",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "#section-template--16232658108527__product_recommendations_FWpDH3",
+        "cta_text": "Get Started",
+        "button_style": "secondary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "shop_by_category_kfAgzL": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_3BYKy6": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_9328fd95-c978-4c77-af54-2fca5ca3cfac.png",
+            "title": "Step 1: Shop",
+            "description": "<p>Choose from our plain water or flavors and set your delivery frequency based on your needs.<\/p>",
+            "cta_url": ""
+          }
+        },
+        "list_item_e7rgaD": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_a4957446-509d-4b80-8af5-9a40bb849270.png",
+            "title": "Step 2: Adjust",
+            "description": "<p>You can easily swap products, pause or change your delivery date.<\/p>",
+            "cta_url": ""
+          }
+        },
+        "list_item_TBrCdD": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6_7417e506-e213-46eb-b77c-148c91fc0e53.png",
+            "title": "Step 3: Enjoy",
+            "description": "<p>Enjoy automated deliveries and discounts on your subscription orders.<\/p>",
+            "cta_url": "shopify:\/\/pages\/rewards"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_3BYKy6",
+        "list_item_e7rgaD",
+        "list_item_TBrCdD"
+      ],
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "<strong>As simple as 1,2,3 <\/strong>",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    },
+    "product_recommendations_FWpDH3": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "title": "Subscribe to <strong>Whitelabel<\/strong>",
+        "cta_text": "",
+        "cta_url": "shopify:\/\/collections\/retail-subscription",
+        "recommended_collection": "wholesale-original-water",
+        "secondary_text": "<p>Still not convinced? <\/p><p>See all <strong>subscription perks below!<\/strong><\/p>"
+      }
+    },
+    "hero_nVEHdb": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 20,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/subscribe_benefits_desktop.svg",
+        "image_mobile": "shopify:\/\/shop_images\/subscribe_save_benefits_-_mobile.svg",
+        "subheading": "",
+        "heading": "",
+        "heading_mobile": "",
+        "heading_type": "h2",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "shopify:\/\/products\/250ml-24-pack-12-months",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "top",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "top",
+        "control_align_horizontal_mobile": "left",
+        "control_align_vertical_mobile": "top"
+      }
+    },
+    "fifty_fifty_b8XmkY": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_3PqbNW": {
+          "type": "text",
+          "settings": {
+            "icon_text": "Make 4 recurring subscription purchases and earn 100 points ($5 off)"
+          }
+        },
+        "text_a7GwDU": {
+          "type": "text",
+          "settings": {
+            "icon_text": "Make 7 recurring subscription purchases and earn 200 points ($10 off)"
+          }
+        }
+      },
+      "block_order": [
+        "text_3PqbNW",
+        "text_a7GwDU"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "<strong>earn discounts <\/strong>for your orders!",
+        "heading_style": "h2",
+        "description": "Earn points everytime you shop Whitelabel with our Better Rewards Club. Plus, when you become a subscriber you’ll unlock additional points for your sustainable commitment.",
+        "featured_img": "shopify:\/\/shop_images\/subscribe5050.jpg",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "\/",
+        "cta_text": "Start Earning",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "shop_by_category_G9p36a": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_nt3bMk": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/250.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/330_250_on_cutting_board.png",
+            "title": "250ML WHITELABEL",
+            "description": "<p>Convenient mini size for retail spaces. <\/p>",
+            "cta_url": "shopify:\/\/products\/250ml-24-pack-wholesale"
+          }
+        },
+        "list_item_ze9Q9d": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/330_89bc36be-230a-437b-bf0e-2bbfd012c656.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/Office_space_subscribe.jpg",
+            "title": "330ML WHITELABEL",
+            "description": "<p>Eco-friendly hydration for office spaces.<\/p>",
+            "cta_url": "shopify:\/\/products\/330ml-24-pack"
+          }
+        },
+        "list_item_kR8mkA": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/550.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/event1.jpg",
+            "title": "500ML WHITELABEL",
+            "description": "<p>Memorable events with our standard size.<\/p>",
+            "cta_url": "shopify:\/\/products\/500ml-24-pack-wholesale"
+          }
+        },
+        "list_item_3GmDmB": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1L.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/workout1.jpg",
+            "title": "1 LITER WHITELABEL",
+            "description": "<p>Maximum hydration during workouts. <\/p>",
+            "cta_url": "shopify:\/\/products\/1l-12-pack-wholesale"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_nt3bMk",
+        "list_item_ze9Q9d",
+        "list_item_kR8mkA",
+        "list_item_3GmDmB"
+      ],
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "A size for <strong>every occasion<\/strong>",
+        "cta_text": "",
+        "cta_url": "shopify:\/\/collections\/retail-all"
+      }
+    },
+    "four_col_KDFzJW": {
+      "type": "four-col",
+      "blocks": {
+        "text_pPjcWz": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/10_off_recurring_orders_08b45165-f274-42ec-ac1a-57c66f35deb0.svg",
+            "icon_title": "10% OFF RECURRING ORDERS",
+            "icon_text": "Subscribe today and enjoy 10% off recurring subscription orders."
+          }
+        },
+        "text_c3bMMR": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Tree_planting_with_your_first_order_2adcf71b-c640-4be0-9983-820055115c7e.svg",
+            "icon_title": "Tree Planting",
+            "icon_text": "Become a subscriber and we'll plant one tree in a National Forest across the U.S."
+          }
+        },
+        "text_YxfCPF": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Delivered_straight_to_your_doorstep_2e05d4c6-403e-4940-8f3c-157b246a42e7.svg",
+            "icon_title": "Whitelabel on repeat",
+            "icon_text": "Choose your delivery frequency. Enjoy monthly or quarterly deliveries with one click."
+          }
+        },
+        "text_4dtUEV": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Pause_edit_or_cancel_anytime_927f3fa5-58d3-4d4a-8623-10418c7dcfb2.svg",
+            "icon_title": "No strings attached",
+            "icon_text": "We make it easy to control your subscription! Edit, swap or cancel anytime."
+          }
+        }
+      },
+      "block_order": [
+        "text_pPjcWz",
+        "text_c3bMMR",
+        "text_YxfCPF",
+        "text_4dtUEV"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_d": "shopify:\/\/shop_images\/icon_background_nature.png",
+        "image_m": "shopify:\/\/shop_images\/icon_background_nature.png",
+        "title": "Subscriber <strong>Benefits<\/strong>",
+        "heading_text_color": "black",
+        "cta_url": "\/",
+        "cta_text": "",
+        "button_style": "primary",
+        "block_text_color": "black",
+        "bg_color": "gray",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "two_three_up_ypQb4J": {
+      "type": "two-three-up",
+      "blocks": {
+        "cta_Whb8Kx": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "why whitelabel is better",
+            "link": "shopify:\/\/pages\/how-we-compare",
+            "button_text": "",
+            "bg_image_desktop": "shopify:\/\/shop_images\/5050_website_content_blocks_1.svg",
+            "bg_image_mobile": "shopify:\/\/shop_images\/5050_website_content_blocks_1.svg",
+            "text_color": "text-black",
+            "button_style": "primary"
+          }
+        },
+        "cta_cjjDUF": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "Manage your subscription",
+            "link": "https:\/\/whitelabel.zendesk.com\/hc\/en-us\/categories\/25828247526419-Subscription",
+            "button_text": "",
+            "bg_image_desktop": "shopify:\/\/shop_images\/2-up_subscribepage-mobile.jpg",
+            "bg_image_mobile": "shopify:\/\/shop_images\/2-up_subscribepage.jpg",
+            "text_color": "text-black",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "cta_Whb8Kx",
+        "cta_cjjDUF"
+      ],
+      "settings": {
+        "title": "Subscription <strong>Resources<\/strong>",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_T7k68R",
+    "fifty_fifty_tYL9yA",
+    "shop_by_category_kfAgzL",
+    "product_recommendations_FWpDH3",
+    "hero_nVEHdb",
+    "fifty_fifty_b8XmkY",
+    "shop_by_category_G9p36a",
+    "four_col_KDFzJW",
+    "two_three_up_ypQb4J"
+  ]
+}

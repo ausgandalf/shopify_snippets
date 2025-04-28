@@ -1,0 +1,95 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "product-badges": {
+      "type": "product-badges",
+      "blocks": {
+        "badge_iCgybg": {
+          "type": "badge",
+          "settings": {
+            "title": "OUT OF STOCK",
+            "color": "gray"
+          }
+        },
+        "badge_NJREAJ": {
+          "type": "badge",
+          "settings": {
+            "title": "SALE",
+            "color": "error"
+          }
+        },
+        "badge_pjUTjF": {
+          "type": "badge",
+          "settings": {
+            "title": "BEST SELLER",
+            "color": "ocean"
+          }
+        },
+        "badge_x34aAJ": {
+          "type": "badge",
+          "settings": {
+            "title": "GIFT WITH PURCHASE",
+            "color": "ice"
+          }
+        },
+        "badge_xniQak": {
+          "type": "badge",
+          "settings": {
+            "title": "NEW",
+            "color": "white"
+          }
+        },
+        "badge_KepiEm": {
+          "type": "badge",
+          "settings": {
+            "title": "limited edition",
+            "color": "sunshine"
+          }
+        },
+        "badge_bBetc7": {
+          "type": "badge",
+          "settings": {
+            "title": "carbon neutral",
+            "color": "green"
+          }
+        }
+      },
+      "block_order": [
+        "badge_iCgybg",
+        "badge_NJREAJ",
+        "badge_pjUTjF",
+        "badge_x34aAJ",
+        "badge_xniQak",
+        "badge_KepiEm",
+        "badge_bBetc7"
+      ],
+      "settings": {}
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "heading": "A smile in your inbox",
+        "description": "<p>We'll send hydration tips, exclusive offers, and more. Sign up so you don’t miss a thing.</p>",
+        "success_message": "Thank you for signing up! Check your email to confirm.",
+        "klaviyo_list_id": "HPETT7",
+        "copyright": "© [year] Whitelabel, All Rights Reserved.",
+        "footer_menu": "footer",
+        "terms_menu": "global-copyright-footer"
+      }
+    }
+  },
+  "order": [
+    "product-badges",
+    "footer"
+  ]
+}

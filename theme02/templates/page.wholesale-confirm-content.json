@@ -1,0 +1,132 @@
+{
+  "sections": {
+    "hero_AieDWV": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/wholesale_lineup_with_flavors.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/Mobile_wholesale_hero_three_items.png",
+        "subheading": "SUSTAINABLE WATER DELIVERY",
+        "heading": "WHITELABEL WHOLESALE",
+        "heading_mobile": "",
+        "heading_type": "h2",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "left",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "general-content": {
+      "type": "general-content",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_LLWFbq": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "A BETTER OPTION FOR YOUR CUSTOMERS",
+        "heading_style": "h1",
+        "description": "Plastic and aluminum are harming our planet at an alarming rate. In fact, 1500 plastic bottles end up in oceans & landfills every single minute and thousands of acres of forests are destroyed every year during aluminum production. Whitelabel Is Better for our planet. Our paper-based cartons are FSC certified, 92% renewable, and 100% recyclable, making them the most sustainable carton in the water aisle.",
+        "featured_img": "shopify:\/\/shop_images\/BW-Diagram_simplified_desktop.webp",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "shopify:\/\/collections\/order-online-page",
+        "cta_text": "Shop All Water",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_zYU3Hj": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "Even Better With Flavors",
+        "heading_style": "h1",
+        "description": "Flavored water is even BETTER in plant-based cartons that are 92% renewable. Try Cucumber, Lemon, Watermelon, Grapefruit or Blackberry Whitelabel.",
+        "featured_img": "shopify:\/\/shop_images\/5050_website_content_blocks.png",
+        "column_img": "left",
+        "display_badge": false,
+        "cta_url": "\/",
+        "cta_text": "Shop Fruit Flavors",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "shop_by_category_DafPDR": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_Ri9BUz": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3-up_image_1.png",
+            "title": "Finding the Perfect Size for Your Business",
+            "description": "<p>We are committed to making sustainability simple. Whether you’re running a restaurant or coffee shop, own a fitness center or are hosting an event, we have an option that suits your needs.<\/p>",
+            "cta_url": "https:\/\/whitelabelisbetter.com\/blogs\/blog\/how-businesses-are-adapting-to-change-while-balancing-safety-sustainability"
+          }
+        },
+        "list_item_rej7Mh": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/forest-3_1.jpg",
+            "title": "We've Planted Over 1.5 Million Trees!",
+            "description": "<p>In 2020 we celebrated planting over one million trees in our U.S. National Forests. We've now planted over 1.5 million trees and we're not done yet. Help us plant the next one million!<\/p>",
+            "cta_url": "shopify:\/\/pages\/betterplanet"
+          }
+        },
+        "list_item_nEVPHA": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/website_category_images_-_desktop.png",
+            "title": "CONTACT A BUSINESS SPECIALIST",
+            "description": "<p>Say hello! Our customer-service is unmatched. We love helping businesses switch to a sustainable solution. Our team is here to help you every step of the way.<\/p>",
+            "cta_url": "shopify:\/\/pages\/contact-us"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_Ri9BUz",
+        "list_item_rej7Mh",
+        "list_item_nEVPHA"
+      ],
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "",
+        "cta_text": "",
+        "cta_url": ""
+      }
+    }
+  },
+  "order": [
+    "hero_AieDWV",
+    "general-content",
+    "fifty_fifty_LLWFbq",
+    "fifty_fifty_zYU3Hj",
+    "shop_by_category_DafPDR"
+  ]
+}

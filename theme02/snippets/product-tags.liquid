@@ -1,0 +1,8 @@
+{%- assign tags = product.tags | join: ',' -%}
+{%- if product.available == false -%}
+  {%- assign tags = tags | append: ',OUT OF STOCK' -%}
+{%- elsif product.compare_at_price > product.price -%}
+  {%- assign tags = tags | append: ',SALE' -%}
+{%- endif -%}
+
+{{- tags -}}

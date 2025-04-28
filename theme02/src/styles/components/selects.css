@@ -1,0 +1,31 @@
+@layer base {
+  .select-wrap,
+  .fb-select {
+    @apply relative inline-block;
+  }
+
+  select:not(.ui-datepicker-month):not(.ui-datepicker-year) {
+    @apply min-w-[20.625rem] cursor-pointer appearance-none border border-grey-3 bg-white bg-no-repeat px-5 py-3 text-grey-4 transition-colors;
+    background-position: right 20px center;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.2036 0.469727L11.2642 1.53039L6.26421 6.53039C5.99795 6.79665 5.58128 6.82086 5.28767 6.603L5.20355 6.53039L0.203552 1.53039L1.26421 0.469727L5.73388 4.93906L10.2036 0.469727Z' fill='black'/%3E%3C/svg%3E%0A");
+  }
+
+  select:not(:disabled):active,
+  select:not(:disabled):valid,
+  select:not(:disabled):focus {
+    @apply border-[#888] outline-none shadow-none;
+  }
+
+  select:not(:disabled):hover {
+    @apply border-black;
+  }
+
+  select:disabled {
+    @apply cursor-not-allowed;
+  }
+
+  .select-wrap label,
+  .fb-select label {
+    @apply pointer-events-none absolute left-5 top-0 -translate-y-1/2 bg-white px-1 text-xs font-medium text-black;
+  }
+}

@@ -1,0 +1,9 @@
+.four-col-section-banner {
+  background-image: var(--bg_m);
+}
+
+@media screen and (min-width: 768px) {
+  .four-col-section-banner {
+    background-image: var(--bg);
+  }
+}

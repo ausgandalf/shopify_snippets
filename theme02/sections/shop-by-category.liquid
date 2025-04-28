@@ -1,0 +1,202 @@
+<style type="text/css">
+  #section-{{- section.id -}} {
+    margin-bottom: {{- section.settings.margin_mobile | append: 'px' -}};
+  }
+
+  @media (min-width: 1025px) {
+    #section-{{- section.id -}} {
+      margin-bottom: {{- section.settings.margin_desktop | append: 'px' -}};
+    }
+  }
+</style>
+
+<div id="section-{{- section.id -}}" class="shop-by-category" data-section-type="shop-by-category">
+  <div class="max-w-[1920px] mx-auto flex flex-col gap-6 lg:gap-8 lg:p-12 px-4 py-12">
+    <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-y-6">
+      {%- if section.settings.title != blank -%}
+        <h1 class="h4 custom-heading">{{ section.settings.title }}</h1>
+      {%- endif -%}
+
+      {%- if section.settings.cta_text != blank and section.settings.cta_url != blank -%}
+        <a href="{{ section.settings.cta_url }}" class="button button--secondary-dark font-heading w-full lg:w-auto !max-w-none">
+          {{ section.settings.cta_text }}
+        </a>
+      {%- endif -%}
+    </div>
+
+    {%- if section.blocks.size > 0 -%}
+    <div class="">
+      <div class="">
+        <div class="flex flex-wrap gap-x-4 gap-y-6 lg:gap-6">
+          {%- for block in section.blocks -%}
+            {%-liquid
+              assign bg_image_desktop = block.settings.image
+              assign title_text = block.settings.title
+              assign secondary_image = block.settings.secondary_image
+              assign bg_image_mobile = block.settings.mobile_image | default: bg_image_desktop
+              assign mobile_class = 'basis-[calc(50%-8px)]'
+              assign size_mod = section.blocks.size | modulo: 2
+              assign aspect_ratio = 'aspect-[164/194] lg:aspect-[318/400]'
+
+              if size_mod == 1 and forloop.index == 1
+                assign mobile_class = 'basis-full'
+                assign aspect_ratio = 'aspect-square lg:aspect-[318/400]'
+              endif
+            -%}
+            <div class="{{ mobile_class }} lg:flex-1">
+              <div class="flex flex-col gap-y-2 lg:gap-y-4 h-full">
+                <div class="relative w-full {{ aspect_ratio }} group">
+                  {% if block.settings.image %}
+                    <img
+                      class="hidden lg:block absolute top-0 left-0 w-full h-full object-cover transition-all duration-300"
+                      src="{{ bg_image_desktop | image_url: width: 800 }}"
+                      alt="{{ bg_image_desktop.alt | default: title_text | escape }}"
+                      loading="lazy"
+                      width="auto"
+                      height="auto"
+                    >
+                    <img
+                      class="lg:hidden absolute top-0 left-0 w-full h-full object-cover transition-all duration-300"
+                      src="{{ bg_image_mobile | image_url: width: 800 }}"
+                      alt="{{ bg_image_mobile.alt | default: title_text | escape }}"
+                      loading="lazy"
+                      width="auto"
+                      height="auto"
+                    >
+                    {%- if block.settings.secondary_image != blank -%}
+                    <img
+                      class="hidden lg:group-hover:block absolute top-0 left-0 w-full h-full object-cover transition ease-in-out"
+                      src="{{ block.settings.secondary_image | image_url }}"
+                      alt="{{ block.settings.secondary_image.alt | default: title_text | escape }}"
+                      loading="lazy"
+                      width="auto"
+                      height="auto"
+                    >
+                    {%- endif -%}
+                    {%- if block.settings.cta_url != blank -%}
+                      <a aria-label="Shop {{ block.settings.title }}" href="{{ block.settings.cta_url }}" class="absolute top-0 left-0 w-full h-full z-[1]"><span class="hidden">Shop {{ block.settings.title }}</span></a>
+                    {%- endif -%}
+                  {% endif %}
+                </div>
+
+                {%- if block.settings.title != blank or block.settings.description != blank -%}
+                  <div class="flex flex-col items-start gap-y-2 flex-grow">
+                    {%- if block.settings.title != blank -%}
+                      {%- if block.settings.cta_url != blank -%}
+                        <a href="{{ block.settings.cta_url }}">
+                      {%- endif -%}
+                        <h1 class="h5 content-link !text-[28px] !-ml-1 !leading-[90%] !tracking-[1.12px] lg:!tracking-[1.44px] !font-bold lg:!text-[36px]">{{ block.settings.title }}</h1>
+                      {%- if block.settings.cta_url != blank -%}
+                        </a>
+                      {%- endif -%}
+                    {%- endif -%}
+
+                    {%- if block.settings.description != blank -%}
+                      <div class="custom-content desc flex-grow lg:pr-6">{{ block.settings.description }}</div>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Shop By Category",
+    "tag": "section",
+    "max_blocks": 5,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "margin_desktop",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Desktop",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "margin_mobile",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Margin Bottom - Mobile",
+        "default": 36
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "cta_text",
+        "label": "CTA Text"
+      },
+      {
+        "type": "url",
+        "id": "cta_url",
+        "label": "CTA URL"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "list-item",
+        "name": "List Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+            "info": "Recommended dimensions: 636 x 800px"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_image",
+            "label": "Mobile Image",
+            "info": "Recommended dimensions: 686 x 686px"
+          },
+          {
+            "type": "image_picker",
+            "id": "secondary_image",
+            "label": "Desktop Hover Image",
+            "info": "Recommended dimensions: 636 x 800px"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "url",
+            "id": "cta_url",
+            "label": "CTA URL"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Shop By Category"
+      }
+    ]
+  }
+{% endschema %}

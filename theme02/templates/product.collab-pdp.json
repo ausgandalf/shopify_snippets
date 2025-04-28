@@ -1,0 +1,314 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "hero_3UUAaw": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "video_desktop": "shopify:\/\/files\/videos\/if product intro social.mov",
+        "video_mobile": "shopify:\/\/files\/videos\/mobile if product intro - 720WebShareName.mov",
+        "subheading": "",
+        "heading": "BETTER THAN YOU IMAGINED",
+        "heading_mobile": "BETTER THAN YOU IMAGINED",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": true,
+        "enable_mute": false,
+        "cta_text_1": "SHOP NOW",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "SHOP NOW",
+        "cta_url_2": "#shopify-section-template--16232658010223__buybox",
+        "cta_type_2": "button button--primary-light",
+        "text_color": "text-black",
+        "controls_color": "text-white",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "top",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "buybox": {
+      "type": "buybox",
+      "blocks": {
+        "value_prop_fa3TUW": {
+          "type": "value_prop",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Brand_Elements.svg",
+            "title": "Free US Shipping on All Orders"
+          }
+        },
+        "rewards_cJG9rK": {
+          "type": "rewards",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/Brand_Elements_1.svg",
+            "title": "Earn [x] points on this purchase! <a href=\"\/pages\/rewards\" title=\"Rewards\">Learn More<\/a>"
+          }
+        }
+      },
+      "block_order": [
+        "value_prop_fa3TUW",
+        "rewards_cJG9rK"
+      ],
+      "settings": {
+        "secondary_text": "",
+        "wholesale_text": "",
+        "free_gift_title": "",
+        "free_gift_desc": "",
+        "show_tooltip": true,
+        "promo_code_message": "Extra ##SAVE## off 1st Subscription with SAVE",
+        "tooltip_title": "Extra ##SAVE## Off",
+        "tooltip_content": "<p>Get an extra ##SAVE## off your first order! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<\/p>",
+        "tooltip_cta_label": "Read More",
+        "tooltip_cta_link": "shopify:\/\/pages\/beach-terms"
+      }
+    },
+    "four_col_dapAwp": {
+      "type": "four-col",
+      "blocks": {
+        "text_qtdfyB": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/cherry_lime_icon_white.svg",
+            "icon_title": "Cherry Lime",
+            "icon_text": "The flavor of summer nostalgia"
+          }
+        },
+        "text_y7MhpN": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/carton_icon_white.svg",
+            "icon_title": "Plant-based Box",
+            "icon_text": "Imagine a greener future without plastic bottles"
+          }
+        },
+        "text_wYaqfj": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/popcorn_icon_white.svg",
+            "icon_title": "IF Inspired Design",
+            "icon_text": "You have to believe to see this a carton featuring Blue"
+          }
+        },
+        "text_nJzeHF": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/star_icon_white.svg",
+            "icon_title": "Limited Edition",
+            "icon_text": "Get it before it disappears"
+          }
+        }
+      },
+      "block_order": [
+        "text_qtdfyB",
+        "text_y7MhpN",
+        "text_wYaqfj",
+        "text_nJzeHF"
+      ],
+      "settings": {
+        "image_d": "shopify:\/\/shop_images\/purple_gradient_4_column_value_prop_1.jpg",
+        "image_m": "shopify:\/\/shop_images\/mobile_purple_4_column_value_prop.jpg",
+        "title": "",
+        "heading_text_color": "white",
+        "cta_url": "\/",
+        "cta_text": "",
+        "button_style": "primary",
+        "block_text_color": "white",
+        "bg_color": "transparent",
+        "margin_desktop": 0,
+        "margin_mobile": 50
+      }
+    },
+    "hero_febW4r": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "video_desktop": "shopify:\/\/files\/videos\/Final Trailer 4.11.24.mp4",
+        "subheading": "",
+        "heading": "",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": true,
+        "stack_on_mobile": false,
+        "enable_pause": true,
+        "enable_mute": true,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-white",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "two_three_up_imnmjr": {
+      "type": "two-three-up",
+      "blocks": {
+        "cta_V6itHm": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "IF MOVIE",
+            "link": "https:\/\/www.if.movie\/",
+            "button_text": "",
+            "bg_image_desktop": "shopify:\/\/shop_images\/IF_DOM_Online_Teaser2_1-Sheet_Street_09_2.jpg",
+            "bg_image_mobile": "shopify:\/\/shop_images\/if_movie_poster_mobile_dark.jpg",
+            "text_color": "text-white",
+            "button_style": "secondary"
+          }
+        },
+        "cta_dUrajX": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "SHOP ALL",
+            "link": "shopify:\/\/collections\/order-online-page",
+            "button_text": "",
+            "bg_image_desktop": "shopify:\/\/shop_images\/kids_3-up.jpg",
+            "text_color": "text-white",
+            "button_style": "primary"
+          }
+        },
+        "cta_LWFbJm": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "FRUIT FLAVORS",
+            "link": "https:\/\/whitelabelisbetter.com\/collections\/order-online-page#fruit-flavors",
+            "button_text": "",
+            "bg_image_desktop": "shopify:\/\/shop_images\/blackberry_3-up.jpg",
+            "text_color": "text-white",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "cta_V6itHm",
+        "cta_dUrajX",
+        "cta_LWFbJm"
+      ],
+      "settings": {
+        "title": "",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "shop_by_category_7tHKYD": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_UFLkYw": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pure_water_category_2.jpg",
+            "title": "SHOP ORIGINAL WATER",
+            "description": "",
+            "cta_url": "shopify:\/\/collections\/original-water"
+          }
+        },
+        "list_item_iRaqEN": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fruit_flavors_category_1.jpg",
+            "title": "shop fruit flavors",
+            "description": "",
+            "cta_url": "shopify:\/\/collections\/fruit-flavors"
+          }
+        },
+        "list_item_BAh6kF": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2up_flavors_m.jpg",
+            "title": "shop limited edition",
+            "description": "",
+            "cta_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "list_item_UFLkYw",
+        "list_item_iRaqEN",
+        "list_item_BAh6kF"
+      ],
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "Imagine a world <strong>without plastic bottles<\/strong>",
+        "cta_text": "explore Whitelabel",
+        "cta_url": "shopify:\/\/collections\/order-online-page"
+      }
+    },
+    "fifty_fifty_inf9qp": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "WHY WE’RE BETTER",
+        "heading_style": "h2",
+        "description": "As the most renewable option in the water aisle, we know a thing or two about a greener planet. Whitelabel™ has been on a mission to make sustainability a simple choice. Explore why our product is better than plastic bottles and aluminum cans.",
+        "featured_img": "shopify:\/\/shop_images\/IF_product_features.jpg",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "shopify:\/\/pages\/how-we-compare",
+        "cta_text": "HOW WE COMPARE",
+        "button_style": "secondary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "17180482901587f6b3": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_ugc_reviews_yHVqpq": {
+          "type": "shopify:\/\/apps\/yotpo-product-reviews-ugc\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_ugc_reviews_yHVqpq"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "hero_3UUAaw",
+    "buybox",
+    "four_col_dapAwp",
+    "hero_febW4r",
+    "two_three_up_imnmjr",
+    "shop_by_category_7tHKYD",
+    "fifty_fifty_inf9qp",
+    "17180482901587f6b3"
+  ]
+}

@@ -1,0 +1,23 @@
+.column-rte .column-rte-block p:empty {
+  @apply pt-4
+}
+
+.column-rte .column-rte-block a {
+  @apply underline hover:text-primary-3 transition-all;
+}
+
+.column-rte .button {
+  max-width: none;
+}
+
+.column-rte ul {
+  list-style: disc;
+}
+
+.column-rte ol {
+  list-style: numbered;
+}
+
+.column-rte li {
+  list-style-position: inside;
+}

@@ -1,0 +1,19 @@
+{
+  "src/entrypoints/index.js": {
+    "file": "index-281b0674.js",
+    "isEntry": true,
+    "src": "src/entrypoints/index.js"
+  },
+  "src/entrypoints/theme.css": {
+    "file": "theme-cc980a9e.css",
+    "src": "src/entrypoints/theme.css"
+  },
+  "src/entrypoints/theme.js": {
+    "css": [
+      "theme-cc980a9e.css"
+    ],
+    "file": "theme-b3f0290c.js",
+    "isEntry": true,
+    "src": "src/entrypoints/theme.js"
+  }
+}

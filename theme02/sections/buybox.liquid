@@ -1,0 +1,185 @@
+{%-liquid
+  assign blocks = section.blocks
+  assign value_props_html = ''
+  assign current_variant = product.selected_or_first_available_variant
+  assign points = current_variant.price | divided_by: 100 | floor
+-%}
+
+{%- for block in blocks -%}
+  {%- if block.type == 'value_prop' or block.type == 'rewards' -%}
+    {%- capture value_prop_html -%}
+      <div class="flex justify-start w-full">
+        <div
+          class="flex flex-row items-center">
+          <div class="flex items-center justify-center w-6 h-6 mr-1.5">
+            {%- if block.settings.icon != blank -%}
+              <img src="{{ block.settings.icon | image_url }}" alt="{{ block.settings.icon.alt }}" />
+            {%- endif -%}
+          </div>
+          <div class="value-prop-desc text-sm text-grey-5 text-center custom-content">
+            {%- if block.type == 'value_prop' -%}
+              {{ block.settings.title }}
+            {%- elsif block.type == 'rewards' -%}
+              {%- capture rewards_point_html -%}{%- render 'product-reward-points', points: points -%}{%- endcapture -%}
+              {{ block.settings.title | replace: '[x]', rewards_point_html }}
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    {%- endcapture -%}
+  {%- endif -%}
+  {%- assign value_props_html = value_props_html | append: value_prop_html -%}
+{%- endfor -%}
+
+<div id="product_buybox_group" class="" data-buybox-group>
+  <div class="flex flex-col lg:flex-row relative w-full overflow-x-hidden">
+    <div class="flex-1 lg:min-w-[1530px]">
+      {%- render 'buybox-gallery', product: product -%}
+    </div>
+    <div class="buybox-wrapper w-full lg:absolute lg:bottom-6 lg:right-6 xl:bottom-12 xl:right-12 lg:w-[calc(44%-48px)] xl:w-[calc(44%-96px)] lg:max-w-[504px] bg-white py-6 px-4 lg:p-8 lg:max-h-[calc(100%-48px)] xl:max-h-[calc(100%-96px)] lg:overflow-y-auto">
+      <div class="lg:sticky lg:top-20" data-buybox-form-container>
+        <div class="flex items-center gap-x-2 mb-2">
+          <div class="" data-product-badges="{%- render 'product-tags' -%}"></div>
+          <div class="yotpo-widget-instance" data-yotpo-instance-id="708291" data-yotpo-product-id="{{product.id}}" aria-hidden="true"></div>
+        </div>
+
+        {%- render 'buybox-form', product: product, section_settings: section.settings -%}
+
+        {%- if value_props_html != blank -%}
+          <div class="flex flex-col mt-4 gap-2">
+            {{ value_props_html }}
+          </div>
+        {%- endif -%}
+
+        {%- if section.settings.free_gift_image != blank and section.settings.free_gift_title != blank -%}
+          <div class="flex gap-2 py-4 pl-4 pr-8 bg-grey-1 mt-4">
+            <div class="relative basis-[56px] min-w-[56px] aspect-[56/70]">
+              <img class="absolute top-0 left-0 w-full h-full object-cover" src="{{ section.settings.free_gift_image | image_url }}" alt="Free Gift Image" />
+            </div>
+            <div>
+              <div role="heading" aria-level="1" class="sub-reg">{{ section.settings.free_gift_title }}</div>
+              {%- if section.settings.free_gift_desc != blank -%}
+                <div class="free-gift-desc custom-content text-sm text-grey-5 mt-2">{{ section.settings.free_gift_desc }}</div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Buybox",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Subscription Settings"
+    },
+    {
+      "type": "text",
+      "id": "secondary_text",
+      "label": "Subscription Message"
+    },
+    {
+      "type": "text",
+      "id": "wholesale_text",
+      "label": "Wholesale Subscription Message"
+    },
+    {
+      "type": "header",
+      "content": "Free Gift Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "free_gift_image",
+      "label": "Free Gift Image"
+    },
+    {
+      "type": "text",
+      "id": "free_gift_title",
+      "label": "Free Gift Title",
+      "default": "Free Gift With Purchase!"
+    },
+    {
+      "type": "richtext",
+      "id": "free_gift_desc",
+      "label": "Free Gift Description"
+    },
+    {
+      "type": "header",
+      "content": "Tooltip Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tooltip",
+      "label": "Show Tooltip",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "promo_code_message",
+      "label": "Promo Code Message"
+    },
+    {
+      "type": "text",
+      "id": "tooltip_title",
+      "label": "ToolTip Title"
+    },
+    {
+      "type": "richtext",
+      "id": "tooltip_content",
+      "label": "ToolTip Content"
+    },
+    {
+      "type": "text",
+      "id": "tooltip_cta_label",
+      "label": "ToolTip CTA Label"
+    },
+    {
+      "type": "url",
+      "id": "tooltip_cta_link",
+      "label": "ToolTip CTA Link"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Value Prop",
+      "type": "value_prop",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon",
+          "info": "Recommended dimensions: SVG 48 x 48px"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    },
+    {
+      "name": "Rewards",
+      "type": "rewards",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon",
+          "info": "Recommended dimensions: SVG 48 x 48px"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

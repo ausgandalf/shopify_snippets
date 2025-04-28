@@ -1,0 +1,53 @@
+{
+  "parent": "index.json",
+  "context": {
+    "b2b": true
+  },
+  "sections": {
+    "shop_by_category_HzJwq6": {
+      "disabled": false,
+      "settings": {
+      },
+      "blocks": {
+        "list_item_eExB9C": {
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wholesale_merch_category.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/wholesale_merch_category.jpg",
+            "secondary_image": "shopify:\/\/shop_images\/wholesale_merch_table_tents.jpg",
+            "title": "Point of sale"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_HqYR3g",
+        "list_item_DmUEUC",
+        "list_item_eExB9C"
+      ]
+    },
+    "fifty_fifty_pHmC8x": {
+      "settings": {
+        "cta_url": "shopify:\/\/collections\/wholesale-shop-all"
+      },
+      "blocks": {
+      }
+    },
+    "product_recommendations_8twtLT": {
+      "settings": {
+        "cta_url": "shopify:\/\/collections\/wholesale-shop-all",
+        "recommended_collection": "wholesale-shop-all",
+        "secondary_text": ""
+      },
+      "blocks": {
+      }
+    }
+  },
+  "order": [
+    "hero_UqkFhU",
+    "shop_by_category_HzJwq6",
+    "fifty_fifty_pHmC8x",
+    "product_recommendations_8twtLT",
+    "four_col_9pV9JC",
+    "shop_by_category_JRyFXM",
+    "two_three_up_HcfezB"
+  ]
+}

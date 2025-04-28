@@ -1,0 +1,242 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "hero_kj9XpY": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "subheading": "ENTER TO WIN",
+        "heading": "$250 Whitelabel Gift Card",
+        "heading_mobile": "$250 Whitelabel Gift Card",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": true,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "shopify://pages/how-we-compare",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-grey-1",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fifty_fifty_ibCMJN": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "Enter to Win",
+        "title": "<strong>A $250 GIFT CARD</strong>",
+        "heading_style": "h1",
+        "description": "We’re celebrating you! To show our appreciation, we’re giving one wholesale customer a $250 digital gift card to shop Whitelabel.",
+        "featured_img": "shopify://shop_images/330Context_2.jpg",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "shopify://collections/wholesale-original-water",
+        "cta_text": "SHOP NOW",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "hero_9tXWkk": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 45,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/cropped_1_percent_mid-page_banner_jpg.jpg",
+        "image_mobile": "shopify://shop_images/Mobile_Hero_Image_12.svg",
+        "subheading": "",
+        "heading": "MORE THAN A CARTON",
+        "heading_mobile": "",
+        "heading_type": "h2",
+        "copy": "<p>Whitelabel™ is a proud member of 1% For The Planet and a partner of the National Forest Foundation, One Tree Planted, and Ocean Blue Project. Together, we’ve planted over <a href=\"https://whitelabelisbetter.com/pages/betterplanet\">1.5 million trees</a> and have cleaned beaches from coast-to-coast.</p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "top",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "17279869724959978b": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product_recommendations_tgnEF4": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "<strong>Your order </strong>gives you an entry to win",
+        "cta_text": "SHOP NOW TO ENTER",
+        "cta_url": "shopify://collections/wholesale-original-water",
+        "recommended_collection": "wholesale-original-water",
+        "secondary_text": "<p><a href=\"https://whitelabelisbetter.com/account/login\" title=\"https://whitelabelisbetter.com/account/login\">LOG IN FOR WHOLESALE RATES</a></p>"
+      }
+    },
+    "fifty_fifty_hVFLaY": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_XECGYR": {
+          "type": "text",
+          "settings": {
+            "icon_text": "💡 2009: Whitelabel's founders had an idea to change the way water was packaged, shipped, and enjoyed."
+          }
+        },
+        "text_wUP3mL": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🏙️ 2010: Started selling in major cities nationally like NYC, LA, Chicago and Atlanta."
+          }
+        },
+        "text_A7hJzW": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🎵 2013: As the official sponsors of Lollapalooza and Austin City Limits, we delivered 300,000 cartons in 72 hours."
+          }
+        },
+        "text_qT4g9p": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌲 2015: We began planting trees with the National Forest Foundation."
+          }
+        },
+        "text_kFTzfh": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🍋 2021: Our first round of fruit flavors hit the market. They sold out within a week."
+          }
+        }
+      },
+      "block_order": [
+        "text_XECGYR",
+        "text_wUP3mL",
+        "text_A7hJzW",
+        "text_qT4g9p",
+        "text_kFTzfh"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "The first sustainable alternative to plastic",
+        "heading_style": "h2",
+        "description": "Our founding team dropped off several cases of their new concept of Whitelabel® to a local market, and within 3 hours, the first cases were sold out. The rest is history.",
+        "featured_img": "shopify://shop_images/5050_website_content_blocks_4.png",
+        "column_img": "left",
+        "display_badge": true,
+        "cta_url": "shopify://collections/order-online-page-old",
+        "cta_text": "Shop All Water",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "wholesale_form_9a6gBR": {
+      "type": "wholesale-form",
+      "disabled": true,
+      "settings": {
+        "form_title": "",
+        "form_html": "<div id=\"wufoo-zymk8en1pz65o4\"> Fill out my <a href=\"https://whitelabel.wufoo.com/forms/zymk8en1pz65o4\">online form</a>. </div> <script type=\"text/javascript\"> var zymk8en1pz65o4; (function(d, t) { var s = d.createElement(t), options = { 'userName':'whitelabel', 'formHash':'zymk8en1pz65o4', 'autoResize':true, 'height':'498', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { zymk8en1pz65o4 = new WufooForm(); zymk8en1pz65o4.initialize(options); zymk8en1pz65o4.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_Wr3kT9": {
+      "type": "fifty-fifty",
+      "disabled": true,
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "OUR TEAM",
+        "heading_style": "h2",
+        "description": "From Concord, Connecticut to Newport Beach, California, our team is making a lasting difference in our world. Giving back to the planet is a personal passion for everyone here because small changes make a big impact.",
+        "featured_img": "shopify://shop_images/21.png",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "",
+        "cta_text": "Open Positions",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_w3kyNb": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "",
+        "heading_style": "h2",
+        "description": "<strong>Sweepstakes Period:</strong> Entries will be accepted on October 09, 2024, at 12:00 PM and ending on October 25, 2024, at 11:59 PM. All online entries must be received by October 25, 2024, at 11:59 PM. All times are (GMT-05:00) Eastern Time (US & Canada). NO PURCHASE IS NECESSARY TO ENTER OR WIN. A PURCHASE DOES NOT INCREASE THE CHANCES OF WINNING. Sweepstakes (the \"Sweepstakes\") is open to those who participate by purchasing online at whitelabelisbetter.com and are least 18+ years old at the time of entry. The sweepstakes is open to the legal residents of the United States, excluding Hawaii, Alaska, and US territories, and is void where prohibited by law. Employees of Whitelabel Is Better, LLC (the \"Sponsor\") their respective affiliates, subsidiaries, advertising and promotion agencies, suppliers, and their immediate family members, and those living in the same household each are not eligible to participate in the Sweepstakes. The Sweepstakes is subject to federal, state, and local laws and regulations. Void where prohibited. <strong>For an alternative method of entry email </strong><a href=\"mailto:hello@whitelabelisbetter.com\"><span style=\"text-decoration:underline\">hello@whitelabelisbetter.com</span></a> with with your name and business name using the subject line “$250 Whitelabel Gift Card Giveaway”.",
+        "column_img": "right",
+        "display_badge": true,
+        "cta_url": "https://docs.google.com/document/d/1yBg-baVbqSSw5-NcwYiL-zpXa7nJN2bZ3Ba6jY9bhBU/edit?usp=sharing",
+        "cta_text": "See Full Official Rules",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "hero_kj9XpY",
+    "main",
+    "fifty_fifty_ibCMJN",
+    "hero_9tXWkk",
+    "17279869724959978b",
+    "product_recommendations_tgnEF4",
+    "fifty_fifty_hVFLaY",
+    "wholesale_form_9a6gBR",
+    "fifty_fifty_Wr3kT9",
+    "fifty_fifty_w3kyNb"
+  ]
+}

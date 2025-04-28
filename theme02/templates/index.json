@@ -1,0 +1,671 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_DUKbrN": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 30,
+        "margin_mobile": 30,
+        "video_desktop": "shopify://files/videos/Winter Hero (4).mp4",
+        "video_mobile": "shopify://files/videos/website homepage hero - mobile (1).mp4",
+        "subheading": "",
+        "heading": "A REFRESHING START",
+        "heading_mobile": "A REFRESHING START",
+        "heading_type": "h1",
+        "copy": "<p>Make a planet-friendly upgrade to your hydration goals.</p>",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": true,
+        "enable_mute": true,
+        "cta_text_1": "SHOP NOW",
+        "cta_url_1": "shopify://collections/order-online-page",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-white",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "right",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "hero_ypyABX": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 50,
+        "margin_mobile": 25,
+        "video_desktop": "shopify://files/videos/Winter Hero (3).mp4",
+        "video_mobile": "shopify://files/videos/website homepage hero - mobile.mp4",
+        "subheading": "Gather for Good",
+        "heading": "The Earth Loves Our Box",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": true,
+        "enable_mute": false,
+        "cta_text_1": "SHOP NOW",
+        "cta_url_1": "shopify://collections/order-online-page",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-white",
+        "overlay_color": "bg-white",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "top",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "fifty_fifty_rzUE64": {
+      "type": "fifty-fifty",
+      "disabled": true,
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "",
+        "title": "<strong>A refreshing change</strong>",
+        "heading_style": "h1",
+        "description": "Pure. Convenient. Sustainable.",
+        "column_img": "right",
+        "video": "shopify://files/videos/Sizzle 1 (1).mp4",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": false,
+        "cta_url": "/",
+        "cta_text": "Shop Now",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "hero_UqkFhU": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 28,
+        "margin_mobile": 0,
+        "video_desktop": "shopify://files/videos/Desktop pour video.mp4",
+        "video_mobile": "shopify://files/videos/homepage mobile video may 22.mp4",
+        "subheading": "Pure. Convenient. Sustainable.",
+        "heading": "The earth loves our box",
+        "heading_mobile": "The earth loves our box",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": true,
+        "enable_mute": false,
+        "cta_text_1": "Shop now",
+        "cta_url_1": "shopify://collections/order-online-page",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "/",
+        "cta_type_2": "content-link text-black",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-black",
+        "text_align": "center",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "1724689381620f9ab8": {
+      "type": "apps",
+      "blocks": {
+        "videowise_video_platform_ugc_videowise_page_widgets_Wp4MJg": {
+          "type": "shopify://apps/videowise-video-commerce/blocks/videowise-page-widgets/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+          "settings": {
+            "videowise_embed": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_66bbaf3f8e4a2300332c8932\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "videowise_video_platform_ugc_videowise_page_widgets_Wp4MJg"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "fifty_fifty_pHmC8x": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_3q8g7f": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌱 92% plant-based carton"
+          }
+        },
+        "text_VqqXCq": {
+          "type": "text",
+          "settings": {
+            "icon_text": "💧 100% pure water and natural flavors"
+          }
+        },
+        "text_3nR6Lh": {
+          "type": "text",
+          "settings": {
+            "icon_text": "💫 Free shipping in the lower 48 states"
+          }
+        },
+        "text_FnyBXU": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌲 1.5 million trees planted in forests and cities"
+          }
+        }
+      },
+      "block_order": [
+        "text_3q8g7f",
+        "text_VqqXCq",
+        "text_3nR6Lh",
+        "text_FnyBXU"
+      ],
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "BETTER THAN BOTTLED WATER AND CANS",
+        "title": "Paper > Plastic",
+        "heading_style": "h1",
+        "description": "For those times when reusable bottles aren't an option, our paper-based cartons are the most renewable option in the water aisle.",
+        "featured_img": "shopify://shop_images/homepage_girl_arms_full.jpg",
+        "column_img": "right",
+        "enable_mute": true,
+        "enable_pause": true,
+        "enable_reset": true,
+        "display_badge": true,
+        "cta_url": "shopify://collections/order-online-page",
+        "cta_text": "SHOP NOW",
+        "button_style": "primary",
+        "margin_desktop": 36,
+        "margin_mobile": 39
+      }
+    },
+    "shop_by_category_HzJwq6": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_HqYR3g": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/pure_water_category_2.jpg",
+            "mobile_image": "shopify://shop_images/M-category.jpg",
+            "secondary_image": "shopify://shop_images/pure_water_category_1.jpg",
+            "title": "Pure Water",
+            "description": "",
+            "cta_url": "shopify://collections/original-water"
+          }
+        },
+        "list_item_DmUEUC": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/flavors_category_1.jpg",
+            "secondary_image": "shopify://shop_images/flavors_category_2.jpg",
+            "title": "Fruit flavors",
+            "description": "",
+            "cta_url": "shopify://collections/fruit-flavors"
+          }
+        },
+        "list_item_8HRUVB": {
+          "type": "list-item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IF_Collab_category_2.jpg",
+            "mobile_image": "shopify://shop_images/2_d5097a17-0f90-4e3a-8338-0a5f600f6079.jpg",
+            "secondary_image": "shopify://shop_images/IF_Collab_category_1.jpg",
+            "title": "COLLABS",
+            "description": "",
+            "cta_url": "shopify://products/if-inspired-cherry-lime-whitelabel"
+          }
+        },
+        "list_item_dNTLpk": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/collabs_category_1.jpg",
+            "mobile_image": "shopify://shop_images/collabs_category_1.jpg",
+            "secondary_image": "shopify://shop_images/collabs_category_2.jpg",
+            "title": "MIXERS",
+            "description": "",
+            "cta_url": "shopify://products/whitelabel-matcha"
+          }
+        },
+        "list_item_eExB9C": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/merch_category_1.jpg",
+            "mobile_image": "shopify://shop_images/merch_category_1.jpg",
+            "secondary_image": "shopify://shop_images/merch_category_2.jpg",
+            "title": "Merch",
+            "description": "",
+            "cta_url": "shopify://collections/merch"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_HqYR3g",
+        "list_item_DmUEUC",
+        "list_item_8HRUVB",
+        "list_item_dNTLpk",
+        "list_item_eExB9C"
+      ],
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "title": "YOU'VE GOT GOOD TASTE",
+        "cta_text": "Shop All",
+        "cta_url": "shopify://collections/order-online-page-old"
+      }
+    },
+    "testimonials_KyCqaQ": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_N4Ye6a": {
+          "type": "testimonial",
+          "settings": {
+            "quote_text": "The product is well packaged and arrived quickly with no mishaps.",
+            "reviewer_image": "shopify://shop_images/reviewer-1_a5270a02-8be4-4197-a116-639df17e9da8.png",
+            "reviewer_name": "Carol T.",
+            "product": "500ml-whitelabel"
+          }
+        },
+        "testimonial_R36dEN": {
+          "type": "testimonial",
+          "settings": {
+            "quote_text": "I loved whitelabel so much I bought a whole 12 pack for my fridge",
+            "reviewer_image": "shopify://shop_images/reviewer-2_164c68ce-5e74-44e1-8e07-307ee2449070.png",
+            "reviewer_name": "Joseph S.",
+            "product": "1l-whitelabel"
+          }
+        },
+        "testimonial_4tjn69": {
+          "type": "testimonial",
+          "settings": {
+            "quote_text": "Whitelabel is definitely better and it makes our luxury picnics look great",
+            "reviewer_image": "shopify://shop_images/reviewer-3_f5dd4a58-1790-4590-be05-45fe55faa1a6.png",
+            "reviewer_name": "Aisha J.",
+            "product": "250ml-whitelabel"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_N4Ye6a",
+        "testimonial_R36dEN",
+        "testimonial_4tjn69"
+      ],
+      "settings": {
+        "background_color": "grey-1",
+        "title": "Testimonials From <strong>Real Customers</strong>",
+        "cta_text": "View All Reviews",
+        "cta_url": "",
+        "margin_desktop": 85,
+        "margin_mobile": 53
+      }
+    },
+    "testimonials_zJEMdg": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_CtXiNm": {
+          "type": "testimonial",
+          "settings": {
+            "quote_text": "The product is always well packaged and arrives safely with no mishaps.",
+            "reviewer_image": "shopify://shop_images/reviewer-1_a5270a02-8be4-4197-a116-639df17e9da8.png",
+            "reviewer_name": "Carol T.",
+            "product": "500ml-24-pack-wholesale"
+          }
+        },
+        "testimonial_fi6VkK": {
+          "type": "testimonial",
+          "settings": {
+            "quote_text": "I loved whitelabel so much I bought a whole 12 pack for my fridge",
+            "reviewer_image": "shopify://shop_images/reviewer-2_164c68ce-5e74-44e1-8e07-307ee2449070.png",
+            "reviewer_name": "Joseph S.",
+            "product": "lemon-500ml-whitelabel"
+          }
+        },
+        "testimonial_aaADCV": {
+          "type": "testimonial",
+          "settings": {
+            "quote_text": "Whitelabel is definitely better and it makes our luxury picnics look great",
+            "reviewer_image": "shopify://shop_images/reviewer-3_f5dd4a58-1790-4590-be05-45fe55faa1a6.png",
+            "reviewer_name": "Aisha J.",
+            "product": "500ml-24-pack-blackberry"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_CtXiNm",
+        "testimonial_fi6VkK",
+        "testimonial_aaADCV"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "grey-1",
+        "title": "Testimonials From <strong>Real Customers</strong>",
+        "cta_text": "View All Reviews",
+        "cta_url": "shopify://products/250ml-whitelabel",
+        "margin_desktop": 85,
+        "margin_mobile": 65
+      }
+    },
+    "product_recommendations_8twtLT": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "title": "<strong>Best Sellers</strong>",
+        "cta_text": "Shop all",
+        "cta_url": "#",
+        "recommended_collection": "best-sellers",
+        "secondary_text": "<p>Purchasing for a business? Apply to our <a href=\"/pages/wholesale-application-ehs\" title=\"Wholesale Application eHs\">Wholesale Program</a></p>"
+      }
+    },
+    "four_col_9pV9JC": {
+      "type": "four-col",
+      "blocks": {
+        "text_XJAp97": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/blue_footprints_icon_ea7c5af5-1e03-4461-9aa2-be00ddd0a397.svg",
+            "icon_title": "Lower Footprint",
+            "icon_text": "36% lower carbon footprint than plastic bottles and aluminum cans"
+          }
+        },
+        "text_TmwNPV": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/blue_carton_icon_00997995-79df-4e5b-81d3-8ecda1da6f7f.svg",
+            "icon_title": "Plant Based",
+            "icon_text": "92% renewable cartons made with FSC paper and a plant-based cap"
+          }
+        },
+        "text_rh7hpL": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/blue_recycle_icon_1457ce40-5807-4eea-9ab9-66b67e0b4ab6.svg",
+            "icon_title": "Recyclable",
+            "icon_text": "100% recyclable cartons vs only 5% of plastic that's recycled"
+          }
+        },
+        "text_ccVqDk": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/blue_water_icon_85a83796-6c18-47fc-81c7-da1ba51b2655.svg",
+            "icon_title": "PURE WATER",
+            "icon_text": "Sustainably sourced water, purified and free of PFAS or additives."
+          }
+        }
+      },
+      "block_order": [
+        "text_XJAp97",
+        "text_TmwNPV",
+        "text_rh7hpL",
+        "text_ccVqDk"
+      ],
+      "settings": {
+        "image_d": "shopify://shop_images/icon_background_nature.png",
+        "image_m": "shopify://shop_images/icon_background_nature.png",
+        "title": "PROVEN<strong> BETTER</strong>",
+        "heading_text_color": "black",
+        "cta_url": "shopify://pages/how-we-compare",
+        "cta_text": "HOW WE COMPARE",
+        "button_style": "primary",
+        "block_text_color": "black",
+        "bg_color": "white",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "shop_by_category_JRyFXM": {
+      "type": "shop-by-category",
+      "blocks": {
+        "list_item_arQVAx": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/250.jpg",
+            "mobile_image": "shopify://shop_images/250_ad2686d6-6104-427e-8ccf-45ca66452d5b.jpg",
+            "secondary_image": "shopify://shop_images/250_Hover.jpg",
+            "title": "250ml Whitelabel",
+            "description": "<p>Our <strong>original</strong> <em>lunch</em> box size. <a href=\"#\" title=\"#\">Grab</a> a pack of our smallest Whitelabels for any quick occasion.</p><ul><li>bullet 1</li></ul><ol><li>bullet 2</li></ol>",
+            "cta_url": "#"
+          }
+        },
+        "list_item_YAmaWm": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/330.jpg",
+            "mobile_image": "shopify://shop_images/330_89bc36be-230a-437b-bf0e-2bbfd012c656.jpg",
+            "title": "330ml Whitelabel",
+            "description": "<p>Meet our newest product size: 11.16 ounces of 100% purified water for when you need a little hydration. </p>",
+            "cta_url": "#"
+          }
+        },
+        "list_item_bLFEn7": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/550_246c2bde-f4c3-48a2-a2ba-e85cb5cd2c5a.jpg",
+            "mobile_image": "shopify://shop_images/550.jpg",
+            "title": "500ml Whitelabel",
+            "description": "<p>The standard size of Whitelabel. 16.9 ounces of purified water.</p>",
+            "cta_url": "#"
+          }
+        },
+        "list_item_QbLg3X": {
+          "type": "list-item",
+          "settings": {
+            "image": "shopify://shop_images/1L.jpg",
+            "mobile_image": "shopify://shop_images/1L_2c910a40-8222-47b0-8b4f-0879ed3cff9c.jpg",
+            "title": "1 Liter Whitelabel",
+            "description": "<p>Looking to help meet your suggested daily requirement of water? Our 1 liter 12 pack is here to help!</p>",
+            "cta_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "list_item_arQVAx",
+        "list_item_YAmaWm",
+        "list_item_bLFEn7",
+        "list_item_QbLg3X"
+      ],
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "title": "shop by <strong>Size</strong>",
+        "cta_text": "Shop All",
+        "cta_url": "#"
+      }
+    },
+    "two_three_up_HcfezB": {
+      "type": "two-three-up",
+      "blocks": {
+        "cta_qEUBVh": {
+          "type": "cta",
+          "settings": {
+            "subheading": "HEADING FB",
+            "title": "Flavor Bundles",
+            "link": "shopify://products/betterplanet-t-shirt",
+            "button_text": "READ MORE",
+            "bg_image_desktop": "shopify://shop_images/Rectangle_219.jpg",
+            "bg_image_mobile": "shopify://shop_images/Blue_042a991a-f526-4afd-b44b-3099c31da563.jpg",
+            "text_color": "text-white",
+            "button_style": "primary"
+          }
+        },
+        "cta_L4afFm": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "Lemon Whitelabel",
+            "link": "/",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/Rectangle_219_e477a4de-5ffb-4ae6-9d3a-dca59c4d45f3.jpg",
+            "bg_image_mobile": "shopify://shop_images/Yellow_9117e6c9-3bbb-451d-9795-9d9b60ccda8f.jpg",
+            "text_color": "text-black",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "cta_qEUBVh",
+        "cta_L4afFm"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "shop <strong>New Arrivals</strong>",
+        "margin_desktop": 68,
+        "margin_mobile": 100
+      }
+    },
+    "two_three_up_9cR69q": {
+      "type": "two-three-up",
+      "blocks": {
+        "cta_YfDiTj": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "",
+            "link": "shopify://products/betterplanet-t-shirt",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/Rectangle_219.jpg",
+            "bg_image_mobile": "shopify://shop_images/Blue_042a991a-f526-4afd-b44b-3099c31da563.jpg",
+            "text_color": "text-white",
+            "button_style": "primary"
+          }
+        },
+        "cta_74KMkC": {
+          "type": "cta",
+          "settings": {
+            "subheading": "",
+            "title": "",
+            "link": "/",
+            "button_text": "",
+            "bg_image_desktop": "shopify://shop_images/Rectangle_219_e477a4de-5ffb-4ae6-9d3a-dca59c4d45f3.jpg",
+            "bg_image_mobile": "shopify://shop_images/Yellow_9117e6c9-3bbb-451d-9795-9d9b60ccda8f.jpg",
+            "text_color": "text-black",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "cta_YfDiTj",
+        "cta_74KMkC"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "shop <strong>New Arrivals</strong>",
+        "margin_desktop": 68,
+        "margin_mobile": 100
+      }
+    },
+    "hero_Q8WRCP": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify://shop_images/D-Hero_c2ec1a6b-2191-4e9d-9a49-a4b62b73b489.jpg",
+        "image_mobile": "shopify://shop_images/M-Hero.jpg",
+        "subheading": "Suheading",
+        "heading": "Desktop Heading",
+        "heading_mobile": "Mobile Heading",
+        "heading_type": "h1",
+        "copy": "<p>Holiday Cards for any holiday occasion. Choose from a large selection of designs made by our in-house team for professional quality Press Cards. Choose from unique textures with our Foil Cards printed on luxurious Premium Matte paper or Real Wood Photo Cards to stand out from the rest. orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply du</p>",
+        "show_overlay": true,
+        "stack_on_mobile": false,
+        "enable_pause": true,
+        "enable_mute": true,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "ugc_gallery_4mDikt": {
+      "type": "ugc-gallery",
+      "settings": {
+        "heading": "#BETTERPLANET",
+        "copy": "You've helped us plant over 1,000,000 trees! Post a picture of Whitelabel™ with the hashtag #BetterPlanet, and we’ll plant 2 more trees for you.",
+        "cta_text": "Shop All",
+        "cta_url": "shopify://collections/order-online-page",
+        "gallery_id": "66311c05ab02aa8897e6615c",
+        "bottom_padding_mobile": 30,
+        "bottom_padding_desktop": 80
+      }
+    },
+    "17344555847b609a38": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_j4jFEY": {
+          "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-widget/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "184827",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_j4jFEY"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "hero_DUKbrN",
+    "hero_ypyABX",
+    "fifty_fifty_rzUE64",
+    "hero_UqkFhU",
+    "1724689381620f9ab8",
+    "fifty_fifty_pHmC8x",
+    "shop_by_category_HzJwq6",
+    "testimonials_KyCqaQ",
+    "testimonials_zJEMdg",
+    "product_recommendations_8twtLT",
+    "four_col_9pV9JC",
+    "shop_by_category_JRyFXM",
+    "two_three_up_HcfezB",
+    "two_three_up_9cR69q",
+    "hero_Q8WRCP",
+    "ugc_gallery_4mDikt",
+    "17344555847b609a38"
+  ]
+}

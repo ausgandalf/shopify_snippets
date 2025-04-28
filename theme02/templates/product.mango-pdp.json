@@ -1,0 +1,271 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_mzx7ie": {
+      "type": "hero",
+      "disabled": true,
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "video_desktop": "shopify://files/videos/Untitled design.mp4",
+        "video_mobile": "shopify://files/videos/Whitelabel Mango Animation 1x1.mp4",
+        "subheading": "NEW:",
+        "heading": "<strong>Mango Flavor</strong>",
+        "heading_mobile": "<strong>Mango Flavor</strong>",
+        "heading_type": "h2",
+        "copy": "<p>Our newest Mango-flavored water is here! Available for one-time and subscription orders. </p>",
+        "show_overlay": true,
+        "stack_on_mobile": true,
+        "enable_pause": true,
+        "enable_mute": true,
+        "cta_text_1": "Shop Now",
+        "cta_url_1": "#shopify-section-template--16340530036847__buybox",
+        "cta_type_1": "button button--secondary-dark",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-primary-1",
+        "text_align": "center",
+        "content_align_horizontal": "left",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "top",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "buybox": {
+      "type": "buybox",
+      "blocks": {
+        "value_prop_fa3TUW": {
+          "type": "value_prop",
+          "settings": {
+            "icon": "shopify://shop_images/Brand_Elements.svg",
+            "title": "Free US Shipping on All Orders"
+          }
+        },
+        "rewards_cJG9rK": {
+          "type": "rewards",
+          "settings": {
+            "icon": "shopify://shop_images/Brand_Elements_1.svg",
+            "title": "Earn [x] points on this purchase! <a href=\"https://whitelabelisbetter.com/pages/rewards\" title=\"https://whitelabelisbetter.com/pages/rewards\">Learn More</a>"
+          }
+        }
+      },
+      "block_order": [
+        "value_prop_fa3TUW",
+        "rewards_cJG9rK"
+      ],
+      "settings": {
+        "secondary_text": "",
+        "wholesale_text": "",
+        "free_gift_title": "Free Mini Farmacy Beauty Gift",
+        "free_gift_desc": "<p>Award-winning makeup remover balm and face cleanser in one that instantly melts virtually all makeup, removes impurities and gently cleanses!</p>",
+        "show_tooltip": false,
+        "promo_code_message": "",
+        "tooltip_title": "FREE GIFT FOR NEW SUBSCRIBERS",
+        "tooltip_content": "<p>Free Farmacy Beauty mini green clean on customer's first new subscription order. One redemption per customer. After the initial order, standard subscription rates apply. Offer valid from November 1, 2024 at 12:01am ET to November 15, 2024 at 11:59pm ET online at whitelabelisbetter.com or while supplies last.Additional discount codes will not apply.</p>",
+        "tooltip_cta_label": "",
+        "tooltip_cta_link": ""
+      }
+    },
+    "value_props_7d8J8K": {
+      "type": "value-props",
+      "blocks": {
+        "value_prop_yWeXQD": {
+          "type": "value-prop",
+          "repeater": "{{ product.metafields.custom.value_props.value }}",
+          "settings": {
+            "icon": "{{ block.repeater.icon.value }}",
+            "title": "{{ block.repeater.title.value }}",
+            "description": "{{ block.repeater.description | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "value_prop_yWeXQD"
+      ],
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "product_details_tGMjxH": {
+      "type": "product-details",
+      "blocks": {
+        "accordion_GxPwKw": {
+          "type": "accordion",
+          "repeater": "{{ product.metafields.custom.product_details.value }}",
+          "settings": {
+            "text_alignment": "text-left",
+            "title": "{{ block.repeater.title.value }}",
+            "description": "{{ block.repeater.description | metafield_tag }}",
+            "highlight_icon_1": "{{ block.repeater.highlight_icon_1.value }}",
+            "highlight_text_1": "{{ block.repeater.highlight_text_1.value }}",
+            "highlight_icon_2": "{{ block.repeater.highlight_icon_2.value }}",
+            "highlight_text_2": "{{ block.repeater.highlight_text_2.value }}",
+            "highlight_text_3": "",
+            "review_name_1": "Regina O.",
+            "review_text_1": "I wasn't sure about Mango at first but it's somehow become a top choice!",
+            "review_name_2": "",
+            "review_text_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "accordion_GxPwKw"
+      ],
+      "settings": {
+        "bg_color": "bg-white",
+        "img_1": "shopify://shop_images/MangoLifestyle4.jpg",
+        "img_2": "shopify://shop_images/MangoLifestyle3.jpg",
+        "img_3": "shopify://shop_images/MangoLifestyle1.jpg",
+        "img_4": "shopify://shop_images/MangoLifestyle2.jpg",
+        "value_icon_1": "shopify://shop_images/black_carton_icon_174cde8a-f6ba-40a8-a4f4-c0a03c91382b.svg",
+        "value_title_1": "The Earth Loves Our Box",
+        "value_description_1": "Thousands agree that pure water in a plant-based box is simply better.",
+        "value_icon_2": "shopify://shop_images/Group_991.svg",
+        "value_title_2": "Reuse & Recycle",
+        "value_description_2": "Our cartons are 100% recyclable, refillable, and BPA free.",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "17265902831692084d": {
+      "type": "apps",
+      "blocks": {
+        "videowise_video_platform_ugc_videowise_page_widgets_YpqUpr": {
+          "type": "shopify://apps/videowise-video-commerce/blocks/videowise-page-widgets/b48d6c0c-3e3f-4791-a9ab-a5ab7ec82f4d",
+          "settings": {
+            "videowise_embed": "<div class=\"reeview-app-widget\" id=\"reeview-app-widget_66e31fa8e555370032acfbb4\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "videowise_video_platform_ugc_videowise_page_widgets_YpqUpr"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product_recommendations_cabzgD": {
+      "type": "product-recommendations",
+      "settings": {
+        "margin_desktop": 36,
+        "margin_mobile": 36,
+        "title": "<strong>Explore Best Sellers</strong>",
+        "cta_text": "Shop All",
+        "cta_url": "shopify://collections/best-sellers",
+        "recommended_collection": "best-sellers",
+        "secondary_text": "<p><a href=\"https://whitelabel.myshopify.com/pages/subscribe\" title=\"Subscribe & Save on Whitelabel - Sustainable Water Delivery\"><strong>Subscribe and Save 10% </strong></a>and enjoy free shipping on all orders. Cancel anytime.</p>"
+      }
+    },
+    "fifty_fifty_UXNhEb": {
+      "type": "fifty-fifty",
+      "settings": {
+        "bg_color": "gray",
+        "subheading": "The Story of Mango:",
+        "title": "<strong>Sip On MANGO</strong>",
+        "heading_style": "h2",
+        "description": "One sunny morning, during a brainstorming session, Mandy, the Director of Marketing, proposed a new flavor inspired by her recent trip to Puerto Rico. She described the rich, sweet mangoes and their sustainable cultivation practices. The team immediately saw the potential: mango-flavored water would be a perfect addition to their product line, offering a taste of the tropics and reinforcing our commitment to sustainability.",
+        "featured_img": "shopify://shop_images/3-way_Mango.jpg",
+        "column_img": "right",
+        "display_badge": false,
+        "cta_url": "#shopify-section-template--16340530036847__buybox",
+        "cta_text": "Shop Now",
+        "button_style": "primary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "fifty_fifty_NpwjMr": {
+      "type": "fifty-fifty",
+      "blocks": {
+        "text_b7fkNF": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🥭 Ingredients: Purified water, Natural fruit flavors"
+          }
+        },
+        "text_F6tgrC": {
+          "type": "text",
+          "settings": {
+            "icon_text": "😋  Mix it . Can be used as a base for smoothies and other beverages."
+          }
+        },
+        "text_peytFR": {
+          "type": "text",
+          "settings": {
+            "icon_text": "🌎 Compared to Plastic: Plastic has 18X more impact on ozone depletion than a Whitelabel carton. "
+          }
+        },
+        "text_Bdqbkm": {
+          "type": "text",
+          "settings": {
+            "icon_text": "♻️ Packaging: Our cartons are 100% recyclable, refillable, and BPA free."
+          }
+        }
+      },
+      "block_order": [
+        "text_b7fkNF",
+        "text_F6tgrC",
+        "text_peytFR",
+        "text_Bdqbkm"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_color": "white",
+        "subheading": "",
+        "title": "<strong>Product Benefits</strong>",
+        "heading_style": "h2",
+        "description": "Our Mango-flavored water is crafted using award-winning 100% purified drinking water with mango essence, delivering an instant tropical experience. Enjoy the vibrant taste without any sugar or artificial ingredients.",
+        "featured_img": "shopify://shop_images/BlueBG_Mango.jpg",
+        "column_img": "left",
+        "display_badge": false,
+        "cta_url": "/",
+        "cta_text": "",
+        "button_style": "secondary",
+        "margin_desktop": 0,
+        "margin_mobile": 0
+      }
+    },
+    "1716927939d0841fb8": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_ugc_reviews_r43Jnm": {
+          "type": "shopify://apps/yotpo-product-reviews-ugc/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_ugc_reviews_r43Jnm"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "hero_mzx7ie",
+    "buybox",
+    "value_props_7d8J8K",
+    "product_details_tGMjxH",
+    "17265902831692084d",
+    "product_recommendations_cabzgD",
+    "fifty_fifty_UXNhEb",
+    "fifty_fifty_NpwjMr",
+    "1716927939d0841fb8"
+  ]
+}

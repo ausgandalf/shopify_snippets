@@ -1,0 +1,83 @@
+{
+  "sections": {
+    "hero_kj9XpY": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "subheading": "LIFECYCLE STUDY RESULTS",
+        "heading": "PROVEN BETTER",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "<p>The moment you grab an item from the store shelves is just a small piece of that product’s story.<\/p>",
+        "show_overlay": false,
+        "stack_on_mobile": true,
+        "enable_pause": true,
+        "enable_mute": true,
+        "cta_text_1": "",
+        "cta_url_1": "https:\/\/whitelabelisbetter.com\/pages\/wholesale",
+        "cta_type_1": "button button--primary-dark",
+        "cta_text_2": "",
+        "cta_url_2": "shopify:\/\/pages\/how-we-compare",
+        "cta_type_2": "button button--primary-dark",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "rich_text_c3LW8x": {
+      "type": "rich-text",
+      "blocks": {
+        "text_8g7jht": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Reusable bottles are clearly the best option for our planet, but there are situations where their use is not possible or practical. So instead, we’re left with the question, <strong>what packaged water is better for the environment?<\/strong><\/p><p>Looking at recycling isn’t enough. Plastic and aluminum production is increasing while recycling rates drop. The latest data shows <a href=\"https:\/\/www.reuters.com\/world\/us\/us-plastic-recycling-rate-drops-close-5-report-2022-05-04\/\" target=\"_blank\">5% of plastic is recycled<\/a>. Whitelabel commissioned <a href=\"https:\/\/www.anthesisgroup.com\/\" target=\"_blank\">Anthesis Group<\/a>, a third-party research organization, to look at the bigger picture and conduct a three-month research process to compare the <a href=\"https:\/\/www.sfgate.com\/market\/article\/bottled-water-vs-plastic-environment-17201861.php\" target=\"_blank\">environmental impact<\/a> of a Whitelabel carton to a PET plastic water bottle and aluminum canned water. Beyond the clear benefits of our renewable, plant-based materials, Anthesis found that Whitelabel cartons have a lower total environmental impact than plastic bottled water and aluminum cans.<\/p>"
+          }
+        },
+        "button_dDr8CQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_8g7jht",
+        "button_dDr8CQ"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "hero_kj9XpY",
+    "rich_text_c3LW8x",
+    "main"
+  ]
+}

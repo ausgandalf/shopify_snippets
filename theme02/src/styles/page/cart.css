@@ -1,0 +1,30 @@
+[data-main-cart] {
+  .custom-content.rewards-text {
+    a,
+    p,
+    strong {
+      @apply text-[13px] lg:text-[14px] leading-[130%];
+    }
+
+    [data-custom-swell-widget] {
+      @apply font-bold;
+    }
+  }
+}
+#rebuy-cart {
+  @apply !hidden;
+}
+
+#rebuy-modal {
+  .rebuy-notification-dialog-button {
+    @apply font-heading px-6 pb-[.82rem] pt-[.75rem] inline-flex items-center justify-center text-[20px] font-bold no-underline transition-all max-w-[103px] uppercase tracking-[2px] leading-[90%] max-h-[45px];
+
+    &.primary {
+      @apply bg-black border-black border-[2px] text-white hover:text-black hover:bg-white;
+    }
+
+    &.secondary {
+      @apply text-black border-black border-[2px] bg-transparent hover:bg-black hover:text-white;
+    }
+  }
+}

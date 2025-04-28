@@ -1,0 +1,15 @@
+{
+  "sections": {
+    "general-content": {
+      "type": "general-content",
+      "settings": {
+        "banner": "shopify:\/\/shop_images\/Rectangle_228.jpg",
+        "margin_desktop": 50,
+        "margin_mobile": 50
+      }
+    }
+  },
+  "order": [
+    "general-content"
+  ]
+}

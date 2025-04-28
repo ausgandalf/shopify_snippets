@@ -1,0 +1,24 @@
+.scrollbar::-webkit-scrollbar {
+  @apply h-[3px];
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-black
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  @apply bg-grey-2;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    @apply hidden;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
+}

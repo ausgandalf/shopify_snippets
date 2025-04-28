@@ -1,0 +1,37 @@
+[data-blog-nav-container] {
+  @apply border-t-[3px] border-transparent;
+
+  .tns-inner {
+    @apply flex;
+  }
+}
+
+[data-blog-nav-item] {
+  a {
+
+    &:hover,
+    &.active {
+      @apply bg-primary-1;
+    }
+  }  
+}
+
+[data-blog-nav-controls] {
+  button:disabled {
+    @apply hidden;
+  }
+}
+
+.blog-right-arrow {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 21.7%);
+}
+
+.blog-left-arrow {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 21.7%);
+}
+
+[data-blog-nav-controls] {
+  [aria-disabled="true"] {
+    @apply hidden;
+  }
+}

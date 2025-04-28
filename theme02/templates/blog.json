@@ -1,0 +1,62 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "hero_qdeECW": {
+      "type": "hero",
+      "settings": {
+        "margin_desktop": 0,
+        "margin_mobile": 0,
+        "image_desktop": "shopify:\/\/shop_images\/blog_banner_mountain_flowers.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/blog_banner_mobile.jpg",
+        "subheading": "",
+        "heading": "<strong>SUSTAINABLE LIFE AND BUSINESS<\/strong>",
+        "heading_mobile": "",
+        "heading_type": "h1",
+        "copy": "",
+        "show_overlay": false,
+        "stack_on_mobile": false,
+        "enable_pause": false,
+        "enable_mute": false,
+        "cta_text_1": "",
+        "cta_url_1": "",
+        "cta_type_1": "button button--primary-light",
+        "cta_text_2": "",
+        "cta_url_2": "",
+        "cta_type_2": "button button--secondary-light",
+        "text_color": "text-black",
+        "controls_color": "text-black",
+        "overlay_color": "bg-white",
+        "text_align": "left",
+        "content_align_horizontal": "center",
+        "content_align_vertical": "center",
+        "control_align_horizontal": "center",
+        "control_align_vertical": "bottom",
+        "control_align_horizontal_mobile": "center",
+        "control_align_vertical_mobile": "bottom"
+      }
+    },
+    "blog_nav_rwN3WD": {
+      "type": "blog-nav",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "hero_qdeECW",
+    "blog_nav_rwN3WD",
+    "main"
+  ]
+}
